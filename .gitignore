@@ -21,3 +21,6 @@ pnpm-debug.log*
 
 # local dev server log
 .dev.log
+
+# local verification screenshots
+artifacts/
