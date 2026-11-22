@@ -1,0 +1,515 @@
+{
+  "slug": "main-character-era",
+  "title": "Which main character era is your week",
+  "dek": "Every week has a genre. Twelve questions to work out whether you are mid-villain-arc, soft-launching or already in the credits.",
+  "category": "Personality",
+  "accent": "lime",
+  "emoji": "🎬",
+  "minutes": 4,
+  "published": "2026-11-13",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your week gets a title card. It reads:",
+      "options": [
+        {
+          "id": "a",
+          "label": "AND THEN EVERYTHING HAPPENED AT ONCE",
+          "weights": {
+            "main": 2,
+            "villain": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "SOME ASSEMBLY REQUIRED",
+          "weights": {
+            "softlaunch": 2,
+            "sidequest": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "THE PART NOBODY FILMED",
+          "weights": {
+            "deleted": 2,
+            "credits": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "MEANWHILE, ELSEWHERE",
+          "weights": {
+            "sidequest": 2,
+            "golden": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The last photo in your camera roll is a screenshot of a message you didn't reply to.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Reply now, three days late, no apology",
+          "weights": {
+            "main": 2,
+            "lore": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Delete the screenshot. It's evidence",
+          "weights": {
+            "deleted": 2,
+            "softlaunch": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Send it to the group chat as a joke",
+          "weights": {
+            "lore": 2,
+            "sidequest": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Read it again and decide tomorrow",
+          "weights": {
+            "credits": 2,
+            "deleted": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The week comes with a soundtrack. Pick one:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Something loud with a countdown",
+          "weights": {
+            "main": 2,
+            "villain": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "One long ambient track, no vocals",
+          "weights": {
+            "credits": 2,
+            "softlaunch": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "A good week is one you'd be happy to screenshot.",
+      "disagree": {
+        "trait": "deleted"
+      },
+      "agree": {
+        "trait": "main"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I rehearse a conversation and then never have it.",
+      "trait": "deleted",
+      "low": "I say it immediately",
+      "high": "I've had it four times in my head"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "A stranger asks what you do. There's a version of the answer you only use at parties.",
+      "options": [
+        {
+          "id": "a",
+          "label": "The polished one, with a joke at the end",
+          "weights": {
+            "softlaunch": 2,
+            "golden": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The true one, including the mess",
+          "weights": {
+            "lore": 2,
+            "deleted": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The one that makes you sound dangerous",
+          "weights": {
+            "villain": 2,
+            "main": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A question back. Deflect entirely",
+          "weights": {
+            "sidequest": 2,
+            "credits": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "I'd rather be interesting than comfortable.",
+      "agree": {
+        "trait": "villain",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "golden",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "image",
+      "prompt": "Pick the street you'd take the long way home down.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cobbles, old shopfronts, no one around",
+          "weights": {
+            "sidequest": 2,
+            "credits": 1
+          },
+          "image": "/images/questions/main-street-cobbles.jpg",
+          "alt": "A cobbled street of old shopfronts"
+        },
+        {
+          "id": "b",
+          "label": "A crossing, traffic, somewhere to be",
+          "weights": {
+            "main": 2,
+            "golden": 1
+          },
+          "image": "/images/questions/main-street-crossing.jpg",
+          "alt": "A city crossing with traffic and pedestrians"
+        },
+        {
+          "id": "c",
+          "label": "Neon, late, slightly too loud",
+          "weights": {
+            "villain": 2,
+            "lore": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A street at night lit by neon signs"
+        },
+        {
+          "id": "d",
+          "label": "Trees, pavement, nothing to prove",
+          "weights": {
+            "credits": 2,
+            "golden": 1
+          },
+          "image": "/images/questions/main-street-trees.jpg",
+          "alt": "A tree-lined residential street"
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "The thing you were dreading is cancelled.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tell everyone immediately",
+          "weights": {
+            "lore": 2,
+            "main": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Feel weirdly disappointed",
+          "weights": {
+            "villain": 2,
+            "deleted": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Bed, early, luxuriate",
+          "weights": {
+            "credits": 2,
+            "golden": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Do the thing anyway, alone",
+          "weights": {
+            "villain": 2,
+            "golden": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I've described my week as a 'plot point' out loud.",
+      "trait": "main",
+      "low": "I have never said that",
+      "high": "In front of witnesses"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A good entrance is worth being late for.",
+      "disagree": {
+        "trait": "credits"
+      },
+      "agree": {
+        "trait": "main"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The week ends and nobody claps.",
+      "options": [
+        {
+          "id": "a",
+          "label": "On to the next one",
+          "weights": {
+            "credits": 2,
+            "golden": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You'll think about it at 1am",
+          "weights": {
+            "deleted": 2,
+            "villain": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Text the group: was that weird?",
+          "weights": {
+            "lore": 2,
+            "softlaunch": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Already writing the next scene",
+          "weights": {
+            "main": 2,
+            "sidequest": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "main",
+      "name": "Main Character",
+      "tagline": "The plot is briefly about you",
+      "blurb": "This week you're the one things happen to. You're making decisions out loud, wearing the outfit, taking the call in the street. It's not vanity — it's momentum, and it's contagious. Just remember the people in your scenes are also main characters somewhere.",
+      "accent": "yellow",
+      "mix": {
+        "main": 46,
+        "softlaunch": 0,
+        "villain": 17,
+        "golden": 7,
+        "sidequest": 6,
+        "lore": 15,
+        "deleted": 9,
+        "credits": 0
+      },
+      "strengths": [
+        "Turns an ordinary Tuesday into a story",
+        "Decides before the doubt catches up",
+        "Brings other people along"
+      ],
+      "watchOut": "Not every silence is a reaction to you. Let someone else have the monologue."
+    },
+    {
+      "trait": "softlaunch",
+      "name": "Soft Launch",
+      "tagline": "Almost ready to be perceived",
+      "blurb": "You're in the phase where everything is 80% done and none of it is public. The draft, the new thing, the haircut. You're protecting it until it's good, which is sensible — and also a very comfortable place to hide indefinitely.",
+      "accent": "sky",
+      "mix": {
+        "main": 10,
+        "softlaunch": 34,
+        "villain": 0,
+        "golden": 5,
+        "sidequest": 13,
+        "lore": 15,
+        "deleted": 13,
+        "credits": 10
+      },
+      "strengths": [
+        "Protects work until it's ready",
+        "Notices what needs another pass",
+        "Low drama, high standards"
+      ],
+      "watchOut": "The last twenty percent can take a year. Show one person the rough version."
+    },
+    {
+      "trait": "villain",
+      "name": "Villain Arc",
+      "tagline": "The motivation finally makes sense",
+      "blurb": "You've stopped apologising for wanting things. This week has teeth: the boundary, the email you sent, the gym at 6am. People are calling it a phase. You're calling it a correction. Both can be true, but only one of them is going to change your life.",
+      "accent": "red",
+      "mix": {
+        "main": 25,
+        "softlaunch": 0,
+        "villain": 43,
+        "golden": 0,
+        "sidequest": 0,
+        "lore": 9,
+        "deleted": 20,
+        "credits": 3
+      },
+      "strengths": [
+        "Uses anger as information",
+        "Sets a boundary and holds it",
+        "Doesn't need to be liked to continue"
+      ],
+      "watchOut": "The arc works better with an exit. Decide what would count as enough."
+    },
+    {
+      "trait": "golden",
+      "name": "Golden Hour",
+      "tagline": "Everything temporarily works",
+      "blurb": "This is the week where the light is good, the plans happen and nothing hurts too much. You're not naive about it — you can see the edges — you're just choosing to enjoy the middle of it. That's not luck. That's a skill.",
+      "accent": "pink",
+      "mix": {
+        "main": 18,
+        "softlaunch": 10,
+        "villain": 3,
+        "golden": 35,
+        "sidequest": 9,
+        "lore": 4,
+        "deleted": 9,
+        "credits": 12
+      },
+      "strengths": [
+        "Finds the good hour inside a bad day",
+        "Makes ordinary things feel like an occasion",
+        "Enjoys things while they're happening"
+      ],
+      "watchOut": "Don't spend the good part bracing for the end. It's already happening. Be in it."
+    },
+    {
+      "trait": "sidequest",
+      "name": "Side Quest",
+      "tagline": "The detour is the actual plot",
+      "blurb": "You came for one thing and left with three others. You take the long route, talk to the stranger, follow the sign. None of it is on the plan and all of it is the good part. Your life is a series of excellent distractions.",
+      "accent": "green",
+      "mix": {
+        "main": 18,
+        "softlaunch": 0,
+        "villain": 4,
+        "golden": 5,
+        "sidequest": 38,
+        "lore": 17,
+        "deleted": 10,
+        "credits": 8
+      },
+      "strengths": [
+        "Says yes to the unplanned thing",
+        "Finds the interesting person in any room",
+        "Keeps momentum when the plan collapses"
+      ],
+      "watchOut": "At some point the detour needs a destination. Finish one of them."
+    },
+    {
+      "trait": "lore",
+      "name": "Lore Drop",
+      "tagline": "A stranger now knows everything",
+      "blurb": "You've been telling the story. The full one, with the timeline and the bit about your mother. It's how you process, and it's also how you find your people — the ones who lean in instead of backing away. You're not oversharing, you're filtering.",
+      "accent": "orange",
+      "mix": {
+        "main": 19,
+        "softlaunch": 6,
+        "villain": 14,
+        "golden": 0,
+        "sidequest": 5,
+        "lore": 40,
+        "deleted": 13,
+        "credits": 3
+      },
+      "strengths": [
+        "Turns experience into a good story",
+        "Connects fast and honestly",
+        "Gives other people permission to be real"
+      ],
+      "watchOut": "Some things need to stay yours for a while. Not everything is a chapter yet."
+    },
+    {
+      "trait": "deleted",
+      "name": "Deleted Scene",
+      "tagline": "It happened. It's not canon",
+      "blurb": "Something real happened this week and you've decided not to include it. Maybe it was embarrassing, maybe it was sad, maybe it was the best night of the month. Either way you're carrying a scene nobody else has seen, and it's taking up more room than you'd admit.",
+      "accent": "cyan",
+      "mix": {
+        "main": 12,
+        "softlaunch": 6,
+        "villain": 15,
+        "golden": 0,
+        "sidequest": 10,
+        "lore": 9,
+        "deleted": 40,
+        "credits": 8
+      },
+      "strengths": [
+        "Keeps a private self intact",
+        "Doesn't perform every feeling",
+        "Notices what others leave out"
+      ],
+      "watchOut": "A secret gets heavier in the dark. Tell one safe person the short version."
+    },
+    {
+      "trait": "credits",
+      "name": "Post-Credits Scene",
+      "tagline": "Everyone else went home",
+      "blurb": "You're the last one awake, after the party, after the group chat, after the year everyone else has moved on from. You're not lonely exactly — you're processing. The quiet bit at the end is where you actually figure out what the week meant.",
+      "accent": "blue",
+      "mix": {
+        "main": 8,
+        "softlaunch": 6,
+        "villain": 0,
+        "golden": 17,
+        "sidequest": 10,
+        "lore": 0,
+        "deleted": 19,
+        "credits": 40
+      },
+      "strengths": [
+        "Comfortable with the quiet aftermath",
+        "Sees the pattern once the noise stops",
+        "Doesn't need an audience to continue"
+      ],
+      "watchOut": "Don't stay in the empty cinema too long. The next film is already starting."
+    }
+  ]
+}

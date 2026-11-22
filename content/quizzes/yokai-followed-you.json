@@ -1,0 +1,515 @@
+{
+  "slug": "yokai-followed-you",
+  "title": "Which yokai followed you home",
+  "dek": "You took the mountain road at dusk and did not look back. Twelve questions to identify the Japanese folk spirit keeping pace behind you.",
+  "category": "Folklore",
+  "accent": "cyan",
+  "emoji": "🦊",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Footsteps behind you stop when you stop. Start again and they start again.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Turn around and say good evening",
+          "weights": {
+            "kitsune": 2,
+            "oni": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Keep walking, match the rhythm",
+          "weights": {
+            "yukionna": 2,
+            "rokurokubi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Take the next turning, casually",
+          "weights": {
+            "tanuki": 2,
+            "kappa": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave something on the path and keep going",
+          "weights": {
+            "tsukumogami": 2,
+            "kitsune": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "image",
+      "prompt": "Pick the place you'd stop for the night.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A shrine gate, lanterns still lit",
+          "weights": {
+            "kitsune": 2,
+            "tsukumogami": 1
+          },
+          "image": "/images/questions/yokai-place-torii.jpg",
+          "alt": "A torii gate with stone lanterns"
+        },
+        {
+          "id": "b",
+          "label": "A mountain trailhead, sign worn blank",
+          "weights": {
+            "tengu": 2,
+            "yukionna": 1
+          },
+          "image": "/images/questions/yokai-place-mountain.jpg",
+          "alt": "A mountain trailhead beneath a wooded peak"
+        },
+        {
+          "id": "c",
+          "label": "A riverbank with one small boat",
+          "weights": {
+            "kappa": 2,
+            "rokurokubi": 1
+          },
+          "image": "/images/questions/yokai-place-river.jpg",
+          "alt": "A quiet river with a small boat"
+        },
+        {
+          "id": "d",
+          "label": "A stone lantern in tall grass",
+          "weights": {
+            "tsukumogami": 2,
+            "oni": 1
+          },
+          "image": "/images/questions/yokai-place-lantern.jpg",
+          "alt": "A stone lantern standing in grasses"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "mc",
+      "prompt": "A shrine keeper offers you tea and watches you hold the cup.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Drink it. Trust is a choice",
+          "weights": {
+            "tanuki": 2,
+            "oni": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Accept, but don't drink",
+          "weights": {
+            "kitsune": 2,
+            "rokurokubi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Refuse politely and leave",
+          "weights": {
+            "yukionna": 2,
+            "tengu": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Ask what they want first",
+          "weights": {
+            "tengu": 2,
+            "tsukumogami": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "A promise made at night still counts in the morning.",
+      "disagree": {
+        "trait": "kitsune"
+      },
+      "agree": {
+        "trait": "oni"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I go quiet when I'm upset and let the room freeze.",
+      "trait": "yukionna",
+      "low": "I say it",
+      "high": "Everything goes cold"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "The vending machine gives you two drinks and takes no money. Nobody is around to tell.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Take both. Thank the machine",
+          "weights": {
+            "tanuki": 2,
+            "oni": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Leave the extra on top for the next person",
+          "weights": {
+            "kappa": 2,
+            "yukionna": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Check if it's a trick",
+          "weights": {
+            "tengu": 2,
+            "kitsune": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Come back later with a bag",
+          "weights": {
+            "rokurokubi": 2,
+            "tsukumogami": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "Old objects deserve more respect than new people.",
+      "agree": {
+        "trait": "tsukumogami",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "tanuki",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "this_or_that",
+      "prompt": "Better companion:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Loud, loyal, slightly too big",
+          "weights": {
+            "oni": 2,
+            "tanuki": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Quiet, precise, keeps their distance",
+          "weights": {
+            "tengu": 2,
+            "yukionna": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "You find a coin on the shrine steps. It's warm.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Leave it. It wasn't yours",
+          "weights": {
+            "tsukumogami": 2,
+            "tengu": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Pocket it and thank nobody",
+          "weights": {
+            "kitsune": 2,
+            "tanuki": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Put it back with a wish",
+          "weights": {
+            "kappa": 2,
+            "yukionna": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Give it to someone who needs it more",
+          "weights": {
+            "oni": 2,
+            "tanuki": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I apologise more than the situation requires.",
+      "trait": "kappa",
+      "low": "Rarely",
+      "high": "I'm sorry for this answer"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "Curiosity is a kind of hunger.",
+      "disagree": {
+        "trait": "kappa"
+      },
+      "agree": {
+        "trait": "rokurokubi"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Dawn. Whatever followed you is still there, sitting at the end of the road.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Feed it and let it stay",
+          "weights": {
+            "tanuki": 2,
+            "oni": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Name it. Naming helps",
+          "weights": {
+            "tsukumogami": 2,
+            "kitsune": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Walk into the river and don't look back",
+          "weights": {
+            "kappa": 2,
+            "yukionna": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Ask it, plainly, what it wants",
+          "weights": {
+            "tengu": 2,
+            "rokurokubi": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "kitsune",
+      "name": "Kitsune",
+      "tagline": "Charming, clever, possibly lying",
+      "blurb": "You are several versions of yourself at once and all of them are convincing. You read what a room wants and become a slightly better version of it. That's not dishonesty — it's range. Just remember which version is the one that has to wake up tomorrow.",
+      "accent": "yellow",
+      "mix": {
+        "kitsune": 39,
+        "tengu": 7,
+        "kappa": 10,
+        "oni": 10,
+        "yukionna": 8,
+        "tanuki": 6,
+        "tsukumogami": 10,
+        "rokurokubi": 10
+      },
+      "strengths": [
+        "Adapts to any room in seconds",
+        "Wins people over without effort",
+        "Finds the exit clever people miss"
+      ],
+      "watchOut": "The mask is comfortable. Take it off with the people who've earned it."
+    },
+    {
+      "trait": "tengu",
+      "name": "Tengu",
+      "tagline": "Proud, precise, allergic to nonsense",
+      "blurb": "You have standards and a very low tolerance for people who don't. You'd rather be correct than popular, and you'll say the sharp thing because someone has to. Behind the pride is a genuine wish to see things done well — and a temper that arrives before you've decided to have one.",
+      "accent": "sky",
+      "mix": {
+        "kitsune": 13,
+        "tengu": 38,
+        "kappa": 10,
+        "oni": 7,
+        "yukionna": 14,
+        "tanuki": 0,
+        "tsukumogami": 9,
+        "rokurokubi": 9
+      },
+      "strengths": [
+        "Cuts through noise to the real issue",
+        "Holds a standard under pressure",
+        "Excellent at the honest assessment"
+      ],
+      "watchOut": "Precision without warmth sounds like contempt. Soften one sentence a day."
+    },
+    {
+      "trait": "kappa",
+      "name": "Kappa",
+      "tagline": "Polite to a fault, apologises to furniture",
+      "blurb": "You're courteous, meticulous and slightly obsessed with doing the right thing. You'll return the borrowed thing clean, with a note. Your politeness is genuine but it can become a hiding place: if you're endlessly accommodating, nobody ever finds out what you actually want.",
+      "accent": "red",
+      "mix": {
+        "kitsune": 3,
+        "tengu": 0,
+        "kappa": 41,
+        "oni": 15,
+        "yukionna": 18,
+        "tanuki": 17,
+        "tsukumogami": 0,
+        "rokurokubi": 6
+      },
+      "strengths": [
+        "Thoughtful in ways people remember",
+        "De-escalates almost anything",
+        "Keeps promises, especially small ones"
+      ],
+      "watchOut": "Apologising isn't a personality. Take up the space you're already paying for."
+    },
+    {
+      "trait": "oni",
+      "name": "Oni",
+      "tagline": "Loud, loyal, absolutely not subtle",
+      "blurb": "You feel things at full size and you don't see the point in pretending otherwise. Your anger is honest, your affection is enormous, and both arrive at the same volume. People always know where they stand with you, which is rarer and more valuable than tact.",
+      "accent": "lime",
+      "mix": {
+        "kitsune": 7,
+        "tengu": 0,
+        "kappa": 10,
+        "oni": 38,
+        "yukionna": 8,
+        "tanuki": 26,
+        "tsukumogami": 6,
+        "rokurokubi": 5
+      },
+      "strengths": [
+        "Unmistakably honest",
+        "Defends people without being asked",
+        "Enormous capacity for loyalty"
+      ],
+      "watchOut": "The volume can drown the point. Say the same thing at half the size."
+    },
+    {
+      "trait": "yukionna",
+      "name": "Yuki-onna",
+      "tagline": "Beautiful, distant, genuinely freezing",
+      "blurb": "You are calm in a way that makes other people check their tone. You don't raise your voice — you lower the temperature. Under the stillness there's a lot of feeling that never gets described out loud, and the people who love you have learned to read the weather.",
+      "accent": "pink",
+      "mix": {
+        "kitsune": 3,
+        "tengu": 18,
+        "kappa": 25,
+        "oni": 4,
+        "yukionna": 40,
+        "tanuki": 0,
+        "tsukumogami": 0,
+        "rokurokubi": 10
+      },
+      "strengths": [
+        "Unshakeable in a crisis",
+        "Never says something they'll regret",
+        "Protective in a quiet, absolute way"
+      ],
+      "watchOut": "The cold is doing damage even when you mean nothing by it. Say what's wrong, warmly."
+    },
+    {
+      "trait": "tanuki",
+      "name": "Tanuki",
+      "tagline": "Here for a good time and a free meal",
+      "blurb": "You are the social glue: cheerful, shameless, always somehow at the table. You lighten rooms and lower blood pressure. Under the easygoing act you're more observant than you let on — you know exactly who's struggling, and you make sure they get fed.",
+      "accent": "green",
+      "mix": {
+        "kitsune": 16,
+        "tengu": 0,
+        "kappa": 11,
+        "oni": 20,
+        "yukionna": 8,
+        "tanuki": 37,
+        "tsukumogami": 3,
+        "rokurokubi": 5
+      },
+      "strengths": [
+        "Makes any gathering better",
+        "Reads who needs looking after",
+        "Improvisational and unbothered"
+      ],
+      "watchOut": "The fun version can be used to avoid the real conversation. Have it, once."
+    },
+    {
+      "trait": "tsukumogami",
+      "name": "Tsukumogami",
+      "tagline": "The object that's been here longer than you",
+      "blurb": "You are quietly accumulated history. You keep the ticket, the note, the mug from a job you left. Objects aren't clutter to you, they're evidence. You're also more resilient than anyone expects, because you've already survived several versions of your own life.",
+      "accent": "orange",
+      "mix": {
+        "kitsune": 9,
+        "tengu": 10,
+        "kappa": 9,
+        "oni": 13,
+        "yukionna": 7,
+        "tanuki": 3,
+        "tsukumogami": 36,
+        "rokurokubi": 13
+      },
+      "strengths": [
+        "Deep continuity and memory",
+        "Finds meaning in small things",
+        "Patient through long, slow change"
+      ],
+      "watchOut": "Not everything has to be kept. Let one thing go and see if you miss it."
+    },
+    {
+      "trait": "rokurokubi",
+      "name": "Rokurokubi",
+      "tagline": "Body here, attention somewhere else",
+      "blurb": "You are physically present and mentally three streets away. Your curiosity stretches further than the room allows, which makes you excellent company and a slightly unreliable dinner guest. You notice things nobody meant you to notice, and you file them away.",
+      "accent": "blue",
+      "mix": {
+        "kitsune": 9,
+        "tengu": 10,
+        "kappa": 11,
+        "oni": 9,
+        "yukionna": 13,
+        "tanuki": 3,
+        "tsukumogami": 9,
+        "rokurokubi": 36
+      },
+      "strengths": [
+        "Sees around corners",
+        "Genuinely interested in everything",
+        "Comfortable being the odd one out"
+      ],
+      "watchOut": "Curiosity isn't consent. Not everything that's visible is yours to examine."
+    }
+  ]
+}

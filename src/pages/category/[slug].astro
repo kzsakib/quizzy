@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import QuizCard from "../../components/QuizCard.astro";
+import { categories, type Category } from "../../lib/quizzes";
+import { siteHref } from "../../lib/url";
+
+export function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+interface Props {
+  category: Category;
+}
+
+const { category } = Astro.props as Props;
+---
+
+<BaseLayout
+  title={`${category.name} quizzes — Quizzy`}
+  description={`Every ${category.name.toLowerCase()} quiz on Quizzy. ${category.count} quiz${category.count === 1 ? "" : "zes"}, no accounts, no waiting.`}
+  accent={category.accent}
+>
+  <section class="container-page pt-2">
+    <a href={siteHref("/#categories")} class="label text-[var(--ink-muted)] hover:text-ink"
+      >← All categories</a
+    >
+
+    <div class="mt-8 flex flex-wrap items-end justify-between gap-6">
+      <h1 class="display text-[clamp(46px,9vw,110px)] leading-[0.86]">
+        {category.name}
+      </h1>
+      <p class="label text-[var(--ink-muted)]">
+        {category.count} quiz{category.count === 1 ? "" : "zes"} · 3 min each
+      </p>
+    </div>
+
+    <div class="mt-10 grid gap-[var(--bento-gap)] sm:grid-cols-2 lg:grid-cols-3">
+      {
+        category.quizzes.map((quiz) => (
+          <div data-reveal class="h-full">
+            <QuizCard quiz={quiz} class="h-full" />
+          </div>
+        ))
+      }
+    </div>
+
+    <p class="label mt-12 text-[var(--ink-muted)]">
+      Want a different flavour? <a href={siteHref("/#categories")} class="underline">Back to all categories</a>
+    </p>
+  </section>
+</BaseLayout>

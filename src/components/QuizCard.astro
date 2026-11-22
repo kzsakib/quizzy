@@ -1,0 +1,76 @@
+---
+import type { Quiz } from "../lib/scoring";
+import { onAccentInk } from "../lib/accents";
+import { siteHref } from "../lib/url";
+
+interface Props {
+  quiz: Quiz;
+  /** `wide` fills the big bento cell. */
+  wide?: boolean;
+  class?: string;
+}
+
+const { quiz, wide = false, class: className = "" } = Astro.props;
+const questionCount = quiz.questions.length;
+---
+
+<article
+  class:list={[
+    "group relative isolate flex flex-col overflow-hidden rounded-[var(--r-tile)] border border-line/80 bg-surface transition-transform duration-300 hover:-translate-y-1",
+    className,
+  ]}
+>
+  <div
+    class:list={[
+      "relative flex flex-col justify-between overflow-hidden bg-[var(--tile-accent)] p-5 text-[var(--tile-ink)]",
+      wide ? "min-h-[220px]" : "min-h-[150px]",
+    ]}
+    style={`--tile-accent: var(--accent-${quiz.accent}); --tile-ink: ${onAccentInk(quiz.accent)}`}
+  >
+    <span
+      aria-hidden="true"
+      class="absolute -right-6 -top-8 text-[120px] leading-none opacity-20 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
+      >{quiz.emoji}</span
+    >
+    <p class="label relative opacity-70">{quiz.category}</p>
+    <p
+      class:list={[
+        "display relative mt-8 text-balance",
+        wide ? "text-[clamp(30px,4vw,46px)]" : "text-[clamp(24px,3vw,32px)]",
+      ]}
+    >
+      {quiz.title}
+    </p>
+  </div>
+
+  <div class="flex flex-1 items-end justify-between gap-4 p-5">
+    <div>
+      <p class="text-sm leading-snug text-[var(--ink-soft)]">{quiz.dek}</p>
+      <p class="label mt-3 text-[var(--ink-muted)]">
+        {questionCount} questions · {quiz.minutes} min
+      </p>
+    </div>
+    <span
+      aria-hidden="true"
+      class="grid size-9 shrink-0 place-items-center rounded-full bg-ink text-ink-dark transition-transform duration-300 group-hover:rotate-45"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        class="size-4"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path d="M7 17 17 7M9 7h8v8"></path></svg
+      >
+    </span>
+  </div>
+
+  <a
+    href={siteHref(`/quiz/${quiz.slug}/`)}
+    class="absolute inset-0 rounded-[var(--r-tile)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+  >
+    <span class="sr-only">Take the {quiz.title} quiz</span>
+  </a>
+</article>

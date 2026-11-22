@@ -1,0 +1,507 @@
+{
+  "slug": "bookshop-ten-minutes",
+  "title": "The bookshop closes in ten minutes",
+  "dek": "Twelve questions about how you actually read — what you finish, what you abandon and what you buy to feel like a different person.",
+  "category": "Books",
+  "accent": "lime",
+  "emoji": "📚",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The bookshop closes in ten minutes. You came in for one specific book.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Find it, then browse the same shelf for forty minutes",
+          "weights": {
+            "margin": 2,
+            "tbr": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Buy it plus two others you'll start tonight",
+          "weights": {
+            "tbr": 2,
+            "slow": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Check if the library has it first",
+          "weights": {
+            "library": 2,
+            "slow": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave with something else entirely",
+          "weights": {
+            "abandon": 2,
+            "reread": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "There's a book on your shelf with a bookmark at page 58. It's been there since March.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Restart it. Properly this time",
+          "weights": {
+            "slow": 2,
+            "reread": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Pick up exactly where you stopped",
+          "weights": {
+            "margin": 2,
+            "tbr": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Give it away. It had its chance",
+          "weights": {
+            "abandon": 2,
+            "library": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Read the ending to see if it's worth it",
+          "weights": {
+            "spoiler": 2,
+            "audio": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "One reading superpower:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Finish every book you start",
+          "weights": {
+            "slow": 2,
+            "tbr": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Remember everything perfectly",
+          "weights": {
+            "margin": 2,
+            "spoiler": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "A book you abandon says more about you than one you finish.",
+      "disagree": {
+        "trait": "slow"
+      },
+      "agree": {
+        "trait": "abandon"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I have bought a book because of how it looked on the table.",
+      "trait": "tbr",
+      "low": "Never",
+      "high": "It's a hobby"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "Someone tells you the ending of the book you're halfway through.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Pretend you already knew",
+          "weights": {
+            "spoiler": 2,
+            "margin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask them to keep going, ruin it properly",
+          "weights": {
+            "audio": 2,
+            "abandon": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Never speak to them again (until Thursday)",
+          "weights": {
+            "reread": 2,
+            "library": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Finish it tonight out of spite",
+          "weights": {
+            "slow": 2,
+            "tbr": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "Listening counts as reading.",
+      "agree": {
+        "trait": "audio",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "margin",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "Your ideal reading spot is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A chair with good light and a pen nearby",
+          "weights": {
+            "margin": 2,
+            "slow": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A train, headphones, one chapter per stop",
+          "weights": {
+            "audio": 2,
+            "library": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A library table with strangers breathing",
+          "weights": {
+            "library": 2,
+            "margin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The same chair you read it in the first time",
+          "weights": {
+            "reread": 2,
+            "slow": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "The library has one copy and fourteen people waiting.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Join the queue. Be patient",
+          "weights": {
+            "library": 2,
+            "slow": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Buy it. You'll reread it anyway",
+          "weights": {
+            "reread": 2,
+            "tbr": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Find a copy online, read the first page, decide",
+          "weights": {
+            "spoiler": 2,
+            "abandon": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Audiobook. Sixteen hours, two walks",
+          "weights": {
+            "audio": 2,
+            "library": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I write in the margins.",
+      "trait": "margin",
+      "low": "Never. It's sacred",
+      "high": "In pen, with arrows"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "The film should be watched before the book.",
+      "disagree": {
+        "trait": "slow"
+      },
+      "agree": {
+        "trait": "spoiler"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "A friend asks for a book recommendation.",
+      "options": [
+        {
+          "id": "a",
+          "label": "The one you've given to five people",
+          "weights": {
+            "reread": 2,
+            "margin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Whatever's on your bedside pile",
+          "weights": {
+            "tbr": 2,
+            "abandon": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Ask what they liked last, then think",
+          "weights": {
+            "library": 2,
+            "margin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Send the audiobook link",
+          "weights": {
+            "audio": 2,
+            "slow": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "margin",
+      "name": "The Margin Scribbler",
+      "tagline": "In pen, with arrows",
+      "blurb": "A book isn't finished until it's been argued with. You underline, you disagree in the margin and you fold the corner of the page that made you stop. Lending you a book is an act of trust and a request for a response.",
+      "accent": "yellow",
+      "mix": {
+        "margin": 38,
+        "tbr": 14,
+        "abandon": 4,
+        "reread": 8,
+        "spoiler": 17,
+        "audio": 0,
+        "library": 8,
+        "slow": 11
+      },
+      "strengths": [
+        "Reads actively, not passively",
+        "Remembers the exact line",
+        "Turns reading into a conversation"
+      ],
+      "watchOut": "Not every thought needs to be recorded. Read one chapter without a pen."
+    },
+    {
+      "trait": "tbr",
+      "name": "The TBR Hoarder",
+      "tagline": "Buys faster than reads",
+      "blurb": "Your pile is a personality and a promise. Buying the book feels like starting it, which is why there are eleven on the floor and one in your bag. You are not behind. You are provisioned.",
+      "accent": "sky",
+      "mix": {
+        "margin": 16,
+        "tbr": 40,
+        "abandon": 9,
+        "reread": 8,
+        "spoiler": 4,
+        "audio": 0,
+        "library": 0,
+        "slow": 23
+      },
+      "strengths": [
+        "Genuine, wide-ranging curiosity",
+        "Always has something to lend",
+        "Optimistic about their own time"
+      ],
+      "watchOut": "The pile is not a to-do list. Read the one you keep picking up."
+    },
+    {
+      "trait": "abandon",
+      "name": "The Abandoner",
+      "tagline": "Page 60, no guilt",
+      "blurb": "You give a book a fair chance and then you stop. Life is short, the shelf is long, and finishing something you dislike isn't loyalty — it's a chore. People call it quitting. You call it editing.",
+      "accent": "red",
+      "mix": {
+        "margin": 10,
+        "tbr": 17,
+        "abandon": 36,
+        "reread": 4,
+        "spoiler": 12,
+        "audio": 7,
+        "library": 4,
+        "slow": 10
+      },
+      "strengths": [
+        "Decisive about their own time",
+        "No sunk-cost nonsense",
+        "Reads more good books than most"
+      ],
+      "watchOut": "Some books only work after page 100. Give one of them a second night."
+    },
+    {
+      "trait": "reread",
+      "name": "The Rereader",
+      "tagline": "Knows how it ends, goes again",
+      "blurb": "You have a comfort book and you have read it enough times to notice the author's small mistakes. New books are a risk; this one is a conversation with someone you already trust. You're not stuck. You're visiting.",
+      "accent": "pink",
+      "mix": {
+        "margin": 9,
+        "tbr": 14,
+        "abandon": 12,
+        "reread": 38,
+        "spoiler": 4,
+        "audio": 0,
+        "library": 4,
+        "slow": 19
+      },
+      "strengths": [
+        "Deep attention to one thing",
+        "Finds new meaning in old pages",
+        "Loyal in a way people feel"
+      ],
+      "watchOut": "Comfort is a great holiday and a bad address. Try one new book this month."
+    },
+    {
+      "trait": "spoiler",
+      "name": "The Spoiler First",
+      "tagline": "Reads the last page",
+      "blurb": "You check the ending before you commit, because being surprised is not the same as being satisfied. You want to know the book can carry the weight before you give it a week. People gasp when you admit this. You remain unbothered.",
+      "accent": "green",
+      "mix": {
+        "margin": 25,
+        "tbr": 12,
+        "abandon": 8,
+        "reread": 8,
+        "spoiler": 38,
+        "audio": 4,
+        "library": 0,
+        "slow": 5
+      },
+      "strengths": [
+        "Makes confident choices",
+        "Reads for craft, not shock",
+        "Impossible to spoil"
+      ],
+      "watchOut": "Some surprises are worth protecting. Let one book surprise you."
+    },
+    {
+      "trait": "audio",
+      "name": "The Audiobook Convert",
+      "tagline": "Two walks, sixteen hours",
+      "blurb": "You read while walking, cooking and pretending to listen to someone. Your library is narrated by people you now think of as friends. You will tell anyone who'll listen that it absolutely counts, because it absolutely does.",
+      "accent": "orange",
+      "mix": {
+        "margin": 10,
+        "tbr": 14,
+        "abandon": 8,
+        "reread": 0,
+        "spoiler": 12,
+        "audio": 36,
+        "library": 7,
+        "slow": 13
+      },
+      "strengths": [
+        "Fits reading into a real life",
+        "Great at recommending narrators",
+        "Multitasks without losing the plot"
+      ],
+      "watchOut": "Some sentences need to be looked at. Read one chapter with your eyes."
+    },
+    {
+      "trait": "library",
+      "name": "The Library Loyalist",
+      "tagline": "Fourteen people waiting",
+      "blurb": "You will wait eleven weeks rather than buy the hardback. The library is not a fallback, it's the whole system, and you have opinions about the reservation queue. You've read more than anyone and spent almost nothing.",
+      "accent": "cyan",
+      "mix": {
+        "margin": 11,
+        "tbr": 12,
+        "abandon": 12,
+        "reread": 8,
+        "spoiler": 4,
+        "audio": 0,
+        "library": 37,
+        "slow": 16
+      },
+      "strengths": [
+        "Patient and resourceful",
+        "Reads widely at no cost",
+        "Supports the thing that matters"
+      ],
+      "watchOut": "The wait is also a way of not deciding. Treat yourself to the new one."
+    },
+    {
+      "trait": "slow",
+      "name": "The Slow Reader",
+      "tagline": "One book, properly",
+      "blurb": "You read one book at a time, slowly, and you finish it. No pile, no pressure, no annual target. It takes you three weeks and you remember all of it, which is more than the people bragging about fifty books can say.",
+      "accent": "blue",
+      "mix": {
+        "margin": 13,
+        "tbr": 23,
+        "abandon": 0,
+        "reread": 4,
+        "spoiler": 0,
+        "audio": 8,
+        "library": 9,
+        "slow": 43
+      },
+      "strengths": [
+        "Deep, unhurried attention",
+        "Actually remembers what they read",
+        "Immune to reading challenges"
+      ],
+      "watchOut": "Slow is fine. Stopped is different. Pick it up tonight, just one page."
+    }
+  ]
+}

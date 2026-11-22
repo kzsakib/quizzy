@@ -1,0 +1,309 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import QuizCard from "../components/QuizCard.astro";
+import {
+  categories,
+  featuredQuiz,
+  quizzes,
+  trendingQuizzes,
+} from "../lib/quizzes";
+import { siteHref } from "../lib/url";
+
+const heroQuiz = featuredQuiz ?? quizzes[0];
+const trending = trendingQuizzes.length ? trendingQuizzes : quizzes.slice(0, 3);
+const fresh = quizzes.slice(0, 6);
+
+const rowOne = [
+  "Self-diagnosis, but fun",
+  "Answer honestly, coward",
+  "Be judged by a website",
+  "Finally, some answers",
+];
+const rowTwo = [
+  "No sign-up, no newsletter, no follow-up",
+  "Your result will start an argument",
+  "Twelve questions, no refunds",
+  "We're not therapists, we're just nosy",
+];
+---
+
+<BaseLayout>
+  <!-- Hero ---------------------------------------------------------- -->
+  <section class="relative overflow-hidden pt-4">
+    <p class="sr-only">
+      Quizzy — personality quizzes about sitcom group chats, Hogwarts houses,
+      album eras, and whatever followed you home.
+    </p>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        {
+          [0, 1].map(() => (
+            <span class="marquee__group">
+              {rowOne.map((word) => (
+                <span class="display flex items-center gap-[0.3em] text-[clamp(38px,7vw,92px)] leading-none text-[var(--ink-strong)]">
+                  {word}
+                  <span class="text-yellow">☺</span>
+                </span>
+              ))}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+
+    <div
+      class="marquee marquee--reverse mt-2 border-y border-line/60 py-2"
+      aria-hidden="true"
+    >
+      <div class="marquee__track">
+        {
+          [0, 1].map(() => (
+            <span class="marquee__group">
+              {rowTwo.map((word) => (
+                <span class="label flex items-center gap-3 text-[var(--ink-muted)]">
+                  {word}
+                  <span class="text-[13px] text-orange">✷</span>
+                </span>
+              ))}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="container-page relative mt-10 sm:mt-14">
+      <p class="label text-[var(--ink-muted)]" data-reveal>
+        {quizzes.length} quizzes · {categories.length} categories · 0 accounts
+      </p>
+
+      <h1
+        class="display mt-5 max-w-[16ch] text-[clamp(48px,9vw,124px)] leading-[0.86]"
+        data-reveal
+      >
+        Every question.
+        <span class="relative inline-block">
+          <span class="relative z-10 serif-italic font-normal normal-case tracking-normal"
+            >A whole</span
+          >
+          <svg
+            viewBox="0 0 320 120"
+            class="pointer-events-none absolute -inset-x-4 -inset-y-3 z-0 h-[calc(100%+24px)] w-[calc(100%+32px)] overflow-visible"
+            aria-hidden="true"
+            fill="none"
+          >
+            <path
+              class="scribble"
+              d="M28 78C22 44 78 18 156 14c72-4 142 18 148 48 6 32-46 48-118 44C104 102 34 96 28 78Z"
+              stroke="var(--accent-yellow)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </span>
+        personality.
+      </h1>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
+        <p class="max-w-md text-[15px] leading-relaxed text-[var(--ink-soft)]" data-reveal>
+          Pick a quiz, answer everything on one page, and we'll tell you something
+          about yourself you'll either screenshot or argue with. Scroll back and
+          change any answer before you submit. No sign-up, no newsletter.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-3 md:justify-end" data-reveal>
+          <a
+            href={siteHref(`/quiz/${heroQuiz.slug}/`)}
+            class="label inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink px-5 py-3.5 text-ink-dark transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Start the {heroQuiz.category.toLowerCase()} quiz
+            <svg
+              viewBox="0 0 24 24"
+              class="size-3.5"
+              aria-hidden="true"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ><path d="M5 12h14M13 6l6 6-6 6"></path></svg
+            >
+          </a>
+          <a
+            href="#categories"
+            class="label inline-flex items-center gap-2 rounded-[var(--r-pill)] border border-line px-5 py-3.5 text-[var(--ink-strong)] transition-colors hover:border-ink/40 hover:text-ink"
+            >Browse categories</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories ---------------------------------------------------- -->
+  <section
+    id="categories"
+    class="container-page mt-20 scroll-mt-24 sm:mt-28"
+    aria-labelledby="categories-heading"
+  >
+    <div
+      class="flex items-baseline justify-between gap-4 border-b border-line pb-4"
+    >
+      <h2 id="categories-heading" class="label text-[var(--ink-muted)]">Categories</h2>
+      <p class="label text-[var(--ink-muted)]">Start wherever you like</p>
+    </div>
+
+    <div
+      class="mt-6 grid auto-rows-[150px] grid-cols-2 gap-[var(--bento-gap)] sm:grid-cols-3 lg:grid-cols-4"
+    >
+      {
+        categories.map((category, index) => (
+          <a
+            href={siteHref(`/category/${category.slug}/`)}
+            class:list={[
+              "group relative flex flex-col justify-between overflow-hidden rounded-[var(--r-tile)] p-5 text-ink-dark transition-transform duration-300 hover:-translate-y-1",
+              index === 0 ? "col-span-2 row-span-2" : "",
+              index === categories.length - 1 ? "col-span-2 sm:col-span-1" : "",
+            ]}
+            style={`--tile-accent: var(--accent-${category.accent})`}
+            data-reveal
+          >
+            <span
+              class="absolute inset-0 -z-10"
+              style="background: var(--tile-accent)"
+              aria-hidden="true"
+            />
+            <span
+              class="absolute -right-5 -top-6 text-[110px] leading-none opacity-25 transition-transform duration-500 group-hover:rotate-12"
+              aria-hidden="true">{category.emoji}</span
+            >
+            <span class="label relative">{category.count} quiz{category.count === 1 ? "" : "zes"}</span>
+            <span class="relative mt-6 flex items-end justify-between gap-3">
+              <span
+                class:list={[
+                  "display leading-[0.9]",
+                  index === 0
+                    ? "text-[clamp(44px,6vw,84px)]"
+                    : "text-[clamp(24px,3vw,34px)]",
+                ]}
+              >
+                {category.name}
+              </span>
+              <span
+                aria-hidden="true"
+                class="grid size-8 shrink-0 place-items-center rounded-full bg-ink-dark text-ink transition-transform duration-300 group-hover:rotate-45"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  class="size-3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  ><path d="M7 17 17 7M9 7h8v8" /></svg
+                >
+              </span>
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Trending ------------------------------------------------------ -->
+  <section
+    id="trending"
+    class="container-page mt-20 scroll-mt-24 sm:mt-28"
+    aria-labelledby="trending-heading"
+  >
+    <div
+      class="flex items-baseline justify-between gap-4 border-b border-line pb-4"
+    >
+      <h2 id="trending-heading" class="label text-[var(--ink-muted)]">Trending now</h2>
+      <p class="label text-[var(--ink-muted)]">Everyone is arguing about these</p>
+    </div>
+
+    <div class="mt-6 grid gap-[var(--bento-gap)] lg:grid-cols-3">
+      {
+        trending.slice(0, 3).map((quiz, index) => (
+          <div
+            class:list={[index === 0 ? "lg:col-span-2" : "", "h-full"]}
+            data-reveal
+          >
+            <QuizCard quiz={quiz} wide={index === 0} class="h-full" />
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Fresh today --------------------------------------------------- -->
+  <section
+    id="fresh"
+    class="mt-20 scroll-mt-24 sm:mt-28"
+    aria-labelledby="fresh-heading"
+  >
+    <div class="container-page">
+      <div
+        class="flex items-baseline justify-between gap-4 border-b border-line pb-4"
+      >
+        <h2 id="fresh-heading" class="label text-[var(--ink-muted)]">Fresh today</h2>
+        <p class="label text-[var(--ink-muted)]">Newest first · swipe sideways</p>
+      </div>
+    </div>
+
+    <div
+      class="scroll-x mt-6 flex snap-x snap-mandatory gap-[var(--bento-gap)] overflow-x-auto pb-4 pl-[var(--gutter)] pr-[var(--gutter)]"
+      data-lenis-prevent
+    >
+      {
+        fresh.map((quiz) => (
+          <div
+            class="w-[78vw] shrink-0 snap-start sm:w-[340px]"
+            data-reveal
+          >
+            <QuizCard quiz={quiz} class="h-full" />
+          </div>
+        ))
+      }
+      <div class="w-[8vw] shrink-0" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- Closing strip ------------------------------------------------- -->
+  <section class="container-page mt-20 sm:mt-28">
+    <div
+      class="relative overflow-hidden rounded-[var(--r-tile)] border border-line bg-surface p-8 sm:p-12"
+      data-reveal
+    >
+      <span
+        aria-hidden="true"
+        class="absolute -bottom-10 -right-2 select-none font-display text-[200px] leading-none text-ink/5"
+        >☺</span
+      >
+      <p class="label text-[var(--ink-muted)]">No spoilers</p>
+      <p
+        class="display mt-4 max-w-[18ch] text-[clamp(32px,5vw,62px)] leading-[0.92]"
+      >
+        Answer honestly. Or don't, and see what happens.
+      </p>
+      <a
+        href={siteHref(`/quiz/${quizzes[quizzes.length - 1].slug}/`)}
+        class="label mt-8 inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink px-5 py-3.5 text-ink-dark transition-transform duration-200 hover:-translate-y-0.5"
+      >
+        Take a quiz
+        <svg
+          viewBox="0 0 24 24"
+          class="size-3.5"
+          aria-hidden="true"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><path d="M5 12h14M13 6l6 6-6 6"></path></svg
+        >
+      </a>
+    </div>
+  </section>
+</BaseLayout>

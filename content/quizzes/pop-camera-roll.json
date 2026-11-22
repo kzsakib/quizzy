@@ -1,0 +1,516 @@
+{
+  "slug": "pop-camera-roll",
+  "title": "What your camera roll says about you",
+  "dek": "Twelve questions about the photos you keep, delete and never send. Find out which 2020s aesthetic your gallery is actually living in.",
+  "category": "Pop Culture",
+  "accent": "pink",
+  "emoji": "✨",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your camera roll's most recent screenshot is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A price you're pretending not to know",
+          "weights": {
+            "mcbling": 2,
+            "y2k": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A post you'll never share",
+          "weights": {
+            "brat": 2,
+            "screenshots": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A recipe you'll never cook",
+          "weights": {
+            "food": 2,
+            "cottage": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A workout you'll do tomorrow",
+          "weights": {
+            "gym": 2,
+            "academia": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "You're at a party and the host has vanished. The music is still on.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Take over the playlist",
+          "weights": {
+            "y2k": 2,
+            "brat": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Find the host. Something's wrong",
+          "weights": {
+            "cottage": 2,
+            "food": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Start a group photo, someone will edit it",
+          "weights": {
+            "mcbling": 2,
+            "y2k": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave. This was the exit window",
+          "weights": {
+            "academia": 2,
+            "screenshots": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "image",
+      "prompt": "Pick the party you'd actually stay at.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Glossy, loud, everyone dressed up",
+          "weights": {
+            "mcbling": 2,
+            "y2k": 1
+          },
+          "image": "/images/questions/pop-party-glossy.jpg",
+          "alt": "A warmly lit restaurant interior set for a party"
+        },
+        {
+          "id": "b",
+          "label": "A library after hours",
+          "weights": {
+            "academia": 2,
+            "cottage": 1
+          },
+          "image": "/images/questions/pop-party-library.jpg",
+          "alt": "A grand library reading room"
+        },
+        {
+          "id": "c",
+          "label": "Neon basement, terrible speakers",
+          "weights": {
+            "brat": 2,
+            "y2k": 1
+          },
+          "image": "/images/questions/pop-party-neon.jpg",
+          "alt": "A dark room lit by neon signs"
+        },
+        {
+          "id": "d",
+          "label": "A picnic with too much food",
+          "weights": {
+            "food": 2,
+            "cottage": 1
+          },
+          "image": "/images/questions/pop-party-picnic.jpg",
+          "alt": "A picnic blanket with baskets in a park"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "If it wasn't posted, did it happen?",
+      "disagree": {
+        "trait": "cottage"
+      },
+      "agree": {
+        "trait": "y2k"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I take a photo of the food before anyone eats.",
+      "trait": "food",
+      "low": "Eat it hot",
+      "high": "The table waits"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "A friend asks you to delete a photo of them from 2019.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Deleted. Already gone",
+          "weights": {
+            "cottage": 2,
+            "screenshots": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "There's a backup. Obviously",
+          "weights": {
+            "gym": 2,
+            "brat": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Only if they delete one of you",
+          "weights": {
+            "y2k": 2,
+            "mcbling": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You'll crop them out and keep it",
+          "weights": {
+            "academia": 2,
+            "brat": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "Aesthetic is a valid life strategy.",
+      "agree": {
+        "trait": "mcbling",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "gym",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "this_or_that",
+      "prompt": "Better photo:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Golden hour, blurry, joyful",
+          "weights": {
+            "cottage": 2,
+            "y2k": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Flash on, unflattering, iconic",
+          "weights": {
+            "brat": 2,
+            "mcbling": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "Someone tags you in an old photo. The lighting is a crime.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Untag, immediately, no discussion",
+          "weights": {
+            "mcbling": 2,
+            "academia": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Reply with a worse one of them",
+          "weights": {
+            "brat": 2,
+            "screenshots": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Save it. That was a good year",
+          "weights": {
+            "cottage": 2,
+            "food": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Study it for signs of who you are now",
+          "weights": {
+            "academia": 2,
+            "screenshots": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "My camera roll is 60% screenshots of things I'll never read.",
+      "trait": "screenshots",
+      "low": "All photos",
+      "high": "It's a library"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A house with no books is not a home.",
+      "disagree": {
+        "trait": "y2k"
+      },
+      "agree": {
+        "trait": "academia"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Your storage is full and the phone is choosing violence.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Delete four hundred photos in one sitting",
+          "weights": {
+            "cottage": 2,
+            "academia": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Buy more storage. Problem solved",
+          "weights": {
+            "mcbling": 2,
+            "y2k": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Start a second account for the overflow",
+          "weights": {
+            "brat": 2,
+            "screenshots": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Take more. Something will work",
+          "weights": {
+            "food": 2,
+            "gym": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "y2k",
+      "name": "Y2K",
+      "tagline": "Flash on, world off",
+      "blurb": "Your camera roll is a night out: flash, motion blur, three good ones and forty you'd never post. You photograph the fun rather than the view. The aesthetic is accidental because you were busy actually being there, which is the most enviable thing about it.",
+      "accent": "yellow",
+      "mix": {
+        "y2k": 41,
+        "brat": 3,
+        "cottage": 6,
+        "mcbling": 26,
+        "academia": 3,
+        "gym": 0,
+        "food": 9,
+        "screenshots": 12
+      },
+      "strengths": [
+        "Finds the fun before the photo",
+        "Unafraid of looking silly",
+        "Turns a Tuesday into an occasion"
+      ],
+      "watchOut": "Not every memory needs a witness. Put the phone down for one hour of it."
+    },
+    {
+      "trait": "brat",
+      "name": "Brat Summer",
+      "tagline": "Deliberately unflattering, deeply iconic",
+      "blurb": "You've stopped curating. The blurry photo, the undone hair, the terrible angle — posted anyway, because the bit is better than the beauty. You're allergic to trying too hard and you've made not-trying into a whole visual language.",
+      "accent": "sky",
+      "mix": {
+        "y2k": 15,
+        "brat": 36,
+        "cottage": 3,
+        "mcbling": 3,
+        "academia": 3,
+        "gym": 10,
+        "food": 8,
+        "screenshots": 22
+      },
+      "strengths": [
+        "Immune to the cringe response",
+        "Makes other people relax",
+        "Excellent comic timing"
+      ],
+      "watchOut": "The joke version of you can become the only version people get. Let one sincere photo through."
+    },
+    {
+      "trait": "cottage",
+      "name": "Cottagecore",
+      "tagline": "Soft light, sourdough, no notifications",
+      "blurb": "Your camera roll is a quieter world: light through a window, a mug, a walk, a cat you met. You document the calm because you're actively building it. People think it's an aesthetic. It's actually a coping strategy that happens to look lovely.",
+      "accent": "red",
+      "mix": {
+        "y2k": 7,
+        "brat": 0,
+        "cottage": 41,
+        "mcbling": 0,
+        "academia": 14,
+        "gym": 0,
+        "food": 22,
+        "screenshots": 16
+      },
+      "strengths": [
+        "Notices small beautiful things",
+        "Builds rest on purpose",
+        "Makes ordinary life feel worth keeping"
+      ],
+      "watchOut": "The calm can become avoidance. Answer the difficult message before the walk."
+    },
+    {
+      "trait": "mcbling",
+      "name": "McBling",
+      "tagline": "Glossy, loud, unapologetically extra",
+      "blurb": "Your photos are an event. Good lighting, better outfit, a caption you thought about for longer than you'd admit. You like things shiny and you've decided that's not a character flaw. The confidence is real, and it lifts the room.",
+      "accent": "lime",
+      "mix": {
+        "y2k": 26,
+        "brat": 7,
+        "cottage": 3,
+        "mcbling": 38,
+        "academia": 6,
+        "gym": 0,
+        "food": 9,
+        "screenshots": 11
+      },
+      "strengths": [
+        "Brings glamour to ordinary plans",
+        "Knows what looks good and why",
+        "Celebrates without apology"
+      ],
+      "watchOut": "If the photo is the point, the memory gets thin. Keep one night unrecorded."
+    },
+    {
+      "trait": "academia",
+      "name": "Dark Academia",
+      "tagline": "Moody light, annotations, one good coat",
+      "blurb": "You photograph buildings, books, rain and the corner of a coffee cup with a pen in frame. Your camera roll is a mood board for a life you're still building. You're not pretentious — you're just genuinely more interested in the atmosphere than the event.",
+      "accent": "green",
+      "mix": {
+        "y2k": 6,
+        "brat": 3,
+        "cottage": 16,
+        "mcbling": 0,
+        "academia": 37,
+        "gym": 11,
+        "food": 9,
+        "screenshots": 18
+      },
+      "strengths": [
+        "Sees composition everywhere",
+        "Takes ideas seriously",
+        "Turns ordinary days into narrative"
+      ],
+      "watchOut": "Living it beats styling it. Go to the thing without planning the shot."
+    },
+    {
+      "trait": "gym",
+      "name": "Gym Mirror",
+      "tagline": "Progress photos, no context",
+      "blurb": "Your roll is full of angles, splits, plates and screenshots of programmes. You measure things because measuring works for you. The discipline is genuine, though the mirror selfies suggest you also enjoy being witnessed being disciplined.",
+      "accent": "orange",
+      "mix": {
+        "y2k": 16,
+        "brat": 6,
+        "cottage": 7,
+        "mcbling": 9,
+        "academia": 8,
+        "gym": 32,
+        "food": 12,
+        "screenshots": 10
+      },
+      "strengths": [
+        "Consistency when motivation dies",
+        "Treats the body as a project, kindly",
+        "Quietly competitive in a useful way"
+      ],
+      "watchOut": "Not everything is a metric. Take a photo you'll like in ten years."
+    },
+    {
+      "trait": "food",
+      "name": "Food Diary",
+      "tagline": "Every meal, lovingly documented",
+      "blurb": "Your gallery is mostly plates. You photograph what you're about to eat, the table, the menu, the place you'll bring someone next time. Food is how you mark time and how you say you care. The photos are terrible in low light and you post them anyway.",
+      "accent": "cyan",
+      "mix": {
+        "y2k": 9,
+        "brat": 0,
+        "cottage": 30,
+        "mcbling": 0,
+        "academia": 3,
+        "gym": 5,
+        "food": 38,
+        "screenshots": 15
+      },
+      "strengths": [
+        "Finds joy in small daily rituals",
+        "Feeds people, literally",
+        "Remembers places by what they served"
+      ],
+      "watchOut": "Eat it while it's hot. The photo can wait and often shouldn't be taken."
+    },
+    {
+      "trait": "screenshots",
+      "name": "Screenshot Archive",
+      "tagline": "Evidence, receipts and things to read later",
+      "blurb": "Your camera roll is an archive: tweets, articles, messages, a to-do list you photographed in a hurry. You save things because saving feels like doing. Somewhere in there is the exact thing you need, and you'll find it in eighteen months.",
+      "accent": "blue",
+      "mix": {
+        "y2k": 12,
+        "brat": 18,
+        "cottage": 13,
+        "mcbling": 5,
+        "academia": 9,
+        "gym": 0,
+        "food": 8,
+        "screenshots": 35
+      },
+      "strengths": [
+        "Catches what everyone else forgets",
+        "Pattern-spots across time",
+        "Great at the follow-up receipt"
+      ],
+      "watchOut": "A screenshot is not an action. Pick three and actually do them."
+    }
+  ]
+}

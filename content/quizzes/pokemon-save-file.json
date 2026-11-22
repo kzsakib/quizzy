@@ -1,0 +1,482 @@
+{
+  "slug": "pokemon-save-file",
+  "title": "What your Pokémon save file says about you",
+  "dek": "Not your favourite Pokémon — your habits. Twelve questions about starters, PC boxes and type charts, and the kind of trainer you actually are.",
+  "category": "Gaming",
+  "accent": "blue",
+  "emoji": "🎮",
+  "minutes": 5,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q9",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Professor's lab. Three starters on the table, and your cousin has already grabbed the one you wanted.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Take the remaining one and pretend it was the plan",
+          "weights": {
+            "nostalgia": 2,
+            "solo": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask if there are more in the back",
+          "weights": {
+            "dex": 2,
+            "breeder": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Pick the one nobody ever picks",
+          "weights": {
+            "cute": 2,
+            "nuzlocke": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Take the one with the best stats, obviously",
+          "weights": {
+            "type": 2,
+            "speed": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Route 1. Tall grass. Your first wild encounter is a small brown bird.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Catch it. It's tradition",
+          "weights": {
+            "nostalgia": 2,
+            "dex": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Check its nature before deciding",
+          "weights": {
+            "breeder": 2,
+            "type": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Run. You have places to be",
+          "weights": {
+            "speed": 2,
+            "solo": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Catch six and name them after food",
+          "weights": {
+            "cute": 2,
+            "dex": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The game gives you one cheat:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Infinite rare candy",
+          "weights": {
+            "solo": 2,
+            "speed": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Every Pokémon is catchable",
+          "weights": {
+            "dex": 2,
+            "breeder": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "I'd rather win with my favourites than lose with the best team.",
+      "disagree": {
+        "trait": "type"
+      },
+      "agree": {
+        "trait": "cute"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I skip the dialogue and then wonder what happened.",
+      "trait": "speed",
+      "low": "I read everything",
+      "high": "Cutscene? Never heard of her"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "Your rival appears. You are eleven levels under and out of potions.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Fight anyway. Pride is a strategy",
+          "weights": {
+            "solo": 2,
+            "nuzlocke": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Go back and grind for an hour",
+          "weights": {
+            "type": 2,
+            "dex": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Use the one move that shouldn't work",
+          "weights": {
+            "speed": 2,
+            "solo": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Lose on purpose to see the alternate dialogue",
+          "weights": {
+            "nostalgia": 2,
+            "breeder": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "Naming a Pokémon makes it harder to trade away.",
+      "agree": {
+        "trait": "cute",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "type",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "Your PC box, at the end of the game, looks like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "One perfect team and forty untrained friends",
+          "weights": {
+            "solo": 2,
+            "nostalgia": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Sorted by type, then by level",
+          "weights": {
+            "type": 2,
+            "dex": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Named, costumed, all small and round",
+          "weights": {
+            "cute": 2,
+            "breeder": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Six eggs and a spreadsheet",
+          "weights": {
+            "breeder": 2,
+            "type": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "There's a rumour about a rare Pokémon behind the power plant.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Go now, under-levelled",
+          "weights": {
+            "nuzlocke": 2,
+            "solo": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Look up the encounter rate first",
+          "weights": {
+            "type": 2,
+            "dex": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Bring thirty of the right ball",
+          "weights": {
+            "dex": 2,
+            "breeder": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Not worth it. You have a save from 2003",
+          "weights": {
+            "nostalgia": 2,
+            "cute": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I have opinions about how other people play.",
+      "trait": "type",
+      "low": "Play how you like",
+      "high": "I've explained EVs at a party"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A game you can't lose isn't a game.",
+      "disagree": {
+        "trait": "cute"
+      },
+      "agree": {
+        "trait": "nuzlocke"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "agreement",
+      "prompt": "I've restarted a save because the starter's nature was wrong.",
+      "agree": {
+        "trait": "breeder",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "nostalgia",
+        "weight": 2
+      }
+    }
+  ],
+  "results": [
+    {
+      "trait": "solo",
+      "name": "The Solo Run",
+      "tagline": "One starter, zero backup plans",
+      "blurb": "You picked one and poured everything into it. The rest of the team is decorative, under-levelled and quietly resentful. It works, mostly, and you'd rather lose your way than win somebody else's.",
+      "accent": "yellow",
+      "mix": {
+        "solo": 35,
+        "dex": 0,
+        "cute": 5,
+        "type": 8,
+        "nuzlocke": 23,
+        "breeder": 0,
+        "speed": 19,
+        "nostalgia": 10
+      },
+      "strengths": [
+        "Total commitment to one thing",
+        "Unafraid of being under-levelled",
+        "Wins in ways that shouldn't work"
+      ],
+      "watchOut": "The one thing can't cover every gym. Let somebody else take a turn."
+    },
+    {
+      "trait": "dex",
+      "name": "The Dex Filler",
+      "tagline": "If it exists, it goes in the box",
+      "blurb": "You are not playing a game, you are completing a collection. The route is a checklist, the box is alphabetised and a 1% encounter rate is a personal invitation. Your patience is genuinely frightening.",
+      "accent": "sky",
+      "mix": {
+        "solo": 0,
+        "dex": 40,
+        "cute": 6,
+        "type": 17,
+        "nuzlocke": 7,
+        "breeder": 12,
+        "speed": 11,
+        "nostalgia": 7
+      },
+      "strengths": [
+        "Completes what other people abandon",
+        "Notices what's missing",
+        "Endless, quiet persistence"
+      ],
+      "watchOut": "The last ten entries are never worth the weekend. Go outside with the console."
+    },
+    {
+      "trait": "cute",
+      "name": "The Cute-Only Trainer",
+      "tagline": "A team of small round things",
+      "blurb": "You build a team with your heart and then defend it in arguments. Stats matter less than the way the thing blinks. Your favourites are objectively not the strongest and you have never once cared.",
+      "accent": "red",
+      "mix": {
+        "solo": 16,
+        "dex": 4,
+        "cute": 37,
+        "type": 6,
+        "nuzlocke": 12,
+        "breeder": 4,
+        "speed": 14,
+        "nostalgia": 7
+      },
+      "strengths": [
+        "Loyal to what you love",
+        "Immune to tier lists",
+        "Makes the game fun for everyone nearby"
+      ],
+      "watchOut": "Affection is not a type advantage. Carry one sensible Pokémon."
+    },
+    {
+      "trait": "type",
+      "name": "The Type Matchup Nerd",
+      "tagline": "Has a chart in their head and opinions",
+      "blurb": "You know what's coming before the gym leader does. Your team has coverage, your moves have purpose and your friends ask you what to use against the ghost gym. You are right, and you'd like everyone to notice.",
+      "accent": "lime",
+      "mix": {
+        "solo": 9,
+        "dex": 14,
+        "cute": 3,
+        "type": 41,
+        "nuzlocke": 7,
+        "breeder": 8,
+        "speed": 18,
+        "nostalgia": 0
+      },
+      "strengths": [
+        "Prepares better than anyone",
+        "Explains without being asked",
+        "Turns a hard fight into a maths problem"
+      ],
+      "watchOut": "Not every conversation needs a matchup. Sometimes just say 'nice team'."
+    },
+    {
+      "trait": "nuzlocke",
+      "name": "The Nuzlocke Masochist",
+      "tagline": "Rules make it real",
+      "blurb": "You added a rule the game didn't ask for and now it means something. One catch per route, faint means gone, and you will absolutely restart from the beginning. The stakes are fake and the grief is not.",
+      "accent": "pink",
+      "mix": {
+        "solo": 26,
+        "dex": 4,
+        "cute": 8,
+        "type": 7,
+        "nuzlocke": 34,
+        "breeder": 0,
+        "speed": 12,
+        "nostalgia": 9
+      },
+      "strengths": [
+        "Creates meaning on purpose",
+        "Handles loss without quitting",
+        "Better stories than anyone else"
+      ],
+      "watchOut": "Not everything in your life needs hard mode. Let one thing be easy."
+    },
+    {
+      "trait": "breeder",
+      "name": "The Egg Hatcher",
+      "tagline": "Natures, IVs, patience",
+      "blurb": "You have spent an evening walking in a circle for a stat. Nobody sees the spreadsheet, the rejected eggs or the twelve hours of preparation — they just see the finished team. You call it optimisation. Everyone else calls it a second job.",
+      "accent": "green",
+      "mix": {
+        "solo": 0,
+        "dex": 24,
+        "cute": 5,
+        "type": 12,
+        "nuzlocke": 6,
+        "breeder": 36,
+        "speed": 10,
+        "nostalgia": 7
+      },
+      "strengths": [
+        "Does the invisible work",
+        "Extraordinary patience",
+        "Results nobody can argue with"
+      ],
+      "watchOut": "The perfect one is already good enough. Ship it before the game ends."
+    },
+    {
+      "trait": "speed",
+      "name": "The Cutscene Skipper",
+      "tagline": "The story is a loading screen",
+      "blurb": "You're here for the battles. Dialogue gets mashed through, the villain's plan is a rumour and you have somehow reached the eighth gym under-levelled and confused. You still got there first.",
+      "accent": "orange",
+      "mix": {
+        "solo": 27,
+        "dex": 0,
+        "cute": 5,
+        "type": 12,
+        "nuzlocke": 18,
+        "breeder": 0,
+        "speed": 35,
+        "nostalgia": 3
+      },
+      "strengths": [
+        "Moves fast and commits",
+        "Improvises when the plan is missing",
+        "Gets to the good part"
+      ],
+      "watchOut": "The bit you skipped is usually the reason the ending works. Read one cutscene."
+    },
+    {
+      "trait": "nostalgia",
+      "name": "The Gen-One Purist",
+      "tagline": "It peaked in 1998 and you can prove it",
+      "blurb": "You've bought the same game four times. Your favourite route is the one you know by heart, your team is the same six and you will explain the original sprite art to anyone who makes eye contact. It isn't nostalgia, you say. It's taste.",
+      "accent": "cyan",
+      "mix": {
+        "solo": 20,
+        "dex": 4,
+        "cute": 8,
+        "type": 8,
+        "nuzlocke": 6,
+        "breeder": 4,
+        "speed": 13,
+        "nostalgia": 37
+      },
+      "strengths": [
+        "Deep, unironic love for a thing",
+        "Keeps the good stuff alive",
+        "Knows exactly what made it work"
+      ],
+      "watchOut": "New things can be good too. Try one without comparing it for an hour."
+    }
+  ]
+}

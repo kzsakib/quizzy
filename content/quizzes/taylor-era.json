@@ -1,0 +1,516 @@
+{
+  "slug": "taylor-era",
+  "title": "The Taylor Swift era your year is stuck in",
+  "dek": "Forget favourite singles. Twelve questions about how you are actually living right now, and which era it sounds like.",
+  "category": "Music",
+  "accent": "red",
+  "emoji": "🧣",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your album is being written whether you like it or not. Track one opens with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A door closing in another city",
+          "weights": {
+            "1989": 2,
+            "reputation": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A kitchen radio, someone humming",
+          "weights": {
+            "folklore": 2,
+            "lover": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A countdown and a crowd",
+          "weights": {
+            "reputation": 2,
+            "red": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A voicemail you didn't delete",
+          "weights": {
+            "fearless": 2,
+            "debut": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "One week in a cabin with no signal. The bag you packed contains:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A notebook and three pens",
+          "weights": {
+            "folklore": 2,
+            "midnights": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Six outfits for no reason",
+          "weights": {
+            "1989": 2,
+            "lover": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Every charger you own",
+          "weights": {
+            "midnights": 2,
+            "debut": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nothing useful and a disposable camera",
+          "weights": {
+            "red": 2,
+            "fearless": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The bridge of your year sounds like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A crowd singing it back",
+          "weights": {
+            "1989": 2,
+            "fearless": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "One voice, close, no instruments",
+          "weights": {
+            "folklore": 2,
+            "red": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "You can be nostalgic for a time you didn't enjoy.",
+      "disagree": {
+        "trait": "reputation"
+      },
+      "agree": {
+        "trait": "fearless"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I check who watched my story and build a theory.",
+      "trait": "midnights",
+      "low": "I don't look",
+      "high": "I have a spreadsheet"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "Your ex posts a photo in a place you recommended. Alone.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Post something better from somewhere better",
+          "weights": {
+            "1989": 1,
+            "reputation": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "Send it to the group chat. Say nothing",
+          "weights": {
+            "1989": 2,
+            "red": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Genuinely hope they had a nice time",
+          "weights": {
+            "lover": 2,
+            "fearless": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Log off and write two verses about it",
+          "weights": {
+            "folklore": 2,
+            "midnights": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "Revenge is a creative act.",
+      "agree": {
+        "trait": "reputation",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "lover",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "image",
+      "prompt": "Pick the room you'd write it in.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A cabin with one window and bad signal",
+          "weights": {
+            "folklore": 2,
+            "midnights": 1
+          },
+          "image": "/images/questions/taylor-room-cabin.jpg",
+          "alt": "A wooden cabin room with a window"
+        },
+        {
+          "id": "b",
+          "label": "A city flat above a noisy street",
+          "weights": {
+            "1989": 2,
+            "reputation": 1
+          },
+          "image": "/images/questions/taylor-room-city.jpg",
+          "alt": "A city apartment window overlooking buildings"
+        },
+        {
+          "id": "c",
+          "label": "A diner booth at closing time",
+          "weights": {
+            "red": 2,
+            "debut": 1
+          },
+          "image": "/images/questions/taylor-room-diner.jpg",
+          "alt": "A retro American diner interior"
+        },
+        {
+          "id": "d",
+          "label": "A studio with the lights low",
+          "weights": {
+            "midnights": 2,
+            "lover": 1
+          },
+          "image": "/images/questions/taylor-room-studio.jpg",
+          "alt": "A recording studio interior with warm lighting"
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "A friend asks for brutal honesty about their new relationship.",
+      "options": [
+        {
+          "id": "a",
+          "label": "You've already drafted this feedback",
+          "weights": {
+            "1989": 2,
+            "reputation": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Kind first, accurate second",
+          "weights": {
+            "lover": 2,
+            "fearless": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Tell them a story that answers it",
+          "weights": {
+            "folklore": 2,
+            "red": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Say it plainly, once",
+          "weights": {
+            "1989": 1,
+            "midnights": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I feel everything at full volume.",
+      "trait": "red",
+      "low": "Even-keeled",
+      "high": "Cinematic"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "The version of you at nineteen deserves an apology.",
+      "disagree": {
+        "trait": "1989"
+      },
+      "agree": {
+        "trait": "folklore"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "You get exactly what you wanted. First reaction:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Worry about keeping it",
+          "weights": {
+            "midnights": 2,
+            "reputation": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Cry a bit, then celebrate properly",
+          "weights": {
+            "fearless": 2,
+            "debut": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "One perfect photo",
+          "weights": {
+            "1989": 2,
+            "lover": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Sit with it quietly",
+          "weights": {
+            "folklore": 2,
+            "midnights": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "debut",
+      "name": "Debut",
+      "tagline": "Small town, big list of people to prove wrong",
+      "blurb": "You're at the start and it's obvious to everyone but you. Everything is very earnest, slightly too loud, and completely sincere. You write things down, you practise, you still say yes to everything. This is the part you'll be nostalgic for later without warning.",
+      "accent": "yellow",
+      "mix": {
+        "1989": 12,
+        "debut": 32,
+        "fearless": 19,
+        "red": 12,
+        "reputation": 12,
+        "lover": 0,
+        "folklore": 2,
+        "midnights": 11
+      },
+      "strengths": [
+        "Unembarrassed enthusiasm",
+        "Hustle before it's cool",
+        "Says the honest, unpolished thing"
+      ],
+      "watchOut": "You don't have to prove anything to the people who already left. Keep going anyway."
+    },
+    {
+      "trait": "fearless",
+      "name": "Fearless",
+      "tagline": "Hopeful, in a way that costs something",
+      "blurb": "You keep opening the door even though you know how it went last time. Not naive — deliberately hopeful. You'd rather get excited and be wrong than stay guarded and be safe, which is either the bravest thing about you or the most expensive.",
+      "accent": "sky",
+      "mix": {
+        "1989": 6,
+        "debut": 17,
+        "fearless": 34,
+        "red": 13,
+        "reputation": 0,
+        "lover": 14,
+        "folklore": 6,
+        "midnights": 10
+      },
+      "strengths": [
+        "Says the big feeling first",
+        "Recovers from disappointment fast",
+        "Makes other people braver by going first"
+      ],
+      "watchOut": "Optimism needs receipts too. Notice what the pattern is telling you."
+    },
+    {
+      "trait": "red",
+      "name": "Red",
+      "tagline": "Everything at maximum volume",
+      "blurb": "This is a loud year. The highs are ridiculous, the lows are theatrical, and you're not apologising for either. You feel things in primary colours and you write them down. It's exhausting to be near and it is also the most alive you've been in ages.",
+      "accent": "lime",
+      "mix": {
+        "1989": 7,
+        "debut": 9,
+        "fearless": 8,
+        "red": 37,
+        "reputation": 14,
+        "lover": 0,
+        "folklore": 12,
+        "midnights": 13
+      },
+      "strengths": [
+        "Feels things completely",
+        "Turns pain into something useful",
+        "No emotional half-measures"
+      ],
+      "watchOut": "Not every feeling needs a public release date. Let one thing settle first."
+    },
+    {
+      "trait": "1989",
+      "name": "1989",
+      "tagline": "New city, new haircut, same brain",
+      "blurb": "You've moved. Not necessarily geographically — the version of you that cared what they thought has been retired. You're making sharp decisions, taking photos, and being slightly unbearable about a new city. It's working.",
+      "accent": "pink",
+      "mix": {
+        "1989": 44,
+        "debut": 0,
+        "fearless": 9,
+        "red": 13,
+        "reputation": 16,
+        "lover": 9,
+        "folklore": 0,
+        "midnights": 9
+      },
+      "strengths": [
+        "Reinvents without mourning the old self",
+        "Light on your feet socially",
+        "Turns a fresh start into actual momentum"
+      ],
+      "watchOut": "The old feelings came with you. The new city isn't a cure, it's a backdrop."
+    },
+    {
+      "trait": "reputation",
+      "name": "Reputation",
+      "tagline": "Outlived the story they told about you",
+      "blurb": "You've been misread, and instead of correcting every version you built something they can't ignore. You're less available, more selective, and quietly enjoying the fact that the people who wrote you off are watching. It's not revenge. It's receipts.",
+      "accent": "green",
+      "mix": {
+        "1989": 20,
+        "debut": 0,
+        "fearless": 4,
+        "red": 12,
+        "reputation": 40,
+        "lover": 0,
+        "folklore": 7,
+        "midnights": 17
+      },
+      "strengths": [
+        "Turns being underestimated into fuel",
+        "Protects the inner circle fiercely",
+        "Comfortable being disliked"
+      ],
+      "watchOut": "A reputation is a wall as well as a weapon. Leave a door unlocked."
+    },
+    {
+      "trait": "lover",
+      "name": "Lover",
+      "tagline": "Soft on purpose, not by accident",
+      "blurb": "You're in a generous phase. You've decided that being warm is braver than being cool, and you're going around saying nice things and meaning them. There's still teeth underneath, but you're choosing to lead with the good stuff and it's changing your week.",
+      "accent": "orange",
+      "mix": {
+        "1989": 16,
+        "debut": 0,
+        "fearless": 15,
+        "red": 9,
+        "reputation": 3,
+        "lover": 37,
+        "folklore": 7,
+        "midnights": 13
+      },
+      "strengths": [
+        "Makes people feel chosen",
+        "Leads with warmth, not irony",
+        "Says 'I love you' without a joke attached"
+      ],
+      "watchOut": "Softness isn't sameness. You're allowed to disagree with people you adore."
+    },
+    {
+      "trait": "folklore",
+      "name": "Folklore",
+      "tagline": "Inside, in the rain, writing it all down",
+      "blurb": "You've gone quiet and inward. Not sad exactly — observant. You're collecting stories about other people, walking the long way, and finding that the fictional version of your life is easier to look at. This is the most honest you've been in a while.",
+      "accent": "cyan",
+      "mix": {
+        "1989": 0,
+        "debut": 0,
+        "fearless": 5,
+        "red": 17,
+        "reputation": 4,
+        "lover": 5,
+        "folklore": 46,
+        "midnights": 23
+      },
+      "strengths": [
+        "Sees the story underneath the event",
+        "Comfortable with slow, interior time",
+        "Turns observation into something beautiful"
+      ],
+      "watchOut": "The cabin is comfortable. Open a window before the year ends."
+    },
+    {
+      "trait": "midnights",
+      "name": "Midnights",
+      "tagline": "Awake at 3am with the full archive",
+      "blurb": "Everything happens in your head between midnight and four. You replay conversations, rewrite them better, and arrive at conclusions you'll forget by breakfast. You're not indecisive — you're thorough, at the worst possible hour, about things that are already over.",
+      "accent": "blue",
+      "mix": {
+        "1989": 14,
+        "debut": 10,
+        "fearless": 8,
+        "red": 9,
+        "reputation": 10,
+        "lover": 4,
+        "folklore": 7,
+        "midnights": 38
+      },
+      "strengths": [
+        "Reads a situation from every angle",
+        "Finds the truth in the small hours",
+        "Excellent at the honest 2am conversation"
+      ],
+      "watchOut": "3am is a bad editor. Write it down, decide at noon."
+    }
+  ]
+}

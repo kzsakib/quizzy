@@ -1,0 +1,508 @@
+{
+  "slug": "kdrama-role",
+  "title": "The K-drama role you'd be cast in (not the lead)",
+  "dek": "Second lead, chaebol heir or amnesia plot device? Twelve questions about tropes, timing and one shared umbrella.",
+  "category": "K-Drama",
+  "accent": "pink",
+  "emoji": "🌂",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Episode 14. The leads are finally happy. You know what that means.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Someone's about to get a nosebleed",
+          "weights": {
+            "amnesia": 2,
+            "noble": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A truck is idling outside",
+          "weights": {
+            "childhood": 2,
+            "secondlead": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The company is about to collapse",
+          "weights": {
+            "chaebol": 2,
+            "product": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The second lead is at the door",
+          "weights": {
+            "secondlead": 2,
+            "rival": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The contract marriage has one rule: nobody falls in love.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Add a clause about shared breakfast",
+          "weights": {
+            "chaebol": 2,
+            "childhood": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Move out. It's the sensible option",
+          "weights": {
+            "noble": 2,
+            "bestfriend": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Start a rumour to protect them",
+          "weights": {
+            "product": 2,
+            "rival": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Break the rule immediately",
+          "weights": {
+            "noble": 2,
+            "secondlead": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "One K-drama trope happens to you tomorrow:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A stranger shields you with their umbrella",
+          "weights": {
+            "childhood": 2,
+            "secondlead": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You inherit a company you can't run",
+          "weights": {
+            "chaebol": 2,
+            "product": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "The second lead is always the better person.",
+      "disagree": {
+        "trait": "rival"
+      },
+      "agree": {
+        "trait": "secondlead"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I cry at the airport scene, every time.",
+      "trait": "bestfriend",
+      "low": "I'm made of stone",
+      "high": "I've paused it to sob"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "The couple has their first fight in public. Everyone in the café is watching.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Refill your coffee and observe",
+          "weights": {
+            "bestfriend": 2,
+            "rival": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Intervene with a tray of drinks",
+          "weights": {
+            "product": 2,
+            "chaebol": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Leave. This is their scene",
+          "weights": {
+            "rival": 2,
+            "noble": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Film it, for the group chat",
+          "weights": {
+            "product": 2,
+            "bestfriend": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "A grand gesture is worth a public apology.",
+      "agree": {
+        "trait": "chaebol",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "noble",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "You're cast as a character whose only job is to:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Look devastated in a nice coat",
+          "weights": {
+            "secondlead": 2,
+            "rival": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Be inexplicably rich",
+          "weights": {
+            "chaebol": 2,
+            "product": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Remember something at episode 15",
+          "weights": {
+            "amnesia": 2,
+            "childhood": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Support the lead, quietly, forever",
+          "weights": {
+            "bestfriend": 2,
+            "noble": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "The chaebol's mother has invited you to lunch. Alone.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Wear the outfit that costs more than the lunch",
+          "weights": {
+            "rival": 2,
+            "chaebol": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Bring a gift and mention your family",
+          "weights": {
+            "childhood": 2,
+            "noble": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Take the meeting. Take notes",
+          "weights": {
+            "product": 2,
+            "bestfriend": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Say you're busy and let them speculate",
+          "weights": {
+            "noble": 2,
+            "amnesia": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I have a cousin I've met once and remember fondly.",
+      "trait": "childhood",
+      "low": "Barely",
+      "high": "We have a shared song"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A happy ending is a boring ending.",
+      "disagree": {
+        "trait": "product"
+      },
+      "agree": {
+        "trait": "secondlead"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The writer asks how you'd like to leave the story.",
+      "options": [
+        {
+          "id": "a",
+          "label": "On a train, with a voiceover",
+          "weights": {
+            "amnesia": 2,
+            "noble": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Running the company, smiling thinly",
+          "weights": {
+            "chaebol": 2,
+            "rival": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "In the background, holding the bag",
+          "weights": {
+            "bestfriend": 2,
+            "secondlead": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Two years later, umbrella scene",
+          "weights": {
+            "childhood": 2,
+            "secondlead": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "secondlead",
+      "name": "The Second Lead",
+      "tagline": "Too good, too late",
+      "blurb": "You are the one everyone roots for and the plot never rewards. Kind, patient, better-looking in the rain — and somehow always arriving after the other person has already been chosen. You'd be bitter if you weren't so annoyingly gracious about it.",
+      "accent": "yellow",
+      "mix": {
+        "secondlead": 38,
+        "chaebol": 3,
+        "childhood": 12,
+        "bestfriend": 20,
+        "product": 0,
+        "amnesia": 0,
+        "noble": 8,
+        "rival": 19
+      },
+      "strengths": [
+        "Loyal past the point of sense",
+        "Handles losing with grace",
+        "The one people actually remember"
+      ],
+      "watchOut": "Waiting to be chosen is not a personality. Say it first, for once."
+    },
+    {
+      "trait": "chaebol",
+      "name": "The Chaebol Heir",
+      "tagline": "Arrives in a black car",
+      "blurb": "You have presence, a driver and absolutely no idea how a dishwasher works. Your generosity is genuine but arrives with strings attached and a tailored coat. People assume you're cold; really you've just never had to explain yourself.",
+      "accent": "sky",
+      "mix": {
+        "secondlead": 7,
+        "chaebol": 38,
+        "childhood": 10,
+        "bestfriend": 9,
+        "product": 21,
+        "amnesia": 0,
+        "noble": 0,
+        "rival": 15
+      },
+      "strengths": [
+        "Takes charge of a room",
+        "Generous when it counts",
+        "Unfazed by other people's drama"
+      ],
+      "watchOut": "Money solves the logistics, not the conversation. Stay for the talking part."
+    },
+    {
+      "trait": "childhood",
+      "name": "The Childhood Connection",
+      "tagline": "One umbrella, ten years",
+      "blurb": "You remember the exact bench, the exact song and the exact weather. Your affection is built on a shared history nobody else has access to, which is either deeply romantic or slightly unfair depending on the day. You keep the receipts. Literally.",
+      "accent": "red",
+      "mix": {
+        "secondlead": 17,
+        "chaebol": 5,
+        "childhood": 38,
+        "bestfriend": 14,
+        "product": 3,
+        "amnesia": 11,
+        "noble": 4,
+        "rival": 8
+      },
+      "strengths": [
+        "Remembers everything that mattered",
+        "Fiercely loyal to the original version",
+        "Turns small moments into lore"
+      ],
+      "watchOut": "People change. Meet the person in front of you, not the one at fifteen."
+    },
+    {
+      "trait": "bestfriend",
+      "name": "The Best Friend",
+      "tagline": "Comic relief, secret heart",
+      "blurb": "You're the one holding the bag, making the joke and watching the couple be happy. Your timing is perfect and your own feelings get about eleven minutes of screen time. Everyone leans on you and very few ask how you are.",
+      "accent": "lime",
+      "mix": {
+        "secondlead": 13,
+        "chaebol": 0,
+        "childhood": 12,
+        "bestfriend": 35,
+        "product": 9,
+        "amnesia": 10,
+        "noble": 14,
+        "rival": 7
+      },
+      "strengths": [
+        "Makes hard moments bearable",
+        "Reads the room before anyone speaks",
+        "Loyal without needing credit"
+      ],
+      "watchOut": "The supportive role is a choice. Ask for a scene of your own."
+    },
+    {
+      "trait": "product",
+      "name": "The Product Placement",
+      "tagline": "Always holding the coffee",
+      "blurb": "You're somehow in every scene, holding a branded drink, saying one useful line. You keep the plot moving and you never get the credit. In real life you're the friend who books the table, brings the charger and knows a guy.",
+      "accent": "green",
+      "mix": {
+        "secondlead": 3,
+        "chaebol": 19,
+        "childhood": 7,
+        "bestfriend": 12,
+        "product": 37,
+        "amnesia": 11,
+        "noble": 4,
+        "rival": 7
+      },
+      "strengths": [
+        "Indispensable in practice",
+        "Finds the practical solution",
+        "Connects people who need each other"
+      ],
+      "watchOut": "You're allowed to be the story, not the prop. Take the close-up."
+    },
+    {
+      "trait": "amnesia",
+      "name": "The Amnesiac",
+      "tagline": "Forgets the plot, keeps the coat",
+      "blurb": "You have lost track of the timeline and you're dressed too well to be questioned about it. Your life runs on vibes, coincidence and the kindness of people who remember things for you. It's chaos, but it's charismatic chaos.",
+      "accent": "orange",
+      "mix": {
+        "secondlead": 9,
+        "chaebol": 5,
+        "childhood": 16,
+        "bestfriend": 13,
+        "product": 3,
+        "amnesia": 34,
+        "noble": 13,
+        "rival": 7
+      },
+      "strengths": [
+        "Lives comfortably in the present",
+        "Adaptable when everything changes",
+        "Unbothered by continuity errors"
+      ],
+      "watchOut": "Other people are keeping the whole story. Write something down."
+    },
+    {
+      "trait": "noble",
+      "name": "The Noble Idiot",
+      "tagline": "Breaks own heart for reasons",
+      "blurb": "You will sacrifice the thing you want for a reason that makes sense only to you. You call it protecting them. Everyone else calls it a horrible decision made with excellent posture. Your love language is a brave, unnecessary goodbye.",
+      "accent": "cyan",
+      "mix": {
+        "secondlead": 9,
+        "chaebol": 0,
+        "childhood": 10,
+        "bestfriend": 15,
+        "product": 3,
+        "amnesia": 22,
+        "noble": 32,
+        "rival": 9
+      },
+      "strengths": [
+        "Puts people before yourself",
+        "Keeps their word under pressure",
+        "Makes the painful choice look easy"
+      ],
+      "watchOut": "Ask them what they want before you nobly decide for them."
+    },
+    {
+      "trait": "rival",
+      "name": "The Rival",
+      "tagline": "Sharp, stylish, unnecessary",
+      "blurb": "You arrive with better clothes and a pointed comment, and the plot gets interesting. Your competitiveness is mostly affection in a difficult font. You would absolutely help them win, and you would absolutely make them ask first.",
+      "accent": "blue",
+      "mix": {
+        "secondlead": 20,
+        "chaebol": 8,
+        "childhood": 12,
+        "bestfriend": 9,
+        "product": 10,
+        "amnesia": 0,
+        "noble": 4,
+        "rival": 37
+      },
+      "strengths": [
+        "Raises the standard by existing",
+        "Honest when it's inconvenient",
+        "Makes everyone try harder"
+      ],
+      "watchOut": "The sharp line lands harder than you think. Be kind once, unambiguously."
+    }
+  ]
+}

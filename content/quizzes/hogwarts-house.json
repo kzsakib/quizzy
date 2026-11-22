@@ -1,0 +1,384 @@
+{
+  "slug": "hogwarts-house",
+  "title": "Hogwarts after curfew",
+  "dek": "The staircases have moved, the prefects are asleep and you are still up. Twelve questions to sort you into the house you would actually survive in.",
+  "category": "Fandom",
+  "accent": "purple",
+  "emoji": "🪄",
+  "minutes": 4,
+  "featured": true,
+  "trending": true,
+  "published": "2026-11-14",
+  "tiebreaker": "q9",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The Sorting Hat doesn't ask what you want. It asks what you're afraid of, and waits.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Being bored for the rest of my life",
+          "weights": {
+            "ravenclaw": 2,
+            "gryffindor": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Finding out I was never actually needed",
+          "weights": {
+            "hufflepuff": 2,
+            "slytherin": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Being seen exactly as I am",
+          "weights": {
+            "slytherin": 2,
+            "ravenclaw": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Not saying the thing when it mattered",
+          "weights": {
+            "gryffindor": 2,
+            "hufflepuff": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Third year. The staircase drops you on a floor with no portraits and one door.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Try the door. That's what doors are for",
+          "weights": {
+            "gryffindor": 2,
+            "slytherin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Wait for the staircase to swing back",
+          "weights": {
+            "ravenclaw": 2,
+            "hufflepuff": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Find the kitchen. Someone there will know",
+          "weights": {
+            "hufflepuff": 2,
+            "slytherin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Follow the draft. Drafts mean exits",
+          "weights": {
+            "slytherin": 2,
+            "ravenclaw": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "A portrait offers one true thing about you, but only if you say something you've never said out loud.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Say it. You want the answer",
+          "weights": {
+            "slytherin": 2,
+            "gryffindor": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Walk away. Some things stay mine",
+          "weights": {
+            "hufflepuff": 2,
+            "ravenclaw": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "Breaking a rule quietly takes more nerve than arguing with it in public.",
+      "disagree": {
+        "trait": "gryffindor"
+      },
+      "agree": {
+        "trait": "slytherin"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I rehearse conversations before they happen.",
+      "trait": "ravenclaw",
+      "low": "I wing it, always have",
+      "high": "I've had this argument twice already"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "A first-year has been hexing door handles. You're a prefect, and you know exactly who it is.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Take points, say nothing, watch",
+          "weights": {
+            "slytherin": 2,
+            "ravenclaw": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Sit them down and ask why",
+          "weights": {
+            "hufflepuff": 2,
+            "gryffindor": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Teach them a better target",
+          "weights": {
+            "gryffindor": 2,
+            "slytherin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Write it up properly and hand it in",
+          "weights": {
+            "ravenclaw": 2,
+            "hufflepuff": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "Being underestimated is an advantage.",
+      "agree": {
+        "trait": "slytherin",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "gryffindor",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "image",
+      "prompt": "Pick the staircase you'd take at 3am.",
+      "helper": "No right answer. The castle disagrees with all of them.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Narrow wood, one handrail, no windows",
+          "weights": {
+            "hufflepuff": 2,
+            "gryffindor": 1
+          },
+          "image": "/images/questions/hogwarts-stairs-narrow.jpg",
+          "alt": "A narrow wooden staircase winding up between old walls"
+        },
+        {
+          "id": "b",
+          "label": "Spiral stone, cold to the touch",
+          "weights": {
+            "ravenclaw": 2,
+            "slytherin": 1
+          },
+          "image": "/images/questions/hogwarts-stairs-spiral.jpg",
+          "alt": "A stone spiral staircase seen from below"
+        },
+        {
+          "id": "c",
+          "label": "Broad stone steps, every footstep an announcement",
+          "weights": {
+            "gryffindor": 2,
+            "hufflepuff": 1
+          },
+          "image": "/images/questions/hogwarts-stairs-stone.jpg",
+          "alt": "Broad stone steps in a historic building"
+        },
+        {
+          "id": "d",
+          "label": "Worn wood, creaks in the middle",
+          "weights": {
+            "slytherin": 2,
+            "ravenclaw": 1
+          },
+          "image": "/images/questions/hogwarts-stairs-wood.jpg",
+          "alt": "A worn wooden staircase with a carved handrail"
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "The common room fire is down to embers and nobody's moving.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Get more wood. Obviously",
+          "weights": {
+            "hufflepuff": 2,
+            "gryffindor": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Stay until it's properly out",
+          "weights": {
+            "ravenclaw": 2,
+            "hufflepuff": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Announce you're going to bed, then don't",
+          "weights": {
+            "gryffindor": 2,
+            "slytherin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Wait for someone else to get up",
+          "weights": {
+            "slytherin": 2,
+            "ravenclaw": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I know who to ask for a favour and exactly when to ask.",
+      "trait": "slytherin",
+      "low": "I'd rather struggle quietly",
+      "high": "There's a list, and it's numbered"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A house is just a room with better branding.",
+      "disagree": {
+        "trait": "hufflepuff"
+      },
+      "agree": {
+        "trait": "slytherin"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "agreement",
+      "prompt": "I've pretended to be busy to avoid someone I actually like.",
+      "agree": {
+        "trait": "slytherin",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "gryffindor",
+        "weight": 2
+      }
+    }
+  ],
+  "results": [
+    {
+      "trait": "gryffindor",
+      "name": "Gryffindor",
+      "tagline": "Goes first, thinks second, apologises third",
+      "blurb": "You are the person who moves before the fear has finished arriving. Not because you're fearless — you're not, and everyone knows it — but because standing still feels worse. You'd rather be wrong loudly than safe quietly, and you have a talent for making other people braver just by going first.",
+      "accent": "yellow",
+      "mix": {
+        "gryffindor": 57,
+        "slytherin": 20,
+        "ravenclaw": 11,
+        "hufflepuff": 12
+      },
+      "strengths": [
+        "Starts the thing nobody else will",
+        "Absorbs panic and hands back momentum",
+        "Says the difficult sentence out loud"
+      ],
+      "watchOut": "Bravery without a plan is just a story you'll have to explain later. Take one of them with you."
+    },
+    {
+      "trait": "slytherin",
+      "name": "Slytherin",
+      "tagline": "Three moves ahead, one face on",
+      "blurb": "You read rooms the way other people read weather. You know who's bluffing, who's persuadable and which door is worth walking through, and you don't waste energy proving it. Ambition isn't a flaw — it's just the only thing you're honest about.",
+      "accent": "sky",
+      "mix": {
+        "gryffindor": 4,
+        "slytherin": 64,
+        "ravenclaw": 32,
+        "hufflepuff": 0
+      },
+      "strengths": [
+        "Turns a disadvantage into leverage",
+        "Keeps a secret for decades",
+        "Loyal — to a very short list"
+      ],
+      "watchOut": "Everyone can tell they're on the outside. Invite one of them in on purpose."
+    },
+    {
+      "trait": "ravenclaw",
+      "name": "Ravenclaw",
+      "tagline": "Has read the manual and disagrees with it",
+      "blurb": "You want the mechanism, not the summary. You'll take something apart to see why it works, then put it back better and be mildly annoyed that nobody asked. Curiosity is your social life, your hobby and occasionally your excuse for being late.",
+      "accent": "red",
+      "mix": {
+        "gryffindor": 7,
+        "slytherin": 13,
+        "ravenclaw": 56,
+        "hufflepuff": 24
+      },
+      "strengths": [
+        "Finds the angle nobody considered",
+        "Comfortable being the least sure person in the room",
+        "Learns fast and teaches better"
+      ],
+      "watchOut": "Understanding something is not the same as doing it. Ship the imperfect version."
+    },
+    {
+      "trait": "hufflepuff",
+      "name": "Hufflepuff",
+      "tagline": "Shows up, again and again, without applause",
+      "blurb": "You are the reason things actually happen. Not the speech, not the headline — the chair stacking, the reminder text, the person who notices someone has gone quiet. You value fairness because you've watched what happens when nobody bothers.",
+      "accent": "lime",
+      "mix": {
+        "gryffindor": 14,
+        "slytherin": 14,
+        "ravenclaw": 14,
+        "hufflepuff": 58
+      },
+      "strengths": [
+        "Reliable in a way people plan around",
+        "Defuses conflict before it names itself",
+        "Remembers the small thing you mentioned once"
+      ],
+      "watchOut": "Being dependable is not the same as being fine. Ask for something this week."
+    }
+  ]
+}

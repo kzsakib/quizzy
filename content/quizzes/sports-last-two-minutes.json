@@ -1,0 +1,486 @@
+{
+  "slug": "sports-last-two-minutes",
+  "title": "The last two minutes: which athlete are you",
+  "dek": "Score tied, clock running, everyone looking at each other. Twelve questions about what you do when it is actually on the line.",
+  "category": "Sports",
+  "accent": "green",
+  "emoji": "🏟️",
+  "minutes": 5,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Two minutes left, down by one, and the coach looks at the bench. Your hand is already up.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Give me the ball",
+          "weights": {
+            "serena": 2,
+            "jordan": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Put me in to set someone else up",
+          "weights": {
+            "messi": 2,
+            "brady": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Change the play. This one's dead",
+          "weights": {
+            "biles": 2,
+            "ali": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "One sentence to calm them down",
+          "weights": {
+            "ali": 2,
+            "brady": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "You're in the tunnel before a final. The person next to you is being sick from nerves.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hand on the shoulder. Say nothing",
+          "weights": {
+            "marta": 2,
+            "ali": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Tell them they're about to have the best game of their life",
+          "weights": {
+            "ali": 2,
+            "serena": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Go through the plan again, quietly",
+          "weights": {
+            "brady": 2,
+            "messi": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave them to it. Focus is private",
+          "weights": {
+            "jordan": 2,
+            "serena": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "image",
+      "prompt": "Pick your arena.",
+      "helper": "Not the nicest one. The one you'd compete in.",
+      "options": [
+        {
+          "id": "a",
+          "label": "An empty track at sunrise",
+          "weights": {
+            "serena": 2,
+            "biles": 1
+          },
+          "image": "/images/questions/sport-place-track.jpg",
+          "alt": "Runners on a track at a stadium"
+        },
+        {
+          "id": "b",
+          "label": "A court with the crowd right on top of it",
+          "weights": {
+            "jordan": 2,
+            "serena": 1
+          },
+          "image": "/images/questions/sport-place-court.jpg",
+          "alt": "Players on an indoor basketball court"
+        },
+        {
+          "id": "c",
+          "label": "A pitch, wide open, no shelter",
+          "weights": {
+            "messi": 2,
+            "marta": 1
+          },
+          "image": "/images/questions/sport-place-pitch.jpg",
+          "alt": "A green football pitch under open sky"
+        },
+        {
+          "id": "d",
+          "label": "A gym at 6am, nobody watching",
+          "weights": {
+            "brady": 2,
+            "biles": 1
+          },
+          "image": "/images/questions/sport-place-gym.jpg",
+          "alt": "An empty gym with weights and equipment"
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "Greatness is mostly repetition.",
+      "disagree": {
+        "trait": "marta"
+      },
+      "agree": {
+        "trait": "brady"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I keep a mental list of people who doubted me.",
+      "trait": "jordan",
+      "low": "Water off a duck",
+      "high": "It's alphabetised"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "The referee makes a call that is obviously, hilariously wrong.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Argue until the crowd joins in",
+          "weights": {
+            "ali": 2,
+            "serena": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Laugh, then play the next phase",
+          "weights": {
+            "marta": 2,
+            "messi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Use it. Channel it into the next point",
+          "weights": {
+            "serena": 2,
+            "jordan": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Reset everyone. The call is done",
+          "weights": {
+            "brady": 2,
+            "messi": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "You should be a good person before a good competitor.",
+      "agree": {
+        "trait": "ali",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "jordan",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "this_or_that",
+      "prompt": "You can have one of these forever:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A body that never gets injured",
+          "weights": {
+            "biles": 2,
+            "serena": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A crowd that never doubts you",
+          "weights": {
+            "ali": 2,
+            "marta": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "A teammate is having the worst night of their career. There's a timeout.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tell them the truth, then give them the ball",
+          "weights": {
+            "jordan": 2,
+            "serena": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Carry their share without mentioning it",
+          "weights": {
+            "messi": 2,
+            "brady": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Make them laugh, then reset",
+          "weights": {
+            "marta": 2,
+            "ali": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Change what you're asking them to do",
+          "weights": {
+            "biles": 2,
+            "messi": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I celebrate other people's wins louder than my own.",
+      "trait": "marta",
+      "low": "Quietly",
+      "high": "Louder than mine"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A loss you deserved is worth more than a win you didn't.",
+      "disagree": {
+        "trait": "jordan"
+      },
+      "agree": {
+        "trait": "marta"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The final whistle goes. You won.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Find the teammate who almost quit",
+          "weights": {
+            "marta": 2,
+            "ali": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Already thinking about the next one",
+          "weights": {
+            "jordan": 2,
+            "brady": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Celebrate like it's the last time",
+          "weights": {
+            "serena": 2,
+            "marta": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Stand still and take it in",
+          "weights": {
+            "messi": 2,
+            "biles": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "serena",
+      "name": "Serena Williams",
+      "tagline": "Takes the big point personally",
+      "blurb": "When it matters you get louder, not quieter. You want the ball, the serve, the final word, and you're not embarrassed by that. Your intensity has an edge to it and the edge is the point — it's how you turn pressure into a performance.",
+      "accent": "yellow",
+      "mix": {
+        "serena": 42,
+        "jordan": 18,
+        "messi": 0,
+        "biles": 16,
+        "ali": 7,
+        "brady": 4,
+        "marta": 13
+      },
+      "strengths": [
+        "Wants the decisive moment",
+        "Performs best under the most pressure",
+        "Sets the standard for everyone nearby"
+      ],
+      "watchOut": "Not every opponent is a war. Save the full voltage for when it counts."
+    },
+    {
+      "trait": "jordan",
+      "name": "Michael Jordan",
+      "tagline": "Keeps score of everything",
+      "blurb": "You remember who doubted you, who got picked first, and what the score was in a game nobody else recalls. That archive is fuel, and it works. You hold yourself and everyone around you to a standard that is inspiring for about four minutes and exhausting after that.",
+      "accent": "sky",
+      "mix": {
+        "serena": 31,
+        "jordan": 42,
+        "messi": 0,
+        "biles": 10,
+        "ali": 0,
+        "brady": 8,
+        "marta": 9
+      },
+      "strengths": [
+        "Competitive in a way that raises the ceiling",
+        "Turns a slight into preparation",
+        "Delivers when everyone is watching"
+      ],
+      "watchOut": "The grudge is a battery that leaks. Some people are just having a bad day."
+    },
+    {
+      "trait": "messi",
+      "name": "Lionel Messi",
+      "tagline": "Makes the difficult thing look obvious",
+      "blurb": "You do the impossible quietly and then act surprised that anyone noticed. Your instinct is always the pass, not the shot — you'd rather set up the moment than be photographed in it. The people who play with you look better than they are, and they know it.",
+      "accent": "red",
+      "mix": {
+        "serena": 4,
+        "jordan": 8,
+        "messi": 39,
+        "biles": 15,
+        "ali": 0,
+        "brady": 18,
+        "marta": 16
+      },
+      "strengths": [
+        "Sees the option nobody else sees",
+        "Makes teammates better",
+        "Calm when the tempo rises"
+      ],
+      "watchOut": "The unselfish option isn't always the right one. Take the shot occasionally."
+    },
+    {
+      "trait": "biles",
+      "name": "Simone Biles",
+      "tagline": "Rewrites the difficulty, then lands it",
+      "blurb": "You're not trying to win the existing contest, you're changing what's possible in it. You practise the terrifying thing until it's boring. You also know the difference between pushing through and damaging yourself, which is a rarer skill than either.",
+      "accent": "lime",
+      "mix": {
+        "serena": 14,
+        "jordan": 8,
+        "messi": 11,
+        "biles": 38,
+        "ali": 12,
+        "brady": 3,
+        "marta": 14
+      },
+      "strengths": [
+        "Expands what counts as achievable",
+        "Discipline without theatrics",
+        "Knows when to stop — and does"
+      ],
+      "watchOut": "Not everything needs to be the hardest version. Let something be easy."
+    },
+    {
+      "trait": "ali",
+      "name": "Muhammad Ali",
+      "tagline": "Wins the room before the whistle",
+      "blurb": "You understand that confidence is a performance that becomes real. You talk, you take up space, you make the occasion bigger than it is — and then you back it up. You also know exactly when to be serious, which is why people follow you.",
+      "accent": "pink",
+      "mix": {
+        "serena": 15,
+        "jordan": 9,
+        "messi": 0,
+        "biles": 5,
+        "ali": 42,
+        "brady": 7,
+        "marta": 22
+      },
+      "strengths": [
+        "Turns pressure into theatre",
+        "Says the brave thing in public",
+        "Stands for something beyond the result"
+      ],
+      "watchOut": "The performance needs an off switch. Some rooms just want the quiet version."
+    },
+    {
+      "trait": "brady",
+      "name": "Tom Brady",
+      "tagline": "Wins the boring way, repeatedly",
+      "blurb": "You're not the most spectacular person in the room; you're the one who keeps being right at the end. Preparation, patience, the short correct pass. You treat talent as a floor and habit as the actual advantage, and you'll still be doing this long after everyone else gets bored.",
+      "accent": "orange",
+      "mix": {
+        "serena": 3,
+        "jordan": 12,
+        "messi": 23,
+        "biles": 15,
+        "ali": 0,
+        "brady": 39,
+        "marta": 8
+      },
+      "strengths": [
+        "Consistency over years, not weeks",
+        "Reads the situation before it unfolds",
+        "Wins ugly without apologising"
+      ],
+      "watchOut": "The system isn't the whole story. Leave room for the lucky, unplanned thing."
+    },
+    {
+      "trait": "marta",
+      "name": "Marta",
+      "tagline": "Plays like it's still the best day of her life",
+      "blurb": "You haven't let the seriousness of the thing ruin it. You play with joy, you celebrate other people's goals, you laugh when it goes wrong. That's not a lack of ambition — it's the reason you're still doing it when more decorated people have quit.",
+      "accent": "cyan",
+      "mix": {
+        "serena": 9,
+        "jordan": 10,
+        "messi": 14,
+        "biles": 0,
+        "ali": 20,
+        "brady": 0,
+        "marta": 47
+      },
+      "strengths": [
+        "Keeps the fun in the work",
+        "Lifts a team by enjoying it",
+        "Resilient in a way that looks easy"
+      ],
+      "watchOut": "Joy doesn't replace the hard conversation. Have the difficult one, then play."
+    }
+  ]
+}

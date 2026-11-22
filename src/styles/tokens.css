@@ -1,0 +1,124 @@
+/* ------------------------------------------------------------------
+   QUIZZY — design tokens
+   Raw values live here; Tailwind reads them through `@theme inline`
+   in global.css. Dark is the default, `[data-theme="paper"]` flips
+   the semantic surfaces to cream.
+------------------------------------------------------------------ */
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #0e0e0e;
+  --surface: #1a1a1a;
+  --surface-2: #242424;
+  --line: #2e2e2e;
+  --paper: #f4f0e6;
+
+  /* Ink */
+  --ink: #f5f2ea;
+  --ink-dark: #141414;
+
+  /* Muted text tokens. Fixed values rather than opacity, so small labels
+     keep enough contrast on dark surfaces and in the paper theme. */
+  --ink-muted: #a5a29a; /* 7.5:1 on #0e0e0e */
+  --ink-soft: #c9c5bc; /* 11:1 */
+  --ink-strong: #e2dfd7; /* 14:1 */
+
+  /* Accents — flat and saturated */
+  --accent-yellow: #f4ce62;
+  --accent-purple: #6234e8;
+  --accent-red: #e0484f;
+  --accent-sky: #b5d8ff;
+  --accent-lime: #c8df7a;
+  --accent-pink: #ff9bbb;
+  --accent-green: #5db81e;
+  --accent-cyan: #6dd3de;
+  --accent-blue: #2e9bff;
+  --accent-orange: #ffa94d;
+
+  /* Rotating accent, overridden per tile/quiz */
+  --accent: var(--accent-yellow);
+
+  /* Accent used as text on a surface, and the text colour used on top of an
+     accent fill. Both are mixed so every accent stays legible instead of
+     relying on the raw (sometimes very dark) hue. */
+  --accent-text: color-mix(in srgb, var(--accent) 62%, var(--ink));
+  --on-accent: var(--ink-dark);
+
+  /* Radii */
+  --r-tile: 28px;
+  --r-card: 24px;
+  --r-control: 16px;
+  --r-pill: 999px;
+
+  /* Type families */
+  --type-display: "Anton", "Arial Narrow", Impact, sans-serif;
+  --type-serif: "Instrument Serif", "Times New Roman", Georgia, serif;
+  --type-body: "Space Grotesk Variable", "Space Grotesk", ui-sans-serif,
+    system-ui, -apple-system, sans-serif;
+
+  /* Motion */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 160ms;
+  --dur-mid: 320ms;
+  --dur-slow: 620ms;
+
+  /* Layout */
+  --gutter: clamp(16px, 4vw, 40px);
+  --page-max: 1240px;
+  --bento-gap: 14px;
+  --nav-height: 64px;
+}
+
+[data-theme="paper"] {
+  color-scheme: light;
+
+  --bg: var(--paper);
+  --surface: #fffdf6;
+  --surface-2: #e7e0ce;
+  --line: #141414;
+  --ink: #141414;
+  --ink-muted: #605b51; /* 5.9:1 on cream */
+  --ink-soft: #4c473e; /* 8.1:1 */
+  --ink-strong: #2b2721;
+
+  /* On cream the accent has to be darkened, not lightened, to read. */
+  --accent-text: color-mix(in srgb, var(--accent) 32%, var(--ink));
+}
+
+/* Quiz pages set data-accent on <html> so the whole page — progress bar,
+   sliders, focus rings, selection — wears the quiz's card colour. */
+[data-accent="yellow"] {
+  --accent: var(--accent-yellow);
+}
+[data-accent="purple"] {
+  --accent: var(--accent-purple);
+  /* Deep violet needs white text on top, not near-black. */
+  --on-accent: #ffffff;
+}
+[data-accent="red"] {
+  --accent: var(--accent-red);
+}
+[data-accent="sky"] {
+  --accent: var(--accent-sky);
+}
+[data-accent="lime"] {
+  --accent: var(--accent-lime);
+}
+[data-accent="pink"] {
+  --accent: var(--accent-pink);
+}
+[data-accent="green"] {
+  --accent: var(--accent-green);
+}
+[data-accent="cyan"] {
+  --accent: var(--accent-cyan);
+}
+[data-accent="blue"] {
+  --accent: var(--accent-blue);
+}
+[data-accent="orange"] {
+  --accent: var(--accent-orange);
+}

@@ -1,0 +1,516 @@
+{
+  "slug": "office-employee",
+  "title": "The Office party nobody wanted",
+  "dek": "Mandatory fun, a lukewarm sheet cake and someone has brought a guitar. Twelve questions to reveal which Dunder Mifflin employee you are when the boss is watching.",
+  "category": "Sitcoms",
+  "accent": "yellow",
+  "emoji": "📎",
+  "minutes": 5,
+  "trending": true,
+  "published": "2026-11-18",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "4:58pm on a Friday. The printer jams with something confidential still in it.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Pull the page, say nothing",
+          "weights": {
+            "jim": 2,
+            "creed": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Read enough to be useful later",
+          "weights": {
+            "dwight": 2,
+            "angela": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Announce the printer is haunted",
+          "weights": {
+            "michael": 2,
+            "kelly": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Fix it properly, then go",
+          "weights": {
+            "pam": 2,
+            "angela": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your calendar has a meeting called 'sync'. No agenda, no end time, six people.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Accept, then ask for the agenda",
+          "weights": {
+            "angela": 2,
+            "dwight": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Decline with 'let's take this async'",
+          "weights": {
+            "jim": 2,
+            "ryan": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You're already in it. You never left",
+          "weights": {
+            "creed": 2,
+            "jim": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Bring snacks. It's a party now",
+          "weights": {
+            "kelly": 2,
+            "michael": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "One office perk, forever:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The desk nobody walks behind",
+          "weights": {
+            "pam": 2,
+            "angela": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "No meetings after four",
+          "weights": {
+            "jim": 2,
+            "ryan": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "I'd rather be trusted than promoted.",
+      "disagree": {
+        "trait": "dwight"
+      },
+      "agree": {
+        "trait": "ryan"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I've written 'per my last email' and meant it.",
+      "trait": "angela",
+      "low": "Never. I'm delightful",
+      "high": "It's my whole voice"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "A laminated sign on the microwave reads DO NOT REHEAT FISH. It has been ignored for a year.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Add a second sign, laminated",
+          "weights": {
+            "angela": 2,
+            "dwight": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Reheat fish. Make eye contact",
+          "weights": {
+            "jim": 2,
+            "creed": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Take the sign down. Live free",
+          "weights": {
+            "michael": 2,
+            "kelly": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Start a list of who ignores it",
+          "weights": {
+            "dwight": 2,
+            "angela": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "If the work is done, the hours are nobody's business.",
+      "agree": {
+        "trait": "jim",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "angela",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "image",
+      "prompt": "Pick the plant for your desk.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cactus, one spine missing",
+          "weights": {
+            "dwight": 2,
+            "angela": 1
+          },
+          "image": "/images/questions/office-plant-cactus.jpg",
+          "alt": "A small cactus in a pot on a desk"
+        },
+        {
+          "id": "b",
+          "label": "Fern, far too big for the desk",
+          "weights": {
+            "pam": 2,
+            "ryan": 1
+          },
+          "image": "/images/questions/office-plant-fern.jpg",
+          "alt": "A large leafy fern in a pot"
+        },
+        {
+          "id": "c",
+          "label": "Monstera, blocking half the screen",
+          "weights": {
+            "kelly": 2,
+            "jim": 1
+          },
+          "image": "/images/questions/office-plant-monstera.jpg",
+          "alt": "A monstera plant with broad leaves"
+        },
+        {
+          "id": "d",
+          "label": "Four succulents in a neat row",
+          "weights": {
+            "angela": 2,
+            "pam": 1
+          },
+          "image": "/images/questions/office-plant-succulents.jpg",
+          "alt": "A row of small succulents in pots"
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "The office chat is buzzing and you've been tagged in a thread from 2019.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Reply as if it was yesterday",
+          "weights": {
+            "kelly": 2,
+            "michael": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Read all of it, say nothing",
+          "weights": {
+            "jim": 2,
+            "creed": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Mute it. It's a work chat",
+          "weights": {
+            "ryan": 2,
+            "angela": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Bring it up at lunch",
+          "weights": {
+            "pam": 2,
+            "kelly": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I have a work personality that comes off like a costume.",
+      "trait": "ryan",
+      "low": "This is just me",
+      "high": "I take it off in the car"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A work party is still work.",
+      "disagree": {
+        "trait": "jim"
+      },
+      "agree": {
+        "trait": "michael"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The boss asks for a fun fact. In the meeting. Everyone.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Say something mildly alarming",
+          "weights": {
+            "creed": 2,
+            "dwight": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Give a fact about the company",
+          "weights": {
+            "angela": 2,
+            "ryan": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Make one up on the spot",
+          "weights": {
+            "jim": 2,
+            "kelly": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Turn it into a bit that runs long",
+          "weights": {
+            "michael": 2,
+            "kelly": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "michael",
+      "name": "Michael Scott",
+      "tagline": "Hostage to an audience of any size",
+      "blurb": "You believe, genuinely, that work is about people. You'll remember a birthday, organise the awful party and give a toast that goes on too long — and half of it will land. Your instincts are warm, your timing is a coin flip, and the place would be a lot colder without you.",
+      "accent": "sky",
+      "mix": {
+        "michael": 34,
+        "dwight": 10,
+        "jim": 0,
+        "pam": 8,
+        "kelly": 27,
+        "creed": 0,
+        "angela": 10,
+        "ryan": 11
+      },
+      "strengths": [
+        "Makes a room feel like it belongs to everyone",
+        "Cares about people beyond their output",
+        "Commits to the bit, every time"
+      ],
+      "watchOut": "The joke is not always the moment. Read the room before you take the microphone."
+    },
+    {
+      "trait": "dwight",
+      "name": "Dwight Schrute",
+      "tagline": "Prepared for a crisis that hasn't happened",
+      "blurb": "You are the only person who read the whole policy, and you'd like that noted. You respect the ladder, the process and the correct way to label a folder. People laugh at the thoroughness right up until the day it saves them.",
+      "accent": "red",
+      "mix": {
+        "michael": 7,
+        "dwight": 37,
+        "jim": 2,
+        "pam": 9,
+        "kelly": 8,
+        "creed": 11,
+        "angela": 18,
+        "ryan": 8
+      },
+      "strengths": [
+        "Impossible to catch unprepared",
+        "Absolute follow-through",
+        "Brave when it's inconvenient"
+      ],
+      "watchOut": "Rules aren't the point; people are. Break one, on purpose, for someone."
+    },
+    {
+      "trait": "jim",
+      "name": "Jim Halpert",
+      "tagline": "Watching, smirking, occasionally committed",
+      "blurb": "You're the person who sees the absurdity and says nothing — until the perfectly timed glance. You do the job well enough to be left alone, and you save your real energy for the few things and people you actually care about.",
+      "accent": "lime",
+      "mix": {
+        "michael": 0,
+        "dwight": 4,
+        "jim": 40,
+        "pam": 0,
+        "kelly": 13,
+        "creed": 17,
+        "angela": 7,
+        "ryan": 19
+      },
+      "strengths": [
+        "Reads the room without being read",
+        "Defuses tension with one look",
+        "Quietly excellent when it counts"
+      ],
+      "watchOut": "Detachment is comfortable, but it looks like not caring. Say the sincere thing out loud."
+    },
+    {
+      "trait": "pam",
+      "name": "Pam Beesly",
+      "tagline": "The actual glue, politely uncredited",
+      "blurb": "You keep the place running and you're the last to mention it. You notice who's struggling, you soften the email, you make the room less sharp. Under the quiet there's real ambition — you're just waiting until it's safe, or until it isn't.",
+      "accent": "pink",
+      "mix": {
+        "michael": 4,
+        "dwight": 14,
+        "jim": 2,
+        "pam": 35,
+        "kelly": 4,
+        "creed": 10,
+        "angela": 18,
+        "ryan": 13
+      },
+      "strengths": [
+        "Makes difficult people easier to be around",
+        "Actually listens",
+        "Steady in a crisis nobody labels a crisis"
+      ],
+      "watchOut": "Waiting to be ready is a way of not starting. Put one honest thing on the table."
+    },
+    {
+      "trait": "kelly",
+      "name": "Kelly Kapoor",
+      "tagline": "Pop culture is the work",
+      "blurb": "You are the social engine: the gossip, the calendar, the reason anyone knows anything. You feel things at full volume and you don't pretend otherwise. Underneath the drama is a genuinely sharp read on people and a fierce need to be included.",
+      "accent": "green",
+      "mix": {
+        "michael": 25,
+        "dwight": 4,
+        "jim": 8,
+        "pam": 9,
+        "kelly": 35,
+        "creed": 0,
+        "angela": 8,
+        "ryan": 11
+      },
+      "strengths": [
+        "Makes work feel less like work",
+        "Reads relationships with alarming accuracy",
+        "Genuinely celebrates other people"
+      ],
+      "watchOut": "Not every silence is about you. Let one thing go by without a verdict."
+    },
+    {
+      "trait": "creed",
+      "name": "Creed Bratton",
+      "tagline": "Job title unclear, whereabouts unclear",
+      "blurb": "You are unbothered in a way other people find suspicious. You do just enough, disappear at the right moment, and have a whole life nobody at work will ever hear about. It's not laziness — it's a very healthy boundary, badly explained.",
+      "accent": "orange",
+      "mix": {
+        "michael": 3,
+        "dwight": 14,
+        "jim": 17,
+        "pam": 9,
+        "kelly": 0,
+        "creed": 36,
+        "angela": 10,
+        "ryan": 11
+      },
+      "strengths": [
+        "Unaffected by office politics",
+        "Excellent at not being volunteered",
+        "Curiously resourceful"
+      ],
+      "watchOut": "Vanishing all the time means nobody knows what you're good at. Show up once, fully."
+    },
+    {
+      "trait": "angela",
+      "name": "Angela Martin",
+      "tagline": "Standards are a personality",
+      "blurb": "You have a correct way of doing things and a quiet despair that nobody follows it. You keep the party on schedule, the cake cut properly and the nonsense to a minimum. Your disapproval is famous; your loyalty is the part people miss.",
+      "accent": "cyan",
+      "mix": {
+        "michael": 4,
+        "dwight": 19,
+        "jim": 2,
+        "pam": 15,
+        "kelly": 0,
+        "creed": 0,
+        "angela": 39,
+        "ryan": 21
+      },
+      "strengths": [
+        "Actually reliable, no drama attached",
+        "Protective of the people who earn it",
+        "Immune to groupthink"
+      ],
+      "watchOut": "Right and warm can coexist. Try one kind sentence before the correction."
+    },
+    {
+      "trait": "ryan",
+      "name": "Ryan Howard",
+      "tagline": "Thinking about the exit strategy",
+      "blurb": "You're here but you're also somewhere else — mentally building the thing you'd rather be doing. You're smart, easily bored, allergic to being managed, and you'll reinvent yourself the second the room gets stale.",
+      "accent": "blue",
+      "mix": {
+        "michael": 4,
+        "dwight": 4,
+        "jim": 17,
+        "pam": 10,
+        "kelly": 0,
+        "creed": 6,
+        "angela": 18,
+        "ryan": 41
+      },
+      "strengths": [
+        "Sees the bigger picture early",
+        "Learns a new identity fast",
+        "Unafraid to walk away"
+      ],
+      "watchOut": "The next thing won't fix the boring part. Finish one thing properly here first."
+    }
+  ]
+}

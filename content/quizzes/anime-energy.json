@@ -1,0 +1,516 @@
+{
+  "slug": "anime-energy",
+  "title": "Your life, but animated: the anime edition",
+  "dek": "Eight anime archetypes, twelve very specific situations, no trivia. Find out whose energy you are running on this week.",
+  "category": "Anime",
+  "accent": "sky",
+  "emoji": "🌸",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Episode one. You wake up with a power and no instructions. The nearest person is already running.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Run after them. Questions later",
+          "weights": {
+            "luffy": 2,
+            "naruto": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Test the power on something small",
+          "weights": {
+            "edward": 2,
+            "sakura": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Find whoever's in charge",
+          "weights": {
+            "levi": 2,
+            "gojo": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Make sure the person running is okay",
+          "weights": {
+            "tanjiro": 2,
+            "usagi": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your squad has one room, four beds and a mission at dawn.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Take the bed by the door",
+          "weights": {
+            "levi": 2,
+            "sakura": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Stay up talking until someone shouts",
+          "weights": {
+            "luffy": 2,
+            "usagi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Redraw the sleeping plan. It's wrong",
+          "weights": {
+            "edward": 2,
+            "levi": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Sleep anywhere. It's one night",
+          "weights": {
+            "gojo": 2,
+            "naruto": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Training arc or beach episode?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Training arc, no jokes",
+          "weights": {
+            "levi": 2,
+            "edward": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Beach episode, no plot",
+          "weights": {
+            "usagi": 2,
+            "luffy": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "A team is only as strong as its weakest member.",
+      "disagree": {
+        "trait": "levi"
+      },
+      "agree": {
+        "trait": "tanjiro"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I say 'I'm fine' and mean 'ask again'.",
+      "trait": "usagi",
+      "low": "I say what I mean",
+      "high": "Ask again, with snacks"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "A rival has been training for this rematch for six episodes. You forgot it was happening.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Apologise sincerely. Mean it",
+          "weights": {
+            "tanjiro": 2,
+            "sakura": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Pretend you've been training too",
+          "weights": {
+            "naruto": 2,
+            "luffy": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Win anyway, look bored",
+          "weights": {
+            "gojo": 2,
+            "levi": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Ask what rematch",
+          "weights": {
+            "luffy": 2,
+            "usagi": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "Being underestimated is a gift.",
+      "agree": {
+        "trait": "sakura",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "gojo",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "image",
+      "prompt": "Pick the sky you'd wake up under.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Blossom, pale, very spring",
+          "weights": {
+            "sakura": 2,
+            "usagi": 1
+          },
+          "image": "/images/questions/anime-sky-blossom.jpg",
+          "alt": "Pink blossom against a pale sky"
+        },
+        {
+          "id": "b",
+          "label": "Stars, cold, no streetlights",
+          "weights": {
+            "edward": 2,
+            "levi": 1
+          },
+          "image": "/images/questions/anime-sky-stars.jpg",
+          "alt": "A starry night sky above a dark horizon"
+        },
+        {
+          "id": "c",
+          "label": "Storm arriving, hair standing up",
+          "weights": {
+            "naruto": 2,
+            "luffy": 1
+          },
+          "image": "/images/questions/anime-sky-storm.jpg",
+          "alt": "Heavy storm clouds gathering"
+        },
+        {
+          "id": "d",
+          "label": "Sunset, long shadow, end of the arc",
+          "weights": {
+            "usagi": 2,
+            "gojo": 1
+          },
+          "image": "/images/questions/anime-sky-sunset.jpg",
+          "alt": "A warm sunset over rooftops"
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "Your mentor quits and leaves you the keys to the dojo.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Open it tomorrow. Same hours",
+          "weights": {
+            "tanjiro": 2,
+            "sakura": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Repaint the sign first",
+          "weights": {
+            "naruto": 2,
+            "usagi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Read every scroll before touching anything",
+          "weights": {
+            "edward": 2,
+            "levi": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Turn it into something nobody expected",
+          "weights": {
+            "gojo": 2,
+            "luffy": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I replay compliments in my head for days.",
+      "trait": "usagi",
+      "low": "By dinner it's gone",
+      "high": "I can quote it"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "The best ending is a quiet one.",
+      "disagree": {
+        "trait": "luffy"
+      },
+      "agree": {
+        "trait": "levi"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The final battle is tomorrow. The night before, everyone deals with it differently.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Eat, sleep, be ready",
+          "weights": {
+            "luffy": 2,
+            "tanjiro": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Write letters to everyone",
+          "weights": {
+            "sakura": 2,
+            "usagi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Train until it isn't tomorrow",
+          "weights": {
+            "levi": 2,
+            "edward": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Take the night off, look incredible",
+          "weights": {
+            "gojo": 2,
+            "naruto": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "luffy",
+      "name": "Monkey D. Luffy",
+      "tagline": "Acts first, crew second, consequences never",
+      "blurb": "You have one goal and no plan, and somehow the plan works. You collect people, feed them, and then accidentally build a movement. Rules slide off you because you never agreed to them in the first place. Your superpower is that you are completely impossible to discourage.",
+      "accent": "yellow",
+      "mix": {
+        "luffy": 43,
+        "usagi": 23,
+        "levi": 3,
+        "edward": 0,
+        "gojo": 7,
+        "tanjiro": 10,
+        "naruto": 14,
+        "sakura": 0
+      },
+      "strengths": [
+        "Turns conviction into momentum",
+        "Makes allies out of strangers",
+        "Doesn't know how to give up"
+      ],
+      "watchOut": "Someone else is doing the planning you're ignoring. Thank them, then listen."
+    },
+    {
+      "trait": "usagi",
+      "name": "Usagi Tsukino",
+      "tagline": "Cries, then saves everyone anyway",
+      "blurb": "You are not the toughest person in the room and you've stopped pretending. Your power is sincerity: you say the embarrassing true thing, everyone lowers their guard, and the room changes. You also need a nap after every victory, which is fair.",
+      "accent": "red",
+      "mix": {
+        "luffy": 19,
+        "usagi": 41,
+        "levi": 6,
+        "edward": 0,
+        "gojo": 3,
+        "tanjiro": 14,
+        "naruto": 9,
+        "sakura": 8
+      },
+      "strengths": [
+        "Leads with warmth, not authority",
+        "Refuses to abandon anyone",
+        "Recovers from failure with alarming speed"
+      ],
+      "watchOut": "Being the emotional centre is labour. Let someone take a turn."
+    },
+    {
+      "trait": "levi",
+      "name": "Levi Ackerman",
+      "tagline": "Says less, notices everything",
+      "blurb": "You measure people in what they do, not what they announce. You're abrupt because you're busy, and you're accurate because you've done the reading. The team is stronger when you're in it, though you'd never say that out loud and would prefer nobody mentioned it.",
+      "accent": "lime",
+      "mix": {
+        "luffy": 0,
+        "usagi": 14,
+        "levi": 44,
+        "edward": 27,
+        "gojo": 11,
+        "tanjiro": 0,
+        "naruto": 0,
+        "sakura": 4
+      },
+      "strengths": [
+        "Calm in the middle of the noise",
+        "Excellent at the unglamorous work",
+        "Protective without performing it"
+      ],
+      "watchOut": "Silence + standards reads as cold. Explain the reasoning once in a while."
+    },
+    {
+      "trait": "edward",
+      "name": "Edward Elric",
+      "tagline": "Fixes everything except his own limits",
+      "blurb": "You need to know why, and then you need to make it better. You carry a debt that nobody else can see, and it makes you work harder than is reasonable. You argue with systems, not people — though it doesn't always land that way.",
+      "accent": "pink",
+      "mix": {
+        "luffy": 3,
+        "usagi": 13,
+        "levi": 24,
+        "edward": 39,
+        "gojo": 0,
+        "tanjiro": 13,
+        "naruto": 0,
+        "sakura": 8
+      },
+      "strengths": [
+        "Brilliant under a deadline",
+        "Refuses to accept the lazy answer",
+        "Takes responsibility beyond your share"
+      ],
+      "watchOut": "You can't alchemy your way out of needing rest. Stop at the point of damage."
+    },
+    {
+      "trait": "gojo",
+      "name": "Satoru Gojo",
+      "tagline": "Gifted, bored, extremely aware of it",
+      "blurb": "You are very good at things and everyone knows, including you. You keep things light because it's fun and because distance is safe. But when it matters you're serious in a way that surprises people who only know the bit.",
+      "accent": "green",
+      "mix": {
+        "luffy": 6,
+        "usagi": 17,
+        "levi": 19,
+        "edward": 4,
+        "gojo": 41,
+        "tanjiro": 4,
+        "naruto": 9,
+        "sakura": 0
+      },
+      "strengths": [
+        "Makes hard things look easy",
+        "Defuses pressure with humour",
+        "Steps up when it actually counts"
+      ],
+      "watchOut": "The strongest person in the room is often the loneliest. Let someone carry something."
+    },
+    {
+      "trait": "tanjiro",
+      "name": "Tanjiro Kamado",
+      "tagline": "Kind even when it costs him",
+      "blurb": "You are relentlessly decent. You notice the person at the back, you say thank you, you keep going after the point where most people stop. Your strength is endurance with empathy — you can take a hit and still ask if the other guy is alright.",
+      "accent": "orange",
+      "mix": {
+        "luffy": 9,
+        "usagi": 16,
+        "levi": 13,
+        "edward": 4,
+        "gojo": 0,
+        "tanjiro": 39,
+        "naruto": 0,
+        "sakura": 19
+      },
+      "strengths": [
+        "Never loses sight of people",
+        "Endures more than expected",
+        "Makes kindness look practical"
+      ],
+      "watchOut": "Empathy without limits becomes self-erasure. Set one line and mean it."
+    },
+    {
+      "trait": "naruto",
+      "name": "Naruto Uzumaki",
+      "tagline": "Announces the outcome, then catches up",
+      "blurb": "You decide you're going to be extraordinary long before the evidence arrives. You're loud about it because the announcement is what keeps you going. People find it exhausting until the day they find it inspiring, and by then you've already done the impossible twice.",
+      "accent": "cyan",
+      "mix": {
+        "luffy": 15,
+        "usagi": 14,
+        "levi": 11,
+        "edward": 4,
+        "gojo": 13,
+        "tanjiro": 4,
+        "naruto": 39,
+        "sakura": 0
+      },
+      "strengths": [
+        "Ambition that survives being laughed at",
+        "Convinces people through sheer persistence",
+        "Loyal to the people who doubted you"
+      ],
+      "watchOut": "Volume isn't the same as progress. Choose one thing and do it quietly this week."
+    },
+    {
+      "trait": "sakura",
+      "name": "Sakura Haruno",
+      "tagline": "Underrated until mechanics matter",
+      "blurb": "You do the emotional labour and the technical labour, and you're often introduced as somebody's friend. Then the difficult thing happens and suddenly you're the only one prepared. You're not interested in being the loudest — you're interested in being right.",
+      "accent": "blue",
+      "mix": {
+        "luffy": 3,
+        "usagi": 15,
+        "levi": 15,
+        "edward": 11,
+        "gojo": 0,
+        "tanjiro": 20,
+        "naruto": 0,
+        "sakura": 36
+      },
+      "strengths": [
+        "Masters the unglamorous discipline",
+        "Holds a group together under pressure",
+        "Shows up for the boring parts too"
+      ],
+      "watchOut": "Being capable doesn't mean being available to everyone. Say no before you're empty."
+    }
+  ]
+}

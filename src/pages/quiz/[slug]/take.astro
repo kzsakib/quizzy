@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import QuizPlayer from "../../../components/QuizPlayer";
+import { quizzes } from "../../../lib/quizzes";
+import type { Quiz } from "../../../lib/scoring";
+import { siteHref } from "../../../lib/url";
+
+export function getStaticPaths() {
+  return quizzes.map((quiz) => ({
+    params: { slug: quiz.slug },
+    props: { quiz },
+  }));
+}
+
+interface Props {
+  quiz: Quiz;
+}
+
+const { quiz } = Astro.props as Props;
+
+/* Only traits go to the player — the take page should not ship the names of
+   the possible results, even in its HTML payload. */
+const playable = {
+  slug: quiz.slug,
+  title: quiz.title,
+  dek: quiz.dek,
+  category: quiz.category,
+  accent: quiz.accent,
+  emoji: quiz.emoji,
+  minutes: quiz.minutes,
+  tiebreaker: quiz.tiebreaker,
+  questions: quiz.questions,
+  results: quiz.results.map((result) => ({ trait: result.trait })),
+};
+---
+
+<BaseLayout
+  title={`${quiz.title} — Quizzy`}
+  description={`${quiz.questions.length} questions on one page. Answer at your own pace, change anything before you submit.`}
+  accent={quiz.accent}
+>
+  <section class="container-page pb-16 pt-4">
+    <a
+      href={siteHref(`/quiz/${quiz.slug}/`)}
+      class="label inline-flex items-center gap-2 text-[var(--ink-muted)] transition-colors hover:text-ink"
+    >
+      ← {quiz.title}
+    </a>
+
+    <div class="mt-8">
+      <QuizPlayer quiz={playable} client:load />
+    </div>
+  </section>
+</BaseLayout>

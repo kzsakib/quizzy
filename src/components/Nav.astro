@@ -1,0 +1,115 @@
+---
+import ThemeToggle from "./ThemeToggle.tsx";
+import { quizzes } from "../lib/quizzes";
+import { siteHref } from "../lib/url";
+
+const slugs = JSON.stringify(quizzes.map((quiz) => quiz.slug));
+---
+
+<header class="sticky top-3 z-50 px-[var(--gutter)] sm:top-5">
+  <nav
+    aria-label="Primary"
+    class="mx-auto flex h-[var(--nav-height)] w-full max-w-[1120px] items-center gap-2 rounded-[var(--r-pill)] border border-line/80 bg-surface/80 pl-2 pr-2 shadow-[0_10px_40px_-24px_rgba(0,0,0,0.9)] backdrop-blur-md supports-[backdrop-filter]:bg-surface/65"
+  >
+    <a
+      href={siteHref("/")}
+      class="group flex items-center gap-2.5 rounded-[var(--r-pill)] py-1.5 pl-1.5 pr-3 transition-colors hover:bg-surface-2"
+      aria-label="Quizzy home"
+    >
+      <span
+        class="relative grid size-9 shrink-0 place-items-center rounded-full bg-purple text-ink"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="size-[18px]">
+          <circle
+            cx="12"
+            cy="12"
+            r="9"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"></circle>
+          <circle cx="9" cy="10" r="1.15" fill="currentColor"></circle>
+          <circle cx="15" cy="10" r="1.15" fill="currentColor"></circle>
+          <path
+            d="M8 14.2c1 1.35 2.4 2 4 2s3-.65 4-2"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"></path>
+        </svg>
+      </span>
+      <span class="font-display text-[19px] uppercase leading-none tracking-tight"
+        >Quizzy</span
+      >
+    </a>
+
+    <ul
+      class="ml-2 hidden items-center gap-1 text-[var(--ink-strong)] md:flex"
+      role="list"
+    >
+      <li>
+        <a
+          href={siteHref("/#categories")}
+          class="label rounded-[var(--r-pill)] px-3.5 py-2 transition-colors hover:bg-surface-2 hover:text-ink"
+          >Categories</a
+        >
+      </li>
+      <li>
+        <a
+          href={siteHref("/#trending")}
+          class="label rounded-[var(--r-pill)] px-3.5 py-2 transition-colors hover:bg-surface-2 hover:text-ink"
+          >Trending</a
+        >
+      </li>
+      <li>
+        <a
+          href={siteHref("/#fresh")}
+          data-random-quiz
+          data-slugs={slugs}
+          data-base={import.meta.env.BASE_URL}
+          class="label rounded-[var(--r-pill)] px-3.5 py-2 transition-colors hover:bg-surface-2 hover:text-ink"
+          >Random quiz</a
+        >
+      </li>
+    </ul>
+
+    <div class="ml-auto flex items-center gap-2">
+      <ThemeToggle client:load />
+      <a
+        href={siteHref("/#trending")}
+        class="label hidden items-center gap-2 rounded-[var(--r-pill)] bg-ink px-4 py-2.5 text-ink-dark transition-transform duration-200 hover:-translate-y-0.5 sm:inline-flex"
+      >
+        Play
+        <svg
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          class="size-3.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14M13 6l6 6-6 6"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <script is:inline>
+    document.querySelectorAll("[data-random-quiz]").forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        var slugs = [];
+        try {
+          slugs = JSON.parse(link.getAttribute("data-slugs") || "[]");
+        } catch (error) {
+          return;
+        }
+        if (!slugs.length) return;
+        event.preventDefault();
+        var slug = slugs[Math.floor(Math.random() * slugs.length)];
+        window.location.href =
+          (link.getAttribute("data-base") || "/") + "quiz/" + slug + "/take/";
+      });
+    });
+  </script>
+</header>

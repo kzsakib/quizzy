@@ -1,0 +1,507 @@
+{
+  "slug": "wake-up-late",
+  "title": "You wake up 300 years late",
+  "dek": "The ship has a job for you and the briefing is missing. Twelve sci-fi questions about what you'd actually do on a broken colony ship.",
+  "category": "Sci-Fi",
+  "accent": "cyan",
+  "emoji": "🛰️",
+  "minutes": 5,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "You wake from cryo 300 years late. The ship is intact. The crew is not.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Find the engine room. It's making a sound",
+          "weights": {
+            "mechanic": 2,
+            "captain": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Check the log for what happened",
+          "weights": {
+            "loop": 2,
+            "linguist": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Look for a garden that still grows",
+          "weights": {
+            "terraform": 2,
+            "colonist": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Get a message to whoever sent us",
+          "weights": {
+            "linguist": 2,
+            "ethics": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The ship's computer has taken a vote and has a job for you.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Give me the manual",
+          "weights": {
+            "mechanic": 2,
+            "captain": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask the computer why",
+          "weights": {
+            "ethics": 2,
+            "linguist": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Take the job, leave the paperwork",
+          "weights": {
+            "captain": 2,
+            "loop": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Ask what happens if I refuse",
+          "weights": {
+            "colonist": 2,
+            "ethics": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The colony can bring one thing back from Earth:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A forest, seed by seed",
+          "weights": {
+            "terraform": 2,
+            "colonist": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Every book and every recording",
+          "weights": {
+            "linguist": 2,
+            "ethics": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "Kindness is a weakness in a survival situation.",
+      "disagree": {
+        "trait": "colonist"
+      },
+      "agree": {
+        "trait": "ethics"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I reread the same page because I forgot where I was.",
+      "trait": "loop",
+      "low": "First read",
+      "high": "Third time, bookmark missing"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "The airlock opens and a stranger in an identical uniform claims they're you.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Check the serial number",
+          "weights": {
+            "mechanic": 2,
+            "loop": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask a question only you'd know",
+          "weights": {
+            "ethics": 2,
+            "linguist": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Offer them the couch",
+          "weights": {
+            "colonist": 2,
+            "captain": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Close the airlock. Politely",
+          "weights": {
+            "captain": 2,
+            "stays": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "A message to the future is more useful than a message about the past.",
+      "agree": {
+        "trait": "linguist",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "loop",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "There's a planet you could live on. One catch:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The ground is only semi-solid",
+          "weights": {
+            "terraform": 2,
+            "mechanic": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The locals speak only in sound",
+          "weights": {
+            "linguist": 2,
+            "ethics": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The days last six months",
+          "weights": {
+            "colonist": 2,
+            "stays": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The last colony left a working city, no explanations",
+          "weights": {
+            "mechanic": 2,
+            "loop": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "The ship is in a time loop. You've been through it six times.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Find the exit, take notes",
+          "weights": {
+            "loop": 2,
+            "mechanic": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Leave a message for next time",
+          "weights": {
+            "linguist": 2,
+            "stays": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Use the time to learn something",
+          "weights": {
+            "ethics": 2,
+            "colonist": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Relax. Nothing you do matters",
+          "weights": {
+            "captain": 2,
+            "loop": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I'd take the long trip alone if it meant seeing something new.",
+      "trait": "stays",
+      "low": "Need company",
+      "high": "Window seat to nowhere"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "The best version of the future is quieter.",
+      "disagree": {
+        "trait": "captain"
+      },
+      "agree": {
+        "trait": "terraform"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Earth stops replying. No distress signal, no news.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Keep sending. Every day",
+          "weights": {
+            "linguist": 2,
+            "captain": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Work out what to do without them",
+          "weights": {
+            "captain": 2,
+            "mechanic": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Build something that lasts here",
+          "weights": {
+            "terraform": 2,
+            "colonist": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Sit down and think about what home was",
+          "weights": {
+            "stays": 2,
+            "ethics": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "mechanic",
+      "name": "The Ship's Mechanic",
+      "tagline": "Fixes it before the alarm",
+      "blurb": "You hear the problem before anyone else does. While the bridge debates policy, you're already in the crawlspace with a torch and a theory. You don't need credit, but you would like the ship to stop making that noise.",
+      "accent": "yellow",
+      "mix": {
+        "mechanic": 36,
+        "linguist": 0,
+        "terraform": 11,
+        "ethics": 3,
+        "colonist": 6,
+        "loop": 18,
+        "captain": 16,
+        "stays": 10
+      },
+      "strengths": [
+        "Solves the actual problem",
+        "Calm with a spanner in their hand",
+        "Notices the sound nobody logged"
+      ],
+      "watchOut": "You can't fix people with a spanner. Say the difficult thing out loud."
+    },
+    {
+      "trait": "linguist",
+      "name": "The First Contact Linguist",
+      "tagline": "Learns the greeting first",
+      "blurb": "Before the weapons or the treaties, you want to know what they call themselves. You assume every misunderstanding is a translation problem and you are usually right. You'd rather ask a stupid question than make a permanent assumption.",
+      "accent": "sky",
+      "mix": {
+        "mechanic": 0,
+        "linguist": 38,
+        "terraform": 4,
+        "ethics": 25,
+        "colonist": 3,
+        "loop": 8,
+        "captain": 7,
+        "stays": 15
+      },
+      "strengths": [
+        "Curious without being reckless",
+        "Finds the common word",
+        "Patient with people who are afraid"
+      ],
+      "watchOut": "Not everything is a misunderstanding. Sometimes the answer is no."
+    },
+    {
+      "trait": "terraform",
+      "name": "The Terraform Optimist",
+      "tagline": "Plants something anyway",
+      "blurb": "The planet is hostile, the timeline is centuries and you've started a garden. You think in generations rather than quarters, which makes you either visionary or unbearable at meetings. The seed you planted will matter to someone you'll never meet.",
+      "accent": "red",
+      "mix": {
+        "mechanic": 21,
+        "linguist": 0,
+        "terraform": 35,
+        "ethics": 3,
+        "colonist": 12,
+        "loop": 15,
+        "captain": 3,
+        "stays": 11
+      },
+      "strengths": [
+        "Builds for the long term",
+        "Hopeful without being naive",
+        "Turns a dead place into a project"
+      ],
+      "watchOut": "The people here now still need dinner. Don't only plan for the century."
+    },
+    {
+      "trait": "ethics",
+      "name": "The Ethics Officer",
+      "tagline": "Asks who this is for",
+      "blurb": "Every plan gets one question from you and everyone groans, because it's always the right question. You're not against progress — you just want to know who cleans up and who doesn't get a vote. Your existence makes the mission slower and better.",
+      "accent": "lime",
+      "mix": {
+        "mechanic": 0,
+        "linguist": 22,
+        "terraform": 4,
+        "ethics": 39,
+        "colonist": 3,
+        "loop": 8,
+        "captain": 4,
+        "stays": 20
+      },
+      "strengths": [
+        "Sees the person outside the plan",
+        "Willing to be unpopular",
+        "Catches the consequence early"
+      ],
+      "watchOut": "The perfect question can stall the airlock. Decide, then keep the concern."
+    },
+    {
+      "trait": "colonist",
+      "name": "The Colonist",
+      "tagline": "Brings seeds and stubbornness",
+      "blurb": "You're not here for the science or the glory. You're here to make a place livable, with a door that shuts and a chair that's yours. You unpack before the briefing finishes and you are the reason the corridor smells like soup.",
+      "accent": "pink",
+      "mix": {
+        "mechanic": 0,
+        "linguist": 0,
+        "terraform": 25,
+        "ethics": 9,
+        "colonist": 36,
+        "loop": 8,
+        "captain": 7,
+        "stays": 15
+      },
+      "strengths": [
+        "Makes anywhere feel like somewhere",
+        "Practical, warm and stubborn",
+        "Stays after the cameras leave"
+      ],
+      "watchOut": "Building a home can become hiding in it. Invite the crew in."
+    },
+    {
+      "trait": "loop",
+      "name": "The Loop Auditor",
+      "tagline": "Has read this day before",
+      "blurb": "You noticed the pattern on the second repeat and started taking notes on the third. While everyone else panics, you're testing variables and keeping a log. It's lonely being the only one who remembers — but someone has to keep the receipts.",
+      "accent": "green",
+      "mix": {
+        "mechanic": 17,
+        "linguist": 7,
+        "terraform": 10,
+        "ethics": 3,
+        "colonist": 6,
+        "loop": 34,
+        "captain": 13,
+        "stays": 10
+      },
+      "strengths": [
+        "Spots patterns under pressure",
+        "Methodical when others spiral",
+        "Keeps the record nobody else does"
+      ],
+      "watchOut": "Noticing the loop doesn't get you out of it. Tell someone what you've seen."
+    },
+    {
+      "trait": "captain",
+      "name": "The Reluctant Captain",
+      "tagline": "Takes charge, complains",
+      "blurb": "You didn't ask for the bridge, but everyone was looking at you and the alarm was going. You make the call, take the blame and privately resent how much you enjoy it. Competence is a trap you walked into with your eyes open.",
+      "accent": "orange",
+      "mix": {
+        "mechanic": 14,
+        "linguist": 0,
+        "terraform": 14,
+        "ethics": 3,
+        "colonist": 6,
+        "loop": 13,
+        "captain": 36,
+        "stays": 14
+      },
+      "strengths": [
+        "Decides when nobody else will",
+        "Absorbs pressure without cracking",
+        "Protects the crew from the worst news"
+      ],
+      "watchOut": "You don't have to hold all of it. Tell one person the real situation."
+    },
+    {
+      "trait": "stays",
+      "name": "The One Who Stays",
+      "tagline": "Keeps the lights on",
+      "blurb": "While the others go to the surface or the stars, you stay with the ship, the records and the people who can't leave. Nobody makes a documentary about the one who stays. The whole thing falls apart without you in about four days.",
+      "accent": "blue",
+      "mix": {
+        "mechanic": 13,
+        "linguist": 5,
+        "terraform": 10,
+        "ethics": 6,
+        "colonist": 11,
+        "loop": 7,
+        "captain": 15,
+        "stays": 33
+      },
+      "strengths": [
+        "Reliable in the unglamorous way",
+        "Deeply loyal to the place",
+        "Notices who's been left behind"
+      ],
+      "watchOut": "Staying is a choice, not an identity. Take the trip you keep declining."
+    }
+  ]
+}

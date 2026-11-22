@@ -1,0 +1,516 @@
+{
+  "slug": "horror-hallway",
+  "title": "Which horror villain is waiting at the end of the hallway",
+  "dek": "The light is on, the door is open and the house is making a noise it should not. Twelve questions about fear, costumes and 3am.",
+  "category": "Horror",
+  "accent": "purple",
+  "emoji": "🕯️",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The house makes a noise at 3am. Not a creak. A drawer.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Go and look. Torch, no shoes",
+          "weights": {
+            "michael": 2,
+            "leatherface": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Wake someone and make them look with you",
+          "weights": {
+            "ghostface": 2,
+            "carrie": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Stay still and listen properly",
+          "weights": {
+            "dracula": 2,
+            "michael": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Text the group: anyone awake?",
+          "weights": {
+            "carrie": 2,
+            "freddy": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "image",
+      "prompt": "Pick the hallway you'd walk down.",
+      "helper": "There's a light on at the far end.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hospital green, one door ajar",
+          "weights": {
+            "carrie": 2,
+            "dracula": 1
+          },
+          "image": "/images/questions/horror-hall-hospital.jpg",
+          "alt": "An empty hospital corridor under strip lights"
+        },
+        {
+          "id": "b",
+          "label": "Hotel carpet, endless identical doors",
+          "weights": {
+            "ghostface": 2,
+            "dracula": 1
+          },
+          "image": "/images/questions/horror-hall-hotel.jpg",
+          "alt": "A long hotel corridor lit by tall windows"
+        },
+        {
+          "id": "c",
+          "label": "Cellar stairs, switch at the bottom",
+          "weights": {
+            "michael": 2,
+            "leatherface": 1
+          },
+          "image": "/images/questions/horror-hall-cellar.jpg",
+          "alt": "Brick steps leading down to a dark cellar door"
+        },
+        {
+          "id": "d",
+          "label": "A forest path swallowed by fog",
+          "weights": {
+            "pennywise": 2,
+            "babadook": 1
+          },
+          "image": "/images/questions/horror-hall-forest.jpg",
+          "alt": "A path through a beech forest in thick fog"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "A door that shouldn't be open:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Close it and never mention it",
+          "weights": {
+            "michael": 2,
+            "dracula": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Look inside, just once",
+          "weights": {
+            "pennywise": 2,
+            "babadook": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "Fear is something you can enjoy from a safe distance.",
+      "disagree": {
+        "trait": "carrie"
+      },
+      "agree": {
+        "trait": "ghostface"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I laugh at exactly the wrong moment.",
+      "trait": "ghostface",
+      "low": "Never",
+      "high": "Every funeral"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "Someone in the group is lying and everyone is being polite about it.",
+      "options": [
+        {
+          "id": "a",
+          "label": "You already know. Say nothing",
+          "weights": {
+            "dracula": 2,
+            "michael": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask a question that catches them",
+          "weights": {
+            "ghostface": 2,
+            "freddy": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Watch how they treat the quiet one",
+          "weights": {
+            "carrie": 2,
+            "leatherface": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Make it a game and see who cracks",
+          "weights": {
+            "freddy": 2,
+            "pennywise": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "A costume tells you more than a conversation.",
+      "agree": {
+        "trait": "ghostface",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "dracula",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "You're hosting. Nobody's talking. The clock is very loud.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tell the worst story you know",
+          "weights": {
+            "pennywise": 2,
+            "ghostface": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask one question and let them fill it",
+          "weights": {
+            "dracula": 2,
+            "carrie": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Put music on and disappear for a bit",
+          "weights": {
+            "michael": 2,
+            "babadook": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Make sure everyone has a drink",
+          "weights": {
+            "carrie": 2,
+            "leatherface": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "intensity",
+      "prompt": "I notice the exits when I walk into a room.",
+      "trait": "michael",
+      "low": "Never",
+      "high": "Always"
+    },
+    {
+      "id": "q10",
+      "type": "mc",
+      "prompt": "A stranger at the bus stop says, 'You look like someone I used to know.'",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ask who",
+          "weights": {
+            "dracula": 2,
+            "ghostface": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Say 'people say that' and move seats",
+          "weights": {
+            "michael": 2,
+            "carrie": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Give them a completely fake name",
+          "weights": {
+            "freddy": 2,
+            "pennywise": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Smile and say nothing",
+          "weights": {
+            "leatherface": 2,
+            "babadook": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "I'd rather be feared than forgotten.",
+      "disagree": {
+        "trait": "carrie"
+      },
+      "agree": {
+        "trait": "michael"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The light in your room flickers. Three times. Then stops.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ignore it. Old wiring",
+          "weights": {
+            "michael": 2,
+            "dracula": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Film it for the group chat",
+          "weights": {
+            "ghostface": 2,
+            "freddy": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Change the bulb properly",
+          "weights": {
+            "leatherface": 2,
+            "carrie": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave it off and sit in the dark",
+          "weights": {
+            "babadook": 2,
+            "pennywise": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "ghostface",
+      "name": "Ghostface",
+      "tagline": "Playful, theatrical, knows the rules",
+      "blurb": "You turn a quiet night into a bit. You understand horror as a language — the timing, the fake-out, the joke that lands right before the scare. Under the performance you're unusually good at reading what people are afraid of, which is exactly why you should be careful with it.",
+      "accent": "yellow",
+      "mix": {
+        "ghostface": 44,
+        "michael": 13,
+        "pennywise": 10,
+        "carrie": 6,
+        "dracula": 13,
+        "leatherface": 0,
+        "freddy": 14,
+        "babadook": 0
+      },
+      "strengths": [
+        "Reads the room like a script",
+        "Makes fear fun instead of heavy",
+        "Knows when to drop the bit"
+      ],
+      "watchOut": "The joke that lands hardest can also cut deepest. Check first."
+    },
+    {
+      "trait": "michael",
+      "name": "Michael Myers",
+      "tagline": "Patient, silent, extremely consistent",
+      "blurb": "You don't rush and you don't explain. You decide something once and then keep going, at the same pace, until it's finished. People find the silence unnerving, but it isn't emptiness — it's a very long attention span pointed at one thing.",
+      "accent": "sky",
+      "mix": {
+        "ghostface": 10,
+        "michael": 48,
+        "pennywise": 0,
+        "carrie": 7,
+        "dracula": 15,
+        "leatherface": 12,
+        "freddy": 0,
+        "babadook": 8
+      },
+      "strengths": [
+        "Unbothered by other people's urgency",
+        "Follows through, every time",
+        "Impossible to distract"
+      ],
+      "watchOut": "Silence reads as absence. Tell one person what you're actually thinking."
+    },
+    {
+      "trait": "pennywise",
+      "name": "Pennywise",
+      "tagline": "Funny, magnetic, feeds on attention",
+      "blurb": "You know the fastest way into a room is a laugh. You say the outrageous thing, get everyone looking, and somehow make it work. You're brilliant at finding the exact fear or desire that motivates a person — use that on a stage, not on your friends.",
+      "accent": "red",
+      "mix": {
+        "ghostface": 8,
+        "michael": 10,
+        "pennywise": 32,
+        "carrie": 4,
+        "dracula": 0,
+        "leatherface": 4,
+        "freddy": 21,
+        "babadook": 21
+      },
+      "strengths": [
+        "Owns any room instantly",
+        "Finds the joke inside a bad night",
+        "Never boring, not once"
+      ],
+      "watchOut": "Attention is not the same as connection. Let someone else have the punchline."
+    },
+    {
+      "trait": "carrie",
+      "name": "Carrie White",
+      "tagline": "Quiet, watchful, one bad day from legend",
+      "blurb": "You notice everything and say almost none of it. You've been underestimated enough that you've built a whole interior life nobody at the table knows about. When it finally matters you're capable of far more than anyone prepared for — a gift or a warning, depending on the week.",
+      "accent": "lime",
+      "mix": {
+        "ghostface": 7,
+        "michael": 15,
+        "pennywise": 0,
+        "carrie": 43,
+        "dracula": 6,
+        "leatherface": 22,
+        "freddy": 7,
+        "babadook": 0
+      },
+      "strengths": [
+        "Sees what everyone else misses",
+        "Deeply loyal to the few who are kind",
+        "Enormous patience, until it isn't"
+      ],
+      "watchOut": "Say the thing before it becomes the whole story. You're allowed to be angry out loud."
+    },
+    {
+      "trait": "dracula",
+      "name": "Count Dracula",
+      "tagline": "Charming, patient, always the guest who stays",
+      "blurb": "You have excellent manners and a very long memory. Charm opens more doors than force and you're happy to wait for the right moment. People invite you in because you're interesting, and they're usually right to — although they rarely read the whole invitation.",
+      "accent": "pink",
+      "mix": {
+        "ghostface": 12,
+        "michael": 24,
+        "pennywise": 0,
+        "carrie": 17,
+        "dracula": 47,
+        "leatherface": 0,
+        "freddy": 0,
+        "babadook": 0
+      },
+      "strengths": [
+        "Charm that works on anyone",
+        "Reads a situation before entering it",
+        "Unhurried in a way people find magnetic"
+      ],
+      "watchOut": "You don't need to be invited everywhere. Some doors can stay closed."
+    },
+    {
+      "trait": "leatherface",
+      "name": "Leatherface",
+      "tagline": "Does the work, hates the fuss",
+      "blurb": "You are far more competent than you let on and deeply uninterested in being perceived. You handle the unpleasant job while everyone else argues about it. There's a real tenderness under the blunt exterior — you just express it by making sure nobody has to deal with the mess.",
+      "accent": "green",
+      "mix": {
+        "ghostface": 9,
+        "michael": 20,
+        "pennywise": 0,
+        "carrie": 20,
+        "dracula": 3,
+        "leatherface": 41,
+        "freddy": 0,
+        "babadook": 7
+      },
+      "strengths": [
+        "Does the thing nobody wants to do",
+        "Unfazed by other people's drama",
+        "Practical care, no speeches"
+      ],
+      "watchOut": "Being useful isn't a personality. Let someone see the soft part on purpose."
+    },
+    {
+      "trait": "freddy",
+      "name": "Freddy Krueger",
+      "tagline": "Turns your own head against you",
+      "blurb": "You know exactly which question will keep someone awake. That's not cruelty by default — it's pattern recognition with a mischievous streak. You're at your best when you use it to puncture pomposity, and at your worst when you use it because you're bored.",
+      "accent": "orange",
+      "mix": {
+        "ghostface": 14,
+        "michael": 11,
+        "pennywise": 16,
+        "carrie": 16,
+        "dracula": 6,
+        "leatherface": 0,
+        "freddy": 37,
+        "babadook": 0
+      },
+      "strengths": [
+        "Reads people's weak spots instantly",
+        "Punctures nonsense with precision",
+        "Never lets a silence get comfortable"
+      ],
+      "watchOut": "Being right about someone's fear isn't permission to use it. Put it down."
+    },
+    {
+      "trait": "babadook",
+      "name": "The Babadook",
+      "tagline": "The thing you keep in the basement",
+      "blurb": "There's something you've decided not to look at. It's not monstrous — it's grief, or anger, or the version of events you'd rather not narrate. You've built routines around it. It keeps getting bigger in the dark, and quieter when somebody finally asks.",
+      "accent": "cyan",
+      "mix": {
+        "ghostface": 7,
+        "michael": 16,
+        "pennywise": 19,
+        "carrie": 5,
+        "dracula": 5,
+        "leatherface": 13,
+        "freddy": 0,
+        "babadook": 35
+      },
+      "strengths": [
+        "Sits with difficult feelings",
+        "Protective of the people in your care",
+        "Honest once you decide to be"
+      ],
+      "watchOut": "The basement is not a solution. Say the thing to someone safe."
+    }
+  ]
+}

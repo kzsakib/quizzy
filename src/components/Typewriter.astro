@@ -1,0 +1,63 @@
+---
+interface Props {
+  text: string;
+  /** Milliseconds per character (or per word in word mode). */
+  speed?: number;
+  mode?: "char" | "word";
+  delay?: number;
+  class?: string;
+  caret?: boolean;
+}
+
+const {
+  text,
+  speed = 34,
+  mode = "char",
+  delay = 0,
+  class: className = "",
+  caret = true,
+} = Astro.props;
+---
+
+<span
+  class:list={["typewriter", caret && "typewriter--caret", className]}
+  data-typewriter
+  data-text={text}
+  data-speed={speed}
+  data-mode={mode}
+  data-delay={delay}
+  aria-label={text}>{text}</span
+>
+
+<script is:inline>
+  (() => {
+    const start = (el) => {
+      if (el.dataset.typing) return;
+      el.dataset.typing = "on";
+
+      const full = el.dataset.text || "";
+      const speed = Number(el.dataset.speed) || 30;
+      const delay = Number(el.dataset.delay) || 0;
+      const wordMode = el.dataset.mode === "word";
+      const parts = wordMode ? full.split(/(\s+)/) : Array.from(full);
+
+      el.textContent = "";
+
+      let i = 0;
+      const type = () => {
+        if (i >= parts.length) {
+          el.dataset.typing = "done";
+          el.classList.add("is-done");
+          return;
+        }
+        el.textContent += parts[i];
+        i += 1;
+        window.setTimeout(type, speed);
+      };
+
+      window.setTimeout(type, delay);
+    };
+
+    document.querySelectorAll("[data-typewriter]").forEach(start);
+  })();
+</script>

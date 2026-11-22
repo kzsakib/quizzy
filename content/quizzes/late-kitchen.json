@@ -1,0 +1,507 @@
+{
+  "slug": "late-kitchen",
+  "title": "The 11pm kitchen: what you eat when you're tired",
+  "dek": "Twelve questions about the meals nobody watches you make, and what your default dinner says about how you handle everything else.",
+  "category": "Food",
+  "accent": "orange",
+  "emoji": "🍳",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "It's 11pm. The fridge has eggs, half a lemon and something in foil.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Eggs on toast. Again",
+          "weights": {
+            "toast": 2,
+            "snack": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Open the foil. Investigate",
+          "weights": {
+            "fridge": 2,
+            "improv": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Close the fridge. Order in",
+          "weights": {
+            "takeaway": 2,
+            "host": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Eat cereal standing up",
+          "weights": {
+            "snack": 2,
+            "toast": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "You're hosting six people and one of them doesn't eat what you've made. You find out at the door.",
+      "options": [
+        {
+          "id": "a",
+          "label": "There's always something in the freezer",
+          "weights": {
+            "prep": 2,
+            "host": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Rewrite the menu in your head",
+          "weights": {
+            "improv": 2,
+            "recipe": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Order more of everything",
+          "weights": {
+            "takeaway": 2,
+            "host": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Ask them to help. It becomes a thing",
+          "weights": {
+            "host": 2,
+            "fridge": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The kitchen gives you one power:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Everything cooks in four minutes",
+          "weights": {
+            "toast": 2,
+            "takeaway": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Nothing ever goes off",
+          "weights": {
+            "prep": 2,
+            "fridge": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "A recipe is a suggestion.",
+      "disagree": {
+        "trait": "recipe"
+      },
+      "agree": {
+        "trait": "improv"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I buy ingredients for a person I'm not yet.",
+      "trait": "fridge",
+      "low": "I buy what I'll eat",
+      "high": "The fridge is a vision board"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "Someone puts ketchup on the thing you spent two hours making.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Say nothing. Remember forever",
+          "weights": {
+            "recipe": 2,
+            "toast": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask, genuinely, why",
+          "weights": {
+            "improv": 2,
+            "host": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Try it. Maybe they're right",
+          "weights": {
+            "fridge": 2,
+            "snack": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Make a second batch, unhinged",
+          "weights": {
+            "host": 2,
+            "prep": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "The best meal is the one someone else cooks.",
+      "agree": {
+        "trait": "takeaway",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "recipe",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "Your perfect Sunday involves a kitchen that smells like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Something in a slow pot since ten",
+          "weights": {
+            "prep": 2,
+            "host": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Toast, slightly burnt",
+          "weights": {
+            "toast": 2,
+            "snack": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Whatever was in the fridge, fried",
+          "weights": {
+            "fridge": 2,
+            "improv": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nothing. The app says twenty-five minutes",
+          "weights": {
+            "takeaway": 2,
+            "snack": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "The supermarket at 9pm, hungry, no list.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Buy the same seven things",
+          "weights": {
+            "toast": 2,
+            "recipe": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Buy for three meals you've planned",
+          "weights": {
+            "prep": 2,
+            "recipe": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Buy snacks and call it dinner",
+          "weights": {
+            "snack": 2,
+            "takeaway": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Buy one weird vegetable and build around it",
+          "weights": {
+            "improv": 2,
+            "fridge": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I follow the recipe exactly the first time.",
+      "trait": "recipe",
+      "low": "I improvise",
+      "high": "I weigh the salt"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "A dinner party should end with everyone still at the table.",
+      "disagree": {
+        "trait": "takeaway"
+      },
+      "agree": {
+        "trait": "host"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "You've been asked to bring a dish. There are twenty people.",
+      "options": [
+        {
+          "id": "a",
+          "label": "The thing you always bring",
+          "weights": {
+            "recipe": 2,
+            "toast": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something that looks impressive and took ten minutes",
+          "weights": {
+            "improv": 2,
+            "host": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Two bags of ice and a packet of something",
+          "weights": {
+            "takeaway": 2,
+            "snack": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A proper plan, a cooler, labels",
+          "weights": {
+            "prep": 2,
+            "host": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "toast",
+      "name": "Toast, Again",
+      "tagline": "Reliable, warm, no notes",
+      "blurb": "You have a default meal and you are at peace with it. It's fast, it's comforting and it has never once surprised you, which is the entire point. People tease you about it right up until the evening they need something easy too.",
+      "accent": "yellow",
+      "mix": {
+        "toast": 37,
+        "fridge": 8,
+        "takeaway": 5,
+        "recipe": 22,
+        "improv": 3,
+        "host": 8,
+        "prep": 6,
+        "snack": 11
+      },
+      "strengths": [
+        "Zero drama, always delivers",
+        "Knows what actually comforts them",
+        "Fast when everyone else is deciding"
+      ],
+      "watchOut": "Easy is a habit that can hide a bad week. Add one green thing on purpose."
+    },
+    {
+      "trait": "fridge",
+      "name": "The Fridge Archaeologist",
+      "tagline": "Dinner is a dig",
+      "blurb": "You open the fridge and build a meal out of whatever's left. Half a lemon, three condiments, a bendy carrot — somehow it works. You are unbeatable at leftovers and slightly frightening about expiry dates.",
+      "accent": "sky",
+      "mix": {
+        "toast": 4,
+        "fridge": 38,
+        "takeaway": 3,
+        "recipe": 15,
+        "improv": 16,
+        "host": 12,
+        "prep": 7,
+        "snack": 5
+      },
+      "strengths": [
+        "Wastes almost nothing",
+        "Improvises under pressure",
+        "Finds the meal nobody else saw"
+      ],
+      "watchOut": "Some things should be thrown out. The foil is not a mystery to solve."
+    },
+    {
+      "trait": "takeaway",
+      "name": "The Takeaway Loyalist",
+      "tagline": "One app, one order, no regrets",
+      "blurb": "You know exactly what you want and you know who makes it. There is a place, there is an order, and there is a person who recognises your number. Efficiency, not laziness — although you've stopped explaining that to people.",
+      "accent": "red",
+      "mix": {
+        "toast": 11,
+        "fridge": 8,
+        "takeaway": 36,
+        "recipe": 14,
+        "improv": 3,
+        "host": 8,
+        "prep": 0,
+        "snack": 20
+      },
+      "strengths": [
+        "Knows the good local places",
+        "Decisive when everyone's hungry",
+        "Supports the same small business for years"
+      ],
+      "watchOut": "The app is not the only kitchen. Cook one thing from scratch this month."
+    },
+    {
+      "trait": "recipe",
+      "name": "The Recipe Follower",
+      "tagline": "Weighs the salt",
+      "blurb": "You follow the method because the method works. Measuring cups, timers, the whole thing — and the result is consistent every single time. Your baking is trusted at parties and your notes in the margin are better than the recipe.",
+      "accent": "lime",
+      "mix": {
+        "toast": 28,
+        "fridge": 7,
+        "takeaway": 5,
+        "recipe": 35,
+        "improv": 6,
+        "host": 8,
+        "prep": 6,
+        "snack": 5
+      },
+      "strengths": [
+        "Consistent results, every time",
+        "Takes instructions seriously",
+        "Improves the thing quietly"
+      ],
+      "watchOut": "The recipe can't tell you what you like. Break it once and see."
+    },
+    {
+      "trait": "improv",
+      "name": "The Improviser",
+      "tagline": "No plan, good instincts",
+      "blurb": "The recipe is a mood, the measurements are a suggestion, and the pan is hotter than it should be. Sometimes it's extraordinary. Sometimes it's a lesson. Either way you'll do it differently next time and enjoy the argument.",
+      "accent": "pink",
+      "mix": {
+        "toast": 8,
+        "fridge": 23,
+        "takeaway": 5,
+        "recipe": 11,
+        "improv": 40,
+        "host": 13,
+        "prep": 0,
+        "snack": 0
+      },
+      "strengths": [
+        "Fearless with flavour",
+        "Turns a mistake into a new dish",
+        "Never makes the same meal twice"
+      ],
+      "watchOut": "Write down the good one, or you'll spend a year trying to recreate it."
+    },
+    {
+      "trait": "host",
+      "name": "The Feeder",
+      "tagline": "Cooks for eight, eats standing up",
+      "blurb": "Your instinct when anyone is upset is to put food in front of them. You always make too much, you always say it's nothing, and you are always the last person to sit down. Nobody leaves your kitchen hungry, including people who said they weren't staying.",
+      "accent": "green",
+      "mix": {
+        "toast": 15,
+        "fridge": 10,
+        "takeaway": 8,
+        "recipe": 12,
+        "improv": 9,
+        "host": 36,
+        "prep": 10,
+        "snack": 0
+      },
+      "strengths": [
+        "Makes people feel looked after",
+        "Generous without keeping score",
+        "Turns a bad day into a table"
+      ],
+      "watchOut": "You're allowed to be fed too. Sit down before the food goes cold."
+    },
+    {
+      "trait": "prep",
+      "name": "The Meal-Prepper",
+      "tagline": "Sunday is a factory",
+      "blurb": "There are containers, there is a plan, and Thursday is already handled. You don't do this because you love cooking — you do it because future you deserves a break. The fridge looks like a small, delicious spreadsheet.",
+      "accent": "cyan",
+      "mix": {
+        "toast": 7,
+        "fridge": 10,
+        "takeaway": 3,
+        "recipe": 12,
+        "improv": 3,
+        "host": 24,
+        "prep": 36,
+        "snack": 5
+      },
+      "strengths": [
+        "Thinks ahead better than anyone",
+        "Saves money and time without fuss",
+        "Reliable when the week collapses"
+      ],
+      "watchOut": "The plan can become the point. Leave one night unplanned on purpose."
+    },
+    {
+      "trait": "snack",
+      "name": "The Standing Snacker",
+      "tagline": "Dinner is a concept",
+      "blurb": "You eat over the sink, standing up, from a small bowl that becomes three small bowls. It's not a meal, it's a series of decisions. You are somehow never full and never actually hungry, and you own six types of crisp.",
+      "accent": "blue",
+      "mix": {
+        "toast": 17,
+        "fridge": 12,
+        "takeaway": 12,
+        "recipe": 9,
+        "improv": 3,
+        "host": 7,
+        "prep": 6,
+        "snack": 34
+      },
+      "strengths": [
+        "Low maintenance and happy",
+        "Great at small pleasures",
+        "Never ruins their appetite for pudding"
+      ],
+      "watchOut": "A chair and a plate would fix half of this. Sit down for one meal."
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+---
+import BaseLayout from "../../../../layouts/BaseLayout.astro";
+import QuizCard from "../../../../components/QuizCard.astro";
+import ResultChart from "../../../../components/ResultChart";
+import Typewriter from "../../../../components/Typewriter.astro";
+import { quizzes, relatedQuizzes } from "../../../../lib/quizzes";
+import type { Quiz, QuizResult } from "../../../../lib/scoring";
+import { siteHref } from "../../../../lib/url";
+
+export function getStaticPaths() {
+  return quizzes.flatMap((quiz) =>
+    quiz.results.map((result) => ({
+      params: { slug: quiz.slug, trait: result.trait },
+      props: { quiz, result },
+    })),
+  );
+}
+
+interface Props {
+  quiz: Quiz;
+  result: QuizResult;
+}
+
+const { quiz, result } = Astro.props as Props;
+const related = relatedQuizzes(quiz.slug, 3);
+const others = quiz.results.filter((item) => item.trait !== result.trait);
+const summaries = quiz.results.map((item) => ({
+  trait: item.trait,
+  name: item.name,
+  accent: item.accent,
+}));
+const title = `${result.name} — ${quiz.title}`;
+const nameSpeed = 46;
+const nameDelay = 160;
+const taglineDelay = nameDelay + result.name.length * nameSpeed + 220;
+const blurbDelay = taglineDelay + result.tagline.length * 24 + 260;
+---
+
+<BaseLayout
+  title={`${title} — Quizzy`}
+  description={`${result.tagline}. ${result.blurb.slice(0, 120)}`}
+  accent={result.accent}
+>
+  <section class="container-page pt-2">
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <a href={siteHref(`/quiz/${quiz.slug}/`)} class="label text-[var(--ink-muted)] hover:text-ink"
+        >← {quiz.title}</a
+      >
+      <p class="label text-[var(--ink-muted)]">
+        {quiz.category} · {quiz.questions.length} questions
+      </p>
+    </div>
+
+    <p class="label mt-10 text-[var(--ink-muted)]">Your result</p>
+
+    <h1
+      class="display mt-3 max-w-[18ch] text-[clamp(52px,11vw,150px)] leading-[0.84]"
+    >
+      <Typewriter text={result.name} speed={nameSpeed} delay={nameDelay} />
+    </h1>
+
+    <p class="serif-italic mt-4 text-[clamp(22px,3.4vw,36px)] text-[var(--ink-strong)]">
+      <Typewriter
+        text={result.tagline}
+        speed={24}
+        delay={taglineDelay}
+        caret={false}
+      />
+    </p>
+
+    <div
+      class="mt-12 rounded-[var(--r-tile)] border border-line bg-surface p-6 sm:p-8"
+    >
+      <div class="mb-8 flex items-baseline justify-between gap-4">
+        <h2 class="label text-[var(--ink-soft)]">Your mix</h2>
+        <p class="label text-[var(--ink-soft)]">{quiz.results.length} traits scored</p>
+      </div>
+
+      <ResultChart
+        quizSlug={quiz.slug}
+        trait={result.trait}
+        mix={result.mix}
+        results={summaries}
+        client:visible
+      />
+    </div>
+
+    <div class="mt-12 grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+      <div>
+        <h2 class="label text-[var(--ink-soft)]">What that means</h2>
+        <p class="mt-4 max-w-xl text-[17px] leading-relaxed text-[var(--ink-strong)]">
+          <Typewriter
+            text={result.blurb}
+            mode="word"
+            speed={54}
+            delay={blurbDelay}
+            caret={false}
+          />
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <button
+            type="button"
+            data-share
+            class="label inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink px-5 py-3.5 text-ink-dark transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            Share my result
+          </button>
+          <a
+            href={siteHref(`/quiz/${quiz.slug}/take/`)}
+            class="label inline-flex items-center gap-2 rounded-[var(--r-pill)] border border-line px-5 py-3.5 text-[var(--ink-strong)] transition-colors hover:border-ink/40 hover:text-ink"
+            >Retake</a
+          >
+          <a
+            href={siteHref("/")}
+            class="label inline-flex items-center gap-2 rounded-[var(--r-pill)] border border-line px-5 py-3.5 text-[var(--ink-strong)] transition-colors hover:border-ink/40 hover:text-ink"
+            >All quizzes</a
+          >
+        </div>
+        <p class="label mt-4 text-[var(--ink-muted)]" data-share-status aria-live="polite">
+          Link copied? We'll tell you here.
+        </p>
+      </div>
+
+      <aside class="rounded-[var(--r-tile)] border border-line bg-surface p-6">
+        <p class="label text-[var(--ink-muted)]">Your strengths</p>
+        <ul class="mt-4 space-y-3" role="list">
+          {
+            result.strengths.map((strength) => (
+              <li class="flex items-start gap-3 text-sm leading-snug text-[var(--ink-strong)]">
+                <span
+                  aria-hidden="true"
+                  class="mt-1 size-1.5 shrink-0 rounded-full bg-[var(--accent)]"
+                />
+                {strength}
+              </li>
+            ))
+          }
+        </ul>
+
+        <div class="mt-6 border-t border-line/70 pt-5">
+          <p class="label text-[var(--ink-muted)]">Watch out</p>
+          <p class="mt-2 text-sm leading-relaxed text-[var(--ink-soft)]">
+            {result.watchOut}
+          </p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="mt-14 rounded-[var(--r-tile)] border border-line/70 p-6 sm:p-8">
+      <h2 class="label text-[var(--ink-muted)]">The other possible yous</h2>
+      <ul class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" role="list">
+        {
+          others.map((item) => (
+            <li>
+              <a
+                href={siteHref(`/quiz/${quiz.slug}/result/${item.trait}/`)}
+                class="flex items-center gap-3 rounded-[var(--r-control)] border border-line bg-surface px-4 py-3 transition-colors hover:border-ink/35 hover:bg-surface-2"
+              >
+                <span
+                  aria-hidden="true"
+                  class="size-2.5 shrink-0 rounded-full"
+                  style={`background: var(--accent-${item.accent})`}
+                />
+                <span class="text-sm text-[var(--ink-strong)]">{item.name}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  {
+    related.length > 0 && (
+      <section class="container-page mt-20" aria-labelledby="next-heading">
+        <div class="flex items-baseline justify-between gap-4 border-b border-line pb-4">
+          <h2 id="next-heading" class="label text-[var(--ink-muted)]">Next up</h2>
+          <a href={siteHref("/#trending")} class="label text-[var(--ink-muted)] hover:text-ink">
+            Trending
+          </a>
+        </div>
+        <div class="mt-6 grid gap-[var(--bento-gap)] sm:grid-cols-2 lg:grid-cols-3">
+          {related.map((item) => (
+            <div data-reveal class="h-full">
+              <QuizCard quiz={item} class="h-full" />
+            </div>
+          ))}
+        </div>
+      </section>
+    )
+  }
+
+  <script>
+    const button = document.querySelector<HTMLButtonElement>("[data-share]");
+    const status = document.querySelector<HTMLElement>("[data-share-status]");
+
+    button?.addEventListener("click", async () => {
+      const url = window.location.href;
+      const title = document.title;
+
+      try {
+        if (navigator.share) {
+          await navigator.share({ title, url });
+          if (status) status.textContent = "Shared.";
+          return;
+        }
+        await navigator.clipboard.writeText(url);
+        if (status) status.textContent = "Link copied to your clipboard.";
+      } catch {
+        if (status) status.textContent = "Copy failed — grab the URL from the bar.";
+      }
+    });
+  </script>
+</BaseLayout>

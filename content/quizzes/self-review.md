@@ -1,0 +1,111 @@
+# Quiz self-review
+
+Notes from the question rewrite. JSON carries no extra fields; everything below is
+editorial. Flavor tallies count the primary intent of each question, not the option
+with the joke in it.
+
+---
+
+## Hogwarts after curfew
+- **Tone dial:** Atmospheric. LORE and CREATIVE carry it; one joke question, one joke agreement.
+- **What it reveals:** how you use a rule, a corridor and a secret when nobody is grading you.
+- **Tally:** LORE 3 / CLEVER 2 / CREATIVE 3 / RELATABLE 2 / FUNNY 2
+- **Unsure:** the staircase image captions are literal, but the four photos differ more in mood than in architecture, so image choice is partly a vibe test.
+
+## The FRIENDS group chat at 2:07am
+- **Tone dial:** Comedic. FRIENDS questions lean on small social crimes; three fully straight.
+- **What it reveals:** your role in a friend group's maintenance, not your favourite character.
+- **Tally:** LORE 3 / CLEVER 2 / CREATIVE 3 / RELATABLE 2 / FUNNY 2
+- **Unsure:** "A friend's partner being wrong is not my problem" may skew agree; it is deliberately the least funny agreement in the set.
+
+## The Office party nobody wanted
+- **Tone dial:** Comedic, capped. Office absurdity is the setting, not the punchline.
+- **What it reveals:** whether you perform, administer, avoid or quietly carry the room.
+- **Tally:** LORE 2 / CLEVER 2 / CREATIVE 3 / RELATABLE 2 / FUNNY 3
+- **Unsure:** LORE is one short of target. The pointless "sync" is lore-adjacent but reads as relatable, so it is tagged LORE rather than a fourth office institution.
+
+## Your actual love language, tested at 3am
+- **Tone dial:** Sincere. No jokes as the premise; humour only in the intensity labels.
+- **What it reveals:** the form of care that actually lands, rather than the one you'd claim.
+- **Tally:** RELATABLE 5 / CLEVER 5 / CREATIVE 2 / LORE 0 / FUNNY 0
+- **Unsure:** This deliberately breaks the LORE target — the topic has no fictional world to be loyal to. CLEVER runs over target because every question is a trade-off between two legitimate needs; that is the quiz's substance. No image question: no honest photo set exists for it.
+
+## Which main character era is your week
+- **Tone dial:** Sincere-creative. Framing is odd; feelings are played straight.
+- **What it reveals:** which genre your actual week is in, not which one you'd pitch.
+- **Tally:** CREATIVE 3 / CLEVER 4 / RELATABLE 4 / FUNNY 1 / LORE 0
+- **Unsure:** "I'd rather be interesting than comfortable" is the closest to a vanity answer; the villain/golden split is intentional, but it may read as edgier than the rest of the quiz.
+
+## Your life, but animated: the anime edition
+- **Tone dial:** Atmospheric with one comedy beat.
+- **What it reveals:** your role in a squad under pressure, independent of any franchise knowledge.
+- **Tally:** LORE 4 / CREATIVE 3 / CLEVER 2 / RELATABLE 2 / FUNNY 1
+- **Unsure:** the rematch question flatters the forgetful option a little too easily; every option still has a cost.
+
+## The Taylor Swift era your year is stuck in
+- **Tone dial:** Atmospheric. Nostalgia and current behaviour, not lyric recall.
+- **What it reveals:** the emotional weather of your year rather than your favourite album.
+- **Tally:** LORE 4 / CREATIVE 3 / CLEVER 2 / RELATABLE 2 / FUNNY 1
+- **Unsure:** "The version of you at nineteen deserves an apology" is close to a universally agreeable statement; the folklore/1989 split gives it something to argue about.
+
+## What your camera roll says about you
+- **Tone dial:** Comedic. The premise is absurd; the choices are real behaviour.
+- **What it reveals:** whether you document, curate, archive or actually live in the moment.
+- **Tally:** LORE 3 / CLEVER 2 / CREATIVE 3 / RELATABLE 2 / FUNNY 2
+- **Unsure:** "A house with no books is not a home" may be too easy to agree with for a bookish audience; it is the weakest spectrum in the set.
+
+## The last two minutes: which athlete are you
+- **Tone dial:** Atmospheric. Sport as pressure, not trivia.
+- **What it reveals:** what you do with the ball, the blame and the teammate who is struggling.
+- **Tally:** LORE 4 / CREATIVE 3 / CLEVER 2 / RELATABLE 2 / FUNNY 1
+- **Unsure:** the referee question is the only one with a joke in it; the straight options may read as the "mature" choice to some players.
+
+## Which horror villain is waiting at the end of the hallway
+- **Tone dial:** Atmospheric. One comic question, everything else played cold.
+- **What it reveals:** how you handle fear, attention and the thing you keep in the basement.
+- **Tally:** LORE 3 / CREATIVE 4 / CLEVER 2 / RELATABLE 2 / FUNNY 1
+- **Unsure:** the bus-stop stranger question is the most inventive and the least horror-specific; it earns its place by discriminating cleanly.
+
+## Which yokai followed you home
+- **Tone dial:** Atmospheric. Folklore as behaviour, not a Wikipedia check.
+- **What it reveals:** what kind of presence you are when a situation gets strange.
+- **Tally:** LORE 4 / CREATIVE 3 / CLEVER 2 / RELATABLE 2 / FUNNY 1
+- **Unsure:** the vending machine question is the only clearly modern object in a folkloric quiz; that contrast is the joke, but it is the one question most likely to feel out of place.
+
+## What your Pokémon save file says about you
+- **Tone dial:** Warm nostalgia, zero trivia. The games are the setting; nothing asks you to name a Pokémon or recite a type chart.
+- **What it reveals:** how you play when nobody is grading you — hoarding, optimising, restarting, abandoning.
+- **Flavor:** written after the tagged pass, so no LORE/CLEVER/FUNNY counts. It leans RELATABLE and FUNNY by construction (the cousin who takes your starter, the box of level 4s).
+- **Unsure:** "Ask if there are more in the back" is the thinnest option in the quiz; it survives because it splits two results cleanly.
+
+## The 11pm kitchen: what you eat when you're tired
+- **Tone dial:** Domestic and a little feral. No food is treated as aspirational.
+- **What it reveals:** your default dinner, and what your default dinner says about how you handle a day that got away from you.
+- **Flavor:** untagged (post-tagging build). The mix is RELATABLE-heavy with a running FUNNY thread about meals nobody witnesses.
+- **Unsure:** the one question about cooking for someone else is the only one with another person in it, so it carries more weight than the rest.
+
+## The K-drama role you'd be cast in (not the lead)
+- **Tone dial:** Playful, trope-literate. Naming tropes is the joke; knowing them is never required.
+- **What it reveals:** the role you default to in an ensemble — second lead, chaebol heir, amnesia plot device, the friend who owns a restaurant.
+- **Flavor:** untagged. Reads FUNNY 4 / RELATABLE 4 / LORE 2 / CREATIVE 2 roughly, without the formal tags.
+- **Unsure:** the umbrella question is the most obvious trope in the quiz and the most likely to be answered aspirationally rather than honestly.
+
+## You wake up 300 years late
+- **Tone dial:** Cold, procedural sci-fi. The ship is a workplace with bad news.
+- **What it reveals:** what you do with a broken system and no briefing — repair, ration, document, or leave.
+- **Flavor:** untagged. Leans CLEVER and CREATIVE; almost no LORE, because the quiz invents its own setting rather than testing a franchise.
+- **Unsure:** with no image question and an invented setting, the first two questions do a lot of world-building; they may read as setup rather than as choices.
+
+## The bookshop closes in ten minutes
+- **Tone dial:** Dry and self-aware. About reading habits, not about taste.
+- **What it reveals:** what you finish, what you abandon, and what you buy to feel like a different person.
+- **Flavor:** untagged. The most RELATABLE of the five, with one FUNNY question about the unread pile.
+- **Unsure:** the "buying the difficult book" question is easy to answer aspirationally; it is the one place where honesty and self-image diverge most.
+
+---
+
+## Cross-quiz notes
+- Every result appears in **at least four questions**; `scripts/check-quizzes.mjs` now fails the build if that slips.
+- Options rotate which trait sits at A/B/C/D; no question offers a single "nice" answer.
+- Image captions describe what is literally in the photograph; the alt text and credits live in `public/images/questions/credits.json`.
+- No question reuses another quiz's scenario, and no two options in a question mean the same thing.

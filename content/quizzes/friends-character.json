@@ -1,0 +1,458 @@
+{
+  "slug": "friends-character",
+  "title": "The FRIENDS group chat at 2:07am",
+  "dek": "Six friends, one group chat, zero impulse control. Twelve questions to find out which of the six you turn into when everyone else is asleep.",
+  "category": "Sitcoms",
+  "accent": "orange",
+  "emoji": "☕",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-16",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The coffee shop closes in ten minutes and nobody at the table has moved.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Order one more and start a new topic",
+          "weights": {
+            "rachel": 2,
+            "joey": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Stack the cups and mention the time",
+          "weights": {
+            "monica": 2,
+            "ross": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Stay until they turn the lights off",
+          "weights": {
+            "phoebe": 2,
+            "joey": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Be the one who says 'we should do this more'",
+          "weights": {
+            "chandler": 2,
+            "rachel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "One free table. Three friends are at it. The person from work you've been avoiding just walked in.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sit with the friends. Wave at the work person",
+          "weights": {
+            "monica": 2,
+            "rachel": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Merge the tables. Chaos is a social skill",
+          "weights": {
+            "chandler": 2,
+            "joey": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Order to go and text from outside",
+          "weights": {
+            "ross": 2,
+            "phoebe": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Sit with the work person. Ask about their weekend",
+          "weights": {
+            "phoebe": 2,
+            "monica": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The flat comes with one impossible thing:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A fridge that never runs out",
+          "weights": {
+            "joey": 2,
+            "monica": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A door to every place you've lived",
+          "weights": {
+            "phoebe": 2,
+            "ross": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "The best friendships survive living together.",
+      "disagree": {
+        "trait": "chandler"
+      },
+      "agree": {
+        "trait": "monica"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I say 'five minutes away' before I've found my shoes.",
+      "trait": "rachel",
+      "low": "I'm early, always",
+      "high": "I'm still choosing shoes"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "There's a note on the fridge: 'I know what you did.' It's in your handwriting.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Add 'and I'd do it again'",
+          "weights": {
+            "chandler": 2,
+            "rachel": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Interrogate everyone separately",
+          "weights": {
+            "monica": 2,
+            "ross": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Ignore it. It's a bit",
+          "weights": {
+            "joey": 2,
+            "phoebe": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Rewrite it in someone else's handwriting",
+          "weights": {
+            "ross": 2,
+            "chandler": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "A friend's partner being wrong is not my problem.",
+      "agree": {
+        "trait": "chandler",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "monica",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "image",
+      "prompt": "Pick the door you'd knock on at midnight.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cottage door, paint coming off",
+          "weights": {
+            "phoebe": 2,
+            "joey": 1
+          },
+          "image": "/images/questions/friends-door-cottage.jpg",
+          "alt": "An old cottage door with peeling paint"
+        },
+        {
+          "id": "b",
+          "label": "Long hallway, one light on",
+          "weights": {
+            "ross": 2,
+            "chandler": 1
+          },
+          "image": "/images/questions/friends-door-hallway.jpg",
+          "alt": "A dim apartment hallway with one lit door"
+        },
+        {
+          "id": "c",
+          "label": "Brass knocker, obviously inherited",
+          "weights": {
+            "monica": 2,
+            "rachel": 1
+          },
+          "image": "/images/questions/friends-door-ornate.jpg",
+          "alt": "An ornate door with a brass knocker"
+        },
+        {
+          "id": "d",
+          "label": "Yellow door under a streetlight",
+          "weights": {
+            "joey": 2,
+            "phoebe": 1
+          },
+          "image": "/images/questions/friends-door-yellow.jpg",
+          "alt": "A yellow front door lit by a streetlight"
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "mc",
+      "prompt": "Your parents ask when the 'proper job' is happening.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Say it's going great. It isn't",
+          "weights": {
+            "rachel": 2,
+            "chandler": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Explain the whole plan, with slides",
+          "weights": {
+            "ross": 2,
+            "monica": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Ask them to define 'proper'",
+          "weights": {
+            "phoebe": 2,
+            "chandler": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Change the subject to food",
+          "weights": {
+            "joey": 2,
+            "rachel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I have a story that is 90% true and 10% better.",
+      "trait": "joey",
+      "low": "Facts only",
+      "high": "It gets a laugh every time"
+    },
+    {
+      "id": "q11",
+      "type": "spectrum",
+      "prompt": "I'd rather organise the trip than enjoy it.",
+      "disagree": {
+        "trait": "phoebe"
+      },
+      "agree": {
+        "trait": "monica"
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Everyone is late and the table is under your name.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Take it and order for everyone",
+          "weights": {
+            "monica": 2,
+            "ross": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Give the name as someone else's",
+          "weights": {
+            "chandler": 2,
+            "joey": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Wait outside and narrate arrivals",
+          "weights": {
+            "phoebe": 2,
+            "rachel": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Order starters and call it dinner",
+          "weights": {
+            "joey": 2,
+            "rachel": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "rachel",
+      "name": "Rachel Green",
+      "tagline": "Main character, occasionally employed",
+      "blurb": "You arrive late, look great, and somehow leave with the thing everyone wanted. Your instincts are better than your planning, which is why you keep getting away with it. You're also the friend who says the encouraging thing at exactly the moment it's needed — even if you're texting it from a taxi you can't afford.",
+      "accent": "yellow",
+      "mix": {
+        "rachel": 45,
+        "monica": 17,
+        "chandler": 13,
+        "phoebe": 9,
+        "joey": 16,
+        "ross": 0
+      },
+      "strengths": [
+        "Turns chaos into an entrance",
+        "Genuinely good at hyping other people",
+        "Recovers from embarrassment in seconds"
+      ],
+      "watchOut": "Not everything is a plot point. Sometimes the answer is just 'I'm sorry, I'll be there.'"
+    },
+    {
+      "trait": "monica",
+      "name": "Monica Geller",
+      "tagline": "Has a system and a spare system",
+      "blurb": "You are the load-bearing wall of your friend group. You host, you plan, you notice who hasn't eaten, and you have opinions about how the dishwasher should be loaded. Your standards are high because you care, not because you're difficult — although it can look like both.",
+      "accent": "sky",
+      "mix": {
+        "rachel": 18,
+        "monica": 47,
+        "chandler": 0,
+        "phoebe": 0,
+        "joey": 14,
+        "ross": 21
+      },
+      "strengths": [
+        "Makes a room feel looked after",
+        "Turns a vague plan into an actual evening",
+        "Notices the one person who's gone quiet"
+      ],
+      "watchOut": "You're allowed to be a guest sometimes. Let someone else burn the dinner."
+    },
+    {
+      "trait": "chandler",
+      "name": "Chandler Bing",
+      "tagline": "Jokes first, feelings eventually",
+      "blurb": "You are the funniest person in the chat and the last to say what's actually wrong. Humour is how you hold a room together and how you keep it at arm's length. When you do get sincere, people stop scrolling — because it's rare and it's always accurate.",
+      "accent": "red",
+      "mix": {
+        "rachel": 23,
+        "monica": 5,
+        "chandler": 43,
+        "phoebe": 3,
+        "joey": 18,
+        "ross": 8
+      },
+      "strengths": [
+        "Defuses tension with one line",
+        "Reads subtext better than anyone admits",
+        "Loyal in a quiet, unglamorous way"
+      ],
+      "watchOut": "The joke can be the answer, but it can't be the whole conversation. Say the plain version once."
+    },
+    {
+      "trait": "phoebe",
+      "name": "Phoebe Buffay",
+      "tagline": "Operating on a frequency you don't have",
+      "blurb": "You live slightly to the left of everyone else and it works for you. You're kind without being sentimental, blunt without being cruel, and completely unbothered by what the group considers normal. People come to you for the answer they weren't expecting.",
+      "accent": "lime",
+      "mix": {
+        "rachel": 15,
+        "monica": 5,
+        "chandler": 7,
+        "phoebe": 49,
+        "joey": 20,
+        "ross": 4
+      },
+      "strengths": [
+        "Immune to peer pressure",
+        "Comfortable with being misunderstood",
+        "Kind in ways nobody asked for"
+      ],
+      "watchOut": "Independence can turn into distance. Let someone in on the plan occasionally."
+    },
+    {
+      "trait": "joey",
+      "name": "Joey Tribbiani",
+      "tagline": "Loyal, hungry, extremely present",
+      "blurb": "You are the friend who shows up. Not with a plan or a speech — with food, a terrible idea and total commitment to whatever the group is doing. You don't hold grudges and you don't do subtext, which makes you the easiest person in the room to be around.",
+      "accent": "pink",
+      "mix": {
+        "rachel": 26,
+        "monica": 8,
+        "chandler": 10,
+        "phoebe": 9,
+        "joey": 47,
+        "ross": 0
+      },
+      "strengths": [
+        "Fiercely loyal without keeping score",
+        "Enthusiastic about other people's news",
+        "Recovers from anything with a snack"
+      ],
+      "watchOut": "Being easygoing isn't the same as being fine. Say the awkward thing before it builds."
+    },
+    {
+      "trait": "ross",
+      "name": "Ross Geller",
+      "tagline": "Technically correct, emotionally complicated",
+      "blurb": "You need the facts to line up. You'll correct the timeline, find the receipt and explain why it matters — and you'll be right, which is not always the same as being helpful. Under the pedantry is someone who cares enormously and is terrified of getting it wrong.",
+      "accent": "green",
+      "mix": {
+        "rachel": 10,
+        "monica": 17,
+        "chandler": 9,
+        "phoebe": 12,
+        "joey": 8,
+        "ross": 44
+      },
+      "strengths": [
+        "Remembers the detail that settles it",
+        "Takes commitments seriously",
+        "Will do the unglamorous, correct thing"
+      ],
+      "watchOut": "Being right is not a love language. Ask what they need before you explain."
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "slug": "love-language",
+  "title": "Your actual love language, tested at 3am",
+  "dek": "Not what you would put on a dating profile. Twelve questions about the kind of care that actually lands when the day has fallen over.",
+  "category": "Love",
+  "accent": "pink",
+  "emoji": "🫀",
+  "minutes": 4,
+  "published": "2026-11-15",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "You've had a bad day and someone's already home when you walk in.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ask them to sit with you. No talking",
+          "weights": {
+            "time": 2,
+            "touch": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Tell them the whole thing, in order",
+          "weights": {
+            "words": 2,
+            "time": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "They've made tea and dealt with the thing you were dreading",
+          "weights": {
+            "acts": 2,
+            "words": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Go to your room. They let you",
+          "weights": {
+            "space": 2,
+            "acts": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "You're at a wedding where you know nobody and the seating chart has betrayed you.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Find one person and stay with them all night",
+          "weights": {
+            "time": 2,
+            "touch": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Text the group chat a running commentary",
+          "weights": {
+            "words": 2,
+            "gifts": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Learn the DJ's name and become useful",
+          "weights": {
+            "acts": 2,
+            "time": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Step outside, call it early",
+          "weights": {
+            "space": 2,
+            "words": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "One thing you'd always have, whatever the budget:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The thing they mentioned once, in June",
+          "weights": {
+            "gifts": 2,
+            "words": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A whole weekend with nothing booked",
+          "weights": {
+            "time": 2,
+            "space": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "spectrum",
+      "prompt": "I'd rather hear it than be shown it.",
+      "disagree": {
+        "trait": "acts"
+      },
+      "agree": {
+        "trait": "words"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "intensity",
+      "prompt": "I check whether someone's upset by how they type.",
+      "trait": "words",
+      "low": "Never noticed",
+      "high": "Full punctuation analysis"
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "You get to know one thing about a new partner on day one:",
+      "options": [
+        {
+          "id": "a",
+          "label": "How they treat the waiter",
+          "weights": {
+            "acts": 2,
+            "time": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "How they talk about their ex",
+          "weights": {
+            "words": 2,
+            "space": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "What they do when plans are cancelled",
+          "weights": {
+            "space": 2,
+            "touch": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "What they give you for no reason",
+          "weights": {
+            "gifts": 2,
+            "acts": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "agreement",
+      "prompt": "I'd rather be needed than wanted.",
+      "agree": {
+        "trait": "acts",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "words",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "A friend says they're fine. You don't believe them.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Say 'okay' and stay close",
+          "weights": {
+            "touch": 2,
+            "time": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ask a second time, plainly",
+          "weights": {
+            "words": 2,
+            "acts": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Do one small thing, no announcement",
+          "weights": {
+            "acts": 2,
+            "gifts": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Give them a day, then check in",
+          "weights": {
+            "space": 2,
+            "words": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather be missed than monitored.",
+      "disagree": {
+        "trait": "words"
+      },
+      "agree": {
+        "trait": "space"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "intensity",
+      "prompt": "I remember what people mention wanting.",
+      "trait": "gifts",
+      "low": "I forget by Friday",
+      "high": "There's a note in my phone"
+    },
+    {
+      "id": "q11",
+      "type": "agreement",
+      "prompt": "If I have to ask for it, it doesn't count.",
+      "agree": {
+        "trait": "gifts",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "words",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The group chat has a plan tonight. You have a book and no intention of moving.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Go, and be glad you did",
+          "weights": {
+            "time": 2,
+            "words": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Stay. Send a photo of the book",
+          "weights": {
+            "space": 2,
+            "gifts": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Invite everyone to yours instead",
+          "weights": {
+            "acts": 2,
+            "time": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Say yes, cancel at six",
+          "weights": {
+            "space": 2,
+            "words": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "words",
+      "name": "Words of affirmation",
+      "tagline": "Say it, then say it again",
+      "blurb": "You can survive a bad week on one well-chosen sentence. What lands isn't flattery — it's specificity: someone naming exactly what you did and why it mattered. You replay those lines for years, which is why you're also very good at giving them.",
+      "accent": "yellow",
+      "mix": {
+        "words": 53,
+        "time": 16,
+        "touch": 0,
+        "gifts": 23,
+        "acts": 4,
+        "space": 4
+      },
+      "strengths": [
+        "Makes people feel seen in one sentence",
+        "Remembers the exact compliment that helped",
+        "Says the thing instead of assuming it's known"
+      ],
+      "watchOut": "Words are cheap to some people. Let a kind act count even when nobody narrates it."
+    },
+    {
+      "trait": "time",
+      "name": "Quality time",
+      "tagline": "Presence, with the phone in another room",
+      "blurb": "You don't need a big gesture, you need someone's full attention for an unremarkable hour. Half-listening is worse than absence to you. The people who get this about you are the ones who've seen you relax completely.",
+      "accent": "sky",
+      "mix": {
+        "words": 10,
+        "time": 38,
+        "touch": 30,
+        "gifts": 8,
+        "acts": 8,
+        "space": 6
+      },
+      "strengths": [
+        "Gives attention that actually feels like attention",
+        "Patient with slow, pointless conversation",
+        "Turns ordinary evenings into memories"
+      ],
+      "watchOut": "Time is finite. Being present with everyone can mean being absent for yourself."
+    },
+    {
+      "trait": "touch",
+      "name": "Physical touch",
+      "tagline": "A hand on the shoulder fixes more than a speech",
+      "blurb": "You regulate through contact: a hug held a second too long, a shoulder against yours on a sofa. You're not clingy, you're wired this way, and you read other people's comfort with touch unusually carefully because you know how badly it can land.",
+      "accent": "red",
+      "mix": {
+        "words": 11,
+        "time": 26,
+        "touch": 38,
+        "gifts": 13,
+        "acts": 3,
+        "space": 9
+      },
+      "strengths": [
+        "Comforts without needing the right words",
+        "Reads physical comfort signals fast",
+        "Warm in a way people remember"
+      ],
+      "watchOut": "Not everyone wants to be reached for. Ask, even when it feels obvious."
+    },
+    {
+      "trait": "gifts",
+      "name": "Thoughtful gifts",
+      "tagline": "Proof you were listening in June",
+      "blurb": "Your love language is evidence: the book they mentioned once, the exact snack, the thing that says I noticed you. It's not about money — a €2 object can wreck you if it's the right one. You keep a mental shelf of everyone's small wants.",
+      "accent": "lime",
+      "mix": {
+        "words": 15,
+        "time": 9,
+        "touch": 9,
+        "gifts": 44,
+        "acts": 13,
+        "space": 10
+      },
+      "strengths": [
+        "Remembers the throwaway detail",
+        "Turns observation into care",
+        "Makes people feel specifically known"
+      ],
+      "watchOut": "A gift can't replace the conversation. Sometimes the present is just your time."
+    },
+    {
+      "trait": "acts",
+      "name": "Acts of service",
+      "tagline": "Let me take one thing off your list",
+      "blurb": "You show up with the practical thing: the lift, the meal, the form filled in correctly. You'd rather remove a problem than discuss it, and you quietly resent being thanked for what felt obvious. Your care is load-bearing and mostly invisible.",
+      "accent": "green",
+      "mix": {
+        "words": 13,
+        "time": 14,
+        "touch": 0,
+        "gifts": 21,
+        "acts": 48,
+        "space": 4
+      },
+      "strengths": [
+        "Reliable in a crisis",
+        "Solves before being asked",
+        "Turns affection into something usable"
+      ],
+      "watchOut": "Not everything needs fixing. Sit with someone before you reach for the toolbox."
+    },
+    {
+      "trait": "space",
+      "name": "Room to disappear",
+      "tagline": "Close, but with the door shut sometimes",
+      "blurb": "You need solitude the way other people need company, and being checked on can feel like being watched. Your closeness is built on trust, not constant contact: the people you love can go quiet for a week and nothing changes.",
+      "accent": "orange",
+      "mix": {
+        "words": 12,
+        "time": 10,
+        "touch": 9,
+        "gifts": 14,
+        "acts": 7,
+        "space": 48
+      },
+      "strengths": [
+        "Comfortable alone without being lonely",
+        "Respects other people's privacy",
+        "Shows up fully when you do show up"
+      ],
+      "watchOut": "Silence reads as rejection to people who aren't built like you. Say when you'll be back."
+    }
+  ]
+}
