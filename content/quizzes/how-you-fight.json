@@ -1,0 +1,217 @@
+{
+  "slug": "how-you-fight",
+  "title": "How you fight with someone you love",
+  "dek": "Not the tidy version you'd tell a therapist. Twelve questions about the last real argument and what you actually do in the middle of it.",
+  "category": "Love",
+  "accent": "red",
+  "emoji": "🥊",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q8",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "It starts over something small. Your first move:",
+      "options": [
+        { "id": "a", "label": "Go quiet and calibrate", "weights": { "silent": 2, "crier": 1 } },
+        { "id": "b", "label": "Say the thing you'll have to apologise for", "weights": { "exploder": 2, "deflector": 1 } },
+        { "id": "c", "label": "Bring up a very specific previous incident", "weights": { "historian": 2, "avoider": 1 } },
+        { "id": "d", "label": "Try to solve it within ninety seconds", "weights": { "fixer": 2, "negotiator": 1 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The thing you can't help doing:",
+      "options": [
+        { "id": "a", "label": "Cry, and hate that you're crying", "weights": { "crier": 2, "silent": 1 } },
+        { "id": "b", "label": "Make a joke at the worst possible moment", "weights": { "deflector": 2, "exploder": 1 } },
+        { "id": "c", "label": "Need to leave the room immediately", "weights": { "avoider": 2, "historian": 1 } },
+        { "id": "d", "label": "Ask what outcome they actually want", "weights": { "negotiator": 2, "fixer": 1 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "mc",
+      "prompt": "Your worst version of yourself shows up as:",
+      "options": [
+        { "id": "a", "label": "Three days without mentioning it", "weights": { "silent": 2, "historian": 1 } },
+        { "id": "b", "label": "Everything at once, in the wrong order", "weights": { "exploder": 2, "fixer": 1 } },
+        { "id": "c", "label": "Crying before you know why", "weights": { "crier": 2, "avoider": 1 } },
+        { "id": "d", "label": "Turning it into a bit", "weights": { "deflector": 2, "negotiator": 1 } }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "mc",
+      "prompt": "The evidence you bring to the argument:",
+      "options": [
+        { "id": "a", "label": "Dates, quotes, a pattern analysis", "weights": { "historian": 2, "silent": 1 } },
+        { "id": "b", "label": "A fix, offered before they've finished the sentence", "weights": { "fixer": 2, "exploder": 1 } },
+        { "id": "c", "label": "A very good reason to be somewhere else", "weights": { "avoider": 2, "crier": 1 } },
+        { "id": "d", "label": "A compromise you've already written", "weights": { "negotiator": 2, "deflector": 1 } }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "mc",
+      "prompt": "Mid-argument, you sound like:",
+      "options": [
+        { "id": "a", "label": "\"Fine.\" (It is not fine)", "weights": { "silent": 2, "exploder": 1 } },
+        { "id": "b", "label": "\"You did exactly this in March.\"", "weights": { "historian": 2, "fixer": 1 } },
+        { "id": "c", "label": "\"Sorry, sorry, I'm sorry.\"", "weights": { "crier": 2, "deflector": 1 } },
+        { "id": "d", "label": "\"I'm going for a walk.\"", "weights": { "avoider": 2, "negotiator": 1 } }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "How it actually ends:",
+      "options": [
+        { "id": "a", "label": "Someone says something too loud and it's over", "weights": { "exploder": 2, "silent": 1 } },
+        { "id": "b", "label": "You clean the kitchen and it's somehow resolved", "weights": { "fixer": 2, "historian": 1 } },
+        { "id": "c", "label": "A joke lands and you both take the exit", "weights": { "deflector": 2, "crier": 1 } },
+        { "id": "d", "label": "A ten-minute break, then an actual conversation", "weights": { "negotiator": 2, "avoider": 1 } }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "mc",
+      "prompt": "What you say afterwards that you don't mean:",
+      "options": [
+        { "id": "a", "label": "\"It's fine, I'm over it.\"", "weights": { "silent": 2, "exploder": 1 } },
+        { "id": "b", "label": "\"I'll handle it, don't worry.\"", "weights": { "fixer": 2, "historian": 1 } },
+        { "id": "c", "label": "A bit about how dramatic you both were", "weights": { "deflector": 2, "crier": 1 } },
+        { "id": "d", "label": "\"Let's just not do this again.\"", "weights": { "negotiator": 2, "avoider": 1 } }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "The real feeling underneath, most often:",
+      "options": [
+        { "id": "a", "label": "I said too much and I can't take it back", "weights": { "exploder": 2, "silent": 1 } },
+        { "id": "b", "label": "They've forgotten something that mattered", "weights": { "historian": 2, "fixer": 1 } },
+        { "id": "c", "label": "It's not about the dishes", "weights": { "crier": 2, "deflector": 1 } },
+        { "id": "d", "label": "I need to not be in this room", "weights": { "avoider": 2, "negotiator": 1 } }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "this_or_that",
+      "prompt": "After it's over:",
+      "options": [
+        { "id": "a", "label": "You replay it for two days", "weights": { "historian": 2, "silent": 1 } },
+        { "id": "b", "label": "You move on by doing something", "weights": { "fixer": 2, "deflector": 1 } }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "this_or_that",
+      "prompt": "The thing you actually need:",
+      "options": [
+        { "id": "a", "label": "To be heard once, properly", "weights": { "silent": 2, "crier": 1 } },
+        { "id": "b", "label": "To hear that we're okay", "weights": { "fixer": 2, "negotiator": 1 } }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "intensity",
+      "prompt": "I get loud before I get clear.",
+      "trait": "exploder",
+      "low": "Never",
+      "high": "Every single time"
+    },
+    {
+      "id": "q12",
+      "type": "spectrum",
+      "prompt": "Leaving the room is a valid argument technique.",
+      "disagree": { "trait": "negotiator" },
+      "agree": { "trait": "avoider" }
+    }
+  ],
+  "results": [
+    {
+      "trait": "silent",
+      "name": "The Silence",
+      "tagline": "Three days, no words",
+      "blurb": "You don't shout, you disappear politely. The conversation stops, the flat goes quiet, and you wait for them to come and find you. You're not being cruel — you genuinely need time to assemble the sentence. It just takes you until Thursday.",
+      "accent": "blue",
+      "mix": { "silent": 41, "exploder": 9, "historian": 12, "fixer": 6, "crier": 8, "deflector": 5, "avoider": 13, "negotiator": 6 },
+      "strengths": ["Doesn't say things you'll regret", "Thinks before speaking", "Calm in a crisis"],
+      "watchOut": "Silence reads as punishment even when it isn't. Say when you'll come back."
+    },
+    {
+      "trait": "exploder",
+      "name": "The Volcano",
+      "tagline": "Loud, fast, over",
+      "blurb": "It comes out all at once and it's over in ninety seconds, and you're genuinely surprised anyone's still upset. The volume isn't hatred, it's velocity. You'd just like everyone to know that you're fine now, which is not how feelings work for other people.",
+      "accent": "red",
+      "mix": { "silent": 10, "exploder": 40, "historian": 9, "fixer": 7, "crier": 5, "deflector": 11, "avoider": 6, "negotiator": 12 },
+      "strengths": ["Says it instead of storing it", "Recovers fast", "No passive-aggressive guessing games"],
+      "watchOut": "Your ninety seconds lands in someone else's week. Lower the volume, keep the point."
+    },
+    {
+      "trait": "historian",
+      "name": "The Historian",
+      "tagline": "Receipts from 2019",
+      "blurb": "You remember the exact wording, the date and what you were wearing, and you bring it out with the calm of a prosecutor. You're not being petty — you're proving you're not imagining the pattern. The other person only hears the archive.",
+      "accent": "yellow",
+      "mix": { "silent": 11, "exploder": 8, "historian": 41, "fixer": 6, "crier": 5, "deflector": 6, "avoider": 9, "negotiator": 14 },
+      "strengths": ["Notices patterns, not one-offs", "Takes details seriously", "Argues with evidence"],
+      "watchOut": "One current thing at a time. The archive can wait for a calmer day."
+    },
+    {
+      "trait": "fixer",
+      "name": "The Fixer",
+      "tagline": "Solves it, skips the feeling",
+      "blurb": "The second something hurts, you're already three steps into a solution. It comes from love and it lands as dismissal. You'll offer a plan before they've finished their sentence, then feel rejected when the plan isn't the thing they wanted.",
+      "accent": "green",
+      "mix": { "silent": 6, "exploder": 7, "historian": 10, "fixer": 41, "crier": 7, "deflector": 5, "avoider": 8, "negotiator": 16 },
+      "strengths": ["Reliable when things break", "Practical, not performative", "Follows through"],
+      "watchOut": "Ask 'do you want help or do you want company?' before offering either."
+    },
+    {
+      "trait": "crier",
+      "name": "The Crier",
+      "tagline": "Tears before words",
+      "blurb": "Your face starts before your argument does, and then you're apologising for crying instead of finishing the point. The feeling is real and enormous and completely unhelpful mid-sentence. You leave arguments having never said the actual thing.",
+      "accent": "sky",
+      "mix": { "silent": 9, "exploder": 6, "historian": 5, "fixer": 8, "crier": 42, "deflector": 7, "avoider": 11, "negotiator": 12 },
+      "strengths": ["Feels things honestly", "Not afraid of emotion", "Apologises sincerely"],
+      "watchOut": "Write the point down. You don't have to deliver it perfectly to say it."
+    },
+    {
+      "trait": "deflector",
+      "name": "The Comedian",
+      "tagline": "Punchline as a shield",
+      "blurb": "You can make anyone laugh, including in the middle of the worst conversation of the year. It's a genuine gift and it's also how you leave the room without moving. The joke buys you ten seconds and costs you the chance to be taken seriously.",
+      "accent": "orange",
+      "mix": { "silent": 5, "exploder": 13, "historian": 4, "fixer": 6, "crier": 10, "deflector": 42, "avoider": 8, "negotiator": 12 },
+      "strengths": ["Breaks tension nobody else can", "Keeps perspective", "Fun even in bad weeks"],
+      "watchOut": "Let one serious sentence land without a follow-up joke. It'll survive."
+    },
+    {
+      "trait": "avoider",
+      "name": "The Runner",
+      "tagline": "Needs air, immediately",
+      "blurb": "The walls close in and you're out — a walk, a drive, a sudden errand. It's not that you don't care; it's that you can't think in that room. The problem is you always come back to a person who's been sitting alone with the thing you left.",
+      "accent": "purple",
+      "mix": { "silent": 12, "exploder": 6, "historian": 9, "fixer": 5, "crier": 14, "deflector": 6, "avoider": 40, "negotiator": 8 },
+      "strengths": ["Protects the conversation from the worst version of you", "Self-aware about limits", "Comes back"],
+      "watchOut": "Say when you're returning. Disappearing isn't the same as pausing."
+    },
+    {
+      "trait": "negotiator",
+      "name": "The Negotiator",
+      "tagline": "Wants the rule, not the win",
+      "blurb": "You'd rather agree a process than be right, which makes you excellent in a crisis and slightly exhausting in a feeling. You've suggested a ten-minute cooling-off period during an argument about a birthday. It works. It also makes people want to shake you.",
+      "accent": "cyan",
+      "mix": { "silent": 6, "exploder": 7, "historian": 8, "fixer": 15, "crier": 10, "deflector": 12, "avoider": 8, "negotiator": 34 },
+      "strengths": ["De-escalates almost anything", "Fair under pressure", "Finds the workable option"],
+      "watchOut": "Some moments don't need a process, they need you to just be upset with them."
+    }
+  ]
+}

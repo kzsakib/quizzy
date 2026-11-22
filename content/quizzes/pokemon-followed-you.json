@@ -1,0 +1,361 @@
+{
+  "slug": "pokemon-followed-you",
+  "title": "A Pokémon has decided you're its trainer",
+  "dek": "It followed you home, sat on your bag and refuses to leave. Twelve questions to work out which one you're now stuck with, and what that says about you.",
+  "category": "Gaming",
+  "accent": "yellow",
+  "emoji": "⚡",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q5",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "It sat on your bag and refused to move. What's in the bag?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Snacks, a charger, and a plan",
+          "weights": { "eevee": 2, "growlithe": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Something broken you keep forgetting to fix",
+          "weights": { "psyduck": 2, "jigglypuff": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Fourteen hours of sleep debt",
+          "weights": { "snorlax": 2, "slowpoke": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Something you'd rather nobody saw",
+          "weights": { "gengar": 2, "meowth": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "How it behaves at 3am:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Barks at a shadow and wakes the neighbour",
+          "weights": { "growlithe": 2, "eevee": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Hums until somebody sings along",
+          "weights": { "jigglypuff": 2, "psyduck": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Sits very still, thinking about nothing",
+          "weights": { "slowpoke": 2, "snorlax": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Steals something shiny and hides it",
+          "weights": { "meowth": 2, "gengar": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "mc",
+      "prompt": "The first battle it wins for you is against:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A stranger being rude to you",
+          "weights": { "eevee": 2, "snorlax": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Your own to-do list",
+          "weights": { "psyduck": 2, "gengar": 1 }
+        },
+        {
+          "id": "c",
+          "label": "The cold",
+          "weights": { "growlithe": 2, "slowpoke": 1 }
+        },
+        {
+          "id": "d",
+          "label": "A bad mood, permanently",
+          "weights": { "jigglypuff": 2, "meowth": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "mc",
+      "prompt": "A friend says your Pokémon is weird. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Agree. It's mostly asleep",
+          "weights": { "snorlax": 2, "eevee": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Say 'that's the appeal' with too much feeling",
+          "weights": { "gengar": 2, "psyduck": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Explain the theory that it's secretly a genius",
+          "weights": { "slowpoke": 2, "growlithe": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Change the subject and check your wallet",
+          "weights": { "meowth": 2, "jigglypuff": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "mc",
+      "prompt": "Where it sleeps:",
+      "options": [
+        {
+          "id": "a",
+          "label": "On your feet, exactly where you need to walk",
+          "weights": { "eevee": 2, "psyduck": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Across the doorway like a roadblock",
+          "weights": { "snorlax": 2, "gengar": 1 }
+        },
+        {
+          "id": "c",
+          "label": "On the warmest thing in the flat",
+          "weights": { "growlithe": 2, "jigglypuff": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Nowhere. It just stands there",
+          "weights": { "slowpoke": 2, "meowth": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "You're having a bad day. It responds by:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sitting on your keyboard and looking worried",
+          "weights": { "psyduck": 2, "eevee": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Turning off a light and pretending it was an accident",
+          "weights": { "gengar": 2, "snorlax": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Singing something you didn't ask for",
+          "weights": { "jigglypuff": 2, "growlithe": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Bringing you a coin. It's your coin",
+          "weights": { "meowth": 2, "slowpoke": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "mc",
+      "prompt": "The mess it leaves behind:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Everything slightly rearranged, nothing broken",
+          "weights": { "eevee": 2, "psyduck": 1 }
+        },
+        {
+          "id": "b",
+          "label": "A prank you'll find in three days",
+          "weights": { "gengar": 2, "snorlax": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Glitter. Somehow",
+          "weights": { "jigglypuff": 2, "growlithe": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Nothing. It watched you clean",
+          "weights": { "slowpoke": 2, "meowth": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "Your team photo, described:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Everyone mid-blink and slightly confused",
+          "weights": { "psyduck": 2, "eevee": 1 }
+        },
+        {
+          "id": "b",
+          "label": "One of you asleep, one of you holding the trophy",
+          "weights": { "snorlax": 2, "gengar": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Warm, loud, and a little singed",
+          "weights": { "growlithe": 2, "jigglypuff": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Two looking at the camera, one at your wallet",
+          "weights": { "meowth": 2, "slowpoke": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "this_or_that",
+      "prompt": "Your sixth slot goes to:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The one that hits hardest",
+          "weights": { "gengar": 2, "eevee": 1 }
+        },
+        {
+          "id": "b",
+          "label": "The one that never has to be told twice",
+          "weights": { "growlithe": 2, "slowpoke": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "this_or_that",
+      "prompt": "It gets lost. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Walk around calling its name like an idiot",
+          "weights": { "jigglypuff": 2, "psyduck": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Check the three places it always hides",
+          "weights": { "meowth": 2, "snorlax": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "intensity",
+      "prompt": "I do my best thinking while doing absolutely nothing.",
+      "trait": "slowpoke",
+      "low": "Never",
+      "high": "That's the whole method"
+    },
+    {
+      "id": "q12",
+      "type": "spectrum",
+      "prompt": "I'd rather be liked than respected.",
+      "disagree": { "trait": "gengar" },
+      "agree": { "trait": "eevee" }
+    }
+  ],
+  "results": [
+    {
+      "trait": "eevee",
+      "name": "Eevee",
+      "tagline": "Unfinished on purpose",
+      "blurb": "You've got about six versions of yourself on standby and you keep almost becoming one of them. People find you easy to be around because you adapt fast, and then they're surprised when you're suddenly different. That's not indecision. That's range with a deadline problem.",
+      "accent": "yellow",
+      "mix": { "eevee": 40, "psyduck": 8, "snorlax": 9, "gengar": 7, "growlithe": 12, "jigglypuff": 10, "slowpoke": 8, "meowth": 6 },
+      "strengths": ["Fits any room without losing yourself", "Curious about everything", "Recovers from a bad week fast"],
+      "watchOut": "Choose a version of yourself and stay long enough to get good at it."
+    },
+    {
+      "trait": "psyduck",
+      "name": "Psyduck",
+      "tagline": "Headache with a heart",
+      "blurb": "You are visibly going through something at all times and everyone can tell. The strange part is it works: you're more capable on your worst day than most people are on their best. You just have to survive the part where your brain loudly announces it's fine.",
+      "accent": "sky",
+      "mix": { "eevee": 9, "psyduck": 40, "snorlax": 6, "gengar": 9, "growlithe": 8, "jigglypuff": 12, "slowpoke": 8, "meowth": 8 },
+      "strengths": ["Performs under pressure nobody else would handle", "No pretence about how you feel", "Surprisingly sharp when it counts"],
+      "watchOut": "You don't have to wait until your head splits open to ask for help."
+    },
+    {
+      "trait": "snorlax",
+      "name": "Snorlax",
+      "tagline": "Immovable, and that's the point",
+      "blurb": "You are not lazy, you are running a strict energy budget. You'll sleep through the alarm, the argument and the apocalypse, then do more in forty minutes than the room did all day. Nobody gets to move you until you've decided to move.",
+      "accent": "blue",
+      "mix": { "eevee": 8, "psyduck": 6, "snorlax": 41, "gengar": 8, "growlithe": 6, "jigglypuff": 5, "slowpoke": 14, "meowth": 12 },
+      "strengths": ["Unbothered by other people's urgency", "Full effort when it matters", "Excellent at rest"],
+      "watchOut": "Rest is a strategy, not a hiding place. Set one thing in motion before the nap."
+    },
+    {
+      "trait": "gengar",
+      "name": "Gengar",
+      "tagline": "Friendly menace",
+      "blurb": "You're the one who says the thing everyone was thinking, then watches the room rearrange itself. It's not cruelty — it's that you find pretence physically uncomfortable. Your pranks are affectionate. Your affection is also a bit of a prank.",
+      "accent": "purple",
+      "mix": { "eevee": 7, "psyduck": 9, "snorlax": 6, "gengar": 40, "growlithe": 6, "jigglypuff": 8, "slowpoke": 8, "meowth": 16 },
+      "strengths": ["Cuts through nonsense", "Makes hard rooms fun", "Fiercely loyal under the jokes"],
+      "watchOut": "The bit lands until it doesn't. Check whether the person is still laughing."
+    },
+    {
+      "trait": "growlithe",
+      "name": "Growlithe",
+      "tagline": "Loyal and slightly on fire",
+      "blurb": "You are all in, immediately, about everything. New hobby, new person, new cause — full commitment by Tuesday. It makes you the warmest person in the room and it also means you burn through things you liked a month ago.",
+      "accent": "red",
+      "mix": { "eevee": 12, "psyduck": 7, "snorlax": 5, "gengar": 6, "growlithe": 41, "jigglypuff": 9, "slowpoke": 6, "meowth": 14 },
+      "strengths": ["Enthusiastic without being fake", "Defends people instantly", "Brings the energy up"],
+      "watchOut": "Not everything deserves the full flame on day one. Save some for month three."
+    },
+    {
+      "trait": "jigglypuff",
+      "name": "Jigglypuff",
+      "tagline": "Performing whether you asked or not",
+      "blurb": "You've got a thing you do — a song, a story, a bit — and you'll do it for any room that's half-listening. You genuinely think you're being helpful. Sometimes you are. Sometimes everyone falls asleep and you're still going, marker in hand.",
+      "accent": "pink",
+      "mix": { "eevee": 10, "psyduck": 12, "snorlax": 5, "gengar": 7, "growlithe": 10, "jigglypuff": 38, "slowpoke": 8, "meowth": 10 },
+      "strengths": ["Turns a dull room into a moment", "No fear of looking silly", "Warms people up fast"],
+      "watchOut": "Read the room before the second verse. Some silences are invitations."
+    },
+    {
+      "trait": "slowpoke",
+      "name": "Slowpoke",
+      "tagline": "Late, but correct",
+      "blurb": "You process at half speed and arrive at answers everyone else missed. The lag looks like daydreaming; it's actually a very good filter. You're the only calm person in most situations, which makes you either deeply reassuring or deeply annoying.",
+      "accent": "cyan",
+      "mix": { "eevee": 8, "psyduck": 9, "snorlax": 14, "gengar": 7, "growlithe": 6, "jigglypuff": 7, "slowpoke": 41, "meowth": 8 },
+      "strengths": ["Unhurried in a crisis", "Thinks before answering", "Notices what the rush hides"],
+      "watchOut": "Some things are time-sensitive. Reply before the moment closes."
+    },
+    {
+      "trait": "meowth",
+      "name": "Meowth",
+      "tagline": "A scheme and a coin",
+      "blurb": "You've always got an angle: a side plan, a slightly-too-clever trade, a way to make the boring part pay. You're not greedy so much as allergic to wasted effort. Ninety percent of your schemes are nonsense. The other ten percent actually work.",
+      "accent": "lime",
+      "mix": { "eevee": 8, "psyduck": 8, "snorlax": 12, "gengar": 15, "growlithe": 12, "jigglypuff": 9, "slowpoke": 8, "meowth": 28 },
+      "strengths": ["Finds the shortcut nobody saw", "Resourceful under pressure", "Never boring to negotiate with"],
+      "watchOut": "Not everything is a trade. Some people are just being nice."
+    }
+  ]
+}

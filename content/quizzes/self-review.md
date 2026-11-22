@@ -102,6 +102,42 @@ with the joke in it.
 - **Flavor:** untagged. The most RELATABLE of the five, with one FUNNY question about the unread pile.
 - **Unsure:** the "buying the difficult book" question is easy to answer aspirationally; it is the one place where honesty and self-image diverge most.
 
+## The Taylor Swift bridge that explains your week
+- **Tone dial:** Fan-literate but feeling-first. Song titles are results; no question tests release dates or track order.
+- **What it reveals:** which emotional situation you're actually in, told through the bridge rather than the chorus.
+- **Flavor:** untagged. Leans RELATABLE and CREATIVE; the archive question is the only joke with teeth.
+- **Unsure:** "the last time you cried" invites performance, but every option is a different flavour of honest rather than a cool answer.
+
+## A Pokémon has decided you're its trainer
+- **Tone dial:** Warm, domestic comedy. The Pokémon is a housemate, not a stat block.
+- **What it reveals:** how you look after something (and what you'd rather it looked after), not your favourite generation.
+- **Flavor:** untagged. FUNNY and RELATABLE by construction; LORE stays light on purpose.
+- **Unsure:** the team-photo question is the only one that needs a group, so it carries more social weight than the rest.
+
+## Twelve questions and Karasuno hands you a jersey
+- **Tone dial:** Sports-sincere with one absurd beat. Positions are the results; no trivia about matches.
+- **What it reveals:** the role you take when a group has to perform, and whether you want credit for it.
+- **Flavor:** untagged. RELATABLE and CLEVER front-loaded; one joke question ("the ball's coming at your face").
+- **Unsure:** "I'm not sure I belong here yet" is the most exposing option in the set and may pull people toward the bench result.
+
+## Your week is a Dunder Mifflin cold open
+- **Tone dial:** Comedic, capped. The cold open is the setting; no question requires episode recall.
+- **What it reveals:** what kind of mess you make and how you handle a room when nobody is in charge.
+- **Flavor:** untagged. FUNNY 4 / RELATABLE 4 roughly; LORE is deliberately low so non-viewers can play.
+- **Unsure:** "the George Foreman grill" result names an object rather than a scene, which is slightly inconsistent with the others.
+
+## The K-drama trope happening to you right now
+- **Tone dial:** Playful, trope-literate, occasionally sincere. Tropes are the results; knowing them is not required.
+- **What it reveals:** the plot device your actual week resembles — contract, memory gap, noble sacrifice, time skip.
+- **Flavor:** untagged. FUNNY and RELATABLE lead; the trailer-line question is the most quotable.
+- **Unsure:** the noble-idiocy result overlaps with the existing K-drama role quiz; the questions here are about behaviour, not casting, but the two may feel adjacent.
+
+## How you fight with someone you love
+- **Tone dial:** Sincere with uncomfortable accuracy. The jokes are in the recognisable details, not the premise.
+- **What it reveals:** your conflict style — silence, volume, receipts, fixing, tears, jokes, exit, or process.
+- **Flavor:** untagged. RELATABLE-heavy; no LORE at all, since there is no world to be loyal to.
+- **Unsure:** "I get loud before I get clear" is the only intensity question, so the volcano result can be nudged by one answer; the four other questions carrying it are what keep it honest.
+
 ---
 
 ## Cross-quiz notes

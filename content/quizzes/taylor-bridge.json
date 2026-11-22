@@ -1,0 +1,361 @@
+{
+  "slug": "taylor-bridge",
+  "title": "The Taylor Swift bridge that explains your week",
+  "dek": "No fandom exam, no album ranking. Twelve questions about how the last few months actually went, and the bridge that matches the feeling.",
+  "category": "Music",
+  "accent": "purple",
+  "emoji": "🪩",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q4",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Track one of your month opens with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A voicemail you haven't deleted",
+          "weights": { "alltoowell": 2, "august": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Someone's laugh through a wall",
+          "weights": { "cruelsummer": 2, "delicate": 1 }
+        },
+        {
+          "id": "c",
+          "label": "A door closing, politely",
+          "weights": { "exile": 2, "archer": 1 }
+        },
+        {
+          "id": "d",
+          "label": "You, explaining yourself to nobody",
+          "weights": { "antihero": 2, "champagne": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The photo you took and didn't post:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The one where you look happy and weren't",
+          "weights": { "august": 2, "alltoowell": 1 }
+        },
+        {
+          "id": "b",
+          "label": "The one somebody else took of you",
+          "weights": { "delicate": 2, "cruelsummer": 1 }
+        },
+        {
+          "id": "c",
+          "label": "The empty street at 1am",
+          "weights": { "archer": 2, "exile": 1 }
+        },
+        {
+          "id": "d",
+          "label": "The group shot you left early in",
+          "weights": { "champagne": 2, "antihero": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "mc",
+      "prompt": "You hear their name and your body does:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A full archive, in order, with dates",
+          "weights": { "alltoowell": 2, "exile": 1 }
+        },
+        {
+          "id": "b",
+          "label": "A small, embarrassing spark",
+          "weights": { "cruelsummer": 2, "antihero": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Replays an entire season",
+          "weights": { "august": 2, "archer": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Nothing. Very deliberately nothing",
+          "weights": { "delicate": 2, "champagne": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "mc",
+      "prompt": "The most you've ever actually said out loud:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Nothing, for eleven days",
+          "weights": { "exile": 2, "alltoowell": 1 }
+        },
+        {
+          "id": "b",
+          "label": "A joke about how badly I'm handling it",
+          "weights": { "antihero": 2, "cruelsummer": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Half a sentence, then I left",
+          "weights": { "archer": 2, "august": 1 }
+        },
+        {
+          "id": "d",
+          "label": "The kindest possible version of goodbye",
+          "weights": { "champagne": 2, "delicate": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "mc",
+      "prompt": "Your notes app, honestly:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Timestamps with feelings attached",
+          "weights": { "alltoowell": 2, "cruelsummer": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Drafts you'll never send",
+          "weights": { "exile": 2, "antihero": 1 }
+        },
+        {
+          "id": "c",
+          "label": "One paragraph about July",
+          "weights": { "august": 2, "delicate": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Things you almost said, written down",
+          "weights": { "archer": 2, "champagne": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "It's 2am. You are:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Typing, deleting, typing",
+          "weights": { "cruelsummer": 2, "alltoowell": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Fine. Suspiciously fine",
+          "weights": { "antihero": 2, "exile": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Rehearsing a conversation for Thursday",
+          "weights": { "delicate": 2, "august": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Awake because it's finished",
+          "weights": { "champagne": 2, "archer": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "mc",
+      "prompt": "A friend asks how you're doing. The honest answer:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Better than I look, worse than I say",
+          "weights": { "alltoowell": 2, "cruelsummer": 1 }
+        },
+        {
+          "id": "b",
+          "label": "I'd do it again and I know better",
+          "weights": { "antihero": 2, "exile": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Waiting for them to go first",
+          "weights": { "delicate": 2, "august": 1 }
+        },
+        {
+          "id": "d",
+          "label": "I've already written the ending",
+          "weights": { "archer": 2, "champagne": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "The last time you cried, it was:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A song, in a car, at a normal volume",
+          "weights": { "cruelsummer": 2, "alltoowell": 1 }
+        },
+        {
+          "id": "b",
+          "label": "A text that was three words long",
+          "weights": { "exile": 2, "antihero": 1 }
+        },
+        {
+          "id": "c",
+          "label": "Something small and stupid and perfect",
+          "weights": { "august": 2, "delicate": 1 }
+        },
+        {
+          "id": "d",
+          "label": "Relief, mostly",
+          "weights": { "champagne": 2, "archer": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "this_or_that",
+      "prompt": "Pick a coping mechanism.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Rewrite it as a story with a better ending",
+          "weights": { "alltoowell": 2, "archer": 1 }
+        },
+        {
+          "id": "b",
+          "label": "Book something and go",
+          "weights": { "champagne": 2, "cruelsummer": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "this_or_that",
+      "prompt": "The truth about the almost-thing:",
+      "options": [
+        {
+          "id": "a",
+          "label": "It was real, we were just late",
+          "weights": { "august": 2, "delicate": 1 }
+        },
+        {
+          "id": "b",
+          "label": "A lesson wearing a person's face",
+          "weights": { "antihero": 2, "exile": 1 }
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "intensity",
+      "prompt": "I rehearse conversations before they happen.",
+      "trait": "archer",
+      "low": "Never",
+      "high": "Word for word"
+    },
+    {
+      "id": "q12",
+      "type": "spectrum",
+      "prompt": "I still visit the version of it where I said something.",
+      "disagree": { "trait": "champagne" },
+      "agree": { "trait": "alltoowell" }
+    }
+  ],
+  "results": [
+    {
+      "trait": "alltoowell",
+      "name": "All Too Well",
+      "tagline": "Still keeping the receipts",
+      "blurb": "You remember it in order, with weather. Nothing about it has blurred, which is either a gift or a filing system that needs closing. You're not stuck on the person so much as the detail nobody else noticed.",
+      "accent": "red",
+      "mix": { "alltoowell": 38, "cruelsummer": 8, "exile": 14, "antihero": 10, "august": 12, "delicate": 4, "archer": 12, "champagne": 2 },
+      "strengths": ["Notices the small stuff", "Tells it honestly, eventually", "Loves in specifics"],
+      "watchOut": "The archive is not the relationship. You can stop re-reading the file."
+    },
+    {
+      "trait": "cruelsummer",
+      "name": "Cruel Summer",
+      "tagline": "A secret with a pulse",
+      "blurb": "It's not officially anything, which is somehow more intense than if it were. You're doing the most and saying the least, and every small signal gets a full analysis. This is fun. This is also exhausting. Both are true.",
+      "accent": "orange",
+      "mix": { "alltoowell": 9, "cruelsummer": 39, "exile": 4, "antihero": 13, "august": 14, "delicate": 12, "archer": 5, "champagne": 4 },
+      "strengths": ["Brings real heat to things", "Reads a room fast", "Says yes before overthinking"],
+      "watchOut": "If it has to stay secret to stay exciting, that's information."
+    },
+    {
+      "trait": "exile",
+      "name": "exile",
+      "tagline": "Two people, one silence",
+      "blurb": "Nobody did anything dramatic. There was just a thing neither of you said, and then a week of not saying it, and now it's a wall with furniture in front of it. You're both waiting for the other one to be braver first.",
+      "accent": "sky",
+      "mix": { "alltoowell": 14, "cruelsummer": 3, "exile": 40, "antihero": 9, "august": 6, "delicate": 5, "archer": 15, "champagne": 8 },
+      "strengths": ["Feels the weight of small omissions", "Loyal past the point of comfort", "Gives people room"],
+      "watchOut": "Silence isn't neutral. Someone has to say the plain sentence."
+    },
+    {
+      "trait": "antihero",
+      "name": "Anti-Hero",
+      "tagline": "Self-aware and doing it anyway",
+      "blurb": "You can name the pattern, the origin and the exact moment you'll repeat it, and you're still going to do it around 11pm on a Tuesday. The self-awareness is real. So is the thing you're being self-aware about.",
+      "accent": "purple",
+      "mix": { "alltoowell": 8, "cruelsummer": 14, "exile": 8, "antihero": 38, "august": 5, "delicate": 6, "archer": 16, "champagne": 5 },
+      "strengths": ["Brutally honest about yourself", "Makes the joke before anyone else can", "Apologises properly"],
+      "watchOut": "Naming the flaw isn't fixing it. One small action beats a great monologue."
+    },
+    {
+      "trait": "august",
+      "name": "august",
+      "tagline": "The almost, in the rear-view",
+      "blurb": "It was never going to be a whole thing and you knew that at the time. That hasn't stopped it from becoming the reference point for everything since. You're not mourning a relationship. You're mourning a season that felt like one.",
+      "accent": "lime",
+      "mix": { "alltoowell": 10, "cruelsummer": 15, "exile": 5, "antihero": 4, "august": 40, "delicate": 12, "archer": 6, "champagne": 8 },
+      "strengths": ["Lets good things be good while they last", "Romantic without being delusional", "Remembers the light, not just the loss"],
+      "watchOut": "You keep comparing present people to a memory. Memories don't have bad mornings."
+    },
+    {
+      "trait": "delicate",
+      "name": "Delicate",
+      "tagline": "Scared of breaking a good thing",
+      "blurb": "There's something new and it's going well and that's the problem. You're measuring every message, rereading every reply, trying not to be the reason it ends. The care is lovely. The surveillance is not.",
+      "accent": "pink",
+      "mix": { "alltoowell": 5, "cruelsummer": 13, "exile": 6, "antihero": 8, "august": 12, "delicate": 41, "archer": 10, "champagne": 5 },
+      "strengths": ["Thoughtful with people's feelings", "Notices what someone needs", "Doesn't rush a good thing"],
+      "watchOut": "You can't manage a relationship into safety. Ask the direct question."
+    },
+    {
+      "trait": "archer",
+      "name": "The Archer",
+      "tagline": "Ten steps ahead of the conversation",
+      "blurb": "You've already had this argument twice in your head with three different endings. By the time it happens you're bored of it, which reads as cold. It isn't. You just got there first and then hid the map.",
+      "accent": "blue",
+      "mix": { "alltoowell": 15, "cruelsummer": 4, "exile": 12, "antihero": 12, "august": 5, "delicate": 8, "archer": 40, "champagne": 4 },
+      "strengths": ["Sees what's coming", "Prepares for hard conversations", "Reads people accurately"],
+      "watchOut": "Not everything is a puzzle to solve before it happens. Let one thing be live."
+    },
+    {
+      "trait": "champagne",
+      "name": "champagne problems",
+      "tagline": "You ended it and you're still sad",
+      "blurb": "You were the one who said no, and you'd say no again, and it still sits in your chest at odd hours. Everyone thinks you're fine because you did the decisive thing. Decisive isn't the same as painless.",
+      "accent": "green",
+      "mix": { "alltoowell": 6, "cruelsummer": 5, "exile": 9, "antihero": 8, "august": 9, "delicate": 4, "archer": 9, "champagne": 50 },
+      "strengths": ["Makes the hard call honestly", "Doesn't waste anyone's years", "Knows what you can't live with"],
+      "watchOut": "You're allowed to be sad about a choice you'd make again. Don't let it harden into 'I ruin things'."
+    }
+  ]
+}

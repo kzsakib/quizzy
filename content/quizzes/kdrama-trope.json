@@ -1,0 +1,217 @@
+{
+  "slug": "kdrama-trope",
+  "title": "The K-drama trope happening to you right now",
+  "dek": "No dramatic reveal yet. Probably. Twelve questions about your actual week and the plot device it is quietly turning into.",
+  "category": "K-Drama",
+  "accent": "pink",
+  "emoji": "🌂",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-22",
+  "tiebreaker": "q6",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your week already has a plot. It opens with:",
+      "options": [
+        { "id": "a", "label": "A deal you made that's now a daily commitment", "weights": { "contract": 2, "noble": 1 } },
+        { "id": "b", "label": "Someone from years ago reappearing", "weights": { "childhood": 2, "secondlead": 1 } },
+        { "id": "c", "label": "A detail everyone remembers differently", "weights": { "amnesia": 2, "umbrella": 1 } },
+        { "id": "d", "label": "A family thing with money attached", "weights": { "chaebol": 2, "timeskip": 1 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The episode's second act:",
+      "options": [
+        { "id": "a", "label": "You're being noble about something nobody asked for", "weights": { "noble": 2, "contract": 1 } },
+        { "id": "b", "label": "You're clearly not the first choice here", "weights": { "secondlead": 2, "childhood": 1 } },
+        { "id": "c", "label": "It's raining and nobody brought an umbrella", "weights": { "umbrella": 2, "amnesia": 1 } },
+        { "id": "d", "label": "You can feel a time skip coming", "weights": { "timeskip": 2, "chaebol": 1 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "mc",
+      "prompt": "The line you'd get in the trailer:",
+      "options": [
+        { "id": "a", "label": "\"It was supposed to be pretend.\"", "weights": { "contract": 2, "amnesia": 1 } },
+        { "id": "b", "label": "\"You don't remember me, do you?\"", "weights": { "childhood": 2, "chaebol": 1 } },
+        { "id": "c", "label": "\"I'm fine. Really.\"", "weights": { "noble": 2, "umbrella": 1 } },
+        { "id": "d", "label": "\"I was always standing right there.\"", "weights": { "secondlead": 2, "timeskip": 1 } }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "mc",
+      "prompt": "The obstacle nobody will just discuss:",
+      "options": [
+        { "id": "a", "label": "You can't fully account for last Tuesday", "weights": { "amnesia": 2, "contract": 1 } },
+        { "id": "b", "label": "A parent controls something you'd rather they didn't", "weights": { "chaebol": 2, "childhood": 1 } },
+        { "id": "c", "label": "One umbrella, two people, terrible logistics", "weights": { "umbrella": 2, "noble": 1 } },
+        { "id": "d", "label": "An edit that will take three years", "weights": { "timeskip": 2, "secondlead": 1 } }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "mc",
+      "prompt": "Your behaviour that a viewer would shout at:",
+      "options": [
+        { "id": "a", "label": "Following a rule you invented", "weights": { "contract": 2, "childhood": 1 } },
+        { "id": "b", "label": "Trusting a memory that keeps changing shape", "weights": { "amnesia": 2, "chaebol": 1 } },
+        { "id": "c", "label": "A sacrifice nobody will ever know about", "weights": { "noble": 2, "secondlead": 1 } },
+        { "id": "d", "label": "A small kindness with a full soundtrack", "weights": { "umbrella": 2, "timeskip": 1 } }
+      ]
+    },
+    {
+      "id": "q6",
+      "type": "mc",
+      "prompt": "The backstory episode is about:",
+      "options": [
+        { "id": "a", "label": "You and someone else having the same origin story", "weights": { "childhood": 2, "contract": 1 } },
+        { "id": "b", "label": "A family judging you from a very nice house", "weights": { "chaebol": 2, "amnesia": 1 } },
+        { "id": "c", "label": "Being the reliable one, a scene behind", "weights": { "secondlead": 2, "noble": 1 } },
+        { "id": "d", "label": "Knowing this chapter will end abruptly", "weights": { "timeskip": 2, "umbrella": 1 } }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "mc",
+      "prompt": "The scene that will be clipped forever:",
+      "options": [
+        { "id": "a", "label": "You pretending this is casual", "weights": { "contract": 2, "childhood": 1 } },
+        { "id": "b", "label": "Someone's mother having opinions", "weights": { "chaebol": 2, "amnesia": 1 } },
+        { "id": "c", "label": "A sentence you almost finish", "weights": { "secondlead": 2, "noble": 1 } },
+        { "id": "d", "label": "Standing in the rain, obviously", "weights": { "umbrella": 2, "timeskip": 1 } }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "mc",
+      "prompt": "How your arc resolves (for now):",
+      "options": [
+        { "id": "a", "label": "A friendship that got complicated", "weights": { "childhood": 2, "contract": 1 } },
+        { "id": "b", "label": "You lost the plot, then came back to it", "weights": { "amnesia": 2, "chaebol": 1 } },
+        { "id": "c", "label": "You protect someone from a truth", "weights": { "noble": 2, "secondlead": 1 } },
+        { "id": "d", "label": "A jump cut to a much better apartment", "weights": { "timeskip": 2, "umbrella": 1 } }
+      ]
+    },
+    {
+      "id": "q9",
+      "type": "this_or_that",
+      "prompt": "The other lead:",
+      "options": [
+        { "id": "a", "label": "Someone you've known since you were seven", "weights": { "childhood": 2, "contract": 1 } },
+        { "id": "b", "label": "Someone new and slightly inappropriate", "weights": { "secondlead": 2, "umbrella": 1 } }
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "this_or_that",
+      "prompt": "The plot device you'd actually choose:",
+      "options": [
+        { "id": "a", "label": "One honest conversation", "weights": { "umbrella": 2, "noble": 1 } },
+        { "id": "b", "label": "A dramatic exit and a reunion in five years", "weights": { "timeskip": 2, "amnesia": 1 } }
+      ]
+    },
+    {
+      "id": "q11",
+      "type": "intensity",
+      "prompt": "I've retold something so many times that I now believe the new version.",
+      "trait": "amnesia",
+      "low": "Never",
+      "high": "That's my whole memory"
+    },
+    {
+      "id": "q12",
+      "type": "spectrum",
+      "prompt": "I'd rather be the one who sacrifices than the one who asks.",
+      "disagree": { "trait": "chaebol" },
+      "agree": { "trait": "noble" }
+    }
+  ],
+  "results": [
+    {
+      "trait": "contract",
+      "name": "The Contract Marriage",
+      "tagline": "A deal that got real",
+      "blurb": "You agreed to something practical and now you're rearranging your week around it. The rules were supposed to keep this simple; instead you know their coffee order and their sister's name. Everyone can see it. You're still calling it an arrangement.",
+      "accent": "pink",
+      "mix": { "contract": 41, "childhood": 6, "amnesia": 8, "chaebol": 9, "noble": 10, "secondlead": 8, "umbrella": 12, "timeskip": 6 },
+      "strengths": ["Committed once you've agreed", "Turns practical into meaningful", "Keeps your word"],
+      "watchOut": "Renegotiate the rules out loud. Pretending it's casual is its own drama."
+    },
+    {
+      "trait": "childhood",
+      "name": "The Childhood Connection",
+      "tagline": "You've been here before",
+      "blurb": "There's a person in your life who knew you before you were any good at being yourself. You keep finding each other at odd intervals and calling it a coincidence. It's not history holding you together — it's that you're both still the same underneath.",
+      "accent": "yellow",
+      "mix": { "contract": 8, "childhood": 40, "amnesia": 7, "chaebol": 10, "noble": 6, "secondlead": 11, "umbrella": 10, "timeskip": 8 },
+      "strengths": ["Deep, long loyalty", "Lets people change and stays", "Good at picking up where you left off"],
+      "watchOut": "Familiar isn't automatically right. Ask what you want now, not then."
+    },
+    {
+      "trait": "amnesia",
+      "name": "The Memory Loss Episode",
+      "tagline": "Wait, what happened Tuesday",
+      "blurb": "Your account of the last few months has holes in it, and the holes are doing a lot of work. You're not lying, exactly. You've just edited so many times that the clean version feels like the true one, which is a very convenient kind of forgetting.",
+      "accent": "cyan",
+      "mix": { "contract": 7, "childhood": 9, "amnesia": 40, "chaebol": 6, "noble": 12, "secondlead": 7, "umbrella": 6, "timeskip": 13 },
+      "strengths": ["Adaptable after a change", "Doesn't hold grudges long", "Starts fresh genuinely"],
+      "watchOut": "Write the awkward version down before it disappears. The holes cost something."
+    },
+    {
+      "trait": "chaebol",
+      "name": "The Chaebol Problem",
+      "tagline": "Money, family, opinions",
+      "blurb": "Everything in your week comes with an unspoken hierarchy attached. Someone's approval matters more than it should, and you're either fighting it loudly or quietly arranging your life around it. Both of you think you're being reasonable.",
+      "accent": "purple",
+      "mix": { "contract": 9, "childhood": 8, "amnesia": 5, "chaebol": 41, "noble": 7, "secondlead": 10, "umbrella": 6, "timeskip": 14 },
+      "strengths": ["Knows how systems work", "Refuses to be small quietly", "Protects what's yours"],
+      "watchOut": "Not every relationship is a negotiation with a board. Let one thing be easy."
+    },
+    {
+      "trait": "noble",
+      "name": "The Noble Idiocy",
+      "tagline": "Suffering for your sake",
+      "blurb": "You've decided to protect someone by removing yourself from the situation, and you've told nobody why. It's very romantic in a montage. In real life it's a person standing in a doorway with no explanation and a lot of feelings.",
+      "accent": "sky",
+      "mix": { "contract": 8, "childhood": 5, "amnesia": 10, "chaebol": 4, "noble": 42, "secondlead": 6, "umbrella": 15, "timeskip": 10 },
+      "strengths": ["Puts people before yourself", "Loves quietly and completely", "Keeps promises nobody heard"],
+      "watchOut": "Deciding for someone isn't kindness. Give them the information and a choice."
+    },
+    {
+      "trait": "secondlead",
+      "name": "Second Lead Syndrome",
+      "tagline": "Always a scene behind",
+      "blurb": "You do everything right, you're always there, and the story keeps looking just past you. The maddening part is that you'd be good at this. You're not bitter — you're patient in a way that the plot is currently wasting.",
+      "accent": "blue",
+      "mix": { "contract": 7, "childhood": 12, "amnesia": 5, "chaebol": 8, "noble": 6, "secondlead": 41, "umbrella": 9, "timeskip": 12 },
+      "strengths": ["Reliable without being dull", "Warm with no audience", "Honest about your feelings"],
+      "watchOut": "Waiting to be chosen isn't a personality. Say the line and risk the answer."
+    },
+    {
+      "trait": "umbrella",
+      "name": "The Umbrella Scene",
+      "tagline": "One umbrella, no plan",
+      "blurb": "There's a small, quiet moment this week that meant more than the big dramatic ones. You were kind at exactly the right time and then walked home slightly damp and oddly hopeful. Nobody will put it in a trailer. It's still the best scene.",
+      "accent": "green",
+      "mix": { "contract": 13, "childhood": 11, "amnesia": 6, "chaebol": 5, "noble": 10, "secondlead": 8, "umbrella": 41, "timeskip": 6 },
+      "strengths": ["Notices the small opening", "Kind without an audience", "Makes ordinary moments cinematic"],
+      "watchOut": "Atmosphere isn't communication. Say the thing in a dry room too."
+    },
+    {
+      "trait": "timeskip",
+      "name": "The Time Skip",
+      "tagline": "See you in three years",
+      "blurb": "You can feel a chapter ending without knowing what the next one is. You're already imagining the reunion, the new hair, the better apartment. The trouble is you're staging the future instead of living the last few weeks of this.",
+      "accent": "orange",
+      "mix": { "contract": 6, "childhood": 9, "amnesia": 14, "chaebol": 12, "noble": 8, "secondlead": 7, "umbrella": 9, "timeskip": 35 },
+      "strengths": ["Sees the long arc", "Comfortable with change", "Good at starting over"],
+      "watchOut": "The montage skips the part where you have the conversation. Do it now."
+    }
+  ]
+}

@@ -25,7 +25,7 @@ Phase 2 of 6 — home page plus a playable quiz engine, polished.
 - [x] Lenis + GSAP ticker sync, ScrollTrigger / SplitText / Flip registered
 - [x] Base layout, floating nav pill, oversized footer wordmark
 - [x] Home page: marquee hero, category bento, trending bento, fresh scroller
-- [x] Quiz engine, scoring and result pages — 16 quizzes across sitcoms, fandom,
+- [x] Quiz engine, scoring and result pages — 22 quizzes across sitcoms, fandom,
       love, personality, music, anime, pop culture, sports, horror, folklore,
       gaming, food, K-drama, sci-fi and books
 - [x] Single-page player: every question on one scrolling page, answers autosaved
