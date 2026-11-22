@@ -8,6 +8,7 @@ import "../styles/global.css";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import BlobCursor from "../components/BlobCursor";
+import Loader from "../components/Loader.astro";
 
 interface Props {
   title?: string;
@@ -65,9 +66,22 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
         }
       })();
     </script>
+
+    <!-- The loader only runs on a visitor's first page this session, so skip
+         it before first paint on every later navigation. -->
+    <script is:inline>
+      try {
+        if (sessionStorage.getItem("qz-loader-seen")) {
+          document.documentElement.classList.add("qz-loader-skip");
+        }
+      } catch (e) {
+        /* storage blocked: worst case the loader shows again */
+      }
+    </script>
   </head>
 
   <body class="bg-bg font-sans text-ink antialiased">
+    <Loader />
     <a class="skip-link" href="#main">Skip to content</a>
     <BlobCursor client:idle material="ink" color="#3B82F6" size={52} morphSpeed={0.5} lag={0.72} drip={0.5} splashCount={12} splashSpeed={0.6} splashGravity={0.4} />
     <Nav />
