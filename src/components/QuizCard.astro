@@ -23,7 +23,7 @@ const questionCount = quiz.questions.length;
   <div
     class:list={[
       "relative flex flex-col justify-between overflow-hidden bg-[var(--tile-accent)] p-5 text-[var(--tile-ink)]",
-      wide ? "min-h-[220px]" : "min-h-[150px]",
+      wide ? "min-h-[220px]" : "min-h-[178px]",
     ]}
     style={`--tile-accent: var(--accent-${quiz.accent}); --tile-ink: ${onAccentInk(quiz.accent)}`}
   >
@@ -35,8 +35,8 @@ const questionCount = quiz.questions.length;
     <p class="label relative opacity-70">{quiz.category}</p>
     <p
       class:list={[
-        "display relative mt-8 text-balance",
-        wide ? "text-[clamp(30px,4vw,46px)]" : "text-[clamp(24px,3vw,32px)]",
+        "display relative mt-6 text-balance leading-[0.94]",
+        wide ? "text-[clamp(30px,4vw,46px)]" : "text-[clamp(22px,2.7vw,30px)]",
       ]}
     >
       {quiz.title}
