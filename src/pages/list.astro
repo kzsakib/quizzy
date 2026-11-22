@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { onAccentInk } from "../lib/accents";
+import { categories, quizzes } from "../lib/quizzes";
+import { siteHref } from "../lib/url";
+
+/* The library already comes back newest-first; sorting again here keeps the
+   page's promise independent of how the source list is ordered. */
+const ordered = [...quizzes].sort((a, b) =>
+  (b.published ?? "").localeCompare(a.published ?? ""),
+);
+
+const stamp = (iso?: string) => {
+  if (!iso) return "";
+  return new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+};
+
+const pad = (index: number) => String(index + 1).padStart(2, "0");
+---
+
+<BaseLayout
+  title={`All ${quizzes.length} quizzes — Quizzy`}
+  description={`Every quiz on Quizzy in one place, newest first. ${quizzes.length} quizzes across ${categories.length} categories, no accounts, no waiting.`}
+  accent="purple"
+>
+  <section class="container-page pt-2">
+    <div
+      class="flex items-baseline justify-between gap-4 border-b border-line pb-4"
+    >
+      <p class="label text-[var(--ink-muted)]">List</p>
+      <p class="label text-[var(--ink-muted)]">Newest first</p>
+    </div>
+
+    <h1 class="display mt-8 text-[clamp(46px,9vw,110px)] leading-[0.86]">
+      The whole list.
+    </h1>
+
+    <p class="mt-5 max-w-md text-[15px] leading-relaxed text-[var(--ink-soft)]">
+      All {quizzes.length} quizzes in one column, freshest at the top. Pick a
+      fight with your result or keep scrolling — both are valid.
+    </p>
+
+    <ul class="mt-10 border-t border-line/70" role="list">
+      {
+        ordered.map((quiz, index) => (
+          <li class="border-b border-line/70" data-reveal>
+            <a
+              href={siteHref(`/quiz/${quiz.slug}/`)}
+              class="group grid grid-cols-[2rem_1fr_auto] items-center gap-x-4 gap-y-1 py-5 transition-colors sm:grid-cols-[3rem_1fr_auto_auto] sm:gap-x-6 sm:py-6"
+              style={`--row-accent: var(--accent-${quiz.accent}); --row-on-accent: ${onAccentInk(quiz.accent)}`}
+            >
+              <span class="label tabular-nums text-[var(--ink-muted)]">
+                {pad(index)}
+              </span>
+
+              <span class="min-w-0">
+                <span class="display block text-balance text-[clamp(21px,3vw,32px)] leading-[1.02] transition-colors duration-200 group-hover:text-[var(--row-accent)]">
+                  {quiz.title}
+                </span>
+                <span class="label mt-2 flex flex-wrap items-center gap-2 text-[var(--ink-muted)]">
+                  <span
+                    class="size-2 shrink-0 rounded-full"
+                    style={`background: var(--accent-${quiz.accent})`}
+                    aria-hidden="true"
+                  />
+                  {quiz.category}
+                  <span aria-hidden="true">·</span>
+                  {quiz.questions.length} questions · {quiz.minutes} min
+                </span>
+              </span>
+
+              <span class="label hidden text-[var(--ink-muted)] sm:block">
+                {stamp(quiz.published)}
+              </span>
+
+              <span
+                aria-hidden="true"
+                class="grid size-9 shrink-0 place-items-center rounded-full border border-line text-[var(--ink-strong)] transition-colors duration-200 group-hover:border-transparent group-hover:bg-[var(--row-accent)] group-hover:text-[var(--row-on-accent)]"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  class="size-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="label mt-12 text-[var(--ink-muted)]">
+      Not sure where to start? <a href={siteHref("/#categories")} class="underline">Browse by category</a>
+    </p>
+  </section>
+</BaseLayout>

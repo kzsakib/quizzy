@@ -49,7 +49,7 @@ src/
                      QuizPlayer, QzSlider, ResultChart)
   layouts/           BaseLayout.astro
   lib/               motion.ts (Lenis + GSAP), quizzes.ts, scoring.ts
-  pages/             index.astro, category/[slug], quiz/[slug]/{index,take,result/[trait]}
+  pages/             index.astro, list, category/[slug], quiz/[slug]/{index,take,result/[trait]}
   styles/            tokens.css, global.css
 content/quizzes/     one JSON file per quiz
 public/images/       quiz covers and result art
@@ -208,6 +208,5 @@ push to `main`.
 GitHub Pages serves project sites from a subpath, so the workflow sets
 `GITHUB_PAGES=true`, which makes `astro.config.mjs` use `base: "/quizzy"`.
 Every internal link goes through `siteHref()` in `src/lib/url.ts` (wrapping
-`import.meta.env.BASE_URL`), and the random-quiz button reads the base from a
-`data-base` attribute, so the same build works at the root locally and under
-`/quizzy/` when deployed. Canonical and Open Graph URLs use `Astro.site`.
+`import.meta.env.BASE_URL`), so the same build works at the root locally and
+under `/quizzy/` when deployed. Canonical and Open Graph URLs use `Astro.site`.

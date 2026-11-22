@@ -1,9 +1,6 @@
 ---
 import ThemeToggle from "./ThemeToggle.tsx";
-import { quizzes } from "../lib/quizzes";
 import { siteHref } from "../lib/url";
-
-const slugs = JSON.stringify(quizzes.map((quiz) => quiz.slug));
 ---
 
 <header class="sticky top-3 z-50 px-[var(--gutter)] sm:top-5">
@@ -62,17 +59,19 @@ const slugs = JSON.stringify(quizzes.map((quiz) => quiz.slug));
       </li>
       <li>
         <a
-          href={siteHref("/#fresh")}
-          data-random-quiz
-          data-slugs={slugs}
-          data-base={import.meta.env.BASE_URL}
+          href={siteHref("/list")}
           class="label rounded-[var(--r-pill)] px-3.5 py-2 transition-colors hover:bg-surface-2 hover:text-ink"
-          >Random quiz</a
+          >List</a
         >
       </li>
     </ul>
 
     <div class="ml-auto flex items-center gap-2">
+      <a
+        href={siteHref("/list")}
+        class="label rounded-[var(--r-pill)] px-3.5 py-2 text-[var(--ink-strong)] transition-colors hover:bg-surface-2 hover:text-ink md:hidden"
+        >List</a
+      >
       <ThemeToggle client:load />
       <a
         href={siteHref("/#trending")}
@@ -95,21 +94,4 @@ const slugs = JSON.stringify(quizzes.map((quiz) => quiz.slug));
     </div>
   </nav>
 
-  <script is:inline>
-    document.querySelectorAll("[data-random-quiz]").forEach(function (link) {
-      link.addEventListener("click", function (event) {
-        var slugs = [];
-        try {
-          slugs = JSON.parse(link.getAttribute("data-slugs") || "[]");
-        } catch (error) {
-          return;
-        }
-        if (!slugs.length) return;
-        event.preventDefault();
-        var slug = slugs[Math.floor(Math.random() * slugs.length)];
-        window.location.href =
-          (link.getAttribute("data-base") || "/") + "quiz/" + slug + "/take/";
-      });
-    });
-  </script>
 </header>
