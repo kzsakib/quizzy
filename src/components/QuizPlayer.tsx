@@ -111,7 +111,7 @@ export default function QuizPlayer({ quiz }: Props) {
               ? submit
               : () => firstUnanswered && scrollToQuestion(firstUnanswered.id)
           }
-          className="label shrink-0 rounded-[var(--r-pill)] bg-ink px-3.5 py-2 text-ink-dark transition-transform duration-200 hover:-translate-y-0.5 sm:px-4"
+          className="label shrink-0 rounded-[var(--r-pill)] bg-ink px-3.5 py-2 text-[var(--on-ink)] transition-transform duration-200 hover:-translate-y-0.5 sm:px-4"
         >
           {complete ? "See result" : `Jump to ${answeredCount + 1}`}
         </button>

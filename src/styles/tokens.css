@@ -19,6 +19,11 @@
   --ink: #f5f2ea;
   --ink-dark: #141414;
 
+  /* Text that sits on top of an ink fill (buttons, skip link) and of an
+     ink-dark fill (round arrow buttons). Both flip with the theme. */
+  --on-ink: var(--ink-dark);
+  --on-ink-dark: var(--paper);
+
   /* Muted text tokens. Fixed values rather than opacity, so small labels
      keep enough contrast on dark surfaces and in the paper theme. */
   --ink-muted: #a5a29a; /* 7.5:1 on #0e0e0e */
@@ -80,6 +85,7 @@
   --surface-2: #e7e0ce;
   --line: #141414;
   --ink: #141414;
+  --on-ink: var(--paper);
   --ink-muted: #605b51; /* 5.9:1 on cream */
   --ink-soft: #4c473e; /* 8.1:1 */
   --ink-strong: #2b2721;

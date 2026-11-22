@@ -78,30 +78,37 @@ const rowTwo = [
       </p>
 
       <h1
-        class="display mt-5 max-w-[16ch] text-[clamp(48px,9vw,124px)] leading-[0.86]"
+        class="display mt-5 text-[clamp(46px,8.4vw,118px)]"
         data-reveal
       >
-        Every question.
-        <span class="relative inline-block">
-          <span class="relative z-10 serif-italic font-normal normal-case tracking-normal"
-            >A whole</span
-          >
-          <svg
-            viewBox="0 0 320 120"
-            class="pointer-events-none absolute -inset-x-4 -inset-y-3 z-0 h-[calc(100%+24px)] w-[calc(100%+32px)] overflow-visible"
-            aria-hidden="true"
-            fill="none"
-          >
-            <path
-              class="scribble"
-              d="M28 78C22 44 78 18 156 14c72-4 142 18 148 48 6 32-46 48-118 44C104 102 34 96 28 78Z"
-              stroke="var(--accent-yellow)"
-              stroke-width="2.5"
-              stroke-linecap="round"
-            ></path>
-          </svg>
+        <span class="block leading-[0.98]"
+          >Every question.</span
+        >
+        <span
+          class="mt-[0.2em] flex flex-wrap items-baseline gap-x-[0.32em] gap-y-[0.08em]"
+        >
+          <span class="relative inline-block">
+            <span
+              class="serif-italic relative z-10 -translate-y-[0.05em] text-[0.82em] font-normal normal-case leading-[0.98] tracking-normal"
+              >A whole</span
+            >
+            <svg
+              viewBox="0 0 320 120"
+              class="pointer-events-none absolute -inset-x-3 -inset-y-2 z-0 h-[calc(100%+16px)] w-[calc(100%+24px)] overflow-visible"
+              aria-hidden="true"
+              fill="none"
+            >
+              <path
+                class="scribble"
+                d="M28 78C22 44 78 18 156 14c72-4 142 18 148 48 6 32-46 48-118 44C104 102 34 96 28 78Z"
+                stroke="var(--accent-yellow)"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </span>
+          <span class="leading-[0.98]">personality.</span>
         </span>
-        personality.
       </h1>
 
       <div class="mt-10 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
@@ -114,7 +121,7 @@ const rowTwo = [
         <div class="flex flex-wrap items-center gap-3 md:justify-end" data-reveal>
           <a
             href={siteHref(`/quiz/${heroQuiz.slug}/`)}
-            class="label inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink px-5 py-3.5 text-ink-dark transition-transform duration-200 hover:-translate-y-0.5"
+            class="label inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink px-5 py-3.5 text-[var(--on-ink)] transition-transform duration-200 hover:-translate-y-0.5"
           >
             Start the {heroQuiz.category.toLowerCase()} quiz
             <svg
@@ -162,7 +169,12 @@ const rowTwo = [
             class:list={[
               "group relative flex flex-col justify-between overflow-hidden rounded-[var(--r-tile)] p-5 text-ink-dark transition-transform duration-300 hover:-translate-y-1",
               index === 0 ? "col-span-2 row-span-2" : "",
-              index === categories.length - 1 ? "col-span-2 sm:col-span-1" : "",
+              // With 15 categories the last two tiles stretch to fill the final
+              // row instead of leaving two holes at the bottom of the bento.
+              index === categories.length - 2 ? "lg:col-span-2" : "",
+              index === categories.length - 1
+                ? "col-span-2 sm:col-span-1 lg:col-span-2"
+                : "",
             ]}
             style={`--tile-accent: var(--accent-${category.accent})`}
             data-reveal
@@ -190,7 +202,7 @@ const rowTwo = [
               </span>
               <span
                 aria-hidden="true"
-                class="grid size-8 shrink-0 place-items-center rounded-full bg-ink-dark text-ink transition-transform duration-300 group-hover:rotate-45"
+                class="grid size-8 shrink-0 place-items-center rounded-full bg-ink-dark text-[var(--on-ink-dark)] transition-transform duration-300 group-hover:rotate-45"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -289,7 +301,7 @@ const rowTwo = [
       </p>
       <a
         href={siteHref(`/quiz/${quizzes[quizzes.length - 1].slug}/`)}
-        class="label mt-8 inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink px-5 py-3.5 text-ink-dark transition-transform duration-200 hover:-translate-y-0.5"
+        class="label mt-8 inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink px-5 py-3.5 text-[var(--on-ink)] transition-transform duration-200 hover:-translate-y-0.5"
       >
         Take a quiz
         <svg

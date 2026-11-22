@@ -130,7 +130,7 @@
     z-index: 100;
     transform: translateY(-160%);
     background: var(--ink);
-    color: var(--ink-dark);
+    color: var(--on-ink);
     padding: 10px 16px;
     border-radius: var(--r-control);
     font-size: 13px;
