@@ -220,15 +220,36 @@
         }
       ]
     },
-    {
+        {
       "id": "q9",
-      "type": "spectrum",
-      "prompt": "I'd rather be missed than monitored.",
-      "disagree": {
-        "trait": "words"
+      "type": "map",
+      "prompt": "Put yourself on the map of how you actually receive love.",
+      "helper": "Across: tell me or show me. Up: give me room or stay close.",
+      "x": {
+        "low": {
+          "label": "Show me",
+          "trait": "acts"
+        },
+        "high": {
+          "label": "Tell me",
+          "trait": "words"
+        }
       },
-      "agree": {
-        "trait": "space"
+      "y": {
+        "low": {
+          "label": "Give me room",
+          "trait": "space"
+        },
+        "high": {
+          "label": "Stay close",
+          "trait": "time"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Fixer",
+        "lowHigh": "Letters From Another Room",
+        "highLow": "Acts, In Person",
+        "highHigh": "Says It, Stays Close"
       }
     },
     {

@@ -4,10 +4,14 @@ import {
   type AnswerValue,
   type Answers,
   type PlayableQuiz,
+  type PointAnswer,
   type Question,
 } from "../lib/scoring";
 import { getLenis } from "../lib/motion";
 import QzSlider from "./QzSlider";
+import QzMap from "./QzMap";
+import QzRank from "./QzRank";
+import QzMadlibs from "./QzMadlibs";
 
 const AGREEMENT_LABELS = ["Hard no", "Nah", "Meh", "Yeah", "Hard yes"];
 
@@ -18,6 +22,9 @@ const TYPE_LABELS: Record<Question["type"], string> = {
   intensity: "How much is this you",
   spectrum: "How much do you agree",
   agreement: "Agree or disagree",
+  map: "Plot yourself",
+  rank: "Rank them",
+  madlibs: "Fill in the blanks",
 };
 
 interface Props {
@@ -238,6 +245,21 @@ interface BodyProps {
   onChange: (value: AnswerValue) => void;
 }
 
+const isPoint = (value: AnswerValue | undefined): value is PointAnswer =>
+  typeof value === "object" &&
+  value !== null &&
+  !Array.isArray(value) &&
+  "x" in value &&
+  "y" in value;
+
+const isPick = (
+  value: AnswerValue | undefined,
+): value is Record<string, string> =>
+  typeof value === "object" &&
+  value !== null &&
+  !Array.isArray(value) &&
+  !("x" in value);
+
 function QuestionBody({ question, value, onChange }: BodyProps) {
   if (
     question.type === "mc" ||
@@ -415,6 +437,41 @@ function QuestionBody({ question, value, onChange }: BodyProps) {
           <span aria-hidden="true">← →</span>
         </p>
       </div>
+    );
+  }
+
+  if (question.type === "map") {
+    return (
+      <QzMap
+        value={isPoint(value) ? value : undefined}
+        onChange={onChange}
+        x={question.x}
+        y={question.y}
+        quadrants={question.quadrants}
+        label={question.prompt}
+      />
+    );
+  }
+
+  if (question.type === "rank") {
+    return (
+      <QzRank
+        items={question.items}
+        value={Array.isArray(value) ? value : undefined}
+        onChange={onChange}
+        label={question.prompt}
+      />
+    );
+  }
+
+  if (question.type === "madlibs") {
+    return (
+      <QzMadlibs
+        template={question.template}
+        blanks={question.blanks}
+        value={isPick(value) ? value : undefined}
+        onChange={onChange}
+      />
     );
   }
 

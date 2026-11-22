@@ -220,41 +220,42 @@
         }
       ]
     },
-    {
+        {
       "id": "q9",
-      "type": "mc",
-      "prompt": "The supermarket at 9pm, hungry, no list.",
-      "options": [
+      "type": "rank",
+      "prompt": "Rank what actually rescues a 10pm Tuesday.",
+      "helper": "Top of the list is what you reach for first.",
+      "items": [
         {
-          "id": "a",
-          "label": "Buy the same seven things",
+          "id": "fridge",
+          "label": "A fridge with something in it",
           "weights": {
-            "toast": 2,
-            "recipe": 1
+            "fridge": 2,
+            "prep": 1
           }
         },
         {
-          "id": "b",
-          "label": "Buy for three meals you've planned",
+          "id": "recipe",
+          "label": "A recipe you know by heart",
           "weights": {
-            "prep": 2,
-            "recipe": 1
+            "recipe": 2,
+            "prep": 1
           }
         },
         {
-          "id": "c",
-          "label": "Buy snacks and call it dinner",
+          "id": "takeaway",
+          "label": "The takeaway app, already open",
           "weights": {
-            "snack": 2,
-            "takeaway": 1
+            "takeaway": 2,
+            "snack": 1
           }
         },
         {
-          "id": "d",
-          "label": "Buy one weird vegetable and build around it",
+          "id": "host",
+          "label": "Someone else doing the cooking",
           "weights": {
-            "improv": 2,
-            "fridge": 1
+            "host": 2,
+            "improv": 1
           }
         }
       ]

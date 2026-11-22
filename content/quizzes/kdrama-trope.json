@@ -98,14 +98,37 @@
         { "id": "d", "label": "A jump cut to a much better apartment", "weights": { "timeskip": 2, "umbrella": 1 } }
       ]
     },
-    {
+        {
       "id": "q9",
-      "type": "this_or_that",
-      "prompt": "The other lead:",
-      "options": [
-        { "id": "a", "label": "Someone you've known since you were seven", "weights": { "childhood": 2, "contract": 1 } },
-        { "id": "b", "label": "Someone new and slightly inappropriate", "weights": { "secondlead": 2, "umbrella": 1 } }
-      ]
+      "type": "map",
+      "prompt": "Your drama needs two coordinates before the opening credits.",
+      "helper": "Across: who wrote this plot. Up: how much money is involved.",
+      "x": {
+        "low": {
+          "label": "Fate wrote it",
+          "trait": "childhood"
+        },
+        "high": {
+          "label": "Lawyers wrote it",
+          "trait": "contract"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Humble and broke",
+          "trait": "noble"
+        },
+        "high": {
+          "label": "Impossibly rich",
+          "trait": "chaebol"
+        }
+      },
+      "quadrants": {
+        "lowLow": "Fated and Broke",
+        "lowHigh": "Destiny With a Trust Fund",
+        "highLow": "Contract, But Make It Poetic",
+        "highHigh": "Signed, Sealed, Loaded"
+      }
     },
     {
       "id": "q10",

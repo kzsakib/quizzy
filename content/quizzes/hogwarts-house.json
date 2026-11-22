@@ -89,26 +89,86 @@
         }
       ]
     },
-    {
+        {
       "id": "q3",
-      "type": "this_or_that",
-      "prompt": "A portrait offers one true thing about you, but only if you say something you've never said out loud.",
-      "options": [
+      "type": "madlibs",
+      "prompt": "One sentence and the Sorting Hat stops pretending to think.",
+      "helper": "Pick a phrase for each gap. No wrong answers, only revealing ones.",
+      "template": "I'm the kind of person who {a} when {b}.",
+      "blanks": [
         {
           "id": "a",
-          "label": "Say it. You want the answer",
-          "weights": {
-            "slytherin": 2,
-            "gryffindor": 1
-          }
+          "options": [
+            {
+              "id": "a1",
+              "label": "reads the rules, then finds the loophole",
+              "weights": {
+                "slytherin": 2,
+                "ravenclaw": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "volunteers before anyone else can",
+              "weights": {
+                "gryffindor": 2,
+                "hufflepuff": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "checks the book first",
+              "weights": {
+                "ravenclaw": 2,
+                "slytherin": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "makes sure everyone's eaten",
+              "weights": {
+                "hufflepuff": 2,
+                "gryffindor": 1
+              }
+            }
+          ]
         },
         {
           "id": "b",
-          "label": "Walk away. Some things stay mine",
-          "weights": {
-            "hufflepuff": 2,
-            "ravenclaw": 1
-          }
+          "options": [
+            {
+              "id": "b1",
+              "label": "nobody's watching",
+              "weights": {
+                "slytherin": 2,
+                "ravenclaw": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "it's about to go wrong",
+              "weights": {
+                "gryffindor": 2,
+                "hufflepuff": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "there's a puzzle in the room",
+              "weights": {
+                "ravenclaw": 2,
+                "hufflepuff": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "someone's been left out",
+              "weights": {
+                "hufflepuff": 2,
+                "gryffindor": 1
+              }
+            }
+          ]
         }
       ]
     },

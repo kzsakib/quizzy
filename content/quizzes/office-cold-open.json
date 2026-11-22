@@ -32,15 +32,87 @@
         { "id": "d", "label": "Weirdly philosophical about one small thing", "weights": { "koi": 2, "bat": 1 } }
       ]
     },
-    {
+        {
       "id": "q3",
-      "type": "mc",
-      "prompt": "The meeting everyone will retell:",
-      "options": [
-        { "id": "a", "label": "Chaos, shouting, one person staying calm", "weights": { "firedrill": 2, "cpr": 1 } },
-        { "id": "b", "label": "A catastrophe that was nobody's fault and everybody's fault", "weights": { "chili": 2, "bat": 1 } },
-        { "id": "c", "label": "Enthusiasm nobody requested and everyone remembers", "weights": { "parkour": 2, "jello": 1 } },
-        { "id": "d", "label": "A prank that took weeks and landed perfectly", "weights": { "jello": 2, "foreman": 1 } }
+      "type": "madlibs",
+      "prompt": "One sentence and the cold open writes itself.",
+      "helper": "Fill both gaps. The camera is already on you.",
+      "template": "I'm the kind of coworker who {a} when {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "prints the fire drill schedule in colour",
+              "weights": {
+                "firedrill": 2,
+                "foreman": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "starts a side quest in the parking lot",
+              "weights": {
+                "parkour": 2,
+                "jello": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "turns a nosebleed into a TED talk",
+              "weights": {
+                "cpr": 2,
+                "bat": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "brings chili and no receipts",
+              "weights": {
+                "chili": 2,
+                "koi": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "the building is technically on fire",
+              "weights": {
+                "firedrill": 2,
+                "cpr": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "there's free food involved",
+              "weights": {
+                "chili": 2,
+                "jello": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "someone says 'quick favour'",
+              "weights": {
+                "foreman": 2,
+                "parkour": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "the printer makes a noise",
+              "weights": {
+                "koi": 2,
+                "bat": 1
+              }
+            }
+          ]
+        }
       ]
     },
     {

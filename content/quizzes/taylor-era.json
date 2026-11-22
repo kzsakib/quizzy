@@ -111,15 +111,36 @@
         }
       ]
     },
-    {
+        {
       "id": "q4",
-      "type": "spectrum",
-      "prompt": "You can be nostalgic for a time you didn't enjoy.",
-      "disagree": {
-        "trait": "reputation"
+      "type": "map",
+      "prompt": "Pin where this era of your life actually sits.",
+      "helper": "Across: quiet or stadium-sized. Up: still green or already tired.",
+      "x": {
+        "low": {
+          "label": "Cardigan quiet",
+          "trait": "folklore"
+        },
+        "high": {
+          "label": "Stadium loud",
+          "trait": "reputation"
+        }
       },
-      "agree": {
-        "trait": "fearless"
+      "y": {
+        "low": {
+          "label": "Still green",
+          "trait": "fearless"
+        },
+        "high": {
+          "label": "Already tired",
+          "trait": "midnights"
+        }
+      },
+      "quadrants": {
+        "lowLow": "Cardigan at Nineteen",
+        "lowHigh": "Fame, But Make It Sad",
+        "highLow": "Sparkler in the Stadium",
+        "highHigh": "Reputation at 3am"
       }
     },
     {

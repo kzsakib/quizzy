@@ -12,6 +12,17 @@ const fail = (message) => {
   failures += 1;
 };
 
+const shuffle = (list) => {
+  const copy = [...list];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+};
+
+const pick = (list) => list[Math.floor(Math.random() * list.length)];
+
 for (const file of files) {
   const quiz = JSON.parse(readFileSync(path.join(dir, file), "utf8"));
   const traits = quiz.results.map((result) => result.trait);
@@ -26,33 +37,69 @@ for (const file of files) {
     fail(`${quiz.slug}: ${traits.length} results (want 4–12)`);
   }
 
+  // The four-option pick is the spine of every quiz; everything else is optional.
+  if (!quiz.questions.some((question) => question.type === "mc")) {
+    fail(`${quiz.slug}: no mc question`);
+  }
+
+  const known = (trait, where) => {
+    if (!traits.includes(trait)) fail(`${quiz.slug}/${where}: unknown trait ${trait}`);
+  };
+
   const seenTraits = new Set();
   for (const question of quiz.questions) {
-    if (question.options) {
+    if (question.type === "image") {
       for (const option of question.options) {
-        for (const trait of Object.keys(option.weights)) {
-          if (!traits.includes(trait)) fail(`${quiz.slug}: unknown trait ${trait}`);
-          seenTraits.add(trait);
+        if (!option.image) fail(`${quiz.slug}/${question.id}: no image`);
+        else if (!existsSync(path.join("public", option.image))) {
+          fail(`${quiz.slug}/${question.id}: missing ${option.image}`);
         }
-        if (question.type === "image") {
-          if (!option.image) fail(`${quiz.slug}/${question.id}: no image`);
-          else if (!existsSync(path.join("public", option.image))) {
-            fail(`${quiz.slug}/${question.id}: missing ${option.image}`);
-          }
-          if (!option.alt) fail(`${quiz.slug}/${question.id}: no alt text`);
+        if (!option.alt) fail(`${quiz.slug}/${question.id}: no alt text`);
+      }
+    }
+
+    if (question.type === "map") {
+      for (const axis of [question.x, question.y]) {
+        for (const pole of [axis.low, axis.high]) {
+          known(pole.trait, question.id);
+          if (!pole.label) fail(`${quiz.slug}/${question.id}: axis pole without a label`);
         }
       }
-    } else if (question.type === "intensity") {
-      if (!traits.includes(question.trait)) fail(`${quiz.slug}: bad trait`);
-      seenTraits.add(question.trait);
-    } else if (question.type === "spectrum") {
-      seenTraits.add(question.disagree.trait);
-      seenTraits.add(question.agree.trait);
-    } else {
-      seenTraits.add(question.agree.trait);
-      seenTraits.add(question.disagree.trait);
+      for (const corner of ["lowLow", "lowHigh", "highLow", "highHigh"]) {
+        if (!question.quadrants?.[corner]) {
+          fail(`${quiz.slug}/${question.id}: quadrant ${corner} has no name`);
+        }
+      }
     }
+
+    if (question.type === "rank") {
+      if (question.items.length < 3 || question.items.length > 6) {
+        fail(`${quiz.slug}/${question.id}: ${question.items.length} items (want 3–6)`);
+      }
+      for (const item of question.items) {
+        for (const trait of Object.keys(item.weights)) known(trait, question.id);
+      }
+    }
+
+    if (question.type === "madlibs") {
+      const gaps = [...question.template.matchAll(/\{(\w+)\}/g)].map((m) => m[1]);
+      const ids = question.blanks.map((blank) => blank.id);
+      if (gaps.join(",") !== ids.join(",")) {
+        fail(`${quiz.slug}/${question.id}: template gaps ${gaps.join("/")} ≠ blanks ${ids.join("/")}`);
+      }
+      for (const blank of question.blanks) {
+        if (blank.options.length < 2) {
+          fail(`${quiz.slug}/${question.id}/${blank.id}: fewer than 2 options`);
+        }
+        for (const option of blank.options) {
+          for (const trait of Object.keys(option.weights)) known(trait, question.id);
+        }
+      }
+    }
+
+    for (const trait of questionTraits(question)) seenTraits.add(trait);
   }
+
   for (const trait of traits) {
     if (!seenTraits.has(trait)) fail(`${quiz.slug}: ${trait} never scored`);
   }
@@ -74,9 +121,19 @@ for (const file of files) {
   for (let run = 0; run < 400; run += 1) {
     const answers = {};
     for (const question of quiz.questions) {
-      if (question.options) {
-        const option = question.options[Math.floor(Math.random() * question.options.length)];
-        answers[question.id] = option.id;
+      if (question.type === "map") {
+        answers[question.id] = {
+          x: Math.floor(Math.random() * 101),
+          y: Math.floor(Math.random() * 101),
+        };
+      } else if (question.type === "rank") {
+        answers[question.id] = shuffle(question.items.map((item) => item.id));
+      } else if (question.type === "madlibs") {
+        answers[question.id] = Object.fromEntries(
+          question.blanks.map((blank) => [blank.id, pick(blank.options).id]),
+        );
+      } else if (question.options) {
+        answers[question.id] = pick(question.options).id;
       } else if (question.type === "intensity") {
         answers[question.id] = 1 + Math.floor(Math.random() * 5);
       } else if (question.type === "spectrum") {

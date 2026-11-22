@@ -15,7 +15,10 @@ export type QuestionType =
   | "image"
   | "intensity"
   | "spectrum"
-  | "agreement";
+  | "agreement"
+  | "map"
+  | "rank"
+  | "madlibs";
 
 export interface Option {
   id: string;
@@ -64,11 +67,70 @@ export interface AgreementQuestion extends BaseQuestion {
   disagree: { trait: string; weight: number };
 }
 
+/** One pole of a two-axis map: what the axis is called, and the trait it feeds. */
+export interface MapAxis {
+  label: string;
+  trait: string;
+}
+
+/**
+ * A single dot dragged around a square. Each axis scores like a spectrum, so
+ * one question feeds four traits: two per axis. `x` 0 = low (left), `y` 0 = low
+ * (bottom); 100 = high (right / top).
+ */
+export interface MapQuestion extends BaseQuestion {
+  type: "map";
+  x: { low: MapAxis; high: MapAxis };
+  y: { low: MapAxis; high: MapAxis };
+  /** Fun names for the four corners, shown while dragging. */
+  quadrants: {
+    lowLow: string;
+    lowHigh: string;
+    highLow: string;
+    highHigh: string;
+  };
+}
+
+export interface RankItem {
+  id: string;
+  label: string;
+  weights: WeightMap;
+}
+
+/** Four (or so) items dragged into order; 1st place scores full weight. */
+export interface RankQuestion extends BaseQuestion {
+  type: "rank";
+  items: RankItem[];
+}
+
+/** A fill-in-the-blank option. Kept separate from `Option` — no images here. */
+export interface MadlibOption {
+  id: string;
+  label: string;
+  weights: WeightMap;
+}
+
+export interface MadlibBlank {
+  id: string;
+  options: MadlibOption[];
+}
+
+/** A sentence with inline gaps; each gap scores like a tiny multiple choice. */
+export interface MadlibsQuestion extends BaseQuestion {
+  type: "madlibs";
+  /** Placeholders use {blankId}, e.g. "I'm the kind of person who {a} when {b}." */
+  template: string;
+  blanks: MadlibBlank[];
+}
+
 export type Question =
   | ChoiceQuestion
   | IntensityQuestion
   | SpectrumQuestion
-  | AgreementQuestion;
+  | AgreementQuestion
+  | MapQuestion
+  | RankQuestion
+  | MadlibsQuestion;
 
 export interface QuizResult {
   trait: string;
@@ -107,8 +169,21 @@ export interface PlayableQuiz extends Omit<Quiz, "results"> {
   results: Pick<QuizResult, "trait">[];
 }
 
-export type AnswerValue = string | number;
+export interface PointAnswer {
+  x: number;
+  y: number;
+}
+
+export type AnswerValue =
+  | string
+  | number
+  | string[]
+  | PointAnswer
+  | Record<string, string>;
 export type Answers = Record<string, AnswerValue>;
+
+/** Position weights for `rank`: 1st, 2nd, 3rd, 4th… */
+export const RANK_WEIGHTS = [1, 0.6, 0.3, 0];
 
 export interface TraitScore {
   trait: string;
@@ -142,6 +217,29 @@ export function questionTraits(question: Question): string[] {
       return [...new Set([question.disagree.trait, question.agree.trait])];
     case "agreement":
       return [...new Set([question.agree.trait, question.disagree.trait])];
+    case "map":
+      return [
+        ...new Set([
+          question.x.low.trait,
+          question.x.high.trait,
+          question.y.low.trait,
+          question.y.high.trait,
+        ]),
+      ];
+    case "rank":
+      return [
+        ...new Set(
+          question.items.flatMap((item) => Object.keys(item.weights)),
+        ),
+      ];
+    case "madlibs":
+      return [
+        ...new Set(
+          question.blanks.flatMap((blank) =>
+            blank.options.flatMap((option) => Object.keys(option.weights)),
+          ),
+        ),
+      ];
   }
 }
 
@@ -220,6 +318,82 @@ export function scoreQuiz(quiz: PlayableQuiz, answers: Answers): ScoreReport {
       // 0% agreement → 2 points to the disagree trait, 100% → the agree trait.
       addEarned(question.disagree.trait, (100 - position) / 50);
       addEarned(question.agree.trait, position / 50);
+      continue;
+    }
+
+    if (question.type === "map") {
+      addMax(question.x.low.trait, 2);
+      addMax(question.x.high.trait, 2);
+      addMax(question.y.low.trait, 2);
+      addMax(question.y.high.trait, 2);
+      if (
+        typeof answer !== "object" ||
+        answer === null ||
+        Array.isArray(answer) ||
+        !("x" in answer) ||
+        !("y" in answer)
+      ) {
+        continue;
+      }
+      const pointX = clamp(Number(answer.x), 0, 100);
+      const pointY = clamp(Number(answer.y), 0, 100);
+      // Each axis behaves like a spectrum: its two poles split 4 points.
+      addEarned(question.x.low.trait, (100 - pointX) / 50);
+      addEarned(question.x.high.trait, pointX / 50);
+      addEarned(question.y.low.trait, (100 - pointY) / 50);
+      addEarned(question.y.high.trait, pointY / 50);
+      continue;
+    }
+
+    if (question.type === "rank") {
+      // Ceiling is the best single item, because 1st place = that item at full weight.
+      const ceiling: WeightMap = {};
+      for (const item of question.items) {
+        for (const [trait, weight] of Object.entries(item.weights)) {
+          ceiling[trait] = Math.max(ceiling[trait] ?? 0, weight);
+        }
+      }
+      for (const [trait, weight] of Object.entries(ceiling)) addMax(trait, weight);
+      if (!Array.isArray(answer)) continue;
+      answer.forEach((itemId, position) => {
+        if (typeof itemId !== "string") return;
+        const item = question.items.find((entry) => entry.id === itemId);
+        if (!item) return;
+        const factor = RANK_WEIGHTS[position] ?? 0;
+        for (const [trait, weight] of Object.entries(item.weights)) {
+          addEarned(trait, weight * factor);
+        }
+      });
+      continue;
+    }
+
+    if (question.type === "madlibs") {
+      // Each blank contributes its own ceiling, so no blank dominates.
+      for (const blank of question.blanks) {
+        const best: WeightMap = {};
+        for (const option of blank.options) {
+          for (const [trait, weight] of Object.entries(option.weights)) {
+            best[trait] = Math.max(best[trait] ?? 0, weight);
+          }
+        }
+        for (const [trait, weight] of Object.entries(best)) addMax(trait, weight);
+      }
+      if (
+        typeof answer !== "object" ||
+        answer === null ||
+        Array.isArray(answer) ||
+        "x" in answer
+      ) {
+        continue;
+      }
+      for (const blank of question.blanks) {
+        const picked = answer[blank.id];
+        const chosen = blank.options.find((option) => option.id === picked);
+        if (!chosen) continue;
+        for (const [trait, weight] of Object.entries(chosen.weights)) {
+          addEarned(trait, weight);
+        }
+      }
       continue;
     }
 

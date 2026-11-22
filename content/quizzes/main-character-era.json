@@ -110,15 +110,36 @@
         }
       ]
     },
-    {
+        {
       "id": "q4",
-      "type": "spectrum",
-      "prompt": "A good week is one you'd be happy to screenshot.",
-      "disagree": {
-        "trait": "deleted"
+      "type": "map",
+      "prompt": "Drop the dot. Where does this month's version of you actually live?",
+      "helper": "Left to right is billing. Bottom to top is behaviour. You can be both.",
+      "x": {
+        "low": {
+          "label": "Background extra",
+          "trait": "sidequest"
+        },
+        "high": {
+          "label": "Top billing",
+          "trait": "main"
+        }
       },
-      "agree": {
-        "trait": "main"
+      "y": {
+        "low": {
+          "label": "Soft-focus warmth",
+          "trait": "golden"
+        },
+        "high": {
+          "label": "Full unhinged",
+          "trait": "villain"
+        }
+      },
+      "quadrants": {
+        "lowLow": "Beloved Extra",
+        "lowHigh": "Menace in the Background",
+        "highLow": "Sunlit Main Character",
+        "highHigh": "Prime-Time Villain"
       }
     },
     {

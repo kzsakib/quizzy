@@ -30,7 +30,7 @@ Phase 2 of 6 — home page plus a playable quiz engine, polished.
       gaming, food, K-drama, sci-fi and books
 - [x] Single-page player: every question on one scrolling page, answers autosaved
   and editable until you submit
-- [x] Six question types, including picture choices with openly licensed photos
+- [x] Nine question types, including picture choices, a two-axis map, drag-to-rank and mad libs
 - [x] Per-quiz accent: a page wears the colour of its card (`data-accent`)
 - [x] Results revealed only after the last answer — no outcome lists up front
 - [x] 4–12 possible results per quiz, each with its own signature mix
@@ -110,6 +110,9 @@ for each quiz live in `content/quizzes/self-review.md`.
 | `intensity`    | `trait`, `low`, `high` — a 1–5 slider worth 1–5 points for that trait  |
 | `spectrum`     | `disagree { trait }`, `agree { trait }` — a statement rated 0–100% agreement |
 | `agreement`    | `agree { trait, weight }`, `disagree { trait, weight }` — 5-point scale |
+| `map`          | `x { low, high }`, `y { low, high }` poles (`label`, `trait`) and four `quadrants` names — a dragged dot, two spectrums at once |
+| `rank`         | `items[]`, each `{ id, label, weights }` — drag (or arrow-key) four items into order; 1st = full weight, then 60%, 30%, 0 |
+| `madlibs`      | `template` with `{a}`/`{b}` gaps plus `blanks[]` (`id`, `options[]` with `label`/`weights`) — a sentence filled in from phrase chips |
 
 Picture options look like this:
 
@@ -134,7 +137,8 @@ re-downloads them from those recorded sources.
 `src/lib/scoring.ts` accumulates `earned` and `max` per trait, where `max` is
 the most that trait could have earned across the whole quiz (the best single
 option for choice questions, 5 for intensity, 2 per spectrum pole, the declared
-weight for agreement).
+weight for agreement, 2 per map pole, the best single item for rank, and the
+best option in each blank for mad libs).
 
 The final percentage is `earned / max`; the highest percentage wins. Ties are
 broken by raw earned points first, then by the answer to the question whose id

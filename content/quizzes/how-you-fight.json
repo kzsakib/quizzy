@@ -98,13 +98,44 @@
         { "id": "d", "label": "I need to not be in this room", "weights": { "avoider": 2, "negotiator": 1 } }
       ]
     },
-    {
+        {
       "id": "q9",
-      "type": "this_or_that",
-      "prompt": "After it's over:",
-      "options": [
-        { "id": "a", "label": "You replay it for two days", "weights": { "historian": 2, "silent": 1 } },
-        { "id": "b", "label": "You move on by doing something", "weights": { "fixer": 2, "deflector": 1 } }
+      "type": "rank",
+      "prompt": "Rank what you actually want out of a fight.",
+      "helper": "Not what you say you want. The order gives it away.",
+      "items": [
+        {
+          "id": "lastword",
+          "label": "The last word",
+          "weights": {
+            "historian": 2,
+            "exploder": 1
+          }
+        },
+        {
+          "id": "plan",
+          "label": "A plan and a deadline",
+          "weights": {
+            "fixer": 2,
+            "negotiator": 1
+          }
+        },
+        {
+          "id": "silence",
+          "label": "Twenty minutes of silence",
+          "weights": {
+            "avoider": 2,
+            "silent": 1
+          }
+        },
+        {
+          "id": "honest",
+          "label": "One honest sentence",
+          "weights": {
+            "negotiator": 2,
+            "crier": 1
+          }
+        }
       ]
     },
     {

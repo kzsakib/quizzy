@@ -130,42 +130,86 @@
       "low": "I'm made of stone",
       "high": "I've paused it to sob"
     },
-    {
+        {
       "id": "q6",
-      "type": "mc",
-      "prompt": "The couple has their first fight in public. Everyone in the café is watching.",
-      "options": [
+      "type": "madlibs",
+      "prompt": "One sentence and casting has seen enough.",
+      "helper": "Fill both gaps. Choose the version you'd actually audition for.",
+      "template": "I'm the kind of person who {a} when {b}.",
+      "blanks": [
         {
           "id": "a",
-          "label": "Refill your coffee and observe",
-          "weights": {
-            "bestfriend": 2,
-            "rival": 1
-          }
+          "options": [
+            {
+              "id": "a1",
+              "label": "waits at the bus stop for ten years",
+              "weights": {
+                "childhood": 2,
+                "secondlead": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "buys the entire building instead of apologising",
+              "weights": {
+                "chaebol": 2,
+                "rival": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "arrives with an umbrella and no explanation",
+              "weights": {
+                "secondlead": 2,
+                "noble": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "is basically a walking product placement",
+              "weights": {
+                "product": 2,
+                "rival": 1
+              }
+            }
+          ]
         },
         {
           "id": "b",
-          "label": "Intervene with a tray of drinks",
-          "weights": {
-            "product": 2,
-            "chaebol": 1
-          }
-        },
-        {
-          "id": "c",
-          "label": "Leave. This is their scene",
-          "weights": {
-            "rival": 2,
-            "noble": 1
-          }
-        },
-        {
-          "id": "d",
-          "label": "Film it, for the group chat",
-          "weights": {
-            "product": 2,
-            "bestfriend": 1
-          }
+          "options": [
+            {
+              "id": "b1",
+              "label": "I'm about to lose anyway",
+              "weights": {
+                "secondlead": 2,
+                "noble": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "there's a promotion on the line",
+              "weights": {
+                "rival": 2,
+                "chaebol": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "someone needs a friend at 2am",
+              "weights": {
+                "bestfriend": 2,
+                "childhood": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "the plot requires a miracle",
+              "weights": {
+                "amnesia": 2,
+                "product": 1
+              }
+            }
+          ]
         }
       ]
     },

@@ -226,20 +226,43 @@
         }
       ]
     },
-    {
-      "id": "q9",
-      "type": "this_or_that",
-      "prompt": "Your sixth slot goes to:",
-      "options": [
         {
-          "id": "a",
-          "label": "The one that hits hardest",
-          "weights": { "gengar": 2, "eevee": 1 }
+      "id": "q9",
+      "type": "rank",
+      "prompt": "Rank what you'd need most on a genuinely bad day.",
+      "helper": "First place gets the full weight. Last place gets nothing.",
+      "items": [
+        {
+          "id": "nap",
+          "label": "A nap in a sunbeam",
+          "weights": {
+            "snorlax": 2,
+            "slowpoke": 1
+          }
         },
         {
-          "id": "b",
-          "label": "The one that never has to be told twice",
-          "weights": { "growlithe": 2, "slowpoke": 1 }
+          "id": "fuss",
+          "label": "Someone making a huge fuss over you",
+          "weights": {
+            "jigglypuff": 2,
+            "growlithe": 1
+          }
+        },
+        {
+          "id": "chaos",
+          "label": "One loud, chaotic distraction",
+          "weights": {
+            "psyduck": 2,
+            "meowth": 1
+          }
+        },
+        {
+          "id": "uninvited",
+          "label": "Company that shows up uninvited",
+          "weights": {
+            "gengar": 2,
+            "eevee": 1
+          }
         }
       ]
     },

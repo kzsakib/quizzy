@@ -87,15 +87,87 @@
         { "id": "d", "label": "You read everything and reply in three days", "weights": { "manager": 2, "bench": 1 } }
       ]
     },
-    {
+        {
       "id": "q8",
-      "type": "mc",
-      "prompt": "The thing you'd never admit out loud:",
-      "options": [
-        { "id": "a", "label": "I want to be the one it depends on", "weights": { "ace": 2, "setter": 1 } },
-        { "id": "b", "label": "I'd take the fall for the whole team", "weights": { "libero": 2, "blocker": 1 } },
-        { "id": "c", "label": "I'm better when nobody's watching me", "weights": { "spiker": 2, "server": 1 } },
-        { "id": "d", "label": "I'm not sure I belong here yet", "weights": { "bench": 2, "manager": 1 } }
+      "type": "madlibs",
+      "prompt": "One sentence and the coach has seen enough.",
+      "helper": "Fill the gaps. Answer like you're on the court, not in the interview.",
+      "template": "I'm the kind of player who {a} when {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "calls the play before anyone's ready",
+              "weights": {
+                "setter": 2,
+                "manager": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "swings at everything",
+              "weights": {
+                "spiker": 2,
+                "ace": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "dives for a ball that's already out",
+              "weights": {
+                "libero": 2,
+                "bench": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "reads the hitter's shoulder",
+              "weights": {
+                "blocker": 2,
+                "server": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "the score is embarrassing",
+              "weights": {
+                "ace": 2,
+                "spiker": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "someone else is having a bad day",
+              "weights": {
+                "manager": 2,
+                "bench": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "the whistle's about to go",
+              "weights": {
+                "server": 2,
+                "setter": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "nobody's watching the back row",
+              "weights": {
+                "libero": 2,
+                "blocker": 1
+              }
+            }
+          ]
+        }
       ]
     },
     {

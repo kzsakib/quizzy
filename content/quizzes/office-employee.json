@@ -276,15 +276,36 @@
       "low": "This is just me",
       "high": "I take it off in the car"
     },
-    {
+        {
       "id": "q11",
-      "type": "spectrum",
-      "prompt": "A work party is still work.",
-      "disagree": {
-        "trait": "jim"
+      "type": "map",
+      "prompt": "The documentary crew is rolling. Where do you land?",
+      "helper": "Across: who wrote the rules. Up: how much of this is a bit.",
+      "x": {
+        "low": {
+          "label": "Handbook",
+          "trait": "dwight"
+        },
+        "high": {
+          "label": "No rules",
+          "trait": "creed"
+        }
       },
-      "agree": {
-        "trait": "michael"
+      "y": {
+        "low": {
+          "label": "Dead sincere",
+          "trait": "pam"
+        },
+        "high": {
+          "label": "Full performance",
+          "trait": "jim"
+        }
+      },
+      "quadrants": {
+        "lowLow": "Loyal and Genuine",
+        "lowHigh": "Chaos With a Policy",
+        "highLow": "Camera-Ready Company Man",
+        "highHigh": "Improvised Chaos"
       }
     },
     {

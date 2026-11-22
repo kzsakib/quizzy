@@ -9,41 +9,42 @@
   "published": "2026-11-22",
   "tiebreaker": "q12",
   "questions": [
-    {
-      "id": "q1",
-      "type": "mc",
-      "prompt": "You wake from cryo 300 years late. The ship is intact. The crew is not.",
-      "options": [
         {
-          "id": "a",
-          "label": "Find the engine room. It's making a sound",
+      "id": "q1",
+      "type": "rank",
+      "prompt": "The ship is going down and you get one armful. Rank what you grab.",
+      "helper": "You have time for all four. The order is the answer.",
+      "items": [
+        {
+          "id": "engine",
+          "label": "The engine and your toolkit",
           "weights": {
             "mechanic": 2,
-            "captain": 1
+            "terraform": 1
           }
         },
         {
-          "id": "b",
-          "label": "Check the log for what happened",
+          "id": "language",
+          "label": "The language archive",
           "weights": {
-            "loop": 2,
-            "linguist": 1
+            "linguist": 2,
+            "ethics": 1
           }
         },
         {
-          "id": "c",
-          "label": "Look for a garden that still grows",
+          "id": "seeds",
+          "label": "The seed vault",
           "weights": {
             "terraform": 2,
             "colonist": 1
           }
         },
         {
-          "id": "d",
-          "label": "Get a message to whoever sent us",
+          "id": "log",
+          "label": "The log of everyone aboard",
           "weights": {
-            "linguist": 2,
-            "ethics": 1
+            "ethics": 2,
+            "captain": 1
           }
         }
       ]
