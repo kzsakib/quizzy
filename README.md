@@ -15,6 +15,8 @@ Tailwind CSS v4 with CSS-variable design tokens, GSAP and Lenis.
 | `node scripts/check-quizzes.mjs` | Validate question counts, images, reachable results |
 | `node scripts/fetch-question-images.mjs` | Re-download picture-question photos |
 | `node scripts/optimize-question-images.mjs` | Resize quiz photos to 800px wide and recompress |
+| `node scripts/auto/generate.mjs --count=3` | Run the automated quiz factory locally |
+| `node scripts/auto/generate.mjs --count=1 --stub` | Dry pipeline test with no model calls |
 
 ## Status
 
@@ -223,3 +225,39 @@ GitHub Pages serves project sites from a subpath, so the workflow sets
 Every internal link goes through `siteHref()` in `src/lib/url.ts` (wrapping
 `import.meta.env.BASE_URL`), so the same build works at the root locally and
 under `/quizzy/` when deployed. Canonical and Open Graph URLs use `Astro.site`.
+
+## Automated quiz factory
+
+`.github/workflows/auto-quiz.yml` publishes three new quizzes every 12 hours
+with no human in the loop. The whole backend is that workflow — no server, no
+database, nothing to keep alive. On a public repository scheduled Actions runs
+are free.
+
+Each run:
+
+1. Reads the last 400 topics in `content/auto/topics-used.json` and the titles
+   of every published quiz, plus best-effort trend feeds in
+   `scripts/auto/research.mjs`, so it never repeats a subject.
+2. Asks the model for ideas, then one quiz JSON per idea
+   (`scripts/auto/prompt.mjs`). Gemini is primary (`GEMINI_API_KEY`), Groq is
+   the fallback (`GROQ_API_KEY`); both live in repository secrets and are never
+   exposed to the browser.
+3. Validates against the house rules in `scripts/auto/generate.mjs` — 12
+   questions, 6 results, the fixed question-type spine, every trait scored in
+   at least four questions, mixes summing to 100, no result name leaking into
+   the title or dek, unique slug and title. Failures are fed back to the model
+   for up to three attempts, then that topic is skipped and a spare is tried.
+4. Sources the picture question from Wikimedia Commons: JPEG only, an accepted
+   licence, an 800px Commons thumbnail re-encoded to 800px q74, plus a credit
+   entry in `public/images/questions/credits.json`. If a search comes up empty
+   it falls back to a photo already in the library.
+5. Runs `scripts/check-quizzes.mjs` (reachable results, sampled playthroughs)
+   and a full `GITHUB_PAGES=true npm run build`, and only then commits. A
+   broken generation therefore never reaches the site.
+6. Pushes to `main`, then dispatches `deploy.yml` explicitly, because pushes
+   made with the workflow's own token do not trigger other workflows.
+
+A `content/auto/last-run.json` timestamp acts as a six-hour guard, so a
+retried/duplicated schedule cannot double-publish. `workflow_dispatch` skips
+the guard; run it from the Actions tab (or `gh workflow run auto-quiz.yml`) to
+publish immediately.

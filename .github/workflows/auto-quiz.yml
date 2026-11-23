@@ -1,0 +1,93 @@
+name: Auto quizzes
+
+# TEMP: every 5 minutes while we prove the pipeline, then back to 12-hourly.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many quizzes to generate"
+        default: "3"
+      force:
+        description: "Ignore the 6-hour guard"
+        default: "true"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: auto-quiz
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Generate quizzes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          COUNT: ${{ github.event.inputs.count || '3' }}
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && (github.event.inputs.force || 'true') || 'false' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: node scripts/auto/generate.mjs --count="$COUNT" --force="$FORCE"
+
+      - name: Detect new content
+        id: diff
+        run: |
+          if [ -n "$(git status --porcelain content/quizzes)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate quizzes
+        if: steps.diff.outputs.changed == 'true'
+        run: node scripts/check-quizzes.mjs
+
+      - name: Build the site
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GITHUB_PAGES: "true"
+        run: npm run build
+
+      - name: Commit and push
+        id: commit
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "quizzy-bot"
+          git config user.email "quizzy-bot@users.noreply.github.com"
+          git add content/quizzes public/images/questions content/auto
+          git commit -m "content: auto-generate $(ls content/quizzes/*.json | wc -l | tr -d ' ') quizzes total"
+          for attempt in 1 2 3; do
+            if git pull --rebase --autostash origin main && git push origin HEAD:main; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "push attempt $attempt failed, retrying"
+            sleep 5
+          done
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          exit 1
+
+      - name: Trigger Pages deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY" --ref main
