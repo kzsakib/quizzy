@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 
 interface Item {
   id: string;
@@ -17,9 +17,9 @@ const clamp = (value: number, min: number, max: number) =>
   Math.min(max, Math.max(min, value));
 
 /**
- * Reorderable list. Dragging a row (pointer events, so touch works) moves it to
- * the highlighted slot on release; the arrow buttons are the keyboard / small
- * screen route to the same order.
+ * Reorderable list. The whole row is the drag handle (pointer events, so touch
+ * works): grab anywhere on it, drop on the highlighted slot. The arrow buttons
+ * are the keyboard / small screen route to the same order.
  */
 export default function QzRank({ items, value, onChange, label }: Props) {
   const list = useRef<HTMLUListElement>(null);
@@ -56,6 +56,28 @@ export default function QzRank({ items, value, onChange, label }: Props) {
     setDrag(null);
   };
 
+  const rowDrag = (index: number) => ({
+    onPointerDown: (event: ReactPointerEvent<HTMLLIElement>) => {
+      // Let the arrow buttons do their own thing.
+      if ((event.target as HTMLElement).closest("button")) return;
+      event.currentTarget.setPointerCapture(event.pointerId);
+      dragStart.current = { y: event.clientY, index };
+      setDrag({ index, target: index, offset: 0 });
+    },
+    onPointerMove: (event: ReactPointerEvent<HTMLLIElement>) => {
+      if (!drag) return;
+      const offset = event.clientY - dragStart.current.y;
+      const target = clamp(
+        dragStart.current.index + Math.round(offset / rowStep()),
+        0,
+        order.length - 1,
+      );
+      setDrag({ index: drag.index, target, offset });
+    },
+    onPointerUp: endDrag,
+    onPointerCancel: endDrag,
+  });
+
   return (
     <div className="rounded-[var(--r-card)] border border-line bg-surface p-4 sm:p-5">
       <ul ref={list} className="grid gap-2" role="list">
@@ -67,7 +89,8 @@ export default function QzRank({ items, value, onChange, label }: Props) {
           return (
             <li
               key={item.id}
-              className={`relative flex items-center gap-3 rounded-[var(--r-control)] border px-3 py-2.5 transition-[border-color,background-color,box-shadow,opacity] duration-200 ${
+              {...rowDrag(index)}
+              className={`relative flex touch-none cursor-grab select-none items-center gap-3 rounded-[var(--r-control)] border px-3 py-2.5 transition-[border-color,background-color,box-shadow,opacity] duration-200 active:cursor-grabbing ${
                 isDragging
                   ? "z-10 border-[var(--accent)] bg-surface shadow-[0_14px_28px_-14px_rgb(0_0_0/0.5)]"
                   : isTarget
@@ -121,32 +144,9 @@ export default function QzRank({ items, value, onChange, label }: Props) {
                   </svg>
                 </button>
 
-                <button
-                  type="button"
-                  aria-label={`Drag ${item.label} to reorder`}
-                  onPointerDown={(event) => {
-                    event.currentTarget.setPointerCapture(event.pointerId);
-                    dragStart.current = { y: event.clientY, index };
-                    setDrag({ index, target: index, offset: 0 });
-                  }}
-                  onPointerMove={(event) => {
-                    if (!drag) return;
-                    const offset = event.clientY - dragStart.current.y;
-                    const target = clamp(
-                      dragStart.current.index + Math.round(offset / rowStep()),
-                      0,
-                      order.length - 1,
-                    );
-                    setDrag({ index: drag.index, target, offset });
-                  }}
-                  onPointerUp={endDrag}
-                  onPointerCancel={endDrag}
-                  onKeyDown={(event) => {
-                    if (event.key !== "ArrowUp" && event.key !== "ArrowDown") return;
-                    event.preventDefault();
-                    move(index, index + (event.key === "ArrowDown" ? 1 : -1));
-                  }}
-                  className="grid size-8 cursor-grab touch-none place-items-center rounded-full text-[var(--ink-muted)] transition-colors hover:bg-surface hover:text-ink active:cursor-grabbing"
+                <span
+                  aria-hidden="true"
+                  className="grid size-8 place-items-center rounded-full text-[var(--ink-muted)]"
                 >
                   <svg viewBox="0 0 24 24" className="size-4" fill="currentColor" aria-hidden="true">
                     <circle cx="9" cy="6" r="1.4" />
@@ -156,7 +156,7 @@ export default function QzRank({ items, value, onChange, label }: Props) {
                     <circle cx="9" cy="18" r="1.4" />
                     <circle cx="15" cy="18" r="1.4" />
                   </svg>
-                </button>
+                </span>
               </span>
             </li>
           );

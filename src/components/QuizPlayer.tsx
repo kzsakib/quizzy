@@ -8,6 +8,7 @@ import {
   type Question,
 } from "../lib/scoring";
 import { getLenis } from "../lib/motion";
+import { siteHref } from "../lib/url";
 import QzSlider from "./QzSlider";
 import QzMap from "./QzMap";
 import QzRank from "./QzRank";
@@ -296,7 +297,7 @@ function QuestionBody({ question, value, onChange }: BodyProps) {
                 {pictures && option.image ? (
                   <span className="relative block aspect-[4/3] w-full overflow-hidden bg-surface-2">
                     <img
-                      src={option.image}
+                      src={siteHref(option.image)}
                       alt={option.alt ?? ""}
                       loading="lazy"
                       decoding="async"
