@@ -72,14 +72,16 @@ export default function QzMap({
     });
   };
 
+  // Keys read y-then-x: lowHigh is bottom-right (low y, high x), highLow is
+  // top-left (high y, low x).
   const corners: Array<{
     key: "lowHigh" | "highHigh" | "lowLow" | "highLow";
     className: string;
   }> = [
-    { key: "lowHigh", className: "left-2 top-2 text-left" },
+    { key: "highLow", className: "left-2 top-2 text-left" },
     { key: "highHigh", className: "right-2 top-2 text-right" },
     { key: "lowLow", className: "bottom-2 left-2 text-left" },
-    { key: "highLow", className: "bottom-2 right-2 text-right" },
+    { key: "lowHigh", className: "bottom-2 right-2 text-right" },
   ];
 
   return (
