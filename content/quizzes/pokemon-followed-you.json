@@ -298,6 +298,54 @@
       "disagree": { "trait": "gengar" },
       "agree": { "trait": "eevee" }
     }
+,
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "Your companion is waiting somewhere. Pick the place.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tall grass, moving",
+          "weights": {
+            "eevee": 2,
+            "growlithe": 1
+          },
+          "image": "/images/questions/pkmn-grass.jpg",
+          "alt": "Tall grass in a field"
+        },
+        {
+          "id": "b",
+          "label": "A riverbank under trees",
+          "weights": {
+            "psyduck": 2,
+            "slowpoke": 1
+          },
+          "image": "/images/questions/pkmn-river.jpg",
+          "alt": "A quiet riverbank with trees"
+        },
+        {
+          "id": "c",
+          "label": "A narrow city alley",
+          "weights": {
+            "meowth": 2,
+            "gengar": 1
+          },
+          "image": "/images/questions/pkmn-alley.jpg",
+          "alt": "A narrow alley between buildings"
+        },
+        {
+          "id": "d",
+          "label": "A sunny patch of grass",
+          "weights": {
+            "snorlax": 2,
+            "jigglypuff": 1
+          },
+          "image": "/images/questions/pkmn-meadow.jpg",
+          "alt": "A sunlit patch of meadow"
+        }
+      ]
+    }
   ],
   "results": [
     {

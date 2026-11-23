@@ -316,6 +316,53 @@
           }
         }
       ]
+    },
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "The shop is about to close and you get one last look. Where do you end up?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Up between the shelves, near the ceiling",
+          "weights": {
+            "library": 2,
+            "tbr": 1
+          },
+          "image": "/images/questions/book-ladder.jpg",
+          "alt": "Library shelves reaching the ceiling"
+        },
+        {
+          "id": "b",
+          "label": "The one chair with a lamp",
+          "weights": {
+            "slow": 2,
+            "reread": 1
+          },
+          "image": "/images/questions/book-chair.jpg",
+          "alt": "An armchair beside a reading lamp"
+        },
+        {
+          "id": "c",
+          "label": "The shop at closing time",
+          "weights": {
+            "tbr": 2,
+            "margin": 1
+          },
+          "image": "/images/questions/book-table.jpg",
+          "alt": "A bookshop interior at closing time"
+        },
+        {
+          "id": "d",
+          "label": "Headphones by the till",
+          "weights": {
+            "audio": 2,
+            "abandon": 1
+          },
+          "image": "/images/questions/book-headphones.jpg",
+          "alt": "Headphones resting on a book"
+        }
+      ]
     }
   ],
   "results": [

@@ -15,10 +15,38 @@
       "type": "mc",
       "prompt": "The first thing you do walking into a gym:",
       "options": [
-        { "id": "a", "label": "Count who's here and work out who's in charge", "weights": { "setter": 2, "spiker": 1 } },
-        { "id": "b", "label": "Find a ball and start hitting it", "weights": { "ace": 2, "server": 1 } },
-        { "id": "c", "label": "Watch where the ball keeps landing", "weights": { "libero": 2, "manager": 1 } },
-        { "id": "d", "label": "Stand at the back and watch one rally first", "weights": { "blocker": 2, "bench": 1 } }
+        {
+          "id": "a",
+          "label": "Count who's here and work out who's in charge",
+          "weights": {
+            "setter": 2,
+            "spiker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Find a ball and start hitting it",
+          "weights": {
+            "ace": 2,
+            "server": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Watch where the ball keeps landing",
+          "weights": {
+            "libero": 2,
+            "manager": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Stand at the back and watch one rally first",
+          "weights": {
+            "blocker": 2,
+            "bench": 1
+          }
+        }
       ]
     },
     {
@@ -26,10 +54,38 @@
       "type": "mc",
       "prompt": "The point that decides the set:",
       "options": [
-        { "id": "a", "label": "You want it. You take it, badly if necessary", "weights": { "spiker": 2, "setter": 1 } },
-        { "id": "b", "label": "One serve, no warm-up, all in", "weights": { "server": 2, "ace": 1 } },
-        { "id": "c", "label": "You've already quietly updated the rotation", "weights": { "manager": 2, "libero": 1 } },
-        { "id": "d", "label": "You watch from the side and learn the whole thing", "weights": { "bench": 2, "blocker": 1 } }
+        {
+          "id": "a",
+          "label": "You want it. You take it, badly if necessary",
+          "weights": {
+            "spiker": 2,
+            "setter": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "One serve, no warm-up, all in",
+          "weights": {
+            "server": 2,
+            "ace": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You've already quietly updated the rotation",
+          "weights": {
+            "manager": 2,
+            "libero": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You watch from the side and learn the whole thing",
+          "weights": {
+            "bench": 2,
+            "blocker": 1
+          }
+        }
       ]
     },
     {
@@ -37,10 +93,38 @@
       "type": "mc",
       "prompt": "A teammate is having a genuinely terrible day:",
       "options": [
-        { "id": "a", "label": "You quietly give them easier balls", "weights": { "setter": 2, "blocker": 1 } },
-        { "id": "b", "label": "You get loud and carry the energy for both of you", "weights": { "ace": 2, "libero": 1 } },
-        { "id": "c", "label": "You take the hit that was going to be theirs", "weights": { "spiker": 2, "manager": 1 } },
-        { "id": "d", "label": "You tell them one true, useful thing", "weights": { "server": 2, "bench": 1 } }
+        {
+          "id": "a",
+          "label": "You quietly give them easier balls",
+          "weights": {
+            "setter": 2,
+            "blocker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You get loud and carry the energy for both of you",
+          "weights": {
+            "ace": 2,
+            "libero": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You take the hit that was going to be theirs",
+          "weights": {
+            "spiker": 2,
+            "manager": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You tell them one true, useful thing",
+          "weights": {
+            "server": 2,
+            "bench": 1
+          }
+        }
       ]
     },
     {
@@ -48,10 +132,38 @@
       "type": "mc",
       "prompt": "Your worst habit on court:",
       "options": [
-        { "id": "a", "label": "You stay after everyone's gone", "weights": { "libero": 2, "setter": 1 } },
-        { "id": "b", "label": "You over-analyse one mistake for a week", "weights": { "blocker": 2, "ace": 1 } },
-        { "id": "c", "label": "You archive everything and say nothing", "weights": { "manager": 2, "spiker": 1 } },
-        { "id": "d", "label": "You assume you won't be picked", "weights": { "bench": 2, "server": 1 } }
+        {
+          "id": "a",
+          "label": "You stay after everyone's gone",
+          "weights": {
+            "libero": 2,
+            "setter": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You over-analyse one mistake for a week",
+          "weights": {
+            "blocker": 2,
+            "ace": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You archive everything and say nothing",
+          "weights": {
+            "manager": 2,
+            "spiker": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You assume you won't be picked",
+          "weights": {
+            "bench": 2,
+            "server": 1
+          }
+        }
       ]
     },
     {
@@ -59,10 +171,38 @@
       "type": "mc",
       "prompt": "The coach says 'one more':",
       "options": [
-        { "id": "a", "label": "You've already reset the drill", "weights": { "setter": 2, "ace": 1 } },
-        { "id": "b", "label": "You dive for the one nobody else will", "weights": { "libero": 2, "blocker": 1 } },
-        { "id": "c", "label": "You ask for the ball", "weights": { "spiker": 2, "server": 1 } },
-        { "id": "d", "label": "You do it properly or you don't do it", "weights": { "manager": 2, "bench": 1 } }
+        {
+          "id": "a",
+          "label": "You've already reset the drill",
+          "weights": {
+            "setter": 2,
+            "ace": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You dive for the one nobody else will",
+          "weights": {
+            "libero": 2,
+            "blocker": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You ask for the ball",
+          "weights": {
+            "spiker": 2,
+            "server": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You do it properly or you don't do it",
+          "weights": {
+            "manager": 2,
+            "bench": 1
+          }
+        }
       ]
     },
     {
@@ -70,10 +210,38 @@
       "type": "mc",
       "prompt": "After a loss, the first hour:",
       "options": [
-        { "id": "a", "label": "You want the next game immediately", "weights": { "ace": 2, "setter": 1 } },
-        { "id": "b", "label": "You rewatch it alone and find the exact moment", "weights": { "blocker": 2, "libero": 1 } },
-        { "id": "c", "label": "You say one thing at the right time and it lands", "weights": { "server": 2, "spiker": 1 } },
-        { "id": "d", "label": "You write it down and don't mention it", "weights": { "bench": 2, "manager": 1 } }
+        {
+          "id": "a",
+          "label": "You want the next game immediately",
+          "weights": {
+            "ace": 2,
+            "setter": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You rewatch it alone and find the exact moment",
+          "weights": {
+            "blocker": 2,
+            "libero": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You say one thing at the right time and it lands",
+          "weights": {
+            "server": 2,
+            "spiker": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You write it down and don't mention it",
+          "weights": {
+            "bench": 2,
+            "manager": 1
+          }
+        }
       ]
     },
     {
@@ -81,13 +249,41 @@
       "type": "mc",
       "prompt": "Your role in the group chat:",
       "options": [
-        { "id": "a", "label": "Times, addresses, who's bringing the ball", "weights": { "setter": 2, "ace": 1 } },
-        { "id": "b", "label": "The one who names the elephant", "weights": { "blocker": 2, "libero": 1 } },
-        { "id": "c", "label": "One message that fixes the entire mood", "weights": { "server": 2, "spiker": 1 } },
-        { "id": "d", "label": "You read everything and reply in three days", "weights": { "manager": 2, "bench": 1 } }
+        {
+          "id": "a",
+          "label": "Times, addresses, who's bringing the ball",
+          "weights": {
+            "setter": 2,
+            "ace": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The one who names the elephant",
+          "weights": {
+            "blocker": 2,
+            "libero": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "One message that fixes the entire mood",
+          "weights": {
+            "server": 2,
+            "spiker": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You read everything and reply in three days",
+          "weights": {
+            "manager": 2,
+            "bench": 1
+          }
+        }
       ]
     },
-        {
+    {
       "id": "q8",
       "type": "madlibs",
       "prompt": "One sentence and the coach has seen enough.",
@@ -175,8 +371,22 @@
       "type": "this_or_that",
       "prompt": "The ball's coming at your face. Instinct:",
       "options": [
-        { "id": "a", "label": "Hands up, absorb it", "weights": { "blocker": 2, "libero": 1 } },
-        { "id": "b", "label": "Turn and take it on the back", "weights": { "spiker": 2, "ace": 1 } }
+        {
+          "id": "a",
+          "label": "Hands up, absorb it",
+          "weights": {
+            "blocker": 2,
+            "libero": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Turn and take it on the back",
+          "weights": {
+            "spiker": 2,
+            "ace": 1
+          }
+        }
       ]
     },
     {
@@ -184,8 +394,22 @@
       "type": "this_or_that",
       "prompt": "You'd rather be:",
       "options": [
-        { "id": "a", "label": "The reason the play worked", "weights": { "setter": 2, "manager": 1 } },
-        { "id": "b", "label": "The reason it didn't fall apart", "weights": { "libero": 2, "bench": 1 } }
+        {
+          "id": "a",
+          "label": "The reason the play worked",
+          "weights": {
+            "setter": 2,
+            "manager": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The reason it didn't fall apart",
+          "weights": {
+            "libero": 2,
+            "bench": 1
+          }
+        }
       ]
     },
     {
@@ -200,8 +424,59 @@
       "id": "q12",
       "type": "spectrum",
       "prompt": "I need people to know exactly how much I did.",
-      "disagree": { "trait": "manager" },
-      "agree": { "trait": "ace" }
+      "disagree": {
+        "trait": "manager"
+      },
+      "agree": {
+        "trait": "ace"
+      }
+    },
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "The gym at 6am, before anyone's arrived. What's already there?",
+      "options": [
+        {
+          "id": "a",
+          "label": "The arena, lights half on",
+          "weights": {
+            "bench": 2,
+            "manager": 1
+          },
+          "image": "/images/questions/vball-gym.jpg",
+          "alt": "An indoor volleyball arena"
+        },
+        {
+          "id": "b",
+          "label": "Fresh chalk lines on the floor",
+          "weights": {
+            "setter": 2,
+            "blocker": 1
+          },
+          "image": "/images/questions/vball-lines.jpg",
+          "alt": "Lines marked on a wooden gym floor"
+        },
+        {
+          "id": "c",
+          "label": "A ball worn smooth",
+          "weights": {
+            "spiker": 2,
+            "libero": 1
+          },
+          "image": "/images/questions/vball-ball.jpg",
+          "alt": "A worn volleyball on a wooden floor"
+        },
+        {
+          "id": "d",
+          "label": "Bleachers filling up",
+          "weights": {
+            "ace": 2,
+            "server": 1
+          },
+          "image": "/images/questions/vball-crowd.jpg",
+          "alt": "Spectators in gymnasium bleachers"
+        }
+      ]
     }
   ],
   "results": [
@@ -211,8 +486,21 @@
       "tagline": "Runs the whole thing without raising their voice",
       "blurb": "You read the room before the rally. You know who's tired, who's hot and who needs one easy ball to feel alive again, and you arrange all of it so it looks accidental. Your name is rarely on the point. The point doesn't happen without you.",
       "accent": "blue",
-      "mix": { "setter": 40, "ace": 10, "libero": 9, "blocker": 8, "spiker": 12, "server": 7, "manager": 9, "bench": 5 },
-      "strengths": ["Reads people in real time", "Makes everyone around them better", "Calm when it's chaotic"],
+      "mix": {
+        "setter": 40,
+        "ace": 10,
+        "libero": 9,
+        "blocker": 8,
+        "spiker": 12,
+        "server": 7,
+        "manager": 9,
+        "bench": 5
+      },
+      "strengths": [
+        "Reads people in real time",
+        "Makes everyone around them better",
+        "Calm when it's chaotic"
+      ],
       "watchOut": "You can arrange a whole match and still never say what you want. Take one shot yourself."
     },
     {
@@ -221,8 +509,21 @@
       "tagline": "Wants the ball when it matters",
       "blurb": "You're not the loudest by accident — you want the last point and you're willing to be the one who misses it. That's rarer than it sounds. When it works, everyone remembers. When it doesn't, you're already asking for the next one.",
       "accent": "red",
-      "mix": { "setter": 12, "ace": 40, "libero": 6, "blocker": 9, "spiker": 14, "server": 8, "manager": 4, "bench": 7 },
-      "strengths": ["Takes responsibility for outcomes", "Bounces back fast", "Raises the standard by example"],
+      "mix": {
+        "setter": 12,
+        "ace": 40,
+        "libero": 6,
+        "blocker": 9,
+        "spiker": 14,
+        "server": 8,
+        "manager": 4,
+        "bench": 7
+      },
+      "strengths": [
+        "Takes responsibility for outcomes",
+        "Bounces back fast",
+        "Raises the standard by example"
+      ],
       "watchOut": "Not every ball is yours. A team that only functions when you're on is a fragile team."
     },
     {
@@ -231,8 +532,21 @@
       "tagline": "Saves it, refuses the credit",
       "blurb": "You do the job that doesn't show up in the highlights and get weirdly annoyed when someone thanks you for it. You're the reason a bad set became a good rally. You'd rather the save be invisible than have the room look at you.",
       "accent": "sky",
-      "mix": { "setter": 9, "ace": 6, "libero": 41, "blocker": 10, "spiker": 7, "server": 5, "manager": 12, "bench": 10 },
-      "strengths": ["Reliable when everything's falling", "Humble without being passive", "Reads danger early"],
+      "mix": {
+        "setter": 9,
+        "ace": 6,
+        "libero": 41,
+        "blocker": 10,
+        "spiker": 7,
+        "server": 5,
+        "manager": 12,
+        "bench": 10
+      },
+      "strengths": [
+        "Reliable when everything's falling",
+        "Humble without being passive",
+        "Reads danger early"
+      ],
       "watchOut": "Being unsung is a choice you're allowed to stop making. Say what you need once."
     },
     {
@@ -241,8 +555,21 @@
       "tagline": "Patient, then sudden",
       "blurb": "You spend most of the rally waiting and reading, and then you're exactly where the ball is. People mistake your quiet for not caring. You care so much you've been studying the same pattern for weeks, and it pays off in one clean second.",
       "accent": "green",
-      "mix": { "setter": 8, "ace": 9, "libero": 10, "blocker": 40, "spiker": 5, "server": 7, "manager": 11, "bench": 10 },
-      "strengths": ["Reads patterns others miss", "Doesn't need constant action", "Delivers at the exact moment"],
+      "mix": {
+        "setter": 8,
+        "ace": 9,
+        "libero": 10,
+        "blocker": 40,
+        "spiker": 5,
+        "server": 7,
+        "manager": 11,
+        "bench": 10
+      },
+      "strengths": [
+        "Reads patterns others miss",
+        "Doesn't need constant action",
+        "Delivers at the exact moment"
+      ],
       "watchOut": "Waiting can turn into avoiding. Say the thing before the season ends."
     },
     {
@@ -251,8 +578,21 @@
       "tagline": "Momentum in a person",
       "blurb": "You're the one who changes the temperature of a game. Loud, fast, committed, occasionally wrong about the angle. Your energy is contagious in both directions, which is why the team needs you near the front and sometimes needs you to breathe.",
       "accent": "orange",
-      "mix": { "setter": 10, "ace": 15, "libero": 6, "blocker": 5, "spiker": 41, "server": 8, "manager": 7, "bench": 8 },
-      "strengths": ["Changes the mood of a room", "Plays without hedging", "Pulls others into the fight"],
+      "mix": {
+        "setter": 10,
+        "ace": 15,
+        "libero": 6,
+        "blocker": 5,
+        "spiker": 41,
+        "server": 8,
+        "manager": 7,
+        "bench": 8
+      },
+      "strengths": [
+        "Changes the mood of a room",
+        "Plays without hedging",
+        "Pulls others into the fight"
+      ],
       "watchOut": "Momentum isn't a plan. One calm decision in the middle of the rush."
     },
     {
@@ -261,8 +601,21 @@
       "tagline": "One shot, no warm-up",
       "blurb": "You're at your best in the small, high-stakes window: two minutes, one job, everyone watching. You don't need the whole match. You need one chance with consequences, and you'll take the risky version every time.",
       "accent": "purple",
-      "mix": { "setter": 7, "ace": 9, "libero": 5, "blocker": 7, "spiker": 6, "server": 42, "manager": 9, "bench": 15 },
-      "strengths": ["Thrives in short, sharp moments", "Brave with the risky option", "No warm-up needed"],
+      "mix": {
+        "setter": 7,
+        "ace": 9,
+        "libero": 5,
+        "blocker": 7,
+        "spiker": 6,
+        "server": 42,
+        "manager": 9,
+        "bench": 15
+      },
+      "strengths": [
+        "Thrives in short, sharp moments",
+        "Brave with the risky option",
+        "No warm-up needed"
+      ],
       "watchOut": "The safe serve wins matches too. Not everything needs to be the highlight."
     },
     {
@@ -271,8 +624,21 @@
       "tagline": "Everyone's fine because you checked",
       "blurb": "You're the reason there's water, a plan and someone remembering the second-years exist. None of it is glamorous and all of it is load-bearing. You notice who's been quiet for three days before anyone else does.",
       "accent": "cyan",
-      "mix": { "setter": 10, "ace": 4, "libero": 11, "blocker": 10, "spiker": 6, "server": 7, "manager": 42, "bench": 10 },
-      "strengths": ["Holds the practical side together", "Notices people who aren't being noticed", "Reliable in the unglamorous parts"],
+      "mix": {
+        "setter": 10,
+        "ace": 4,
+        "libero": 11,
+        "blocker": 10,
+        "spiker": 6,
+        "server": 7,
+        "manager": 42,
+        "bench": 10
+      },
+      "strengths": [
+        "Holds the practical side together",
+        "Notices people who aren't being noticed",
+        "Reliable in the unglamorous parts"
+      ],
       "watchOut": "Nobody's asking you to be the adult every single time. Let someone else carry the water."
     },
     {
@@ -281,8 +647,21 @@
       "tagline": "Learning the whole thing from the side",
       "blurb": "You watch everything and say nothing, and then one day you're ready and it surprises people who assumed you weren't paying attention. You're not lesser for not being on court yet. You're just early in a longer story.",
       "accent": "lime",
-      "mix": { "setter": 6, "ace": 7, "libero": 9, "blocker": 12, "spiker": 8, "server": 14, "manager": 12, "bench": 32 },
-      "strengths": ["Learns by watching closely", "Patient with your own progress", "Ready when the call comes"],
+      "mix": {
+        "setter": 6,
+        "ace": 7,
+        "libero": 9,
+        "blocker": 12,
+        "spiker": 8,
+        "server": 14,
+        "manager": 12,
+        "bench": 32
+      },
+      "strengths": [
+        "Learns by watching closely",
+        "Patient with your own progress",
+        "Ready when the call comes"
+      ],
       "watchOut": "Waiting for a perfect moment is how good players stay on the bench. Ask to play."
     }
   ]

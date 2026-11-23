@@ -1,0 +1,555 @@
+{
+  "slug": "mythical-household",
+  "title": "The mythical creature running your household",
+  "dek": "Not a lore exam. Twelve questions about who keeps this place standing, what goes missing, and which saucer nobody admits to leaving out.",
+  "category": "Folklore",
+  "accent": "pink",
+  "emoji": "🥛",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The house is suspiciously tidy and one thing is missing. You assume:",
+      "options": [
+        {
+          "id": "a",
+          "label": "I fixed it in my sleep and forgot",
+          "weights": {
+            "brownie": 2,
+            "bogart": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something has been through my drawers",
+          "weights": {
+            "bogart": 2,
+            "kelpie": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "This is the calm before something loud",
+          "weights": {
+            "banshee": 2,
+            "dragon": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The house is in a mood again",
+          "weights": {
+            "kelpie": 2,
+            "selkie": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "A visitor says the place has a lovely atmosphere. You hear:",
+      "helper": "Pick the thought that arrives first.",
+      "options": [
+        {
+          "id": "a",
+          "label": "They noticed the one thing I obsess over",
+          "weights": {
+            "brownie": 2,
+            "dragon": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "They are casing the place",
+          "weights": {
+            "bogart": 2,
+            "kelpie": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Wait until they hear the pipes",
+          "weights": {
+            "banshee": 2,
+            "selkie": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "I will pretend I did not hear that",
+          "weights": {
+            "selkie": 2,
+            "brownie": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "A warning about the house should arrive as:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A note left where I'll find it",
+          "weights": {
+            "brownie": 2,
+            "banshee": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A joke that lands badly",
+          "weights": {
+            "kelpie": 2,
+            "bogart": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "One object explains this household. Which one is on the shelf?",
+      "options": [
+        {
+          "id": "a",
+          "label": "A glass of milk, left out",
+          "weights": {
+            "brownie": 2,
+            "selkie": 1
+          },
+          "image": "/images/questions/myth-milk.jpg",
+          "alt": "A glass of milk"
+        },
+        {
+          "id": "b",
+          "label": "A broom nobody owns",
+          "weights": {
+            "banshee": 2,
+            "kelpie": 1
+          },
+          "image": "/images/questions/myth-broom.jpg",
+          "alt": "A worn broom leaning against a door"
+        },
+        {
+          "id": "c",
+          "label": "One very good spoon",
+          "weights": {
+            "dragon": 2,
+            "bogart": 1
+          },
+          "image": "/images/questions/myth-spoons.jpg",
+          "alt": "A single spoon"
+        },
+        {
+          "id": "d",
+          "label": "A coat that smells of the sea",
+          "weights": {
+            "selkie": 2,
+            "brownie": 1
+          },
+          "image": "/images/questions/myth-coat.jpg",
+          "alt": "A heavy coat hanging by a doorway"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the household's actual energy.",
+      "helper": "Across: does it get tidied or disturbed. Up: does it stay or hoard.",
+      "x": {
+        "low": {
+          "label": "Tidies",
+          "trait": "brownie"
+        },
+        "high": {
+          "label": "Disturbs",
+          "trait": "kelpie"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Comes and goes",
+          "trait": "selkie"
+        },
+        "high": {
+          "label": "Never leaves",
+          "trait": "dragon"
+        }
+      },
+      "quadrants": {
+        "lowLow": "Saucer, Then Silence",
+        "lowHigh": "The Hoard That Tidies",
+        "highLow": "Borrowed, Not Returned",
+        "highHigh": "Mess With Sentimental Value"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what this household needs most tonight.",
+      "helper": "First place is the thing you'd deal with first.",
+      "items": [
+        {
+          "id": "milk",
+          "label": "One saucer, left out",
+          "weights": {
+            "brownie": 2,
+            "selkie": 1
+          }
+        },
+        {
+          "id": "warning",
+          "label": "A warning nobody asked for",
+          "weights": {
+            "banshee": 2,
+            "kelpie": 1
+          }
+        },
+        {
+          "id": "back",
+          "label": "Everything put back where it was",
+          "weights": {
+            "dragon": 2,
+            "bogart": 1
+          }
+        },
+        {
+          "id": "quiet",
+          "label": "Twenty minutes of complete quiet",
+          "weights": {
+            "selkie": 2,
+            "brownie": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Finish the house rules.",
+      "helper": "One phrase per gap. The house is listening.",
+      "template": "This house only works because {a}, and nobody mentions {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "someone is awake at 2am fixing it",
+              "weights": {
+                "brownie": 2,
+                "banshee": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "things go missing and come back changed",
+              "weights": {
+                "bogart": 2,
+                "kelpie": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "there's a hoard behind a door",
+              "weights": {
+                "dragon": 2,
+                "selkie": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "the good room stays closed",
+              "weights": {
+                "selkie": 2,
+                "brownie": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "the noise in the pipes",
+              "weights": {
+                "banshee": 2,
+                "brownie": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "the thing at the bottom of the garden",
+              "weights": {
+                "kelpie": 2,
+                "dragon": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "who actually pays for it",
+              "weights": {
+                "dragon": 2,
+                "bogart": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "how often everyone leaves",
+              "weights": {
+                "selkie": 2,
+                "kelpie": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I can tell a room is about to go wrong.",
+      "trait": "banshee",
+      "low": "Never noticed",
+      "high": "Before the kettle boils"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather things were left exactly as they are.",
+      "disagree": {
+        "trait": "kelpie"
+      },
+      "agree": {
+        "trait": "brownie"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "If something of mine goes missing, I take it personally.",
+      "agree": {
+        "trait": "bogart",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "brownie",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Something breaks at 2am. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Fix it before anyone wakes up",
+          "weights": {
+            "brownie": 2,
+            "selkie": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Leave it and blame the house",
+          "weights": {
+            "bogart": 2,
+            "kelpie": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Announce it, dramatically",
+          "weights": {
+            "banshee": 2,
+            "dragon": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Add it to the list for later",
+          "weights": {
+            "dragon": 2,
+            "banshee": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last thing a visitor notices on the way out:",
+      "options": [
+        {
+          "id": "a",
+          "label": "How clean it all is",
+          "weights": {
+            "brownie": 2,
+            "dragon": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "That something is missing",
+          "weights": {
+            "bogart": 2,
+            "kelpie": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The noise from upstairs",
+          "weights": {
+            "banshee": 2,
+            "selkie": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "That they'd like to stay",
+          "weights": {
+            "selkie": 2,
+            "kelpie": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "brownie",
+      "name": "The Brownie",
+      "tagline": "Tidies at 2am, expects one saucer of milk",
+      "blurb": "You are the reason the house works and the reason nobody knows why. You fix things quietly, at inconvenient hours, and keep a very precise mental list of what everyone owes you in acknowledgement. It is a long list.",
+      "accent": "lime",
+      "mix": {
+        "brownie": 42,
+        "bogart": 9,
+        "banshee": 8,
+        "kelpie": 12,
+        "dragon": 20,
+        "selkie": 9
+      },
+      "strengths": [
+        "Notices the small thing before it becomes a big thing",
+        "Works without an audience",
+        "Keeps a household running on goodwill and lists"
+      ],
+      "watchOut": "Being indispensable is not the same as being thanked. Ask, once, out loud."
+    },
+    {
+      "trait": "bogart",
+      "name": "The Bogart",
+      "tagline": "Moves your keys, then watches",
+      "blurb": "You are the reason the house has a memory and a sense of humour about it. Nothing is ever quite where it was, and somehow that is how you know everything is fine. You keep the things people aren't ready to look at yet.",
+      "accent": "purple",
+      "mix": {
+        "brownie": 11,
+        "bogart": 40,
+        "banshee": 10,
+        "kelpie": 17,
+        "dragon": 14,
+        "selkie": 8
+      },
+      "strengths": [
+        "Finds what everyone else has given up on",
+        "Keeps a secret like a locked cupboard",
+        "Makes a house feel inhabited rather than staged"
+      ],
+      "watchOut": "Not every missing thing is a joke. Say when you've taken something."
+    },
+    {
+      "trait": "banshee",
+      "name": "The Banshee",
+      "tagline": "Announces the problem before it happens",
+      "blurb": "You can hear a household going wrong from three rooms away, and you would rather say it now than be polite about it later. People call it dramatic right up until you're correct. Then they call it something else.",
+      "accent": "sky",
+      "mix": {
+        "brownie": 10,
+        "bogart": 8,
+        "banshee": 41,
+        "kelpie": 13,
+        "dragon": 15,
+        "selkie": 13
+      },
+      "strengths": [
+        "Catches problems early and says so",
+        "Doesn't let a small thing rot quietly",
+        "Surprisingly good in an actual emergency"
+      ],
+      "watchOut": "A warning every day stops sounding like a warning. Save the wail."
+    },
+    {
+      "trait": "kelpie",
+      "name": "The Kelpie",
+      "tagline": "Offers a lovely ride. Do not accept.",
+      "blurb": "Your household runs on momentum and a little danger. You are charming, unpredictable, and the reason there is always a story about the boiler. You don't mean any harm. You do mean to see what happens.",
+      "accent": "cyan",
+      "mix": {
+        "brownie": 7,
+        "bogart": 20,
+        "banshee": 12,
+        "kelpie": 38,
+        "dragon": 11,
+        "selkie": 12
+      },
+      "strengths": [
+        "Turns a dull Tuesday into something worth retelling",
+        "Fearless about trying the wrong way first",
+        "Gets other people out of their routines"
+      ],
+      "watchOut": "Other people have to live here too. Give them a heads-up."
+    },
+    {
+      "trait": "dragon",
+      "name": "The Dragon",
+      "tagline": "Hoards the good blankets",
+      "blurb": "You keep the house stocked, warm and slightly over-full. There is a drawer with batteries, a shelf with every charger, and a cupboard nobody else is allowed to reorganise. Your care looks like inventory, and it is enormously effective.",
+      "accent": "red",
+      "mix": {
+        "brownie": 19,
+        "bogart": 12,
+        "banshee": 9,
+        "kelpie": 8,
+        "dragon": 43,
+        "selkie": 9
+      },
+      "strengths": [
+        "Always has the thing, twice",
+        "Makes a home feel protected",
+        "Takes hosting seriously"
+      ],
+      "watchOut": "A hoard is not a personality. Let some of it go."
+    },
+    {
+      "trait": "selkie",
+      "name": "The Selkie",
+      "tagline": "Leaves the coat by the door",
+      "blurb": "You come and go, and the house is better for both. You arrive with your whole attention, then disappear for a while and return with stories. The people who love you have learned not to chase the coat.",
+      "accent": "blue",
+      "mix": {
+        "brownie": 12,
+        "bogart": 10,
+        "banshee": 12,
+        "kelpie": 18,
+        "dragon": 9,
+        "selkie": 39
+      },
+      "strengths": [
+        "Fully present when you're present",
+        "Comfortable with your own company",
+        "Brings the outside world back in"
+      ],
+      "watchOut": "Silence reads as absence. Say when you'll be back."
+    }
+  ]
+}

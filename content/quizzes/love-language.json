@@ -220,7 +220,7 @@
         }
       ]
     },
-        {
+    {
       "id": "q9",
       "type": "map",
       "prompt": "Put yourself on the map of how you actually receive love.",
@@ -309,6 +309,53 @@
             "space": 2,
             "words": 1
           }
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "One of these says it better than a sentence. Pick one.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A cup and a newspaper",
+          "weights": {
+            "time": 2,
+            "acts": 1
+          },
+          "image": "/images/questions/love-cups.jpg",
+          "alt": "A cup of coffee with a newspaper"
+        },
+        {
+          "id": "b",
+          "label": "A wall of notes by the kettle",
+          "weights": {
+            "words": 2,
+            "gifts": 1
+          },
+          "image": "/images/questions/love-note.jpg",
+          "alt": "Colourful sticky notes on a wall"
+        },
+        {
+          "id": "c",
+          "label": "A hook by the door, overloaded",
+          "weights": {
+            "space": 2,
+            "acts": 1
+          },
+          "image": "/images/questions/love-coat.jpg",
+          "alt": "A crowded coat hook"
+        },
+        {
+          "id": "d",
+          "label": "A hand, offered",
+          "weights": {
+            "touch": 2,
+            "time": 1
+          },
+          "image": "/images/questions/love-hands.jpg",
+          "alt": "An open hand"
         }
       ]
     }

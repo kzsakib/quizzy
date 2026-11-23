@@ -220,7 +220,7 @@
         }
       ]
     },
-        {
+    {
       "id": "q9",
       "type": "rank",
       "prompt": "Rank what actually rescues a 10pm Tuesday.",
@@ -315,6 +315,53 @@
             "prep": 2,
             "host": 1
           }
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "Eleven at night. Which of these is your kitchen?",
+      "options": [
+        {
+          "id": "a",
+          "label": "The fridge door, open, light on",
+          "weights": {
+            "fridge": 2,
+            "snack": 1
+          },
+          "image": "/images/questions/kitchen-fridge.jpg",
+          "alt": "The inside of an open fridge"
+        },
+        {
+          "id": "b",
+          "label": "The sink, one mug in it",
+          "weights": {
+            "prep": 2,
+            "improv": 1
+          },
+          "image": "/images/questions/kitchen-sink.jpg",
+          "alt": "A kitchen sink"
+        },
+        {
+          "id": "c",
+          "label": "Takeaway boxes on the counter",
+          "weights": {
+            "takeaway": 2,
+            "toast": 1
+          },
+          "image": "/images/questions/kitchen-takeaway.jpg",
+          "alt": "Stacked takeaway food boxes"
+        },
+        {
+          "id": "d",
+          "label": "A table set for guests",
+          "weights": {
+            "host": 2,
+            "recipe": 1
+          },
+          "image": "/images/questions/kitchen-table.jpg",
+          "alt": "A dining table set for a meal"
         }
       ]
     }

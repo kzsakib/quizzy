@@ -1,0 +1,554 @@
+{
+  "slug": "heist-role",
+  "title": "The heist has a job for you, and it isn't the driver's",
+  "dek": "Twelve questions about how you work a room, a plan and a locked door. Nobody is asking whether you'd actually do it, so be honest.",
+  "category": "Crime",
+  "accent": "cyan",
+  "emoji": "🧤",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The job is in three days. Where are you?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Rewriting the timeline for the fourth time",
+          "weights": {
+            "mastermind": 2,
+            "hacker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "At the site, listening to the building",
+          "weights": {
+            "safecracker": 2,
+            "muscle": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Buying a shirt that fits the lobby",
+          "weights": {
+            "face": 2,
+            "wheelman": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "In a van, checking the exits",
+          "weights": {
+            "wheelman": 2,
+            "muscle": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Something goes wrong at 02:14. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Already have a second plan",
+          "weights": {
+            "mastermind": 2,
+            "safecracker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Talk the guard into a different story",
+          "weights": {
+            "face": 2,
+            "hacker": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Improvise with whatever's in reach",
+          "weights": {
+            "muscle": 2,
+            "wheelman": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Kill the cameras and keep moving",
+          "weights": {
+            "hacker": 2,
+            "mastermind": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The better skill to bring on a job:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Patience",
+          "weights": {
+            "safecracker": 2,
+            "mastermind": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Charm",
+          "weights": {
+            "face": 2,
+            "wheelman": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The crew needs one of these. You pick it up:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A blueprint with coffee rings",
+          "weights": {
+            "mastermind": 2,
+            "hacker": 1
+          },
+          "image": "/images/questions/heist-blueprint.jpg",
+          "alt": "A technical blueprint spread across a table"
+        },
+        {
+          "id": "b",
+          "label": "A vault door, older than the bank",
+          "weights": {
+            "safecracker": 2,
+            "muscle": 1
+          },
+          "image": "/images/questions/heist-vault.jpg",
+          "alt": "A bank vault door"
+        },
+        {
+          "id": "c",
+          "label": "A high-vis vest and a clipboard",
+          "weights": {
+            "face": 2,
+            "muscle": 1
+          },
+          "image": "/images/questions/heist-vest.jpg",
+          "alt": "A high-visibility vest hanging on a hook"
+        },
+        {
+          "id": "d",
+          "label": "A laptop trailing cables",
+          "weights": {
+            "hacker": 2,
+            "mastermind": 1
+          },
+          "image": "/images/questions/heist-laptop.jpg",
+          "alt": "A laptop surrounded by cables on a desk"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Every crew needs to know where you sit.",
+      "helper": "Across: plan or improvise. Up: invisible or unmissable.",
+      "x": {
+        "low": {
+          "label": "Plan",
+          "trait": "mastermind"
+        },
+        "high": {
+          "label": "Improvise",
+          "trait": "wheelman"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Invisible",
+          "trait": "hacker"
+        },
+        "high": {
+          "label": "Unmissable",
+          "trait": "face"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Machinery",
+        "lowHigh": "The Very Public Plan",
+        "highLow": "Vanishing Act",
+        "highHigh": "The Diversion"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what the crew actually needs from you.",
+      "helper": "First place is what you'd be trusted with.",
+      "items": [
+        {
+          "id": "plan",
+          "label": "A plan that survives contact",
+          "weights": {
+            "mastermind": 2,
+            "muscle": 1
+          }
+        },
+        {
+          "id": "lock",
+          "label": "Nerves at the lock",
+          "weights": {
+            "safecracker": 2,
+            "face": 1
+          }
+        },
+        {
+          "id": "way",
+          "label": "A way in that isn't a door",
+          "weights": {
+            "hacker": 2,
+            "mastermind": 1
+          }
+        },
+        {
+          "id": "car",
+          "label": "A car that's already running",
+          "weights": {
+            "wheelman": 2,
+            "muscle": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your one line in the crew interview.",
+      "helper": "Both gaps, no rehearsal.",
+      "template": "I'm the one who {a} when {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "reads the room before the plan",
+              "weights": {
+                "face": 2,
+                "mastermind": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "notices the camera nobody mentioned",
+              "weights": {
+                "hacker": 2,
+                "safecracker": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "carries the heavy thing without complaining",
+              "weights": {
+                "muscle": 2,
+                "wheelman": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "keeps the engine warm",
+              "weights": {
+                "wheelman": 2,
+                "face": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "the plan stops being a plan",
+              "weights": {
+                "mastermind": 2,
+                "muscle": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "someone starts panicking",
+              "weights": {
+                "face": 2,
+                "safecracker": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "the alarm goes off early",
+              "weights": {
+                "hacker": 2,
+                "wheelman": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "it's time to leave",
+              "weights": {
+                "safecracker": 2,
+                "mastermind": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I notice the exits before I notice the people.",
+      "trait": "wheelman",
+      "low": "Never",
+      "high": "Before I sit down"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather be trusted than feared.",
+      "disagree": {
+        "trait": "muscle"
+      },
+      "agree": {
+        "trait": "face"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Any plan improves when you remove one step.",
+      "agree": {
+        "trait": "mastermind",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "muscle",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The take is smaller than promised. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Recalculate out loud",
+          "weights": {
+            "mastermind": 2,
+            "hacker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Say nothing and remember",
+          "weights": {
+            "safecracker": 2,
+            "muscle": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Make a joke, keep the mood",
+          "weights": {
+            "face": 2,
+            "wheelman": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Start the car",
+          "weights": {
+            "wheelman": 2,
+            "face": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The one thing you'd never do on a job:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Improvise",
+          "weights": {
+            "mastermind": 2,
+            "safecracker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Trust a stranger",
+          "weights": {
+            "hacker": 2,
+            "muscle": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Be the reason it fails",
+          "weights": {
+            "muscle": 2,
+            "wheelman": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave someone behind",
+          "weights": {
+            "face": 2,
+            "safecracker": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "mastermind",
+      "name": "The Mastermind",
+      "tagline": "You planned this eleven months ago",
+      "blurb": "You are three steps ahead and slightly annoyed that nobody else is. Your plan has a plan, the plan has a contingency, and the contingency has a note about parking. You are rarely wrong and never relaxed.",
+      "accent": "purple",
+      "mix": {
+        "mastermind": 43,
+        "safecracker": 13,
+        "face": 8,
+        "hacker": 17,
+        "wheelman": 10,
+        "muscle": 9
+      },
+      "strengths": [
+        "Sees the whole board, not the next move",
+        "Turns chaos into a checklist",
+        "Never loses the actual objective"
+      ],
+      "watchOut": "The plan is not the point. The people executing it are."
+    },
+    {
+      "trait": "safecracker",
+      "name": "The Safecracker",
+      "tagline": "You listen to the lock, not the alarm",
+      "blurb": "You are the calmest person in the building because you are the only one doing something with your hands. You like problems with a mechanism: a lock, a hinge, a person who can be reasoned with. Everything else is noise.",
+      "accent": "sky",
+      "mix": {
+        "mastermind": 15,
+        "safecracker": 42,
+        "face": 9,
+        "hacker": 11,
+        "wheelman": 12,
+        "muscle": 11
+      },
+      "strengths": [
+        "Steady when the timer starts",
+        "Fixes the thing nobody else can touch",
+        "Notices detail other people walk past"
+      ],
+      "watchOut": "Not every problem is a lock. Some need a conversation."
+    },
+    {
+      "trait": "face",
+      "name": "The Face",
+      "tagline": "You talk your way past the front desk",
+      "blurb": "You have never once needed a fake badge, because you simply behave like you belong. You read a room in four seconds and give it the version of you it wants. It is a craft, and you are very good at it.",
+      "accent": "orange",
+      "mix": {
+        "mastermind": 11,
+        "safecracker": 8,
+        "face": 44,
+        "hacker": 9,
+        "wheelman": 14,
+        "muscle": 14
+      },
+      "strengths": [
+        "Defuses a situation without touching it",
+        "Makes strangers feel like insiders",
+        "Buys time better than anyone"
+      ],
+      "watchOut": "Charm runs out. Have something real underneath it."
+    },
+    {
+      "trait": "hacker",
+      "name": "The Wire",
+      "tagline": "You're already in the system",
+      "blurb": "You solve the job before anybody has to be brave. While the others are looking at doors, you're looking at what the building believes about itself. You prefer your crimes at a desk, with a second monitor.",
+      "accent": "green",
+      "mix": {
+        "mastermind": 20,
+        "safecracker": 10,
+        "face": 7,
+        "hacker": 42,
+        "wheelman": 10,
+        "muscle": 11
+      },
+      "strengths": [
+        "Finds the way in nobody considered",
+        "Patient with long, boring work",
+        "Excellent at covering tracks"
+      ],
+      "watchOut": "A clever route still needs someone to walk it."
+    },
+    {
+      "trait": "wheelman",
+      "name": "The Wheelman",
+      "tagline": "Engine running, hazards on",
+      "blurb": "You are not the plan and you are not the charm; you are the reason everyone gets to argue about it afterwards. You notice exits, timing and the one road that isn't blocked. Waiting is the job, and you're fine with it.",
+      "accent": "red",
+      "mix": {
+        "mastermind": 12,
+        "safecracker": 12,
+        "face": 12,
+        "hacker": 10,
+        "wheelman": 42,
+        "muscle": 12
+      },
+      "strengths": [
+        "Calm under a countdown",
+        "Reads a route like a map in your head",
+        "Gets people out, every time"
+      ],
+      "watchOut": "Being the exit plan can look like being uninvolved. Say more."
+    },
+    {
+      "trait": "muscle",
+      "name": "The Muscle",
+      "tagline": "You're the plan B that works",
+      "blurb": "You are the least complicated person in the room and the one everybody is quietly glad to have. You don't overthink, you don't freeze, and you will absolutely carry the awkward thing down three flights of stairs. Loyalty is your whole method.",
+      "accent": "yellow",
+      "mix": {
+        "mastermind": 9,
+        "safecracker": 13,
+        "face": 13,
+        "hacker": 8,
+        "wheelman": 15,
+        "muscle": 42
+      },
+      "strengths": [
+        "Does the hard, unglamorous part",
+        "Impossible to panic",
+        "Shows up exactly when needed"
+      ],
+      "watchOut": "Being dependable makes it easy for people to skip your opinion."
+    }
+  ]
+}

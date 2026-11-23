@@ -275,6 +275,54 @@
       "disagree": { "trait": "champagne" },
       "agree": { "trait": "alltoowell" }
     }
+,
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "The bridge sounds like one of these places. Pick one.",
+      "options": [
+        {
+          "id": "a",
+          "label": "An empty street at 1am",
+          "weights": {
+            "archer": 2,
+            "exile": 1
+          },
+          "image": "/images/questions/bridge-street.jpg",
+          "alt": "An empty city street at night"
+        },
+        {
+          "id": "b",
+          "label": "A porch light left on",
+          "weights": {
+            "august": 2,
+            "delicate": 1
+          },
+          "image": "/images/questions/bridge-porch.jpg",
+          "alt": "A lit porch on a house at dusk"
+        },
+        {
+          "id": "c",
+          "label": "A train window at dusk",
+          "weights": {
+            "alltoowell": 2,
+            "antihero": 1
+          },
+          "image": "/images/questions/bridge-train.jpg",
+          "alt": "A view from a train window"
+        },
+        {
+          "id": "d",
+          "label": "A kitchen light at 3am",
+          "weights": {
+            "champagne": 2,
+            "cruelsummer": 1
+          },
+          "image": "/images/questions/bridge-kitchen.jpg",
+          "alt": "A kitchen lit late at night"
+        }
+      ]
+    }
   ],
   "results": [
     {

@@ -1,0 +1,554 @@
+{
+  "slug": "kitchen-appliance",
+  "title": "The kitchen appliance that knows too much about you",
+  "dek": "Twelve questions about how you work, how you rest, and how loudly you announce that you're finished. The appliance will see you now.",
+  "category": "Food",
+  "accent": "yellow",
+  "emoji": "🔌",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "A task lands on you at 6pm. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Two minutes, done, no instructions",
+          "weights": {
+            "toaster": 2,
+            "kettle": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Start it now and wait for the right moment",
+          "weights": {
+            "oven": 2,
+            "fridge": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Full power, immediately",
+          "weights": {
+            "blender": 2,
+            "kettle": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Take it all in and sort it out later",
+          "weights": {
+            "dishwasher": 2,
+            "fridge": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "People describe your energy as:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Reliable to a fault",
+          "weights": {
+            "toaster": 2,
+            "dishwasher": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Warm, if you give me a minute",
+          "weights": {
+            "oven": 2,
+            "kettle": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A lot, in a good way",
+          "weights": {
+            "blender": 2,
+            "toaster": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Calm, until you look inside",
+          "weights": {
+            "fridge": 2,
+            "dishwasher": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather have:",
+      "options": [
+        {
+          "id": "a",
+          "label": "One button",
+          "weights": {
+            "toaster": 2,
+            "kettle": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Every setting",
+          "weights": {
+            "oven": 2,
+            "blender": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Which one is basically you?",
+      "options": [
+        {
+          "id": "a",
+          "label": "A toaster, mid-cycle",
+          "weights": {
+            "toaster": 2,
+            "kettle": 1
+          },
+          "image": "/images/questions/appliance-toaster.jpg",
+          "alt": "A chrome toaster on a kitchen counter"
+        },
+        {
+          "id": "b",
+          "label": "A stand mixer with one bowl",
+          "weights": {
+            "blender": 2,
+            "oven": 1
+          },
+          "image": "/images/questions/appliance-mixer.jpg",
+          "alt": "A stand mixer with a metal bowl"
+        },
+        {
+          "id": "c",
+          "label": "An open fridge, light on",
+          "weights": {
+            "fridge": 2,
+            "dishwasher": 1
+          },
+          "image": "/images/questions/appliance-fridge.jpg",
+          "alt": "An open refrigerator full of food"
+        },
+        {
+          "id": "d",
+          "label": "A kettle coming to the boil",
+          "weights": {
+            "kettle": 2,
+            "dishwasher": 1
+          },
+          "image": "/images/questions/appliance-kettle.jpg",
+          "alt": "An electric kettle on a counter"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Your settings, plotted.",
+      "helper": "Across: one job or everything at once. Up: quiet or announced.",
+      "x": {
+        "low": {
+          "label": "One job",
+          "trait": "toaster"
+        },
+        "high": {
+          "label": "Everything at once",
+          "trait": "blender"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Quiet",
+          "trait": "fridge"
+        },
+        "high": {
+          "label": "Announces itself",
+          "trait": "kettle"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Silent Workhorse",
+        "lowHigh": "The Whistle",
+        "highLow": "The Slow Build",
+        "highHigh": "Full Power"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what a kitchen actually needs.",
+      "helper": "First place is the one you'd replace last.",
+      "items": [
+        {
+          "id": "works",
+          "label": "Something that just works",
+          "weights": {
+            "toaster": 2,
+            "kettle": 1
+          }
+        },
+        {
+          "id": "holds",
+          "label": "Something that holds everything",
+          "weights": {
+            "fridge": 2,
+            "dishwasher": 1
+          }
+        },
+        {
+          "id": "slow",
+          "label": "Something that takes its time",
+          "weights": {
+            "oven": 2,
+            "fridge": 1
+          }
+        },
+        {
+          "id": "mess",
+          "label": "Something that deals with the mess",
+          "weights": {
+            "dishwasher": 2,
+            "blender": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "At home, I'm the one who {a} when {b}.",
+      "helper": "Two gaps. The kitchen has heard it all.",
+      "template": "At home, I'm the one who {a} when {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "does the small job perfectly",
+              "weights": {
+                "toaster": 2,
+                "kettle": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "makes a lot of noise about being ready",
+              "weights": {
+                "kettle": 2,
+                "blender": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "takes an hour and says nothing",
+              "weights": {
+                "oven": 2,
+                "fridge": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "cleans up after everyone",
+              "weights": {
+                "dishwasher": 2,
+                "fridge": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "nobody else wants to do it",
+              "weights": {
+                "dishwasher": 2,
+                "toaster": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "there's a deadline",
+              "weights": {
+                "blender": 2,
+                "kettle": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "everyone's already left the room",
+              "weights": {
+                "fridge": 2,
+                "oven": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "it's finally time to eat",
+              "weights": {
+                "oven": 2,
+                "toaster": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I finish things fast and loudly.",
+      "trait": "blender",
+      "low": "Slow and quiet",
+      "high": "Full speed, sorry"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather do one thing well than six things at once.",
+      "disagree": {
+        "trait": "blender"
+      },
+      "agree": {
+        "trait": "toaster"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The cleanup is part of the job.",
+      "agree": {
+        "trait": "dishwasher",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "blender",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The kitchen is a mess at 11pm. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Deal with it now, properly",
+          "weights": {
+            "dishwasher": 2,
+            "oven": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Put it in the fridge and forget",
+          "weights": {
+            "fridge": 2,
+            "toaster": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Make a smoothie and ignore it",
+          "weights": {
+            "blender": 2,
+            "kettle": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Boil the kettle and sit down",
+          "weights": {
+            "kettle": 2,
+            "fridge": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Your worst setting:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Burnt on one side, raw on the other",
+          "weights": {
+            "toaster": 2,
+            "oven": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Overflowing",
+          "weights": {
+            "blender": 2,
+            "dishwasher": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Running cold",
+          "weights": {
+            "fridge": 2,
+            "kettle": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Still going after everyone's finished",
+          "weights": {
+            "dishwasher": 2,
+            "oven": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "toaster",
+      "name": "The Toaster",
+      "tagline": "Two settings: raw or carbon",
+      "blurb": "You do one small thing better than anyone and you do it at the exact moment it's needed. No instructions, no drama, no range. People forget you're essential until the morning you're not there.",
+      "accent": "yellow",
+      "mix": {
+        "toaster": 44,
+        "kettle": 14,
+        "blender": 11,
+        "oven": 12,
+        "fridge": 10,
+        "dishwasher": 9
+      },
+      "strengths": [
+        "Immediately useful",
+        "Zero maintenance",
+        "Consistent, every single time"
+      ],
+      "watchOut": "One setting means no range. Let yourself be medium, occasionally."
+    },
+    {
+      "trait": "kettle",
+      "name": "The Kettle",
+      "tagline": "One job, done at volume",
+      "blurb": "You are a single-purpose machine with an unmistakable announcement. You boil, you whistle, you are done. Everyone in the house knows exactly where you are and roughly what mood you're in.",
+      "accent": "red",
+      "mix": {
+        "toaster": 14,
+        "kettle": 45,
+        "blender": 12,
+        "oven": 9,
+        "fridge": 9,
+        "dishwasher": 11
+      },
+      "strengths": [
+        "Unmistakably clear",
+        "Fast when it matters",
+        "Brings people to the kitchen"
+      ],
+      "watchOut": "Not every feeling needs a whistle. Sometimes simmer."
+    },
+    {
+      "trait": "blender",
+      "name": "The Blender",
+      "tagline": "Extremely fast, slightly loud",
+      "blurb": "You take everything at once, at full power, and you are finished before anyone else has started. It is impressive and a little alarming. The results are usually good, and there is usually something to clean up.",
+      "accent": "purple",
+      "mix": {
+        "toaster": 10,
+        "kettle": 15,
+        "blender": 44,
+        "oven": 11,
+        "fridge": 9,
+        "dishwasher": 11
+      },
+      "strengths": [
+        "Enormous throughput",
+        "Great with chaos",
+        "Done before the meeting starts"
+      ],
+      "watchOut": "Loud and fast leaves a mess. Check the lid before you go."
+    },
+    {
+      "trait": "oven",
+      "name": "The Oven",
+      "tagline": "Takes an hour, worth it",
+      "blurb": "You are not quick and you are not flashy, but the thing you make is the reason people stayed. You do your best work with time and a bit of heat, and you resolutely refuse to be rushed by a group chat.",
+      "accent": "orange",
+      "mix": {
+        "toaster": 12,
+        "kettle": 9,
+        "blender": 9,
+        "oven": 46,
+        "fridge": 12,
+        "dishwasher": 12
+      },
+      "strengths": [
+        "Delivers the thing worth waiting for",
+        "Steady over a long stretch",
+        "Makes a house smell like home"
+      ],
+      "watchOut": "Not everything needs an hour. Some things need two minutes."
+    },
+    {
+      "trait": "fridge",
+      "name": "The Fridge",
+      "tagline": "Holds everything together, quietly",
+      "blurb": "You are the reason there is something for dinner and the reason nobody knows what's in the back. You keep things cold, keep things safe, and keep a small light on for whoever opens the door at midnight.",
+      "accent": "sky",
+      "mix": {
+        "toaster": 10,
+        "kettle": 9,
+        "blender": 9,
+        "oven": 13,
+        "fridge": 47,
+        "dishwasher": 12
+      },
+      "strengths": [
+        "Reliably holds the important things",
+        "Calm in a crisis",
+        "Quietly keeps everyone fed"
+      ],
+      "watchOut": "You can't store a feeling forever. Take things out eventually."
+    },
+    {
+      "trait": "dishwasher",
+      "name": "The Dishwasher",
+      "tagline": "Deals with the aftermath",
+      "blurb": "You are the one who handles what everyone else has finished with. Unshowy, load-bearing, and slightly taken for granted, you turn the worst part of the evening into a clean kitchen by morning. You deserve a better name.",
+      "accent": "green",
+      "mix": {
+        "toaster": 9,
+        "kettle": 11,
+        "blender": 11,
+        "oven": 12,
+        "fridge": 12,
+        "dishwasher": 45
+      },
+      "strengths": [
+        "Handles the unglamorous part",
+        "Consistent without applause",
+        "Leaves things better than they were"
+      ],
+      "watchOut": "You are not a machine for other people's mess. Say no sometimes."
+    }
+  ]
+}

@@ -130,7 +130,7 @@
       "low": "I'm made of stone",
       "high": "I've paused it to sob"
     },
-        {
+    {
       "id": "q6",
       "type": "madlibs",
       "prompt": "One sentence and casting has seen enough.",
@@ -359,6 +359,53 @@
             "childhood": 2,
             "secondlead": 1
           }
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "Casting needs your opening shot. Which one?",
+      "options": [
+        {
+          "id": "a",
+          "label": "A bus stop after dark",
+          "weights": {
+            "childhood": 2,
+            "secondlead": 1
+          },
+          "image": "/images/questions/role-busstop.jpg",
+          "alt": "A bus stop lit at night"
+        },
+        {
+          "id": "b",
+          "label": "A glass tower, top floor",
+          "weights": {
+            "chaebol": 2,
+            "rival": 1
+          },
+          "image": "/images/questions/role-tower.jpg",
+          "alt": "A tall glass office tower"
+        },
+        {
+          "id": "c",
+          "label": "A hospital entrance",
+          "weights": {
+            "amnesia": 2,
+            "noble": 1
+          },
+          "image": "/images/questions/role-hospital.jpg",
+          "alt": "A hospital building"
+        },
+        {
+          "id": "d",
+          "label": "A café with a free drink",
+          "weights": {
+            "bestfriend": 2,
+            "product": 1
+          },
+          "image": "/images/questions/role-cafe.jpg",
+          "alt": "A cafe table with a coffee cup"
         }
       ]
     }

@@ -1,0 +1,554 @@
+{
+  "slug": "villain-origin",
+  "title": "The exact incident that would turn you villain",
+  "dek": "No tragic backstory required. Twelve questions about the small, specific thing that would finally push you over the edge.",
+  "category": "Villainy",
+  "accent": "red",
+  "emoji": "🦹",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The one thing you could not forgive:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Someone you trusted, quietly selling you out",
+          "weights": {
+            "betrayal": 2,
+            "loss": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Being laughed at in front of people who mattered",
+          "weights": {
+            "humiliation": 2,
+            "injustice": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Watching a rule crush someone smaller",
+          "weights": {
+            "injustice": 2,
+            "experiment": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Being told there was nothing left to try",
+          "weights": {
+            "experiment": 2,
+            "boredom": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your villain era starts with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A list of names",
+          "weights": {
+            "betrayal": 2,
+            "humiliation": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A very boring Tuesday",
+          "weights": {
+            "boredom": 2,
+            "experiment": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "One last unfair meeting",
+          "weights": {
+            "injustice": 2,
+            "loss": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A door that won't open",
+          "weights": {
+            "loss": 2,
+            "betrayal": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Better villain fuel:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A grudge, well kept",
+          "weights": {
+            "betrayal": 2,
+            "humiliation": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A question nobody answered",
+          "weights": {
+            "experiment": 2,
+            "injustice": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The lair has one of these. Which?",
+      "options": [
+        {
+          "id": "a",
+          "label": "A storm sitting over the city",
+          "weights": {
+            "betrayal": 2,
+            "injustice": 1
+          },
+          "image": "/images/questions/villain-storm.jpg",
+          "alt": "Dark storm clouds over a city skyline"
+        },
+        {
+          "id": "b",
+          "label": "A bench of beakers",
+          "weights": {
+            "experiment": 2,
+            "boredom": 1
+          },
+          "image": "/images/questions/villain-lab.jpg",
+          "alt": "Glass beakers and flasks on a laboratory bench"
+        },
+        {
+          "id": "c",
+          "label": "An empty boardroom",
+          "weights": {
+            "humiliation": 2,
+            "loss": 1
+          },
+          "image": "/images/questions/villain-boardroom.jpg",
+          "alt": "A long empty conference table"
+        },
+        {
+          "id": "d",
+          "label": "One window still lit",
+          "weights": {
+            "loss": 2,
+            "experiment": 1
+          },
+          "image": "/images/questions/villain-window.jpg",
+          "alt": "A single lit window in a dark house"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Where does your grievance sit?",
+      "helper": "Across: personal or structural. Up: cold or furious.",
+      "x": {
+        "low": {
+          "label": "Personal",
+          "trait": "betrayal"
+        },
+        "high": {
+          "label": "Structural",
+          "trait": "injustice"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Cold",
+          "trait": "experiment"
+        },
+        "high": {
+          "label": "Furious",
+          "trait": "humiliation"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Grievance",
+        "lowHigh": "The Public Spectacle",
+        "highLow": "The System Is the Problem",
+        "highHigh": "Burn It Down, Politely"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what would push you furthest.",
+      "helper": "First place is the one that actually gets you.",
+      "items": [
+        {
+          "id": "under",
+          "label": "Being underestimated on purpose",
+          "weights": {
+            "humiliation": 2,
+            "betrayal": 1
+          }
+        },
+        {
+          "id": "watch",
+          "label": "Watching it happen to someone else",
+          "weights": {
+            "injustice": 2,
+            "loss": 1
+          }
+        },
+        {
+          "id": "lose",
+          "label": "Losing the one good thing",
+          "weights": {
+            "loss": 2,
+            "betrayal": 1
+          }
+        },
+        {
+          "id": "nothing",
+          "label": "Having nothing left to do",
+          "weights": {
+            "boredom": 2,
+            "experiment": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your villain speech opens with:",
+      "helper": "Two gaps. The camera is close.",
+      "template": "{a}, {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "you had every chance to be decent",
+              "weights": {
+                "injustice": 2,
+                "betrayal": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "you laughed, and I remember the room",
+              "weights": {
+                "humiliation": 2,
+                "loss": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "I was bored, and then I was curious",
+              "weights": {
+                "experiment": 2,
+                "boredom": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "I did everything right",
+              "weights": {
+                "betrayal": 2,
+                "injustice": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "and you didn't even notice",
+              "weights": {
+                "betrayal": 2,
+                "humiliation": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "so I stopped asking permission",
+              "weights": {
+                "injustice": 2,
+                "experiment": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "and the rest is a very long footnote",
+              "weights": {
+                "boredom": 2,
+                "loss": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "so I built something that would",
+              "weights": {
+                "experiment": 2,
+                "loss": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I hold a grudge longer than I admit.",
+      "trait": "betrayal",
+      "low": "I let it go",
+      "high": "I have a folder"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather understand a system than destroy it.",
+      "disagree": {
+        "trait": "humiliation"
+      },
+      "agree": {
+        "trait": "experiment"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Fairness matters more than keeping the peace.",
+      "agree": {
+        "trait": "injustice",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "betrayal",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The plan is ready. What actually stops you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Someone apologises, sincerely",
+          "weights": {
+            "betrayal": 2,
+            "humiliation": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Someone else gets hurt",
+          "weights": {
+            "loss": 2,
+            "injustice": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "It stops being interesting",
+          "weights": {
+            "boredom": 2,
+            "experiment": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The paperwork",
+          "weights": {
+            "boredom": 2,
+            "loss": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Your villain name would come from:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A date you can't forget",
+          "weights": {
+            "betrayal": 2,
+            "loss": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A headline about you",
+          "weights": {
+            "humiliation": 2,
+            "injustice": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A lab notebook",
+          "weights": {
+            "experiment": 2,
+            "boredom": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something you lost",
+          "weights": {
+            "loss": 2,
+            "experiment": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "betrayal",
+      "name": "The Betrayal",
+      "tagline": "You kept the receipts",
+      "blurb": "You would not become a villain for power. You would do it because someone you trusted made a very small, very deliberate choice, and you never got to say so. Your revenge would be documented, indexed and entirely reasonable.",
+      "accent": "purple",
+      "mix": {
+        "betrayal": 44,
+        "humiliation": 12,
+        "boredom": 8,
+        "injustice": 14,
+        "loss": 13,
+        "experiment": 9
+      },
+      "strengths": [
+        "Remembers exactly what happened",
+        "Loyal until it is proved pointless",
+        "Capable of a very clean break"
+      ],
+      "watchOut": "A grudge is a story you keep retelling. Check the ending."
+    },
+    {
+      "trait": "humiliation",
+      "name": "The Public Humiliation",
+      "tagline": "You remember the room, not the year",
+      "blurb": "It is not the setback, it is the audience. You can survive almost anything except being made small in front of people. Your villain era would be stylish, well-lit and would end with a speech they could not interrupt.",
+      "accent": "red",
+      "mix": {
+        "betrayal": 13,
+        "humiliation": 43,
+        "boredom": 9,
+        "injustice": 12,
+        "loss": 13,
+        "experiment": 10
+      },
+      "strengths": [
+        "Absolutely refuses to be dismissed",
+        "Performs best under pressure",
+        "Knows how a room works"
+      ],
+      "watchOut": "Not everyone is laughing at you. Some are just standing there."
+    },
+    {
+      "trait": "boredom",
+      "name": "The Boredom",
+      "tagline": "You did it to see what would happen",
+      "blurb": "Your origin story would not have a tragedy in it. It would have an unremarkable afternoon and a curious mind, and that is somehow worse. You are dangerous because you can always find a more interesting version of events.",
+      "accent": "yellow",
+      "mix": {
+        "betrayal": 9,
+        "humiliation": 11,
+        "boredom": 45,
+        "injustice": 10,
+        "loss": 8,
+        "experiment": 17
+      },
+      "strengths": [
+        "Endlessly inventive",
+        "Unbothered by convention",
+        "Finds the interesting angle"
+      ],
+      "watchOut": "Curiosity has costs other people pay. Check before you press it."
+    },
+    {
+      "trait": "injustice",
+      "name": "The Injustice",
+      "tagline": "It was never about you",
+      "blurb": "You would burn something down on behalf of a stranger. Your line is not personal, it is structural: the rule, the form, the policy that quietly ruins someone. You would be a villain with a manifesto and an unusually good point.",
+      "accent": "orange",
+      "mix": {
+        "betrayal": 13,
+        "humiliation": 11,
+        "boredom": 9,
+        "injustice": 43,
+        "loss": 12,
+        "experiment": 12
+      },
+      "strengths": [
+        "Sees the system, not just the symptom",
+        "Fights for people who can't",
+        "Impossible to buy off"
+      ],
+      "watchOut": "Being right does not make a plan safe. Check the collateral."
+    },
+    {
+      "trait": "loss",
+      "name": "The Loss",
+      "tagline": "You'd burn it all for one more hour",
+      "blurb": "Everything you would do wrong comes from the one thing you can't get back. You are not cruel, you are grieving, and grief with resources is how the best villains begin. You would still be the most recognisable person in the room.",
+      "accent": "blue",
+      "mix": {
+        "betrayal": 14,
+        "humiliation": 12,
+        "boredom": 8,
+        "injustice": 13,
+        "loss": 44,
+        "experiment": 9
+      },
+      "strengths": [
+        "Loves completely, no hedging",
+        "Capable of enormous devotion",
+        "Understands what actually matters"
+      ],
+      "watchOut": "The person you lost wouldn't want this. Probably."
+    },
+    {
+      "trait": "experiment",
+      "name": "The Experiment",
+      "tagline": "The science was the point",
+      "blurb": "You would cross the line to answer the question, and you would be polite about it. Your villainy looks like a very well-funded lab and a series of forms nobody read. You are not evil, exactly. You are thorough.",
+      "accent": "cyan",
+      "mix": {
+        "betrayal": 10,
+        "humiliation": 10,
+        "boredom": 16,
+        "injustice": 13,
+        "loss": 10,
+        "experiment": 41
+      },
+      "strengths": [
+        "Genuinely solves hard problems",
+        "Follows the evidence",
+        "Doesn't flinch at the weird answer"
+      ],
+      "watchOut": "Consequences are not a rounding error. Read your own notes."
+    }
+  ]
+}

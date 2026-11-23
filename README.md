@@ -14,6 +14,7 @@ Tailwind CSS v4 with CSS-variable design tokens, GSAP and Lenis.
 | `npm run check`   | Astro + TypeScript diagnostics              |
 | `node scripts/check-quizzes.mjs` | Validate question counts, images, reachable results |
 | `node scripts/fetch-question-images.mjs` | Re-download picture-question photos |
+| `node scripts/optimize-question-images.mjs` | Resize quiz photos to 800px wide and recompress |
 
 ## Status
 
@@ -25,9 +26,9 @@ Phase 2 of 6 — home page plus a playable quiz engine, polished.
 - [x] Lenis + GSAP ticker sync, ScrollTrigger / SplitText / Flip registered
 - [x] Base layout, floating nav pill, oversized footer wordmark
 - [x] Home page: marquee hero, category bento, trending bento, fresh scroller
-- [x] Quiz engine, scoring and result pages — 22 quizzes across sitcoms, fandom,
+- [x] Quiz engine, scoring and result pages — 31 quizzes across sitcoms, fandom,
       love, personality, music, anime, pop culture, sports, horror, folklore,
-      gaming, food, K-drama, sci-fi and books
+      gaming, food, K-drama, sci-fi, books, crime, fantasy and villainy
 - [x] Single-page player: every question on one scrolling page, answers autosaved
   and editable until you submit
 - [x] Nine question types, including picture choices, a two-axis map, drag-to-rank and mad libs
@@ -127,8 +128,9 @@ Picture options look like this:
 ```
 
 Quiz photos live in `public/images/questions/` and are real, openly licensed
-photographs from Wikimedia Commons (with a few from Openverse), not stills,
-logos or official material. `public/images/questions/credits.json` records the
+photographs from Wikimedia Commons and Openverse, not stills, logos or official
+material. They are resized to 800px wide and recompressed with
+`node scripts/optimize-question-images.mjs`, so the whole set stays a few MB. `public/images/questions/credits.json` records the
 creator, licence and source page for every file; `scripts/fetch-question-images.mjs`
 re-downloads them from those recorded sources.
 
@@ -160,6 +162,12 @@ The take page is a single scrolling page: every question is on it, in order,
 with a sticky progress bar that jumps to the next unanswered one. Answers are
 saved to `sessionStorage` (`qz:answers:<slug>`) and can be changed until you
 submit, so no outcome is shown before the last answer.
+
+`QzMap.tsx` is one dot dragged around a labelled square (arrow keys nudge it),
+with the four corner names lighting up as you move; both axes score like a
+spectrum. `QzRank.tsx` reorders four items by pointer drag or the arrow
+buttons, and first place counts full weight. `QzMadlibs.tsx` turns the question
+text into a sentence with tappable gaps that open phrase chips.
 
 Sliders (`QzSlider.tsx`) are native range inputs with an invisible thumb on
 top of a custom track. Dragging, touch and arrow keys stay native; the visible

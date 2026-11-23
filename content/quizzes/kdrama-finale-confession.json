@@ -1,0 +1,554 @@
+{
+  "slug": "kdrama-finale-confession",
+  "title": "The finale confession you'd actually give",
+  "dek": "Twelve questions about timing, weather and the one sentence you'd say at the worst possible moment. The OST is already playing.",
+  "category": "K-Drama",
+  "accent": "pink",
+  "emoji": "🌧️",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The confession is happening. Where?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Outside, in weather",
+          "weights": {
+            "rain": 2,
+            "busstop": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Somewhere with a departure board",
+          "weights": {
+            "airport": 2,
+            "rooftop": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A corridor with bad lighting",
+          "weights": {
+            "hospital": 2,
+            "letter": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Somewhere you can see the whole city",
+          "weights": {
+            "rooftop": 2,
+            "rain": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your timing is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Right before they leave",
+          "weights": {
+            "airport": 2,
+            "rain": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "After a long, silent walk",
+          "weights": {
+            "busstop": 2,
+            "rooftop": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "When they're finally okay",
+          "weights": {
+            "hospital": 2,
+            "letter": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Three days later, in writing",
+          "weights": {
+            "letter": 2,
+            "busstop": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Say it out loud",
+          "weights": {
+            "rain": 2,
+            "rooftop": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Write it down",
+          "weights": {
+            "letter": 2,
+            "hospital": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The scene is already shot. Pick the establishing frame.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Umbrellas in the rain",
+          "weights": {
+            "rain": 2,
+            "busstop": 1
+          },
+          "image": "/images/questions/finale-rain.jpg",
+          "alt": "People holding umbrellas on a rainy street"
+        },
+        {
+          "id": "b",
+          "label": "A departure board",
+          "weights": {
+            "airport": 2,
+            "letter": 1
+          },
+          "image": "/images/questions/finale-airport.jpg",
+          "alt": "An airport departure board"
+        },
+        {
+          "id": "c",
+          "label": "A roof you could sit on",
+          "weights": {
+            "rooftop": 2,
+            "hospital": 1
+          },
+          "image": "/images/questions/finale-rooftop.jpg",
+          "alt": "Rooftops seen from above"
+        },
+        {
+          "id": "d",
+          "label": "A hospital corridor",
+          "weights": {
+            "hospital": 2,
+            "letter": 1
+          },
+          "image": "/images/questions/finale-hospital.jpg",
+          "alt": "An empty hospital corridor"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Your confession, plotted.",
+      "helper": "Across: wait or chase. Up: private or public.",
+      "x": {
+        "low": {
+          "label": "Wait",
+          "trait": "busstop"
+        },
+        "high": {
+          "label": "Chase",
+          "trait": "airport"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Private",
+          "trait": "letter"
+        },
+        "high": {
+          "label": "In public",
+          "trait": "rooftop"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Letter You Never Sent",
+        "lowHigh": "The Scene Everyone Watched",
+        "highLow": "The Quiet Drive",
+        "highHigh": "The Airport Speech"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the confession beats.",
+      "helper": "First place is the one that makes the episode.",
+      "items": [
+        {
+          "id": "wait",
+          "label": "The long wait",
+          "weights": {
+            "busstop": 2,
+            "rain": 1
+          }
+        },
+        {
+          "id": "run",
+          "label": "The sudden sprint",
+          "weights": {
+            "airport": 2,
+            "rooftop": 1
+          }
+        },
+        {
+          "id": "line",
+          "label": "The honest sentence",
+          "weights": {
+            "rooftop": 2,
+            "hospital": 1
+          }
+        },
+        {
+          "id": "note",
+          "label": "The thing you wrote down",
+          "weights": {
+            "letter": 2,
+            "busstop": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The OST swells and you say:",
+      "helper": "Two gaps. Say it like the subtitles are watching.",
+      "template": "The OST swells and I say: {a}, {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "I've been waiting here for an hour",
+              "weights": {
+                "busstop": 2,
+                "rain": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "don't get on that plane",
+              "weights": {
+                "airport": 2,
+                "rooftop": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "I should have said this sooner",
+              "weights": {
+                "rain": 2,
+                "letter": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "I wrote it all down",
+              "weights": {
+                "letter": 2,
+                "hospital": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "and I'm not leaving until you answer",
+              "weights": {
+                "rooftop": 2,
+                "airport": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "so please just look at me",
+              "weights": {
+                "rain": 2,
+                "busstop": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "but I'm saying it now",
+              "weights": {
+                "hospital": 2,
+                "letter": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "you don't have to say anything",
+              "weights": {
+                "busstop": 2,
+                "hospital": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I rehearse conversations before I have them.",
+      "trait": "letter",
+      "low": "Never",
+      "high": "Word for word"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather say it late than never.",
+      "disagree": {
+        "trait": "busstop"
+      },
+      "agree": {
+        "trait": "hospital"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Timing matters more than the words.",
+      "agree": {
+        "trait": "rooftop",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "letter",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "They don't answer right away. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Stay in the rain and wait",
+          "weights": {
+            "rain": 2,
+            "busstop": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Keep talking until they do",
+          "weights": {
+            "airport": 2,
+            "rooftop": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Say you'll be there when they're ready",
+          "weights": {
+            "hospital": 2,
+            "letter": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave a note and go",
+          "weights": {
+            "letter": 2,
+            "rain": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last shot is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Two umbrellas, one shared",
+          "weights": {
+            "rain": 2,
+            "busstop": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A taxi pulling away",
+          "weights": {
+            "airport": 2,
+            "letter": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A rooftop, empty but lit",
+          "weights": {
+            "rooftop": 2,
+            "hospital": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "An envelope on a table",
+          "weights": {
+            "letter": 2,
+            "busstop": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "rain",
+      "name": "Confession in the Rain",
+      "tagline": "Soaked, sincere, slightly late",
+      "blurb": "You wait for the weather to do half the work. The rain is your lighting department, your excuse and your deadline; you say it all at once, badly, and mean every word. Nobody who was there ever forgets the umbrella.",
+      "accent": "blue",
+      "mix": {
+        "rain": 44,
+        "airport": 13,
+        "rooftop": 14,
+        "hospital": 10,
+        "busstop": 11,
+        "letter": 8
+      },
+      "strengths": [
+        "Says the unsayable when it counts",
+        "Romantic without being rehearsed",
+        "Committed once you commit"
+      ],
+      "watchOut": "You don't need a storm to be honest. Say it on a Tuesday."
+    },
+    {
+      "trait": "airport",
+      "name": "The Airport Run",
+      "tagline": "You drive, you shout, you make it",
+      "blurb": "You are at your best with a countdown. Nothing clarifies a feeling like a departure board, and you will absolutely break several traffic laws to say one sentence. The drama is not the point; the timing is.",
+      "accent": "red",
+      "mix": {
+        "rain": 12,
+        "airport": 45,
+        "rooftop": 12,
+        "hospital": 9,
+        "busstop": 11,
+        "letter": 11
+      },
+      "strengths": [
+        "Acts when it matters",
+        "Great in a crisis with a deadline",
+        "Refuses to let the moment pass"
+      ],
+      "watchOut": "Some goodbyes are actually goodbyes. Read the room, not the board."
+    },
+    {
+      "trait": "rooftop",
+      "name": "The Rooftop Scene",
+      "tagline": "City lights, one honest sentence",
+      "blurb": "You need height and a view to say the true thing. Your confession is short, quiet and devastating, delivered while the city hums underneath. You would rather be understood than applauded.",
+      "accent": "purple",
+      "mix": {
+        "rain": 14,
+        "airport": 12,
+        "rooftop": 45,
+        "hospital": 10,
+        "busstop": 10,
+        "letter": 9
+      },
+      "strengths": [
+        "Says it plainly, once",
+        "Creates a moment without a crowd",
+        "Honest even when it's awkward"
+      ],
+      "watchOut": "A perfect moment can become a performance. Let them answer."
+    },
+    {
+      "trait": "hospital",
+      "name": "The Hospital Hallway",
+      "tagline": "You say it when it counts",
+      "blurb": "You are not interested in drama, only in the truth arriving before it's too late. Bad lighting, plastic chairs, a vending machine: that is where you finally say it, and it lands harder for being so unglamorous.",
+      "accent": "green",
+      "mix": {
+        "rain": 14,
+        "airport": 10,
+        "rooftop": 11,
+        "hospital": 45,
+        "busstop": 10,
+        "letter": 10
+      },
+      "strengths": [
+        "Prioritises what actually matters",
+        "Steady in a crisis",
+        "Says it without needing a soundtrack"
+      ],
+      "watchOut": "Waiting for a crisis to speak can cost you years. Speak early."
+    },
+    {
+      "trait": "busstop",
+      "name": "The Bus Stop",
+      "tagline": "You wait. That's the whole confession.",
+      "blurb": "Your love language is a person standing exactly where they said they'd be. You wait in the cold, you don't text, and when they arrive you say something small and devastating like 'you're late'. The patience is the declaration.",
+      "accent": "sky",
+      "mix": {
+        "rain": 15,
+        "airport": 9,
+        "rooftop": 9,
+        "hospital": 10,
+        "busstop": 47,
+        "letter": 10
+      },
+      "strengths": [
+        "Enormously patient",
+        "Reliable in a way people feel",
+        "Doesn't need a grand gesture"
+      ],
+      "watchOut": "Waiting is not the same as asking. Say the sentence too."
+    },
+    {
+      "trait": "letter",
+      "name": "The Letter",
+      "tagline": "Delivered three episodes later",
+      "blurb": "You write it perfectly, seal it, and then carry it around for a week. When it finally arrives it is so precise, so specific and so obviously rewritten that the other person has to sit down. You said it. It just took a season.",
+      "accent": "yellow",
+      "mix": {
+        "rain": 9,
+        "airport": 11,
+        "rooftop": 10,
+        "hospital": 11,
+        "busstop": 10,
+        "letter": 49
+      },
+      "strengths": [
+        "Gets the words exactly right",
+        "Says the difficult thing in full",
+        "Leaves something worth keeping"
+      ],
+      "watchOut": "A letter can arrive after the plane. Send it sooner."
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "slug": "fantasy-class",
+  "title": "Your real life, translated into a fantasy class",
+  "dek": "Twelve questions about how you actually solve problems, who you text first, and what you'd be doing at level one. No dice required.",
+  "category": "Fantasy",
+  "accent": "green",
+  "emoji": "🎲",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "A problem lands on the group at 9pm. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Talk everyone into a better plan",
+          "weights": {
+            "bard": 2,
+            "rogue": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Go and look at the problem yourself",
+          "weights": {
+            "ranger": 2,
+            "wizard": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Ask who's actually okay first",
+          "weights": {
+            "cleric": 2,
+            "paladin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Find the loophole nobody mentioned",
+          "weights": {
+            "rogue": 2,
+            "wizard": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your ideal Saturday has:",
+      "options": [
+        {
+          "id": "a",
+          "label": "People, noise, a story afterwards",
+          "weights": {
+            "bard": 2,
+            "paladin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A long walk and no notifications",
+          "weights": {
+            "ranger": 2,
+            "rogue": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Three tabs and a spreadsheet",
+          "weights": {
+            "wizard": 2,
+            "cleric": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Making someone's day materially better",
+          "weights": {
+            "cleric": 2,
+            "paladin": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "At level one you'd rather have:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Charm",
+          "weights": {
+            "bard": 2,
+            "rogue": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A really good map",
+          "weights": {
+            "ranger": 2,
+            "wizard": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The class item chooses you. Which one?",
+      "options": [
+        {
+          "id": "a",
+          "label": "A sword on parade",
+          "weights": {
+            "paladin": 2,
+            "cleric": 1
+          },
+          "image": "/images/questions/class-sword.jpg",
+          "alt": "A ceremonial sword"
+        },
+        {
+          "id": "b",
+          "label": "A book that has been read hard",
+          "weights": {
+            "wizard": 2,
+            "bard": 1
+          },
+          "image": "/images/questions/class-book.jpg",
+          "alt": "An old open book"
+        },
+        {
+          "id": "c",
+          "label": "A path disappearing into trees",
+          "weights": {
+            "ranger": 2,
+            "rogue": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A narrow path through a sunlit forest"
+        },
+        {
+          "id": "d",
+          "label": "A lute on an empty chair",
+          "weights": {
+            "bard": 2,
+            "cleric": 1
+          },
+          "image": "/images/questions/class-lute.jpg",
+          "alt": "A lute resting on a wooden chair"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Where does your party find you?",
+      "helper": "Across: rules or improvisation. Up: alone or in the middle of it.",
+      "x": {
+        "low": {
+          "label": "Rules",
+          "trait": "paladin"
+        },
+        "high": {
+          "label": "Improvisation",
+          "trait": "rogue"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Alone",
+          "trait": "ranger"
+        },
+        "high": {
+          "label": "With everyone",
+          "trait": "bard"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Watch",
+        "lowHigh": "The Group's Conscience",
+        "highLow": "Gone Off-Map",
+        "highHigh": "Main Character Energy"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what the party needs most from you.",
+      "helper": "First place is what you'd volunteer for.",
+      "items": [
+        {
+          "id": "plan",
+          "label": "A plan that doesn't involve shouting",
+          "weights": {
+            "wizard": 2,
+            "paladin": 1
+          }
+        },
+        {
+          "id": "guard",
+          "label": "Someone to talk to the guard",
+          "weights": {
+            "bard": 2,
+            "rogue": 1
+          }
+        },
+        {
+          "id": "heal",
+          "label": "Healing, literal or otherwise",
+          "weights": {
+            "cleric": 2,
+            "ranger": 1
+          }
+        },
+        {
+          "id": "door",
+          "label": "A way around the obvious door",
+          "weights": {
+            "rogue": 2,
+            "wizard": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The one-line summary on your character sheet.",
+      "helper": "Two gaps, no backstory allowed.",
+      "template": "{a}, and {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "carries snacks for the whole party",
+              "weights": {
+                "cleric": 2,
+                "bard": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "has read the lore and will cite it",
+              "weights": {
+                "wizard": 2,
+                "paladin": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "disappears during the boring bits",
+              "weights": {
+                "rogue": 2,
+                "ranger": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "will sing about this later",
+              "weights": {
+                "bard": 2,
+                "cleric": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "does it anyway when the odds are bad",
+              "weights": {
+                "paladin": 2,
+                "wizard": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "knows a shortcut and won't share it",
+              "weights": {
+                "ranger": 2,
+                "rogue": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "notices when someone needs a hand",
+              "weights": {
+                "cleric": 2,
+                "bard": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "says the thing nobody else will",
+              "weights": {
+                "bard": 2,
+                "paladin": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather be useful than impressive.",
+      "trait": "cleric",
+      "low": "Impressive, obviously",
+      "high": "Useful, quietly"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I trust a system more than a hunch.",
+      "disagree": {
+        "trait": "rogue"
+      },
+      "agree": {
+        "trait": "paladin"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Rules exist to protect people, not to be followed.",
+      "agree": {
+        "trait": "rogue",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "paladin",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The plan falls apart in a corridor. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Improvise loudly to cover it",
+          "weights": {
+            "bard": 2,
+            "rogue": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Recalculate from what's in the room",
+          "weights": {
+            "wizard": 2,
+            "ranger": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Get everyone behind you",
+          "weights": {
+            "paladin": 2,
+            "cleric": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Slip ahead and check the next room",
+          "weights": {
+            "rogue": 2,
+            "ranger": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "What you'd actually be doing at level one:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Reading the quest description twice",
+          "weights": {
+            "wizard": 2,
+            "paladin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Talking to the NPCs nobody else bothered with",
+          "weights": {
+            "bard": 2,
+            "cleric": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Scouting ahead, alone, again",
+          "weights": {
+            "ranger": 2,
+            "rogue": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Checking the loot for traps",
+          "weights": {
+            "rogue": 2,
+            "wizard": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "bard",
+      "name": "The Bard",
+      "tagline": "Talks first, fights never",
+      "blurb": "You are the reason a bad plan becomes a good story. You read the room, find the person who can actually help, and say the thing that makes everyone agree. Your weapon is a sentence, and it rarely misses.",
+      "accent": "yellow",
+      "mix": {
+        "bard": 43,
+        "ranger": 9,
+        "cleric": 10,
+        "rogue": 14,
+        "wizard": 11,
+        "paladin": 13
+      },
+      "strengths": [
+        "Can talk a group out of a spiral",
+        "Remembers what everyone cares about",
+        "Makes the boring parts bearable"
+      ],
+      "watchOut": "A performance is not a plan. Sometimes do the work."
+    },
+    {
+      "trait": "ranger",
+      "name": "The Ranger",
+      "tagline": "Knows a shortcut and won't share it",
+      "blurb": "You are already three kilometres ahead and slightly annoyed about the company. You notice weather, exits, and the one person who shouldn't be here. You are happiest with a route and no meeting invite.",
+      "accent": "green",
+      "mix": {
+        "bard": 8,
+        "ranger": 44,
+        "cleric": 9,
+        "rogue": 15,
+        "wizard": 12,
+        "paladin": 12
+      },
+      "strengths": [
+        "Finds the practical way through",
+        "Calm with very little",
+        "Sees what the group walked past"
+      ],
+      "watchOut": "Scouting alone means nobody knows where you are. Text."
+    },
+    {
+      "trait": "cleric",
+      "name": "The Cleric",
+      "tagline": "The party's whole health plan",
+      "blurb": "You are the one who notices that everyone is running on empty before anyone says it. You carry the snacks, the charger, the difficult conversation. Your power is maintenance, which is why it gets overlooked until it stops.",
+      "accent": "sky",
+      "mix": {
+        "bard": 12,
+        "ranger": 8,
+        "cleric": 45,
+        "rogue": 8,
+        "wizard": 10,
+        "paladin": 17
+      },
+      "strengths": [
+        "Keeps people upright",
+        "Asks the question nobody wants to",
+        "Reliable in the unglamorous parts"
+      ],
+      "watchOut": "You can't heal everyone and also run the quest. Ask for help."
+    },
+    {
+      "trait": "rogue",
+      "name": "The Rogue",
+      "tagline": "Already inside, somehow",
+      "blurb": "You solve problems by not approaching them from the front. You are quick, funny in a way that gets you out of trouble, and allergic to being told the procedure. Half your plans work. The other half are why the party has stories.",
+      "accent": "purple",
+      "mix": {
+        "bard": 13,
+        "ranger": 13,
+        "cleric": 8,
+        "rogue": 43,
+        "wizard": 11,
+        "paladin": 12
+      },
+      "strengths": [
+        "Finds the unguarded way in",
+        "Thinks fast under pressure",
+        "Refuses to accept a locked door"
+      ],
+      "watchOut": "Not everything needs a workaround. Sometimes just knock."
+    },
+    {
+      "trait": "wizard",
+      "name": "The Wizard",
+      "tagline": "Read the manual, then rewrote it",
+      "blurb": "You want to understand the mechanism before you touch it. You keep the notes, the links, and the version history nobody else maintains. When the group is stuck, you are usually the one who already found the answer three days ago.",
+      "accent": "blue",
+      "mix": {
+        "bard": 8,
+        "ranger": 11,
+        "cleric": 10,
+        "rogue": 10,
+        "wizard": 47,
+        "paladin": 14
+      },
+      "strengths": [
+        "Sees the structure under the mess",
+        "Patient with long, boring details",
+        "Always has the reference"
+      ],
+      "watchOut": "The perfect answer nobody understands doesn't help. Explain it."
+    },
+    {
+      "trait": "paladin",
+      "name": "The Paladin",
+      "tagline": "Has a code and keeps it",
+      "blurb": "You are the one who does what they said they'd do, even when it costs. You take on the thing everyone else has quietly decided isn't their problem. People follow you because you don't ask them to do anything you wouldn't.",
+      "accent": "orange",
+      "mix": {
+        "bard": 10,
+        "ranger": 10,
+        "cleric": 16,
+        "rogue": 9,
+        "wizard": 12,
+        "paladin": 43
+      },
+      "strengths": [
+        "Does the right thing without an audience",
+        "Steady when it's unpopular",
+        "Takes responsibility, genuinely"
+      ],
+      "watchOut": "Your code is yours. Don't hold everyone else to the same oath."
+    }
+  ]
+}

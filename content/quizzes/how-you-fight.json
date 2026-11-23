@@ -162,6 +162,54 @@
       "disagree": { "trait": "negotiator" },
       "agree": { "trait": "avoider" }
     }
+,
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "Pick the room where the argument actually happens.",
+      "options": [
+        {
+          "id": "a",
+          "label": "The kitchen at 1am",
+          "weights": {
+            "historian": 2,
+            "exploder": 1
+          },
+          "image": "/images/questions/fight-kitchen.jpg",
+          "alt": "A kitchen lit by one lamp at night"
+        },
+        {
+          "id": "b",
+          "label": "The car, engine off",
+          "weights": {
+            "silent": 2,
+            "avoider": 1
+          },
+          "image": "/images/questions/fight-car.jpg",
+          "alt": "The inside of a car at night"
+        },
+        {
+          "id": "c",
+          "label": "The front door, half open",
+          "weights": {
+            "deflector": 2,
+            "crier": 1
+          },
+          "image": "/images/questions/fight-door.jpg",
+          "alt": "A front door standing ajar"
+        },
+        {
+          "id": "d",
+          "label": "Two mugs gone cold",
+          "weights": {
+            "fixer": 2,
+            "negotiator": 1
+          },
+          "image": "/images/questions/fight-mugs.jpg",
+          "alt": "Two coffee mugs on a table"
+        }
+      ]
+    }
   ],
   "results": [
     {

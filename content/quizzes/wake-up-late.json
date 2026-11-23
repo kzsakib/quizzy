@@ -318,6 +318,54 @@
         }
       ]
     }
+,
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "You wake up and the first thing you see is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Frost on the window",
+          "weights": {
+            "stays": 2,
+            "loop": 1
+          },
+          "image": "/images/questions/space-frost.jpg",
+          "alt": "Frost patterns on a window"
+        },
+        {
+          "id": "b",
+          "label": "A radio telescope dish",
+          "weights": {
+            "linguist": 2,
+            "ethics": 1
+          },
+          "image": "/images/questions/space-telescope.jpg",
+          "alt": "A large radio telescope dish"
+        },
+        {
+          "id": "c",
+          "label": "An empty desert highway",
+          "weights": {
+            "terraform": 2,
+            "colonist": 1
+          },
+          "image": "/images/questions/space-desert.jpg",
+          "alt": "An empty road through desert"
+        },
+        {
+          "id": "d",
+          "label": "Engine-room pipes",
+          "weights": {
+            "mechanic": 2,
+            "captain": 1
+          },
+          "image": "/images/questions/space-engine.jpg",
+          "alt": "Pipes and valves in an engine room"
+        }
+      ]
+    }
   ],
   "results": [
     {

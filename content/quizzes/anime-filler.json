@@ -1,0 +1,554 @@
+{
+  "slug": "anime-filler",
+  "title": "Which filler episode the studio would give you",
+  "dek": "Twelve questions about the beach episode, the hot spring, the recap nobody asked for. Canon is optional; vibes are not.",
+  "category": "Anime",
+  "accent": "sky",
+  "emoji": "🍧",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The plot pauses for a week. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Book something with sand involved",
+          "weights": {
+            "beach": 2,
+            "festival": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Find the nearest hot water and stay in it",
+          "weights": {
+            "onsen": 2,
+            "cooking": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Reorganise your whole life in a montage",
+          "weights": {
+            "training": 2,
+            "recap": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Narrate what happened so far",
+          "weights": {
+            "recap": 2,
+            "cooking": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Best group activity:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Doing nothing near water",
+          "weights": {
+            "beach": 2,
+            "onsen": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A street full of lanterns and snacks",
+          "weights": {
+            "festival": 2,
+            "cooking": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A friendly competition nobody admits is one",
+          "weights": {
+            "cooking": 2,
+            "training": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Watching the highlights of last week",
+          "weights": {
+            "recap": 2,
+            "beach": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd take:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A day off, immediately",
+          "weights": {
+            "beach": 2,
+            "onsen": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "One more drill",
+          "weights": {
+            "training": 2,
+            "recap": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The episode opens on:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Umbrellas on a packed beach",
+          "weights": {
+            "beach": 2,
+            "festival": 1
+          },
+          "image": "/images/questions/filler-beach.jpg",
+          "alt": "Colourful umbrellas on a sunny beach"
+        },
+        {
+          "id": "b",
+          "label": "Steam rising off a hot spring",
+          "weights": {
+            "onsen": 2,
+            "cooking": 1
+          },
+          "image": "/images/questions/filler-onsen.jpg",
+          "alt": "Steam rising from an outdoor hot spring"
+        },
+        {
+          "id": "c",
+          "label": "Lanterns strung over a street",
+          "weights": {
+            "festival": 2,
+            "beach": 1
+          },
+          "image": "/images/questions/filler-festival.jpg",
+          "alt": "Paper lanterns glowing above a night street"
+        },
+        {
+          "id": "d",
+          "label": "Static on a television",
+          "weights": {
+            "recap": 2,
+            "training": 1
+          },
+          "image": "/images/questions/filler-static.jpg",
+          "alt": "A television screen full of static"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Your episode's coordinates.",
+      "helper": "Across: rest or activity. Up: indoors or out.",
+      "x": {
+        "low": {
+          "label": "Rest",
+          "trait": "onsen"
+        },
+        "high": {
+          "label": "Activity",
+          "trait": "training"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Indoors",
+          "trait": "cooking"
+        },
+        "high": {
+          "label": "Outside",
+          "trait": "festival"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Episode",
+        "lowHigh": "The Street Episode",
+        "highLow": "The Kitchen Competition",
+        "highHigh": "The Training Montage"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the filler beats in your ideal episode.",
+      "helper": "First place is the beat that carries the whole thing.",
+      "items": [
+        {
+          "id": "beach",
+          "label": "A pointless beach trip",
+          "weights": {
+            "beach": 2,
+            "festival": 1
+          }
+        },
+        {
+          "id": "bath",
+          "label": "A hot spring misunderstanding",
+          "weights": {
+            "onsen": 2,
+            "cooking": 1
+          }
+        },
+        {
+          "id": "cook",
+          "label": "A cooking contest gone wrong",
+          "weights": {
+            "cooking": 2,
+            "recap": 1
+          }
+        },
+        {
+          "id": "montage",
+          "label": "A training montage with a new move",
+          "weights": {
+            "training": 2,
+            "recap": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The next-episode preview.",
+      "helper": "Two gaps. Say it in the announcer voice.",
+      "template": "Next time, on {a}, {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the beach episode",
+              "weights": {
+                "beach": 2,
+                "festival": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the hot spring episode",
+              "weights": {
+                "onsen": 2,
+                "cooking": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "the festival episode",
+              "weights": {
+                "festival": 2,
+                "training": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "the recap episode",
+              "weights": {
+                "recap": 2,
+                "beach": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "nothing important happens, beautifully",
+              "weights": {
+                "beach": 2,
+                "onsen": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "someone almost says it",
+              "weights": {
+                "festival": 2,
+                "recap": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "the food is a character",
+              "weights": {
+                "cooking": 2,
+                "onsen": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "everyone gets stronger off-screen",
+              "weights": {
+                "training": 2,
+                "recap": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd happily watch an episode where nothing happens.",
+      "trait": "beach",
+      "low": "Need plot",
+      "high": "Nothing. Perfect."
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather train than rest.",
+      "disagree": {
+        "trait": "onsen"
+      },
+      "agree": {
+        "trait": "training"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A recap is a valid episode.",
+      "agree": {
+        "trait": "recap",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "training",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The episode needs one scene. You write:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sunsets, wet hair, no plot",
+          "weights": {
+            "beach": 2,
+            "onsen": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A stall selling something fried",
+          "weights": {
+            "cooking": 2,
+            "festival": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A rival appears out of nowhere",
+          "weights": {
+            "training": 2,
+            "recap": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Someone explains the last twelve episodes",
+          "weights": {
+            "recap": 2,
+            "festival": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The filler episode's title card says:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Everyone Goes to the Sea",
+          "weights": {
+            "beach": 2,
+            "festival": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The Long Bath",
+          "weights": {
+            "onsen": 2,
+            "cooking": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Festival Night",
+          "weights": {
+            "festival": 2,
+            "training": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Previously, On",
+          "weights": {
+            "recap": 2,
+            "beach": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "beach",
+      "name": "The Beach Episode",
+      "tagline": "Nothing happens. It's perfect.",
+      "blurb": "You are the episode the studio makes when the budget runs out and everyone needs a break. There is water, there is a watermelon, and absolutely no plot. Somehow it becomes the one everybody rewatches.",
+      "accent": "sky",
+      "mix": {
+        "beach": 44,
+        "onsen": 13,
+        "festival": 15,
+        "recap": 9,
+        "cooking": 9,
+        "training": 10
+      },
+      "strengths": [
+        "Makes rest feel deserved",
+        "Finds the joy in nothing much",
+        "Deeply rewatchable"
+      ],
+      "watchOut": "Somebody still has to move the plot forward next week."
+    },
+    {
+      "trait": "onsen",
+      "name": "The Hot Spring Episode",
+      "tagline": "Steam, secrets, one bad towel joke",
+      "blurb": "You are warm, slightly mysterious, and best experienced at a low intensity. People tell you things in the quiet part that they don't tell anyone else. You would absolutely let the plot wait while the water is still hot.",
+      "accent": "purple",
+      "mix": {
+        "beach": 13,
+        "onsen": 45,
+        "festival": 10,
+        "recap": 8,
+        "cooking": 12,
+        "training": 12
+      },
+      "strengths": [
+        "Creates the space where people talk",
+        "Unhurried in a good way",
+        "Knows when to stop pushing"
+      ],
+      "watchOut": "Steam hides things. Not every problem should be left to soak."
+    },
+    {
+      "trait": "festival",
+      "name": "The Festival Episode",
+      "tagline": "Yukata, goldfish, a confession interrupted",
+      "blurb": "You are the episode with the lanterns and the almost-confession. You bring people together, arrange the evening, and then watch the important sentence get cut off by fireworks. You'd do it again next summer.",
+      "accent": "red",
+      "mix": {
+        "beach": 14,
+        "onsen": 11,
+        "festival": 45,
+        "recap": 9,
+        "cooking": 10,
+        "training": 11
+      },
+      "strengths": [
+        "Builds an occasion out of nothing",
+        "Gets everyone in the same place",
+        "Makes a moment feel like a memory"
+      ],
+      "watchOut": "The almost-confession is only charming twice."
+    },
+    {
+      "trait": "recap",
+      "name": "The Recap Episode",
+      "tagline": "Last time, on your life",
+      "blurb": "You are the episode that looks back, arranges the highlights and quietly adds a new frame around them. People complain about you and then watch anyway, because you make the last twelve weeks make sense.",
+      "accent": "blue",
+      "mix": {
+        "beach": 9,
+        "onsen": 9,
+        "festival": 9,
+        "recap": 46,
+        "cooking": 13,
+        "training": 14
+      },
+      "strengths": [
+        "Finds the pattern in the mess",
+        "Explains without condescending",
+        "Gives everyone a breather"
+      ],
+      "watchOut": "Replaying the past is not the same as progressing. New scene."
+    },
+    {
+      "trait": "cooking",
+      "name": "The Cooking Episode",
+      "tagline": "Someone is weirdly competitive about soup",
+      "blurb": "You turn a low-stakes evening into a full competition with commentary, sabotage and a judging panel of one. Your warmth is practical and slightly obsessive, and everyone leaves fed whether they wanted to or not.",
+      "accent": "orange",
+      "mix": {
+        "beach": 9,
+        "onsen": 14,
+        "festival": 12,
+        "recap": 9,
+        "cooking": 44,
+        "training": 12
+      },
+      "strengths": [
+        "Feeds people as a love language",
+        "Makes ordinary tasks fun",
+        "Impossible to be bored around"
+      ],
+      "watchOut": "Not everything needs a scoreboard. Let the soup be soup."
+    },
+    {
+      "trait": "training",
+      "name": "The Training Montage",
+      "tagline": "Montage, sweat, a new move",
+      "blurb": "You are the episode that refuses to waste a week. There is a hill, a countdown and a technique nobody has seen yet, and by the end you can do the thing. You treat rest as something you earn, which is either discipline or a problem.",
+      "accent": "lime",
+      "mix": {
+        "beach": 8,
+        "onsen": 12,
+        "festival": 11,
+        "recap": 12,
+        "cooking": 10,
+        "training": 47
+      },
+      "strengths": [
+        "Actually improves at things",
+        "Turns effort into momentum",
+        "Unstoppable once committed"
+      ],
+      "watchOut": "A montage skips the recovery. Take the beach episode sometimes."
+    }
+  ]
+}

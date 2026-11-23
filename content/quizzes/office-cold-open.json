@@ -15,10 +15,38 @@
       "type": "mc",
       "prompt": "Monday, 9:04am. The first thing that happens:",
       "options": [
-        { "id": "a", "label": "Someone tests the alarm 'for fun'", "weights": { "firedrill": 2, "parkour": 1 } },
-        { "id": "b", "label": "One small spill becomes a whole-floor incident", "weights": { "chili": 2, "jello": 1 } },
-        { "id": "c", "label": "A serious moment goes strangely dark", "weights": { "cpr": 2, "foreman": 1 } },
-        { "id": "d", "label": "Something's flying around and nobody is in charge", "weights": { "bat": 2, "koi": 1 } }
+        {
+          "id": "a",
+          "label": "Someone tests the alarm 'for fun'",
+          "weights": {
+            "firedrill": 2,
+            "parkour": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "One small spill becomes a whole-floor incident",
+          "weights": {
+            "chili": 2,
+            "jello": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A serious moment goes strangely dark",
+          "weights": {
+            "cpr": 2,
+            "foreman": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something's flying around and nobody is in charge",
+          "weights": {
+            "bat": 2,
+            "koi": 1
+          }
+        }
       ]
     },
     {
@@ -26,13 +54,41 @@
       "type": "mc",
       "prompt": "By Wednesday you have become:",
       "options": [
-        { "id": "a", "label": "The person doing parkour over the furniture", "weights": { "parkour": 2, "firedrill": 1 } },
-        { "id": "b", "label": "The quiet architect of a very long prank", "weights": { "jello": 2, "chili": 1 } },
-        { "id": "c", "label": "The one who didn't read the instructions, and now there's drama", "weights": { "foreman": 2, "cpr": 1 } },
-        { "id": "d", "label": "Weirdly philosophical about one small thing", "weights": { "koi": 2, "bat": 1 } }
+        {
+          "id": "a",
+          "label": "The person doing parkour over the furniture",
+          "weights": {
+            "parkour": 2,
+            "firedrill": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The quiet architect of a very long prank",
+          "weights": {
+            "jello": 2,
+            "chili": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The one who didn't read the instructions, and now there's drama",
+          "weights": {
+            "foreman": 2,
+            "cpr": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Weirdly philosophical about one small thing",
+          "weights": {
+            "koi": 2,
+            "bat": 1
+          }
+        }
       ]
     },
-        {
+    {
       "id": "q3",
       "type": "madlibs",
       "prompt": "One sentence and the cold open writes itself.",
@@ -120,10 +176,38 @@
       "type": "mc",
       "prompt": "Your actual contribution to the team:",
       "options": [
-        { "id": "a", "label": "Dark humour at the worst possible time", "weights": { "cpr": 2, "firedrill": 1 } },
-        { "id": "b", "label": "Panic management", "weights": { "bat": 2, "chili": 1 } },
-        { "id": "c", "label": "One preventable disaster, fully documented", "weights": { "foreman": 2, "parkour": 1 } },
-        { "id": "d", "label": "A strange calm nobody questions", "weights": { "koi": 2, "jello": 1 } }
+        {
+          "id": "a",
+          "label": "Dark humour at the worst possible time",
+          "weights": {
+            "cpr": 2,
+            "firedrill": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Panic management",
+          "weights": {
+            "bat": 2,
+            "chili": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "One preventable disaster, fully documented",
+          "weights": {
+            "foreman": 2,
+            "parkour": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A strange calm nobody questions",
+          "weights": {
+            "koi": 2,
+            "jello": 1
+          }
+        }
       ]
     },
     {
@@ -131,10 +215,38 @@
       "type": "mc",
       "prompt": "The week ends with:",
       "options": [
-        { "id": "a", "label": "A drill that revealed everyone's true character", "weights": { "firedrill": 2, "bat": 1 } },
-        { "id": "b", "label": "A mess on the floor and a group chat about it", "weights": { "chili": 2, "foreman": 1 } },
-        { "id": "c", "label": "Someone doing something unnecessary, at speed", "weights": { "parkour": 2, "cpr": 1 } },
-        { "id": "d", "label": "A plan so slow it might never happen", "weights": { "foreman": 2, "koi": 1 } }
+        {
+          "id": "a",
+          "label": "A drill that revealed everyone's true character",
+          "weights": {
+            "firedrill": 2,
+            "bat": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A mess on the floor and a group chat about it",
+          "weights": {
+            "chili": 2,
+            "foreman": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Someone doing something unnecessary, at speed",
+          "weights": {
+            "parkour": 2,
+            "cpr": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A plan so slow it might never happen",
+          "weights": {
+            "foreman": 2,
+            "koi": 1
+          }
+        }
       ]
     },
     {
@@ -142,10 +254,38 @@
       "type": "mc",
       "prompt": "You will be remembered for:",
       "options": [
-        { "id": "a", "label": "The chaos you caused with one object", "weights": { "bat": 2, "chili": 1 } },
-        { "id": "b", "label": "The prank nobody can prove", "weights": { "jello": 2, "firedrill": 1 } },
-        { "id": "c", "label": "The spill", "weights": { "chili": 2, "cpr": 1 } },
-        { "id": "d", "label": "A sentence that stopped the room", "weights": { "koi": 2, "parkour": 1 } }
+        {
+          "id": "a",
+          "label": "The chaos you caused with one object",
+          "weights": {
+            "bat": 2,
+            "chili": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The prank nobody can prove",
+          "weights": {
+            "jello": 2,
+            "firedrill": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The spill",
+          "weights": {
+            "chili": 2,
+            "cpr": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A sentence that stopped the room",
+          "weights": {
+            "koi": 2,
+            "parkour": 1
+          }
+        }
       ]
     },
     {
@@ -153,10 +293,38 @@
       "type": "mc",
       "prompt": "Your most on-brand incident:",
       "options": [
-        { "id": "a", "label": "A fire drill with a speech attached", "weights": { "firedrill": 2, "cpr": 1 } },
-        { "id": "b", "label": "Something loose in the ceiling", "weights": { "bat": 2, "parkour": 1 } },
-        { "id": "c", "label": "An office supply in a dessert", "weights": { "jello": 2, "koi": 1 } },
-        { "id": "d", "label": "An injury nobody reported", "weights": { "foreman": 2, "chili": 1 } }
+        {
+          "id": "a",
+          "label": "A fire drill with a speech attached",
+          "weights": {
+            "firedrill": 2,
+            "cpr": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something loose in the ceiling",
+          "weights": {
+            "bat": 2,
+            "parkour": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "An office supply in a dessert",
+          "weights": {
+            "jello": 2,
+            "koi": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "An injury nobody reported",
+          "weights": {
+            "foreman": 2,
+            "chili": 1
+          }
+        }
       ]
     },
     {
@@ -164,10 +332,38 @@
       "type": "mc",
       "prompt": "Pick the scene you'd survive best:",
       "options": [
-        { "id": "a", "label": "A pot of something on the carpet", "weights": { "chili": 2, "foreman": 1 } },
-        { "id": "b", "label": "A dummy and a singalong", "weights": { "cpr": 2, "jello": 1 } },
-        { "id": "c", "label": "A jump over a desk", "weights": { "parkour": 2, "firedrill": 1 } },
-        { "id": "d", "label": "A long silence by some water", "weights": { "koi": 2, "bat": 1 } }
+        {
+          "id": "a",
+          "label": "A pot of something on the carpet",
+          "weights": {
+            "chili": 2,
+            "foreman": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A dummy and a singalong",
+          "weights": {
+            "cpr": 2,
+            "jello": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A jump over a desk",
+          "weights": {
+            "parkour": 2,
+            "firedrill": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A long silence by some water",
+          "weights": {
+            "koi": 2,
+            "bat": 1
+          }
+        }
       ]
     },
     {
@@ -175,8 +371,22 @@
       "type": "this_or_that",
       "prompt": "Better week:",
       "options": [
-        { "id": "a", "label": "Chaotic, but nobody got hurt", "weights": { "firedrill": 2, "parkour": 1 } },
-        { "id": "b", "label": "Quiet, and slightly too calm", "weights": { "koi": 2, "jello": 1 } }
+        {
+          "id": "a",
+          "label": "Chaotic, but nobody got hurt",
+          "weights": {
+            "firedrill": 2,
+            "parkour": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Quiet, and slightly too calm",
+          "weights": {
+            "koi": 2,
+            "jello": 1
+          }
+        }
       ]
     },
     {
@@ -184,8 +394,22 @@
       "type": "this_or_that",
       "prompt": "Your chaos style:",
       "options": [
-        { "id": "a", "label": "One big, visible disaster", "weights": { "chili": 2, "bat": 1 } },
-        { "id": "b", "label": "A slow, deliberate prank", "weights": { "jello": 2, "foreman": 1 } }
+        {
+          "id": "a",
+          "label": "One big, visible disaster",
+          "weights": {
+            "chili": 2,
+            "bat": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A slow, deliberate prank",
+          "weights": {
+            "jello": 2,
+            "foreman": 1
+          }
+        }
       ]
     },
     {
@@ -200,8 +424,59 @@
       "id": "q12",
       "type": "spectrum",
       "prompt": "I'd rather be a legend than be managed.",
-      "disagree": { "trait": "koi" },
-      "agree": { "trait": "bat" }
+      "disagree": {
+        "trait": "koi"
+      },
+      "agree": {
+        "trait": "bat"
+      }
+    },
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "The cold open needs a location. Which one is yours?",
+      "options": [
+        {
+          "id": "a",
+          "label": "The break-room microwave",
+          "weights": {
+            "chili": 2,
+            "jello": 1
+          },
+          "image": "/images/questions/coldopen-breakroom.jpg",
+          "alt": "An office break room with a microwave"
+        },
+        {
+          "id": "b",
+          "label": "The copier, mid-jam",
+          "weights": {
+            "bat": 2,
+            "firedrill": 1
+          },
+          "image": "/images/questions/coldopen-copier.jpg",
+          "alt": "An office photocopier"
+        },
+        {
+          "id": "c",
+          "label": "The empty street outside",
+          "weights": {
+            "parkour": 2,
+            "koi": 1
+          },
+          "image": "/images/questions/coldopen-lot.jpg",
+          "alt": "An empty street at night"
+        },
+        {
+          "id": "d",
+          "label": "The tunnel to the car park",
+          "weights": {
+            "foreman": 2,
+            "cpr": 1
+          },
+          "image": "/images/questions/coldopen-stairs.jpg",
+          "alt": "A dimly lit passage"
+        }
+      ]
     }
   ],
   "results": [
@@ -211,8 +486,21 @@
       "tagline": "Chaos with a stopwatch",
       "blurb": "You don't create drama, you stress-test the building. There's a plan, a timer, and at least one person crying in a stairwell by 10am. You genuinely believe this makes everyone better. It does, eventually, mostly.",
       "accent": "red",
-      "mix": { "firedrill": 40, "chili": 8, "cpr": 10, "bat": 9, "parkour": 12, "jello": 7, "foreman": 8, "koi": 6 },
-      "strengths": ["Finds the weak point before it fails", "Keeps a cool head in noise", "Turns chaos into a lesson"],
+      "mix": {
+        "firedrill": 40,
+        "chili": 8,
+        "cpr": 10,
+        "bat": 9,
+        "parkour": 12,
+        "jello": 7,
+        "foreman": 8,
+        "koi": 6
+      },
+      "strengths": [
+        "Finds the weak point before it fails",
+        "Keeps a cool head in noise",
+        "Turns chaos into a lesson"
+      ],
       "watchOut": "Not everyone needs the drill. Check whether the room is laughing or hiding."
     },
     {
@@ -221,8 +509,21 @@
       "tagline": "One slip, whole carpet",
       "blurb": "You had it. It was going well. Then one small, entirely normal movement and now the entire floor is involved, and there's a documentary-level aftermath. You're embarrassed for ten minutes and then weirdly proud of the story.",
       "accent": "orange",
-      "mix": { "firedrill": 9, "chili": 41, "cpr": 6, "bat": 8, "parkour": 7, "jello": 4, "foreman": 15, "koi": 10 },
-      "strengths": ["Recovers with humour", "Owns the mess out loud", "Makes good stories by accident"],
+      "mix": {
+        "firedrill": 9,
+        "chili": 41,
+        "cpr": 6,
+        "bat": 8,
+        "parkour": 7,
+        "jello": 4,
+        "foreman": 15,
+        "koi": 10
+      },
+      "strengths": [
+        "Recovers with humour",
+        "Owns the mess out loud",
+        "Makes good stories by accident"
+      ],
       "watchOut": "Not everything needs to be carried across the room. Use two trips."
     },
     {
@@ -231,8 +532,21 @@
       "tagline": "Dark joke, serious room",
       "blurb": "In a genuinely serious moment, your brain offers a joke. Sometimes it's the exact thing that lets everyone breathe. Sometimes it lands like a brick in a silent room. You are never boring, which is both the gift and the hazard.",
       "accent": "purple",
-      "mix": { "firedrill": 8, "chili": 7, "cpr": 40, "bat": 10, "parkour": 5, "jello": 9, "foreman": 6, "koi": 15 },
-      "strengths": ["Releases tension nobody else will touch", "Reads what a room needs", "Comfortable with the awkward"],
+      "mix": {
+        "firedrill": 8,
+        "chili": 7,
+        "cpr": 40,
+        "bat": 10,
+        "parkour": 5,
+        "jello": 9,
+        "foreman": 6,
+        "koi": 15
+      },
+      "strengths": [
+        "Releases tension nobody else will touch",
+        "Reads what a room needs",
+        "Comfortable with the awkward"
+      ],
       "watchOut": "Humour is a door, not a hiding place. Stay for the sincere part too."
     },
     {
@@ -241,8 +555,21 @@
       "tagline": "Panic, unmanaged",
       "blurb": "Your week has one moving problem in it and everyone has a different theory about what to do. Nobody is in charge, somebody's under a desk, and you're the one whose solution makes the situation worse in a memorable way.",
       "accent": "green",
-      "mix": { "firedrill": 10, "chili": 6, "cpr": 9, "bat": 41, "parkour": 8, "jello": 7, "foreman": 9, "koi": 10 },
-      "strengths": ["Acts when others freeze", "Improvises under pressure", "Handles the weird stuff"],
+      "mix": {
+        "firedrill": 10,
+        "chili": 6,
+        "cpr": 9,
+        "bat": 41,
+        "parkour": 8,
+        "jello": 7,
+        "foreman": 9,
+        "koi": 10
+      },
+      "strengths": [
+        "Acts when others freeze",
+        "Improvises under pressure",
+        "Handles the weird stuff"
+      ],
       "watchOut": "Panic spreads faster than solutions. Breathe, then appoint one person."
     },
     {
@@ -251,8 +578,21 @@
       "tagline": "Momentum over method",
       "blurb": "You saw a straight line and took it, over the furniture, past the sensible route, into the middle of somebody's meeting. Technically you got there faster. The route remains a talking point, and you'd do it again on Thursday.",
       "accent": "lime",
-      "mix": { "firedrill": 9, "chili": 5, "cpr": 4, "bat": 8, "parkour": 42, "jello": 10, "foreman": 7, "koi": 15 },
-      "strengths": ["Finds the fast path", "Commits fully", "Not afraid to look ridiculous"],
+      "mix": {
+        "firedrill": 9,
+        "chili": 5,
+        "cpr": 4,
+        "bat": 8,
+        "parkour": 42,
+        "jello": 10,
+        "foreman": 7,
+        "koi": 15
+      },
+      "strengths": [
+        "Finds the fast path",
+        "Commits fully",
+        "Not afraid to look ridiculous"
+      ],
       "watchOut": "Speed is not the same as progress. Ask if the shortcut is worth the bill."
     },
     {
@@ -261,8 +601,21 @@
       "tagline": "The long prank",
       "blurb": "You are patient in a way that frightens people. You've been planning this for eleven days and nobody suspects a thing, and when it lands the whole office laughs and you look completely innocent. It's affection. It's also a warning.",
       "accent": "cyan",
-      "mix": { "firedrill": 7, "chili": 8, "cpr": 9, "bat": 6, "parkour": 8, "jello": 42, "foreman": 9, "koi": 11 },
-      "strengths": ["Deliberate and precise", "Reads people's limits", "Keeps a room entertained"],
+      "mix": {
+        "firedrill": 7,
+        "chili": 8,
+        "cpr": 9,
+        "bat": 6,
+        "parkour": 8,
+        "jello": 42,
+        "foreman": 9,
+        "koi": 11
+      },
+      "strengths": [
+        "Deliberate and precise",
+        "Reads people's limits",
+        "Keeps a room entertained"
+      ],
       "watchOut": "Pranks need a landing pad. Make sure the person can laugh at the end."
     },
     {
@@ -271,8 +624,21 @@
       "tagline": "Didn't read the manual",
       "blurb": "You had a plan, a shortcut and complete confidence. The instructions were right there. Now there's a small incident, a bandage and a story that will follow you for years, and you're still not sure what the manual would have added.",
       "accent": "yellow",
-      "mix": { "firedrill": 6, "chili": 14, "cpr": 5, "bat": 7, "parkour": 6, "jello": 6, "foreman": 40, "koi": 16 },
-      "strengths": ["Confident under pressure", "Learns by doing", "Bounces back from a bad call"],
+      "mix": {
+        "firedrill": 6,
+        "chili": 14,
+        "cpr": 5,
+        "bat": 7,
+        "parkour": 6,
+        "jello": 6,
+        "foreman": 40,
+        "koi": 16
+      },
+      "strengths": [
+        "Confident under pressure",
+        "Learns by doing",
+        "Bounces back from a bad call"
+      ],
       "watchOut": "Read the manual. It takes four minutes and saves a season of jokes."
     },
     {
@@ -281,8 +647,21 @@
       "tagline": "Spiritually off-topic",
       "blurb": "The thing you're upset about is not the thing everyone else is discussing. You've gone quiet, mildly philosophical, and vaguely unavailable. When you finally explain it, it's a small detail nobody noticed, and it turns out to matter more than the big problem.",
       "accent": "sky",
-      "mix": { "firedrill": 8, "chili": 4, "cpr": 12, "bat": 9, "parkour": 6, "jello": 5, "foreman": 8, "koi": 48 },
-      "strengths": ["Sees what the meeting missed", "Genuinely reflective", "Calm in a way that spreads"],
+      "mix": {
+        "firedrill": 8,
+        "chili": 4,
+        "cpr": 12,
+        "bat": 9,
+        "parkour": 6,
+        "jello": 5,
+        "foreman": 8,
+        "koi": 48
+      },
+      "strengths": [
+        "Sees what the meeting missed",
+        "Genuinely reflective",
+        "Calm in a way that spreads"
+      ],
       "watchOut": "Say the small thing early. Silence makes people guess wrong about you."
     }
   ]

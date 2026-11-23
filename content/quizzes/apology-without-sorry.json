@@ -1,0 +1,554 @@
+{
+  "slug": "apology-without-sorry",
+  "title": "How you say sorry without ever saying it",
+  "dek": "Twelve questions about the after: the silence, the coffee, the thing you fixed instead of discussed. Nobody has to admit anything.",
+  "category": "Love",
+  "accent": "orange",
+  "emoji": "🫖",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "You've upset someone you love. The first 24 hours look like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A small, specific thing at their door",
+          "weights": {
+            "flowers": 2,
+            "letter": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Making their coffee exactly right",
+          "weights": {
+            "coffee": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A message you rewrite six times",
+          "weights": {
+            "letter": 2,
+            "joke": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Being extremely normal at them",
+          "weights": {
+            "silence": 2,
+            "vanish": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "They ask, 'are we okay?' You say:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Yeah. I got you that thing you mentioned",
+          "weights": {
+            "flowers": 2,
+            "coffee": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "I've been thinking about it all night",
+          "weights": {
+            "letter": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Define 'okay'",
+          "weights": {
+            "joke": 2,
+            "vanish": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "I'm here, aren't I?",
+          "weights": {
+            "silence": 2,
+            "coffee": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The apology should be:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Said plainly, once",
+          "weights": {
+            "letter": 2,
+            "flowers": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Shown, with something in hand",
+          "weights": {
+            "coffee": 2,
+            "silence": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The apology is already on the table. Which one?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Flowers, handed over awkwardly",
+          "weights": {
+            "flowers": 2,
+            "letter": 1
+          },
+          "image": "/images/questions/sorry-flowers.jpg",
+          "alt": "Flowers being handed over"
+        },
+        {
+          "id": "b",
+          "label": "Two coffees, one untouched",
+          "weights": {
+            "coffee": 2,
+            "silence": 1
+          },
+          "image": "/images/questions/sorry-coffee.jpg",
+          "alt": "Two takeaway coffee cups on a table"
+        },
+        {
+          "id": "c",
+          "label": "A note stuck where you’d see it",
+          "weights": {
+            "letter": 2,
+            "coffee": 1
+          },
+          "image": "/images/questions/sorry-note.jpg",
+          "alt": "Sticky notes on a wall"
+        },
+        {
+          "id": "d",
+          "label": "An empty chair",
+          "weights": {
+            "vanish": 2,
+            "joke": 1
+          },
+          "image": "/images/questions/sorry-chair.jpg",
+          "alt": "An empty wooden chair"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Where does your apology actually happen?",
+      "helper": "Across: say it or show it. Up: at the door or already leaving.",
+      "x": {
+        "low": {
+          "label": "Say it",
+          "trait": "letter"
+        },
+        "high": {
+          "label": "Show it",
+          "trait": "coffee"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "At the door",
+          "trait": "flowers"
+        },
+        "high": {
+          "label": "On the way out",
+          "trait": "vanish"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Written Apology",
+        "lowHigh": "The Text From the Train",
+        "highLow": "Something on the Step",
+        "highHigh": "Back When It's Forgotten"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what an apology actually needs.",
+      "helper": "Be honest about the order.",
+      "items": [
+        {
+          "id": "words",
+          "label": "The actual words",
+          "weights": {
+            "letter": 2,
+            "flowers": 1
+          }
+        },
+        {
+          "id": "change",
+          "label": "A change in behaviour",
+          "weights": {
+            "coffee": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "time",
+          "label": "Time to cool off",
+          "weights": {
+            "vanish": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "funny",
+          "label": "A small, funny peace offering",
+          "weights": {
+            "joke": 2,
+            "flowers": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The apology you'd actually send.",
+      "helper": "Two gaps. It still doesn't say the word.",
+      "template": "I'm sorry, I just {a} when {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "couldn't find the words",
+              "weights": {
+                "letter": 2,
+                "silence": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "wanted to make it up to you",
+              "weights": {
+                "flowers": 2,
+                "coffee": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "made a joke at the wrong moment",
+              "weights": {
+                "joke": 2,
+                "vanish": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "left before I said something worse",
+              "weights": {
+                "vanish": 2,
+                "silence": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "you needed me to just listen",
+              "weights": {
+                "coffee": 2,
+                "letter": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "the room got very quiet",
+              "weights": {
+                "silence": 2,
+                "joke": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "I didn't know what to do with my hands",
+              "weights": {
+                "flowers": 2,
+                "vanish": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "I should have stayed",
+              "weights": {
+                "coffee": 2,
+                "letter": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather fix the thing than discuss it.",
+      "trait": "coffee",
+      "low": "Talking is fine",
+      "high": "I'm already fixing it"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I need the apology said out loud.",
+      "disagree": {
+        "trait": "silence"
+      },
+      "agree": {
+        "trait": "letter"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A well-chosen object says sorry better than a sentence.",
+      "agree": {
+        "trait": "flowers",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "letter",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "They're still upset three days later. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ask what else they need",
+          "weights": {
+            "letter": 2,
+            "coffee": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Send something small",
+          "weights": {
+            "flowers": 2,
+            "joke": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Give them space",
+          "weights": {
+            "vanish": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Act like it never happened",
+          "weights": {
+            "silence": 2,
+            "vanish": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The apology that would actually work on you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Them saying it, badly",
+          "weights": {
+            "letter": 2,
+            "coffee": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something arriving at your door",
+          "weights": {
+            "flowers": 2,
+            "vanish": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Them making you laugh",
+          "weights": {
+            "joke": 2,
+            "flowers": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Them leaving you alone for a day",
+          "weights": {
+            "vanish": 2,
+            "silence": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "flowers",
+      "name": "The Flowers",
+      "tagline": "A gesture where a sentence should be",
+      "blurb": "You apologise in objects: the right pastry, the book they mentioned, the thing that says I was listening even when I was being awful. It works more often than it should. You would still rather not discuss it.",
+      "accent": "pink",
+      "mix": {
+        "flowers": 41,
+        "coffee": 15,
+        "letter": 12,
+        "silence": 10,
+        "joke": 12,
+        "vanish": 10
+      },
+      "strengths": [
+        "Remembers exactly what someone likes",
+        "Turns regret into something tangible",
+        "Never arrives empty-handed"
+      ],
+      "watchOut": "An object is not an explanation. Add the sentence."
+    },
+    {
+      "trait": "coffee",
+      "name": "The Coffee",
+      "tagline": "I made yours without asking",
+      "blurb": "You say sorry by resuming normal service: their coffee, their side of the bed, the small chore they hate. You assume the care is legible. It usually is, to people who know you, and invisible to everyone else.",
+      "accent": "orange",
+      "mix": {
+        "flowers": 14,
+        "coffee": 42,
+        "letter": 10,
+        "silence": 14,
+        "joke": 8,
+        "vanish": 12
+      },
+      "strengths": [
+        "Reliable in the small, daily ways",
+        "Doesn't need credit to keep going",
+        "Turns words into habits"
+      ],
+      "watchOut": "People can't drink a gesture forever. Use a sentence."
+    },
+    {
+      "trait": "letter",
+      "name": "The Letter",
+      "tagline": "Six paragraphs, sent at 1am",
+      "blurb": "You would rather get it exactly right than say it quickly. You draft, delete, and eventually send something longer than the situation required, which is also the most honest thing you've written all year. You mean every clause.",
+      "accent": "purple",
+      "mix": {
+        "flowers": 9,
+        "coffee": 10,
+        "letter": 55,
+        "silence": 8,
+        "joke": 9,
+        "vanish": 9
+      },
+      "strengths": [
+        "Says the difficult thing precisely",
+        "Gives people something they can re-read",
+        "Takes responsibility in writing"
+      ],
+      "watchOut": "A perfect paragraph can still arrive too late. Send it sooner."
+    },
+    {
+      "trait": "silence",
+      "name": "The Silence",
+      "tagline": "I'll be normal at you until it's fine",
+      "blurb": "You apologise by not making it worse. You wait, you act completely ordinary, and you let the whole thing settle like sediment. It usually does. The other person sometimes needs to hear that you noticed.",
+      "accent": "sky",
+      "mix": {
+        "flowers": 8,
+        "coffee": 16,
+        "letter": 9,
+        "silence": 43,
+        "joke": 10,
+        "vanish": 14
+      },
+      "strengths": [
+        "Doesn't escalate",
+        "Gives people room to recover",
+        "Steady when someone else is raw"
+      ],
+      "watchOut": "Silence can read as not caring. Name the thing once."
+    },
+    {
+      "trait": "joke",
+      "name": "The Joke",
+      "tagline": "It's funny because it's an apology",
+      "blurb": "You defuse with a line, and it lands because it's true. Humour is how you carry something heavy without dropping it on anyone. You would rather make them laugh than watch them cry, and you know that's not always your call.",
+      "accent": "yellow",
+      "mix": {
+        "flowers": 12,
+        "coffee": 9,
+        "letter": 10,
+        "silence": 11,
+        "joke": 43,
+        "vanish": 15
+      },
+      "strengths": [
+        "Breaks a room out of a spiral",
+        "Can name the truth sideways",
+        "Makes repair feel possible"
+      ],
+      "watchOut": "Some moments need the flat, unfunny version."
+    },
+    {
+      "trait": "vanish",
+      "name": "The Disappearing Act",
+      "tagline": "I'll be back when it's forgotten",
+      "blurb": "Your first instinct is to remove yourself before you make it worse, and you are often right about the timing. You come back calmer, kinder and slightly embarrassed. The trouble is that leaving is also a message.",
+      "accent": "blue",
+      "mix": {
+        "flowers": 8,
+        "coffee": 11,
+        "letter": 10,
+        "silence": 15,
+        "joke": 8,
+        "vanish": 48
+      },
+      "strengths": [
+        "Never makes a hot situation hotter",
+        "Returns with a clear head",
+        "Good at giving other people space too"
+      ],
+      "watchOut": "Say when you'll be back, even if it's tomorrow."
+    }
+  ]
+}

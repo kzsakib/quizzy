@@ -291,6 +291,53 @@
         "trait": "nostalgia",
         "weight": 2
       }
+    },
+    {
+      "id": "q13",
+      "type": "image",
+      "prompt": "The screen you'd happily live inside. Pick one.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A CRT television",
+          "weights": {
+            "nostalgia": 2,
+            "solo": 1
+          },
+          "image": "/images/questions/save-crt.jpg",
+          "alt": "An old CRT television set"
+        },
+        {
+          "id": "b",
+          "label": "A console, already on",
+          "weights": {
+            "solo": 2,
+            "speed": 1
+          },
+          "image": "/images/questions/save-handheld.jpg",
+          "alt": "A handheld games console"
+        },
+        {
+          "id": "c",
+          "label": "A console still plugged in",
+          "weights": {
+            "dex": 2,
+            "breeder": 1
+          },
+          "image": "/images/questions/save-shelf.jpg",
+          "alt": "A retro games console"
+        },
+        {
+          "id": "d",
+          "label": "Plush toys on a bed",
+          "weights": {
+            "cute": 2,
+            "nostalgia": 1
+          },
+          "image": "/images/questions/save-plush.jpg",
+          "alt": "Plush toys arranged on a bed"
+        }
+      ]
     }
   ],
   "results": [

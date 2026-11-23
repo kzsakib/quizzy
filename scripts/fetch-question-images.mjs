@@ -41,7 +41,7 @@ async function commonsImage(title) {
   url.searchParams.set("titles", `File:${title.replace(/^File:/, "")}`);
   url.searchParams.set("prop", "imageinfo");
   url.searchParams.set("iiprop", "url|extmetadata");
-  url.searchParams.set("iiurlwidth", "1400");
+  url.searchParams.set("iiurlwidth", "900");
 
   const response = await fetch(url, { headers: { "user-agent": UA } });
   if (!response.ok) throw new Error(`Commons ${response.status}`);

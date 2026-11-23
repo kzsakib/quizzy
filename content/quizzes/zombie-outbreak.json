@@ -1,0 +1,554 @@
+{
+  "slug": "zombie-outbreak",
+  "title": "Your zombie plan, rated by how long it lasts",
+  "dek": "Twelve questions about where you'd go, what you'd carry and who you'd let in. No actual apocalypse required.",
+  "category": "Horror",
+  "accent": "lime",
+  "emoji": "🧟",
+  "minutes": 4,
+  "published": "2026-11-22",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Day one. You go for:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Four walls and one door",
+          "weights": {
+            "bunker": 2,
+            "farm": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The highest point you can reach",
+          "weights": {
+            "rooftop": 2,
+            "mall": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The car, keys already in hand",
+          "weights": {
+            "roadtrip": 2,
+            "boat": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The nearest place with supplies",
+          "weights": {
+            "mall": 2,
+            "farm": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The group disagrees about the next move. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Stick to the plan we agreed",
+          "weights": {
+            "bunker": 2,
+            "rooftop": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Scout the next option alone",
+          "weights": {
+            "roadtrip": 2,
+            "boat": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Take stock of what we actually have",
+          "weights": {
+            "mall": 2,
+            "farm": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Wait it out and watch the horizon",
+          "weights": {
+            "rooftop": 2,
+            "boat": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather have:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Walls",
+          "weights": {
+            "bunker": 2,
+            "farm": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Wheels",
+          "weights": {
+            "roadtrip": 2,
+            "boat": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your base looks like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A boarded-up farmhouse",
+          "weights": {
+            "farm": 2,
+            "bunker": 1
+          },
+          "image": "/images/questions/zombie-farm.jpg",
+          "alt": "An abandoned farmhouse with boarded windows"
+        },
+        {
+          "id": "b",
+          "label": "An empty supermarket aisle",
+          "weights": {
+            "mall": 2,
+            "roadtrip": 1
+          },
+          "image": "/images/questions/zombie-mall.jpg",
+          "alt": "An empty supermarket aisle"
+        },
+        {
+          "id": "c",
+          "label": "A rooftop water tank",
+          "weights": {
+            "rooftop": 2,
+            "bunker": 1
+          },
+          "image": "/images/questions/zombie-roof.jpg",
+          "alt": "A water tank on a flat rooftop"
+        },
+        {
+          "id": "d",
+          "label": "A boat, any boat",
+          "weights": {
+            "boat": 2,
+            "roadtrip": 1
+          },
+          "image": "/images/questions/zombie-boat.jpg",
+          "alt": "A boat on a river"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Where are you when it starts?",
+      "helper": "Across: stay or move. Up: alone or with a crowd.",
+      "x": {
+        "low": {
+          "label": "Stay",
+          "trait": "bunker"
+        },
+        "high": {
+          "label": "Move",
+          "trait": "roadtrip"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Alone",
+          "trait": "boat"
+        },
+        "high": {
+          "label": "With everyone",
+          "trait": "mall"
+        }
+      },
+      "quadrants": {
+        "lowLow": "One Person, One Door",
+        "lowHigh": "The Last Mall on Earth",
+        "highLow": "The Long Way Around",
+        "highHigh": "The Convoy"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what you'd grab first.",
+      "helper": "First place is the thing you'd actually reach for.",
+      "items": [
+        {
+          "id": "water",
+          "label": "Water and a filter",
+          "weights": {
+            "bunker": 2,
+            "farm": 1
+          }
+        },
+        {
+          "id": "fuel",
+          "label": "A full tank",
+          "weights": {
+            "roadtrip": 2,
+            "boat": 1
+          }
+        },
+        {
+          "id": "people",
+          "label": "The people you'd actually call",
+          "weights": {
+            "mall": 2,
+            "farm": 1
+          }
+        },
+        {
+          "id": "view",
+          "label": "A high vantage point",
+          "weights": {
+            "rooftop": 2,
+            "bunker": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your opening line in the group chat.",
+      "helper": "Two gaps. It's already too late to look cool.",
+      "template": "If it happens, I'll be {a} with {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "in the basement with a list",
+              "weights": {
+                "bunker": 2,
+                "farm": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "on the roof with binoculars",
+              "weights": {
+                "rooftop": 2,
+                "boat": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "on the road before the news ends",
+              "weights": {
+                "roadtrip": 2,
+                "mall": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "at the shops, filling a trolley",
+              "weights": {
+                "mall": 2,
+                "farm": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "enough tinned food for a month",
+              "weights": {
+                "bunker": 2,
+                "mall": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "one person I trust",
+              "weights": {
+                "boat": 2,
+                "rooftop": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "a plan nobody else agreed to",
+              "weights": {
+                "roadtrip": 2,
+                "bunker": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "the dog",
+              "weights": {
+                "farm": 2,
+                "boat": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I already know exactly where I'd go.",
+      "trait": "bunker",
+      "low": "No idea",
+      "high": "It's in my notes app"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather be moving than safe.",
+      "disagree": {
+        "trait": "bunker"
+      },
+      "agree": {
+        "trait": "roadtrip"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A group is only as strong as its worst decision.",
+      "agree": {
+        "trait": "farm",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "roadtrip",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "A stranger bangs on the door. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Open it, carefully, with a plan",
+          "weights": {
+            "farm": 2,
+            "mall": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Watch from a window and decide",
+          "weights": {
+            "rooftop": 2,
+            "bunker": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Load up and leave before dark",
+          "weights": {
+            "roadtrip": 2,
+            "boat": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Shout through the door",
+          "weights": {
+            "bunker": 2,
+            "rooftop": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Your plan fails because:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Someone didn't follow it",
+          "weights": {
+            "bunker": 2,
+            "rooftop": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "We ran out of fuel",
+          "weights": {
+            "roadtrip": 2,
+            "boat": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "We stayed too long",
+          "weights": {
+            "mall": 2,
+            "farm": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The tide came in",
+          "weights": {
+            "boat": 2,
+            "rooftop": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "bunker",
+      "name": "The Bunker",
+      "tagline": "You've had the list for years",
+      "blurb": "You are not panicking, because you have been preparing for an entirely different disaster since 2016. There is water, there is a radio, and there is a laminated plan. You will survive longer than the group chat and enjoy it less.",
+      "accent": "green",
+      "mix": {
+        "bunker": 45,
+        "rooftop": 14,
+        "roadtrip": 10,
+        "mall": 9,
+        "farm": 12,
+        "boat": 10
+      },
+      "strengths": [
+        "Genuinely ready for the practical part",
+        "Calm when the news breaks",
+        "Takes the long view"
+      ],
+      "watchOut": "A bunker with no people in it is just a basement. Let someone in."
+    },
+    {
+      "trait": "rooftop",
+      "name": "The Rooftop",
+      "tagline": "High up, waiting for a helicopter",
+      "blurb": "You want visibility and a door you can defend. You will not be surprised by anything that comes down the street, and you will be the first to spot the rescue that never arrives. You are excellent at waiting with purpose.",
+      "accent": "sky",
+      "mix": {
+        "bunker": 13,
+        "rooftop": 44,
+        "roadtrip": 12,
+        "mall": 10,
+        "farm": 11,
+        "boat": 10
+      },
+      "strengths": [
+        "Sees the problem coming",
+        "Keeps a cool head with a view",
+        "Good at holding a position"
+      ],
+      "watchOut": "Rooftops have no supplies and one way down. Have a second plan."
+    },
+    {
+      "trait": "roadtrip",
+      "name": "The Road Trip",
+      "tagline": "The car is packed, the map is wrong",
+      "blurb": "Your instinct is forward, always. You would rather be moving with a bad map than standing still with a good one, and you are weirdly good at finding fuel and a place to sleep. Your plan is a direction, not a destination.",
+      "accent": "orange",
+      "mix": {
+        "bunker": 9,
+        "rooftop": 11,
+        "roadtrip": 46,
+        "mall": 9,
+        "farm": 11,
+        "boat": 14
+      },
+      "strengths": [
+        "Adapts on the move",
+        "Finds a route when there isn't one",
+        "Gets people out of a bad place"
+      ],
+      "watchOut": "Driving away from one problem is not the same as solving it."
+    },
+    {
+      "trait": "mall",
+      "name": "The Mall",
+      "tagline": "Everything you need, one floor away",
+      "blurb": "You see the apocalypse as a logistics problem with a very good inventory. Food, clothes, a generator, a pharmacy: all in one building. You would hold that place for weeks and organise everybody into shifts.",
+      "accent": "yellow",
+      "mix": {
+        "bunker": 13,
+        "rooftop": 9,
+        "roadtrip": 10,
+        "mall": 46,
+        "farm": 12,
+        "boat": 10
+      },
+      "strengths": [
+        "Turns chaos into a supply chain",
+        "Good with a group under pressure",
+        "Finds the useful thing in any room"
+      ],
+      "watchOut": "A mall has more doors than you can watch. Count them."
+    },
+    {
+      "trait": "farm",
+      "name": "The Farm",
+      "tagline": "Fences, chickens, a long game",
+      "blurb": "You are thinking past the first month. Fences, water, seeds and a dog: your plan is boring, sustainable and much better than everyone else's. You would take in the neighbour and regret it only slightly.",
+      "accent": "lime",
+      "mix": {
+        "bunker": 14,
+        "rooftop": 9,
+        "roadtrip": 9,
+        "mall": 10,
+        "farm": 47,
+        "boat": 11
+      },
+      "strengths": [
+        "Builds something that lasts",
+        "Practical with animals and land",
+        "Keeps a community fed"
+      ],
+      "watchOut": "A farm needs people to defend it. You can't watch every fence."
+    },
+    {
+      "trait": "boat",
+      "name": "The Boat",
+      "tagline": "Nobody can reach you out there",
+      "blurb": "You remove the problem instead of fighting it. Water is a wall, the dock is the door, and the horizon is a perfectly good plan. You are calm, self-sufficient and mildly allergic to group decisions.",
+      "accent": "blue",
+      "mix": {
+        "bunker": 11,
+        "rooftop": 12,
+        "roadtrip": 13,
+        "mall": 9,
+        "farm": 10,
+        "boat": 45
+      },
+      "strengths": [
+        "Removes yourself from the danger",
+        "Comfortable with very little company",
+        "Resourceful in a small space"
+      ],
+      "watchOut": "Isolation has a shelf life. Plan for the bit after the panic."
+    }
+  ]
+}
