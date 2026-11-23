@@ -1,50 +1,44 @@
 {
-  "at": "2026-11-23T21:54:24.173Z",
+  "at": "2026-11-23T22:09:00.919Z",
   "count": 1,
   "created": [
     {
-      "slug": "bangladesh-street-vibes",
-      "title": "Which Dhaka Street Vendor Matches Your Life Pace",
-      "category": "Culture",
-      "topic": "Bangladesh street vibes",
-      "images": 1
+      "slug": "squid-game-strategy-twist",
+      "title": "If You Were a Squid Game Contestant, What Strategy Would You Use?",
+      "category": "Horror",
+      "topic": "Squid Game strategy twist",
+      "images": 3
     }
   ],
   "failed": [
     {
-      "title": "If You Had a Useless Superpower, Which Would It Be?",
+      "title": "Which 2020s Delivery App Would Be Your Spirit Sidekick",
+      "errors": [
+        "need exactly 6 results (got 0)"
+      ]
+    },
+    {
+      "title": "What Kind of Mythic Guardian Protects Your Home?",
+      "errors": [
+        "need exactly 12 questions (got 11)"
+      ]
+    },
+    {
+      "title": "Which Cozy Farming‑Sim Role Defines Your Weekend Vibe?",
+      "errors": [
+        "q5: quadrant lowLow missing",
+        "q5: quadrant lowHigh missing",
+        "q5: quadrant highLow missing",
+        "q5: quadrant highHigh missing",
+        "need 4 \"mc\" question(s), found 9",
+        "need 1 \"rank\" question(s), found 0"
+      ]
+    },
+    {
+      "title": "Which Bangladeshi Street Food Matches Your Social Rhythm?",
       "errors": [
         "need exactly 12 questions (got 7)",
         "need exactly 6 results (got 5)"
-      ]
-    },
-    {
-      "title": "What 2010s Internet Nostalgia Trend Defines Your Social Style",
-      "errors": [
-        "result meme: mix sums to 90, not 100",
-        "result playlist: mix sums to 90, not 100",
-        "q7: mc needs 4 options",
-        "q10: mc needs 4 options",
-        "q11: mc needs 4 options",
-        "q12: unknown type \"open\""
-      ]
-    },
-    {
-      "title": "Which Mythic Greek Creature Runs Your Household?",
-      "errors": [
-        "need exactly 12 questions (got 5)",
-        "need exactly 6 results (got 5)"
-      ]
-    },
-    {
-      "title": "Your Ideal Road‑Trip Co‑Passenger From Pop‑Culture Classics",
-      "errors": [
-        "q1: prompt missing or too long",
-        "q2: prompt missing or too long",
-        "q3: prompt missing or too long",
-        "q4: prompt missing or too long",
-        "q5: prompt missing or too long",
-        "q6: prompt missing or too long"
       ]
     }
   ]

@@ -1,0 +1,531 @@
+{
+  "slug": "squid-game-strategy-twist",
+  "title": "If You Were a Squid Game Contestant, What Strategy Would You Use?",
+  "dek": "You answer twelve quick dilemmas set in a deadly competition. Your choices reveal the method you’d rely on when the stakes turn lethal.",
+  "category": "Horror",
+  "accent": "red",
+  "emoji": "🦑",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "How do you approach the first challenge?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Form a small team and share supplies",
+          "weights": {
+            "alliance_builder": 2,
+            "rule_keeper": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Stay alone, watch others for mistakes",
+          "weights": {
+            "silent_observer": 2,
+            "puzzle_solver": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Volunteer for the hardest tasks first",
+          "weights": {
+            "risk_taker": 2,
+            "last_minute_gambler": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Memorize every rule before moving",
+          "weights": {
+            "rule_keeper": 2,
+            "puzzle_solver": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "When you meet another contestant, what do you do?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Offer a trade: food for info",
+          "weights": {
+            "alliance_builder": 2,
+            "risk_taker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Keep your head down, let others argue",
+          "weights": {
+            "silent_observer": 2,
+            "rule_keeper": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Challenge the game master openly",
+          "weights": {
+            "risk_taker": 2,
+            "last_minute_gambler": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Study the puzzle layout quietly",
+          "weights": {
+            "puzzle_solver": 2,
+            "silent_observer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Do you share personal information to build trust?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Share a secret",
+          "weights": {
+            "alliance_builder": 2,
+            "puzzle_solver": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Keep it to yourself",
+          "weights": {
+            "silent_observer": 2,
+            "rule_keeper": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Which scene feels most like your survival style?",
+      "options": [
+        {
+          "id": "a",
+          "label": "A cramped dormitory with bunk beds",
+          "weights": {
+            "alliance_builder": 2,
+            "rule_keeper": 1
+          },
+          "alt": "Rows of metal bunk beds in a dimly lit dormitory",
+          "image": "/images/questions/squid-game-strategy-twist-a.jpg"
+        },
+        {
+          "id": "b",
+          "label": "A lone figure watching a game board",
+          "weights": {
+            "silent_observer": 2,
+            "puzzle_solver": 1
+          },
+          "alt": "A solitary contestant staring at a glowing game board",
+          "image": "/images/questions/squid-game-strategy-twist-b.jpg"
+        },
+        {
+          "id": "c",
+          "label": "Someone leaping over a barrier",
+          "weights": {
+            "risk_taker": 2,
+            "last_minute_gambler": 1
+          },
+          "alt": "The Milky Way over dark hills",
+          "image": "/images/questions/anime-sky-stars.jpg"
+        },
+        {
+          "id": "d",
+          "label": "Hands arranging puzzle pieces",
+          "weights": {
+            "puzzle_solver": 2,
+            "alliance_builder": 1
+          },
+          "alt": "Close‑up of hands fitting colorful puzzle pieces together",
+          "image": "/images/questions/squid-game-strategy-twist-d.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Place yourself on the axes of trust vs. self‑reliance and rule‑following vs. rule‑breaking.",
+      "x": {
+        "low": {
+          "label": "Trust others",
+          "trait": "alliance_builder"
+        },
+        "high": {
+          "label": "Rely on self",
+          "trait": "silent_observer"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Follow rules",
+          "trait": "rule_keeper"
+        },
+        "high": {
+          "label": "Break rules",
+          "trait": "risk_taker"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Careful Ally",
+        "lowHigh": "The Rule‑Bound Lone Wolf",
+        "highLow": "The Quiet Enforcer",
+        "highHigh": "The Reckless Maverick"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank these survival priorities from most to least important for you.",
+      "items": [
+        {
+          "id": "a",
+          "label": "Gather allies",
+          "weights": {
+            "alliance_builder": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "Observe quietly",
+          "weights": {
+            "silent_observer": 2
+          }
+        },
+        {
+          "id": "c",
+          "label": "Take bold risks",
+          "weights": {
+            "risk_taker": 2
+          }
+        },
+        {
+          "id": "d",
+          "label": "Study every instruction",
+          "weights": {
+            "rule_keeper": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Complete the sentence that describes your next move.",
+      "template": "You {blank1} a {blank2} to survive the next round.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "options": [
+            {
+              "id": "a",
+              "label": "befriend",
+              "weights": {
+                "alliance_builder": 2,
+                "puzzle_solver": 1
+              }
+            },
+            {
+              "id": "b",
+              "label": "ignore",
+              "weights": {
+                "silent_observer": 2,
+                "rule_keeper": 1
+              }
+            },
+            {
+              "id": "c",
+              "label": "challenge",
+              "weights": {
+                "risk_taker": 2,
+                "last_minute_gambler": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "blank2",
+          "options": [
+            {
+              "id": "a",
+              "label": "secret tunnel",
+              "weights": {
+                "puzzle_solver": 2,
+                "alliance_builder": 1
+              }
+            },
+            {
+              "id": "b",
+              "label": "guarded door",
+              "weights": {
+                "rule_keeper": 2,
+                "silent_observer": 1
+              }
+            },
+            {
+              "id": "c",
+              "label": "exploding bridge",
+              "weights": {
+                "last_minute_gambler": 2,
+                "risk_taker": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "How comfortable are you with taking big risks?",
+      "trait": "risk_taker",
+      "low": 1,
+      "high": 5
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Do you prefer to stay hidden and watch, or to join forces and cooperate?",
+      "disagree": {
+        "trait": "silent_observer"
+      },
+      "agree": {
+        "trait": "alliance_builder"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "I trust that following the written rules will keep me safe.",
+      "agree": {
+        "trait": "puzzle_solver",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "rule_keeper",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "What’s your go‑to move when a new twist appears?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Offer a code word to strangers",
+          "weights": {
+            "alliance_builder": 2,
+            "risk_taker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Stay silent, watch for patterns",
+          "weights": {
+            "silent_observer": 2,
+            "puzzle_solver": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Force a rule change",
+          "weights": {
+            "risk_taker": 2,
+            "last_minute_gambler": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Double‑check every instruction",
+          "weights": {
+            "rule_keeper": 2,
+            "alliance_builder": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "How do you make sure you never miss a crucial detail?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Write down each rule verbatim",
+          "weights": {
+            "rule_keeper": 2,
+            "silent_observer": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Memorize the rules and repeat them aloud",
+          "weights": {
+            "puzzle_solver": 2,
+            "risk_taker": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Ask others to confirm the rules for you",
+          "weights": {
+            "alliance_builder": 2,
+            "silent_observer": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Ignore the fine print and act instinctively",
+          "weights": {
+            "risk_taker": 2,
+            "last_minute_gambler": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "alliance_builder",
+      "name": "The Alliance Builder",
+      "tagline": "You win by making friends fast",
+      "blurb": "You immediately start recruiting teammates, sharing food, and swapping intel. You set up a rotating watch schedule and assign roles based on strengths. When a challenge demands cooperation, you already have a trusted group ready to act. Your network becomes a safety net, turning isolation into an advantage.",
+      "accent": "blue",
+      "mix": {
+        "alliance_builder": 45,
+        "silent_observer": 11,
+        "risk_taker": 11,
+        "rule_keeper": 11,
+        "puzzle_solver": 11,
+        "last_minute_gambler": 11
+      },
+      "strengths": [
+        "Quick at forming bonds",
+        "Good at resource sharing",
+        "Creates reliable teams"
+      ],
+      "watchOut": "Too many allies can slow you down when speed matters."
+    },
+    {
+      "trait": "silent_observer",
+      "name": "The Silent Observer",
+      "tagline": "You learn by watching, not talking",
+      "blurb": "You keep a low profile, noting every movement and mistake of others. You memorize patterns, locate hidden clues, and wait for the perfect moment to act. While others argue, you gather data, ready to exploit a slip or an opening without drawing attention.",
+      "accent": "purple",
+      "mix": {
+        "alliance_builder": 11,
+        "silent_observer": 45,
+        "risk_taker": 11,
+        "rule_keeper": 11,
+        "puzzle_solver": 11,
+        "last_minute_gambler": 11
+      },
+      "strengths": [
+        "Sharp at spotting details",
+        "Patience beats panic",
+        "Acts when odds improve"
+      ],
+      "watchOut": "Your silence can be mistaken for disengagement, costing allies."
+    },
+    {
+      "trait": "risk_taker",
+      "name": "The Risk‑Taker",
+      "tagline": "You charge when the clock ticks",
+      "blurb": "You volunteer first, jump over obstacles, and gamble on bold moves. You trust instinct over instruction, often forcing the game to bend around you. When a chance appears, you seize it, even if it means a high‑stakes gamble that could end the round instantly.",
+      "accent": "orange",
+      "mix": {
+        "alliance_builder": 11,
+        "silent_observer": 11,
+        "risk_taker": 45,
+        "rule_keeper": 11,
+        "puzzle_solver": 11,
+        "last_minute_gambler": 11
+      },
+      "strengths": [
+        "Bold under pressure",
+        "Creates surprise opportunities",
+        "Often forces game changes"
+      ],
+      "watchOut": "One misstep can end your run faster than any rule."
+    },
+    {
+      "trait": "rule_keeper",
+      "name": "The Rule‑Keeper",
+      "tagline": "You live by the written word",
+      "blurb": "You memorize every rule, double‑check instructions, and call out inconsistencies. You keep others honest, pointing out violations before they become penalties. Your strict adherence protects you from hidden traps and ensures you never lose points for a careless mistake.",
+      "accent": "green",
+      "mix": {
+        "alliance_builder": 11,
+        "silent_observer": 11,
+        "risk_taker": 11,
+        "rule_keeper": 45,
+        "puzzle_solver": 11,
+        "last_minute_gambler": 11
+      },
+      "strengths": [
+        "Never breaks protocol",
+        "Catches hidden penalties",
+        "Keeps team compliant"
+      ],
+      "watchOut": "Rigidity can blind you to creative shortcuts."
+    },
+    {
+      "trait": "puzzle_solver",
+      "name": "The Puzzle Solver",
+      "tagline": "You see the game as a series of riddles",
+      "blurb": "You dissect each challenge, looking for patterns, hidden mechanisms, and logical shortcuts. You experiment with tools, test hypotheses, and often find the solution before anyone else notices. Your mind turns chaotic games into solvable problems, giving you an edge in any mental test.",
+      "accent": "sky",
+      "mix": {
+        "alliance_builder": 11,
+        "silent_observer": 11,
+        "risk_taker": 11,
+        "rule_keeper": 11,
+        "puzzle_solver": 45,
+        "last_minute_gambler": 11
+      },
+      "strengths": [
+        "Finds hidden mechanisms",
+        "Think several steps ahead",
+        "Turns chaos into order"
+      ],
+      "watchOut": "Over‑analysis can waste precious time."
+    },
+    {
+      "trait": "last_minute_gambler",
+      "name": "The Last‑Minute Gambler",
+      "tagline": "You thrive when the clock runs out",
+      "blurb": "You hold back resources and ideas until the final seconds, then unleash a desperate, high‑impact move. You calculate odds on the fly, betting that a last‑second twist will flip the outcome. When others panic, you stay calm, ready to gamble at the edge.",
+      "accent": "pink",
+      "mix": {
+        "alliance_builder": 11,
+        "silent_observer": 11,
+        "risk_taker": 11,
+        "rule_keeper": 11,
+        "puzzle_solver": 11,
+        "last_minute_gambler": 45
+      },
+      "strengths": [
+        "Calm under countdown",
+        "Savvy with last‑second moves",
+        "Turns desperation into advantage"
+      ],
+      "watchOut": "Waiting too long can leave you with no option at all."
+    }
+  ]
+}
