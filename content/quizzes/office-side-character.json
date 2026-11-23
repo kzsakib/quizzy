@@ -1,0 +1,554 @@
+{
+  "slug": "office-side-character",
+  "title": "Who from The Office would fall for you (side characters only)",
+  "dek": "No Jim, no Pam, no camera stares. Twelve questions about the people in the background who'd actually text back.",
+  "category": "Sitcoms",
+  "accent": "yellow",
+  "emoji": "🗂️",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The office crush starts because:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You brought food and meant it",
+          "weights": {
+            "kevin": 2,
+            "erin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You noticed the cat calendar",
+          "weights": {
+            "angela": 2,
+            "toby": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You argued about a spreadsheet",
+          "weights": {
+            "oscar": 2,
+            "darryl": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You fixed the thing nobody reported",
+          "weights": {
+            "darryl": 2,
+            "toby": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your ideal office date:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Lunch that runs long",
+          "weights": {
+            "kevin": 2,
+            "darryl": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Quiet coffee, no small talk",
+          "weights": {
+            "toby": 2,
+            "oscar": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Something with a theme and a costume",
+          "weights": {
+            "erin": 2,
+            "angela": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A sensible dinner, booked",
+          "weights": {
+            "oscar": 2,
+            "angela": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Your energy is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Warm and chaotic",
+          "weights": {
+            "kevin": 2,
+            "erin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Ordered and dry",
+          "weights": {
+            "oscar": 2,
+            "angela": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The relationship lives here.",
+      "options": [
+        {
+          "id": "a",
+          "label": "The break room",
+          "weights": {
+            "kevin": 2,
+            "erin": 1
+          },
+          "image": "/images/questions/coldopen-breakroom.jpg",
+          "alt": "A workplace vending machine and break area"
+        },
+        {
+          "id": "b",
+          "label": "A front desk with a ledger",
+          "weights": {
+            "oscar": 2,
+            "darryl": 1
+          },
+          "image": "/images/questions/office-desk.jpg",
+          "alt": "A polished office reception desk"
+        },
+        {
+          "id": "c",
+          "label": "The warehouse",
+          "weights": {
+            "darryl": 2,
+            "toby": 1
+          },
+          "image": "/images/questions/office-warehouse.jpg",
+          "alt": "Shelving inside a warehouse"
+        },
+        {
+          "id": "d",
+          "label": "The parking lot at five",
+          "weights": {
+            "toby": 2,
+            "angela": 1
+          },
+          "image": "/images/questions/coldopen-lot.jpg",
+          "alt": "An empty street at night"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the office romance.",
+      "helper": "Across: warm or dry. Up: background or front desk.",
+      "x": {
+        "low": {
+          "label": "Warm",
+          "trait": "erin"
+        },
+        "high": {
+          "label": "Dry",
+          "trait": "oscar"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Background",
+          "trait": "toby"
+        },
+        "high": {
+          "label": "Front desk",
+          "trait": "angela"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Break Room",
+        "lowHigh": "The Party Committee",
+        "highLow": "The Quiet Desk",
+        "highHigh": "The Front Desk"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what you need in an office partner.",
+      "helper": "First place is what you'd miss most.",
+      "items": [
+        {
+          "id": "snack",
+          "label": "Snacks, shared",
+          "weights": {
+            "kevin": 2,
+            "erin": 1
+          }
+        },
+        {
+          "id": "vent",
+          "label": "Someone to complain to",
+          "weights": {
+            "toby": 2,
+            "oscar": 1
+          }
+        },
+        {
+          "id": "rules",
+          "label": "A good sense of the rules",
+          "weights": {
+            "angela": 2,
+            "oscar": 1
+          }
+        },
+        {
+          "id": "lift",
+          "label": "A lift home",
+          "weights": {
+            "darryl": 2,
+            "kevin": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "How you'd tell people.",
+      "helper": "Two gaps. Keep it vague for HR.",
+      "template": "We met {a}, and {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "in the break room",
+              "weights": {
+                "kevin": 2,
+                "erin": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "over a filing error",
+              "weights": {
+                "oscar": 2,
+                "angela": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "in the warehouse",
+              "weights": {
+                "darryl": 2,
+                "toby": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "at a party nobody wanted",
+              "weights": {
+                "erin": 2,
+                "kevin": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "it's going fine",
+              "weights": {
+                "oscar": 2,
+                "darryl": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "nobody knows yet",
+              "weights": {
+                "toby": 2,
+                "angela": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "there was cake",
+              "weights": {
+                "kevin": 2,
+                "erin": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "I'm not telling HR",
+              "weights": {
+                "toby": 2,
+                "oscar": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd date someone from work.",
+      "trait": "darryl",
+      "low": "Absolutely not",
+      "high": "Already have"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Office rules exist to be respected.",
+      "disagree": {
+        "trait": "erin"
+      },
+      "agree": {
+        "trait": "angela"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A shared snack is a love language.",
+      "agree": {
+        "trait": "kevin",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "oscar",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The first fight is about:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Who ate the thing from the fridge",
+          "weights": {
+            "kevin": 2,
+            "darryl": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The correct way to label a file",
+          "weights": {
+            "angela": 2,
+            "oscar": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Being left out of the plan",
+          "weights": {
+            "erin": 2,
+            "toby": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nobody telling me anything",
+          "weights": {
+            "toby": 2,
+            "darryl": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last scene:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Two plates, one desk",
+          "weights": {
+            "kevin": 2,
+            "erin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A cat and a spreadsheet",
+          "weights": {
+            "angela": 2,
+            "oscar": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A lift share, every day",
+          "weights": {
+            "darryl": 2,
+            "toby": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A note left on the keyboard",
+          "weights": {
+            "toby": 2,
+            "oscar": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "kevin",
+      "name": "Kevin Malone",
+      "tagline": "Two plates, one desk, no regrets",
+      "blurb": "You would end up with the kindest person in the building, whose love language is a chilli recipe and a desk drawer full of snacks. He would be loyal, funny, and absolutely refuse to share the good part of the cake.",
+      "accent": "orange",
+      "mix": {
+        "kevin": 45,
+        "angela": 9,
+        "oscar": 12,
+        "darryl": 12,
+        "erin": 12,
+        "toby": 10
+      },
+      "strengths": [
+        "Warm without conditions",
+        "Comfortable being himself",
+        "Feeds people, literally"
+      ],
+      "watchOut": "Pleasant isn't always honest. Say the hard sentence."
+    },
+    {
+      "trait": "angela",
+      "name": "Angela Martin",
+      "tagline": "Loves you. Judges your filing.",
+      "blurb": "You would end up with the office's strictest person, who has a soft spot exactly one person wide and a very clear opinion about your desk. The relationship would involve rules, a cat, and unexpected tenderness on Tuesdays.",
+      "accent": "purple",
+      "mix": {
+        "kevin": 10,
+        "angela": 46,
+        "oscar": 12,
+        "darryl": 9,
+        "erin": 11,
+        "toby": 12
+      },
+      "strengths": [
+        "Consistent, always",
+        "Cares in practical ways",
+        "Will defend you to the end"
+      ],
+      "watchOut": "Righteousness can wear a person down. Let one thing go."
+    },
+    {
+      "trait": "oscar",
+      "name": "Oscar Martinez",
+      "tagline": "Correct, and quietly fond of you",
+      "blurb": "You would end up with the smartest, driest person in the office: someone who wins the argument, then says the kindest thing in the room three hours later. The relationship would be sensible, funny, and extremely well documented.",
+      "accent": "sky",
+      "mix": {
+        "kevin": 9,
+        "angela": 13,
+        "oscar": 45,
+        "darryl": 11,
+        "erin": 10,
+        "toby": 12
+      },
+      "strengths": [
+        "Actually knows things",
+        "Calm voice in a mess",
+        "Funny on purpose"
+      ],
+      "watchOut": "Being right is tiring to live with. Choose being kind first."
+    },
+    {
+      "trait": "darryl",
+      "name": "Darryl Philbin",
+      "tagline": "Warehouse calm, office drama",
+      "blurb": "You would end up with someone competent, unhurried and completely unimpressed by the upstairs nonsense. He would fix your shelf, laugh at the right moment, and drive you home without a fuss. It would work, properly.",
+      "accent": "green",
+      "mix": {
+        "kevin": 11,
+        "angela": 9,
+        "oscar": 12,
+        "darryl": 46,
+        "erin": 11,
+        "toby": 11
+      },
+      "strengths": [
+        "Gets things done quietly",
+        "Steady under pressure",
+        "No nonsense, real warmth"
+      ],
+      "watchOut": "Patience can look like distance. Say what you're feeling."
+    },
+    {
+      "trait": "erin",
+      "name": "Erin Hannon",
+      "tagline": "Delighted, and completely sincere",
+      "blurb": "You would end up with the most openly enthusiastic person in the office: someone who plans the party nobody asked for, remembers your birthday, and says the sweet thing without worrying whether it's cool.",
+      "accent": "pink",
+      "mix": {
+        "kevin": 12,
+        "angela": 10,
+        "oscar": 10,
+        "darryl": 11,
+        "erin": 45,
+        "toby": 12
+      },
+      "strengths": [
+        "Says the kind thing out loud",
+        "Optimistic in a room of cynics",
+        "Makes ordinary days fun"
+      ],
+      "watchOut": "Enthusiasm can carry too much of the load. Let them meet you halfway."
+    },
+    {
+      "trait": "toby",
+      "name": "Toby Flenderson",
+      "tagline": "Quiet, kind, always in the background",
+      "blurb": "You would end up with the person everyone overlooked: gentle, decent, quietly funny, permanently in the wrong room. He would listen properly, remember the thing you mentioned once, and be the most restful person you know.",
+      "accent": "blue",
+      "mix": {
+        "kevin": 10,
+        "angela": 12,
+        "oscar": 13,
+        "darryl": 11,
+        "erin": 11,
+        "toby": 43
+      },
+      "strengths": [
+        "Listens, actually listens",
+        "Kind without an audience",
+        "Calm and steady"
+      ],
+      "watchOut": "Being fine with being overlooked isn't the same as being ok."
+    }
+  ]
+}

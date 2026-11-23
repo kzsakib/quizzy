@@ -1,0 +1,554 @@
+{
+  "slug": "wikipedia-controversy",
+  "title": "The Wikipedia controversy that would get your article locked",
+  "dek": "Not a quiz about notability. Twelve questions about the one sentence someone would eventually tag with 'citation needed'.",
+  "category": "Internet",
+  "accent": "sky",
+  "emoji": "📎",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your article has one line everyone argues about. It's:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A single comma in a job title",
+          "weights": {
+            "footnote": 2,
+            "talkpage": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A photo of you from 2009",
+          "weights": {
+            "photo": 2,
+            "quote": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Something you said, roughly",
+          "weights": {
+            "quote": 2,
+            "date": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The year it all happened",
+          "weights": {
+            "date": 2,
+            "deletion": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The first sign of trouble is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A 'citation needed' tag",
+          "weights": {
+            "footnote": 2,
+            "quote": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A talk page with 400 replies",
+          "weights": {
+            "talkpage": 2,
+            "deletion": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Someone uploading a new photo",
+          "weights": {
+            "photo": 2,
+            "date": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A deletion nomination",
+          "weights": {
+            "deletion": 2,
+            "footnote": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Better legacy:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A perfectly sourced footnote",
+          "weights": {
+            "footnote": 2,
+            "talkpage": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A legendary argument",
+          "weights": {
+            "talkpage": 2,
+            "quote": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your controversy has a picture. Pick it.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A shelf of encyclopedias",
+          "weights": {
+            "footnote": 2,
+            "date": 1
+          },
+          "image": "/images/questions/book-ladder.jpg",
+          "alt": "Library shelves reaching the ceiling"
+        },
+        {
+          "id": "b",
+          "label": "A newspaper, open",
+          "weights": {
+            "quote": 2,
+            "photo": 1
+          },
+          "image": "/images/questions/news-newspapers.jpg",
+          "alt": "An open newspaper"
+        },
+        {
+          "id": "c",
+          "label": "A typewriter and a correction",
+          "weights": {
+            "date": 2,
+            "footnote": 1
+          },
+          "image": "/images/questions/news-typewriter.jpg",
+          "alt": "An old typewriter on a desk"
+        },
+        {
+          "id": "d",
+          "label": "A wall of sticky notes",
+          "weights": {
+            "talkpage": 2,
+            "deletion": 1
+          },
+          "image": "/images/questions/love-note.jpg",
+          "alt": "A wall covered in sticky notes"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your Wikipedia self.",
+      "helper": "Across: precise or chaotic. Up: anonymous or very named.",
+      "x": {
+        "low": {
+          "label": "Precise",
+          "trait": "footnote"
+        },
+        "high": {
+          "label": "Chaotic",
+          "trait": "talkpage"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Anonymous",
+          "trait": "photo"
+        },
+        "high": {
+          "label": "Very named",
+          "trait": "quote"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Editor",
+        "lowHigh": "The Direct Quote",
+        "highLow": "The Unsourced Photo",
+        "highHigh": "The Talk Page Legend"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what your article needs most.",
+      "helper": "First place is what the admins will do first.",
+      "items": [
+        {
+          "id": "cite",
+          "label": "One more citation",
+          "weights": {
+            "footnote": 2,
+            "date": 1
+          }
+        },
+        {
+          "id": "photo",
+          "label": "A better photo",
+          "weights": {
+            "photo": 2,
+            "quote": 1
+          }
+        },
+        {
+          "id": "lock",
+          "label": "A locked page",
+          "weights": {
+            "talkpage": 2,
+            "deletion": 1
+          }
+        },
+        {
+          "id": "date",
+          "label": "A date that's actually right",
+          "weights": {
+            "date": 2,
+            "footnote": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The talk page summary.",
+      "helper": "Two gaps. Sign your reply with four tildes.",
+      "template": "The dispute is about {a}, and it has been {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a comma",
+              "weights": {
+                "footnote": 2,
+                "talkpage": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "a photo nobody likes",
+              "weights": {
+                "photo": 2,
+                "quote": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "a quote you deny",
+              "weights": {
+                "quote": 2,
+                "date": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "whether you exist",
+              "weights": {
+                "deletion": 2,
+                "footnote": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "going since 2011",
+              "weights": {
+                "date": 2,
+                "deletion": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "locked by an admin",
+              "weights": {
+                "talkpage": 2,
+                "footnote": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "sourced to a dead link",
+              "weights": {
+                "footnote": 2,
+                "photo": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "settled, badly",
+              "weights": {
+                "talkpage": 2,
+                "quote": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I check the source before I repeat something.",
+      "trait": "footnote",
+      "low": "Vibes are fine",
+      "high": "I have the PDF"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather be accurate than interesting.",
+      "disagree": {
+        "trait": "quote"
+      },
+      "agree": {
+        "trait": "footnote"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Every argument is worth having in public.",
+      "agree": {
+        "trait": "talkpage",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "deletion",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "A stranger edits your page. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Revert it and cite something",
+          "weights": {
+            "footnote": 2,
+            "deletion": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Write a calm 900-word reply",
+          "weights": {
+            "talkpage": 2,
+            "quote": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Replace the photo",
+          "weights": {
+            "photo": 2,
+            "date": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nominate the whole page",
+          "weights": {
+            "deletion": 2,
+            "talkpage": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The line that ends the thread:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Here is the source.",
+          "weights": {
+            "footnote": 2,
+            "date": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "This has been discussed.",
+          "weights": {
+            "talkpage": 2,
+            "deletion": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "That is not me in the photo.",
+          "weights": {
+            "photo": 2,
+            "quote": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "I never said that.",
+          "weights": {
+            "quote": 2,
+            "date": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "footnote",
+      "name": "The Footnote War",
+      "tagline": "It's about the comma, actually",
+      "blurb": "You would not be famous for anything dramatic. You would be famous because one sentence needed a source, and you found one, and then someone found a better one. The argument would still be running in 2031.",
+      "accent": "sky",
+      "mix": {
+        "footnote": 44,
+        "talkpage": 16,
+        "photo": 9,
+        "quote": 12,
+        "date": 12,
+        "deletion": 7
+      },
+      "strengths": [
+        "Gets the detail right",
+        "Argues with evidence, not volume",
+        "Willing to be corrected"
+      ],
+      "watchOut": "Being correct is not the same as being finished. Log off."
+    },
+    {
+      "trait": "talkpage",
+      "name": "The Talk Page",
+      "tagline": "Your section has 400 replies",
+      "blurb": "Your controversy is not a fact, it is a conversation, and you are winning it on formatting alone. You have indented so many replies that the page has an archive. Somewhere in there is a very good point.",
+      "accent": "green",
+      "mix": {
+        "footnote": 13,
+        "talkpage": 45,
+        "photo": 8,
+        "quote": 12,
+        "date": 9,
+        "deletion": 13
+      },
+      "strengths": [
+        "Willing to show up and argue",
+        "Reads the whole thread",
+        "Keeps receipts in public"
+      ],
+      "watchOut": "Not every fight needs a fourth reply. Choose one."
+    },
+    {
+      "trait": "photo",
+      "name": "The Photo",
+      "tagline": "You were caught mid-blink in 2009",
+      "blurb": "You are not controversial. The photograph is. It has been replaced four times, restored twice and once described as 'unflattering but usable'. You have asked, politely, for it to be removed, which made it the lead image.",
+      "accent": "purple",
+      "mix": {
+        "footnote": 8,
+        "talkpage": 11,
+        "photo": 47,
+        "quote": 12,
+        "date": 10,
+        "deletion": 12
+      },
+      "strengths": [
+        "Recognisable, even badly lit",
+        "Takes the joke well",
+        "Has a great origin story"
+      ],
+      "watchOut": "You can't delete the internet. Get a better photo taken."
+    },
+    {
+      "trait": "quote",
+      "name": "The Misquote",
+      "tagline": "You never said that, but it's cited",
+      "blurb": "One sentence, slightly altered, now sits in a hundred articles and one book. It sounds like you. It is not what you meant. You have spent years explaining the difference to people who quite like the wrong version.",
+      "accent": "yellow",
+      "mix": {
+        "footnote": 12,
+        "talkpage": 13,
+        "photo": 9,
+        "quote": 45,
+        "date": 11,
+        "deletion": 10
+      },
+      "strengths": [
+        "Says memorable things, apparently",
+        "Good at context",
+        "Patient with corrections"
+      ],
+      "watchOut": "Once a line escapes, it belongs to everyone. Pick your words."
+    },
+    {
+      "trait": "date",
+      "name": "The Date Dispute",
+      "tagline": "Was it 2011 or 2012?",
+      "blurb": "Your entire controversy is a timeline. Someone has a screenshot, someone else has a receipt, and the article currently says 'circa'. You have strong feelings about 'circa'. You have made them known.",
+      "accent": "orange",
+      "mix": {
+        "footnote": 14,
+        "talkpage": 12,
+        "photo": 8,
+        "quote": 10,
+        "date": 46,
+        "deletion": 10
+      },
+      "strengths": [
+        "Precise about what happened when",
+        "Keeps the receipts",
+        "Willing to be the boring one"
+      ],
+      "watchOut": "The exact date rarely matters to anyone else. Let it go."
+    },
+    {
+      "trait": "deletion",
+      "name": "The Deletion Debate",
+      "tagline": "Somebody nominated your page",
+      "blurb": "You are not controversial so much as contested. There is a discussion about whether you should exist on the internet at all, and it has attracted strangers with opinions and one person who defends you beautifully. You read it at 2am.",
+      "accent": "red",
+      "mix": {
+        "footnote": 9,
+        "talkpage": 18,
+        "photo": 10,
+        "quote": 10,
+        "date": 9,
+        "deletion": 44
+      },
+      "strengths": [
+        "Unbothered by being questioned",
+        "Knows their own worth",
+        "Has at least one excellent defender"
+      ],
+      "watchOut": "You don't have to attend every vote about you."
+    }
+  ]
+}

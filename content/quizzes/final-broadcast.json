@@ -1,0 +1,554 @@
+{
+  "slug": "final-broadcast",
+  "title": "What goes in humanity's last radio broadcast",
+  "dek": "One hour, one transmitter, nobody left to hear it. Twelve questions about what you'd actually put on air.",
+  "category": "Sci-Fi",
+  "accent": "purple",
+  "emoji": "📡",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "One hour of transmitter time. You open with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A song that needs no introduction",
+          "weights": {
+            "song": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "An apology, plainly",
+          "weights": {
+            "apology": 2,
+            "laugh": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A joke that wastes four minutes",
+          "weights": {
+            "laugh": 2,
+            "recipe": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The recipe for the good bread",
+          "weights": {
+            "recipe": 2,
+            "list": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The person at the desk asks what to log. You say:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Track title and artist",
+          "weights": {
+            "song": 2,
+            "list": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Nothing. Leave it blank",
+          "weights": {
+            "silence": 2,
+            "apology": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Names, in order",
+          "weights": {
+            "list": 2,
+            "recipe": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Tell them we tried, and we laughed",
+          "weights": {
+            "apology": 2,
+            "laugh": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather leave behind:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Something with a tune",
+          "weights": {
+            "song": 2,
+            "laugh": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something useful",
+          "weights": {
+            "recipe": 2,
+            "list": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The booth has one object left on the desk. Pick it.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A microphone",
+          "weights": {
+            "song": 2,
+            "apology": 1
+          },
+          "image": "/images/questions/radio-mic.jpg",
+          "alt": "A studio microphone on a stand"
+        },
+        {
+          "id": "b",
+          "label": "A stack of records",
+          "weights": {
+            "silence": 2,
+            "song": 1
+          },
+          "image": "/images/questions/radio-record.jpg",
+          "alt": "Vinyl records of different sizes"
+        },
+        {
+          "id": "c",
+          "label": "A studio with people still in it",
+          "weights": {
+            "list": 2,
+            "laugh": 1
+          },
+          "image": "/images/questions/radio-studio.jpg",
+          "alt": "People working in a radio studio"
+        },
+        {
+          "id": "d",
+          "label": "An empty stadium",
+          "weights": {
+            "laugh": 2,
+            "recipe": 1
+          },
+          "image": "/images/questions/sport-place-pitch.jpg",
+          "alt": "An empty sports stadium"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the broadcast.",
+      "helper": "Across: sound or silence. Up: honest or funny.",
+      "x": {
+        "low": {
+          "label": "Sound",
+          "trait": "song"
+        },
+        "high": {
+          "label": "Silence",
+          "trait": "silence"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Honest",
+          "trait": "apology"
+        },
+        "high": {
+          "label": "Funny",
+          "trait": "laugh"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Sincere Single",
+        "lowHigh": "The Last Bit",
+        "highLow": "The Long Pause",
+        "highHigh": "The Final Joke"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the final hour's running order.",
+      "helper": "First place is what goes out first.",
+      "items": [
+        {
+          "id": "song",
+          "label": "A song",
+          "weights": {
+            "song": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "sorry",
+          "label": "An apology",
+          "weights": {
+            "apology": 2,
+            "list": 1
+          }
+        },
+        {
+          "id": "names",
+          "label": "The names of everyone",
+          "weights": {
+            "list": 2,
+            "apology": 1
+          }
+        },
+        {
+          "id": "bread",
+          "label": "One recipe, in full",
+          "weights": {
+            "recipe": 2,
+            "laugh": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The sign-off you'd write.",
+      "helper": "Two gaps. Read it slowly.",
+      "template": "Before we go, {a}, and {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "here's a song from 1977",
+              "weights": {
+                "song": 2,
+                "silence": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "we're sorry about the oceans",
+              "weights": {
+                "apology": 2,
+                "list": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "someone wrote down every name",
+              "weights": {
+                "list": 2,
+                "song": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "this is how you make bread",
+              "weights": {
+                "recipe": 2,
+                "laugh": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "please don't blame the last one",
+              "weights": {
+                "apology": 2,
+                "laugh": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "the transmitter will keep humming",
+              "weights": {
+                "silence": 2,
+                "recipe": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "we did laugh, at the end",
+              "weights": {
+                "laugh": 2,
+                "song": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "goodnight, from all of us",
+              "weights": {
+                "list": 2,
+                "apology": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd choose the honest thing over the clever thing.",
+      "trait": "apology",
+      "low": "Clever wins",
+      "high": "Honest, every time"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Silence says more than a message.",
+      "disagree": {
+        "trait": "song"
+      },
+      "agree": {
+        "trait": "silence"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A list of names is the best thing we could leave.",
+      "agree": {
+        "trait": "list",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "laugh",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Twenty minutes left. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Play one more song",
+          "weights": {
+            "song": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Read the names",
+          "weights": {
+            "list": 2,
+            "apology": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Explain the bread properly",
+          "weights": {
+            "recipe": 2,
+            "laugh": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leave the mic open",
+          "weights": {
+            "silence": 2,
+            "apology": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last word is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A lyric",
+          "weights": {
+            "song": 2,
+            "silence": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Sorry",
+          "weights": {
+            "apology": 2,
+            "list": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Goodnight",
+          "weights": {
+            "list": 2,
+            "recipe": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nothing at all",
+          "weights": {
+            "silence": 2,
+            "laugh": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "song",
+      "name": "The Song",
+      "tagline": "Three minutes that explain everything",
+      "blurb": "You would not write a speech. You would queue one track, say the artist and the year, and let it do the work. It is the most human thing you can think of, and you would be right.",
+      "accent": "purple",
+      "mix": {
+        "song": 45,
+        "apology": 12,
+        "laugh": 8,
+        "recipe": 9,
+        "silence": 14,
+        "list": 12
+      },
+      "strengths": [
+        "Knows what actually moves people",
+        "Says a lot with very little",
+        "Good taste under pressure"
+      ],
+      "watchOut": "A song can be a hiding place. Say one true sentence first."
+    },
+    {
+      "trait": "apology",
+      "name": "The Apology",
+      "tagline": "Sorry, and we meant it",
+      "blurb": "Your last broadcast would be the honest one nobody made earlier. No context, no defence, just the plain acknowledgement that we had it and we spent it. You would say it clearly enough to be understood by nobody.",
+      "accent": "blue",
+      "mix": {
+        "song": 11,
+        "apology": 44,
+        "laugh": 8,
+        "recipe": 9,
+        "silence": 15,
+        "list": 13
+      },
+      "strengths": [
+        "Says the difficult thing plainly",
+        "Takes responsibility without a speech",
+        "Would rather be honest than memorable"
+      ],
+      "watchOut": "An apology is not a plan. Even at the end, add what you'd do differently."
+    },
+    {
+      "trait": "laugh",
+      "name": "The Joke",
+      "tagline": "One last stupid bit",
+      "blurb": "You would refuse to end on a solemn note. There would be a bit, possibly a bad one, possibly about the situation, and it would be the most human four minutes on the tape. Somebody, somewhere, would still get the reference.",
+      "accent": "yellow",
+      "mix": {
+        "song": 9,
+        "apology": 11,
+        "laugh": 45,
+        "recipe": 8,
+        "silence": 10,
+        "list": 17
+      },
+      "strengths": [
+        "Defuses the unbearable",
+        "Funny when it counts",
+        "Refuses to be solemn on cue"
+      ],
+      "watchOut": "A joke can dodge the moment. Land the plane first."
+    },
+    {
+      "trait": "recipe",
+      "name": "The Recipe",
+      "tagline": "Here's how you make the good bread",
+      "blurb": "You would leave instructions. Flour, water, salt, time, heat: a message that assumes somebody, someday, might want to make something good. It is practical, generous and quietly devastating.",
+      "accent": "orange",
+      "mix": {
+        "song": 8,
+        "apology": 10,
+        "laugh": 9,
+        "recipe": 46,
+        "silence": 12,
+        "list": 15
+      },
+      "strengths": [
+        "Leaves something usable",
+        "Thinks in generosity",
+        "Practical in a crisis"
+      ],
+      "watchOut": "Not everything has to be useful. Some things just need saying."
+    },
+    {
+      "trait": "silence",
+      "name": "The Silence",
+      "tagline": "Nothing, deliberately",
+      "blurb": "You would let the carrier wave run. No message, no music, just the sound of a transmitter doing its job. Anyone listening would understand it immediately, which is the whole point.",
+      "accent": "sky",
+      "mix": {
+        "song": 14,
+        "apology": 13,
+        "laugh": 7,
+        "recipe": 9,
+        "silence": 45,
+        "list": 12
+      },
+      "strengths": [
+        "Knows when to stop talking",
+        "Comfortable with the unsaid",
+        "Trusts people to understand"
+      ],
+      "watchOut": "Silence is a message only if someone is still listening."
+    },
+    {
+      "trait": "list",
+      "name": "The List",
+      "tagline": "Names, in alphabetical order",
+      "blurb": "You would read the names. All of them, for the whole hour, until the transmitter dies. Not the famous ones: the neighbours, the dogs, the person who fixed the boiler. It is the only record that matters.",
+      "accent": "green",
+      "mix": {
+        "song": 11,
+        "apology": 14,
+        "laugh": 8,
+        "recipe": 10,
+        "silence": 12,
+        "list": 45
+      },
+      "strengths": [
+        "Remembers the people, not the story",
+        "Patient with long, unglamorous work",
+        "Makes everyone count"
+      ],
+      "watchOut": "Reading names is easy. Knowing them takes the rest of your life."
+    }
+  ]
+}

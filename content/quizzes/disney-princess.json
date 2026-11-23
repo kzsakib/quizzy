@@ -1,0 +1,554 @@
+{
+  "slug": "disney-princess",
+  "title": "Which Disney princess would survive your actual life",
+  "dek": "No castle to name and no dress to pick. Twelve questions about how you'd handle a very ordinary, very difficult week.",
+  "category": "Fandom",
+  "accent": "pink",
+  "emoji": "👑",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "An ordinary Tuesday goes wrong. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Read until I find the rule that fixes it",
+          "weights": {
+            "belle": 2,
+            "tiana": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Go outside and follow the interesting thing",
+          "weights": {
+            "ariel": 2,
+            "moana": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Make a plan and a list",
+          "weights": {
+            "mulan": 2,
+            "tiana": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Improvise loudly with whatever's nearby",
+          "weights": {
+            "rapunzel": 2,
+            "moana": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your actual dream is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A room full of books and no interruptions",
+          "weights": {
+            "belle": 2,
+            "rapunzel": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The part of the world nobody's shown me",
+          "weights": {
+            "ariel": 2,
+            "moana": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Something I built with my own hands",
+          "weights": {
+            "tiana": 2,
+            "mulan": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Getting everyone home safely",
+          "weights": {
+            "mulan": 2,
+            "moana": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The comfort you'd choose:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A library",
+          "weights": {
+            "belle": 2,
+            "rapunzel": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "An open horizon",
+          "weights": {
+            "moana": 2,
+            "ariel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your story opens in:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A library",
+          "weights": {
+            "belle": 2,
+            "tiana": 1
+          },
+          "image": "/images/questions/book-ladder.jpg",
+          "alt": "Tall shelves of books"
+        },
+        {
+          "id": "b",
+          "label": "Open water at sunset",
+          "weights": {
+            "ariel": 2,
+            "moana": 1
+          },
+          "image": "/images/questions/princess-sea.jpg",
+          "alt": "Waves on open water at sunset"
+        },
+        {
+          "id": "c",
+          "label": "A forest path",
+          "weights": {
+            "mulan": 2,
+            "rapunzel": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A path through dense forest"
+        },
+        {
+          "id": "d",
+          "label": "A ballroom",
+          "weights": {
+            "rapunzel": 2,
+            "tiana": 1
+          },
+          "image": "/images/questions/princess-ballroom.jpg",
+          "alt": "A grand, empty ballroom"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your story.",
+      "helper": "Across: stay or go. Up: quiet or at the front.",
+      "x": {
+        "low": {
+          "label": "Stay",
+          "trait": "belle"
+        },
+        "high": {
+          "label": "Go",
+          "trait": "moana"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Quiet",
+          "trait": "rapunzel"
+        },
+        "high": {
+          "label": "At the front",
+          "trait": "mulan"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Tower",
+        "lowHigh": "The Training Yard",
+        "highLow": "The Hidden Cove",
+        "highHigh": "The Voyage"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what you'd take with you.",
+      "helper": "First place is what you'd grab first.",
+      "items": [
+        {
+          "id": "book",
+          "label": "A book that explains everything",
+          "weights": {
+            "belle": 2,
+            "rapunzel": 1
+          }
+        },
+        {
+          "id": "boat",
+          "label": "A boat",
+          "weights": {
+            "ariel": 2,
+            "moana": 1
+          }
+        },
+        {
+          "id": "plan",
+          "label": "A plan",
+          "weights": {
+            "mulan": 2,
+            "tiana": 1
+          }
+        },
+        {
+          "id": "friend",
+          "label": "One good friend",
+          "weights": {
+            "tiana": 2,
+            "ariel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "If you got one song, it would be about…",
+      "helper": "Two gaps. Sing it badly.",
+      "template": "If I had one song, it would be about {a}, and {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a door I'm not allowed to open",
+              "weights": {
+                "belle": 2,
+                "rapunzel": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the sea, obviously",
+              "weights": {
+                "ariel": 2,
+                "moana": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "proving them wrong",
+              "weights": {
+                "mulan": 2,
+                "tiana": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a kitchen that's finally mine",
+              "weights": {
+                "tiana": 2,
+                "belle": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "how far I can get on my own",
+              "weights": {
+                "moana": 2,
+                "mulan": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "everyone I'd leave behind",
+              "weights": {
+                "rapunzel": 2,
+                "belle": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "the work nobody sees",
+              "weights": {
+                "tiana": 2,
+                "mulan": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "the noise of the surface",
+              "weights": {
+                "ariel": 2,
+                "moana": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I want to see what's past the edge of the map.",
+      "trait": "moana",
+      "low": "The map is fine",
+      "high": "Past the edge"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Rules are worth following until they aren't.",
+      "disagree": {
+        "trait": "belle"
+      },
+      "agree": {
+        "trait": "mulan"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A dream you can't explain to your family is still a good dream.",
+      "agree": {
+        "trait": "ariel",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "belle",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Someone tells you no. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ask which rule, exactly",
+          "weights": {
+            "belle": 2,
+            "tiana": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Go anyway, quietly",
+          "weights": {
+            "ariel": 2,
+            "rapunzel": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Train until the answer changes",
+          "weights": {
+            "mulan": 2,
+            "moana": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Build the thing anyway",
+          "weights": {
+            "tiana": 2,
+            "rapunzel": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last frame is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A door left open",
+          "weights": {
+            "belle": 2,
+            "ariel": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A boat coming back",
+          "weights": {
+            "moana": 2,
+            "mulan": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A table full of people",
+          "weights": {
+            "tiana": 2,
+            "rapunzel": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A mountain, crossed",
+          "weights": {
+            "mulan": 2,
+            "moana": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "belle",
+      "name": "Belle",
+      "tagline": "Reads the whole thing, then leaves",
+      "blurb": "You would survive your life by understanding it first. Books, notes, the paragraph everyone skipped: you'd find the clause that changes everything and then, quietly, walk out of the room that was never good for you.",
+      "accent": "yellow",
+      "mix": {
+        "belle": 44,
+        "ariel": 12,
+        "mulan": 11,
+        "tiana": 11,
+        "rapunzel": 11,
+        "moana": 11
+      },
+      "strengths": [
+        "Reads people as closely as pages",
+        "Patient until she isn't",
+        "Curiosity as courage"
+      ],
+      "watchOut": "Understanding a situation isn't the same as leaving it. Go."
+    },
+    {
+      "trait": "ariel",
+      "name": "Ariel",
+      "tagline": "Collects the strange thing and asks later",
+      "blurb": "You would follow the interesting thing out of the life you were given. There would be a collection of objects nobody else understands, a period of being misunderstood, and a moment where you have to talk your way through it without your usual voice.",
+      "accent": "red",
+      "mix": {
+        "belle": 12,
+        "ariel": 45,
+        "mulan": 10,
+        "tiana": 11,
+        "rapunzel": 11,
+        "moana": 11
+      },
+      "strengths": [
+        "Says yes to the unknown",
+        "Finds wonder in small objects",
+        "Adapts fast"
+      ],
+      "watchOut": "Curiosity needs a plan attached. Take someone who knows the rules."
+    },
+    {
+      "trait": "mulan",
+      "name": "Mulan",
+      "tagline": "Trains until the answer changes",
+      "blurb": "You would take the thing nobody thought you could do, work at it in private, and then do it in front of everyone. Your life is a series of quiet preparations that look, from outside, like sudden competence.",
+      "accent": "green",
+      "mix": {
+        "belle": 11,
+        "ariel": 10,
+        "mulan": 45,
+        "tiana": 12,
+        "rapunzel": 10,
+        "moana": 12
+      },
+      "strengths": [
+        "Discipline nobody sees",
+        "Turns doubt into fuel",
+        "Protects the people behind them"
+      ],
+      "watchOut": "You don't have to prove it to every person who doubted you."
+    },
+    {
+      "trait": "tiana",
+      "name": "Tiana",
+      "tagline": "Two jobs, one dream, no excuses",
+      "blurb": "You would work. Properly, for years, at something that other people treat as a hobby. Your life would have spreadsheets and an actual plan, and the good part would arrive later than it should, and you would still be there to enjoy it.",
+      "accent": "green",
+      "mix": {
+        "belle": 11,
+        "ariel": 11,
+        "mulan": 12,
+        "tiana": 45,
+        "rapunzel": 10,
+        "moana": 11
+      },
+      "strengths": [
+        "Consistency over years",
+        "Builds something real",
+        "Knows what things cost"
+      ],
+      "watchOut": "Take the evening off. The dream will still be there."
+    },
+    {
+      "trait": "rapunzel",
+      "name": "Rapunzel",
+      "tagline": "Keeps the place nice, then leaves it",
+      "blurb": "You would be the one who made an enclosed life genuinely good: routines, projects, a wall you painted yourself. Then one day the door opens and you find out you are far braver outside than anyone expected, including you.",
+      "accent": "purple",
+      "mix": {
+        "belle": 12,
+        "ariel": 11,
+        "mulan": 10,
+        "tiana": 11,
+        "rapunzel": 45,
+        "moana": 11
+      },
+      "strengths": [
+        "Makes any room liveable",
+        "Creative under restriction",
+        "Braver than the story suggests"
+      ],
+      "watchOut": "Don't wait for permission to leave. It rarely comes."
+    },
+    {
+      "trait": "moana",
+      "name": "Moana",
+      "tagline": "Goes, because somebody has to",
+      "blurb": "You would be the one who leaves. Not because you don't love home, but because something has to be fixed and everyone else is busy being reasonable. You'd learn the sailing on the way, and you'd come back with the thing you went for.",
+      "accent": "sky",
+      "mix": {
+        "belle": 10,
+        "ariel": 12,
+        "mulan": 11,
+        "tiana": 11,
+        "rapunzel": 10,
+        "moana": 46
+      },
+      "strengths": [
+        "Acts when others deliberate",
+        "Learns in motion",
+        "Returns with something to give"
+      ],
+      "watchOut": "Going alone is a choice, not a requirement. Take the crew."
+    }
+  ]
+}

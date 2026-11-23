@@ -1,0 +1,554 @@
+{
+  "slug": "cartoon-network-classic",
+  "title": "Which classic Cartoon Network show would cast you",
+  "dek": "No theme songs to name. Twelve questions about the kind of cartoon logic your life actually runs on.",
+  "category": "Cartoons",
+  "accent": "lime",
+  "emoji": "📺",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your life's visual style is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sun-bleached suburban street",
+          "weights": {
+            "suburb": 2,
+            "slapstick": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "White walls and too many wires",
+          "weights": {
+            "lab": 2,
+            "space": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Dark trees and one torch",
+          "weights": {
+            "mystery": 2,
+            "musical": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Stars, and something with too many eyes",
+          "weights": {
+            "space": 2,
+            "mystery": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "This week's episode problem is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The neighbour's dog got out",
+          "weights": {
+            "suburb": 2,
+            "mystery": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The machine started itself",
+          "weights": {
+            "lab": 2,
+            "space": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Something is in the woods",
+          "weights": {
+            "mystery": 2,
+            "musical": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A song won't stop playing",
+          "weights": {
+            "musical": 2,
+            "slapstick": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Every episode needs:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A chase scene",
+          "weights": {
+            "slapstick": 2,
+            "suburb": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A musical number",
+          "weights": {
+            "musical": 2,
+            "space": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your title card shows:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A quiet suburban street",
+          "weights": {
+            "suburb": 2,
+            "mystery": 1
+          },
+          "image": "/images/questions/cartoon-suburb.jpg",
+          "alt": "A quiet street of houses"
+        },
+        {
+          "id": "b",
+          "label": "A lab bench and a lamp",
+          "weights": {
+            "lab": 2,
+            "space": 1
+          },
+          "image": "/images/questions/villain-lab.jpg",
+          "alt": "A bright, empty laboratory"
+        },
+        {
+          "id": "c",
+          "label": "A forest path",
+          "weights": {
+            "mystery": 2,
+            "musical": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A track running through a forest"
+        },
+        {
+          "id": "d",
+          "label": "A starry sky",
+          "weights": {
+            "space": 2,
+            "slapstick": 1
+          },
+          "image": "/images/questions/anime-sky-stars.jpg",
+          "alt": "A sky full of stars"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the episode.",
+      "helper": "Across: logic or nonsense. Up: indoors or out there.",
+      "x": {
+        "low": {
+          "label": "Logic",
+          "trait": "lab"
+        },
+        "high": {
+          "label": "Nonsense",
+          "trait": "slapstick"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Indoors",
+          "trait": "suburb"
+        },
+        "high": {
+          "label": "Out there",
+          "trait": "space"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Kitchen Episode",
+        "lowHigh": "The Warehouse Episode",
+        "highLow": "The Invention Episode",
+        "highHigh": "The Space Episode"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the cartoon beats.",
+      "helper": "First place is what every good episode opens with.",
+      "items": [
+        {
+          "id": "chase",
+          "label": "A stupid chase",
+          "weights": {
+            "slapstick": 2,
+            "suburb": 1
+          }
+        },
+        {
+          "id": "gadget",
+          "label": "A gadget that backfires",
+          "weights": {
+            "lab": 2,
+            "musical": 1
+          }
+        },
+        {
+          "id": "noise",
+          "label": "A creepy noise",
+          "weights": {
+            "mystery": 2,
+            "space": 1
+          }
+        },
+        {
+          "id": "song",
+          "label": "A song nobody asked for",
+          "weights": {
+            "musical": 2,
+            "lab": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Next episode's cold open.",
+      "helper": "Two gaps. No explanation afterwards.",
+      "template": "Next episode: {a}, {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the kids find a door",
+              "weights": {
+                "suburb": 2,
+                "mystery": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the machine gains a voice",
+              "weights": {
+                "lab": 2,
+                "musical": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "we go to space again",
+              "weights": {
+                "space": 2,
+                "slapstick": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "someone plays a trumpet",
+              "weights": {
+                "musical": 2,
+                "mystery": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "and everything explodes",
+              "weights": {
+                "slapstick": 2,
+                "lab": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "and it's fine by dinner",
+              "weights": {
+                "suburb": 2,
+                "space": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "and nobody explains it",
+              "weights": {
+                "mystery": 2,
+                "lab": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "and the credits roll early",
+              "weights": {
+                "musical": 2,
+                "suburb": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I solve problems with a gadget.",
+      "trait": "lab",
+      "low": "I use my hands",
+      "high": "I built the gadget"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd rather be funny than clever.",
+      "disagree": {
+        "trait": "lab"
+      },
+      "agree": {
+        "trait": "slapstick"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Every story is better with a chase.",
+      "agree": {
+        "trait": "slapstick",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "musical",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The episode ends with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A plate of food and everyone home",
+          "weights": {
+            "suburb": 2,
+            "lab": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "An explosion and a shrug",
+          "weights": {
+            "slapstick": 2,
+            "space": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "An unresolved noise",
+          "weights": {
+            "mystery": 2,
+            "musical": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A song over the credits",
+          "weights": {
+            "musical": 2,
+            "suburb": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Your recurring role:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The kid on the bike",
+          "weights": {
+            "suburb": 2,
+            "slapstick": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The invention nobody asked for",
+          "weights": {
+            "lab": 2,
+            "space": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The one who saw it first",
+          "weights": {
+            "mystery": 2,
+            "musical": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The alien with a day job",
+          "weights": {
+            "space": 2,
+            "mystery": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "suburb",
+      "name": "SUMMER STREET",
+      "tagline": "Nothing happens here. Everything happens here.",
+      "blurb": "Your show is a group of kids, one bicycle, and a summer that lasts eleven episodes. The stakes are a missing dog and the end of the holidays. Somehow it is the most emotional thing on the schedule.",
+      "accent": "lime",
+      "mix": {
+        "suburb": 45,
+        "lab": 9,
+        "mystery": 12,
+        "space": 9,
+        "slapstick": 13,
+        "musical": 12
+      },
+      "strengths": [
+        "Finds the story where you are",
+        "Good at small stakes",
+        "Turns ordinary days into episodes"
+      ],
+      "watchOut": "Not everything has to happen somewhere bigger. Stay for a while."
+    },
+    {
+      "trait": "lab",
+      "name": "THE LAB",
+      "tagline": "It was working five minutes ago.",
+      "blurb": "Your show is one room, one bench, and an invention that should not exist. There is always a countdown. There is always a small fire. You would play the assistant who is right and ignored, and then saves everyone in act three.",
+      "accent": "sky",
+      "mix": {
+        "suburb": 9,
+        "lab": 46,
+        "mystery": 10,
+        "space": 12,
+        "slapstick": 12,
+        "musical": 11
+      },
+      "strengths": [
+        "Solves things nobody else can",
+        "Good under a countdown",
+        "Curious past the point of safety"
+      ],
+      "watchOut": "Not every problem needs a machine. Ask first."
+    },
+    {
+      "trait": "mystery",
+      "name": "CREEPY WOODS CLUB",
+      "tagline": "It was probably nothing. It was not nothing.",
+      "blurb": "Your show is four kids, one torch and a noise in the trees. Nobody ever gets a clear look at it. You would be the one who insists on going back, which is either brave or the whole plot.",
+      "accent": "green",
+      "mix": {
+        "suburb": 12,
+        "lab": 10,
+        "mystery": 46,
+        "space": 11,
+        "slapstick": 9,
+        "musical": 12
+      },
+      "strengths": [
+        "Notices what everyone else misses",
+        "Comfortable with not knowing",
+        "Willing to go and look"
+      ],
+      "watchOut": "Some doors are shut for a reason. Bring someone with you."
+    },
+    {
+      "trait": "space",
+      "name": "DEEP SPACE DELIVERY",
+      "tagline": "The package is fine. The crew is not.",
+      "blurb": "Your show is a ship, a job and a crew that argues in zero gravity. Every episode is a delivery that goes wrong. You would be the one keeping the schedule while the ship quietly falls apart.",
+      "accent": "purple",
+      "mix": {
+        "suburb": 8,
+        "lab": 13,
+        "mystery": 9,
+        "space": 47,
+        "slapstick": 12,
+        "musical": 11
+      },
+      "strengths": [
+        "Keeps going when the plan breaks",
+        "Handles strange situations calmly",
+        "Gets the job done anyway"
+      ],
+      "watchOut": "Land somewhere occasionally. The ship can wait."
+    },
+    {
+      "trait": "slapstick",
+      "name": "ANVIL HOUR",
+      "tagline": "Someone was supposed to catch that.",
+      "blurb": "Your show is a chase with no dialogue and perfect timing. Someone falls through a roof, someone holds up a sign, and the whole thing resets in thirty seconds. You would be the one who gets up first.",
+      "accent": "orange",
+      "mix": {
+        "suburb": 13,
+        "lab": 11,
+        "mystery": 9,
+        "space": 12,
+        "slapstick": 46,
+        "musical": 9
+      },
+      "strengths": [
+        "Recovers instantly",
+        "Reads a room without words",
+        "Funny when the plan collapses"
+      ],
+      "watchOut": "Not everything is a bit. Let the serious moments land."
+    },
+    {
+      "trait": "musical",
+      "name": "THE JAZZ EPISODE",
+      "tagline": "Nothing rhymes, everything works",
+      "blurb": "Your show has a house band and no rules about when people start singing. The plot stops for four bars of saxophone and everyone carries on as if that were normal. You would be the one who starts it.",
+      "accent": "pink",
+      "mix": {
+        "suburb": 11,
+        "lab": 9,
+        "mystery": 12,
+        "space": 10,
+        "slapstick": 10,
+        "musical": 48
+      },
+      "strengths": [
+        "Changes the mood of any room",
+        "Finds rhythm in chaos",
+        "Unembarrassed by joy"
+      ],
+      "watchOut": "Sometimes the scene doesn't need a song. Read the room first."
+    }
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "slug": "friends-side-character",
+  "title": "Who from FRIENDS would actually date you (side characters only)",
+  "dek": "No Ross, no Rachel, no will-they-won't-they. Twelve questions about the people who deserved more screen time.",
+  "category": "Sitcoms",
+  "accent": "blue",
+  "emoji": "☕",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your ideal first date is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Coffee, same table, same time, forever",
+          "weights": {
+            "gunther": 2,
+            "janice": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something loud with a view and a story",
+          "weights": {
+            "janice": 2,
+            "pete": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A quiet dinner and one good bottle",
+          "weights": {
+            "richard": 2,
+            "mike": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something competitive, with a prize",
+          "weights": {
+            "pete": 2,
+            "david": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "You'd fall for someone who:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Notices you every single day",
+          "weights": {
+            "gunther": 2,
+            "mike": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Makes you laugh in a crisis",
+          "weights": {
+            "janice": 2,
+            "david": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Has their life together",
+          "weights": {
+            "richard": 2,
+            "pete": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Is brilliant and slightly awkward",
+          "weights": {
+            "david": 2,
+            "mike": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "What actually wins you over:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Devotion",
+          "weights": {
+            "gunther": 2,
+            "mike": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Adventure",
+          "weights": {
+            "pete": 2,
+            "david": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The date happens here. Pick the place.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A coffee shop counter",
+          "weights": {
+            "gunther": 2,
+            "janice": 1
+          },
+          "image": "/images/questions/role-cafe.jpg",
+          "alt": "A café counter with tables"
+        },
+        {
+          "id": "b",
+          "label": "An apartment door",
+          "weights": {
+            "richard": 2,
+            "mike": 1
+          },
+          "image": "/images/questions/friends-door-yellow.jpg",
+          "alt": "A yellow apartment door"
+        },
+        {
+          "id": "c",
+          "label": "A sofa in an empty lobby",
+          "weights": {
+            "mike": 2,
+            "janice": 1
+          },
+          "image": "/images/questions/partners-couch.jpg",
+          "alt": "A sofa in an apartment lobby"
+        },
+        {
+          "id": "d",
+          "label": "A long hallway with one light",
+          "weights": {
+            "david": 2,
+            "pete": 1
+          },
+          "image": "/images/questions/friends-door-hallway.jpg",
+          "alt": "A dim apartment hallway"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the relationship.",
+      "helper": "Across: steady or dramatic. Up: quiet or grand gesture.",
+      "x": {
+        "low": {
+          "label": "Steady",
+          "trait": "mike"
+        },
+        "high": {
+          "label": "Dramatic",
+          "trait": "janice"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Quiet",
+          "trait": "david"
+        },
+        "high": {
+          "label": "Grand gesture",
+          "trait": "pete"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Slow Burn",
+        "lowHigh": "The Grand Gesture",
+        "highLow": "The Loud One",
+        "highHigh": "The Full Janice"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what you need from a partner.",
+      "helper": "First place is non-negotiable.",
+      "items": [
+        {
+          "id": "order",
+          "label": "Someone who remembers your order",
+          "weights": {
+            "gunther": 2,
+            "richard": 1
+          }
+        },
+        {
+          "id": "laugh",
+          "label": "Someone who makes you laugh",
+          "weights": {
+            "janice": 2,
+            "mike": 1
+          }
+        },
+        {
+          "id": "plan",
+          "label": "Someone with a plan",
+          "weights": {
+            "richard": 2,
+            "david": 1
+          }
+        },
+        {
+          "id": "surprise",
+          "label": "Someone who surprises you",
+          "weights": {
+            "pete": 2,
+            "janice": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Their description of you.",
+      "helper": "Two gaps. They'd say it fondly.",
+      "template": "They'd describe me as {a}, and honestly {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the one who's always there",
+              "weights": {
+                "gunther": 2,
+                "mike": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "a lot, in a good way",
+              "weights": {
+                "janice": 2,
+                "pete": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "very put together",
+              "weights": {
+                "richard": 2,
+                "david": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a scientist, technically",
+              "weights": {
+                "david": 2,
+                "gunther": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "they're right",
+              "weights": {
+                "mike": 2,
+                "richard": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "I'd take that",
+              "weights": {
+                "janice": 2,
+                "pete": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "it's working",
+              "weights": {
+                "david": 2,
+                "mike": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "don't tell them",
+              "weights": {
+                "gunther": 2,
+                "richard": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather be chosen quietly than chased loudly.",
+      "trait": "richard",
+      "low": "Chase me",
+      "high": "Quietly, please"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Grand gestures work on me.",
+      "disagree": {
+        "trait": "mike"
+      },
+      "agree": {
+        "trait": "pete"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Being someone's favourite person is enough.",
+      "agree": {
+        "trait": "gunther",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "janice",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "It ends because:",
+      "options": [
+        {
+          "id": "a",
+          "label": "They never noticed me",
+          "weights": {
+            "gunther": 2,
+            "david": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "It got too quiet",
+          "weights": {
+            "richard": 2,
+            "mike": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "I needed more drama",
+          "weights": {
+            "janice": 2,
+            "pete": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The timing was wrong",
+          "weights": {
+            "mike": 2,
+            "richard": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Their one line about you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Same time tomorrow?",
+          "weights": {
+            "gunther": 2,
+            "janice": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You're a lot. I like it.",
+          "weights": {
+            "janice": 2,
+            "pete": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Come here, you.",
+          "weights": {
+            "mike": 2,
+            "richard": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "I ran the numbers. It's you.",
+          "weights": {
+            "david": 2,
+            "pete": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "gunther",
+      "name": "Gunther",
+      "tagline": "Same table, same time, eleven years",
+      "blurb": "You would end up with someone who has been quietly there the whole time, unnoticed by the main plot. He would remember your order and your bad days, and it would take you an embarrassingly long time to see it.",
+      "accent": "blue",
+      "mix": {
+        "gunther": 45,
+        "janice": 9,
+        "mike": 12,
+        "richard": 12,
+        "pete": 10,
+        "david": 12
+      },
+      "strengths": [
+        "Loyal past the point of sense",
+        "Notices the small things",
+        "Shows up without being asked"
+      ],
+      "watchOut": "Devotion isn't a substitute for a conversation. Say it out loud."
+    },
+    {
+      "trait": "janice",
+      "name": "Janice",
+      "tagline": "OH. MY. GOD.",
+      "blurb": "You would end up with the loudest, warmest person in the room: someone who says the embarrassing thing, means it kindly, and makes your whole life less quiet. Your friends would need a minute. Then they'd love her too.",
+      "accent": "pink",
+      "mix": {
+        "gunther": 9,
+        "janice": 46,
+        "mike": 11,
+        "richard": 10,
+        "pete": 12,
+        "david": 12
+      },
+      "strengths": [
+        "Unembarrassed affection",
+        "Lifts any room",
+        "Says the thing everyone's thinking"
+      ],
+      "watchOut": "Volume is not the same as honesty. Listen as much as you announce."
+    },
+    {
+      "trait": "mike",
+      "name": "Mike Hannigan",
+      "tagline": "Normal, funny, slightly bewildered",
+      "blurb": "You would end up with someone remarkably normal who somehow fits into a chaotic group and makes it work. He would take the joke, take your side, and be the calmest person at the wedding.",
+      "accent": "green",
+      "mix": {
+        "gunther": 13,
+        "janice": 12,
+        "mike": 44,
+        "richard": 12,
+        "pete": 9,
+        "david": 10
+      },
+      "strengths": [
+        "Genuinely easy to be around",
+        "Funny without performing",
+        "Good in a crisis"
+      ],
+      "watchOut": "Being agreeable isn't the same as being honest. Disagree sometimes."
+    },
+    {
+      "trait": "richard",
+      "name": "Richard Burke",
+      "tagline": "Older, calmer, has a good bottle open",
+      "blurb": "You would end up with someone settled: a proper dinner, a good bottle, no drama about the bill. Your friends would have opinions about the age gap. You would have a very nice evening regardless.",
+      "accent": "yellow",
+      "mix": {
+        "gunther": 12,
+        "janice": 9,
+        "mike": 13,
+        "richard": 45,
+        "pete": 9,
+        "david": 12
+      },
+      "strengths": [
+        "Reliable in a way people underestimate",
+        "Good taste, no fuss",
+        "Knows what they want"
+      ],
+      "watchOut": "Calm can become a rut. Plan something that isn't dinner."
+    },
+    {
+      "trait": "pete",
+      "name": "Pete Becker",
+      "tagline": "Bought the gym. Joined the fight.",
+      "blurb": "You would end up with the one who goes all in: the enormous gesture, the slightly unhinged commitment, the plan that is 20% too much. It would be exciting, and occasionally you'd have to talk him down from a helicopter.",
+      "accent": "orange",
+      "mix": {
+        "gunther": 10,
+        "janice": 12,
+        "mike": 10,
+        "richard": 9,
+        "pete": 46,
+        "david": 13
+      },
+      "strengths": [
+        "Goes all in, always",
+        "Turns ideas into events",
+        "Generous to a fault"
+      ],
+      "watchOut": "Not everything needs a grand gesture. Ask what the other person wants."
+    },
+    {
+      "trait": "david",
+      "name": "David, the Scientist Guy",
+      "tagline": "Two continents, one very good phone call",
+      "blurb": "You would end up with someone brilliant, kind and permanently slightly out of the country. The relationship would run on odd hours, long calls and a shared inability to do small talk. Somehow it would be the realest thing in your life.",
+      "accent": "purple",
+      "mix": {
+        "gunther": 12,
+        "janice": 10,
+        "mike": 12,
+        "richard": 11,
+        "pete": 11,
+        "david": 44
+      },
+      "strengths": [
+        "Deep loyalty over distance",
+        "Interesting in a quiet way",
+        "Doesn't do fake"
+      ],
+      "watchOut": "Distance needs maintenance. Book the flight, not just the call."
+    }
+  ]
+}

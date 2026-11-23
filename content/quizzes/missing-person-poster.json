@@ -1,0 +1,554 @@
+{
+  "slug": "missing-person-poster",
+  "title": "What your missing person poster would actually say",
+  "dek": "Twelve questions about how you'd be described by someone who last saw you at 4pm on a Tuesday.",
+  "category": "Personality",
+  "accent": "yellow",
+  "emoji": "📄",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The last confirmed sighting of you was:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A corner shop, 4pm, buying nothing",
+          "weights": {
+            "lastseen": 2,
+            "description": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Getting into the wrong car",
+          "weights": {
+            "description": 2,
+            "quirk": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Stopping to pet a dog",
+          "weights": {
+            "quirk": 2,
+            "reward": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Leaving a voicemail nobody played",
+          "weights": {
+            "photo": 2,
+            "contact": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The description line reads:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Tall-ish, grey coat, walks fast",
+          "weights": {
+            "description": 2,
+            "lastseen": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Unremarkable until you talk to them",
+          "weights": {
+            "quirk": 2,
+            "contact": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Probably has headphones in",
+          "weights": {
+            "quirk": 2,
+            "photo": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Answers to a nickname",
+          "weights": {
+            "contact": 2,
+            "reward": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The poster needs:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A specific detail",
+          "weights": {
+            "lastseen": 2,
+            "description": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A weird detail",
+          "weights": {
+            "quirk": 2,
+            "photo": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Where does your poster go up first?",
+      "options": [
+        {
+          "id": "a",
+          "label": "The lamp post at the corner",
+          "weights": {
+            "lastseen": 2,
+            "quirk": 1
+          },
+          "image": "/images/questions/missing-lamppost.jpg",
+          "alt": "A street lamp on a residential corner"
+        },
+        {
+          "id": "b",
+          "label": "The supermarket noticeboard",
+          "weights": {
+            "contact": 2,
+            "description": 1
+          },
+          "image": "/images/questions/missing-noticeboard.jpg",
+          "alt": "A crowded community noticeboard"
+        },
+        {
+          "id": "c",
+          "label": "The photocopier tray",
+          "weights": {
+            "reward": 2,
+            "photo": 1
+          },
+          "image": "/images/questions/coldopen-copier.jpg",
+          "alt": "An office photocopier"
+        },
+        {
+          "id": "d",
+          "label": "The bus stop",
+          "weights": {
+            "lastseen": 2,
+            "reward": 1
+          },
+          "image": "/images/questions/role-busstop.jpg",
+          "alt": "A bus stop shelter"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the poster.",
+      "helper": "Across: facts or feelings. Up: private or public.",
+      "x": {
+        "low": {
+          "label": "Facts",
+          "trait": "description"
+        },
+        "high": {
+          "label": "Feelings",
+          "trait": "quirk"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Private",
+          "trait": "contact"
+        },
+        "high": {
+          "label": "Public",
+          "trait": "reward"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Precise Notice",
+        "lowHigh": "The £20 Reward",
+        "highLow": "The Odd Detail",
+        "highHigh": "The Local Legend"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what the poster needs.",
+      "helper": "First place is what you'd fix first.",
+      "items": [
+        {
+          "id": "place",
+          "label": "The last place seen",
+          "weights": {
+            "lastseen": 2,
+            "description": 1
+          }
+        },
+        {
+          "id": "photo",
+          "label": "A decent photo",
+          "weights": {
+            "photo": 2,
+            "quirk": 1
+          }
+        },
+        {
+          "id": "reward",
+          "label": "A reward",
+          "weights": {
+            "reward": 2,
+            "contact": 1
+          }
+        },
+        {
+          "id": "number",
+          "label": "A phone number that works",
+          "weights": {
+            "contact": 2,
+            "lastseen": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The middle of the poster.",
+      "helper": "Two gaps. Keep it factual.",
+      "template": "Last seen {a}, wearing {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "at the corner shop",
+              "weights": {
+                "lastseen": 2,
+                "description": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "wandering off mid-sentence",
+              "weights": {
+                "quirk": 2,
+                "photo": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "with the dog",
+              "weights": {
+                "quirk": 2,
+                "reward": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "on the 14 bus",
+              "weights": {
+                "lastseen": 2,
+                "contact": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "the grey coat",
+              "weights": {
+                "description": 2,
+                "photo": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "headphones, probably",
+              "weights": {
+                "quirk": 2,
+                "contact": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "something nobody would describe twice",
+              "weights": {
+                "photo": 2,
+                "reward": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "that hat",
+              "weights": {
+                "reward": 2,
+                "description": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd be described by my habits, not my height.",
+      "trait": "quirk",
+      "low": "Height, obviously",
+      "high": "The dog thing, probably"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "A reward is basically a compliment.",
+      "disagree": {
+        "trait": "description"
+      },
+      "agree": {
+        "trait": "reward"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Someone would notice I was gone within a day.",
+      "agree": {
+        "trait": "contact",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "lastseen",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The photo they'd choose:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The one from your ID",
+          "weights": {
+            "description": 2,
+            "photo": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A group shot where you're half out of frame",
+          "weights": {
+            "photo": 2,
+            "quirk": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "One from 2014, for some reason",
+          "weights": {
+            "lastseen": 2,
+            "reward": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A selfie you'd hate",
+          "weights": {
+            "quirk": 2,
+            "contact": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last line of the poster:",
+      "options": [
+        {
+          "id": "a",
+          "label": "If seen, do not approach",
+          "weights": {
+            "quirk": 2,
+            "contact": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Please call, they'll be worried",
+          "weights": {
+            "contact": 2,
+            "reward": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Reward: a pint and a favour",
+          "weights": {
+            "reward": 2,
+            "description": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Last seen heading home",
+          "weights": {
+            "lastseen": 2,
+            "photo": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "lastseen",
+      "name": "Last Seen: The Details",
+      "tagline": "Wearing the grey coat, probably",
+      "blurb": "Your poster would be a small masterpiece of timing: the shop, the hour, the direction of travel. Whoever wrote it would have been paying attention, and that is the most flattering thing on the page.",
+      "accent": "yellow",
+      "mix": {
+        "lastseen": 44,
+        "description": 15,
+        "quirk": 11,
+        "photo": 9,
+        "reward": 10,
+        "contact": 11
+      },
+      "strengths": [
+        "Easy to place in a story",
+        "Reliable about where they were",
+        "Gives people something to work with"
+      ],
+      "watchOut": "Being easy to describe is not the same as being known."
+    },
+    {
+      "trait": "description",
+      "name": "The Description",
+      "tagline": "Tall-ish, unremarkable, distinctive",
+      "blurb": "The poster would spend four lines on what you look like and still not capture it. You are the kind of person who is hard to pick out of a crowd and impossible to forget once you've spoken. The height would be wrong.",
+      "accent": "sky",
+      "mix": {
+        "lastseen": 13,
+        "description": 43,
+        "quirk": 12,
+        "photo": 10,
+        "reward": 10,
+        "contact": 12
+      },
+      "strengths": [
+        "Unassuming in a useful way",
+        "Reads as themselves, always",
+        "Hard to pigeonhole"
+      ],
+      "watchOut": "If nobody can describe you, nobody can find you either."
+    },
+    {
+      "trait": "quirk",
+      "name": "The Distinguishing Feature",
+      "tagline": "Would stop to pet any dog",
+      "blurb": "Your poster would not mention your face at all; it would mention the thing you always do. The dog, the headphones, the way you apologise to furniture. That is the detail somebody would actually recognise.",
+      "accent": "green",
+      "mix": {
+        "lastseen": 12,
+        "description": 11,
+        "quirk": 45,
+        "photo": 9,
+        "reward": 11,
+        "contact": 12
+      },
+      "strengths": [
+        "Memorable in the smallest ways",
+        "Instantly recognisable to friends",
+        "Genuinely themselves"
+      ],
+      "watchOut": "A quirk is not a whole person. Let people know the rest too."
+    },
+    {
+      "trait": "photo",
+      "name": "The Photo Problem",
+      "tagline": "The only one anyone had",
+      "blurb": "Your poster would run with a photo from 2016 because it is the only one where you look normal. Nobody would agree on which one to use, and that disagreement would delay the poster by a day.",
+      "accent": "purple",
+      "mix": {
+        "lastseen": 9,
+        "description": 12,
+        "quirk": 10,
+        "photo": 46,
+        "reward": 9,
+        "contact": 14
+      },
+      "strengths": [
+        "Photogenic when unprepared",
+        "Has a good photo somewhere",
+        "Recognisable in the right light"
+      ],
+      "watchOut": "Let someone take a photo of you. Properly. Once."
+    },
+    {
+      "trait": "reward",
+      "name": "The Reward",
+      "tagline": "£20 and a favour",
+      "blurb": "You would be the poster with the funny reward. Not because you are worth £20, but because your friends would think it was a good idea at 11pm. It would work, which is the alarming part.",
+      "accent": "orange",
+      "mix": {
+        "lastseen": 10,
+        "description": 11,
+        "quirk": 12,
+        "photo": 8,
+        "reward": 45,
+        "contact": 14
+      },
+      "strengths": [
+        "Motivates people with humour",
+        "Knows how to ask for help",
+        "Surrounded by people who'd try"
+      ],
+      "watchOut": "You don't have to pay people to care. Most already do."
+    },
+    {
+      "trait": "contact",
+      "name": "The Contact Line",
+      "tagline": "Call his sister, not him",
+      "blurb": "Your poster would have somebody else's number on it, because that is how your life works. You are very good at being reachable and terrible at being the one who answers. The person taking the calls would do it well.",
+      "accent": "red",
+      "mix": {
+        "lastseen": 12,
+        "description": 13,
+        "quirk": 11,
+        "photo": 10,
+        "reward": 10,
+        "contact": 44
+      },
+      "strengths": [
+        "Builds a network without noticing",
+        "Trusted with the important number",
+        "Not hard to find, actually"
+      ],
+      "watchOut": "Be the one who picks up occasionally. It matters."
+    }
+  ]
+}

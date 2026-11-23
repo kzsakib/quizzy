@@ -1,0 +1,554 @@
+{
+  "slug": "last-dinner",
+  "title": "The last dinner party, and what you'd bring",
+  "dek": "Twelve questions about the final meal, the final guest list, and who ends up doing the washing up.",
+  "category": "Food",
+  "accent": "orange",
+  "emoji": "🕯️",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The last meal on earth is one table. You're bringing:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A roast big enough for everyone",
+          "weights": {
+            "roast": 2,
+            "bread": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Bread you made this morning",
+          "weights": {
+            "bread": 2,
+            "garden": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The tins nobody else thought of",
+          "weights": {
+            "tinned": 2,
+            "takeaway": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The last bottle, opened",
+          "weights": {
+            "wine": 2,
+            "roast": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Twelve guests, one oven. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Start cooking at 6am",
+          "weights": {
+            "roast": 2,
+            "wine": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Bring things that don't need heat",
+          "weights": {
+            "tinned": 2,
+            "bread": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Pick whatever's still in the garden",
+          "weights": {
+            "garden": 2,
+            "tinned": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Order one enormous takeaway",
+          "weights": {
+            "takeaway": 2,
+            "bread": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Your contribution is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cooked from scratch",
+          "weights": {
+            "roast": 2,
+            "garden": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Opened with a knife",
+          "weights": {
+            "tinned": 2,
+            "wine": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your contribution, pictured.",
+      "options": [
+        {
+          "id": "a",
+          "label": "A table set properly",
+          "weights": {
+            "roast": 2,
+            "wine": 1
+          },
+          "image": "/images/questions/dinner-table.jpg",
+          "alt": "A formal table setting"
+        },
+        {
+          "id": "b",
+          "label": "A basket of bread",
+          "weights": {
+            "bread": 2,
+            "garden": 1
+          },
+          "image": "/images/questions/dinner-bread.jpg",
+          "alt": "A basket of bread rolls"
+        },
+        {
+          "id": "c",
+          "label": "A shelf of tins",
+          "weights": {
+            "tinned": 2,
+            "takeaway": 1
+          },
+          "image": "/images/questions/dinner-tins.jpg",
+          "alt": "Tins stacked on a shelf"
+        },
+        {
+          "id": "d",
+          "label": "Candles somebody found",
+          "weights": {
+            "wine": 2,
+            "roast": 1
+          },
+          "image": "/images/questions/dinner-candles.jpg",
+          "alt": "Lit candles on a table"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the last table.",
+      "helper": "Across: cooked or opened. Up: garden or shop.",
+      "x": {
+        "low": {
+          "label": "Cooked",
+          "trait": "roast"
+        },
+        "high": {
+          "label": "Opened",
+          "trait": "tinned"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "From the garden",
+          "trait": "garden"
+        },
+        "high": {
+          "label": "From the shop",
+          "trait": "takeaway"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Kitchen Garden",
+        "lowHigh": "The Big Shop",
+        "highLow": "The Long Roast",
+        "highHigh": "The Last Takeaway"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the last table's essentials.",
+      "helper": "First place is what you'd save from the fire.",
+      "items": [
+        {
+          "id": "roast",
+          "label": "One proper roast",
+          "weights": {
+            "roast": 2,
+            "bread": 1
+          }
+        },
+        {
+          "id": "bread",
+          "label": "Bread and salt",
+          "weights": {
+            "bread": 2,
+            "garden": 1
+          }
+        },
+        {
+          "id": "pickle",
+          "label": "Something pickled",
+          "weights": {
+            "tinned": 2,
+            "wine": 1
+          }
+        },
+        {
+          "id": "bottle",
+          "label": "A bottle worth opening",
+          "weights": {
+            "wine": 2,
+            "takeaway": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your announcement at the door.",
+      "helper": "Two gaps. Say it with the dish in your hands.",
+      "template": "Here's what I'm bringing: {a}, and {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a roast with too much gravy",
+              "weights": {
+                "roast": 2,
+                "wine": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "bread still warm",
+              "weights": {
+                "bread": 2,
+                "garden": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "every tin in the cupboard",
+              "weights": {
+                "tinned": 2,
+                "takeaway": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a bottle older than me",
+              "weights": {
+                "wine": 2,
+                "roast": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "a salad from the garden",
+              "weights": {
+                "garden": 2,
+                "bread": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "a takeaway order nobody agreed to",
+              "weights": {
+                "takeaway": 2,
+                "tinned": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "candles, for some reason",
+              "weights": {
+                "wine": 2,
+                "garden": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "enough for the neighbours",
+              "weights": {
+                "roast": 2,
+                "bread": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather feed people than impress them.",
+      "trait": "roast",
+      "low": "Impress, obviously",
+      "high": "Feed them, always"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "A tin is not a compromise.",
+      "disagree": {
+        "trait": "garden"
+      },
+      "agree": {
+        "trait": "tinned"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The last meal should come out of one pot.",
+      "agree": {
+        "trait": "roast",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "takeaway",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The washing up, at the end of the world:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Done properly, by me",
+          "weights": {
+            "roast": 2,
+            "garden": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Someone else's problem",
+          "weights": {
+            "takeaway": 2,
+            "wine": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Left in the sink",
+          "weights": {
+            "tinned": 2,
+            "bread": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Burned in a bin, ceremonially",
+          "weights": {
+            "wine": 2,
+            "takeaway": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last thing on the table:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A second helping",
+          "weights": {
+            "roast": 2,
+            "bread": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A jar of something homemade",
+          "weights": {
+            "tinned": 2,
+            "garden": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The empty bottle",
+          "weights": {
+            "wine": 2,
+            "takeaway": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A dog under the table",
+          "weights": {
+            "garden": 2,
+            "roast": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "roast",
+      "name": "The Roast",
+      "tagline": "One big table, one big bird",
+      "blurb": "You would cook for eleven hours and then apologise for the gravy. The table would be too small. Somebody would have to sit on a cooler. It would be the best meal anyone there had ever had, and you would not sit down until it was over.",
+      "accent": "orange",
+      "mix": {
+        "roast": 45,
+        "bread": 12,
+        "tinned": 8,
+        "garden": 11,
+        "wine": 13,
+        "takeaway": 11
+      },
+      "strengths": [
+        "Feeds people without being asked",
+        "Timing under pressure",
+        "Gravy as a love language"
+      ],
+      "watchOut": "Sit down at your own party. Eat something warm."
+    },
+    {
+      "trait": "bread",
+      "name": "The Bread",
+      "tagline": "Flour, water, time, done",
+      "blurb": "You would turn up with something plain and perfect that took two days of quiet work. No speech. No drama. Just bread, still warm, and a bit of salt. It would be gone in four minutes and remembered longest.",
+      "accent": "yellow",
+      "mix": {
+        "roast": 11,
+        "bread": 44,
+        "tinned": 9,
+        "garden": 13,
+        "wine": 11,
+        "takeaway": 12
+      },
+      "strengths": [
+        "Does quiet work beautifully",
+        "Simple things done properly",
+        "No drama, ever"
+      ],
+      "watchOut": "Plain is not the same as invisible. Say what you made."
+    },
+    {
+      "trait": "tinned",
+      "name": "The Tins",
+      "tagline": "Shelf-stable and unbothered",
+      "blurb": "You would be the one who planned for this. Beans, tomatoes, peaches, one mysterious tin with no label. Everyone would laugh, and then everyone would eat, and you would be quietly correct for the rest of the evening.",
+      "accent": "green",
+      "mix": {
+        "roast": 8,
+        "bread": 10,
+        "tinned": 46,
+        "garden": 12,
+        "wine": 11,
+        "takeaway": 13
+      },
+      "strengths": [
+        "Prepared when it matters",
+        "Practical to the last",
+        "Finds abundance in a cupboard"
+      ],
+      "watchOut": "Not everything needs a backup plan. Let someone else provide the luxury."
+    },
+    {
+      "trait": "garden",
+      "name": "The Garden",
+      "tagline": "Whatever survived the winter",
+      "blurb": "Your dish would come out of the ground that morning, dirt still on it, and it would taste like the place. You would not describe it as seasonal. You would just put it on the table and let everyone work it out.",
+      "accent": "lime",
+      "mix": {
+        "roast": 12,
+        "bread": 13,
+        "tinned": 11,
+        "garden": 44,
+        "wine": 10,
+        "takeaway": 10
+      },
+      "strengths": [
+        "Grows things slowly and well",
+        "Grounded in the actual world",
+        "Quietly generous"
+      ],
+      "watchOut": "Some people need more than vegetables. Add the butter."
+    },
+    {
+      "trait": "wine",
+      "name": "The Last Bottle",
+      "tagline": "Corked, obviously, but we drank it",
+      "blurb": "You would arrive with the bottle you had been saving for an occasion that never came. It would be slightly past its best and absolutely the right choice. You would open it before the food and nobody would object.",
+      "accent": "red",
+      "mix": {
+        "roast": 11,
+        "bread": 9,
+        "tinned": 10,
+        "garden": 10,
+        "wine": 47,
+        "takeaway": 13
+      },
+      "strengths": [
+        "Knows how to mark an ending",
+        "Generous with the good stuff",
+        "Makes an ordinary night matter"
+      ],
+      "watchOut": "The occasion is now. Stop saving things."
+    },
+    {
+      "trait": "takeaway",
+      "name": "The Last Takeaway",
+      "tagline": "One enormous order, no cutlery",
+      "blurb": "You would call in the biggest order any of those kitchens had ever taken. No washing up, no seating plan, everybody eating out of cartons in the garden. Chaos, briefly perfect, and entirely your idea.",
+      "accent": "sky",
+      "mix": {
+        "roast": 9,
+        "bread": 10,
+        "tinned": 12,
+        "garden": 10,
+        "wine": 12,
+        "takeaway": 47
+      },
+      "strengths": [
+        "Solves the impossible fast",
+        "Includes everyone without a fuss",
+        "Knows when the plan doesn't matter"
+      ],
+      "watchOut": "Convenience can hide the point. Add one thing you made yourself."
+    }
+  ]
+}
