@@ -17,7 +17,7 @@ import { mkdir, readFile, readdir, unlink, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { questionTraits } from "../../src/lib/scoring.ts";
-import { buildIdeasPrompt, buildQuizPrompt, buildRepairPrompt } from "./prompt.mjs";
+import { SEED_TOPICS, buildIdeasPrompt, buildQuizPrompt, buildRepairPrompt } from "./prompt.mjs";
 import { askModel, askStub } from "./providers.mjs";
 import { research, researchLine } from "./research.mjs";
 import { readCredits, writeCredits, sourceImage } from "./images.mjs";
@@ -463,9 +463,13 @@ async function main() {
   }
 
   if (!ideas.length) {
-    log("no ideas produced — aborting without publishing");
-    process.exitCode = 1;
-    return;
+    // Models can all be down; a topic from the seed bank is still writable.
+    log("no ideas from any model — falling back to the seed bank");
+    ideas = SEED_TOPICS.slice(0, count + 2).map((seed) => ({
+      topic: seed.split(" (")[0],
+      category: "Life",
+      angle: seed,
+    }));
   }
 
   const credits = await readCredits();
@@ -476,10 +480,11 @@ async function main() {
   for (const idea of ideas.slice(0, count + 2)) {
     if (created.length >= count) break;
 
-    const workingTitle = String(idea.title ?? idea.topic ?? "").trim();
-    const slug = slugify(idea.slug || workingTitle);
-    if (!workingTitle || existing.slugs.has(slug)) {
-      log(`skip idea "${workingTitle}" (empty or duplicate slug)`);
+    const workingTitle = String(idea.title ?? "").trim();
+    const slugSource = String(idea.slug || idea.topic || workingTitle).trim();
+    const slug = slugify(slugSource);
+    if (!slugSource || existing.slugs.has(slug)) {
+      log(`skip idea "${slugSource || workingTitle}" (empty or duplicate slug)`);
       continue;
     }
 

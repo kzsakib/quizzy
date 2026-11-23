@@ -66,8 +66,9 @@ async function askGemini(prompt) {
       } catch (error) {
         lastError = error;
         if (error.status === 404) break; // wrong model name, try the next
-        if (error.status === 429 || error.status >= 500) {
-          await sleep(15_000 * (attempt + 1));
+        if (error.status === 429) break; // quota is per model; jump to the next one
+        if (error.status >= 500) {
+          await sleep(5_000);
           continue;
         }
         break;
@@ -77,24 +78,28 @@ async function askGemini(prompt) {
   throw lastError ?? new Error("Gemini failed");
 }
 
+/** Chat models only, best first. Groq's catalogue also lists audio models. */
 const GROQ_PREFERRED = [
   "llama-3.3-70b-versatile",
+  "openai/gpt-oss-120b",
+  "openai/gpt-oss-20b",
   "moonshotai/kimi-k2-instruct",
-  "llama-3.1-8b-instant",
   "qwen/qwen3-32b",
+  "llama-3.1-8b-instant",
 ];
+const GROQ_NOT_CHAT = /whisper|tts|guard|embed|vision|prompt-?guard|distil/i;
 
 async function groqModel(key) {
-  try {
-    const response = await fetch("https://api.groq.com/openai/v1/models", {
-      headers: { authorization: `Bearer ${key}` },
-    });
-    if (!response.ok) return GROQ_PREFERRED[0];
-    const ids = (await response.json()).data?.map((model) => model.id) ?? [];
-    return GROQ_PREFERRED.find((id) => ids.includes(id)) ?? ids[0] ?? GROQ_PREFERRED[0];
-  } catch {
-    return GROQ_PREFERRED[0];
-  }
+  const payload = await getJson("https://api.groq.com/openai/v1/models", {
+    authorization: `Bearer ${key}`,
+  });
+  const ids = payload?.data?.map((model) => model.id) ?? [];
+  const chat = ids.filter((id) => !GROQ_NOT_CHAT.test(id));
+  return (
+    GROQ_PREFERRED.find((id) => chat.includes(id)) ??
+    chat.find((id) => /llama|qwen|kimi|gpt-oss|mixtral/i.test(id)) ??
+    GROQ_PREFERRED[0]
+  );
 }
 
 async function askGroq(prompt) {
@@ -103,14 +108,15 @@ async function askGroq(prompt) {
   const model = process.env.GROQ_MODEL || (await groqModel(key));
 
   let lastError;
-  for (let attempt = 0; attempt < 2; attempt += 1) {
+  let maxTokens = 4096;
+  for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
       const payload = await postJson(
         "https://api.groq.com/openai/v1/chat/completions",
         {
           model,
           temperature: 0.9,
-          max_tokens: 8000,
+          max_tokens: maxTokens,
           response_format: { type: "json_object" },
           messages: [{ role: "user", content: prompt }],
         },
@@ -121,8 +127,13 @@ async function askGroq(prompt) {
       return { text, provider: `groq:${model}` };
     } catch (error) {
       lastError = error;
+      // Some models cap max_tokens far lower than the advertised context.
+      if (error.status === 400 && /max_tokens/i.test(error.message) && maxTokens > 512) {
+        maxTokens = 512;
+        continue;
+      }
       if (error.status === 429 || error.status >= 500) {
-        await sleep(12_000 * (attempt + 1));
+        await sleep(8_000);
         continue;
       }
       break;
@@ -131,12 +142,96 @@ async function askGroq(prompt) {
   throw lastError ?? new Error("Groq failed");
 }
 
+/**
+ * GitHub Models: free for the repo, authenticated with the workflow's own
+ * GITHUB_TOKEN (needs `models: read`). No user key involved.
+ */
+const GH_MODELS = [
+  "openai/gpt-4o-mini",
+  "openai/gpt-4.1-mini",
+  "openai/gpt-4.1",
+  "openai/gpt-4o",
+  "meta/Llama-4-Scout-17B-16E-Instruct",
+];
+const GH_NOT_CHAT = /embed|whisper|tts|guard/i;
+
+async function getJson(url, headers, ms = 10_000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), ms);
+  try {
+    const response = await fetch(url, { headers, signal: controller.signal });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch {
+    return null;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/** Ask the catalogue what is actually available; fall back to the shortlist. */
+async function githubModelList(token) {
+  const payload = await getJson("https://models.github.ai/catalog/models", {
+    authorization: `Bearer ${token}`,
+  });
+  const list = Array.isArray(payload) ? payload : payload?.data ?? [];
+  const ids = list
+    .map((model) => model?.id)
+    .filter((id) => typeof id === "string" && !GH_NOT_CHAT.test(id));
+  if (!ids.length) return GH_MODELS;
+  const preferred = GH_MODELS.filter((id) => ids.includes(id));
+  const extras = ids.filter((id) => /gpt-4|gpt-5|llama|mistral|phi/i.test(id)).slice(0, 4);
+  return [...new Set([...preferred, ...extras, ...GH_MODELS])].slice(0, 5);
+}
+
+async function askGithubModels(prompt) {
+  const token = process.env.GITHUB_MODELS_TOKEN || process.env.GITHUB_TOKEN;
+  if (!token) throw new Error("GITHUB_MODELS_TOKEN not set");
+
+  const models = [
+    process.env.GH_MODELS_MODEL,
+    ...(await githubModelList(token)),
+  ].filter(Boolean);
+  let lastError;
+  for (const model of [...new Set(models)]) {
+    try {
+      const payload = await postJson(
+        "https://models.github.ai/inference/chat/completions",
+        {
+          model,
+          temperature: 0.9,
+          max_tokens: 4096,
+          response_format: { type: "json_object" },
+          messages: [{ role: "user", content: prompt }],
+        },
+        { authorization: `Bearer ${token}` },
+      );
+      const text = payload?.choices?.[0]?.message?.content ?? "";
+      if (!text) throw new Error("empty GitHub Models response");
+      return { text, provider: `github:${model}` };
+    } catch (error) {
+      lastError = error;
+      if (error.status === 401 || error.status === 403) break;
+      if (error.status === 404) continue;
+      if (error.status === 429 || error.status >= 500) {
+        await sleep(5_000);
+        continue;
+      }
+      break;
+    }
+  }
+  throw lastError ?? new Error("GitHub Models failed");
+}
+
 /** Ask whichever provider is configured. Gemini first, Groq on any failure. */
 export async function askModel(prompt) {
   const attempts = [];
   if (process.env.GEMINI_API_KEY) attempts.push(askGemini);
   if (process.env.GROQ_API_KEY) attempts.push(askGroq);
-  if (!attempts.length) throw new Error("No model key: set GEMINI_API_KEY or GROQ_API_KEY");
+  if (process.env.GITHUB_MODELS_TOKEN || process.env.GITHUB_TOKEN) {
+    attempts.push(askGithubModels);
+  }
+  if (!attempts.length) throw new Error("No model configured");
 
   let lastError;
   for (const attempt of attempts) {

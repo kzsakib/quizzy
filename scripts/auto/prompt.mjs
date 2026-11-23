@@ -159,7 +159,7 @@ export function buildQuizPrompt({ idea, existingTitles, imageCredits }) {
   return `Write one complete QUIZZY personality quiz as JSON.
 
 TOPIC: ${idea.topic}
-WORKING TITLE: ${idea.title}
+WORKING TITLE: ${idea.title?.trim() || "(none yet — invent one, max 62 characters, never naming an outcome)"}
 CATEGORY: ${idea.category}
 ANGLE: ${idea.angle}
 

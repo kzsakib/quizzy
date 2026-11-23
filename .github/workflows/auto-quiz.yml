@@ -16,6 +16,8 @@ on:
 permissions:
   contents: write
   actions: write
+  # Free GitHub Models inference, used as the last-resort provider.
+  models: read
 
 concurrency:
   group: auto-quiz
@@ -42,6 +44,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GITHUB_MODELS_TOKEN: ${{ github.token }}
           COUNT: ${{ github.event.inputs.count || '3' }}
           FORCE: ${{ github.event_name == 'workflow_dispatch' && (github.event.inputs.force || 'true') || 'false' }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
