@@ -94,7 +94,7 @@ q3  "this_or_that" 2 options, 2 weights each.
 q4  "image"       4 options. Each option needs "imageSearch" (a short 2-4 word English phrase for a REAL photograph that could illustrate it) and "alt" (a plain description of the photo). Do NOT invent image filenames.
 q5  "map"         Two axes. x.low/x.high and y.low/y.high each have {label, trait}. Plus quadrants {lowLow, lowHigh, highLow, highHigh} with playful names.
 q6  "rank"        4 items, each {id, label, weights}.
-q7  "madlibs"     2 blanks, each with 3-4 options {id, label, weights}. The template uses {blankId} placeholders exactly matching the blank ids.
+q7  "madlibs"     2 blanks with ids "a" and "b", each with 3-4 options {id, label, weights}. The template MUST contain both placeholders exactly once, e.g. "Most mornings I {a}, and by evening I {b}."
 q8  "intensity"   {trait, low, high} for a 1-5 "how much is this you" statement.
 q9  "spectrum"    {disagree:{trait}, agree:{trait}} for a 0-100% agreement statement.
 q10 "agreement"   5-point agree/disagree, {agree:{trait,weight}, disagree:{trait,weight}}.
@@ -192,5 +192,5 @@ Here is the JSON you produced:
 
 ${trimmed}
 
-Fix every listed error and return the complete corrected JSON object only. Keep the parts that already passed. Do not change the topic or the slug unless the error says to.`;
+Fix every listed error and return the complete corrected JSON object only. Keep the parts that already passed. Do not change the topic or the slug unless the error says to. Reminders: exactly 12 questions and 6 results; every madlibs template needs its {a} and {b} placeholders; accent names must be one of yellow, pink, sky, red, green, purple, orange, blue.`;
 }

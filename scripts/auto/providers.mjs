@@ -94,10 +94,14 @@ async function askGemini(prompt) {
 
 /** Chat models only, best first. Groq's catalogue also lists audio models. */
 const GROQ_PREFERRED = [
+  // Non-reasoning models first: reasoning tokens eat the output budget and
+  // truncate the quiz JSON mid-array.
+  "meta-llama/llama-4-maverick-17b-128e-instruct",
+  "meta-llama/llama-4-scout-17b-16e-instruct",
   "llama-3.3-70b-versatile",
+  "moonshotai/kimi-k2-instruct",
   "openai/gpt-oss-120b",
   "openai/gpt-oss-20b",
-  "moonshotai/kimi-k2-instruct",
   "qwen/qwen3-32b",
   "llama-3.1-8b-instant",
 ];

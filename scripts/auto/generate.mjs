@@ -39,7 +39,7 @@ const flag = (name, fallback) => {
 const has = (name) => args.includes(`--${name}`);
 
 const count = Math.max(1, Math.min(5, Number(flag("count", process.env.COUNT || 3))));
-const force = flag("force", process.env.FORCE ?? "false") === "true";
+const force = has("force") || flag("force", process.env.FORCE ?? "false") === "true";
 const stub = has("stub");
 
 const today = new Date().toISOString().slice(0, 10);
@@ -110,7 +110,9 @@ function validateQuiz(quiz, existing, accents) {
   need(typeof quiz.category === "string" && quiz.category.trim().length > 1, "missing category");
   need(typeof quiz.emoji === "string" && quiz.emoji.trim().length > 0, "missing emoji");
   need(Number.isFinite(quiz.minutes) && quiz.minutes >= 3 && quiz.minutes <= 6, "minutes must be 3-6");
-  need(accents.includes(quiz.accent), `accent "${quiz.accent}" is not one used on the site`);
+  // Accent names are normalised in cleanQuiz (gold → yellow), so only the
+  // presence of a colour matters here.
+  need(typeof quiz.accent === "string" && quiz.accent.length > 1, "missing accent");
 
   const slug = slugify(quiz.slug || quiz.title);
   need(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) && slug.length >= 6, "slug must be kebab-case, 6+ chars");
@@ -145,7 +147,7 @@ function validateQuiz(quiz, existing, accents) {
     need(typeof result.blurb === "string" && result.blurb.length >= 120, `result ${result.trait}: blurb too short`);
     need(Array.isArray(result.strengths) && result.strengths.length === 3, `result ${result.trait}: need 3 strengths`);
     need(typeof result.watchOut === "string" && result.watchOut.length >= 20, `result ${result.trait}: missing watchOut`);
-    need(accents.includes(result.accent), `result ${result.trait}: bad accent "${result.accent}"`);
+    need(typeof result.accent === "string" && result.accent.length > 1, `result ${result.trait}: missing accent`);
 
   }
 
@@ -186,7 +188,7 @@ function validateQuiz(quiz, existing, accents) {
     if (ids.has(question.id)) errors.push(`duplicate question id ${question.id}`);
     ids.add(question.id);
     typeCount[question.type] = (typeCount[question.type] ?? 0) + 1;
-    if (!question.prompt || String(question.prompt).length > 120) {
+    if (!question.prompt || String(question.prompt).length > 150) {
       errors.push(`${question.id}: prompt missing or too long`);
     }
 
@@ -291,6 +293,33 @@ function validateQuiz(quiz, existing, accents) {
 
 const LETTER_IDS = ["a", "b", "c", "d", "e", "f"];
 
+/** Models invent colour names; map them onto the tokens the site actually has. */
+const ACCENT_ALIASES = {
+  gold: "yellow",
+  amber: "orange",
+  teal: "sky",
+  cyan: "sky",
+  blue: "sky",
+  navy: "purple",
+  violet: "purple",
+  lavender: "purple",
+  crimson: "red",
+  scarlet: "red",
+  lime: "green",
+  olive: "green",
+  rose: "pink",
+  magenta: "pink",
+  coral: "orange",
+};
+
+function pickAccent(value, allowed) {
+  const key = String(value ?? "").toLowerCase().trim();
+  if (allowed.includes(key)) return key;
+  const alias = ACCENT_ALIASES[key];
+  if (alias && allowed.includes(alias)) return alias;
+  return allowed.includes("yellow") ? "yellow" : allowed[0];
+}
+
 /** Rename {gap} placeholders to the blank ids when the counts line up. */
 function remapTemplate(template, blanks) {
   const gaps = [...template.matchAll(/\{(\w+)\}/g)].map((match) => match[1]);
@@ -300,7 +329,7 @@ function remapTemplate(template, blanks) {
   return template.replace(/\{\w+\}/g, () => `{${blanks[index++].id}}`);
 }
 
-function cleanQuiz(quiz, slug) {
+function cleanQuiz(quiz, slug, accents) {
   const traits = quiz.results.map((result) => result.trait);
   const questions = quiz.questions.map((question, questionIndex) => {
     const base = {
@@ -361,7 +390,7 @@ function cleanQuiz(quiz, slug) {
     title: String(quiz.title).trim(),
     dek: String(quiz.dek).trim(),
     category: String(quiz.category).trim(),
-    accent: quiz.accent,
+    accent: pickAccent(quiz.accent, accents),
     emoji: quiz.emoji,
     minutes: Math.round(Number(quiz.minutes)),
     published: today,
@@ -374,7 +403,7 @@ function cleanQuiz(quiz, slug) {
       name: String(result.name).trim(),
       tagline: String(result.tagline).trim(),
       blurb: String(result.blurb).trim(),
-      accent: result.accent,
+      accent: pickAccent(result.accent, accents),
       // Signature distribution is mechanical: the result's own trait at 45 and
       // the other five at 11. Deterministic, always exactly 100, and it removes
       // a whole class of model arithmetic mistakes.
@@ -552,7 +581,7 @@ async function main() {
       continue;
     }
 
-    const cleaned = cleanQuiz(quiz, slug);
+    const cleaned = cleanQuiz(quiz, slug, existing.accents);
     try {
       const withImages = await attachImages(cleaned, credits, usedFiles);
       const finalErrors = validateQuiz(withImages.quiz, existing, existing.accents);
