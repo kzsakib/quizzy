@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-23T21:54:24.173Z",
+  "count": 1,
+  "created": [
+    {
+      "slug": "bangladesh-street-vibes",
+      "title": "Which Dhaka Street Vendor Matches Your Life Pace",
+      "category": "Culture",
+      "topic": "Bangladesh street vibes",
+      "images": 1
+    }
+  ],
+  "failed": [
+    {
+      "title": "If You Had a Useless Superpower, Which Would It Be?",
+      "errors": [
+        "need exactly 12 questions (got 7)",
+        "need exactly 6 results (got 5)"
+      ]
+    },
+    {
+      "title": "What 2010s Internet Nostalgia Trend Defines Your Social Style",
+      "errors": [
+        "result meme: mix sums to 90, not 100",
+        "result playlist: mix sums to 90, not 100",
+        "q7: mc needs 4 options",
+        "q10: mc needs 4 options",
+        "q11: mc needs 4 options",
+        "q12: unknown type \"open\""
+      ]
+    },
+    {
+      "title": "Which Mythic Greek Creature Runs Your Household?",
+      "errors": [
+        "need exactly 12 questions (got 5)",
+        "need exactly 6 results (got 5)"
+      ]
+    },
+    {
+      "title": "Your Ideal Road‑Trip Co‑Passenger From Pop‑Culture Classics",
+      "errors": [
+        "q1: prompt missing or too long",
+        "q2: prompt missing or too long",
+        "q3: prompt missing or too long",
+        "q4: prompt missing or too long",
+        "q5: prompt missing or too long",
+        "q6: prompt missing or too long"
+      ]
+    }
+  ]
+}

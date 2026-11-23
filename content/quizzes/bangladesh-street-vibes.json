@@ -1,0 +1,507 @@
+{
+  "slug": "bangladesh-street-vibes",
+  "title": "Which Dhaka Street Vendor Matches Your Life Pace",
+  "dek": "Answer twelve quick scenarios about mornings, traffic, rain and tea to see which bustling corner of Dhaka mirrors your rhythm.",
+  "category": "Culture",
+  "accent": "yellow",
+  "emoji": "🛺",
+  "minutes": 4,
+  "published": "2026-11-23",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "How do you start your day?",
+      "options": [
+        {
+          "label": "Wake up at 4 am for the first train",
+          "weights": {
+            "chai": 2,
+            "rick": 1
+          }
+        },
+        {
+          "label": "Leave the house as soon as the sun hits the road",
+          "weights": {
+            "rick": 2,
+            "cricket": 1
+          }
+        },
+        {
+          "label": "Check the weather app before stepping out",
+          "weights": {
+            "monsoon": 2,
+            "poet": 1
+          }
+        },
+        {
+          "label": "Scroll social media for the latest drama gossip",
+          "weights": {
+            "drama": 2,
+            "poet": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "What do you always carry?",
+      "options": [
+        {
+          "label": "Carry a reusable cup everywhere",
+          "weights": {
+            "chai": 2,
+            "poet": 1
+          }
+        },
+        {
+          "label": "Keep a spare tire in the backseat",
+          "weights": {
+            "rick": 2,
+            "cricket": 1
+          }
+        },
+        {
+          "label": "Always have a tarp in the trunk",
+          "weights": {
+            "monsoon": 2,
+            "drama": 1
+          }
+        },
+        {
+          "label": "Pack a notebook for spontaneous verses",
+          "weights": {
+            "poet": 2,
+            "chai": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Choose your favorite tea:",
+      "options": [
+        {
+          "label": "Strong black tea",
+          "weights": {
+            "chai": 2,
+            "poet": 1
+          }
+        },
+        {
+          "label": "Sweet milk tea",
+          "weights": {
+            "poet": 2,
+            "chai": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Pick the scene that feels most like you:",
+      "options": [
+        {
+          "label": "A rickshaw stuck in traffic",
+          "weights": {
+            "rick": 2,
+            "cricket": 1
+          },
+          "alt": "Red rickshaw jammed among cars on a narrow street",
+          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+        },
+        {
+          "label": "A tea kettle on a rooftop",
+          "weights": {
+            "poet": 2,
+            "chai": 1
+          },
+          "alt": "Red rickshaw jammed among cars on a narrow street",
+          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+        },
+        {
+          "label": "A flooded market aisle",
+          "weights": {
+            "monsoon": 2,
+            "drama": 1
+          },
+          "alt": "Red rickshaw jammed among cars on a narrow street",
+          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+        },
+        {
+          "label": "A cricket pitch under lights",
+          "weights": {
+            "cricket": 2,
+            "rick": 1
+          },
+          "alt": "Red rickshaw jammed among cars on a narrow street",
+          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Place yourself on the Dhaka life‑grid:",
+      "x": {
+        "low": {
+          "label": "Quiet mornings",
+          "trait": "chai"
+        },
+        "high": {
+          "label": "Non‑stop hustle",
+          "trait": "rick"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Dry season",
+          "trait": "cricket"
+        },
+        "high": {
+          "label": "Rain‑soaked days",
+          "trait": "monsoon"
+        }
+      },
+      "quadrants": {
+        "lowLow": "Early‑bird tea seller",
+        "lowHigh": "Monsoon market keeper",
+        "highLow": "Cricket‑field regular",
+        "highHigh": "Rickshaw driver on a downpour"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank these moments from most to least exciting:",
+      "items": [
+        {
+          "id": "i1",
+          "label": "First cup of chai",
+          "weights": {
+            "chai": 2,
+            "poet": 1
+          }
+        },
+        {
+          "id": "i2",
+          "label": "Horn honk at rush hour",
+          "weights": {
+            "rick": 2,
+            "cricket": 1
+          }
+        },
+        {
+          "id": "i3",
+          "label": "Umbrella opening in a flood",
+          "weights": {
+            "monsoon": 2,
+            "drama": 1
+          }
+        },
+        {
+          "id": "i4",
+          "label": "Stadium chant at sunset",
+          "weights": {
+            "cricket": 2,
+            "poet": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Complete the street‑scene sentence:",
+      "template": "You {blank1} while {blank2} the street.",
+      "blanks": [
+        {
+          "id": "blank1",
+          "options": [
+            {
+              "label": "sell chai to sleepy commuters",
+              "weights": {
+                "chai": 2,
+                "poet": 1
+              }
+            },
+            {
+              "label": "swerve a rickshaw around a pothole",
+              "weights": {
+                "rick": 2,
+                "cricket": 1
+              }
+            },
+            {
+              "label": "pitch a tarp over a soaked stall",
+              "weights": {
+                "monsoon": 2,
+                "drama": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "blank2",
+          "options": [
+            {
+              "label": "reciting verses to a passing child",
+              "weights": {
+                "poet": 2,
+                "chai": 1
+              }
+            },
+            {
+              "label": "cheering for a batsman on the edge",
+              "weights": {
+                "cricket": 2,
+                "rick": 1
+              }
+            },
+            {
+              "label": "negotiating spice prices with a vendor",
+              "weights": {
+                "drama": 2,
+                "monsoon": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "How intensely do you seek poetic moments?",
+      "trait": "poet",
+      "low": "1",
+      "high": "5"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Do you prefer steady traffic flow or sudden game spikes?",
+      "disagree": {
+        "trait": "rick"
+      },
+      "agree": {
+        "trait": "cricket"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Big events feel more exciting than rainy days?",
+      "agree": {
+        "trait": "drama",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "monsoon",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Which venue would you choose to unwind?",
+      "options": [
+        {
+          "label": "Prefer a tea stall over a bar",
+          "weights": {
+            "chai": 2,
+            "poet": 1
+          }
+        },
+        {
+          "label": "Enjoy weaving through traffic",
+          "weights": {
+            "rick": 2,
+            "cricket": 1
+          }
+        },
+        {
+          "label": "Love the smell of wet tarps",
+          "weights": {
+            "monsoon": 2,
+            "drama": 1
+          }
+        },
+        {
+          "label": "Stay up for late‑night matches",
+          "weights": {
+            "cricket": 2,
+            "poet": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "What’s your signature habit?",
+      "options": [
+        {
+          "label": "Always carry a spare tea bag",
+          "weights": {
+            "chai": 2,
+            "poet": 1
+          }
+        },
+        {
+          "label": "Never miss a rickshaw ride",
+          "weights": {
+            "rick": 2,
+            "cricket": 1
+          }
+        },
+        {
+          "label": "Plan outfits for monsoon festivals",
+          "weights": {
+            "monsoon": 2,
+            "drama": 1
+          }
+        },
+        {
+          "label": "Write a haiku before bed",
+          "weights": {
+            "poet": 2,
+            "chai": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "chai",
+      "name": "Early‑Morning Chai Seller",
+      "tagline": "You start before the city yawns",
+      "blurb": "You rise before the first bus, kettle in hand, greeting commuters with a steaming cup. Your schedule is measured in minutes, not hours, and you know every shortcut through the bustling streets.",
+      "accent": "orange",
+      "mix": {
+        "chai": 44,
+        "rick": 11,
+        "monsoon": 11,
+        "drama": 11,
+        "cricket": 11,
+        "poet": 12
+      },
+      "strengths": [
+        "Knows every sunrise route",
+        "Keeps calm under pressure",
+        "Shares generosity freely"
+      ],
+      "watchOut": "Don’t let your early rhythm make you miss spontaneous opportunities."
+    },
+    {
+      "trait": "rick",
+      "name": "Never‑Stopping Rickshaw Driver",
+      "tagline": "You live in the flow of traffic",
+      "blurb": "You navigate Dhaka’s arteries with a honk and a smile, weaving between buses, cyclists, and pedestrians. Your day is a continuous loop of pickups and drop‑offs, and you thrive on the constant motion.",
+      "accent": "red",
+      "mix": {
+        "rick": 45,
+        "chai": 10,
+        "monsoon": 10,
+        "drama": 10,
+        "cricket": 12,
+        "poet": 13
+      },
+      "strengths": [
+        "Reads traffic instincts",
+        "Adapts instantly",
+        "Keeps energy high"
+      ],
+      "watchOut": "Beware of burning out when the road never rests."
+    },
+    {
+      "trait": "monsoon",
+      "name": "Monsoon‑Ready Market Stall Keeper",
+      "tagline": "You sell rain‑proof optimism",
+      "blurb": "You set up before clouds gather, tarp over every crate, and a smile that outshines the drizzle. Customers trust you to keep their goods dry, and you know which alley floods first.",
+      "accent": "blue",
+      "mix": {
+        "monsoon": 43,
+        "chai": 12,
+        "rick": 11,
+        "drama": 11,
+        "cricket": 11,
+        "poet": 12
+      },
+      "strengths": [
+        "Anticipates weather shifts",
+        "Keeps stall organized",
+        "Offers calm during storms"
+      ],
+      "watchOut": "Don’t let the rain drown your enthusiasm for new ideas."
+    },
+    {
+      "trait": "drama",
+      "name": "Wedding‑Caterer Who Loves Drama",
+      "tagline": "You spice everything with flair",
+      "blurb": "You coordinate feasts that rival the biggest ceremonies, balancing spices and egos with equal skill. Your life is a series of grand entrances, dramatic reveals, and the satisfaction of a perfect plate amid chaos.",
+      "accent": "purple",
+      "mix": {
+        "drama": 44,
+        "chai": 10,
+        "rick": 12,
+        "monsoon": 10,
+        "cricket": 11,
+        "poet": 13
+      },
+      "strengths": [
+        "Handles last‑minute changes",
+        "Creates memorable moments",
+        "Manages large teams"
+      ],
+      "watchOut": "Avoid letting the drama become personal stress."
+    },
+    {
+      "trait": "cricket",
+      "name": "Cricket‑Field Fan",
+      "tagline": "You cheer louder than the crowd",
+      "blurb": "You know every player’s batting style, every ground’s quirks, and you never miss a match, rain or shine. Your weekends are spent at the field, notebook in hand, tracking scores.",
+      "accent": "green",
+      "mix": {
+        "cricket": 45,
+        "chai": 10,
+        "rick": 11,
+        "monsoon": 11,
+        "drama": 11,
+        "poet": 12
+      },
+      "strengths": [
+        "Remembers stats precisely",
+        "Stays loyal to teams",
+        "Finds joy in routine"
+      ],
+      "watchOut": "Don’t let the game eclipse other important commitments."
+    },
+    {
+      "trait": "poet",
+      "name": "Rooftop‑Tea Poet",
+      "tagline": "You find verses in steam",
+      "blurb": "You climb to the highest balcony with a kettle and a notebook, letting the city’s hum become a meter. Your tea is brewed slowly, each sip a line, each breath a stanza.",
+      "accent": "pink",
+      "mix": {
+        "poet": 46,
+        "chai": 10,
+        "rick": 10,
+        "monsoon": 11,
+        "drama": 11,
+        "cricket": 12
+      },
+      "strengths": [
+        "Creates vivid imagery",
+        "Finds beauty in mundane",
+        "Inspires others quietly"
+      ],
+      "watchOut": "Beware of getting lost in contemplation when action is needed."
+    }
+  ]
+}
