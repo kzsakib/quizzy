@@ -133,7 +133,11 @@ function pickReused(credits, option, usedFiles) {
     })
     .sort((a, b) => b.score - a.score);
 
-  return ranked[0]?.credit ?? null;
+  // A photo with no shared word has nothing to do with the option; shipping it
+  // would put a starry sky next to "leaping over a barrier". Better to fail the
+  // quiz and try another idea.
+  if (!ranked.length || ranked[0].score === 0) return null;
+  return ranked[0].credit;
 }
 
 /**
