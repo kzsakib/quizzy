@@ -101,7 +101,7 @@ q10 "agreement"   5-point agree/disagree, {agree:{trait,weight}, disagree:{trait
 q11 "mc"          4 options, 2 weights each.
 q12 "mc"          4 options, 2 weights each. This is the tiebreaker question, so its options must separate the six traits cleanly.
 
-Every option/item/blank choice must carry weights (2 for its main trait, 1 for a secondary). Never use 0 weights, never invent traits.
+Every option/item/blank choice must carry weights (2 for its main trait, 1 for a secondary). Never use 0 weights, never invent traits. Every option, rank item and madlib blank needs a short unique id (a, b, c, d …), and every {gap} in a madlibs template must use its blank's id.
 
 TRAIT COVERAGE — the hard rule. Each of the 6 traits must appear in at least 4 different questions, otherwise the quiz fails validation. Plan the coverage before writing: the map alone covers 4 traits, the spectrum/agreement/intensity cover 2-3, and the four mc questions should reach every trait at least twice more. Aim for 6-8 questions per trait so no result is decided by one answer.
 
@@ -112,12 +112,12 @@ RESULTS — 6 of them, same traits, each:
   "tagline": "One short line under the name",
   "blurb": "60-90 words, written in second person, specific to this result, no hedging",
   "accent": "one of the accent names",
-  "mix": { "trait1": 45, "trait2": 11, "trait3": 11, "trait4": 11, "trait5": 11, "trait6": 11 },
+  "mix": {},
   "strengths": ["three short lines", "no full stops needed", "each under 8 words"],
   "watchOut": "One sentence of honest advice, not a compliment"
 }
 
-The "mix" must contain all 6 traits and sum to exactly 100, with the result's own trait around 42-46 and the rest splitting the remainder.`;
+Leave "mix" as an empty object — the generator fills the signature distribution.`;
 
 export function buildIdeasPrompt({ existingTitles, categories, research, count, used }) {
   const unusedSeeds = SEED_TOPICS.filter(
@@ -167,7 +167,7 @@ ANGLE: ${idea.angle}
 HOUSE RULES
 - 12 questions, 6 results. Title max 62 characters. dek max 190 characters.
 - The title and dek must NOT reveal, hint at, or list any of the 6 outcomes. The player finds out only after submitting.
-- Tone: dry, specific, funny, a little warm. Concrete details beat adjectives.
+- Tone: dry, specific, funny, a little warm. Concrete details beat adjectives. Keep each blurb to 45-70 words and each strength under 8 words so the JSON fits.
 - Banned: "In this quiz", "Let's find out", "Are you ready", "unleash", "journey", "vibes", "literally", emoji inside text, exclamation marks in prompts.
 - Prompts are short (under 90 characters). Options are parallel in length and tone.
 - Never mention real living people or current news.

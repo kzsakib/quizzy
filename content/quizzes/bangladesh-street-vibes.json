@@ -111,8 +111,9 @@
             "rick": 2,
             "cricket": 1
           },
-          "alt": "Red rickshaw jammed among cars on a narrow street",
-          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+          "id": "a",
+          "image": "/images/questions/bangladesh-street-vibes-a.jpg",
+          "alt": "A rickshaw stuck in traffic"
         },
         {
           "label": "A tea kettle on a rooftop",
@@ -120,8 +121,9 @@
             "poet": 2,
             "chai": 1
           },
-          "alt": "Red rickshaw jammed among cars on a narrow street",
-          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+          "id": "b",
+          "image": "/images/questions/bangladesh-street-vibes-b.jpg",
+          "alt": "A tea kettle on a rooftop"
         },
         {
           "label": "A flooded market aisle",
@@ -129,8 +131,9 @@
             "monsoon": 2,
             "drama": 1
           },
-          "alt": "Red rickshaw jammed among cars on a narrow street",
-          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+          "id": "c",
+          "image": "/images/questions/bangladesh-street-vibes-c.jpg",
+          "alt": "A flooded market aisle"
         },
         {
           "label": "A cricket pitch under lights",
@@ -138,8 +141,9 @@
             "cricket": 2,
             "rick": 1
           },
-          "alt": "Red rickshaw jammed among cars on a narrow street",
-          "image": "/images/questions/bangladesh-street-vibes-undefined.jpg"
+          "id": "d",
+          "image": "/images/questions/bangladesh-street-vibes-d.jpg",
+          "alt": "A cricket pitch under lights"
         }
       ]
     },

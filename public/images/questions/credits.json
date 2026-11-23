@@ -1132,11 +1132,35 @@
     "alt": "A rooftop water tank"
   },
   {
-    "file": "/images/questions/bangladesh-street-vibes-undefined.jpg",
-    "title": "Dhaka traffic.jpg",
-    "creator": "~Pyb",
-    "license": "CC BY 2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Dhaka_traffic.jpg",
-    "alt": "Red rickshaw jammed among cars on a narrow street"
+    "file": "/images/questions/bangladesh-street-vibes-a.jpg",
+    "title": "Rickshaws Dhaka.jpg",
+    "creator": "Tony Cassidy",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rickshaws_Dhaka.jpg",
+    "alt": "A rickshaw stuck in traffic"
+  },
+  {
+    "file": "/images/questions/bangladesh-street-vibes-b.jpg",
+    "title": "Kettle.agr.jpg",
+    "creator": "ArnoldReinhold",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kettle.agr.jpg",
+    "alt": "A tea kettle on a rooftop"
+  },
+  {
+    "file": "/images/questions/bangladesh-street-vibes-c.jpg",
+    "title": "Flooded building and tree trunk in the muddy water of the Mekong in Si Phan Don, Laos, September 2019.jpg",
+    "creator": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Flooded_building_and_tree_trunk_in_the_muddy_water_of_the_Mekong_in_Si_Phan_Don%2C_Laos%2C_September_2019.jpg",
+    "alt": "A flooded market aisle"
+  },
+  {
+    "file": "/images/questions/bangladesh-street-vibes-d.jpg",
+    "title": "Sher-e-Bangla National Cricket Stadium floodlights (9).jpg",
+    "creator": "Nurunnaby Chowdhury (Hasive)",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sher-e-Bangla_National_Cricket_Stadium_floodlights_(9).jpg",
+    "alt": "A cricket pitch under lights"
   }
 ]

@@ -137,8 +137,7 @@ function validateQuiz(quiz, existing, accents) {
     need(typeof trait === "string" && /^[a-z][a-z0-9_]*$/.test(trait), `bad trait id "${trait}"`);
   }
   const traitSet = new Set(traits);
-  need(typeof quiz.tiebreaker === "string" && questions.some((q) => q.id === quiz.tiebreaker),
-    "tiebreaker must point at a real question id");
+
 
   for (const result of results) {
     need(typeof result.name === "string" && result.name.length >= 2, `result ${result.trait}: missing name`);
@@ -148,14 +147,6 @@ function validateQuiz(quiz, existing, accents) {
     need(typeof result.watchOut === "string" && result.watchOut.length >= 20, `result ${result.trait}: missing watchOut`);
     need(accents.includes(result.accent), `result ${result.trait}: bad accent "${result.accent}"`);
 
-    const mix = result.mix ?? {};
-    const mixKeys = Object.keys(mix);
-    const sum = Object.values(mix).reduce((total, value) => total + Number(value || 0), 0);
-    need(mixKeys.length === 6, `result ${result.trait}: mix must list all 6 traits`);
-    need(sum === 100, `result ${result.trait}: mix sums to ${sum}, not 100`);
-    const own = Number(mix[result.trait] ?? 0);
-    const highest = Math.max(...Object.values(mix).map(Number));
-    need(own === highest, `result ${result.trait}: its own share must be the largest in mix`);
   }
 
   for (const result of results) {
@@ -244,8 +235,10 @@ function validateQuiz(quiz, existing, accents) {
       const blanks = Array.isArray(question.blanks) ? question.blanks : [];
       const gaps = [...String(question.template ?? "").matchAll(/\{(\w+)\}/g)].map((m) => m[1]);
       const blankIds = blanks.map((blank) => blank.id);
-      if (gaps.join(",") !== blankIds.join(",")) {
-        errors.push(`${question.id}: template gaps ${gaps.join("/")} do not match blanks ${blankIds.join("/")}`);
+      // A same-count mismatch is repaired in cleanQuiz by renaming the gaps;
+      // only a different number of gaps means the question is broken.
+      if (gaps.length !== blankIds.length) {
+        errors.push(`${question.id}: template has ${gaps.length} gaps but ${blankIds.length} blanks`);
       }
       for (const blank of blanks) {
         if (!Array.isArray(blank.options) || blank.options.length < 2) {
@@ -296,14 +289,30 @@ function validateQuiz(quiz, existing, accents) {
 /* Cleanup + image attachment                                          */
 /* ------------------------------------------------------------------ */
 
+const LETTER_IDS = ["a", "b", "c", "d", "e", "f"];
+
+/** Rename {gap} placeholders to the blank ids when the counts line up. */
+function remapTemplate(template, blanks) {
+  const gaps = [...template.matchAll(/\{(\w+)\}/g)].map((match) => match[1]);
+  if (gaps.length !== blanks.length) return template;
+  if (gaps.join(",") === blanks.map((blank) => blank.id).join(",")) return template;
+  let index = 0;
+  return template.replace(/\{\w+\}/g, () => `{${blanks[index++].id}}`);
+}
+
 function cleanQuiz(quiz, slug) {
-  const questions = quiz.questions.map((question) => {
-    const base = { id: question.id, type: question.type, prompt: String(question.prompt).trim() };
+  const traits = quiz.results.map((result) => result.trait);
+  const questions = quiz.questions.map((question, questionIndex) => {
+    const base = {
+      id: String(question.id || `q${questionIndex + 1}`),
+      type: question.type,
+      prompt: String(question.prompt).trim(),
+    };
     if (question.helper) base.helper = String(question.helper).trim();
 
     if (question.type === "mc" || question.type === "this_or_that" || question.type === "image") {
-      base.options = question.options.map((option) => ({
-        id: option.id,
+      base.options = question.options.map((option, index) => ({
+        id: String(option.id || LETTER_IDS[index] || `o${index + 1}`),
         label: String(option.label).trim(),
         weights: option.weights,
         ...(option.image ? { image: option.image } : {}),
@@ -327,21 +336,22 @@ function cleanQuiz(quiz, slug) {
       base.y = question.y;
       base.quadrants = question.quadrants;
     } else if (question.type === "rank") {
-      base.items = question.items.map((item) => ({
-        id: item.id,
+      base.items = question.items.map((item, index) => ({
+        id: String(item.id || `i${index + 1}`),
         label: String(item.label).trim(),
         weights: item.weights,
       }));
     } else if (question.type === "madlibs") {
-      base.template = question.template;
-      base.blanks = question.blanks.map((blank) => ({
-        id: blank.id,
-        options: blank.options.map((option) => ({
-          id: option.id,
+      const blanks = question.blanks.map((blank, index) => ({
+        id: String(blank.id || LETTER_IDS[index] || `b${index + 1}`),
+        options: blank.options.map((option, optionIndex) => ({
+          id: String(option.id || `${LETTER_IDS[index] || index + 1}${optionIndex + 1}`),
           label: String(option.label).trim(),
           weights: option.weights,
         })),
       }));
+      base.template = remapTemplate(String(question.template ?? ""), blanks);
+      base.blanks = blanks;
     }
     return base;
   });
@@ -355,7 +365,9 @@ function cleanQuiz(quiz, slug) {
     emoji: quiz.emoji,
     minutes: Math.round(Number(quiz.minutes)),
     published: today,
-    tiebreaker: quiz.tiebreaker,
+    tiebreaker: questions.some((question) => question.id === quiz.tiebreaker)
+      ? quiz.tiebreaker
+      : questions.find((question) => question.type === "mc")?.id ?? questions[0].id,
     questions,
     results: quiz.results.map((result) => ({
       trait: result.trait,
@@ -363,8 +375,11 @@ function cleanQuiz(quiz, slug) {
       tagline: String(result.tagline).trim(),
       blurb: String(result.blurb).trim(),
       accent: result.accent,
+      // Signature distribution is mechanical: the result's own trait at 45 and
+      // the other five at 11. Deterministic, always exactly 100, and it removes
+      // a whole class of model arithmetic mistakes.
       mix: Object.fromEntries(
-        Object.entries(result.mix).map(([trait, value]) => [trait, Math.round(Number(value))]),
+        traits.map((trait) => [trait, trait === result.trait ? 45 : 11]),
       ),
       strengths: result.strengths.map((line) => String(line).trim()).slice(0, 3),
       watchOut: String(result.watchOut).trim(),
