@@ -1,9 +1,9 @@
 name: Auto quizzes
 
-# TEMP: every 5 minutes while we prove the pipeline, then back to 12-hourly.
+# Three quizzes every 12 hours; the six-hour guard stops a duplicate run.
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
     inputs:
       count:

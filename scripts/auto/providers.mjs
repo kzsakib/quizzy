@@ -120,9 +120,12 @@ async function groqModel(key) {
   );
 }
 
+let groqExhausted = false;
+
 async function askGroq(prompt) {
   const key = process.env.GROQ_API_KEY;
   if (!key) throw new Error("GROQ_API_KEY not set");
+  if (groqExhausted) throw new Error("Groq daily quota exhausted for this run");
   const model = process.env.GROQ_MODEL || (await groqModel(key));
 
   let lastError;
@@ -151,9 +154,18 @@ async function askGroq(prompt) {
     } catch (error) {
       lastError = error;
       if (error.status === 429) {
-        // Groq tells us exactly how long to wait (TPM window).
+        // A per-day cap will not clear while this run is alive; stop trying.
+        if (/tokens? per day|TPD/i.test(error.message)) {
+          groqExhausted = true;
+          throw error;
+        }
+        // Per-minute cap: Groq says exactly how long to wait.
         const match = /try again in ([\d.]+)\s*s/i.exec(error.message);
         const wait = match ? Math.ceil(Number(match[1]) * 1000) + 2_000 : 20_000;
+        if (wait > 120_000) {
+          groqExhausted = true;
+          throw error;
+        }
         console.warn(`groq rate limit, waiting ${Math.round(wait / 1000)}s`);
         await sleep(Math.min(wait, 65_000));
         continue;

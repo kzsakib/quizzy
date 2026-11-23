@@ -29,7 +29,10 @@ const LAST_RUN = path.join(AUTO_DIR, "last-run.json");
 const TOPIC_LOG = path.join(AUTO_DIR, "topics-used.json");
 
 const GUARD_HOURS = 6;
-const MAX_ATTEMPTS = 3;
+const MAX_ATTEMPTS = 2;
+// Free tiers are finite. Stop collecting new quizzes well before the job
+// timeout so whatever already validated still gets published.
+const RUN_BUDGET_MS = 12 * 60_000;
 
 const args = process.argv.slice(2);
 const flag = (name, fallback) => {
@@ -521,8 +524,14 @@ async function main() {
   const created = [];
   const failed = [];
 
+  const deadline = Date.now() + RUN_BUDGET_MS;
+
   for (const idea of ideas.slice(0, count + 2)) {
     if (created.length >= count) break;
+    if (Date.now() > deadline) {
+      log("run budget reached — publishing what validated so far");
+      break;
+    }
 
     const workingTitle = String(idea.title ?? "").trim();
     const slugSource = String(idea.slug || idea.topic || workingTitle).trim();
