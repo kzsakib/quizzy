@@ -261,3 +261,25 @@ A `content/auto/last-run.json` timestamp acts as a six-hour guard, so a
 retried/duplicated schedule cannot double-publish. `workflow_dispatch` skips
 the guard; run it from the Actions tab (or `gh workflow run auto-quiz.yml`) to
 publish immediately.
+
+### Free-tier limits (and why a run can fail)
+
+Both providers are on free tiers, so a run can run out of tokens before it has
+three quizzes. That is handled, not hidden:
+
+- **Gemini** free quota is per model per day. The generator tries
+  `gemini-2.5-flash`, its lite variants and the 2.0 models, then stops using
+  Gemini for that run.
+- **Groq** free tier allows 200k tokens/day for `openai/gpt-oss-120b` and about
+  8k tokens/minute. A per-day cap ends Groq for the run immediately instead of
+  sleeping through the retry window.
+- Three quizzes cost roughly 25–45k tokens including retries, so a normal day
+  (two runs) fits inside Groq's daily budget with room to spare.
+- When a quota is gone the job exits non-zero, publishes nothing, and the next
+  scheduled run starts with a fresh budget. A run also stops collecting after
+  12 minutes and publishes whatever already validated, at least one quiz.
+- GitHub's scheduler is best-effort: a 12-hour cron can start 5–20 minutes
+  late, and it needs the workflow file on the default branch.
+
+Never put a model key in the repository. `GEMINI_API_KEY` and `GROQ_API_KEY`
+belong in Settings → Secrets and variables → Actions.
