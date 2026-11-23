@@ -152,7 +152,8 @@ ${available}
 FRESH SIGNAL — real trending searches and quiz headlines right now. Use this ONLY as background mood. Do not write about a named person, brand or news event:
 ${research}
 
-Return ONLY JSON: {"ideas":[{"title":"...","topic":"3-6 word topic","category":"...","angle":"what the 6 outcomes will be","why":"why it works as a personality quiz"}]}`;
+Return ONLY JSON: {"ideas":[{"title":"...","topic":"3-6 word topic","category":"...","angle":"what the 6 outcomes will be","why":"why it works as a personality quiz"}]}
+Keep it compact: one line, no indentation, no code fences.`;
 }
 
 export function buildQuizPrompt({ idea, existingTitles, imageCredits }) {
@@ -178,11 +179,11 @@ ${questionsBlock}
 
 House style reference for phrasing (do not copy it, match the register): prompts like "An ordinary Tuesday goes wrong. You:", "The comfort you'd choose:", "Someone tells you no. You:". Options are specific physical or social choices, not adjectives.
 
-Write fresh material for this topic. Return ONLY the JSON object, no prose, no code fences.`;
+Write fresh material for this topic. Return ONLY the JSON object, no prose, no code fences. Use compact JSON: one line on the wire if you can, no indentation, no trailing commentary.`;
 }
 
 export function buildRepairPrompt({ previous, errors }) {
-  const trimmed = previous.length > 12000 ? previous.slice(0, 12000) : previous;
+  const trimmed = previous.length > 8000 ? `${previous.slice(0, 4500)}\n…\n${previous.slice(-3500)}` : previous;
   return `Your previous quiz JSON failed validation with these errors:
 
 ${errors.map((error) => `- ${error}`).join("\n")}

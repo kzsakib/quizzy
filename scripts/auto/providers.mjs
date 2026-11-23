@@ -88,7 +88,7 @@ async function askGemini(prompt) {
       }
     }
   }
-  if (quotaHits >= [...new Set(models)].length) geminiExhausted = true;
+  if (lastError?.status === 429) geminiExhausted = true;
   throw lastError ?? new Error("Gemini failed");
 }
 
@@ -122,19 +122,23 @@ async function askGroq(prompt) {
   const model = process.env.GROQ_MODEL || (await groqModel(key));
 
   let lastError;
-  const maxTokens = 4096;
+  const maxTokens = 5000;
   for (let attempt = 0; attempt < 4; attempt += 1) {
     try {
       // No response_format: Groq's strict JSON mode rejects valid-ish output
       // from reasoning models. parseJsonLoose handles fences and prose.
+      const body = {
+                  model,
+          temperature: 0.8,
+          max_tokens: maxTokens,
+        messages: [{ role: "user", content: prompt }],
+      };
+      // Reasoning tokens count against max_tokens; gpt-oss needs a low budget
+      // or it thinks until the JSON is truncated mid-array.
+      if (/gpt-oss/i.test(model)) body.reasoning_effort = "low";
       const payload = await postJson(
         "https://api.groq.com/openai/v1/chat/completions",
-        {
-          model,
-          temperature: 0.9,
-          max_tokens: maxTokens,
-          messages: [{ role: "user", content: prompt }],
-        },
+        body,
         { authorization: `Bearer ${key}` },
       );
       const text = payload?.choices?.[0]?.message?.content ?? "";
@@ -146,7 +150,7 @@ async function askGroq(prompt) {
         // Groq tells us exactly how long to wait (TPM window).
         const match = /try again in ([\d.]+)\s*s/i.exec(error.message);
         const wait = match ? Math.ceil(Number(match[1]) * 1000) + 2_000 : 20_000;
-        log(`groq rate limit, waiting ${Math.round(wait / 1000)}s`);
+        console.warn(`groq rate limit, waiting ${Math.round(wait / 1000)}s`);
         await sleep(Math.min(wait, 65_000));
         continue;
       }
@@ -174,46 +178,11 @@ async function getJson(url, headers, ms = 10_000) {
   }
 }
 
-/**
- * Pollinations: keyless, free, OpenAI-compatible. Rate-limited and not
- * something to rely on first, but it keeps a run alive when the configured
- * keys are out of quota.
- */
-async function askPollinations(prompt) {
-  let lastError;
-  for (let attempt = 0; attempt < 3; attempt += 1) {
-    try {
-      const payload = await postJson(
-        "https://text.pollinations.ai/openai",
-        {
-          model: process.env.POLLINATIONS_MODEL || "openai",
-          temperature: 0.9,
-          max_tokens: 4096,
-          messages: [{ role: "user", content: prompt }],
-        },
-        { referer: "https://kzsakib.github.io/quizzy/" },
-      );
-      const text = payload?.choices?.[0]?.message?.content ?? "";
-      if (!text) throw new Error("empty Pollinations response");
-      return { text, provider: "pollinations" };
-    } catch (error) {
-      lastError = error;
-      if (error.status === 429 || error.status >= 500) {
-        await sleep(15_000);
-        continue;
-      }
-      break;
-    }
-  }
-  throw lastError ?? new Error("Pollinations failed");
-}
-
-/** Ask whichever provider is configured: keys first, keyless last. */
+/** Ask whichever provider is configured, Gemini first, Groq second. */
 export async function askModel(prompt) {
   const attempts = [];
   if (process.env.GEMINI_API_KEY) attempts.push(askGemini);
   if (process.env.GROQ_API_KEY) attempts.push(askGroq);
-  attempts.push(askPollinations);
   if (!attempts.length) throw new Error("No model configured");
 
   let lastError;
