@@ -1,0 +1,612 @@
+{
+  "slug": "coffee-order",
+  "title": "Your coffee order is a personality diagnosis",
+  "dek": "No barista knowledge required. Twelve questions about how you take it, where you drink it and what you would never order, and your order gets read out loud.",
+  "category": "Food",
+  "accent": "orange",
+  "emoji": "☕",
+  "minutes": 3,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The order, before you have decided:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A double espresso, and no chair",
+          "weights": {
+            "espresso": 2,
+            "decaf": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Filter, black, and a second one for later",
+          "weights": {
+            "filter": 2,
+            "instant": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Flat white, and the seat by the window",
+          "weights": {
+            "flatwhite": 2,
+            "mocha": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Cold brew, enormous, iced to the point of pain",
+          "weights": {
+            "coldbrew": 2,
+            "turkish": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your morning routine is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Six minutes, standing up",
+          "weights": {
+            "espresso": 2,
+            "instant": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Twenty minutes with the radio on",
+          "weights": {
+            "filter": 2,
+            "turkish": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A small ceremony, done properly",
+          "weights": {
+            "turkish": 2,
+            "flatwhite": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something sweet enough to count as breakfast",
+          "weights": {
+            "mocha": 2,
+            "coldbrew": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Coffee is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Fuel",
+          "weights": {
+            "espresso": 2,
+            "coldbrew": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "An event",
+          "weights": {
+            "turkish": 2,
+            "flatwhite": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Where you drink it:",
+      "options": [
+        {
+          "id": "a",
+          "label": "At the kitchen table, in no hurry",
+          "weights": {
+            "filter": 2,
+            "mocha": 1
+          },
+          "image": "/images/questions/kitchen-table.jpg",
+          "alt": "A kitchen table with mugs and plates on it"
+        },
+        {
+          "id": "b",
+          "label": "Standing next to the kettle",
+          "weights": {
+            "instant": 2,
+            "espresso": 1
+          },
+          "image": "/images/questions/appliance-kettle.jpg",
+          "alt": "A kettle on a kitchen worktop"
+        },
+        {
+          "id": "c",
+          "label": "At a café, on purpose, for an hour",
+          "weights": {
+            "flatwhite": 2,
+            "turkish": 1
+          },
+          "image": "/images/questions/role-cafe.jpg",
+          "alt": "A café interior with tables and warm light"
+        },
+        {
+          "id": "d",
+          "label": "Walking, one hand free",
+          "weights": {
+            "coldbrew": 2,
+            "decaf": 1
+          },
+          "image": "/images/questions/main-street-crossing.jpg",
+          "alt": "A pedestrian crossing on a city street"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the cup.",
+      "helper": "Across: bitter or sweet. Up: at home or out.",
+      "x": {
+        "low": {
+          "label": "Bitter",
+          "trait": "espresso"
+        },
+        "high": {
+          "label": "Sweet",
+          "trait": "mocha"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "At home",
+          "trait": "instant"
+        },
+        "high": {
+          "label": "Out",
+          "trait": "flatwhite"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Kitchen Counter",
+        "lowHigh": "The Corner Café",
+        "highLow": "The Sweet Ritual",
+        "highHigh": "The Expensive Habit"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what ruins a coffee.",
+      "helper": "First place is the one you would send back.",
+      "items": [
+        {
+          "id": "milk",
+          "label": "Milk that is too hot",
+          "weights": {
+            "flatwhite": 2,
+            "decaf": 1
+          }
+        },
+        {
+          "id": "dirty",
+          "label": "A machine that hasn't been cleaned",
+          "weights": {
+            "espresso": 2,
+            "filter": 1
+          }
+        },
+        {
+          "id": "cup",
+          "label": "The wrong cup",
+          "weights": {
+            "turkish": 2,
+            "mocha": 1
+          }
+        },
+        {
+          "id": "ice",
+          "label": "Ice that is already melting",
+          "weights": {
+            "coldbrew": 2,
+            "instant": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your order, out loud.",
+      "helper": "Two gaps. The second one is what the barista remembers.",
+      "template": "You order {a}, and then you say {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a double, no sugar",
+              "weights": {
+                "espresso": 2,
+                "filter": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "black, in a mug that could be a bowl",
+              "weights": {
+                "filter": 2,
+                "instant": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "an oat flat white, extra hot",
+              "weights": {
+                "flatwhite": 2,
+                "decaf": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a cold brew, no ice, yes I know",
+              "weights": {
+                "coldbrew": 2,
+                "mocha": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "\"thank you, that's everything\"",
+              "weights": {
+                "decaf": 2,
+                "instant": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "\"and a glass of water\"",
+              "weights": {
+                "filter": 2,
+                "turkish": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "\"make it sweet\"",
+              "weights": {
+                "mocha": 2,
+                "flatwhite": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "\"I'll be here a while\"",
+              "weights": {
+                "turkish": 2,
+                "coldbrew": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would like my coffee to taste like a dessert.",
+      "trait": "mocha",
+      "low": "It should taste like coffee",
+      "high": "Add the cream, add the syrup"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I drink it for the taste, not the effect.",
+      "disagree": {
+        "trait": "espresso"
+      },
+      "agree": {
+        "trait": "decaf"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Convenience beats ceremony every time.",
+      "agree": {
+        "trait": "instant",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "turkish",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your coffee equipment:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A small, serious object you clean weekly",
+          "weights": {
+            "espresso": 2,
+            "turkish": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A kettle and a spoon",
+          "weights": {
+            "instant": 2,
+            "filter": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Whichever café is closest",
+          "weights": {
+            "flatwhite": 2,
+            "coldbrew": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something between a blender and a crime scene",
+          "weights": {
+            "mocha": 2,
+            "decaf": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "What your order says about you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You have things to do",
+          "weights": {
+            "espresso": 2,
+            "coldbrew": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You have a system",
+          "weights": {
+            "filter": 2,
+            "instant": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You have taste and a budget",
+          "weights": {
+            "flatwhite": 2,
+            "turkish": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You have decided caffeine is optional",
+          "weights": {
+            "decaf": 2,
+            "mocha": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "espresso",
+      "name": "THE DOUBLE, NO SUGAR",
+      "tagline": "Two sips, twenty minutes, done",
+      "blurb": "You do not drink coffee, you administer it. Small cup, standing up, no chair, no conversation about the origin. You are efficient to the point of being slightly alarming, and you have a genuine appreciation for a thing done exactly right — you just refuse to make an event of it.",
+      "accent": "red",
+      "strengths": [
+        "Efficient in everything",
+        "Zero tolerance for fuss",
+        "Deeply appreciates quality"
+      ],
+      "watchOut": "You treat rest like inefficiency. Sit down with the second one.",
+      "mix": {
+        "espresso": 42,
+        "filter": 6,
+        "flatwhite": 10,
+        "coldbrew": 8,
+        "instant": 7,
+        "turkish": 10,
+        "mocha": 9,
+        "decaf": 8
+      }
+    },
+    {
+      "trait": "filter",
+      "name": "THE FILTER, BLACK",
+      "tagline": "A mug the size of a bowl and a plan for the day",
+      "blurb": "You are a creature of routine and you are happy about it. Same mug, same method, same chair, same time. You like things that improve slowly and quietly, and you are the person who will still be doing this in fifteen years while everyone else cycles through gadgets.",
+      "accent": "orange",
+      "strengths": [
+        "Immaculate consistency",
+        "Content with the good thing",
+        "Calm start to any day"
+      ],
+      "watchOut": "The routine can become the whole personality. Try one new place this month.",
+      "mix": {
+        "espresso": 8,
+        "filter": 42,
+        "flatwhite": 7,
+        "coldbrew": 10,
+        "instant": 9,
+        "turkish": 8,
+        "mocha": 6,
+        "decaf": 10
+      }
+    },
+    {
+      "trait": "flatwhite",
+      "name": "THE FLAT WHITE",
+      "tagline": "You know exactly what you want and where to get it",
+      "blurb": "You have taste, you have a favourite seat, and you have a barista who knows your name. You are socially fluent, mildly particular and completely unwilling to drink something bad just because it was convenient. Your ideal afternoon is an hour that belongs to nobody else.",
+      "accent": "yellow",
+      "strengths": [
+        "Impeccable judgement",
+        "Makes any place feel nicer",
+        "Knows what they like"
+      ],
+      "watchOut": "You will walk twenty minutes for the good one. Sometimes the fine one is fine.",
+      "mix": {
+        "espresso": 10,
+        "filter": 9,
+        "flatwhite": 42,
+        "coldbrew": 8,
+        "instant": 6,
+        "turkish": 10,
+        "mocha": 8,
+        "decaf": 7
+      }
+    },
+    {
+      "trait": "coldbrew",
+      "name": "THE ENORMOUS COLD BREW",
+      "tagline": "Iced, absurd, and technically a meal",
+      "blurb": "You are doing a lot and you are doing it at speed. Your coffee is a litre of cold, sweet, mildly terrifying ambition carried in one hand while you answer a message with the other. You are not interested in the ritual. You are interested in getting there.",
+      "accent": "cyan",
+      "strengths": [
+        "Enormous energy",
+        "Multiplies hours in a day",
+        "Unstoppable in a queue"
+      ],
+      "watchOut": "You keep adding more instead of stopping. Try one quiet hour.",
+      "mix": {
+        "espresso": 8,
+        "filter": 6,
+        "flatwhite": 10,
+        "coldbrew": 42,
+        "instant": 8,
+        "turkish": 7,
+        "mocha": 10,
+        "decaf": 9
+      }
+    },
+    {
+      "trait": "instant",
+      "name": "THE INSTANT, IN THE GOOD MUG",
+      "tagline": "Kettle on, spoon in, no notes",
+      "blurb": "You have no time for the theatre of coffee and no shame about it. You own one mug that matters, one kettle that works, and a complete indifference to what anybody thinks of your choices. People mock your coffee and then ask you to make them one.",
+      "accent": "green",
+      "strengths": [
+        "Refreshingly unpretentious",
+        "Fast and practical",
+        "Immune to peer pressure"
+      ],
+      "watchOut": "You accept 'good enough' in more places than the mug. Upgrade one thing.",
+      "mix": {
+        "espresso": 10,
+        "filter": 8,
+        "flatwhite": 7,
+        "coldbrew": 10,
+        "instant": 42,
+        "turkish": 9,
+        "mocha": 8,
+        "decaf": 6
+      }
+    },
+    {
+      "trait": "turkish",
+      "name": "THE TURKISH, MADE PROPERLY",
+      "tagline": "Small cup, long process, worth it",
+      "blurb": "You believe a thing done slowly is a thing done right, and you have the patience to prove it. Your kitchen smells of cardamom. You own a small pot for exactly one purpose. You will absolutely not be rushed, and the people who love you have learned to schedule around it.",
+      "accent": "purple",
+      "strengths": [
+        "Extraordinary patience",
+        "Makes ordinary things sacred",
+        "Impossible to rush"
+      ],
+      "watchOut": "Rituals can become excuses. Sometimes the quick cup is the kind one.",
+      "mix": {
+        "espresso": 7,
+        "filter": 10,
+        "flatwhite": 9,
+        "coldbrew": 8,
+        "instant": 6,
+        "turkish": 42,
+        "mocha": 10,
+        "decaf": 8
+      }
+    },
+    {
+      "trait": "mocha",
+      "name": "THE MOCHA WITH EVERYTHING",
+      "tagline": "Coffee is a dessert and you've made peace with it",
+      "blurb": "You are here for pleasure, not for productivity, and you refuse to pretend otherwise. Cream, syrup, an unreasonable amount of chocolate: your drink is a small, daily act of self-indulgence. You are also the person who makes everyone else order something they'll enjoy.",
+      "accent": "pink",
+      "strengths": [
+        "Unashamedly enjoys things",
+        "Generous with treats",
+        "Lifts an ordinary afternoon"
+      ],
+      "watchOut": "You chase the sweet version of everything. Try the plain one.",
+      "mix": {
+        "espresso": 9,
+        "filter": 8,
+        "flatwhite": 6,
+        "coldbrew": 10,
+        "instant": 8,
+        "turkish": 7,
+        "mocha": 42,
+        "decaf": 10
+      }
+    },
+    {
+      "trait": "decaf",
+      "name": "THE DECAF, UNBOTHERED",
+      "tagline": "You ordered it for the ritual, not the rocket fuel",
+      "blurb": "You have opted out of the arms race and you are sleeping beautifully. You like the cup, the pause and the taste, and you have no interest in being wired at 4pm. People treat this as a moral failing. You find their shaking hands quite funny.",
+      "accent": "sky",
+      "strengths": [
+        "Sleeps properly",
+        "Comfortable being the odd one",
+        "Calm under pressure"
+      ],
+      "watchOut": "You avoid intensity in more than coffee. Let one thing be strong.",
+      "mix": {
+        "espresso": 6,
+        "filter": 10,
+        "flatwhite": 8,
+        "coldbrew": 7,
+        "instant": 10,
+        "turkish": 9,
+        "mocha": 8,
+        "decaf": 42
+      }
+    }
+  ]
+}

@@ -1,0 +1,678 @@
+{
+  "slug": "rare-animal",
+  "title": "A wildlife documentary has cast you as a rare animal",
+  "dek": "No facts to memorise. Twelve questions about how you survive, hide and behave, and the crew will tell you which animal they drove eight hours to film.",
+  "category": "Nature",
+  "accent": "lime",
+  "emoji": "🦎",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "A field researcher finally spots you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Regenerating something you lost last week",
+          "weights": {
+            "axolotl": 2,
+            "olm": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Rolling into a ball, immediately",
+          "weights": {
+            "pangolin": 2,
+            "blobfish": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Standing very still, looking like two animals",
+          "weights": {
+            "okapi": 2,
+            "saiga": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Screaming, at night, for no obvious reason",
+          "weights": {
+            "kakapo": 2,
+            "kiwi": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your habitat:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A cave nobody has finished mapping",
+          "weights": {
+            "olm": 2,
+            "axolotl": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Deep water, terrible pressure",
+          "weights": {
+            "blobfish": 2,
+            "narwhal": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "High, dry, and a nightmare to reach",
+          "weights": {
+            "saiga": 2,
+            "kiwi": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A forest at night, entirely alone",
+          "weights": {
+            "okapi": 2,
+            "tarsier": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You would rather:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hide so well that nobody confirms you exist",
+          "weights": {
+            "okapi": 2,
+            "pangolin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Be so strange that nobody can forget you",
+          "weights": {
+            "narwhal": 2,
+            "blobfish": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The camera trap catches:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Still water, and something under it",
+          "weights": {
+            "axolotl": 2,
+            "olm": 1
+          },
+          "image": "/images/questions/pkmn-river.jpg",
+          "alt": "A slow river running past a quiet bank"
+        },
+        {
+          "id": "b",
+          "label": "Trees, and one shape that doesn't fit",
+          "weights": {
+            "okapi": 2,
+            "tarsier": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A dense forest with a narrow track"
+        },
+        {
+          "id": "c",
+          "label": "Too many stars and a small silhouette",
+          "weights": {
+            "kiwi": 2,
+            "kakapo": 1
+          },
+          "image": "/images/questions/anime-sky-stars.jpg",
+          "alt": "A night sky full of stars"
+        },
+        {
+          "id": "d",
+          "label": "Dry ground and a lot of nothing",
+          "weights": {
+            "saiga": 2,
+            "pangolin": 1
+          },
+          "image": "/images/questions/space-desert.jpg",
+          "alt": "An empty, dry landscape"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the sighting.",
+      "helper": "Across: hide or display. Up: water or land.",
+      "x": {
+        "low": {
+          "label": "Hide",
+          "trait": "pangolin"
+        },
+        "high": {
+          "label": "Display",
+          "trait": "kakapo"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Water",
+          "trait": "narwhal"
+        },
+        "high": {
+          "label": "Land",
+          "trait": "saiga"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Deep Transect",
+        "lowHigh": "The Quiet Ridge",
+        "highLow": "The Pod",
+        "highHigh": "The Courtship Display"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank your survival strategy.",
+      "helper": "First place is the one that has kept you alive so far.",
+      "items": [
+        {
+          "id": "unappetising",
+          "label": "Be unappetising",
+          "weights": {
+            "blobfish": 2,
+            "pangolin": 1
+          }
+        },
+        {
+          "id": "unfindable",
+          "label": "Be impossible to find",
+          "weights": {
+            "okapi": 2,
+            "olm": 1
+          }
+        },
+        {
+          "id": "fast",
+          "label": "Be faster than the problem",
+          "weights": {
+            "saiga": 2,
+            "kiwi": 1
+          }
+        },
+        {
+          "id": "outlast",
+          "label": "Outlast everything",
+          "weights": {
+            "axolotl": 2,
+            "kakapo": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The documentary script.",
+      "helper": "Two gaps. The second one is what the locals actually say.",
+      "template": "The narration says {a}. The locals say {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "it can regrow almost anything",
+              "weights": {
+                "axolotl": 2,
+                "olm": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "it is almost certainly extinct",
+              "weights": {
+                "kakapo": 2,
+                "kiwi": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "it has a horn and no explanation",
+              "weights": {
+                "narwhal": 2,
+                "saiga": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "it was discovered entirely by accident",
+              "weights": {
+                "okapi": 2,
+                "blobfish": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "don't look at it directly",
+              "weights": {
+                "tarsier": 2,
+                "olm": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "it screams at night, we've stopped asking",
+              "weights": {
+                "kiwi": 2,
+                "kakapo": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "it's lucky, leave it alone",
+              "weights": {
+                "pangolin": 2,
+                "saiga": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "it's out there, we've seen the photos",
+              "weights": {
+                "okapi": 2,
+                "narwhal": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would rather be stared at than understood.",
+      "trait": "tarsier",
+      "low": "Please stop looking at me",
+      "high": "Look closer, there's more"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Being rare is a personality, not a problem.",
+      "disagree": {
+        "trait": "pangolin"
+      },
+      "agree": {
+        "trait": "kakapo"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Being memorable matters more than being beautiful.",
+      "agree": {
+        "trait": "blobfish",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "narwhal",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your conservation status, according to you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Critically endangered, and doing fine about it",
+          "weights": {
+            "kakapo": 2,
+            "kiwi": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Data deficient, which is the dream",
+          "weights": {
+            "olm": 2,
+            "okapi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Poached for something absurd",
+          "weights": {
+            "pangolin": 2,
+            "narwhal": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nobody is counting",
+          "weights": {
+            "blobfish": 2,
+            "axolotl": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The one true thing about you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You grow back",
+          "weights": {
+            "axolotl": 2,
+            "olm": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You were here before the map",
+          "weights": {
+            "okapi": 2,
+            "saiga": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You make a sound nobody can place",
+          "weights": {
+            "kiwi": 2,
+            "tarsier": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You are stranger than the drawing",
+          "weights": {
+            "narwhal": 2,
+            "blobfish": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "axolotl",
+      "name": "THE AXOLOTL",
+      "tagline": "Never grows up, never stays broken",
+      "blurb": "You regenerate. Not emotionally, exactly, but close enough: something gets taken from you and six weeks later there is a slightly different version of it in its place. You stay curious and un-serious in a way that people find either charming or suspicious, and you have outlasted things that should have finished you.",
+      "accent": "pink",
+      "strengths": [
+        "Recovers from almost anything",
+        "Endlessly curious",
+        "Refuses to grow cynical"
+      ],
+      "watchOut": "Regrowing is not healing. Look at the thing that happened.",
+      "mix": {
+        "axolotl": 42,
+        "pangolin": 5,
+        "okapi": 8,
+        "kakapo": 6,
+        "saiga": 6,
+        "narwhal": 8,
+        "olm": 7,
+        "tarsier": 6,
+        "blobfish": 5,
+        "kiwi": 7
+      }
+    },
+    {
+      "trait": "pangolin",
+      "name": "THE PANGOLIN",
+      "tagline": "Rolls up, waits you out, says nothing",
+      "blurb": "Your entire strategy is defence, and it works. You go quiet, you go small, you let the situation exhaust itself, and you come out the other side exactly as you were. People find you hard to read. That is not an accident; it is the whole armour.",
+      "accent": "yellow",
+      "strengths": [
+        "Excellent boundaries",
+        "Unshakeable under pressure",
+        "Keeps their own counsel"
+      ],
+      "watchOut": "You roll up for things that only needed a conversation. Unroll earlier.",
+      "mix": {
+        "axolotl": 7,
+        "pangolin": 42,
+        "okapi": 5,
+        "kakapo": 8,
+        "saiga": 7,
+        "narwhal": 6,
+        "olm": 5,
+        "tarsier": 8,
+        "blobfish": 7,
+        "kiwi": 5
+      }
+    },
+    {
+      "trait": "okapi",
+      "name": "THE OKAPI",
+      "tagline": "Half one thing, half another, entirely unconfirmed",
+      "blurb": "You are the person people describe badly because there is nothing to compare you to. You keep to the deep forest, you are seen rarely, and every sighting becomes a story. You are not mysterious on purpose. You are just genuinely unlike the categories available.",
+      "accent": "green",
+      "strengths": [
+        "Completely original",
+        "Comfortable out of sight",
+        "Impossible to categorise"
+      ],
+      "watchOut": "You are so rarely seen that people fill in the gaps. Show up occasionally.",
+      "mix": {
+        "axolotl": 8,
+        "pangolin": 7,
+        "okapi": 42,
+        "kakapo": 6,
+        "saiga": 5,
+        "narwhal": 7,
+        "olm": 6,
+        "tarsier": 5,
+        "blobfish": 7,
+        "kiwi": 7
+      }
+    },
+    {
+      "trait": "kakapo",
+      "name": "THE KAKAPO",
+      "tagline": "Cannot fly, will not stop trying",
+      "blurb": "You are ridiculous, endangered and beloved, and you have absolutely no idea how precarious you are. You climb things you cannot get down from, you make a noise at 3am that alarms the neighbours, and an entire team of people has quietly rearranged their lives to keep you going.",
+      "accent": "lime",
+      "strengths": [
+        "Fearless to the point of comedy",
+        "Deeply lovable",
+        "Never learns, never dulls"
+      ],
+      "watchOut": "You rely on other people's patience more than you notice. Say thank you.",
+      "mix": {
+        "axolotl": 6,
+        "pangolin": 5,
+        "okapi": 8,
+        "kakapo": 42,
+        "saiga": 7,
+        "narwhal": 6,
+        "olm": 8,
+        "tarsier": 7,
+        "blobfish": 6,
+        "kiwi": 5
+      }
+    },
+    {
+      "trait": "saiga",
+      "name": "THE SAIGA ANTELOPE",
+      "tagline": "Built wrong for this climate, still here",
+      "blurb": "You have an unusual nose, an unusual approach and a talent for surviving conditions that should have finished you off. You migrate when it gets bad, you do not advertise, and you have been doing this for a very long time without anyone writing it down.",
+      "accent": "orange",
+      "strengths": [
+        "Extraordinary resilience",
+        "Adapts to hostile conditions",
+        "Keeps moving when others stop"
+      ],
+      "watchOut": "You adapt to bad situations instead of leaving them. Sometimes leave.",
+      "mix": {
+        "axolotl": 7,
+        "pangolin": 6,
+        "okapi": 6,
+        "kakapo": 8,
+        "saiga": 42,
+        "narwhal": 7,
+        "olm": 6,
+        "tarsier": 5,
+        "blobfish": 7,
+        "kiwi": 6
+      }
+    },
+    {
+      "trait": "narwhal",
+      "name": "THE NARWHAL",
+      "tagline": "One feature, enormous reputation",
+      "blurb": "You have one unmistakable quality and everyone has built a mythology around it. You are calmer about this than they are. Under the ice, in the dark, with people you trust, you are entirely ordinary, which is somehow the most surprising thing about you.",
+      "accent": "cyan",
+      "strengths": [
+        "Instantly memorable",
+        "Genuinely unbothered",
+        "Thrives where nobody expects"
+      ],
+      "watchOut": "You let the legend do the work. Be a person, not a story.",
+      "mix": {
+        "axolotl": 6,
+        "pangolin": 8,
+        "okapi": 7,
+        "kakapo": 6,
+        "saiga": 5,
+        "narwhal": 42,
+        "olm": 7,
+        "tarsier": 6,
+        "blobfish": 5,
+        "kiwi": 8
+      }
+    },
+    {
+      "trait": "olm",
+      "name": "THE OLM",
+      "tagline": "Lives in the dark, outlives the light",
+      "blurb": "You are adapted to a situation most people would call unliveable: low light, no company, very little happening. You can go a long time without food, attention or answers. When you do surface, people are startled by how strange and how old you seem.",
+      "accent": "purple",
+      "strengths": [
+        "Thrives in isolation",
+        "Incredible patience",
+        "Unaffected by other people's urgency"
+      ],
+      "watchOut": "You can survive in the dark so well that you forget to come out. Surface.",
+      "mix": {
+        "axolotl": 7,
+        "pangolin": 6,
+        "okapi": 5,
+        "kakapo": 7,
+        "saiga": 6,
+        "narwhal": 6,
+        "olm": 42,
+        "tarsier": 8,
+        "blobfish": 7,
+        "kiwi": 6
+      }
+    },
+    {
+      "trait": "tarsier",
+      "name": "THE TARSIER",
+      "tagline": "Enormous eyes, no interest in being perceived",
+      "blurb": "You notice everything and reveal nothing. Your whole thing is observation: wide-eyed, silent, slightly unnerving to be on the receiving end of. You are much stronger and much faster than your size suggests, and you would prefer people kept their distance about it.",
+      "accent": "blue",
+      "strengths": [
+        "Reads a room instantly",
+        "Sees what nobody else does",
+        "Quietly formidable"
+      ],
+      "watchOut": "You watch instead of participating. Join in before the scene ends.",
+      "mix": {
+        "axolotl": 5,
+        "pangolin": 8,
+        "okapi": 6,
+        "kakapo": 6,
+        "saiga": 8,
+        "narwhal": 7,
+        "olm": 6,
+        "tarsier": 42,
+        "blobfish": 5,
+        "kiwi": 7
+      }
+    },
+    {
+      "trait": "blobfish",
+      "name": "THE BLOB FISH",
+      "tagline": "Devastating out of context",
+      "blurb": "You look completely different at your own depth. Pulled out of your environment and photographed badly, you are a meme. At home, under pressure nobody else can survive, you are a perfectly normal, quite elegant creature who would like everyone to stop commenting on the face.",
+      "accent": "green",
+      "strengths": [
+        "Unaffected by ridicule",
+        "Better in context than in photos",
+        "Pressure-tested"
+      ],
+      "watchOut": "You let one unflattering version of you become the whole story. Correct it.",
+      "mix": {
+        "axolotl": 7,
+        "pangolin": 5,
+        "okapi": 8,
+        "kakapo": 7,
+        "saiga": 6,
+        "narwhal": 5,
+        "olm": 8,
+        "tarsier": 7,
+        "blobfish": 42,
+        "kiwi": 5
+      }
+    },
+    {
+      "trait": "kiwi",
+      "name": "THE KIWI",
+      "tagline": "Awake at the wrong hour, doing the work",
+      "blurb": "You function best when nobody is watching: late, quietly, in the dark, doing something unglamorous that holds everything together. You cannot fly, you cannot see especially well, and yet you are still here after everyone more impressive has gone to bed.",
+      "accent": "orange",
+      "strengths": [
+        "Does the unseen work",
+        "Thrives on the night shift",
+        "Stubborn in the best way"
+      ],
+      "watchOut": "You do your best work when nobody sees it, then wonder why nobody sees it.",
+      "mix": {
+        "axolotl": 8,
+        "pangolin": 7,
+        "okapi": 6,
+        "kakapo": 5,
+        "saiga": 7,
+        "narwhal": 6,
+        "olm": 5,
+        "tarsier": 7,
+        "blobfish": 7,
+        "kiwi": 42
+      }
+    }
+  ]
+}

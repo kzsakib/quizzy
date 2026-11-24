@@ -1,0 +1,582 @@
+{
+  "slug": "dessert-menu",
+  "title": "The dessert menu already knows too much about you",
+  "dek": "No baking required. Twelve questions about the last course, and the menu will tell you which dessert you have been ordering for years without noticing.",
+  "category": "Food",
+  "accent": "pink",
+  "emoji": "🍰",
+  "minutes": 3,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "You order:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The densest chocolate thing on the menu",
+          "weights": {
+            "choccake": 2,
+            "cheesecake": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Whatever comes in a bowl with a spoon",
+          "weights": {
+            "icecream": 2,
+            "doughnut": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The one with layers and a bit of a story",
+          "weights": {
+            "tiramisu": 2,
+            "brulee": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Fruit, but arranged like a warning",
+          "weights": {
+            "fruittart": 2,
+            "tiramisu": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your ideal dessert is served:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Warm, with something poured over it",
+          "weights": {
+            "choccake": 2,
+            "brulee": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Cold, in a tub, at eleven at night",
+          "weights": {
+            "icecream": 2,
+            "doughnut": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "In a neat slice, with a proper fork",
+          "weights": {
+            "cheesecake": 2,
+            "tiramisu": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "In a paper bag, while walking",
+          "weights": {
+            "doughnut": 2,
+            "fruittart": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You would rather have:",
+      "options": [
+        {
+          "id": "a",
+          "label": "One perfect spoonful, savoured",
+          "weights": {
+            "brulee": 2,
+            "tiramisu": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Volume, and no regrets",
+          "weights": {
+            "icecream": 2,
+            "choccake": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The scene it belongs in:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Candles and a second spoon",
+          "weights": {
+            "tiramisu": 2,
+            "brulee": 1
+          },
+          "image": "/images/questions/dinner-candles.jpg",
+          "alt": "Candles on a table set for dinner"
+        },
+        {
+          "id": "b",
+          "label": "A kitchen table at midnight",
+          "weights": {
+            "choccake": 2,
+            "cheesecake": 1
+          },
+          "image": "/images/questions/kitchen-table.jpg",
+          "alt": "A kitchen table with plates left on it"
+        },
+        {
+          "id": "c",
+          "label": "A café, mid-afternoon, no reason",
+          "weights": {
+            "fruittart": 2,
+            "doughnut": 1
+          },
+          "image": "/images/questions/role-cafe.jpg",
+          "alt": "A café interior with warm lighting"
+        },
+        {
+          "id": "d",
+          "label": "The fridge door, open, one light on",
+          "weights": {
+            "icecream": 2,
+            "choccake": 1
+          },
+          "image": "/images/questions/bridge-kitchen.jpg",
+          "alt": "A dim kitchen lit from the fridge"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the dessert.",
+      "helper": "Across: rich or light. Up: alone or shared.",
+      "x": {
+        "low": {
+          "label": "Rich",
+          "trait": "choccake"
+        },
+        "high": {
+          "label": "Light",
+          "trait": "fruittart"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Alone",
+          "trait": "icecream"
+        },
+        "high": {
+          "label": "Shared",
+          "trait": "tiramisu"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Tub and the Spoon",
+        "lowHigh": "The Big Slice",
+        "highLow": "The Single Tart",
+        "highHigh": "The Two-Fork Table"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what makes a dessert good.",
+      "helper": "First place is the thing you notice first.",
+      "items": [
+        {
+          "id": "texture",
+          "label": "Texture",
+          "weights": {
+            "tiramisu": 2,
+            "cheesecake": 1
+          }
+        },
+        {
+          "id": "temperature",
+          "label": "Temperature",
+          "weights": {
+            "icecream": 2,
+            "brulee": 1
+          }
+        },
+        {
+          "id": "crack",
+          "label": "The crack on top",
+          "weights": {
+            "brulee": 2,
+            "choccake": 1
+          }
+        },
+        {
+          "id": "fruit",
+          "label": "Something sharp to cut through it",
+          "weights": {
+            "fruittart": 2,
+            "doughnut": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "At the counter, you:",
+      "helper": "Two gaps. Both are true.",
+      "template": "You order {a}, and then you {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the chocolate one, obviously",
+              "weights": {
+                "choccake": 2,
+                "icecream": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the layered thing with the dusting on top",
+              "weights": {
+                "tiramisu": 2,
+                "brulee": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "the baked one with the crackly lid",
+              "weights": {
+                "brulee": 2,
+                "cheesecake": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a doughnut, warm, no plate",
+              "weights": {
+                "doughnut": 2,
+                "fruittart": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "share it badly",
+              "weights": {
+                "tiramisu": 2,
+                "icecream": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "go back for a second one",
+              "weights": {
+                "icecream": 2,
+                "doughnut": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "say you're full and finish it anyway",
+              "weights": {
+                "choccake": 2,
+                "cheesecake": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "pick the fruit off first",
+              "weights": {
+                "fruittart": 2,
+                "brulee": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I have ordered the same dessert for ten years.",
+      "trait": "cheesecake",
+      "low": "I try something new every time",
+      "high": "I know what works"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Presentation is half the point.",
+      "disagree": {
+        "trait": "icecream"
+      },
+      "agree": {
+        "trait": "brulee"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The best desserts do not need a plate.",
+      "agree": {
+        "trait": "doughnut",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "tiramisu",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your dessert-related flaw:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You judge an entire restaurant on one item",
+          "weights": {
+            "cheesecake": 2,
+            "choccake": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You eat it standing up",
+          "weights": {
+            "icecream": 2,
+            "doughnut": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You describe it for slightly too long",
+          "weights": {
+            "tiramisu": 2,
+            "brulee": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You claim you don't want any",
+          "weights": {
+            "fruittart": 2,
+            "cheesecake": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last bite goes to:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Whoever finished first",
+          "weights": {
+            "icecream": 2,
+            "choccake": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The person who asked nicely",
+          "weights": {
+            "tiramisu": 2,
+            "fruittart": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You. It's yours. You ordered it.",
+          "weights": {
+            "brulee": 2,
+            "cheesecake": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nobody. It's already gone.",
+          "weights": {
+            "doughnut": 2,
+            "icecream": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "choccake",
+      "name": "THE CHOCOLATE CAKE",
+      "tagline": "Warm, dense, and not here to be reasonable",
+      "blurb": "You are the reliable indulgence: enormous, warm and completely unsubtle. You do not do small portions or delicate flavours, and you have never once regretted ordering the biggest thing on the menu. People come to you when they need comfort, and you always have some in the fridge.",
+      "accent": "orange",
+      "strengths": [
+        "Enormously comforting",
+        "Generous by default",
+        "Never disappoints"
+      ],
+      "watchOut": "You go straight for the heaviest option. Sometimes the light thing is what you needed.",
+      "mix": {
+        "choccake": 42,
+        "icecream": 7,
+        "tiramisu": 11,
+        "cheesecake": 10,
+        "fruittart": 8,
+        "doughnut": 12,
+        "brulee": 10
+      }
+    },
+    {
+      "trait": "icecream",
+      "name": "THE TUB AND THE SPOON",
+      "tagline": "Eleven at night, no bowl, no witnesses",
+      "blurb": "You are uncomplicated, a little chaotic and entirely honest about your appetites. Your dessert is not a course, it is a mood, and it happens whenever the fridge light is the only light on. You are fun at midnight and slightly less reliable at breakfast.",
+      "accent": "sky",
+      "strengths": [
+        "Effortlessly fun",
+        "No pretence whatsoever",
+        "Great in a crisis"
+      ],
+      "watchOut": "You treat comfort as a nightly requirement. Sit with one feeling instead.",
+      "mix": {
+        "choccake": 10,
+        "icecream": 42,
+        "tiramisu": 8,
+        "cheesecake": 12,
+        "fruittart": 11,
+        "doughnut": 9,
+        "brulee": 8
+      }
+    },
+    {
+      "trait": "tiramisu",
+      "name": "THE TIRAMISU",
+      "tagline": "Layers, coffee, and a bit of a reputation",
+      "blurb": "You are sophisticated, a little old-fashioned and considerably more romantic than you let on. Everything about you is layered on purpose: the story, the reference, the way you describe a dessert. You are excellent company and you know precisely how to end an evening.",
+      "accent": "orange",
+      "strengths": [
+        "Genuinely charming",
+        "Excellent taste",
+        "Turns a meal into an occasion"
+      ],
+      "watchOut": "You perform the taste rather than enjoying it. Just eat the thing.",
+      "mix": {
+        "choccake": 12,
+        "icecream": 10,
+        "tiramisu": 42,
+        "cheesecake": 9,
+        "fruittart": 7,
+        "doughnut": 11,
+        "brulee": 9
+      }
+    },
+    {
+      "trait": "cheesecake",
+      "name": "THE CHEESECAKE",
+      "tagline": "The same order for ten years, and it's still right",
+      "blurb": "You know what you like and you have zero interest in pretending otherwise. There is a version of this dessert you consider correct, and every restaurant is quietly being graded against it. Your loyalty is total, your standards are specific, and your friends order for you without asking.",
+      "accent": "yellow",
+      "strengths": [
+        "Rock-solid preferences",
+        "Deeply loyal",
+        "Never wastes a decision"
+      ],
+      "watchOut": "You grade new things against an old favourite. Let one be different.",
+      "mix": {
+        "choccake": 9,
+        "icecream": 8,
+        "tiramisu": 11,
+        "cheesecake": 42,
+        "fruittart": 10,
+        "doughnut": 8,
+        "brulee": 12
+      }
+    },
+    {
+      "trait": "fruittart",
+      "name": "THE FRUIT TART",
+      "tagline": "Beautiful, sharp, and slightly judgemental",
+      "blurb": "You are the one who wants something fresh at the end of a heavy meal, and you are correct about it. You have a sharp eye, a light touch and a habit of cutting through other people's nonsense with one sentence. You look expensive and you are worth it.",
+      "accent": "pink",
+      "strengths": [
+        "Clear-eyed and sharp",
+        "Brings balance to any table",
+        "Effortlessly elegant"
+      ],
+      "watchOut": "You can be a little too tart about other people's choices. Let them have cake.",
+      "mix": {
+        "choccake": 11,
+        "icecream": 9,
+        "tiramisu": 8,
+        "cheesecake": 11,
+        "fruittart": 42,
+        "doughnut": 10,
+        "brulee": 9
+      }
+    },
+    {
+      "trait": "doughnut",
+      "name": "THE DOUGHNUT, NO PLATE",
+      "tagline": "Warm, in a bag, eaten while walking",
+      "blurb": "You are joy without ceremony. No fork, no table, no occasion: just something good, right now, in your hand. You are spontaneous, easily delighted and the person who suggests the detour that becomes the best part of the day.",
+      "accent": "lime",
+      "strengths": [
+        "Instant lift",
+        "Spontaneous and generous",
+        "Never needs an excuse"
+      ],
+      "watchOut": "You choose the quick treat over the good meal. Sit down for one.",
+      "mix": {
+        "choccake": 8,
+        "icecream": 12,
+        "tiramisu": 10,
+        "cheesecake": 9,
+        "fruittart": 8,
+        "doughnut": 42,
+        "brulee": 11
+      }
+    },
+    {
+      "trait": "brulee",
+      "name": "THE CRÈME BRÛLÉE",
+      "tagline": "One perfect thing, with a crack on top",
+      "blurb": "You are precise, composed and quietly dramatic. You want the small, correct version of things: the right temperature, the right spoon, the audible crack. You are not interested in volume and you are very interested in whether it was done properly, which you will mention.",
+      "accent": "purple",
+      "strengths": [
+        "Impeccable standards",
+        "Finds the best small thing",
+        "Calm, exact and unhurried"
+      ],
+      "watchOut": "You will send something back over a detail nobody else noticed. Let one go.",
+      "mix": {
+        "choccake": 11,
+        "icecream": 9,
+        "tiramisu": 8,
+        "cheesecake": 12,
+        "fruittart": 10,
+        "doughnut": 8,
+        "brulee": 42
+      }
+    }
+  ]
+}

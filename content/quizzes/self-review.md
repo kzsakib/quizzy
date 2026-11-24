@@ -192,6 +192,48 @@ with the joke in it.
 - **Flavor:** untagged. RELATABLE leads; no question requires having watched the show.
 - **Unsure:** Red John is a villain result in a quiz about colleagues; the blurb keeps it behavioural rather than flattering.
 
+## Jujutsu High has a cursed technique with your name on it
+- **Tone dial:** Shonen-cool, lightly funny. Characters are results; no technique names or plot points required.
+- **What it reveals:** how you fight and who you protect — the stubborn one, the planner, the loud one, the tired professional.
+- **Flavor:** untagged. LORE sits in the grade/reputation mad lib; every question is answerable cold.
+- **Unsure:** Gojo and Sukuna both read as "overpowered and insufferable"; split by whether the arrogance is a performance or the whole personality.
+
+## A wildlife documentary has cast you as a rare animal
+- **Tone dial:** Attenborough-dry, affectionate. Behaviour first, facts second; no quiz-show recall.
+- **What it reveals:** your survival strategy — regenerate, hide, outlast, display, or simply be unphotogenic.
+- **Flavor:** untagged. LORE is animal-specific but every option is a human behaviour.
+- **Unsure:** "The Blob Fish" is the joke result and could read as an insult; the blurb reframes it as being judged out of context.
+
+## You got a superpower and it is deeply inconvenient
+- **Tone dial:** Deadpan bureaucratic absurdism. The power is small and the consequences are admin.
+- **What it reveals:** whether you would use an impossible ability for others, for yourself, or to escape one conversation.
+- **Flavor:** untagged. FUNNY leads throughout; the government-file mad lib is the centrepiece.
+- **Unsure:** the shadow result depends on the joke landing; players who take it literally may find it thin.
+
+## The profiler's file on you is disturbingly accurate
+- **Tone dial:** Crime-documentary voice-over, deliberately bloodless. Fictional archetypes only; nothing graphic, nothing real.
+- **What it reveals:** how you handle control, routine, attention and loyalty when nobody is checking.
+- **Flavor:** untagged. CLEVER-led; the joke is procedural language, not violence.
+- **Unsure:** the premise is dark for the catalogue; the dek sets the fictional frame, but it sits closest to the line of any quiz here.
+
+## Your coffee order is a personality diagnosis
+- **Tone dial:** Light, caffeinated, mildly judgmental in the way baristas are.
+- **What it reveals:** whether coffee is fuel, ceremony, comfort or a personality.
+- **Flavor:** untagged. RELATABLE-heavy; no brewing knowledge needed.
+- **Unsure:** "The Decaf" risks reading as the boring result; the blurb gives it the last laugh.
+
+## The dessert menu already knows too much about you
+- **Tone dial:** Warm and a bit greedy. No baking, no brand names.
+- **What it reveals:** rich or light, alone or shared, ceremony or paper bag.
+- **Flavor:** untagged. FUNNY 3 / RELATABLE 5; the last-bite question is the most exposing.
+- **Unsure:** Cheesecake and Chocolate Cake overlap on comfort; split by repetition versus volume.
+
+## A Pokémon has moved into your flat and won't leave
+- **Tone dial:** Domestic sitcom. Real Pokémon, no battling, no type charts.
+- **What it reveals:** what kind of housemate you are — the immovable one, the strange one, the loud one, the one who finds money.
+- **Flavor:** untagged. LORE is light; every option works if you have never played.
+- **Unsure:** Magikarp is the affectionate joke result and may attract answer-gaming from fans.
+
 ---
 
 ## Cross-quiz notes

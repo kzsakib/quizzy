@@ -1,0 +1,644 @@
+{
+  "slug": "weird-superpower",
+  "title": "You got a superpower and it is deeply inconvenient",
+  "dek": "Not flight. Not strength. Something small, specific and impossible to explain to your landlord. Twelve questions and the lab will tell you what you can do.",
+  "category": "Personality",
+  "accent": "cyan",
+  "emoji": "🧪",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your power shows up when:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Something is about to hit the floor",
+          "weights": {
+            "pause": 2,
+            "return": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You are locked out, again",
+          "weights": {
+            "doors": 2,
+            "buildings": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Someone says \"trust me\"",
+          "weights": {
+            "taste": 2,
+            "cousin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You say the wrong thing at a wedding",
+          "weights": {
+            "redo": 2,
+            "sneeze": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The side effect nobody warned you about:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Your shadow is now a separate person with opinions",
+          "weights": {
+            "shadow": 2,
+            "cousin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Every building has a grudge against you",
+          "weights": {
+            "buildings": 2,
+            "doors": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You can taste every polite lie at work",
+          "weights": {
+            "taste": 2,
+            "pause": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Lost things come back slightly changed",
+          "weights": {
+            "return": 2,
+            "sneeze": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You would rather have:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A power that helps other people",
+          "weights": {
+            "cousin": 2,
+            "taste": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A power that helps only you",
+          "weights": {
+            "pause": 2,
+            "doors": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Where you go to test it:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A kitchen, late, with one lamp on",
+          "weights": {
+            "pause": 2,
+            "taste": 1
+          },
+          "image": "/images/questions/kitchen-table.jpg",
+          "alt": "A kitchen table with the plates still out"
+        },
+        {
+          "id": "b",
+          "label": "A street at night, mostly empty",
+          "weights": {
+            "shadow": 2,
+            "doors": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A neon-lit street at night"
+        },
+        {
+          "id": "c",
+          "label": "The stairs of a very old building",
+          "weights": {
+            "buildings": 2,
+            "return": 1
+          },
+          "image": "/images/questions/hogwarts-stairs-stone.jpg",
+          "alt": "A worn stone staircase"
+        },
+        {
+          "id": "d",
+          "label": "A corridor where the lights are on a timer",
+          "weights": {
+            "redo": 2,
+            "sneeze": 1
+          },
+          "image": "/images/questions/horror-hall-hospital.jpg",
+          "alt": "An empty corridor with pale lighting"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the power.",
+      "helper": "Across: small and precise, or large and messy. Up: for you, or for everyone.",
+      "x": {
+        "low": {
+          "label": "Small and precise",
+          "trait": "pause"
+        },
+        "high": {
+          "label": "Large and messy",
+          "trait": "sneeze"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "For you",
+          "trait": "doors"
+        },
+        "high": {
+          "label": "For everyone",
+          "trait": "cousin"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Private Trick",
+        "lowHigh": "The Party Favour",
+        "highLow": "The Solo Disaster",
+        "highHigh": "The Public Incident"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank how you would actually use it.",
+      "helper": "First place is the one you'd reach for on a Tuesday.",
+      "items": [
+        {
+          "id": "stop",
+          "label": "Stop one bad moment",
+          "weights": {
+            "pause": 2,
+            "redo": 1
+          }
+        },
+        {
+          "id": "enter",
+          "label": "Get into a place you shouldn't",
+          "weights": {
+            "doors": 2,
+            "shadow": 1
+          }
+        },
+        {
+          "id": "lie",
+          "label": "Know who is lying",
+          "weights": {
+            "taste": 2,
+            "cousin": 1
+          }
+        },
+        {
+          "id": "back",
+          "label": "Bring back what's gone",
+          "weights": {
+            "return": 2,
+            "buildings": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The government file.",
+      "helper": "Two gaps. The second one is doing a lot of work.",
+      "template": "The file says {a}, and the file is {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "subject can halt one object for eleven seconds",
+              "weights": {
+                "pause": 2,
+                "redo": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "subject can open any door exactly once",
+              "weights": {
+                "doors": 2,
+                "buildings": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "subject can identify false statements by taste",
+              "weights": {
+                "taste": 2,
+                "sneeze": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "subject's shadow has its own file",
+              "weights": {
+                "shadow": 2,
+                "return": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "inaccurate, and they know it",
+              "weights": {
+                "cousin": 2,
+                "shadow": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "longer than it needs to be",
+              "weights": {
+                "buildings": 2,
+                "return": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "being rewritten as we speak",
+              "weights": {
+                "redo": 2,
+                "sneeze": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "mostly about the shadow",
+              "weights": {
+                "shadow": 2,
+                "cousin": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would rather my double handled the social parts.",
+      "trait": "shadow",
+      "low": "I'll do my own talking",
+      "high": "Send the shadow, it's better at this"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Ignorance is a kindness.",
+      "disagree": {
+        "trait": "taste"
+      },
+      "agree": {
+        "trait": "cousin"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Places remember more than people do.",
+      "agree": {
+        "trait": "buildings",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "doors",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your nemesis:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A very fast object",
+          "weights": {
+            "pause": 2,
+            "sneeze": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A door with no handle",
+          "weights": {
+            "doors": 2,
+            "buildings": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Someone who tells the truth constantly",
+          "weights": {
+            "taste": 2,
+            "cousin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Your own reflection",
+          "weights": {
+            "shadow": 2,
+            "return": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "What you actually use it for:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Saving a mug, twice a week",
+          "weights": {
+            "pause": 2,
+            "return": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Never being late again",
+          "weights": {
+            "doors": 2,
+            "redo": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Finding out what people really think",
+          "weights": {
+            "taste": 2,
+            "cousin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Getting out of one conversation",
+          "weights": {
+            "redo": 2,
+            "sneeze": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "pause",
+      "name": "ELEVEN SECONDS OF STILLNESS",
+      "tagline": "One object. Eleven seconds. No explanation",
+      "blurb": "You can stop a single object dead for eleven seconds, which is exactly long enough to catch a falling mug and exactly short enough to be useless in a real emergency. You spend the time on small rescues and you have never once used it to win an argument, though you have thought about it.",
+      "accent": "sky",
+      "strengths": [
+        "Precise under pressure",
+        "Saves small things constantly",
+        "Never overreaches"
+      ],
+      "watchOut": "You freeze at exactly the wrong moment too. Practise the big one.",
+      "mix": {
+        "pause": 42,
+        "doors": 6,
+        "taste": 9,
+        "shadow": 7,
+        "redo": 6,
+        "return": 9,
+        "buildings": 8,
+        "sneeze": 7,
+        "cousin": 6
+      }
+    },
+    {
+      "trait": "doors",
+      "name": "THE ONE FREE DOOR",
+      "tagline": "Any door, once, and then it's done",
+      "blurb": "Every door opens for you exactly one time. This is a power with an obvious flaw: you have to decide, in advance, which door matters. You spend most of your life choosing carefully and occasionally waste it on a cupboard because you were tired.",
+      "accent": "yellow",
+      "strengths": [
+        "Decisive when it counts",
+        "Never takes an entrance for granted",
+        "Finds the option nobody saw"
+      ],
+      "watchOut": "You hoard the good option until it expires. Use it.",
+      "mix": {
+        "pause": 7,
+        "doors": 42,
+        "taste": 6,
+        "shadow": 9,
+        "redo": 8,
+        "return": 7,
+        "buildings": 6,
+        "sneeze": 8,
+        "cousin": 7
+      }
+    },
+    {
+      "trait": "taste",
+      "name": "THE LIE ON YOUR TONGUE",
+      "tagline": "Every false sentence tastes of pennies",
+      "blurb": "You can taste a lie. It sounds like a gift and it is mostly a burden, because now you know exactly how often people are being kind, and there is no way to un-know it. You are extremely well informed and extremely difficult to invite to dinner.",
+      "accent": "purple",
+      "strengths": [
+        "Never fooled twice",
+        "Extraordinary read on people",
+        "Brutally clear-eyed"
+      ],
+      "watchOut": "You hear the lie and miss the kindness. Not everything false is hostile.",
+      "mix": {
+        "pause": 9,
+        "doors": 8,
+        "taste": 42,
+        "shadow": 6,
+        "redo": 5,
+        "return": 8,
+        "buildings": 7,
+        "sneeze": 6,
+        "cousin": 9
+      }
+    },
+    {
+      "trait": "shadow",
+      "name": "THE SHADOW THAT LEAVES THE HOUSE",
+      "tagline": "It has its own plans and better social skills",
+      "blurb": "Your shadow detached about a year ago and has been living a slightly more successful life alongside yours. It goes to the parties, handles the small talk and occasionally comes home with groceries. You are not sure which of you is the original and it has stopped mattering.",
+      "accent": "blue",
+      "strengths": [
+        "Two versions of you, one schedule",
+        "Effortlessly divides labour",
+        "Never lonely"
+      ],
+      "watchOut": "You let it do the living. Take one evening back.",
+      "mix": {
+        "pause": 7,
+        "doors": 6,
+        "taste": 8,
+        "shadow": 42,
+        "redo": 7,
+        "return": 6,
+        "buildings": 9,
+        "sneeze": 8,
+        "cousin": 7
+      }
+    },
+    {
+      "trait": "redo",
+      "name": "FOUR SECONDS BACK",
+      "tagline": "Just enough time to not say it",
+      "blurb": "You can rewind any conversation by four seconds, which is not enough to change the outcome and exactly enough to change the sentence. You have become an extraordinarily careful speaker and a slightly dishonest one, because you have quietly edited more conversations than you can count.",
+      "accent": "green",
+      "strengths": [
+        "Never says the worst thing",
+        "Exceptional timing",
+        "Calm in confrontation"
+      ],
+      "watchOut": "You edit instead of apologising. Say the wrong thing and own it.",
+      "mix": {
+        "pause": 8,
+        "doors": 7,
+        "taste": 6,
+        "shadow": 9,
+        "redo": 42,
+        "return": 8,
+        "buildings": 7,
+        "sneeze": 5,
+        "cousin": 8
+      }
+    },
+    {
+      "trait": "return",
+      "name": "THE THING THAT COMES BACK",
+      "tagline": "You lose nothing. You just wait",
+      "blurb": "Anything you genuinely lose returns to you eventually, slightly worse for wear and faintly resentful. Keys, earrings, people. This has made you careless with possessions and strangely confident about relationships, and both of those are going to be a problem one day.",
+      "accent": "orange",
+      "strengths": [
+        "Unbothered by loss",
+        "Endless patience",
+        "Everything comes back around"
+      ],
+      "watchOut": "Not everything returns. Treat the important things like they could leave.",
+      "mix": {
+        "pause": 6,
+        "doors": 9,
+        "taste": 8,
+        "shadow": 7,
+        "redo": 6,
+        "return": 42,
+        "buildings": 9,
+        "sneeze": 7,
+        "cousin": 6
+      }
+    },
+    {
+      "trait": "buildings",
+      "name": "THE BUILDING KNOWS YOU",
+      "tagline": "It has opinions about your tenancy",
+      "blurb": "You can talk to buildings. They are slow, petty and extremely well informed. Every place you have ever lived has had a grudge, a favourite corner and a long memory about something you did in 2019. You have learned to apologise to stairwells and it has improved your life enormously.",
+      "accent": "lime",
+      "strengths": [
+        "Deeply attuned to places",
+        "Never lost indoors",
+        "Good at making a space feel safe"
+      ],
+      "watchOut": "You absorb the mood of a room too easily. Some of it isn't yours.",
+      "mix": {
+        "pause": 8,
+        "doors": 7,
+        "taste": 5,
+        "shadow": 8,
+        "redo": 7,
+        "return": 6,
+        "buildings": 42,
+        "sneeze": 9,
+        "cousin": 8
+      }
+    },
+    {
+      "trait": "sneeze",
+      "name": "THE SNEEZE THAT EDITS REALITY",
+      "tagline": "One detail, rerolled, no take-backs",
+      "blurb": "Every time you sneeze, one small fact about the world changes. Nothing dramatic: a name, a colour, which side the handle is on. You have learned to sneeze facing away from anything important, and you keep a notebook, because nobody else notices and you have started to doubt yourself.",
+      "accent": "pink",
+      "strengths": [
+        "Adapts to change instantly",
+        "Notices tiny differences",
+        "Never boring to be around"
+      ],
+      "watchOut": "You accept a changed world too easily. Check the facts.",
+      "mix": {
+        "pause": 6,
+        "doors": 9,
+        "taste": 7,
+        "shadow": 6,
+        "redo": 9,
+        "return": 8,
+        "buildings": 7,
+        "sneeze": 42,
+        "cousin": 6
+      }
+    },
+    {
+      "trait": "cousin",
+      "name": "EVERYONE'S COUSIN",
+      "tagline": "They remember you warmly and cannot place you",
+      "blurb": "Anyone you meet will remember you as a cousin. Not a specific cousin, just a cousin: warm, familiar, vaguely related. Doors open, awkwardness evaporates, and nobody can ever quite explain the connection. It is the most socially powerful thing in this quiz and the loneliest.",
+      "accent": "red",
+      "strengths": [
+        "Disarms anyone instantly",
+        "Belongs everywhere",
+        "Never has an awkward introduction"
+      ],
+      "watchOut": "Being everyone's cousin means being nobody's person. Be specific with one.",
+      "mix": {
+        "pause": 7,
+        "doors": 6,
+        "taste": 9,
+        "shadow": 8,
+        "redo": 7,
+        "return": 6,
+        "buildings": 8,
+        "sneeze": 7,
+        "cousin": 42
+      }
+    }
+  ]
+}

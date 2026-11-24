@@ -1,0 +1,582 @@
+{
+  "slug": "pokemon-flatmate",
+  "title": "A Pokémon has moved into your flat and won't leave",
+  "dek": "No Pokédex quiz. Twelve questions about your actual living habits, and something has already decided it lives with you now.",
+  "category": "Gaming",
+  "accent": "lime",
+  "emoji": "🍃",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "It arrived by:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Blocking the entire hallway",
+          "weights": {
+            "snorlax": 2,
+            "magikarp": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Being already inside, somehow",
+          "weights": {
+            "gengar": 2,
+            "mrmime": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Following you home from the shop",
+          "weights": {
+            "psyduck": 2,
+            "meowth": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Being carried in by somebody else",
+          "weights": {
+            "jigglypuff": 2,
+            "magikarp": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The first problem is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The fridge",
+          "weights": {
+            "snorlax": 2,
+            "meowth": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The temperature in the hallway",
+          "weights": {
+            "gengar": 2,
+            "psyduck": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A noise at three in the morning",
+          "weights": {
+            "jigglypuff": 2,
+            "mrmime": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "It keeps headbutting the door",
+          "weights": {
+            "magikarp": 2,
+            "psyduck": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "Your flatmate is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Affectionate, and it is a lot",
+          "weights": {
+            "jigglypuff": 2,
+            "snorlax": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Strange, and it keeps its distance",
+          "weights": {
+            "gengar": 2,
+            "mrmime": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Where it has set up:",
+      "options": [
+        {
+          "id": "a",
+          "label": "At the kitchen table, permanently",
+          "weights": {
+            "snorlax": 2,
+            "meowth": 1
+          },
+          "image": "/images/questions/kitchen-table.jpg",
+          "alt": "A kitchen table with plates and mugs on it"
+        },
+        {
+          "id": "b",
+          "label": "In the hallway, where the light doesn't reach",
+          "weights": {
+            "gengar": 2,
+            "mrmime": 1
+          },
+          "image": "/images/questions/friends-door-hallway.jpg",
+          "alt": "A dim hallway with doors along it"
+        },
+        {
+          "id": "c",
+          "label": "On the couch, exactly where you sit",
+          "weights": {
+            "psyduck": 2,
+            "meowth": 1
+          },
+          "image": "/images/questions/partners-couch.jpg",
+          "alt": "A worn couch in a living room"
+        },
+        {
+          "id": "d",
+          "label": "In the sink, which it has claimed",
+          "weights": {
+            "magikarp": 2,
+            "psyduck": 1
+          },
+          "image": "/images/questions/kitchen-sink.jpg",
+          "alt": "A kitchen sink with dishes beside it"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the flatmate.",
+      "helper": "Across: sleeps all day or wrecks the place. Up: silent or extremely loud.",
+      "x": {
+        "low": {
+          "label": "Sleeps all day",
+          "trait": "snorlax"
+        },
+        "high": {
+          "label": "Wrecks the place",
+          "trait": "gengar"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Silent",
+          "trait": "magikarp"
+        },
+        "high": {
+          "label": "Extremely loud",
+          "trait": "jigglypuff"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Lump",
+        "lowHigh": "The Nap With Snoring",
+        "highLow": "The Nighttime Noise",
+        "highHigh": "The Three AM Concert"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what you now have to buy.",
+      "helper": "First place is the emergency purchase.",
+      "items": [
+        {
+          "id": "food",
+          "label": "More food",
+          "weights": {
+            "snorlax": 2,
+            "meowth": 1
+          }
+        },
+        {
+          "id": "lamp",
+          "label": "A lamp that stays on",
+          "weights": {
+            "gengar": 2,
+            "mrmime": 1
+          }
+        },
+        {
+          "id": "earplugs",
+          "label": "Earplugs",
+          "weights": {
+            "jigglypuff": 2,
+            "psyduck": 1
+          }
+        },
+        {
+          "id": "tank",
+          "label": "A bigger tank",
+          "weights": {
+            "magikarp": 2,
+            "psyduck": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The note you leave for guests.",
+      "helper": "Two gaps. Both are on the fridge.",
+      "template": "The note says {a}, and also {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "do not feed after midnight",
+              "weights": {
+                "snorlax": 2,
+                "meowth": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "if the lights flicker, leave the room",
+              "weights": {
+                "gengar": 2,
+                "mrmime": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "it has a headache, be normal about it",
+              "weights": {
+                "psyduck": 2,
+                "jigglypuff": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "it's fine, it's just sleeping",
+              "weights": {
+                "magikarp": 2,
+                "snorlax": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "we are out of everything",
+              "weights": {
+                "snorlax": 2,
+                "magikarp": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "the cat is not allowed in the hall",
+              "weights": {
+                "meowth": 2,
+                "gengar": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "please stop singing",
+              "weights": {
+                "jigglypuff": 2,
+                "psyduck": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "nobody move the furniture",
+              "weights": {
+                "mrmime": 2,
+                "psyduck": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I need my space arranged exactly right.",
+      "trait": "mrmime",
+      "low": "Put things anywhere",
+      "high": "The chair goes there, actually"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Affection should be loud enough to hear.",
+      "disagree": {
+        "trait": "snorlax"
+      },
+      "agree": {
+        "trait": "jigglypuff"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Everything in life is negotiable.",
+      "agree": {
+        "trait": "meowth",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "magikarp",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your flatmate's real talent:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Sleeping through absolutely anything",
+          "weights": {
+            "snorlax": 2,
+            "magikarp": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Appearing where it shouldn't be",
+          "weights": {
+            "gengar": 2,
+            "mrmime": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Making you feel better for no reason",
+          "weights": {
+            "jigglypuff": 2,
+            "psyduck": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Finding things that are almost money",
+          "weights": {
+            "meowth": 2,
+            "magikarp": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Six months later:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You've built your life around its nap schedule",
+          "weights": {
+            "snorlax": 2,
+            "psyduck": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You've stopped inviting people over",
+          "weights": {
+            "gengar": 2,
+            "mrmime": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "It has its own social media account",
+          "weights": {
+            "jigglypuff": 2,
+            "meowth": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "It's still here, and you're fond of it",
+          "weights": {
+            "magikarp": 2,
+            "psyduck": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "snorlax",
+      "name": "SNORLAX",
+      "tagline": "It has taken the hallway and your entire food budget",
+      "blurb": "Your flatmate is enormous, immovable and asleep in the worst possible place. There is no negotiating with it. Meals now happen around its schedule, the fridge is a public facility, and you have started describing its naps to colleagues like weather reports.",
+      "accent": "green",
+      "strengths": [
+        "Unbothered by everything",
+        "Genuinely restful to be near",
+        "Refuses to rush"
+      ],
+      "watchOut": "Its comfort has become your problem. Set one boundary about the corridor.",
+      "mix": {
+        "snorlax": 42,
+        "gengar": 7,
+        "psyduck": 11,
+        "jigglypuff": 10,
+        "mrmime": 8,
+        "magikarp": 12,
+        "meowth": 10
+      }
+    },
+    {
+      "trait": "gengar",
+      "name": "GENGAR",
+      "tagline": "You are not sure it is living here or haunting here",
+      "blurb": "The lights flicker, the temperature drops in one specific corner and things are not where you left them. It is not hostile. It is funny in a way that is hard to prove. Guests have started asking if your flat is 'like this' and you have stopped explaining.",
+      "accent": "purple",
+      "strengths": [
+        "Never boring",
+        "Excellent at pranks",
+        "Keeps people on their toes"
+      ],
+      "watchOut": "You laugh at things that are actually unsettling you. Say it out loud.",
+      "mix": {
+        "snorlax": 10,
+        "gengar": 42,
+        "psyduck": 8,
+        "jigglypuff": 12,
+        "mrmime": 11,
+        "magikarp": 9,
+        "meowth": 8
+      }
+    },
+    {
+      "trait": "psyduck",
+      "name": "PSYDUCK",
+      "tagline": "It is trying its best and it is doing badly",
+      "blurb": "Your flatmate is anxious, chronically confused and extremely endearing. It follows you from room to room holding its head, it accidentally breaks things with its mind, and it needs a calm explanation about four times an hour. You have never once considered asking it to leave.",
+      "accent": "yellow",
+      "strengths": [
+        "Deeply lovable",
+        "Surprisingly powerful under stress",
+        "Completely without ego"
+      ],
+      "watchOut": "You look after everyone and call it normal. Let someone look after you.",
+      "mix": {
+        "snorlax": 12,
+        "gengar": 10,
+        "psyduck": 42,
+        "jigglypuff": 9,
+        "mrmime": 7,
+        "magikarp": 11,
+        "meowth": 9
+      }
+    },
+    {
+      "trait": "jigglypuff",
+      "name": "JIGGLYPUFF",
+      "tagline": "You asked it to stop singing. It did not.",
+      "blurb": "Your flatmate is sweet, round and absolutely convinced of its own talent. There is a microphone. There is a nightly performance nobody requested. It also, genuinely, fixes your mood on the worst days, which is why it still lives here.",
+      "accent": "pink",
+      "strengths": [
+        "Instantly comforting",
+        "Completely sincere",
+        "Makes a flat feel like a home"
+      ],
+      "watchOut": "You give it an audience you don't have the energy for. Close the door sometimes.",
+      "mix": {
+        "snorlax": 9,
+        "gengar": 8,
+        "psyduck": 11,
+        "jigglypuff": 42,
+        "mrmime": 10,
+        "magikarp": 8,
+        "meowth": 12
+      }
+    },
+    {
+      "trait": "mrmime",
+      "name": "MR. MIME",
+      "tagline": "It has reorganised the flat and it will not discuss it",
+      "blurb": "Every object in your home has been moved to a position it considers correct and cannot explain, because it does not speak. There are invisible walls now. You have walked into three of them. It watches you do this with an expression of enormous patience.",
+      "accent": "sky",
+      "strengths": [
+        "Immaculate sense of space",
+        "Quietly very helpful",
+        "Zero drama, zero words"
+      ],
+      "watchOut": "You let other people arrange your life because it's easier. Move one thing back.",
+      "mix": {
+        "snorlax": 11,
+        "gengar": 9,
+        "psyduck": 8,
+        "jigglypuff": 11,
+        "mrmime": 42,
+        "magikarp": 10,
+        "meowth": 9
+      }
+    },
+    {
+      "trait": "magikarp",
+      "name": "MAGIKARP",
+      "tagline": "Useless, beloved, and probably going to be incredible",
+      "blurb": "Your flatmate does nothing. It flops. It splashes. It headbutts the door with no effect whatsoever. Everyone who visits asks why you keep it. You cannot explain, and you are quietly certain that one day it will do something astonishing and you will be insufferable about it.",
+      "accent": "orange",
+      "strengths": [
+        "Unreasonably hopeful",
+        "No maintenance required",
+        "You believe in it"
+      ],
+      "watchOut": "You're waiting for someone to become worth the effort. Meet them where they are.",
+      "mix": {
+        "snorlax": 8,
+        "gengar": 12,
+        "psyduck": 10,
+        "jigglypuff": 9,
+        "mrmime": 8,
+        "magikarp": 42,
+        "meowth": 11
+      }
+    },
+    {
+      "trait": "meowth",
+      "name": "MEOWTH",
+      "tagline": "It pays rent in coins it found somewhere",
+      "blurb": "Your flatmate talks constantly, has an angle on everything and brings home objects of uncertain origin. It is charming, mildly criminal and weirdly good at getting what it wants. You have stopped asking where the money came from, mostly because there is always money.",
+      "accent": "yellow",
+      "strengths": [
+        "Endlessly resourceful",
+        "Negotiates anything",
+        "Excellent company"
+      ],
+      "watchOut": "You've started accepting shortcuts. Check where the coins come from.",
+      "mix": {
+        "snorlax": 11,
+        "gengar": 9,
+        "psyduck": 8,
+        "jigglypuff": 12,
+        "mrmime": 10,
+        "magikarp": 8,
+        "meowth": 42
+      }
+    }
+  ]
+}

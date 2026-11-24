@@ -1,0 +1,582 @@
+{
+  "slug": "profiler-file",
+  "title": "The profiler's file on you is disturbingly accurate",
+  "dek": "Fictional killers only, no gore and no real crimes. Twelve questions about control, routine and being caught, and the BAU will name your archetype.",
+  "category": "Crime",
+  "accent": "red",
+  "emoji": "🗂️",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The first page of your file says you are:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Extremely charming, which is the concerning part",
+          "weights": {
+            "charmer": 2,
+            "perfectionist": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Unusually organised",
+          "weights": {
+            "perfectionist": 2,
+            "collector": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Theatrical, and aware of the audience",
+          "weights": {
+            "showman": 2,
+            "copycat": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Unsolved, for eleven years",
+          "weights": {
+            "ghost": 2,
+            "loyalist": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "What you actually keep:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A spotless flat and a very specific routine",
+          "weights": {
+            "perfectionist": 2,
+            "charmer": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Every ticket, every receipt, boxed and dated",
+          "weights": {
+            "collector": 2,
+            "ghost": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Photographs of the coverage",
+          "weights": {
+            "showman": 2,
+            "copycat": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nothing, and that is the point",
+          "weights": {
+            "ghost": 2,
+            "loyalist": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You would rather be:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Remembered fondly by the people who met you",
+          "weights": {
+            "charmer": 2,
+            "loyalist": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Never mentioned in the report at all",
+          "weights": {
+            "ghost": 2,
+            "collector": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The photograph in the case file:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A tidy desk nobody else is allowed to use",
+          "weights": {
+            "perfectionist": 2,
+            "collector": 1
+          },
+          "image": "/images/questions/office-desk.jpg",
+          "alt": "A tidy office desk and chair"
+        },
+        {
+          "id": "b",
+          "label": "A window with the blinds half down",
+          "weights": {
+            "charmer": 2,
+            "ghost": 1
+          },
+          "image": "/images/questions/villain-window.jpg",
+          "alt": "A window seen from a darkened room"
+        },
+        {
+          "id": "c",
+          "label": "A stage-lit street, photographed twice",
+          "weights": {
+            "showman": 2,
+            "copycat": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A street lit by neon signs at night"
+        },
+        {
+          "id": "d",
+          "label": "A quiet house on a road nobody visits",
+          "weights": {
+            "loyalist": 2,
+            "perfectionist": 1
+          },
+          "image": "/images/questions/cartoon-suburb.jpg",
+          "alt": "A quiet residential street"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the profile.",
+      "helper": "Across: known or unknown. Up: careful or theatrical.",
+      "x": {
+        "low": {
+          "label": "Known",
+          "trait": "charmer"
+        },
+        "high": {
+          "label": "Unknown",
+          "trait": "ghost"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Careful",
+          "trait": "perfectionist"
+        },
+        "high": {
+          "label": "Theatrical",
+          "trait": "showman"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Trusted Neighbour",
+        "lowHigh": "The Public Face",
+        "highLow": "The Cold File",
+        "highHigh": "The Letter to the Press"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what gets someone caught.",
+      "helper": "First place is the mistake you would never make.",
+      "items": [
+        {
+          "id": "routine",
+          "label": "A routine nobody thought about",
+          "weights": {
+            "perfectionist": 2,
+            "collector": 1
+          }
+        },
+        {
+          "id": "talking",
+          "label": "Talking about it afterwards",
+          "weights": {
+            "showman": 2,
+            "charmer": 1
+          }
+        },
+        {
+          "id": "keeping",
+          "label": "Keeping something they shouldn't",
+          "weights": {
+            "collector": 2,
+            "loyalist": 1
+          }
+        },
+        {
+          "id": "return",
+          "label": "Going back to the same place",
+          "weights": {
+            "loyalist": 2,
+            "ghost": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The profiler's closing paragraph.",
+      "helper": "Two gaps. Say it in a voice-over and it is basically the trailer.",
+      "template": "Subject is {a}, and will almost certainly {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "likable, articulate, and entirely unreachable",
+              "weights": {
+                "charmer": 2,
+                "perfectionist": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "rigid about small things and careless about big ones",
+              "weights": {
+                "perfectionist": 2,
+                "collector": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "performing for an audience that may not exist",
+              "weights": {
+                "showman": 2,
+                "copycat": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "unremarkable in every way that matters",
+              "weights": {
+                "ghost": 2,
+                "loyalist": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "be described as helpful by everyone who met them",
+              "weights": {
+                "charmer": 2,
+                "loyalist": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "keep a record nobody finds for years",
+              "weights": {
+                "collector": 2,
+                "perfectionist": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "contact the investigators directly",
+              "weights": {
+                "showman": 2,
+                "copycat": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "never be identified at all",
+              "weights": {
+                "ghost": 2,
+                "collector": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would rather be caught than ignored.",
+      "trait": "showman",
+      "low": "Let me vanish quietly",
+      "high": "At least read the letter"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Loyalty excuses almost anything.",
+      "disagree": {
+        "trait": "ghost"
+      },
+      "agree": {
+        "trait": "loyalist"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The details are the only thing that separates us from animals.",
+      "agree": {
+        "trait": "perfectionist",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "copycat",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your one mistake, in the file:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You were too good at being liked",
+          "weights": {
+            "charmer": 2,
+            "perfectionist": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You kept the wrong thing",
+          "weights": {
+            "collector": 2,
+            "loyalist": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You wanted someone to notice",
+          "weights": {
+            "showman": 2,
+            "copycat": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You went back to the same road",
+          "weights": {
+            "loyalist": 2,
+            "ghost": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last line of the episode:",
+      "options": [
+        {
+          "id": "a",
+          "label": "\"They said he was lovely.\"",
+          "weights": {
+            "charmer": 2,
+            "showman": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "\"The file is still open.\"",
+          "weights": {
+            "ghost": 2,
+            "collector": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "\"There was a second one we never found.\"",
+          "weights": {
+            "collector": 2,
+            "copycat": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "\"He was protecting his family.\"",
+          "weights": {
+            "loyalist": 2,
+            "perfectionist": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "charmer",
+      "name": "THE CHARMER",
+      "tagline": "Everyone's favourite neighbour, allegedly",
+      "blurb": "Your whole method is access. You are warm, attentive and easy to trust, and people tell you things within twenty minutes of meeting you. Nothing about you reads as dangerous, which the file notes three separate times with increasing unease.",
+      "accent": "yellow",
+      "strengths": [
+        "Instantly trusted",
+        "Reads people accurately",
+        "Never needs to raise their voice"
+      ],
+      "watchOut": "You use warmth to get past things. Mean it, or stop using it.",
+      "mix": {
+        "charmer": 42,
+        "perfectionist": 7,
+        "showman": 11,
+        "ghost": 10,
+        "copycat": 8,
+        "loyalist": 12,
+        "collector": 10
+      }
+    },
+    {
+      "trait": "perfectionist",
+      "name": "THE PERFECTIONIST",
+      "tagline": "Everything in its place, including you",
+      "blurb": "You are not chaotic and you are not impulsive. You are a routine, executed properly. The flat is clean, the calendar is colour-coded and the same small mistake would destroy you far more than any investigation. The profiler's note reads: 'more afraid of disorder than of consequences.'",
+      "accent": "cyan",
+      "strengths": [
+        "Immaculate preparation",
+        "Never repeats a mistake",
+        "Calm in chaos, technically"
+      ],
+      "watchOut": "You will sacrifice the good thing to keep the tidy thing. Loosen one rule.",
+      "mix": {
+        "charmer": 10,
+        "perfectionist": 42,
+        "showman": 8,
+        "ghost": 12,
+        "copycat": 11,
+        "loyalist": 9,
+        "collector": 8
+      }
+    },
+    {
+      "trait": "showman",
+      "name": "THE SHOWMAN",
+      "tagline": "It isn't finished until someone reacts",
+      "blurb": "You are not doing this quietly. The staging, the timing, the note left where it will be found first: it is all communication. You want the room to understand something, and you would genuinely rather be caught than be a paragraph nobody reads.",
+      "accent": "red",
+      "strengths": [
+        "Unmatched sense of theatre",
+        "Reads an audience",
+        "Never dull"
+      ],
+      "watchOut": "You escalate for attention. Notice when the room has stopped watching.",
+      "mix": {
+        "charmer": 12,
+        "perfectionist": 10,
+        "showman": 42,
+        "ghost": 9,
+        "copycat": 7,
+        "loyalist": 11,
+        "collector": 9
+      }
+    },
+    {
+      "trait": "ghost",
+      "name": "THE GHOST",
+      "tagline": "Eleven years, no photograph, no name",
+      "blurb": "You leave nothing: no pattern, no receipts, no face in a single frame. You are the file that gets reopened every few years by someone certain there is something in it. You find the attention mildly funny, mostly because it has never once come close.",
+      "accent": "blue",
+      "strengths": [
+        "Total discretion",
+        "Impossible to profile",
+        "Never acts on impulse"
+      ],
+      "watchOut": "Invisibility is safe and very lonely. Let one person find you.",
+      "mix": {
+        "charmer": 9,
+        "perfectionist": 8,
+        "showman": 11,
+        "ghost": 42,
+        "copycat": 10,
+        "loyalist": 8,
+        "collector": 12
+      }
+    },
+    {
+      "trait": "copycat",
+      "name": "THE COPYCAT",
+      "tagline": "Familiar, but the details are wrong",
+      "blurb": "You are less an original than a very careful reader. You take what worked, discard what didn't, and improve the parts everyone agreed were sloppy. Investigators keep almost matching you to someone else, which is the most flattering thing anyone has ever said about your work.",
+      "accent": "purple",
+      "strengths": [
+        "Learns from everything",
+        "Exceptional attention to detail",
+        "Improves on the original"
+      ],
+      "watchOut": "You borrow other people's lives instead of building one. Start your own.",
+      "mix": {
+        "charmer": 11,
+        "perfectionist": 9,
+        "showman": 8,
+        "ghost": 11,
+        "copycat": 42,
+        "loyalist": 10,
+        "collector": 9
+      }
+    },
+    {
+      "trait": "loyalist",
+      "name": "THE ONE WHO DID IT FOR FAMILY",
+      "tagline": "Not a plan. A debt",
+      "blurb": "Nothing in your file is about you. It is about a house, a debt and a person you would do anything for. You are not cold or theatrical or clever. You are simply loyal past the point where loyalty is a virtue, and the profiler finds that harder to explain than any of the others.",
+      "accent": "green",
+      "strengths": [
+        "Absolute devotion",
+        "Unshakeable under pressure",
+        "Protective beyond reason"
+      ],
+      "watchOut": "You would ruin your life for someone who never asked. Check first.",
+      "mix": {
+        "charmer": 8,
+        "perfectionist": 12,
+        "showman": 10,
+        "ghost": 9,
+        "copycat": 8,
+        "loyalist": 42,
+        "collector": 11
+      }
+    },
+    {
+      "trait": "collector",
+      "name": "THE COLLECTOR",
+      "tagline": "Everything is labelled and nothing is thrown away",
+      "blurb": "You keep things. Tickets, letters, a box in a cupboard with a date on it. The collection is not the crime; it is the proof that something happened and that you were there for it. The profiler's summary is one line: 'the archive is the motive.'",
+      "accent": "orange",
+      "strengths": [
+        "Extraordinary memory",
+        "Everything documented",
+        "Nothing ever really lost"
+      ],
+      "watchOut": "You keep things to avoid feeling them. Open the box occasionally.",
+      "mix": {
+        "charmer": 11,
+        "perfectionist": 9,
+        "showman": 8,
+        "ghost": 12,
+        "copycat": 10,
+        "loyalist": 8,
+        "collector": 42
+      }
+    }
+  ]
+}

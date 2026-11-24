@@ -1,0 +1,679 @@
+{
+  "slug": "jjk-sorcerer",
+  "title": "Jujutsu High has a cursed technique with your name on it",
+  "dek": "No domain expansions to name. Twelve questions about how you handle a fight, a team and a bad grade, and the school decides who you are.",
+  "category": "Anime",
+  "accent": "purple",
+  "emoji": "👁️",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your cursed energy feels like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Something warm and absurdly stubborn",
+          "weights": {
+            "yuji": 2,
+            "todo": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Shadows that move before you do",
+          "weights": {
+            "megumi": 2,
+            "choso": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A hammer, a nail, and excellent aim",
+          "weights": {
+            "nobara": 2,
+            "maki": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "So much of it that people flinch",
+          "weights": {
+            "gojo": 2,
+            "sukuna": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your technique, in one line:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Hit it until it stops being a problem",
+          "weights": {
+            "yuji": 2,
+            "maki": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Summon something and let it handle the room",
+          "weights": {
+            "megumi": 2,
+            "toge": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Ranged, precise, and personal",
+          "weights": {
+            "nobara": 2,
+            "nanami": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Frankly excessive",
+          "weights": {
+            "gojo": 2,
+            "sukuna": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "In a fight you would rather:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Protect the person behind you",
+          "weights": {
+            "yuji": 2,
+            "choso": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Win on your own terms",
+          "weights": {
+            "sukuna": 2,
+            "maki": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your domain would look like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A city street at night, lit up and loud",
+          "weights": {
+            "gojo": 2,
+            "toge": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A neon-lit street at night"
+        },
+        {
+          "id": "b",
+          "label": "A forest with something in it",
+          "weights": {
+            "megumi": 2,
+            "choso": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A dark path through a forest"
+        },
+        {
+          "id": "c",
+          "label": "A corridor where the lights fail in order",
+          "weights": {
+            "nobara": 2,
+            "maki": 1
+          },
+          "image": "/images/questions/horror-hall-cellar.jpg",
+          "alt": "A dim corridor leading to a closed door"
+        },
+        {
+          "id": "d",
+          "label": "Somewhere open, dry, and endless",
+          "weights": {
+            "sukuna": 2,
+            "todo": 1
+          },
+          "image": "/images/questions/space-desert.jpg",
+          "alt": "An empty desert under a wide sky"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your cursed energy.",
+      "helper": "Across: protect or destroy. Up: alone or with a team.",
+      "x": {
+        "low": {
+          "label": "Protect",
+          "trait": "yuji"
+        },
+        "high": {
+          "label": "Destroy",
+          "trait": "sukuna"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Alone",
+          "trait": "maki"
+        },
+        "high": {
+          "label": "With a team",
+          "trait": "todo"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The One Who Stays",
+        "lowHigh": "The Formation",
+        "highLow": "The Empty Street",
+        "highHigh": "The Spectacle"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what actually makes a sorcerer.",
+      "helper": "First place is the thing you would never trade.",
+      "items": [
+        {
+          "id": "reason",
+          "label": "A reason to keep fighting",
+          "weights": {
+            "yuji": 2,
+            "choso": 1
+          }
+        },
+        {
+          "id": "control",
+          "label": "Technique and control",
+          "weights": {
+            "gojo": 2,
+            "megumi": 1
+          }
+        },
+        {
+          "id": "weapon",
+          "label": "A weapon you trust completely",
+          "weights": {
+            "nobara": 2,
+            "maki": 1
+          }
+        },
+        {
+          "id": "partner",
+          "label": "The right partner",
+          "weights": {
+            "todo": 2,
+            "toge": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your file, in two lines.",
+      "helper": "Two gaps. The second line is the one people repeat.",
+      "template": "Grade: {a}. Reputation: {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "special grade, and everyone knows it",
+              "weights": {
+                "gojo": 2,
+                "sukuna": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "first grade, quietly",
+              "weights": {
+                "nanami": 2,
+                "megumi": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "unranked, and dangerous anyway",
+              "weights": {
+                "maki": 2,
+                "toge": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "whatever they wrote down, and it's wrong",
+              "weights": {
+                "yuji": 2,
+                "nobara": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "the one who never shuts up",
+              "weights": {
+                "toge": 2,
+                "todo": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "the one who always arrives late",
+              "weights": {
+                "gojo": 2,
+                "nanami": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "the one who shouldn't be alive",
+              "weights": {
+                "choso": 2,
+                "yuji": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "the one nobody wants to fight",
+              "weights": {
+                "sukuna": 2,
+                "maki": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I need a rival to become myself.",
+      "trait": "todo",
+      "low": "I compete with nobody",
+      "high": "Give me someone to beat"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Feelings are a liability in this job.",
+      "disagree": {
+        "trait": "megumi"
+      },
+      "agree": {
+        "trait": "nanami"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Raw talent beats an inherited technique every time.",
+      "agree": {
+        "trait": "maki",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "gojo",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your worst habit:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Taking on a fight that was never yours",
+          "weights": {
+            "yuji": 2,
+            "choso": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Never explaining the plan",
+          "weights": {
+            "megumi": 2,
+            "maki": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Being unbearable when you're right",
+          "weights": {
+            "gojo": 2,
+            "sukuna": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Working straight through lunch",
+          "weights": {
+            "nanami": 2,
+            "nobara": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "How your story ends:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Still standing, still helping",
+          "weights": {
+            "yuji": 2,
+            "todo": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Alone, and fine with it",
+          "weights": {
+            "sukuna": 2,
+            "maki": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Somewhere quiet, finally",
+          "weights": {
+            "nanami": 2,
+            "choso": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Back in the fight before the credits",
+          "weights": {
+            "nobara": 2,
+            "toge": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "yuji",
+      "name": "YUJI ITADORI",
+      "tagline": "Punches first, feels it later",
+      "blurb": "You are the one who keeps getting up, and not because you're the strongest. You take on fights that were never yours, you refuse to accept that somebody has to die for this to work, and you are somehow still kind about it. Your power is that nobody can convince you to give up.",
+      "accent": "red",
+      "strengths": [
+        "Refuses to give up on anyone",
+        "Absurd stamina",
+        "Picks the right fight, eventually"
+      ],
+      "watchOut": "You carry guilt that isn't yours. You are allowed to stop for a day.",
+      "mix": {
+        "yuji": 42,
+        "megumi": 5,
+        "nobara": 8,
+        "gojo": 6,
+        "sukuna": 6,
+        "maki": 8,
+        "toge": 7,
+        "nanami": 6,
+        "todo": 5,
+        "choso": 7
+      }
+    },
+    {
+      "trait": "megumi",
+      "name": "MEGUMI FUSHIGURO",
+      "tagline": "Has a plan and will not be telling you",
+      "blurb": "You are quiet, deliberate and considerably more dangerous than the room assumes. You make decisions other people find cold and then turn out to have been right. Your loyalty is enormous but never announced, and it usually shows up as standing in a doorway you did not have to stand in.",
+      "accent": "blue",
+      "strengths": [
+        "Cool head in a bad situation",
+        "Thinks four moves ahead",
+        "Protects without saying so"
+      ],
+      "watchOut": "You would rather handle it alone than explain yourself. Explain yourself once.",
+      "mix": {
+        "yuji": 7,
+        "megumi": 42,
+        "nobara": 5,
+        "gojo": 8,
+        "sukuna": 7,
+        "maki": 6,
+        "toge": 5,
+        "nanami": 8,
+        "todo": 7,
+        "choso": 5
+      }
+    },
+    {
+      "trait": "nobara",
+      "name": "NOBARA KUGISAKI",
+      "tagline": "Confident, correct, and holding a hammer",
+      "blurb": "You have never once needed someone else's approval and it shows in everything you do. Your style is precise, personal and a little theatrical, and you take losses as information rather than identity. You are the friend who says the hard thing and then buys dinner.",
+      "accent": "orange",
+      "strengths": [
+        "Unshakeable self-belief",
+        "Surgical precision",
+        "Says the true thing early"
+      ],
+      "watchOut": "You would rather be right than ask for help. Ask anyway.",
+      "mix": {
+        "yuji": 8,
+        "megumi": 7,
+        "nobara": 42,
+        "gojo": 6,
+        "sukuna": 5,
+        "maki": 7,
+        "toge": 6,
+        "nanami": 5,
+        "todo": 7,
+        "choso": 7
+      }
+    },
+    {
+      "trait": "gojo",
+      "name": "SATORU GOJO",
+      "tagline": "Overpowered and insufferable about it",
+      "blurb": "You are the most capable person in most rooms and you have made that everyone's problem. You joke through serious moments, you arrive late on purpose, and underneath all of it you are carrying a plan nobody asked you to carry. You are exhausting and irreplaceable in equal measure.",
+      "accent": "cyan",
+      "strengths": [
+        "Genuinely exceptional",
+        "Defuses tension instantly",
+        "Thinks on a different scale"
+      ],
+      "watchOut": "The bit is a shield. Let the people who love you see the tired version.",
+      "mix": {
+        "yuji": 6,
+        "megumi": 5,
+        "nobara": 8,
+        "gojo": 42,
+        "sukuna": 7,
+        "maki": 6,
+        "toge": 8,
+        "nanami": 7,
+        "todo": 6,
+        "choso": 5
+      }
+    },
+    {
+      "trait": "sukuna",
+      "name": "RYOMEN SUKUNA",
+      "tagline": "You were here first and it shows",
+      "blurb": "You do not negotiate and you do not explain. You are entirely self-possessed, extremely good at what you do, and uninterested in whether that makes you pleasant. People work around you rather than with you, and you have decided that is their problem, which it usually is.",
+      "accent": "red",
+      "strengths": [
+        "Total self-belief",
+        "Impossible to intimidate",
+        "Never wastes a move"
+      ],
+      "watchOut": "You treat cooperation as weakness. It is the only thing you're actually bad at.",
+      "mix": {
+        "yuji": 7,
+        "megumi": 6,
+        "nobara": 6,
+        "gojo": 8,
+        "sukuna": 42,
+        "maki": 7,
+        "toge": 6,
+        "nanami": 5,
+        "todo": 7,
+        "choso": 6
+      }
+    },
+    {
+      "trait": "maki",
+      "name": "MAKI ZENIN",
+      "tagline": "No technique, no problem",
+      "blurb": "You were told what you could not have and you built something better out of what was left. You are blunt, physically fearless and allergic to being underestimated. Your strength is not inherited, borrowed or blessed. It is the result of years nobody watched.",
+      "accent": "green",
+      "strengths": [
+        "Self-made and proud of it",
+        "Fearless in a straight fight",
+        "Refuses to be defined by a family"
+      ],
+      "watchOut": "You prove yourself constantly to people who don't matter. Stop.",
+      "mix": {
+        "yuji": 6,
+        "megumi": 8,
+        "nobara": 7,
+        "gojo": 6,
+        "sukuna": 5,
+        "maki": 42,
+        "toge": 7,
+        "nanami": 6,
+        "todo": 5,
+        "choso": 8
+      }
+    },
+    {
+      "trait": "toge",
+      "name": "TOGE INUMAKI",
+      "tagline": "Says very little, means all of it",
+      "blurb": "You are the most careful communicator in the group, because you understand exactly how much damage a sentence can do. You are funny in a way that takes people a week to notice, and you show up for your people with food, timing and absolutely no drama. Everyone trusts you. Nobody can explain why.",
+      "accent": "yellow",
+      "strengths": [
+        "Precise with every word",
+        "Calm in chaos",
+        "Quietly hilarious"
+      ],
+      "watchOut": "You hold back so much that people miss what you meant. Say the plain version.",
+      "mix": {
+        "yuji": 7,
+        "megumi": 6,
+        "nobara": 5,
+        "gojo": 7,
+        "sukuna": 6,
+        "maki": 6,
+        "toge": 42,
+        "nanami": 8,
+        "todo": 7,
+        "choso": 6
+      }
+    },
+    {
+      "trait": "nanami",
+      "name": "KENTO NANAMI",
+      "tagline": "Clock in, do it properly, clock out",
+      "blurb": "You are competent, boundaried and deeply tired. You do the job to an unreasonable standard, you refuse to be dramatic about it, and you have a private list of things worth the effort. People mistake your restraint for coldness. It is actually the most disciplined kindness in the building.",
+      "accent": "yellow",
+      "strengths": [
+        "Immaculate work",
+        "Never overreacts",
+        "Protects people by being reliable"
+      ],
+      "watchOut": "You'll work past the point of sense. The bread is good. Go home.",
+      "mix": {
+        "yuji": 5,
+        "megumi": 8,
+        "nobara": 6,
+        "gojo": 6,
+        "sukuna": 8,
+        "maki": 7,
+        "toge": 6,
+        "nanami": 42,
+        "todo": 5,
+        "choso": 7
+      }
+    },
+    {
+      "trait": "todo",
+      "name": "AOI TODO",
+      "tagline": "Needs a rival the way other people need sleep",
+      "blurb": "You are loud, sincere and completely without shame about what you love. You decide instantly whether someone is your person, and then you commit at a volume that alarms bystanders. Competition is not aggression for you. It is how you say thank you.",
+      "accent": "pink",
+      "strengths": [
+        "Enormous enthusiasm",
+        "Builds people up instead of down",
+        "Zero pretence"
+      ],
+      "watchOut": "Not everyone wants to be your rival. Read the room before declaring one.",
+      "mix": {
+        "yuji": 7,
+        "megumi": 5,
+        "nobara": 8,
+        "gojo": 7,
+        "sukuna": 6,
+        "maki": 5,
+        "toge": 8,
+        "nanami": 7,
+        "todo": 42,
+        "choso": 5
+      }
+    },
+    {
+      "trait": "choso",
+      "name": "CHOSO",
+      "tagline": "Would burn everything down for one person",
+      "blurb": "You are quiet, intense and almost entirely motivated by a small number of people you have decided are yours. You do not need the group's approval and you are not interested in being understood. You are gentle with the ones who matter and unmoved by everyone else.",
+      "accent": "purple",
+      "strengths": [
+        "Absolute loyalty",
+        "Focused under pressure",
+        "Unimpressed by hierarchy"
+      ],
+      "watchOut": "Your circle is very small and very load-bearing. Widen it slightly.",
+      "mix": {
+        "yuji": 8,
+        "megumi": 7,
+        "nobara": 6,
+        "gojo": 5,
+        "sukuna": 7,
+        "maki": 6,
+        "toge": 5,
+        "nanami": 7,
+        "todo": 7,
+        "choso": 42
+      }
+    }
+  ]
+}
