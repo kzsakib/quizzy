@@ -113,7 +113,7 @@
     {
       "id": "q4",
       "type": "image",
-      "prompt": "The booth has one object left on the desk. Pick it.",
+      "prompt": "One thing is left in the building. Pick it.",
       "options": [
         {
           "id": "a",
@@ -127,7 +127,7 @@
         },
         {
           "id": "b",
-          "label": "A stack of records",
+          "label": "Two records, sleeves missing",
           "weights": {
             "silence": 2,
             "song": 1
@@ -147,13 +147,13 @@
         },
         {
           "id": "d",
-          "label": "An empty stadium",
+          "label": "The transmitter mast outside",
           "weights": {
-            "laugh": 2,
-            "recipe": 1
+            "silence": 2,
+            "list": 1
           },
-          "image": "/images/questions/sport-place-pitch.jpg",
-          "alt": "An empty sports stadium"
+          "image": "/images/questions/radio-mast.jpg",
+          "alt": "A tall radio mast against a clear sky"
         }
       ]
     },

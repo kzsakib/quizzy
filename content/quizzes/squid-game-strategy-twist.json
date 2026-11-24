@@ -90,11 +90,11 @@
     {
       "id": "q3",
       "type": "this_or_that",
-      "prompt": "Do you share personal information to build trust?",
+      "prompt": "A stranger offers you half their bread. You:",
       "options": [
         {
           "id": "a",
-          "label": "Share a secret",
+          "label": "Share a secret back",
           "weights": {
             "alliance_builder": 2,
             "puzzle_solver": 1
@@ -227,14 +227,14 @@
       "id": "q7",
       "type": "madlibs",
       "prompt": "Complete the sentence that describes your next move.",
-      "template": "You {blank1} a {blank2} to survive the next round.",
+      "template": "To survive the next round, you {blank1} and head for {blank2}.",
       "blanks": [
         {
           "id": "blank1",
           "options": [
             {
               "id": "a",
-              "label": "befriend",
+              "label": "make an ally fast",
               "weights": {
                 "alliance_builder": 2,
                 "puzzle_solver": 1
@@ -242,7 +242,7 @@
             },
             {
               "id": "b",
-              "label": "ignore",
+              "label": "stay quiet",
               "weights": {
                 "silent_observer": 2,
                 "rule_keeper": 1
@@ -250,7 +250,7 @@
             },
             {
               "id": "c",
-              "label": "challenge",
+              "label": "challenge the guards",
               "weights": {
                 "risk_taker": 2,
                 "last_minute_gambler": 1
@@ -263,7 +263,7 @@
           "options": [
             {
               "id": "a",
-              "label": "secret tunnel",
+              "label": "the secret tunnel",
               "weights": {
                 "puzzle_solver": 2,
                 "alliance_builder": 1
@@ -271,7 +271,7 @@
             },
             {
               "id": "b",
-              "label": "guarded door",
+              "label": "the guarded door",
               "weights": {
                 "rule_keeper": 2,
                 "silent_observer": 1
@@ -279,7 +279,7 @@
             },
             {
               "id": "c",
-              "label": "exploding bridge",
+              "label": "the exploding bridge",
               "weights": {
                 "last_minute_gambler": 2,
                 "risk_taker": 1
@@ -294,13 +294,13 @@
       "type": "intensity",
       "prompt": "How comfortable are you with taking big risks?",
       "trait": "risk_taker",
-      "low": 1,
-      "high": 5
+      "low": "I stay back",
+      "high": "I jump first"
     },
     {
       "id": "q9",
       "type": "spectrum",
-      "prompt": "Do you prefer to stay hidden and watch, or to join forces and cooperate?",
+      "prompt": "Joining forces beats watching from the shadows.",
       "disagree": {
         "trait": "silent_observer"
       },
@@ -313,11 +313,11 @@
       "type": "agreement",
       "prompt": "I trust that following the written rules will keep me safe.",
       "agree": {
-        "trait": "puzzle_solver",
+        "trait": "rule_keeper",
         "weight": 2
       },
       "disagree": {
-        "trait": "rule_keeper",
+        "trait": "puzzle_solver",
         "weight": 2
       }
     },
@@ -363,7 +363,7 @@
     {
       "id": "q12",
       "type": "mc",
-      "prompt": "How do you make sure you never miss a crucial detail?",
+      "prompt": "There's a rule sheet in tiny print. You:",
       "options": [
         {
           "id": "a",
@@ -391,7 +391,7 @@
         },
         {
           "id": "d",
-          "label": "Ignore the fine print and act instinctively",
+          "label": "Trust instinct over instructions",
           "weights": {
             "risk_taker": 2,
             "last_minute_gambler": 1

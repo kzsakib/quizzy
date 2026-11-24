@@ -46,8 +46,29 @@ for (const file of files) {
     if (!traits.includes(trait)) fail(`${quiz.slug}/${where}: unknown trait ${trait}`);
   };
 
+  // Choice options and mad-lib chips need a unique id: the player compares the
+  // stored answer against option.id, so a missing id makes every option look
+  // selected and the question impossible to answer.
+  const checkIds = (options, where) => {
+    const ids = options.map((option) => option.id);
+    if (ids.some((id) => typeof id !== "string" || !id)) {
+      fail(`${quiz.slug}/${where}: option without an id`);
+    }
+    if (new Set(ids).size !== ids.length) {
+      fail(`${quiz.slug}/${where}: duplicate option ids`);
+    }
+  };
+
   const seenTraits = new Set();
   for (const question of quiz.questions) {
+    if (
+      question.type === "mc" ||
+      question.type === "this_or_that" ||
+      question.type === "image"
+    ) {
+      checkIds(question.options, question.id);
+    }
+
     if (question.type === "image") {
       for (const option of question.options) {
         if (!option.image) fail(`${quiz.slug}/${question.id}: no image`);
@@ -88,6 +109,7 @@ for (const file of files) {
         fail(`${quiz.slug}/${question.id}: template gaps ${gaps.join("/")} ≠ blanks ${ids.join("/")}`);
       }
       for (const blank of question.blanks) {
+        checkIds(blank.options, `${question.id}/${blank.id}`);
         if (blank.options.length < 2) {
           fail(`${quiz.slug}/${question.id}/${blank.id}: fewer than 2 options`);
         }
