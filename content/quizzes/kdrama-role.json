@@ -36,7 +36,8 @@
           "label": "The company is about to collapse",
           "weights": {
             "chaebol": 2,
-            "product": 1
+            "product": 1,
+            "mother": 1
           }
         },
         {
@@ -59,7 +60,8 @@
           "label": "Add a clause about shared breakfast",
           "weights": {
             "chaebol": 2,
-            "childhood": 1
+            "childhood": 1,
+            "mother": 1
           }
         },
         {
@@ -190,7 +192,8 @@
               "label": "there's a promotion on the line",
               "weights": {
                 "rival": 2,
-                "chaebol": 1
+                "chaebol": 1,
+                "mother": 1
               }
             },
             {
@@ -341,7 +344,8 @@
           "label": "Running the company, smiling thinly",
           "weights": {
             "chaebol": 2,
-            "rival": 1
+            "rival": 1,
+            "mother": 1
           }
         },
         {
@@ -418,14 +422,15 @@
       "blurb": "You are the one everyone roots for and the plot never rewards. Kind, patient, better-looking in the rain — and somehow always arriving after the other person has already been chosen. You'd be bitter if you weren't so annoyingly gracious about it.",
       "accent": "yellow",
       "mix": {
-        "secondlead": 38,
+        "secondlead": 35,
         "chaebol": 3,
-        "childhood": 12,
-        "bestfriend": 20,
+        "childhood": 11,
+        "bestfriend": 18,
         "product": 0,
         "amnesia": 0,
-        "noble": 8,
-        "rival": 19
+        "noble": 7,
+        "rival": 18,
+        "mother": 8
       },
       "strengths": [
         "Loyal past the point of sense",
@@ -442,13 +447,14 @@
       "accent": "sky",
       "mix": {
         "secondlead": 7,
-        "chaebol": 38,
-        "childhood": 10,
-        "bestfriend": 9,
-        "product": 21,
+        "chaebol": 35,
+        "childhood": 9,
+        "bestfriend": 8,
+        "product": 19,
         "amnesia": 0,
         "noble": 0,
-        "rival": 15
+        "rival": 14,
+        "mother": 8
       },
       "strengths": [
         "Takes charge of a room",
@@ -464,14 +470,15 @@
       "blurb": "You remember the exact bench, the exact song and the exact weather. Your affection is built on a shared history nobody else has access to, which is either deeply romantic or slightly unfair depending on the day. You keep the receipts. Literally.",
       "accent": "red",
       "mix": {
-        "secondlead": 17,
-        "chaebol": 5,
-        "childhood": 38,
-        "bestfriend": 14,
+        "secondlead": 16,
+        "chaebol": 4,
+        "childhood": 35,
+        "bestfriend": 13,
         "product": 3,
-        "amnesia": 11,
+        "amnesia": 10,
         "noble": 4,
-        "rival": 8
+        "rival": 7,
+        "mother": 8
       },
       "strengths": [
         "Remembers everything that mattered",
@@ -487,14 +494,15 @@
       "blurb": "You're the one holding the bag, making the joke and watching the couple be happy. Your timing is perfect and your own feelings get about eleven minutes of screen time. Everyone leans on you and very few ask how you are.",
       "accent": "lime",
       "mix": {
-        "secondlead": 13,
+        "secondlead": 12,
         "chaebol": 0,
-        "childhood": 12,
-        "bestfriend": 35,
-        "product": 9,
-        "amnesia": 10,
-        "noble": 14,
-        "rival": 7
+        "childhood": 11,
+        "bestfriend": 32,
+        "product": 8,
+        "amnesia": 9,
+        "noble": 13,
+        "rival": 7,
+        "mother": 8
       },
       "strengths": [
         "Makes hard moments bearable",
@@ -511,13 +519,14 @@
       "accent": "green",
       "mix": {
         "secondlead": 3,
-        "chaebol": 19,
-        "childhood": 7,
-        "bestfriend": 12,
-        "product": 37,
-        "amnesia": 11,
+        "chaebol": 18,
+        "childhood": 6,
+        "bestfriend": 11,
+        "product": 34,
+        "amnesia": 10,
         "noble": 4,
-        "rival": 7
+        "rival": 6,
+        "mother": 8
       },
       "strengths": [
         "Indispensable in practice",
@@ -533,14 +542,15 @@
       "blurb": "You have lost track of the timeline and you're dressed too well to be questioned about it. Your life runs on vibes, coincidence and the kindness of people who remember things for you. It's chaos, but it's charismatic chaos.",
       "accent": "orange",
       "mix": {
-        "secondlead": 9,
+        "secondlead": 8,
         "chaebol": 5,
-        "childhood": 16,
-        "bestfriend": 13,
+        "childhood": 15,
+        "bestfriend": 12,
         "product": 3,
-        "amnesia": 34,
-        "noble": 13,
-        "rival": 7
+        "amnesia": 31,
+        "noble": 12,
+        "rival": 6,
+        "mother": 8
       },
       "strengths": [
         "Lives comfortably in the present",
@@ -556,14 +566,15 @@
       "blurb": "You will sacrifice the thing you want for a reason that makes sense only to you. You call it protecting them. Everyone else calls it a horrible decision made with excellent posture. Your love language is a brave, unnecessary goodbye.",
       "accent": "cyan",
       "mix": {
-        "secondlead": 9,
+        "secondlead": 8,
         "chaebol": 0,
-        "childhood": 10,
-        "bestfriend": 15,
+        "childhood": 9,
+        "bestfriend": 14,
         "product": 3,
-        "amnesia": 22,
-        "noble": 32,
-        "rival": 9
+        "amnesia": 20,
+        "noble": 30,
+        "rival": 8,
+        "mother": 8
       },
       "strengths": [
         "Puts people before yourself",
@@ -579,14 +590,15 @@
       "blurb": "You arrive with better clothes and a pointed comment, and the plot gets interesting. Your competitiveness is mostly affection in a difficult font. You would absolutely help them win, and you would absolutely make them ask first.",
       "accent": "blue",
       "mix": {
-        "secondlead": 20,
-        "chaebol": 8,
-        "childhood": 12,
-        "bestfriend": 9,
-        "product": 10,
+        "secondlead": 19,
+        "chaebol": 7,
+        "childhood": 11,
+        "bestfriend": 8,
+        "product": 9,
         "amnesia": 0,
         "noble": 4,
-        "rival": 37
+        "rival": 34,
+        "mother": 8
       },
       "strengths": [
         "Raises the standard by existing",
@@ -594,6 +606,30 @@
         "Makes everyone try harder"
       ],
       "watchOut": "The sharp line lands harder than you think. Be kind once, unambiguously."
+    },
+    {
+      "trait": "mother",
+      "name": "The Chaebol Mother",
+      "tagline": "Has already chosen your spouse and the venue",
+      "blurb": "You are the immaculate, terrifying force in the good coat who has decided how this ends before anyone else arrived. You don't raise your voice; you schedule lunch. Everyone is polite to you because everyone has seen what happened to the people who weren't.",
+      "accent": "yellow",
+      "mix": {
+        "mother": 8,
+        "secondlead": 13,
+        "chaebol": 13,
+        "childhood": 12,
+        "bestfriend": 12,
+        "product": 11,
+        "amnesia": 11,
+        "noble": 10,
+        "rival": 10
+      },
+      "strengths": [
+        "Gets a decision made in one meeting",
+        "Reads an opponent in a handshake",
+        "Loyal to the family, in her own way"
+      ],
+      "watchOut": "The plan is not the person. Ask what they actually want."
     }
   ]
 }

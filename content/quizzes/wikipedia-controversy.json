@@ -27,7 +27,8 @@
           "label": "A photo of you from 2009",
           "weights": {
             "photo": 2,
-            "quote": 1
+            "quote": 1,
+            "vandal": 1
           }
         },
         {
@@ -66,7 +67,8 @@
           "label": "A talk page with 400 replies",
           "weights": {
             "talkpage": 2,
-            "deletion": 1
+            "deletion": 1,
+            "sockpuppet": 1
           }
         },
         {
@@ -74,7 +76,8 @@
           "label": "Someone uploading a new photo",
           "weights": {
             "photo": 2,
-            "date": 1
+            "date": 1,
+            "lawyer": 1
           }
         },
         {
@@ -82,7 +85,8 @@
           "label": "A deletion nomination",
           "weights": {
             "deletion": 2,
-            "footnote": 1
+            "footnote": 1,
+            "notability": 1
           }
         }
       ]
@@ -105,7 +109,8 @@
           "label": "A legendary argument",
           "weights": {
             "talkpage": 2,
-            "quote": 1
+            "quote": 1,
+            "lawyer": 1
           }
         }
       ]
@@ -150,7 +155,8 @@
           "label": "A wall of sticky notes",
           "weights": {
             "talkpage": 2,
-            "deletion": 1
+            "deletion": 1,
+            "sockpuppet": 1
           },
           "image": "/images/questions/love-note.jpg",
           "alt": "A wall covered in sticky notes"
@@ -208,7 +214,8 @@
           "label": "A better photo",
           "weights": {
             "photo": 2,
-            "quote": 1
+            "quote": 1,
+            "vandal": 1
           }
         },
         {
@@ -268,7 +275,8 @@
               "label": "whether you exist",
               "weights": {
                 "deletion": 2,
-                "footnote": 1
+                "footnote": 1,
+                "notability": 1
               }
             }
           ]
@@ -289,7 +297,8 @@
               "label": "locked by an admin",
               "weights": {
                 "talkpage": 2,
-                "footnote": 1
+                "footnote": 1,
+                "sockpuppet": 1
               }
             },
             {
@@ -297,7 +306,8 @@
               "label": "sourced to a dead link",
               "weights": {
                 "footnote": 2,
-                "photo": 1
+                "photo": 1,
+                "lawyer": 1
               }
             },
             {
@@ -362,7 +372,8 @@
           "label": "Write a calm 900-word reply",
           "weights": {
             "talkpage": 2,
-            "quote": 1
+            "quote": 1,
+            "sockpuppet": 1
           }
         },
         {
@@ -370,7 +381,8 @@
           "label": "Replace the photo",
           "weights": {
             "photo": 2,
-            "date": 1
+            "date": 1,
+            "vandal": 1
           }
         },
         {
@@ -378,7 +390,8 @@
           "label": "Nominate the whole page",
           "weights": {
             "deletion": 2,
-            "talkpage": 1
+            "talkpage": 1,
+            "notability": 1
           }
         }
       ]
@@ -401,7 +414,8 @@
           "label": "This has been discussed.",
           "weights": {
             "talkpage": 2,
-            "deletion": 1
+            "deletion": 1,
+            "notability": 1
           }
         },
         {
@@ -409,7 +423,8 @@
           "label": "That is not me in the photo.",
           "weights": {
             "photo": 2,
-            "quote": 1
+            "quote": 1,
+            "vandal": 1
           }
         },
         {
@@ -417,7 +432,8 @@
           "label": "I never said that.",
           "weights": {
             "quote": 2,
-            "date": 1
+            "date": 1,
+            "lawyer": 1
           }
         }
       ]
@@ -431,12 +447,16 @@
       "blurb": "You would not be famous for anything dramatic. You would be famous because one sentence needed a source, and you found one, and then someone found a better one. The argument would still be running in 2031.",
       "accent": "sky",
       "mix": {
-        "footnote": 44,
-        "talkpage": 16,
-        "photo": 9,
-        "quote": 12,
-        "date": 12,
-        "deletion": 7
+        "footnote": 32,
+        "talkpage": 12,
+        "photo": 7,
+        "quote": 8,
+        "date": 8,
+        "deletion": 6,
+        "notability": 6,
+        "sockpuppet": 6,
+        "vandal": 7,
+        "lawyer": 8
       },
       "strengths": [
         "Gets the detail right",
@@ -452,12 +472,16 @@
       "blurb": "Your controversy is not a fact, it is a conversation, and you are winning it on formatting alone. You have indented so many replies that the page has an archive. Somewhere in there is a very good point.",
       "accent": "green",
       "mix": {
-        "footnote": 13,
-        "talkpage": 45,
-        "photo": 8,
-        "quote": 12,
-        "date": 9,
-        "deletion": 13
+        "footnote": 9,
+        "talkpage": 33,
+        "photo": 7,
+        "quote": 8,
+        "date": 7,
+        "deletion": 9,
+        "notability": 6,
+        "sockpuppet": 6,
+        "vandal": 7,
+        "lawyer": 8
       },
       "strengths": [
         "Willing to show up and argue",
@@ -473,12 +497,16 @@
       "blurb": "You are not controversial. The photograph is. It has been replaced four times, restored twice and once described as 'unflattering but usable'. You have asked, politely, for it to be removed, which made it the lead image.",
       "accent": "purple",
       "mix": {
-        "footnote": 8,
-        "talkpage": 11,
-        "photo": 47,
-        "quote": 12,
-        "date": 10,
-        "deletion": 12
+        "footnote": 7,
+        "talkpage": 7,
+        "photo": 34,
+        "quote": 8,
+        "date": 7,
+        "deletion": 8,
+        "notability": 7,
+        "sockpuppet": 7,
+        "vandal": 7,
+        "lawyer": 8
       },
       "strengths": [
         "Recognisable, even badly lit",
@@ -494,12 +522,16 @@
       "blurb": "One sentence, slightly altered, now sits in a hundred articles and one book. It sounds like you. It is not what you meant. You have spent years explaining the difference to people who quite like the wrong version.",
       "accent": "yellow",
       "mix": {
-        "footnote": 12,
-        "talkpage": 13,
-        "photo": 9,
-        "quote": 45,
-        "date": 11,
-        "deletion": 10
+        "footnote": 8,
+        "talkpage": 9,
+        "photo": 7,
+        "quote": 33,
+        "date": 7,
+        "deletion": 7,
+        "notability": 7,
+        "sockpuppet": 7,
+        "vandal": 7,
+        "lawyer": 8
       },
       "strengths": [
         "Says memorable things, apparently",
@@ -515,12 +547,16 @@
       "blurb": "Your entire controversy is a timeline. Someone has a screenshot, someone else has a receipt, and the article currently says 'circa'. You have strong feelings about 'circa'. You have made them known.",
       "accent": "orange",
       "mix": {
-        "footnote": 14,
-        "talkpage": 12,
-        "photo": 8,
-        "quote": 10,
-        "date": 46,
-        "deletion": 10
+        "footnote": 10,
+        "talkpage": 8,
+        "photo": 7,
+        "quote": 7,
+        "date": 33,
+        "deletion": 7,
+        "notability": 7,
+        "sockpuppet": 6,
+        "vandal": 7,
+        "lawyer": 8
       },
       "strengths": [
         "Precise about what happened when",
@@ -536,12 +572,16 @@
       "blurb": "You are not controversial so much as contested. There is a discussion about whether you should exist on the internet at all, and it has attracted strangers with opinions and one person who defends you beautifully. You read it at 2am.",
       "accent": "red",
       "mix": {
-        "footnote": 9,
-        "talkpage": 18,
-        "photo": 10,
-        "quote": 10,
-        "date": 9,
-        "deletion": 44
+        "footnote": 7,
+        "talkpage": 14,
+        "photo": 7,
+        "quote": 7,
+        "date": 6,
+        "deletion": 32,
+        "notability": 6,
+        "sockpuppet": 6,
+        "vandal": 7,
+        "lawyer": 8
       },
       "strengths": [
         "Unbothered by being questioned",
@@ -549,6 +589,106 @@
         "Has at least one excellent defender"
       ],
       "watchOut": "You don't have to attend every vote about you."
+    },
+    {
+      "trait": "notability",
+      "name": "The Notability Question",
+      "tagline": "The argument is whether you belong here at all",
+      "blurb": "Nobody is fighting about the comma any more. The thread has moved to the only question that matters: are you actually notable enough for an article? You have three local newspaper clippings and a podcast appearance, and you have read the guideline so many times the words have stopped meaning anything.",
+      "accent": "sky",
+      "mix": {
+        "notability": 6,
+        "footnote": 13,
+        "talkpage": 13,
+        "photo": 13,
+        "quote": 12,
+        "date": 11,
+        "deletion": 11,
+        "sockpuppet": 6,
+        "vandal": 7,
+        "lawyer": 8
+      },
+      "strengths": [
+        "Understands the rules beneath the rules",
+        "Argues from the guideline, not the gut",
+        "Willing to accept a merge"
+      ],
+      "watchOut": "Being right about your importance is not the same as being sourced."
+    },
+    {
+      "trait": "sockpuppet",
+      "name": "The Sock Puppet",
+      "tagline": "Three accounts, one very consistent opinion",
+      "blurb": "The talk page has a suspiciously coordinated energy and you know exactly why, because one of those accounts is you. Not for malice — just to make the consensus land the right way. It works for eleven days, and then someone runs a check and your whole defence collapses in a very public paragraph.",
+      "accent": "green",
+      "mix": {
+        "sockpuppet": 7,
+        "footnote": 13,
+        "talkpage": 12,
+        "photo": 12,
+        "quote": 11,
+        "date": 11,
+        "deletion": 10,
+        "notability": 9,
+        "vandal": 7,
+        "lawyer": 8
+      },
+      "strengths": [
+        "Persuasive in writing",
+        "Knows how consensus actually forms",
+        "Recovers from embarrassment fast"
+      ],
+      "watchOut": "One person is not a consensus, no matter how many tabs they use."
+    },
+    {
+      "trait": "vandal",
+      "name": "The Vandalism Spree",
+      "tagline": "Someone keeps adding a rumour at 3am",
+      "blurb": "Your article has a persistent problem: an unregistered editor who changes one noun every night and is reverted within four minutes. It is either a schoolchild or someone with a grudge, and you have started checking the revision history before your morning coffee.",
+      "accent": "purple",
+      "mix": {
+        "vandal": 8,
+        "footnote": 12,
+        "talkpage": 12,
+        "photo": 11,
+        "quote": 11,
+        "date": 10,
+        "deletion": 10,
+        "notability": 9,
+        "sockpuppet": 9,
+        "lawyer": 8
+      },
+      "strengths": [
+        "Fast to spot a changed detail",
+        "Keeps a clean watchlist",
+        "Unemotional about being edited"
+      ],
+      "watchOut": "You cannot out-edit a determined stranger. Ask for protection."
+    },
+    {
+      "trait": "lawyer",
+      "name": "The Legal Threat",
+      "tagline": "A letter arrives, the thread goes quiet",
+      "blurb": "You did not edit anything; your solicitor did. One paragraph about defamation and the entire talk page acquires a careful, slightly frightened tone. It is effective, it is memorable, and it is the reason the article now has a section nobody is allowed to touch.",
+      "accent": "yellow",
+      "mix": {
+        "lawyer": 8,
+        "footnote": 12,
+        "talkpage": 12,
+        "photo": 11,
+        "quote": 11,
+        "date": 10,
+        "deletion": 10,
+        "notability": 9,
+        "sockpuppet": 9,
+        "vandal": 8
+      },
+      "strengths": [
+        "Ends an argument efficiently",
+        "Keeps a paper trail",
+        "Unflappable under public pressure"
+      ],
+      "watchOut": "Legal threats win the thread and lose the goodwill. Consider both."
     }
   ]
 }

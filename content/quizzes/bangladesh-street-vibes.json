@@ -66,7 +66,8 @@
           "label": "Small notes for the rickshaw fare",
           "weights": {
             "rick": 2,
-            "cricket": 1
+            "cricket": 1,
+            "bus": 1
           }
         },
         {
@@ -120,7 +121,8 @@
           "label": "Cycle rickshaws queued in traffic",
           "weights": {
             "rick": 2,
-            "cricket": 1
+            "cricket": 1,
+            "bus": 1
           },
           "image": "/images/questions/bangladesh-street-vibes-a.jpg",
           "alt": "Cycle rickshaws queued in traffic"
@@ -206,7 +208,8 @@
           "label": "Horn honk at rush hour",
           "weights": {
             "rick": 2,
-            "cricket": 1
+            "cricket": 1,
+            "bus": 1
           }
         },
         {
@@ -343,7 +346,8 @@
           "label": "A lap around the flyover at dusk",
           "weights": {
             "rick": 2,
-            "cricket": 1
+            "cricket": 1,
+            "bus": 1
           }
         },
         {
@@ -412,12 +416,13 @@
       "blurb": "You rise before the first bus, kettle in hand, greeting commuters with a steaming cup. Your schedule is measured in minutes, not hours, and you know every shortcut through the bustling streets.",
       "accent": "orange",
       "mix": {
-        "chai": 44,
-        "rick": 11,
-        "monsoon": 11,
-        "drama": 11,
-        "cricket": 11,
-        "poet": 12
+        "chai": 39,
+        "rick": 10,
+        "monsoon": 10,
+        "drama": 10,
+        "cricket": 10,
+        "poet": 10,
+        "bus": 11
       },
       "strengths": [
         "Knows every sunrise route",
@@ -433,12 +438,13 @@
       "blurb": "You navigate Dhaka’s arteries with a honk and a smile, weaving between buses, cyclists, and pedestrians. Your day is a continuous loop of pickups and drop‑offs, and you thrive on the constant motion.",
       "accent": "red",
       "mix": {
-        "rick": 45,
-        "chai": 10,
-        "monsoon": 10,
-        "drama": 10,
-        "cricket": 12,
-        "poet": 13
+        "rick": 40,
+        "chai": 9,
+        "monsoon": 9,
+        "drama": 9,
+        "cricket": 11,
+        "poet": 11,
+        "bus": 11
       },
       "strengths": [
         "Reads traffic instincts",
@@ -454,12 +460,13 @@
       "blurb": "You set up before clouds gather, tarp over every crate, and a smile that outshines the drizzle. Customers trust you to keep their goods dry, and you know which alley floods first.",
       "accent": "blue",
       "mix": {
-        "monsoon": 43,
-        "chai": 12,
-        "rick": 11,
-        "drama": 11,
-        "cricket": 11,
-        "poet": 12
+        "monsoon": 38,
+        "chai": 11,
+        "rick": 10,
+        "drama": 10,
+        "cricket": 10,
+        "poet": 10,
+        "bus": 11
       },
       "strengths": [
         "Anticipates weather shifts",
@@ -475,12 +482,13 @@
       "blurb": "You coordinate feasts that rival the biggest ceremonies, balancing spices and egos with equal skill. Your life is a series of grand entrances, dramatic reveals, and the satisfaction of a perfect plate amid chaos.",
       "accent": "purple",
       "mix": {
-        "drama": 44,
-        "chai": 10,
-        "rick": 12,
-        "monsoon": 10,
-        "cricket": 11,
-        "poet": 13
+        "drama": 39,
+        "chai": 9,
+        "rick": 11,
+        "monsoon": 9,
+        "cricket": 10,
+        "poet": 11,
+        "bus": 11
       },
       "strengths": [
         "Handles last‑minute changes",
@@ -496,12 +504,13 @@
       "blurb": "You know every player’s batting style, every ground’s quirks, and you never miss a match, rain or shine. Your weekends are spent at the field, notebook in hand, tracking scores.",
       "accent": "green",
       "mix": {
-        "cricket": 45,
-        "chai": 10,
-        "rick": 11,
-        "monsoon": 11,
-        "drama": 11,
-        "poet": 12
+        "cricket": 40,
+        "chai": 9,
+        "rick": 10,
+        "monsoon": 10,
+        "drama": 10,
+        "poet": 10,
+        "bus": 11
       },
       "strengths": [
         "Remembers stats precisely",
@@ -517,12 +526,13 @@
       "blurb": "You climb to the highest balcony with a kettle and a notebook, letting the city’s hum become a meter. Your tea is brewed slowly, each sip a line, each breath a stanza.",
       "accent": "pink",
       "mix": {
-        "poet": 46,
-        "chai": 10,
-        "rick": 10,
-        "monsoon": 11,
-        "drama": 11,
-        "cricket": 12
+        "poet": 41,
+        "chai": 9,
+        "rick": 9,
+        "monsoon": 10,
+        "drama": 10,
+        "cricket": 10,
+        "bus": 11
       },
       "strengths": [
         "Creates vivid imagery",
@@ -530,6 +540,28 @@
         "Inspires others quietly"
       ],
       "watchOut": "Beware of getting lost in contemplation when action is needed."
+    },
+    {
+      "trait": "bus",
+      "name": "The Night-Bus Conductor",
+      "tagline": "Knows which route is still running at 1am",
+      "blurb": "You carry the city's after-hours schedule in your head: who's still out, which stop is safe, which driver waits an extra minute. Your pace is nocturnal and your patience is professional. Everyone else's night out is your shift, and you get them home anyway.",
+      "accent": "orange",
+      "mix": {
+        "bus": 11,
+        "chai": 16,
+        "rick": 16,
+        "monsoon": 15,
+        "drama": 15,
+        "cricket": 14,
+        "poet": 13
+      },
+      "strengths": [
+        "Calm when the street empties out",
+        "Can find a way home from anywhere",
+        "Good with strangers at odd hours"
+      ],
+      "watchOut": "You can't conduct everyone's night. Take a seat at the back sometimes."
     }
   ]
 }

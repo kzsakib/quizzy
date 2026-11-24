@@ -27,7 +27,8 @@
           "label": "Tell them the whole thing, in order",
           "weights": {
             "words": 2,
-            "time": 1
+            "time": 1,
+            "honesty": 1
           }
         },
         {
@@ -35,7 +36,8 @@
           "label": "They've made tea and dealt with the thing you were dreading",
           "weights": {
             "acts": 2,
-            "words": 1
+            "words": 1,
+            "food": 1
           }
         },
         {
@@ -58,7 +60,8 @@
           "label": "Find one person and stay with them all night",
           "weights": {
             "time": 2,
-            "touch": 1
+            "touch": 1,
+            "future": 1
           }
         },
         {
@@ -66,7 +69,8 @@
           "label": "Text the group chat a running commentary",
           "weights": {
             "words": 2,
-            "gifts": 1
+            "gifts": 1,
+            "jokes": 1
           }
         },
         {
@@ -105,7 +109,8 @@
           "label": "A whole weekend with nothing booked",
           "weights": {
             "time": 2,
-            "space": 1
+            "space": 1,
+            "future": 1
           }
         }
       ]
@@ -139,7 +144,8 @@
           "label": "How they treat the waiter",
           "weights": {
             "acts": 2,
-            "time": 1
+            "time": 1,
+            "honesty": 1
           }
         },
         {
@@ -147,7 +153,8 @@
           "label": "How they talk about their ex",
           "weights": {
             "words": 2,
-            "space": 1
+            "space": 1,
+            "jokes": 1
           }
         },
         {
@@ -155,7 +162,8 @@
           "label": "What they do when plans are cancelled",
           "weights": {
             "space": 2,
-            "touch": 1
+            "touch": 1,
+            "future": 1
           }
         },
         {
@@ -191,7 +199,8 @@
           "label": "Say 'okay' and stay close",
           "weights": {
             "touch": 2,
-            "time": 1
+            "time": 1,
+            "jokes": 1
           }
         },
         {
@@ -199,7 +208,8 @@
           "label": "Ask a second time, plainly",
           "weights": {
             "words": 2,
-            "acts": 1
+            "acts": 1,
+            "honesty": 1
           }
         },
         {
@@ -207,7 +217,8 @@
           "label": "Do one small thing, no announcement",
           "weights": {
             "acts": 2,
-            "gifts": 1
+            "gifts": 1,
+            "food": 1
           }
         },
         {
@@ -283,7 +294,8 @@
           "label": "Go, and be glad you did",
           "weights": {
             "time": 2,
-            "words": 1
+            "words": 1,
+            "jokes": 1
           }
         },
         {
@@ -299,7 +311,8 @@
           "label": "Invite everyone to yours instead",
           "weights": {
             "acts": 2,
-            "time": 1
+            "time": 1,
+            "food": 1
           }
         },
         {
@@ -322,7 +335,8 @@
           "label": "A cup and a newspaper",
           "weights": {
             "time": 2,
-            "acts": 1
+            "acts": 1,
+            "food": 1
           },
           "image": "/images/questions/love-cups.jpg",
           "alt": "A cup of coffee with a newspaper"
@@ -332,7 +346,8 @@
           "label": "A wall of notes by the kettle",
           "weights": {
             "words": 2,
-            "gifts": 1
+            "gifts": 1,
+            "honesty": 1
           },
           "image": "/images/questions/love-note.jpg",
           "alt": "Colourful sticky notes on a wall"
@@ -342,7 +357,8 @@
           "label": "A hook by the door, overloaded",
           "weights": {
             "space": 2,
-            "acts": 1
+            "acts": 1,
+            "future": 1
           },
           "image": "/images/questions/love-coat.jpg",
           "alt": "A crowded coat hook"
@@ -368,12 +384,16 @@
       "blurb": "You can survive a bad week on one well-chosen sentence. What lands isn't flattery — it's specificity: someone naming exactly what you did and why it mattered. You replay those lines for years, which is why you're also very good at giving them.",
       "accent": "yellow",
       "mix": {
-        "words": 53,
-        "time": 16,
+        "words": 36,
+        "time": 11,
         "touch": 0,
-        "gifts": 23,
+        "gifts": 16,
         "acts": 4,
-        "space": 4
+        "space": 3,
+        "food": 6,
+        "jokes": 7,
+        "honesty": 8,
+        "future": 9
       },
       "strengths": [
         "Makes people feel seen in one sentence",
@@ -389,12 +409,16 @@
       "blurb": "You don't need a big gesture, you need someone's full attention for an unremarkable hour. Half-listening is worse than absence to you. The people who get this about you are the ones who've seen you relax completely.",
       "accent": "sky",
       "mix": {
-        "words": 10,
-        "time": 38,
-        "touch": 30,
-        "gifts": 8,
-        "acts": 8,
-        "space": 6
+        "words": 6,
+        "time": 26,
+        "touch": 21,
+        "gifts": 6,
+        "acts": 6,
+        "space": 5,
+        "food": 6,
+        "jokes": 7,
+        "honesty": 8,
+        "future": 9
       },
       "strengths": [
         "Gives attention that actually feels like attention",
@@ -410,12 +434,16 @@
       "blurb": "You regulate through contact: a hug held a second too long, a shoulder against yours on a sofa. You're not clingy, you're wired this way, and you read other people's comfort with touch unusually carefully because you know how badly it can land.",
       "accent": "red",
       "mix": {
-        "words": 11,
-        "time": 26,
-        "touch": 38,
-        "gifts": 13,
+        "words": 7,
+        "time": 18,
+        "touch": 26,
+        "gifts": 9,
         "acts": 3,
-        "space": 9
+        "space": 7,
+        "food": 6,
+        "jokes": 7,
+        "honesty": 8,
+        "future": 9
       },
       "strengths": [
         "Comforts without needing the right words",
@@ -431,12 +459,16 @@
       "blurb": "Your love language is evidence: the book they mentioned once, the exact snack, the thing that says I noticed you. It's not about money — a €2 object can wreck you if it's the right one. You keep a mental shelf of everyone's small wants.",
       "accent": "lime",
       "mix": {
-        "words": 15,
-        "time": 9,
-        "touch": 9,
-        "gifts": 44,
-        "acts": 13,
-        "space": 10
+        "words": 11,
+        "time": 7,
+        "touch": 6,
+        "gifts": 31,
+        "acts": 9,
+        "space": 6,
+        "food": 6,
+        "jokes": 7,
+        "honesty": 8,
+        "future": 9
       },
       "strengths": [
         "Remembers the throwaway detail",
@@ -452,12 +484,16 @@
       "blurb": "You show up with the practical thing: the lift, the meal, the form filled in correctly. You'd rather remove a problem than discuss it, and you quietly resent being thanked for what felt obvious. Your care is load-bearing and mostly invisible.",
       "accent": "green",
       "mix": {
-        "words": 13,
-        "time": 14,
+        "words": 9,
+        "time": 10,
         "touch": 0,
-        "gifts": 21,
-        "acts": 48,
-        "space": 4
+        "gifts": 15,
+        "acts": 33,
+        "space": 3,
+        "food": 6,
+        "jokes": 7,
+        "honesty": 8,
+        "future": 9
       },
       "strengths": [
         "Reliable in a crisis",
@@ -473,12 +509,16 @@
       "blurb": "You need solitude the way other people need company, and being checked on can feel like being watched. Your closeness is built on trust, not constant contact: the people you love can go quiet for a week and nothing changes.",
       "accent": "orange",
       "mix": {
-        "words": 12,
-        "time": 10,
-        "touch": 9,
-        "gifts": 14,
-        "acts": 7,
-        "space": 48
+        "words": 8,
+        "time": 6,
+        "touch": 6,
+        "gifts": 10,
+        "acts": 6,
+        "space": 34,
+        "food": 6,
+        "jokes": 7,
+        "honesty": 8,
+        "future": 9
       },
       "strengths": [
         "Comfortable alone without being lonely",
@@ -486,6 +526,106 @@
         "Shows up fully when you do show up"
       ],
       "watchOut": "Silence reads as rejection to people who aren't built like you. Say when you'll be back."
+    },
+    {
+      "trait": "food",
+      "name": "Being Fed",
+      "tagline": "Love arrives with a plate on it",
+      "blurb": "You don't need the speech; you need someone to have noticed you skipped lunch and done something about it. Being looked after in the ordinary, edible way lands harder than any sentence. If they saved you the last one, that's the whole confession.",
+      "accent": "yellow",
+      "mix": {
+        "food": 6,
+        "words": 13,
+        "time": 12,
+        "touch": 12,
+        "gifts": 12,
+        "acts": 11,
+        "space": 10,
+        "jokes": 7,
+        "honesty": 8,
+        "future": 9
+      },
+      "strengths": [
+        "Reads hunger before it's mentioned",
+        "Turns care into something shared",
+        "Practical about other people's bad days"
+      ],
+      "watchOut": "Being fed is not the same as being asked how you are. Say it too."
+    },
+    {
+      "trait": "jokes",
+      "name": "Shared Jokes",
+      "tagline": "The inside joke is the relationship",
+      "blurb": "What makes you feel known is a reference nobody else in the room would get. One look across a table and you're both gone. You'd take a person who makes the tedious parts funny over one who says the right thing beautifully every time.",
+      "accent": "sky",
+      "mix": {
+        "jokes": 7,
+        "words": 12,
+        "time": 12,
+        "touch": 12,
+        "gifts": 11,
+        "acts": 10,
+        "space": 10,
+        "food": 9,
+        "honesty": 8,
+        "future": 9
+      },
+      "strengths": [
+        "Finds the joke in a bad week",
+        "Makes a room feel easy",
+        "Remembers the bit, word for word"
+      ],
+      "watchOut": "Not every hard moment wants a punchline. Read the room first."
+    },
+    {
+      "trait": "honesty",
+      "name": "Hard Honesty",
+      "tagline": "Says the true thing, gently, once",
+      "blurb": "You feel loved when someone tells you the thing you'd rather not hear, without dressing it up. Flattery bounces off you; a careful, uncomfortable sentence stays for years. You'd rather be told than managed, and you offer the same in return.",
+      "accent": "red",
+      "mix": {
+        "honesty": 8,
+        "words": 12,
+        "time": 12,
+        "touch": 11,
+        "gifts": 11,
+        "acts": 10,
+        "space": 10,
+        "food": 9,
+        "jokes": 8,
+        "future": 9
+      },
+      "strengths": [
+        "Trusts people with the truth",
+        "Notices what everyone is avoiding",
+        "Steady when it gets awkward"
+      ],
+      "watchOut": "Being right is not the point. Check what they needed first."
+    },
+    {
+      "trait": "future",
+      "name": "Plans That Include You",
+      "tagline": "Books the next thing before this one ends",
+      "blurb": "The sentence that gets you is not 'I love you', it is 'same time next week?' You feel chosen when someone puts you in the calendar without being asked, and when the plan stretches past the current season. Vague intentions do nothing for you at all.",
+      "accent": "lime",
+      "mix": {
+        "future": 9,
+        "words": 12,
+        "time": 11,
+        "touch": 11,
+        "gifts": 11,
+        "acts": 10,
+        "space": 10,
+        "food": 9,
+        "jokes": 9,
+        "honesty": 8
+      },
+      "strengths": [
+        "Makes commitment feel easy",
+        "Thinks in seasons, not evenings",
+        "Turns interest into arrangements"
+      ],
+      "watchOut": "A full calendar is not the same as being close. Leave space in it."
     }
   ]
 }

@@ -35,7 +35,7 @@ Phase 2 of 6 — home page plus a playable quiz engine, polished.
 - [x] Nine question types, including picture choices, a two-axis map, drag-to-rank and mad libs
 - [x] Per-quiz accent: a page wears the colour of its card (`data-accent`)
 - [x] Results revealed only after the last answer — no outcome lists up front
-- [x] 4–12 possible results per quiz, each with its own signature mix
+- [x] 7–10 possible results per quiz, each with its own signature mix
 - [x] Smooth 0–100% agreement sliders with no snap points
 - [x] Donut-only result chart, legend aligned beside it
 - [x] Result name, tagline and blurb typed out on arrival
@@ -72,8 +72,9 @@ persists the choice in `localStorage` under `qz-theme`.
 ## Quiz schema
 
 One JSON file per quiz in `content/quizzes/`. The file name should match the
-`slug`. A quiz takes **10–20 questions** and normally **6–12 results** (a
-fandom quiz with a fixed cast, such as Hogwarts houses, can use 4). Every trait
+`slug`. A quiz takes **10–20 questions** and **7–10 results**, spread evenly
+across the catalogue (a fandom quiz with a fixed cast, such as Hogwarts houses,
+can keep 4). Every trait
 used by a question must exist in `results`, must appear in at least four
 questions, and every result must be reachable.
 

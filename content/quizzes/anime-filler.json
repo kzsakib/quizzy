@@ -74,7 +74,8 @@
           "label": "A friendly competition nobody admits is one",
           "weights": {
             "cooking": 2,
-            "training": 1
+            "training": 1,
+            "sportsday": 1
           }
         },
         {
@@ -105,7 +106,8 @@
           "label": "One more drill",
           "weights": {
             "training": 2,
-            "recap": 1
+            "recap": 1,
+            "sportsday": 1
           }
         }
       ]
@@ -224,7 +226,8 @@
           "label": "A training montage with a new move",
           "weights": {
             "training": 2,
-            "recap": 1
+            "recap": 1,
+            "sportsday": 1
           }
         }
       ]
@@ -370,7 +373,8 @@
           "label": "A rival appears out of nowhere",
           "weights": {
             "training": 2,
-            "recap": 1
+            "recap": 1,
+            "sportsday": 1
           }
         },
         {
@@ -431,12 +435,13 @@
       "blurb": "You are the episode the studio makes when the budget runs out and everyone needs a break. There is water, there is a watermelon, and absolutely no plot. Somehow it becomes the one everybody rewatches.",
       "accent": "sky",
       "mix": {
-        "beach": 44,
-        "onsen": 13,
-        "festival": 15,
-        "recap": 9,
-        "cooking": 9,
-        "training": 10
+        "beach": 39,
+        "onsen": 12,
+        "festival": 13,
+        "recap": 8,
+        "cooking": 8,
+        "training": 9,
+        "sportsday": 11
       },
       "strengths": [
         "Makes rest feel deserved",
@@ -452,12 +457,13 @@
       "blurb": "You are warm, slightly mysterious, and best experienced at a low intensity. People tell you things in the quiet part that they don't tell anyone else. You would absolutely let the plot wait while the water is still hot.",
       "accent": "purple",
       "mix": {
-        "beach": 13,
-        "onsen": 45,
-        "festival": 10,
-        "recap": 8,
-        "cooking": 12,
-        "training": 12
+        "beach": 11,
+        "onsen": 40,
+        "festival": 9,
+        "recap": 7,
+        "cooking": 11,
+        "training": 11,
+        "sportsday": 11
       },
       "strengths": [
         "Creates the space where people talk",
@@ -473,12 +479,13 @@
       "blurb": "You are the episode with the lanterns and the almost-confession. You bring people together, arrange the evening, and then watch the important sentence get cut off by fireworks. You'd do it again next summer.",
       "accent": "red",
       "mix": {
-        "beach": 14,
-        "onsen": 11,
-        "festival": 45,
-        "recap": 9,
-        "cooking": 10,
-        "training": 11
+        "beach": 12,
+        "onsen": 10,
+        "festival": 40,
+        "recap": 8,
+        "cooking": 9,
+        "training": 10,
+        "sportsday": 11
       },
       "strengths": [
         "Builds an occasion out of nothing",
@@ -494,12 +501,13 @@
       "blurb": "You are the episode that looks back, arranges the highlights and quietly adds a new frame around them. People complain about you and then watch anyway, because you make the last twelve weeks make sense.",
       "accent": "blue",
       "mix": {
-        "beach": 9,
-        "onsen": 9,
-        "festival": 9,
-        "recap": 46,
-        "cooking": 13,
-        "training": 14
+        "beach": 8,
+        "onsen": 8,
+        "festival": 8,
+        "recap": 41,
+        "cooking": 12,
+        "training": 12,
+        "sportsday": 11
       },
       "strengths": [
         "Finds the pattern in the mess",
@@ -515,12 +523,13 @@
       "blurb": "You turn a low-stakes evening into a full competition with commentary, sabotage and a judging panel of one. Your warmth is practical and slightly obsessive, and everyone leaves fed whether they wanted to or not.",
       "accent": "orange",
       "mix": {
-        "beach": 9,
-        "onsen": 14,
-        "festival": 12,
-        "recap": 9,
-        "cooking": 44,
-        "training": 12
+        "beach": 8,
+        "onsen": 12,
+        "festival": 11,
+        "recap": 8,
+        "cooking": 39,
+        "training": 11,
+        "sportsday": 11
       },
       "strengths": [
         "Feeds people as a love language",
@@ -536,12 +545,13 @@
       "blurb": "You are the episode that refuses to waste a week. There is a hill, a countdown and a technique nobody has seen yet, and by the end you can do the thing. You treat rest as something you earn, which is either discipline or a problem.",
       "accent": "lime",
       "mix": {
-        "beach": 8,
-        "onsen": 12,
-        "festival": 11,
-        "recap": 12,
-        "cooking": 10,
-        "training": 47
+        "beach": 7,
+        "onsen": 11,
+        "festival": 10,
+        "recap": 10,
+        "cooking": 9,
+        "training": 42,
+        "sportsday": 11
       },
       "strengths": [
         "Actually improves at things",
@@ -549,6 +559,28 @@
         "Unstoppable once committed"
       ],
       "watchOut": "A montage skips the recovery. Take the beach episode sometimes."
+    },
+    {
+      "trait": "sportsday",
+      "name": "The Sports Day Episode",
+      "tagline": "Loses with enormous grace, wins much louder",
+      "blurb": "Your week turns into a tournament nobody remembers scheduling. You like a clear contest, a whistle, and an excuse to be loud in a field. The plot can wait; the relay cannot, and you have already picked teams in a way that somehow left nobody out.",
+      "accent": "sky",
+      "mix": {
+        "sportsday": 11,
+        "beach": 16,
+        "onsen": 16,
+        "festival": 15,
+        "recap": 15,
+        "cooking": 14,
+        "training": 13
+      },
+      "strengths": [
+        "Turns an ordinary Tuesday into a fixture",
+        "Gets everyone on the same side of a whistle",
+        "Competitive without needing to win"
+      ],
+      "watchOut": "Not everything is worth a scoreboard. Let one thing this month just happen."
     }
   ]
 }

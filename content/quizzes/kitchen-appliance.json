@@ -19,7 +19,8 @@
           "label": "Two minutes, done, no instructions",
           "weights": {
             "toaster": 2,
-            "kettle": 1
+            "kettle": 1,
+            "microwave": 1
           }
         },
         {
@@ -43,7 +44,8 @@
           "label": "Take it all in and sort it out later",
           "weights": {
             "dishwasher": 2,
-            "fridge": 1
+            "fridge": 1,
+            "sink": 1
           }
         }
       ]
@@ -66,7 +68,8 @@
           "label": "Warm, if you give me a minute",
           "weights": {
             "oven": 2,
-            "kettle": 1
+            "kettle": 1,
+            "coffeemaker": 1
           }
         },
         {
@@ -82,7 +85,8 @@
           "label": "Calm, until you look inside",
           "weights": {
             "fridge": 2,
-            "dishwasher": 1
+            "dishwasher": 1,
+            "freezer": 1
           }
         }
       ]
@@ -97,7 +101,8 @@
           "label": "One button",
           "weights": {
             "toaster": 2,
-            "kettle": 1
+            "kettle": 1,
+            "microwave": 1
           }
         },
         {
@@ -150,7 +155,8 @@
           "label": "A kettle coming to the boil",
           "weights": {
             "kettle": 2,
-            "dishwasher": 1
+            "dishwasher": 1,
+            "coffeemaker": 1
           },
           "image": "/images/questions/appliance-kettle.jpg",
           "alt": "An electric kettle on a counter"
@@ -208,7 +214,8 @@
           "label": "Something that holds everything",
           "weights": {
             "fridge": 2,
-            "dishwasher": 1
+            "dishwasher": 1,
+            "freezer": 1
           }
         },
         {
@@ -224,7 +231,8 @@
           "label": "Something that deals with the mess",
           "weights": {
             "dishwasher": 2,
-            "blender": 1
+            "blender": 1,
+            "sink": 1
           }
         }
       ]
@@ -244,7 +252,8 @@
               "label": "does the small job perfectly",
               "weights": {
                 "toaster": 2,
-                "kettle": 1
+                "kettle": 1,
+                "microwave": 1
               }
             },
             {
@@ -268,7 +277,8 @@
               "label": "cleans up after everyone",
               "weights": {
                 "dishwasher": 2,
-                "fridge": 1
+                "fridge": 1,
+                "sink": 1
               }
             }
           ]
@@ -289,7 +299,8 @@
               "label": "there's a deadline",
               "weights": {
                 "blender": 2,
-                "kettle": 1
+                "kettle": 1,
+                "coffeemaker": 1
               }
             },
             {
@@ -362,7 +373,8 @@
           "label": "Put it in the fridge and forget",
           "weights": {
             "fridge": 2,
-            "toaster": 1
+            "toaster": 1,
+            "freezer": 1
           }
         },
         {
@@ -378,7 +390,8 @@
           "label": "Boil the kettle and sit down",
           "weights": {
             "kettle": 2,
-            "fridge": 1
+            "fridge": 1,
+            "coffeemaker": 1
           }
         }
       ]
@@ -393,7 +406,8 @@
           "label": "Burnt on one side, raw on the other",
           "weights": {
             "toaster": 2,
-            "oven": 1
+            "oven": 1,
+            "microwave": 1
           }
         },
         {
@@ -409,7 +423,8 @@
           "label": "Running cold",
           "weights": {
             "fridge": 2,
-            "kettle": 1
+            "kettle": 1,
+            "freezer": 1
           }
         },
         {
@@ -417,7 +432,8 @@
           "label": "Still going after everyone's finished",
           "weights": {
             "dishwasher": 2,
-            "oven": 1
+            "oven": 1,
+            "sink": 1
           }
         }
       ]
@@ -431,12 +447,16 @@
       "blurb": "You do one small thing better than anyone and you do it at the exact moment it's needed. No instructions, no drama, no range. People forget you're essential until the morning you're not there.",
       "accent": "yellow",
       "mix": {
-        "toaster": 44,
-        "kettle": 14,
-        "blender": 11,
-        "oven": 12,
-        "fridge": 10,
-        "dishwasher": 9
+        "toaster": 31,
+        "kettle": 10,
+        "blender": 7,
+        "oven": 8,
+        "fridge": 7,
+        "dishwasher": 7,
+        "microwave": 6,
+        "coffeemaker": 7,
+        "freezer": 8,
+        "sink": 9
       },
       "strengths": [
         "Immediately useful",
@@ -452,12 +472,16 @@
       "blurb": "You are a single-purpose machine with an unmistakable announcement. You boil, you whistle, you are done. Everyone in the house knows exactly where you are and roughly what mood you're in.",
       "accent": "red",
       "mix": {
-        "toaster": 14,
-        "kettle": 45,
-        "blender": 12,
-        "oven": 9,
-        "fridge": 9,
-        "dishwasher": 11
+        "toaster": 10,
+        "kettle": 32,
+        "blender": 8,
+        "oven": 7,
+        "fridge": 6,
+        "dishwasher": 7,
+        "microwave": 6,
+        "coffeemaker": 7,
+        "freezer": 8,
+        "sink": 9
       },
       "strengths": [
         "Unmistakably clear",
@@ -473,12 +497,16 @@
       "blurb": "You take everything at once, at full power, and you are finished before anyone else has started. It is impressive and a little alarming. The results are usually good, and there is usually something to clean up.",
       "accent": "purple",
       "mix": {
-        "toaster": 10,
-        "kettle": 15,
-        "blender": 44,
-        "oven": 11,
-        "fridge": 9,
-        "dishwasher": 11
+        "toaster": 7,
+        "kettle": 11,
+        "blender": 31,
+        "oven": 7,
+        "fridge": 7,
+        "dishwasher": 7,
+        "microwave": 6,
+        "coffeemaker": 7,
+        "freezer": 8,
+        "sink": 9
       },
       "strengths": [
         "Enormous throughput",
@@ -494,12 +522,16 @@
       "blurb": "You are not quick and you are not flashy, but the thing you make is the reason people stayed. You do your best work with time and a bit of heat, and you resolutely refuse to be rushed by a group chat.",
       "accent": "orange",
       "mix": {
-        "toaster": 12,
-        "kettle": 9,
-        "blender": 9,
-        "oven": 46,
-        "fridge": 12,
-        "dishwasher": 12
+        "toaster": 8,
+        "kettle": 7,
+        "blender": 7,
+        "oven": 32,
+        "fridge": 8,
+        "dishwasher": 8,
+        "microwave": 6,
+        "coffeemaker": 7,
+        "freezer": 8,
+        "sink": 9
       },
       "strengths": [
         "Delivers the thing worth waiting for",
@@ -515,12 +547,16 @@
       "blurb": "You are the reason there is something for dinner and the reason nobody knows what's in the back. You keep things cold, keep things safe, and keep a small light on for whoever opens the door at midnight.",
       "accent": "sky",
       "mix": {
-        "toaster": 10,
-        "kettle": 9,
-        "blender": 9,
-        "oven": 13,
-        "fridge": 47,
-        "dishwasher": 12
+        "toaster": 7,
+        "kettle": 7,
+        "blender": 6,
+        "oven": 9,
+        "fridge": 33,
+        "dishwasher": 8,
+        "microwave": 6,
+        "coffeemaker": 7,
+        "freezer": 8,
+        "sink": 9
       },
       "strengths": [
         "Reliably holds the important things",
@@ -536,12 +572,16 @@
       "blurb": "You are the one who handles what everyone else has finished with. Unshowy, load-bearing, and slightly taken for granted, you turn the worst part of the evening into a clean kitchen by morning. You deserve a better name.",
       "accent": "green",
       "mix": {
-        "toaster": 9,
-        "kettle": 11,
-        "blender": 11,
-        "oven": 12,
-        "fridge": 12,
-        "dishwasher": 45
+        "toaster": 7,
+        "kettle": 7,
+        "blender": 7,
+        "oven": 8,
+        "fridge": 8,
+        "dishwasher": 32,
+        "microwave": 7,
+        "coffeemaker": 7,
+        "freezer": 8,
+        "sink": 9
       },
       "strengths": [
         "Handles the unglamorous part",
@@ -549,6 +589,106 @@
         "Leaves things better than they were"
       ],
       "watchOut": "You are not a machine for other people's mess. Say no sometimes."
+    },
+    {
+      "trait": "microwave",
+      "name": "The Microwave",
+      "tagline": "Two minutes and slightly uneven",
+      "blurb": "You get it done, fast, and only the middle is hot. You are not delicate about it: no preheating, no waiting, no instructions. People complain for ten years and use you every single day, which is its own kind of endorsement.",
+      "accent": "yellow",
+      "mix": {
+        "microwave": 6,
+        "toaster": 13,
+        "kettle": 12,
+        "blender": 12,
+        "oven": 12,
+        "fridge": 11,
+        "dishwasher": 10,
+        "coffeemaker": 7,
+        "freezer": 8,
+        "sink": 9
+      },
+      "strengths": [
+        "Fast under a deadline",
+        "No setup, no fuss",
+        "Reliably there at 11pm"
+      ],
+      "watchOut": "Speed leaves the edges cold. Give the important thing a stir."
+    },
+    {
+      "trait": "coffeemaker",
+      "name": "The Coffee Machine",
+      "tagline": "A whole ritual for one cup",
+      "blurb": "Your useful contribution is the ceremony: the water, the grind, the four minutes where nobody is allowed to talk. You could be faster and you refuse to be, because the morning works better when one thing is done properly and slowly.",
+      "accent": "red",
+      "mix": {
+        "coffeemaker": 7,
+        "toaster": 12,
+        "kettle": 12,
+        "blender": 12,
+        "oven": 11,
+        "fridge": 10,
+        "dishwasher": 10,
+        "microwave": 9,
+        "freezer": 8,
+        "sink": 9
+      },
+      "strengths": [
+        "Builds a ritual that steadies people",
+        "Reliable before 9am",
+        "Cares about the details"
+      ],
+      "watchOut": "The ritual can matter more than the cup. Skip it sometimes."
+    },
+    {
+      "trait": "freezer",
+      "name": "The Freezer",
+      "tagline": "Keeps everything, for ages, calmly",
+      "blurb": "You hold on to things: leftovers, spare birthday cakes, the bread from two months ago labelled in your handwriting. Nothing is urgent while you're around. You also preserve whatever everyone else would rather forget was in the house.",
+      "accent": "purple",
+      "mix": {
+        "freezer": 8,
+        "toaster": 12,
+        "kettle": 12,
+        "blender": 11,
+        "oven": 11,
+        "fridge": 10,
+        "dishwasher": 10,
+        "microwave": 9,
+        "coffeemaker": 8,
+        "sink": 9
+      },
+      "strengths": [
+        "Genuinely prepared for a bad week",
+        "Calm while everything outside thaws",
+        "Wastes nothing"
+      ],
+      "watchOut": "Some of that should have been thrown out in 2023."
+    },
+    {
+      "trait": "sink",
+      "name": "The Sink",
+      "tagline": "Everything ends up here eventually",
+      "blurb": "You are where the mess lands, and you take it without a counter-argument. Plates, crises, friends who need somewhere to put their night — it all comes to you. You deal with it, quietly, while everyone else moves on to pudding.",
+      "accent": "orange",
+      "mix": {
+        "sink": 9,
+        "toaster": 12,
+        "kettle": 11,
+        "blender": 11,
+        "oven": 11,
+        "fridge": 10,
+        "dishwasher": 10,
+        "microwave": 9,
+        "coffeemaker": 9,
+        "freezer": 8
+      },
+      "strengths": [
+        "Takes the unglamorous half",
+        "Unbothered by other people's mess",
+        "Done before anyone thanks you"
+      ],
+      "watchOut": "You are not actually infinite. Say when you're full."
     }
   ]
 }

@@ -9,7 +9,7 @@
   "published": "2026-11-22",
   "tiebreaker": "q12",
   "questions": [
-        {
+    {
       "id": "q1",
       "type": "rank",
       "prompt": "The ship is going down and you get one armful. Rank what you grab.",
@@ -36,7 +36,8 @@
           "label": "The seed vault",
           "weights": {
             "terraform": 2,
-            "colonist": 1
+            "colonist": 1,
+            "botanist": 1
           }
         },
         {
@@ -83,7 +84,8 @@
           "label": "Ask what happens if I refuse",
           "weights": {
             "colonist": 2,
-            "ethics": 1
+            "ethics": 1,
+            "child": 1
           }
         }
       ]
@@ -98,7 +100,8 @@
           "label": "A forest, seed by seed",
           "weights": {
             "terraform": 2,
-            "colonist": 1
+            "colonist": 1,
+            "botanist": 1
           }
         },
         {
@@ -156,7 +159,8 @@
           "label": "Offer them the couch",
           "weights": {
             "colonist": 2,
-            "captain": 1
+            "captain": 1,
+            "child": 1
           }
         },
         {
@@ -192,7 +196,8 @@
           "label": "The ground is only semi-solid",
           "weights": {
             "terraform": 2,
-            "mechanic": 1
+            "mechanic": 1,
+            "botanist": 1
           }
         },
         {
@@ -305,7 +310,8 @@
           "label": "Build something that lasts here",
           "weights": {
             "terraform": 2,
-            "colonist": 1
+            "colonist": 1,
+            "botanist": 1
           }
         },
         {
@@ -313,12 +319,12 @@
           "label": "Sit down and think about what home was",
           "weights": {
             "stays": 2,
-            "ethics": 1
+            "ethics": 1,
+            "child": 1
           }
         }
       ]
-    }
-,
+    },
     {
       "id": "q13",
       "type": "image",
@@ -329,7 +335,8 @@
           "label": "Frost on the window",
           "weights": {
             "stays": 2,
-            "loop": 1
+            "loop": 1,
+            "child": 1
           },
           "image": "/images/questions/space-frost.jpg",
           "alt": "Frost patterns on a window"
@@ -375,14 +382,16 @@
       "blurb": "You hear the problem before anyone else does. While the bridge debates policy, you're already in the crawlspace with a torch and a theory. You don't need credit, but you would like the ship to stop making that noise.",
       "accent": "yellow",
       "mix": {
-        "mechanic": 36,
+        "mechanic": 30,
         "linguist": 0,
-        "terraform": 11,
+        "terraform": 9,
         "ethics": 3,
-        "colonist": 6,
-        "loop": 18,
-        "captain": 16,
-        "stays": 10
+        "colonist": 5,
+        "loop": 16,
+        "captain": 14,
+        "stays": 8,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Solves the actual problem",
@@ -399,13 +408,15 @@
       "accent": "sky",
       "mix": {
         "mechanic": 0,
-        "linguist": 38,
+        "linguist": 32,
         "terraform": 4,
-        "ethics": 25,
+        "ethics": 21,
         "colonist": 3,
-        "loop": 8,
-        "captain": 7,
-        "stays": 15
+        "loop": 6,
+        "captain": 6,
+        "stays": 13,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Curious without being reckless",
@@ -421,14 +432,16 @@
       "blurb": "The planet is hostile, the timeline is centuries and you've started a garden. You think in generations rather than quarters, which makes you either visionary or unbearable at meetings. The seed you planted will matter to someone you'll never meet.",
       "accent": "red",
       "mix": {
-        "mechanic": 21,
+        "mechanic": 18,
         "linguist": 0,
-        "terraform": 35,
+        "terraform": 29,
         "ethics": 3,
-        "colonist": 12,
-        "loop": 15,
+        "colonist": 10,
+        "loop": 13,
         "captain": 3,
-        "stays": 11
+        "stays": 9,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Builds for the long term",
@@ -445,13 +458,15 @@
       "accent": "lime",
       "mix": {
         "mechanic": 0,
-        "linguist": 22,
+        "linguist": 18,
         "terraform": 4,
-        "ethics": 39,
+        "ethics": 33,
         "colonist": 3,
-        "loop": 8,
+        "loop": 6,
         "captain": 4,
-        "stays": 20
+        "stays": 17,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Sees the person outside the plan",
@@ -469,12 +484,14 @@
       "mix": {
         "mechanic": 0,
         "linguist": 0,
-        "terraform": 25,
-        "ethics": 9,
-        "colonist": 36,
-        "loop": 8,
+        "terraform": 21,
+        "ethics": 7,
+        "colonist": 30,
+        "loop": 7,
         "captain": 7,
-        "stays": 15
+        "stays": 13,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Makes anywhere feel like somewhere",
@@ -490,14 +507,16 @@
       "blurb": "You noticed the pattern on the second repeat and started taking notes on the third. While everyone else panics, you're testing variables and keeping a log. It's lonely being the only one who remembers — but someone has to keep the receipts.",
       "accent": "green",
       "mix": {
-        "mechanic": 17,
-        "linguist": 7,
-        "terraform": 10,
+        "mechanic": 15,
+        "linguist": 6,
+        "terraform": 8,
         "ethics": 3,
         "colonist": 6,
-        "loop": 34,
-        "captain": 13,
-        "stays": 10
+        "loop": 28,
+        "captain": 11,
+        "stays": 8,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Spots patterns under pressure",
@@ -513,14 +532,16 @@
       "blurb": "You didn't ask for the bridge, but everyone was looking at you and the alarm was going. You make the call, take the blame and privately resent how much you enjoy it. Competence is a trap you walked into with your eyes open.",
       "accent": "orange",
       "mix": {
-        "mechanic": 14,
+        "mechanic": 12,
         "linguist": 0,
-        "terraform": 14,
+        "terraform": 12,
         "ethics": 3,
-        "colonist": 6,
-        "loop": 13,
-        "captain": 36,
-        "stays": 14
+        "colonist": 5,
+        "loop": 11,
+        "captain": 30,
+        "stays": 12,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Decides when nobody else will",
@@ -536,14 +557,16 @@
       "blurb": "While the others go to the surface or the stars, you stay with the ship, the records and the people who can't leave. Nobody makes a documentary about the one who stays. The whole thing falls apart without you in about four days.",
       "accent": "blue",
       "mix": {
-        "mechanic": 13,
+        "mechanic": 11,
         "linguist": 5,
-        "terraform": 10,
+        "terraform": 8,
         "ethics": 6,
-        "colonist": 11,
-        "loop": 7,
-        "captain": 15,
-        "stays": 33
+        "colonist": 9,
+        "loop": 5,
+        "captain": 13,
+        "stays": 28,
+        "botanist": 7,
+        "child": 8
       },
       "strengths": [
         "Reliable in the unglamorous way",
@@ -551,6 +574,56 @@
         "Notices who's been left behind"
       ],
       "watchOut": "Staying is a choice, not an identity. Take the trip you keep declining."
+    },
+    {
+      "trait": "botanist",
+      "name": "The Ship's Botanist",
+      "tagline": "Planted something before the engines died",
+      "blurb": "While everyone was arguing about the mission, you were keeping a tray of seedlings alive under a lamp. Three hundred years later there is a room on this ship that smells like a garden and nobody knows how. You do. It is the most valuable thing aboard.",
+      "accent": "yellow",
+      "mix": {
+        "botanist": 8,
+        "mechanic": 12,
+        "linguist": 12,
+        "terraform": 11,
+        "ethics": 11,
+        "colonist": 10,
+        "loop": 10,
+        "captain": 9,
+        "stays": 9,
+        "child": 8
+      },
+      "strengths": [
+        "Builds slowly and visibly",
+        "Patient through a long failure",
+        "Fed everyone without a title"
+      ],
+      "watchOut": "You're allowed to be more than the person who keeps things alive."
+    },
+    {
+      "trait": "child",
+      "name": "The Ship's Child",
+      "tagline": "No memory of the place everyone misses",
+      "blurb": "You were born in transit, so Earth is a story other people tell badly. You ask the questions nobody else thinks to ask because you have nothing to protect. The future is not a loss for you; it's just Tuesday, and you're the only one not grieving.",
+      "accent": "sky",
+      "mix": {
+        "child": 8,
+        "mechanic": 12,
+        "linguist": 12,
+        "terraform": 11,
+        "ethics": 11,
+        "colonist": 10,
+        "loop": 10,
+        "captain": 9,
+        "stays": 9,
+        "botanist": 8
+      },
+      "strengths": [
+        "Sees the situation without nostalgia",
+        "Asks the obvious useful question",
+        "Adapts faster than the adults"
+      ],
+      "watchOut": "Everyone else is mourning something. Give them the room for it."
     }
   ]
 }

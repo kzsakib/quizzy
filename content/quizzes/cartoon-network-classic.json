@@ -97,7 +97,8 @@
           "label": "A chase scene",
           "weights": {
             "slapstick": 2,
-            "suburb": 1
+            "suburb": 1,
+            "samurai": 1
           }
         },
         {
@@ -140,7 +141,8 @@
           "label": "A forest path",
           "weights": {
             "mystery": 2,
-            "musical": 1
+            "musical": 1,
+            "samurai": 1
           },
           "image": "/images/questions/class-forest.jpg",
           "alt": "A track running through a forest"
@@ -200,7 +202,8 @@
           "label": "A stupid chase",
           "weights": {
             "slapstick": 2,
-            "suburb": 1
+            "suburb": 1,
+            "samurai": 1
           }
         },
         {
@@ -409,7 +412,8 @@
           "label": "The one who saw it first",
           "weights": {
             "mystery": 2,
-            "musical": 1
+            "musical": 1,
+            "samurai": 1
           }
         },
         {
@@ -431,12 +435,13 @@
       "blurb": "Your show is three kids, one dead-end cul-de-sac and a summer with no adults in it. Every plan is a scam, every scam ends in a jawbreaker, and the whole street is one long bit. You would be the one who actually reads the plan out loud.",
       "accent": "lime",
       "mix": {
-        "suburb": 45,
-        "lab": 9,
-        "mystery": 12,
-        "space": 9,
-        "slapstick": 13,
-        "musical": 12
+        "suburb": 40,
+        "lab": 8,
+        "mystery": 11,
+        "space": 8,
+        "slapstick": 11,
+        "musical": 11,
+        "samurai": 11
       },
       "strengths": [
         "Finds the story where you are",
@@ -452,12 +457,13 @@
       "blurb": "Your show is one secret room under the house, a bench full of glassware and a sister who keeps pressing the big red button. There is always a countdown and always one experiment nobody asked for. You would be the one who is right and ignored, then saves everyone in act three.",
       "accent": "sky",
       "mix": {
-        "suburb": 9,
-        "lab": 46,
-        "mystery": 10,
-        "space": 12,
-        "slapstick": 12,
-        "musical": 11
+        "suburb": 8,
+        "lab": 41,
+        "mystery": 9,
+        "space": 11,
+        "slapstick": 10,
+        "musical": 10,
+        "samurai": 11
       },
       "strengths": [
         "Solves things nobody else can",
@@ -473,12 +479,13 @@
       "blurb": "Your show is a farm outside Nowhere, a computer with opinions and something in the barn that should not be there. Nobody ever gets a clear look at it. You would be the one who goes back anyway, complaining the entire way.",
       "accent": "green",
       "mix": {
-        "suburb": 12,
-        "lab": 10,
-        "mystery": 46,
-        "space": 11,
-        "slapstick": 9,
-        "musical": 12
+        "suburb": 11,
+        "lab": 9,
+        "mystery": 41,
+        "space": 10,
+        "slapstick": 8,
+        "musical": 10,
+        "samurai": 11
       },
       "strengths": [
         "Notices what everyone else misses",
@@ -494,12 +501,13 @@
       "blurb": "Your show is a summer road trip that keeps getting interrupted by aliens. There is a device on your wrist with a timeout and a grandfather who has clearly done this before. You would be the one who presses it when nobody asked.",
       "accent": "purple",
       "mix": {
-        "suburb": 8,
-        "lab": 13,
-        "mystery": 9,
-        "space": 47,
-        "slapstick": 12,
-        "musical": 11
+        "suburb": 7,
+        "lab": 11,
+        "mystery": 8,
+        "space": 42,
+        "slapstick": 11,
+        "musical": 10,
+        "samurai": 11
       },
       "strengths": [
         "Keeps going when the plan breaks",
@@ -515,12 +523,13 @@
       "blurb": "Your show is one guy, one pair of sunglasses and a plan that fails in public. Someone gets knocked through a wall, someone says a line that becomes a catchphrase, and it resets in thirty seconds. You would be the one who gets up first.",
       "accent": "orange",
       "mix": {
-        "suburb": 13,
-        "lab": 11,
-        "mystery": 9,
-        "space": 12,
-        "slapstick": 46,
-        "musical": 9
+        "suburb": 11,
+        "lab": 10,
+        "mystery": 8,
+        "space": 11,
+        "slapstick": 41,
+        "musical": 8,
+        "samurai": 11
       },
       "strengths": [
         "Recovers instantly",
@@ -536,12 +545,13 @@
       "blurb": "Your show is a music school where the plot stops for four bars of saxophone and everyone carries on as if that were normal. Somebody is always late for rehearsal. You would be the one who starts the song.",
       "accent": "pink",
       "mix": {
-        "suburb": 11,
-        "lab": 9,
-        "mystery": 12,
-        "space": 10,
-        "slapstick": 10,
-        "musical": 48
+        "suburb": 10,
+        "lab": 8,
+        "mystery": 10,
+        "space": 9,
+        "slapstick": 9,
+        "musical": 43,
+        "samurai": 11
       },
       "strengths": [
         "Changes the mood of any room",
@@ -549,6 +559,28 @@
         "Unembarrassed by joy"
       ],
       "watchOut": "Sometimes the scene doesn't need a song. Read the room first."
+    },
+    {
+      "trait": "samurai",
+      "name": "SAMURAI JACK",
+      "tagline": "Has been walking toward the same fight for years",
+      "blurb": "Your episodes are quiet, wide and slow, and the joke lands about forty seconds after everyone else's. You are patient in a way that makes people nervous, and you finish what you start, eventually, in silence. The world is loud. You are not, and that turns out to be the whole power.",
+      "accent": "lime",
+      "mix": {
+        "samurai": 11,
+        "suburb": 16,
+        "lab": 16,
+        "mystery": 15,
+        "space": 15,
+        "slapstick": 14,
+        "musical": 13
+      },
+      "strengths": [
+        "Endless patience for a long goal",
+        "Calm in an actual crisis",
+        "Says more by saying nothing"
+      ],
+      "watchOut": "Not every wait is noble. Ask someone to walk the next stretch with you."
     }
   ]
 }

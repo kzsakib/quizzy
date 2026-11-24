@@ -27,7 +27,8 @@
           "label": "Making their coffee exactly right",
           "weights": {
             "coffee": 2,
-            "silence": 1
+            "silence": 1,
+            "meal": 1
           }
         },
         {
@@ -58,7 +59,8 @@
           "label": "Yeah. I got you that thing you mentioned",
           "weights": {
             "flowers": 2,
-            "coffee": 1
+            "coffee": 1,
+            "meal": 1
           }
         },
         {
@@ -224,7 +226,8 @@
           "label": "A small, funny peace offering",
           "weights": {
             "joke": 2,
-            "flowers": 1
+            "flowers": 1,
+            "meal": 1
           }
         }
       ]
@@ -252,7 +255,8 @@
               "label": "wanted to make it up to you",
               "weights": {
                 "flowers": 2,
-                "coffee": 1
+                "coffee": 1,
+                "meal": 1
               }
             },
             {
@@ -362,7 +366,8 @@
           "label": "Send something small",
           "weights": {
             "flowers": 2,
-            "joke": 1
+            "joke": 1,
+            "meal": 1
           }
         },
         {
@@ -431,12 +436,13 @@
       "blurb": "You apologise in objects: the right pastry, the book they mentioned, the thing that says I was listening even when I was being awful. It works more often than it should. You would still rather not discuss it.",
       "accent": "pink",
       "mix": {
-        "flowers": 41,
-        "coffee": 15,
-        "letter": 12,
-        "silence": 10,
-        "joke": 12,
-        "vanish": 10
+        "flowers": 36,
+        "coffee": 13,
+        "letter": 11,
+        "silence": 9,
+        "joke": 11,
+        "vanish": 9,
+        "meal": 11
       },
       "strengths": [
         "Remembers exactly what someone likes",
@@ -452,12 +458,13 @@
       "blurb": "You say sorry by resuming normal service: their coffee, their side of the bed, the small chore they hate. You assume the care is legible. It usually is, to people who know you, and invisible to everyone else.",
       "accent": "orange",
       "mix": {
-        "flowers": 14,
-        "coffee": 42,
-        "letter": 10,
-        "silence": 14,
-        "joke": 8,
-        "vanish": 12
+        "flowers": 13,
+        "coffee": 37,
+        "letter": 9,
+        "silence": 12,
+        "joke": 7,
+        "vanish": 11,
+        "meal": 11
       },
       "strengths": [
         "Reliable in the small, daily ways",
@@ -473,12 +480,13 @@
       "blurb": "You would rather get it exactly right than say it quickly. You draft, delete, and eventually send something longer than the situation required, which is also the most honest thing you've written all year. You mean every clause.",
       "accent": "purple",
       "mix": {
-        "flowers": 9,
-        "coffee": 10,
-        "letter": 55,
-        "silence": 8,
-        "joke": 9,
-        "vanish": 9
+        "flowers": 8,
+        "coffee": 9,
+        "letter": 49,
+        "silence": 7,
+        "joke": 8,
+        "vanish": 8,
+        "meal": 11
       },
       "strengths": [
         "Says the difficult thing precisely",
@@ -494,12 +502,13 @@
       "blurb": "You apologise by not making it worse. You wait, you act completely ordinary, and you let the whole thing settle like sediment. It usually does. The other person sometimes needs to hear that you noticed.",
       "accent": "sky",
       "mix": {
-        "flowers": 8,
-        "coffee": 16,
-        "letter": 9,
-        "silence": 43,
-        "joke": 10,
-        "vanish": 14
+        "flowers": 7,
+        "coffee": 14,
+        "letter": 8,
+        "silence": 38,
+        "joke": 9,
+        "vanish": 13,
+        "meal": 11
       },
       "strengths": [
         "Doesn't escalate",
@@ -515,12 +524,13 @@
       "blurb": "You defuse with a line, and it lands because it's true. Humour is how you carry something heavy without dropping it on anyone. You would rather make them laugh than watch them cry, and you know that's not always your call.",
       "accent": "yellow",
       "mix": {
-        "flowers": 12,
-        "coffee": 9,
-        "letter": 10,
-        "silence": 11,
-        "joke": 43,
-        "vanish": 15
+        "flowers": 11,
+        "coffee": 8,
+        "letter": 9,
+        "silence": 10,
+        "joke": 38,
+        "vanish": 13,
+        "meal": 11
       },
       "strengths": [
         "Breaks a room out of a spiral",
@@ -536,12 +546,13 @@
       "blurb": "Your first instinct is to remove yourself before you make it worse, and you are often right about the timing. You come back calmer, kinder and slightly embarrassed. The trouble is that leaving is also a message.",
       "accent": "blue",
       "mix": {
-        "flowers": 8,
-        "coffee": 11,
-        "letter": 10,
-        "silence": 15,
-        "joke": 8,
-        "vanish": 48
+        "flowers": 7,
+        "coffee": 10,
+        "letter": 9,
+        "silence": 13,
+        "joke": 7,
+        "vanish": 43,
+        "meal": 11
       },
       "strengths": [
         "Never makes a hot situation hotter",
@@ -549,6 +560,28 @@
         "Good at giving other people space too"
       ],
       "watchOut": "Say when you'll be back, even if it's tomorrow."
+    },
+    {
+      "trait": "meal",
+      "name": "The Cooked Meal",
+      "tagline": "Arrives with a covered dish and no speech",
+      "blurb": "Your remorse comes in a warm container with a lid. You don't say the hard sentence; you make enough for leftovers and leave it somewhere they'll find it. It is not avoidance exactly, because the food is still hot and you did remember the thing they can't eat.",
+      "accent": "pink",
+      "mix": {
+        "meal": 11,
+        "flowers": 16,
+        "coffee": 16,
+        "letter": 15,
+        "silence": 15,
+        "joke": 14,
+        "vanish": 13
+      },
+      "strengths": [
+        "Turns regret into something edible",
+        "Feeds people before asking anything",
+        "Shows up without being invited"
+      ],
+      "watchOut": "A casserole is not an explanation. Say the sentence while it's still warm."
     }
   ]
 }

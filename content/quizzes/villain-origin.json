@@ -19,7 +19,8 @@
           "label": "Someone you trusted, quietly selling you out",
           "weights": {
             "betrayal": 2,
-            "loss": 1
+            "loss": 1,
+            "loyal": 1
           }
         },
         {
@@ -27,7 +28,8 @@
           "label": "Being laughed at in front of people who mattered",
           "weights": {
             "humiliation": 2,
-            "injustice": 1
+            "injustice": 1,
+            "legacy": 1
           }
         },
         {
@@ -74,7 +76,8 @@
           "label": "One last unfair meeting",
           "weights": {
             "injustice": 2,
-            "loss": 1
+            "loss": 1,
+            "rival": 1
           }
         },
         {
@@ -97,7 +100,8 @@
           "label": "A grudge, well kept",
           "weights": {
             "betrayal": 2,
-            "humiliation": 1
+            "humiliation": 1,
+            "rival": 1
           }
         },
         {
@@ -140,7 +144,8 @@
           "label": "An empty boardroom",
           "weights": {
             "humiliation": 2,
-            "loss": 1
+            "loss": 1,
+            "legacy": 1
           },
           "image": "/images/questions/villain-boardroom.jpg",
           "alt": "A long empty conference table"
@@ -200,7 +205,8 @@
           "label": "Being underestimated on purpose",
           "weights": {
             "humiliation": 2,
-            "betrayal": 1
+            "betrayal": 1,
+            "legacy": 1
           }
         },
         {
@@ -208,7 +214,8 @@
           "label": "Watching it happen to someone else",
           "weights": {
             "injustice": 2,
-            "loss": 1
+            "loss": 1,
+            "loyal": 1
           }
         },
         {
@@ -244,7 +251,8 @@
               "label": "you had every chance to be decent",
               "weights": {
                 "injustice": 2,
-                "betrayal": 1
+                "betrayal": 1,
+                "loyal": 1
               }
             },
             {
@@ -281,7 +289,8 @@
               "label": "and you didn't even notice",
               "weights": {
                 "betrayal": 2,
-                "humiliation": 1
+                "humiliation": 1,
+                "rival": 1
               }
             },
             {
@@ -362,7 +371,8 @@
           "label": "Someone else gets hurt",
           "weights": {
             "loss": 2,
-            "injustice": 1
+            "injustice": 1,
+            "loyal": 1
           }
         },
         {
@@ -401,7 +411,9 @@
           "label": "A headline about you",
           "weights": {
             "humiliation": 2,
-            "injustice": 1
+            "injustice": 1,
+            "legacy": 1,
+            "rival": 1
           }
         },
         {
@@ -431,12 +443,15 @@
       "blurb": "You would not become a villain for power. You would do it because someone you trusted made a very small, very deliberate choice, and you never got to say so. Your revenge would be documented, indexed and entirely reasonable.",
       "accent": "purple",
       "mix": {
-        "betrayal": 44,
-        "humiliation": 12,
-        "boredom": 8,
-        "injustice": 14,
-        "loss": 13,
-        "experiment": 9
+        "betrayal": 34,
+        "humiliation": 9,
+        "boredom": 6,
+        "injustice": 11,
+        "loss": 10,
+        "experiment": 6,
+        "loyal": 7,
+        "legacy": 8,
+        "rival": 9
       },
       "strengths": [
         "Remembers exactly what happened",
@@ -452,12 +467,15 @@
       "blurb": "It is not the setback, it is the audience. You can survive almost anything except being made small in front of people. Your villain era would be stylish, well-lit and would end with a speech they could not interrupt.",
       "accent": "red",
       "mix": {
-        "betrayal": 13,
-        "humiliation": 43,
-        "boredom": 9,
-        "injustice": 12,
-        "loss": 13,
-        "experiment": 10
+        "betrayal": 10,
+        "humiliation": 33,
+        "boredom": 7,
+        "injustice": 9,
+        "loss": 10,
+        "experiment": 7,
+        "loyal": 7,
+        "legacy": 8,
+        "rival": 9
       },
       "strengths": [
         "Absolutely refuses to be dismissed",
@@ -473,12 +491,15 @@
       "blurb": "Your origin story would not have a tragedy in it. It would have an unremarkable afternoon and a curious mind, and that is somehow worse. You are dangerous because you can always find a more interesting version of events.",
       "accent": "yellow",
       "mix": {
-        "betrayal": 9,
-        "humiliation": 11,
-        "boredom": 45,
-        "injustice": 10,
-        "loss": 8,
-        "experiment": 17
+        "betrayal": 7,
+        "humiliation": 8,
+        "boredom": 34,
+        "injustice": 7,
+        "loss": 6,
+        "experiment": 14,
+        "loyal": 7,
+        "legacy": 8,
+        "rival": 9
       },
       "strengths": [
         "Endlessly inventive",
@@ -494,12 +515,15 @@
       "blurb": "You would burn something down on behalf of a stranger. Your line is not personal, it is structural: the rule, the form, the policy that quietly ruins someone. You would be a villain with a manifesto and an unusually good point.",
       "accent": "orange",
       "mix": {
-        "betrayal": 13,
-        "humiliation": 11,
-        "boredom": 9,
-        "injustice": 43,
-        "loss": 12,
-        "experiment": 12
+        "betrayal": 10,
+        "humiliation": 8,
+        "boredom": 7,
+        "injustice": 33,
+        "loss": 9,
+        "experiment": 9,
+        "loyal": 7,
+        "legacy": 8,
+        "rival": 9
       },
       "strengths": [
         "Sees the system, not just the symptom",
@@ -515,12 +539,15 @@
       "blurb": "Everything you would do wrong comes from the one thing you can't get back. You are not cruel, you are grieving, and grief with resources is how the best villains begin. You would still be the most recognisable person in the room.",
       "accent": "blue",
       "mix": {
-        "betrayal": 14,
-        "humiliation": 12,
-        "boredom": 8,
-        "injustice": 13,
-        "loss": 44,
-        "experiment": 9
+        "betrayal": 11,
+        "humiliation": 9,
+        "boredom": 6,
+        "injustice": 10,
+        "loss": 34,
+        "experiment": 6,
+        "loyal": 7,
+        "legacy": 8,
+        "rival": 9
       },
       "strengths": [
         "Loves completely, no hedging",
@@ -536,12 +563,15 @@
       "blurb": "You would cross the line to answer the question, and you would be polite about it. Your villainy looks like a very well-funded lab and a series of forms nobody read. You are not evil, exactly. You are thorough.",
       "accent": "cyan",
       "mix": {
-        "betrayal": 10,
-        "humiliation": 10,
-        "boredom": 16,
-        "injustice": 13,
-        "loss": 10,
-        "experiment": 41
+        "betrayal": 8,
+        "humiliation": 7,
+        "boredom": 13,
+        "injustice": 10,
+        "loss": 7,
+        "experiment": 31,
+        "loyal": 7,
+        "legacy": 8,
+        "rival": 9
       },
       "strengths": [
         "Genuinely solves hard problems",
@@ -549,6 +579,78 @@
         "Doesn't flinch at the weird answer"
       ],
       "watchOut": "Consequences are not a rounding error. Read your own notes."
+    },
+    {
+      "trait": "loyal",
+      "name": "The Loyalty",
+      "tagline": "Turns villain on someone else's behalf",
+      "blurb": "You would have been fine. Somebody you love wasn't, and that is the whole origin story. You don't want the city or the credit; you want one specific person to stop being hurt, and you will do a genuinely alarming amount to make that happen.",
+      "accent": "purple",
+      "mix": {
+        "loyal": 7,
+        "betrayal": 14,
+        "humiliation": 13,
+        "boredom": 13,
+        "injustice": 13,
+        "loss": 12,
+        "experiment": 11,
+        "legacy": 8,
+        "rival": 9
+      },
+      "strengths": [
+        "Unshakeable once you commit",
+        "Fierce in someone else's defence",
+        "Honest about the reason"
+      ],
+      "watchOut": "They may not want this on their behalf. Ask them first."
+    },
+    {
+      "trait": "legacy",
+      "name": "The Legacy",
+      "tagline": "Would rather be infamous than forgotten",
+      "blurb": "You were overlooked in a room that mattered and something calcified. The plan is not revenge exactly; it is a name that cannot be ignored, printed above the fold. You would accept being hated. Being a footnote is the unacceptable ending.",
+      "accent": "red",
+      "mix": {
+        "legacy": 8,
+        "betrayal": 13,
+        "humiliation": 13,
+        "boredom": 13,
+        "injustice": 12,
+        "loss": 11,
+        "experiment": 11,
+        "loyal": 10,
+        "rival": 9
+      },
+      "strengths": [
+        "Long, clean ambition",
+        "Good at the theatrical gesture",
+        "Never half-commits"
+      ],
+      "watchOut": "Being remembered for the wrong thing is still being remembered. Think."
+    },
+    {
+      "trait": "rival",
+      "name": "The Rival",
+      "tagline": "Just wanted the thing they gave away",
+      "blurb": "There was one position, one prize, one person who got picked, and it wasn't you. You have replayed that meeting for years. Your villainy is competitive rather than cosmic: you don't want to burn the system, you want to be standing where they are when it burns.",
+      "accent": "yellow",
+      "mix": {
+        "rival": 9,
+        "betrayal": 13,
+        "humiliation": 13,
+        "boredom": 12,
+        "injustice": 12,
+        "loss": 11,
+        "experiment": 11,
+        "loyal": 10,
+        "legacy": 9
+      },
+      "strengths": [
+        "Motivated by a very clear goal",
+        "Better under competition",
+        "Keeps score accurately"
+      ],
+      "watchOut": "Winning their seat may not be the same as wanting it."
     }
   ]
 }

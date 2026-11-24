@@ -58,7 +58,8 @@
           "label": "A shrine gate, lanterns still lit",
           "weights": {
             "kitsune": 2,
-            "tsukumogami": 1
+            "tsukumogami": 1,
+            "bakeneko": 1
           },
           "image": "/images/questions/yokai-place-torii.jpg",
           "alt": "A torii gate with stone lanterns"
@@ -88,7 +89,8 @@
           "label": "A stone lantern in tall grass",
           "weights": {
             "tsukumogami": 2,
-            "oni": 1
+            "oni": 1,
+            "zashiki": 1
           },
           "image": "/images/questions/yokai-place-lantern.jpg",
           "alt": "A stone lantern standing in grasses"
@@ -129,7 +131,8 @@
           "label": "Ask what they want first",
           "weights": {
             "tengu": 2,
-            "tsukumogami": 1
+            "tsukumogami": 1,
+            "zashiki": 1
           }
         }
       ]
@@ -163,7 +166,8 @@
           "label": "Take both. Thank the machine",
           "weights": {
             "tanuki": 2,
-            "oni": 1
+            "oni": 1,
+            "bakeneko": 1
           }
         },
         {
@@ -238,7 +242,8 @@
           "label": "Leave it. It wasn't yours",
           "weights": {
             "tsukumogami": 2,
-            "tengu": 1
+            "tengu": 1,
+            "zashiki": 1
           }
         },
         {
@@ -262,7 +267,8 @@
           "label": "Give it to someone who needs it more",
           "weights": {
             "oni": 2,
-            "tanuki": 1
+            "tanuki": 1,
+            "bakeneko": 1
           }
         }
       ]
@@ -296,7 +302,8 @@
           "label": "Feed it and let it stay",
           "weights": {
             "tanuki": 2,
-            "oni": 1
+            "oni": 1,
+            "zashiki": 1
           }
         },
         {
@@ -304,7 +311,8 @@
           "label": "Name it. Naming helps",
           "weights": {
             "tsukumogami": 2,
-            "kitsune": 1
+            "kitsune": 1,
+            "bakeneko": 1
           }
         },
         {
@@ -334,14 +342,16 @@
       "blurb": "You are several versions of yourself at once and all of them are convincing. You read what a room wants and become a slightly better version of it. That's not dishonesty — it's range. Just remember which version is the one that has to wake up tomorrow.",
       "accent": "yellow",
       "mix": {
-        "kitsune": 39,
+        "kitsune": 33,
         "tengu": 7,
-        "kappa": 10,
-        "oni": 10,
-        "yukionna": 8,
+        "kappa": 8,
+        "oni": 8,
+        "yukionna": 7,
         "tanuki": 6,
-        "tsukumogami": 10,
-        "rokurokubi": 10
+        "tsukumogami": 8,
+        "rokurokubi": 8,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Adapts to any room in seconds",
@@ -357,14 +367,16 @@
       "blurb": "You have standards and a very low tolerance for people who don't. You'd rather be correct than popular, and you'll say the sharp thing because someone has to. Behind the pride is a genuine wish to see things done well — and a temper that arrives before you've decided to have one.",
       "accent": "sky",
       "mix": {
-        "kitsune": 13,
-        "tengu": 38,
-        "kappa": 10,
+        "kitsune": 11,
+        "tengu": 32,
+        "kappa": 8,
         "oni": 7,
-        "yukionna": 14,
+        "yukionna": 12,
         "tanuki": 0,
-        "tsukumogami": 9,
-        "rokurokubi": 9
+        "tsukumogami": 8,
+        "rokurokubi": 7,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Cuts through noise to the real issue",
@@ -382,12 +394,14 @@
       "mix": {
         "kitsune": 3,
         "tengu": 0,
-        "kappa": 41,
-        "oni": 15,
-        "yukionna": 18,
-        "tanuki": 17,
+        "kappa": 35,
+        "oni": 13,
+        "yukionna": 15,
+        "tanuki": 15,
         "tsukumogami": 0,
-        "rokurokubi": 6
+        "rokurokubi": 4,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Thoughtful in ways people remember",
@@ -403,14 +417,16 @@
       "blurb": "You feel things at full size and you don't see the point in pretending otherwise. Your anger is honest, your affection is enormous, and both arrive at the same volume. People always know where they stand with you, which is rarer and more valuable than tact.",
       "accent": "lime",
       "mix": {
-        "kitsune": 7,
+        "kitsune": 6,
         "tengu": 0,
-        "kappa": 10,
-        "oni": 38,
-        "yukionna": 8,
-        "tanuki": 26,
+        "kappa": 8,
+        "oni": 32,
+        "yukionna": 6,
+        "tanuki": 22,
         "tsukumogami": 6,
-        "rokurokubi": 5
+        "rokurokubi": 5,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Unmistakably honest",
@@ -427,13 +443,15 @@
       "accent": "pink",
       "mix": {
         "kitsune": 3,
-        "tengu": 18,
-        "kappa": 25,
+        "tengu": 15,
+        "kappa": 21,
         "oni": 4,
-        "yukionna": 40,
+        "yukionna": 34,
         "tanuki": 0,
         "tsukumogami": 0,
-        "rokurokubi": 10
+        "rokurokubi": 8,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Unshakeable in a crisis",
@@ -449,14 +467,16 @@
       "blurb": "You are the social glue: cheerful, shameless, always somehow at the table. You lighten rooms and lower blood pressure. Under the easygoing act you're more observant than you let on — you know exactly who's struggling, and you make sure they get fed.",
       "accent": "green",
       "mix": {
-        "kitsune": 16,
+        "kitsune": 14,
         "tengu": 0,
-        "kappa": 11,
-        "oni": 20,
-        "yukionna": 8,
-        "tanuki": 37,
+        "kappa": 9,
+        "oni": 17,
+        "yukionna": 6,
+        "tanuki": 31,
         "tsukumogami": 3,
-        "rokurokubi": 5
+        "rokurokubi": 5,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Makes any gathering better",
@@ -472,14 +492,16 @@
       "blurb": "You are quietly accumulated history. You keep the ticket, the note, the mug from a job you left. Objects aren't clutter to you, they're evidence. You're also more resilient than anyone expects, because you've already survived several versions of your own life.",
       "accent": "orange",
       "mix": {
-        "kitsune": 9,
-        "tengu": 10,
-        "kappa": 9,
-        "oni": 13,
+        "kitsune": 7,
+        "tengu": 8,
+        "kappa": 7,
+        "oni": 11,
         "yukionna": 7,
         "tanuki": 3,
-        "tsukumogami": 36,
-        "rokurokubi": 13
+        "tsukumogami": 31,
+        "rokurokubi": 11,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Deep continuity and memory",
@@ -495,14 +517,16 @@
       "blurb": "You are physically present and mentally three streets away. Your curiosity stretches further than the room allows, which makes you excellent company and a slightly unreliable dinner guest. You notice things nobody meant you to notice, and you file them away.",
       "accent": "blue",
       "mix": {
-        "kitsune": 9,
-        "tengu": 10,
-        "kappa": 11,
-        "oni": 9,
-        "yukionna": 13,
+        "kitsune": 8,
+        "tengu": 8,
+        "kappa": 9,
+        "oni": 8,
+        "yukionna": 11,
         "tanuki": 3,
-        "tsukumogami": 9,
-        "rokurokubi": 36
+        "tsukumogami": 7,
+        "rokurokubi": 31,
+        "bakeneko": 7,
+        "zashiki": 8
       },
       "strengths": [
         "Sees around corners",
@@ -510,6 +534,56 @@
         "Comfortable being the odd one out"
       ],
       "watchOut": "Curiosity isn't consent. Not everything that's visible is yours to examine."
+    },
+    {
+      "trait": "bakeneko",
+      "name": "The Bakeneko",
+      "tagline": "Was a cat, then wasn't, then was again",
+      "blurb": "You are charming, slightly too knowing, and prone to holding a grudge for eleven years with a pleasant face. You drift between worlds: welcome in the house, at home in the alley, loyal to precisely one person and rude to everyone else.",
+      "accent": "yellow",
+      "mix": {
+        "bakeneko": 8,
+        "kitsune": 12,
+        "tengu": 12,
+        "kappa": 11,
+        "oni": 11,
+        "yukionna": 10,
+        "tanuki": 10,
+        "tsukumogami": 9,
+        "rokurokubi": 9,
+        "zashiki": 8
+      },
+      "strengths": [
+        "Reads a room instantly",
+        "Fiercely loyal to one or two people",
+        "Impossible to properly offend"
+      ],
+      "watchOut": "The grudge is outlasting its usefulness. Let the tail go."
+    },
+    {
+      "trait": "zashiki",
+      "name": "The Zashiki-warashi",
+      "tagline": "Small, tidy, brings luck and leaves if insulted",
+      "blurb": "You are the quiet presence that makes a house feel fortunate: things get put away, plants survive, the atmosphere improves. You ask for almost nothing and notice everything. Treat you badly once and the whole place quietly stops working.",
+      "accent": "sky",
+      "mix": {
+        "zashiki": 8,
+        "kitsune": 12,
+        "tengu": 12,
+        "kappa": 11,
+        "oni": 11,
+        "yukionna": 10,
+        "tanuki": 10,
+        "tsukumogami": 9,
+        "rokurokubi": 9,
+        "bakeneko": 8
+      },
+      "strengths": [
+        "Improves any room you settle in",
+        "Low maintenance, high effect",
+        "Notices what nobody says"
+      ],
+      "watchOut": "You leave instead of complaining. Say the thing before you go."
     }
   ]
 }

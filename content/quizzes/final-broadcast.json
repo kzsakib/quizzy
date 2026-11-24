@@ -19,7 +19,8 @@
           "label": "A song that needs no introduction",
           "weights": {
             "song": 2,
-            "silence": 1
+            "silence": 1,
+            "poem": 1
           }
         },
         {
@@ -97,7 +98,8 @@
           "label": "Something with a tune",
           "weights": {
             "song": 2,
-            "laugh": 1
+            "laugh": 1,
+            "poem": 1
           }
         },
         {
@@ -289,7 +291,8 @@
               "label": "the transmitter will keep humming",
               "weights": {
                 "silence": 2,
-                "recipe": 1
+                "recipe": 1,
+                "poem": 1
               }
             },
             {
@@ -393,7 +396,8 @@
           "label": "A lyric",
           "weights": {
             "song": 2,
-            "silence": 1
+            "silence": 1,
+            "poem": 1
           }
         },
         {
@@ -431,12 +435,13 @@
       "blurb": "You would not write a speech. You would queue one track, say the artist and the year, and let it do the work. It is the most human thing you can think of, and you would be right.",
       "accent": "purple",
       "mix": {
-        "song": 45,
-        "apology": 12,
-        "laugh": 8,
-        "recipe": 9,
-        "silence": 14,
-        "list": 12
+        "song": 40,
+        "apology": 11,
+        "laugh": 7,
+        "recipe": 8,
+        "silence": 12,
+        "list": 11,
+        "poem": 11
       },
       "strengths": [
         "Knows what actually moves people",
@@ -452,12 +457,13 @@
       "blurb": "Your last broadcast would be the honest one nobody made earlier. No context, no defence, just the plain acknowledgement that we had it and we spent it. You would say it clearly enough to be understood by nobody.",
       "accent": "blue",
       "mix": {
-        "song": 11,
-        "apology": 44,
-        "laugh": 8,
-        "recipe": 9,
-        "silence": 15,
-        "list": 13
+        "song": 10,
+        "apology": 39,
+        "laugh": 7,
+        "recipe": 8,
+        "silence": 13,
+        "list": 12,
+        "poem": 11
       },
       "strengths": [
         "Says the difficult thing plainly",
@@ -473,12 +479,13 @@
       "blurb": "You would refuse to end on a solemn note. There would be a bit, possibly a bad one, possibly about the situation, and it would be the most human four minutes on the tape. Somebody, somewhere, would still get the reference.",
       "accent": "yellow",
       "mix": {
-        "song": 9,
-        "apology": 11,
-        "laugh": 45,
-        "recipe": 8,
-        "silence": 10,
-        "list": 17
+        "song": 8,
+        "apology": 10,
+        "laugh": 40,
+        "recipe": 7,
+        "silence": 9,
+        "list": 15,
+        "poem": 11
       },
       "strengths": [
         "Defuses the unbearable",
@@ -494,12 +501,13 @@
       "blurb": "You would leave instructions. Flour, water, salt, time, heat: a message that assumes somebody, someday, might want to make something good. It is practical, generous and quietly devastating.",
       "accent": "orange",
       "mix": {
-        "song": 8,
-        "apology": 10,
-        "laugh": 9,
-        "recipe": 46,
-        "silence": 12,
-        "list": 15
+        "song": 7,
+        "apology": 9,
+        "laugh": 8,
+        "recipe": 41,
+        "silence": 11,
+        "list": 13,
+        "poem": 11
       },
       "strengths": [
         "Leaves something usable",
@@ -515,12 +523,13 @@
       "blurb": "You would let the carrier wave run. No message, no music, just the sound of a transmitter doing its job. Anyone listening would understand it immediately, which is the whole point.",
       "accent": "sky",
       "mix": {
-        "song": 14,
-        "apology": 13,
-        "laugh": 7,
-        "recipe": 9,
-        "silence": 45,
-        "list": 12
+        "song": 12,
+        "apology": 12,
+        "laugh": 6,
+        "recipe": 8,
+        "silence": 40,
+        "list": 11,
+        "poem": 11
       },
       "strengths": [
         "Knows when to stop talking",
@@ -536,12 +545,13 @@
       "blurb": "You would read the names. All of them, for the whole hour, until the transmitter dies. Not the famous ones: the neighbours, the dogs, the person who fixed the boiler. It is the only record that matters.",
       "accent": "green",
       "mix": {
-        "song": 11,
-        "apology": 14,
-        "laugh": 8,
-        "recipe": 10,
-        "silence": 12,
-        "list": 45
+        "song": 10,
+        "apology": 12,
+        "laugh": 7,
+        "recipe": 9,
+        "silence": 11,
+        "list": 40,
+        "poem": 11
       },
       "strengths": [
         "Remembers the people, not the story",
@@ -549,6 +559,28 @@
         "Makes everyone count"
       ],
       "watchOut": "Reading names is easy. Knowing them takes the rest of your life."
+    },
+    {
+      "trait": "poem",
+      "name": "The Poem",
+      "tagline": "Forty lines, no explanation",
+      "blurb": "You'd leave a verse rather than a message: something with a rhythm people can carry without understanding it. You think the last thing broadcast should be memorable instead of useful, and you are entirely willing to be the person who insists on that in the meeting.",
+      "accent": "purple",
+      "mix": {
+        "poem": 11,
+        "song": 16,
+        "apology": 16,
+        "laugh": 15,
+        "recipe": 15,
+        "silence": 14,
+        "list": 13
+      },
+      "strengths": [
+        "Says the big thing sideways",
+        "Believes rhythm outlives argument",
+        "Knows what people will repeat"
+      ],
+      "watchOut": "A poem is not an explanation. Someone still has to say what happened."
     }
   ]
 }

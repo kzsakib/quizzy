@@ -83,7 +83,8 @@
           "label": "Bring snacks. It's a party now",
           "weights": {
             "kelly": 2,
-            "michael": 1
+            "michael": 1,
+            "kevin": 1
           }
         }
       ]
@@ -148,7 +149,8 @@
           "label": "Reheat fish. Make eye contact",
           "weights": {
             "jim": 2,
-            "creed": 1
+            "creed": 1,
+            "kevin": 1
           }
         },
         {
@@ -263,7 +265,8 @@
           "label": "Bring it up at lunch",
           "weights": {
             "pam": 2,
-            "kelly": 1
+            "kelly": 1,
+            "kevin": 1
           }
         }
       ]
@@ -276,7 +279,7 @@
       "low": "This is just me",
       "high": "I take it off in the car"
     },
-        {
+    {
       "id": "q11",
       "type": "map",
       "prompt": "The documentary crew is rolling. Where do you land?",
@@ -318,7 +321,8 @@
           "label": "Say something mildly alarming",
           "weights": {
             "creed": 2,
-            "dwight": 1
+            "dwight": 1,
+            "kevin": 1
           }
         },
         {
@@ -356,14 +360,15 @@
       "blurb": "You believe, genuinely, that work is about people. You'll remember a birthday, organise the awful party and give a toast that goes on too long — and half of it will land. Your instincts are warm, your timing is a coin flip, and the place would be a lot colder without you.",
       "accent": "sky",
       "mix": {
-        "michael": 34,
-        "dwight": 10,
+        "michael": 31,
+        "dwight": 9,
         "jim": 0,
         "pam": 8,
-        "kelly": 27,
+        "kelly": 25,
         "creed": 0,
-        "angela": 10,
-        "ryan": 11
+        "angela": 9,
+        "ryan": 10,
+        "kevin": 8
       },
       "strengths": [
         "Makes a room feel like it belongs to everyone",
@@ -380,13 +385,14 @@
       "accent": "red",
       "mix": {
         "michael": 7,
-        "dwight": 37,
+        "dwight": 34,
         "jim": 2,
-        "pam": 9,
-        "kelly": 8,
-        "creed": 11,
-        "angela": 18,
-        "ryan": 8
+        "pam": 8,
+        "kelly": 7,
+        "creed": 10,
+        "angela": 17,
+        "ryan": 7,
+        "kevin": 8
       },
       "strengths": [
         "Impossible to catch unprepared",
@@ -404,12 +410,13 @@
       "mix": {
         "michael": 0,
         "dwight": 4,
-        "jim": 40,
+        "jim": 37,
         "pam": 0,
-        "kelly": 13,
-        "creed": 17,
-        "angela": 7,
-        "ryan": 19
+        "kelly": 12,
+        "creed": 16,
+        "angela": 6,
+        "ryan": 17,
+        "kevin": 8
       },
       "strengths": [
         "Reads the room without being read",
@@ -426,13 +433,14 @@
       "accent": "pink",
       "mix": {
         "michael": 4,
-        "dwight": 14,
+        "dwight": 13,
         "jim": 2,
-        "pam": 35,
+        "pam": 32,
         "kelly": 4,
-        "creed": 10,
-        "angela": 18,
-        "ryan": 13
+        "creed": 9,
+        "angela": 16,
+        "ryan": 12,
+        "kevin": 8
       },
       "strengths": [
         "Makes difficult people easier to be around",
@@ -448,14 +456,15 @@
       "blurb": "You are the social engine: the gossip, the calendar, the reason anyone knows anything. You feel things at full volume and you don't pretend otherwise. Underneath the drama is a genuinely sharp read on people and a fierce need to be included.",
       "accent": "green",
       "mix": {
-        "michael": 25,
+        "michael": 23,
         "dwight": 4,
         "jim": 8,
-        "pam": 9,
-        "kelly": 35,
+        "pam": 8,
+        "kelly": 32,
         "creed": 0,
-        "angela": 8,
-        "ryan": 11
+        "angela": 7,
+        "ryan": 10,
+        "kevin": 8
       },
       "strengths": [
         "Makes work feel less like work",
@@ -472,13 +481,14 @@
       "accent": "orange",
       "mix": {
         "michael": 3,
-        "dwight": 14,
-        "jim": 17,
-        "pam": 9,
+        "dwight": 13,
+        "jim": 16,
+        "pam": 8,
         "kelly": 0,
-        "creed": 36,
-        "angela": 10,
-        "ryan": 11
+        "creed": 33,
+        "angela": 9,
+        "ryan": 10,
+        "kevin": 8
       },
       "strengths": [
         "Unaffected by office politics",
@@ -495,13 +505,14 @@
       "accent": "cyan",
       "mix": {
         "michael": 4,
-        "dwight": 19,
+        "dwight": 17,
         "jim": 2,
-        "pam": 15,
+        "pam": 14,
         "kelly": 0,
         "creed": 0,
-        "angela": 39,
-        "ryan": 21
+        "angela": 36,
+        "ryan": 19,
+        "kevin": 8
       },
       "strengths": [
         "Actually reliable, no drama attached",
@@ -519,12 +530,13 @@
       "mix": {
         "michael": 4,
         "dwight": 4,
-        "jim": 17,
-        "pam": 10,
+        "jim": 16,
+        "pam": 9,
         "kelly": 0,
-        "creed": 6,
-        "angela": 18,
-        "ryan": 41
+        "creed": 5,
+        "angela": 16,
+        "ryan": 38,
+        "kevin": 8
       },
       "strengths": [
         "Sees the bigger picture early",
@@ -532,6 +544,30 @@
         "Unafraid to walk away"
       ],
       "watchOut": "The next thing won't fix the boring part. Finish one thing properly here first."
+    },
+    {
+      "trait": "kevin",
+      "name": "Kevin Malone",
+      "tagline": "Runs the numbers, guards the chili",
+      "blurb": "You are quietly the most competent person in the room, and you would prefer nobody noticed. Your filing is perfect, your patience is finite and your joy is a shared snack at four o'clock. Underestimated daily, indispensable annually.",
+      "accent": "sky",
+      "mix": {
+        "kevin": 8,
+        "michael": 13,
+        "dwight": 13,
+        "jim": 12,
+        "pam": 12,
+        "kelly": 11,
+        "creed": 11,
+        "angela": 10,
+        "ryan": 10
+      },
+      "strengths": [
+        "Genuinely good at the technical part",
+        "Defuses a tense room with food",
+        "Unbothered by office politics"
+      ],
+      "watchOut": "The quiet competence gets taken for granted. Ask for the title."
     }
   ]
 }

@@ -27,7 +27,8 @@
           "label": "Something has been through my drawers",
           "weights": {
             "bogart": 2,
-            "kelpie": 1
+            "kelpie": 1,
+            "puca": 1
           }
         },
         {
@@ -35,7 +36,8 @@
           "label": "This is the calm before something loud",
           "weights": {
             "banshee": 2,
-            "dragon": 1
+            "dragon": 1,
+            "moth": 1
           }
         },
         {
@@ -59,7 +61,8 @@
           "label": "They noticed the one thing I obsess over",
           "weights": {
             "brownie": 2,
-            "dragon": 1
+            "dragon": 1,
+            "gnome": 1
           }
         },
         {
@@ -67,7 +70,8 @@
           "label": "They are casing the place",
           "weights": {
             "bogart": 2,
-            "kelpie": 1
+            "kelpie": 1,
+            "cat": 1
           }
         },
         {
@@ -106,7 +110,8 @@
           "label": "A joke that lands badly",
           "weights": {
             "kelpie": 2,
-            "bogart": 1
+            "bogart": 1,
+            "puca": 1
           }
         }
       ]
@@ -131,7 +136,8 @@
           "label": "A broom nobody owns",
           "weights": {
             "banshee": 2,
-            "kelpie": 1
+            "kelpie": 1,
+            "moth": 1
           },
           "image": "/images/questions/myth-broom.jpg",
           "alt": "A worn broom leaning against a door"
@@ -217,7 +223,8 @@
           "label": "Everything put back where it was",
           "weights": {
             "dragon": 2,
-            "bogart": 1
+            "bogart": 1,
+            "gnome": 1
           }
         },
         {
@@ -225,7 +232,8 @@
           "label": "Twenty minutes of complete quiet",
           "weights": {
             "selkie": 2,
-            "brownie": 1
+            "brownie": 1,
+            "cat": 1
           }
         }
       ]
@@ -269,7 +277,8 @@
               "label": "the good room stays closed",
               "weights": {
                 "selkie": 2,
-                "brownie": 1
+                "brownie": 1,
+                "gnome": 1
               }
             }
           ]
@@ -290,7 +299,8 @@
               "label": "the thing at the bottom of the garden",
               "weights": {
                 "kelpie": 2,
-                "dragon": 1
+                "dragon": 1,
+                "puca": 1
               }
             },
             {
@@ -298,7 +308,8 @@
               "label": "who actually pays for it",
               "weights": {
                 "dragon": 2,
-                "bogart": 1
+                "bogart": 1,
+                "moth": 1
               }
             },
             {
@@ -363,7 +374,8 @@
           "label": "Leave it and blame the house",
           "weights": {
             "bogart": 2,
-            "kelpie": 1
+            "kelpie": 1,
+            "puca": 1
           }
         },
         {
@@ -371,7 +383,8 @@
           "label": "Announce it, dramatically",
           "weights": {
             "banshee": 2,
-            "dragon": 1
+            "dragon": 1,
+            "cat": 1
           }
         },
         {
@@ -394,7 +407,8 @@
           "label": "How clean it all is",
           "weights": {
             "brownie": 2,
-            "dragon": 1
+            "dragon": 1,
+            "gnome": 1
           }
         },
         {
@@ -402,7 +416,8 @@
           "label": "That something is missing",
           "weights": {
             "bogart": 2,
-            "kelpie": 1
+            "kelpie": 1,
+            "cat": 1
           }
         },
         {
@@ -410,7 +425,8 @@
           "label": "The noise from upstairs",
           "weights": {
             "banshee": 2,
-            "selkie": 1
+            "selkie": 1,
+            "moth": 1
           }
         },
         {
@@ -432,12 +448,16 @@
       "blurb": "You are the reason the house works and the reason nobody knows why. You fix things quietly, at inconvenient hours, and keep a very precise mental list of what everyone owes you in acknowledgement. It is a long list.",
       "accent": "lime",
       "mix": {
-        "brownie": 42,
-        "bogart": 9,
-        "banshee": 8,
-        "kelpie": 12,
-        "dragon": 20,
-        "selkie": 9
+        "brownie": 29,
+        "bogart": 6,
+        "banshee": 6,
+        "kelpie": 8,
+        "dragon": 15,
+        "selkie": 6,
+        "gnome": 6,
+        "puca": 7,
+        "cat": 8,
+        "moth": 9
       },
       "strengths": [
         "Notices the small thing before it becomes a big thing",
@@ -453,12 +473,16 @@
       "blurb": "You are the reason the house has a memory and a sense of humour about it. Nothing is ever quite where it was, and somehow that is how you know everything is fine. You keep the things people aren't ready to look at yet.",
       "accent": "purple",
       "mix": {
-        "brownie": 11,
-        "bogart": 40,
-        "banshee": 10,
-        "kelpie": 17,
-        "dragon": 14,
-        "selkie": 8
+        "brownie": 7,
+        "bogart": 27,
+        "banshee": 7,
+        "kelpie": 13,
+        "dragon": 10,
+        "selkie": 6,
+        "gnome": 6,
+        "puca": 7,
+        "cat": 8,
+        "moth": 9
       },
       "strengths": [
         "Finds what everyone else has given up on",
@@ -474,12 +498,16 @@
       "blurb": "You can hear a household going wrong from three rooms away, and you would rather say it now than be polite about it later. People call it dramatic right up until you're correct. Then they call it something else.",
       "accent": "sky",
       "mix": {
-        "brownie": 10,
-        "bogart": 8,
-        "banshee": 41,
-        "kelpie": 13,
-        "dragon": 15,
-        "selkie": 13
+        "brownie": 7,
+        "bogart": 6,
+        "banshee": 28,
+        "kelpie": 9,
+        "dragon": 11,
+        "selkie": 9,
+        "gnome": 6,
+        "puca": 7,
+        "cat": 8,
+        "moth": 9
       },
       "strengths": [
         "Catches problems early and says so",
@@ -495,12 +523,16 @@
       "blurb": "Your household runs on momentum and a little danger. You are charming, unpredictable, and the reason there is always a story about the boiler. You don't mean any harm. You do mean to see what happens.",
       "accent": "cyan",
       "mix": {
-        "brownie": 7,
-        "bogart": 20,
-        "banshee": 12,
-        "kelpie": 38,
-        "dragon": 11,
-        "selkie": 12
+        "brownie": 6,
+        "bogart": 14,
+        "banshee": 8,
+        "kelpie": 27,
+        "dragon": 7,
+        "selkie": 8,
+        "gnome": 6,
+        "puca": 7,
+        "cat": 8,
+        "moth": 9
       },
       "strengths": [
         "Turns a dull Tuesday into something worth retelling",
@@ -516,12 +548,16 @@
       "blurb": "You keep the house stocked, warm and slightly over-full. There is a drawer with batteries, a shelf with every charger, and a cupboard nobody else is allowed to reorganise. Your care looks like inventory, and it is enormously effective.",
       "accent": "red",
       "mix": {
-        "brownie": 19,
-        "bogart": 12,
-        "banshee": 9,
-        "kelpie": 8,
-        "dragon": 43,
-        "selkie": 9
+        "brownie": 15,
+        "bogart": 8,
+        "banshee": 6,
+        "kelpie": 6,
+        "dragon": 30,
+        "selkie": 5,
+        "gnome": 6,
+        "puca": 7,
+        "cat": 8,
+        "moth": 9
       },
       "strengths": [
         "Always has the thing, twice",
@@ -537,12 +573,16 @@
       "blurb": "You come and go, and the house is better for both. You arrive with your whole attention, then disappear for a while and return with stories. The people who love you have learned not to chase the coat.",
       "accent": "blue",
       "mix": {
-        "brownie": 12,
-        "bogart": 10,
-        "banshee": 12,
-        "kelpie": 18,
-        "dragon": 9,
-        "selkie": 39
+        "brownie": 8,
+        "bogart": 7,
+        "banshee": 8,
+        "kelpie": 13,
+        "dragon": 7,
+        "selkie": 27,
+        "gnome": 6,
+        "puca": 7,
+        "cat": 8,
+        "moth": 9
       },
       "strengths": [
         "Fully present when you're present",
@@ -550,6 +590,106 @@
         "Brings the outside world back in"
       ],
       "watchOut": "Silence reads as absence. Say when you'll be back."
+    },
+    {
+      "trait": "gnome",
+      "name": "The Garden Gnome",
+      "tagline": "Has been watching the house for years",
+      "blurb": "You are the small, fixed point at the edge of everything: always there, always facing the door, quietly keeping score. Nobody consults you, everybody is slightly aware of you. The house would feel wrong if you were moved.",
+      "accent": "lime",
+      "mix": {
+        "gnome": 6,
+        "brownie": 13,
+        "bogart": 12,
+        "banshee": 12,
+        "kelpie": 12,
+        "dragon": 11,
+        "selkie": 10,
+        "puca": 7,
+        "cat": 8,
+        "moth": 9
+      },
+      "strengths": [
+        "Steady presence in a noisy house",
+        "Notices details nobody reports",
+        "Impossible to unsettle"
+      ],
+      "watchOut": "Watching is not the same as joining in. Come inside occasionally."
+    },
+    {
+      "trait": "puca",
+      "name": "The Púca",
+      "tagline": "Borrows things and returns them wrong",
+      "blurb": "You are the household's chaos with a sense of humour: the keys moved, the plot twisted, the evening that went somewhere nobody planned. You mean well, mostly, and the story is always better afterwards. Nothing in this house is ever quite where it was.",
+      "accent": "purple",
+      "mix": {
+        "puca": 7,
+        "brownie": 12,
+        "bogart": 12,
+        "banshee": 12,
+        "kelpie": 11,
+        "dragon": 10,
+        "selkie": 10,
+        "gnome": 9,
+        "cat": 8,
+        "moth": 9
+      },
+      "strengths": [
+        "Turns a dull week into a story",
+        "Finds the funny side of a disaster",
+        "Never boring to live with"
+      ],
+      "watchOut": "Other people have to live in the aftermath. Put one thing back."
+    },
+    {
+      "trait": "cat",
+      "name": "The Cat Who Isn't a Cat",
+      "tagline": "Sleeps where it can see the door",
+      "blurb": "You are affectionate on your own terms and absolutely not when summoned. You have chosen this house, and you would like everyone to remember that it was a choice. You knock one thing off the shelf a week, just to keep the arrangement honest.",
+      "accent": "sky",
+      "mix": {
+        "cat": 8,
+        "brownie": 12,
+        "bogart": 12,
+        "banshee": 11,
+        "kelpie": 11,
+        "dragon": 10,
+        "selkie": 10,
+        "gnome": 9,
+        "puca": 8,
+        "moth": 9
+      },
+      "strengths": [
+        "Independent without being cold",
+        "Excellent at reading a room",
+        "Loyal in a way you won't explain"
+      ],
+      "watchOut": "People can't read your terms. Say them out loud once."
+    },
+    {
+      "trait": "moth",
+      "name": "The Moth in the Lamp",
+      "tagline": "Comes back every night, for the light",
+      "blurb": "You are drawn to whatever is warm and glowing: the late kitchen light, the conversation still going at 1am, the person who is a little bit much. You leave and come back. Nobody has ever managed to properly get rid of you, and nobody has really tried.",
+      "accent": "cyan",
+      "mix": {
+        "moth": 9,
+        "brownie": 12,
+        "bogart": 11,
+        "banshee": 11,
+        "kelpie": 11,
+        "dragon": 10,
+        "selkie": 10,
+        "gnome": 9,
+        "puca": 9,
+        "cat": 8
+      },
+      "strengths": [
+        "Finds the warmth in a room",
+        "Persistent without being heavy",
+        "Happy with small pleasures"
+      ],
+      "watchOut": "Not every bright thing is good for you. Check what you're circling."
     }
   ]
 }

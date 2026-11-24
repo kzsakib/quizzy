@@ -27,7 +27,8 @@
           "label": "Go and look at the problem yourself",
           "weights": {
             "ranger": 2,
-            "wizard": 1
+            "wizard": 1,
+            "monk": 1
           }
         },
         {
@@ -66,7 +67,8 @@
           "label": "A long walk and no notifications",
           "weights": {
             "ranger": 2,
-            "rogue": 1
+            "rogue": 1,
+            "monk": 1
           }
         },
         {
@@ -362,7 +364,8 @@
           "label": "Recalculate from what's in the room",
           "weights": {
             "wizard": 2,
-            "ranger": 1
+            "ranger": 1,
+            "monk": 1
           }
         },
         {
@@ -409,7 +412,8 @@
           "label": "Scouting ahead, alone, again",
           "weights": {
             "ranger": 2,
-            "rogue": 1
+            "rogue": 1,
+            "monk": 1
           }
         },
         {
@@ -431,12 +435,13 @@
       "blurb": "You are the reason a bad plan becomes a good story. You read the room, find the person who can actually help, and say the thing that makes everyone agree. Your weapon is a sentence, and it rarely misses.",
       "accent": "yellow",
       "mix": {
-        "bard": 43,
-        "ranger": 9,
-        "cleric": 10,
-        "rogue": 14,
-        "wizard": 11,
-        "paladin": 13
+        "bard": 38,
+        "ranger": 8,
+        "cleric": 9,
+        "rogue": 12,
+        "wizard": 10,
+        "paladin": 12,
+        "monk": 11
       },
       "strengths": [
         "Can talk a group out of a spiral",
@@ -452,12 +457,13 @@
       "blurb": "You are already three kilometres ahead and slightly annoyed about the company. You notice weather, exits, and the one person who shouldn't be here. You are happiest with a route and no meeting invite.",
       "accent": "green",
       "mix": {
-        "bard": 8,
-        "ranger": 44,
-        "cleric": 9,
-        "rogue": 15,
-        "wizard": 12,
-        "paladin": 12
+        "bard": 7,
+        "ranger": 39,
+        "cleric": 8,
+        "rogue": 13,
+        "wizard": 11,
+        "paladin": 11,
+        "monk": 11
       },
       "strengths": [
         "Finds the practical way through",
@@ -473,12 +479,13 @@
       "blurb": "You are the one who notices that everyone is running on empty before anyone says it. You carry the snacks, the charger, the difficult conversation. Your power is maintenance, which is why it gets overlooked until it stops.",
       "accent": "sky",
       "mix": {
-        "bard": 12,
-        "ranger": 8,
-        "cleric": 45,
-        "rogue": 8,
-        "wizard": 10,
-        "paladin": 17
+        "bard": 11,
+        "ranger": 7,
+        "cleric": 40,
+        "rogue": 7,
+        "wizard": 9,
+        "paladin": 15,
+        "monk": 11
       },
       "strengths": [
         "Keeps people upright",
@@ -494,12 +501,13 @@
       "blurb": "You solve problems by not approaching them from the front. You are quick, funny in a way that gets you out of trouble, and allergic to being told the procedure. Half your plans work. The other half are why the party has stories.",
       "accent": "purple",
       "mix": {
-        "bard": 13,
-        "ranger": 13,
-        "cleric": 8,
-        "rogue": 43,
-        "wizard": 11,
-        "paladin": 12
+        "bard": 12,
+        "ranger": 11,
+        "cleric": 7,
+        "rogue": 38,
+        "wizard": 10,
+        "paladin": 11,
+        "monk": 11
       },
       "strengths": [
         "Finds the unguarded way in",
@@ -515,12 +523,13 @@
       "blurb": "You want to understand the mechanism before you touch it. You keep the notes, the links, and the version history nobody else maintains. When the group is stuck, you are usually the one who already found the answer three days ago.",
       "accent": "blue",
       "mix": {
-        "bard": 8,
-        "ranger": 11,
-        "cleric": 10,
-        "rogue": 10,
-        "wizard": 47,
-        "paladin": 14
+        "bard": 7,
+        "ranger": 10,
+        "cleric": 9,
+        "rogue": 9,
+        "wizard": 42,
+        "paladin": 12,
+        "monk": 11
       },
       "strengths": [
         "Sees the structure under the mess",
@@ -536,12 +545,13 @@
       "blurb": "You are the one who does what they said they'd do, even when it costs. You take on the thing everyone else has quietly decided isn't their problem. People follow you because you don't ask them to do anything you wouldn't.",
       "accent": "orange",
       "mix": {
-        "bard": 10,
-        "ranger": 10,
-        "cleric": 16,
-        "rogue": 9,
-        "wizard": 12,
-        "paladin": 43
+        "bard": 9,
+        "ranger": 9,
+        "cleric": 14,
+        "rogue": 8,
+        "wizard": 11,
+        "paladin": 38,
+        "monk": 11
       },
       "strengths": [
         "Does the right thing without an audience",
@@ -549,6 +559,28 @@
         "Takes responsibility, genuinely"
       ],
       "watchOut": "Your code is yours. Don't hold everyone else to the same oath."
+    },
+    {
+      "trait": "monk",
+      "name": "The Monk",
+      "tagline": "Trains at six and says nothing about it",
+      "blurb": "You solve problems by getting stronger, quieter and harder to knock over. You don't argue with the plan; you are already three weeks into the practice it requires. People mistake the calm for passivity right up until the moment it very much isn't.",
+      "accent": "yellow",
+      "mix": {
+        "monk": 11,
+        "bard": 16,
+        "ranger": 16,
+        "cleric": 15,
+        "rogue": 15,
+        "wizard": 14,
+        "paladin": 13
+      },
+      "strengths": [
+        "Discipline nobody has to enforce",
+        "Calm that steadies a room",
+        "Fixes the body before the plan"
+      ],
+      "watchOut": "Not everything is a training problem. Say the thing instead of enduring it."
     }
   ]
 }

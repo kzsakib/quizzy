@@ -43,7 +43,8 @@
           "label": "Leaving a voicemail nobody played",
           "weights": {
             "photo": 2,
-            "contact": 1
+            "contact": 1,
+            "appeal": 1
           }
         }
       ]
@@ -58,7 +59,8 @@
           "label": "Tall-ish, grey coat, walks fast",
           "weights": {
             "description": 2,
-            "lastseen": 1
+            "lastseen": 1,
+            "clothes": 1
           }
         },
         {
@@ -105,7 +107,8 @@
           "label": "A weird detail",
           "weights": {
             "quirk": 2,
-            "photo": 1
+            "photo": 1,
+            "clothes": 1
           }
         }
       ]
@@ -120,7 +123,8 @@
           "label": "The lamp post at the corner",
           "weights": {
             "lastseen": 2,
-            "quirk": 1
+            "quirk": 1,
+            "search": 1
           },
           "image": "/images/questions/missing-lamppost.jpg",
           "alt": "A street lamp on a residential corner"
@@ -200,7 +204,8 @@
           "label": "The last place seen",
           "weights": {
             "lastseen": 2,
-            "description": 1
+            "description": 1,
+            "search": 1
           }
         },
         {
@@ -224,7 +229,8 @@
           "label": "A phone number that works",
           "weights": {
             "contact": 2,
-            "lastseen": 1
+            "lastseen": 1,
+            "appeal": 1
           }
         }
       ]
@@ -244,7 +250,8 @@
               "label": "at the corner shop",
               "weights": {
                 "lastseen": 2,
-                "description": 1
+                "description": 1,
+                "search": 1
               }
             },
             {
@@ -281,7 +288,8 @@
               "label": "the grey coat",
               "weights": {
                 "description": 2,
-                "photo": 1
+                "photo": 1,
+                "clothes": 1
               }
             },
             {
@@ -289,7 +297,8 @@
               "label": "headphones, probably",
               "weights": {
                 "quirk": 2,
-                "contact": 1
+                "contact": 1,
+                "appeal": 1
               }
             },
             {
@@ -354,7 +363,8 @@
           "label": "The one from your ID",
           "weights": {
             "description": 2,
-            "photo": 1
+            "photo": 1,
+            "clothes": 1
           }
         },
         {
@@ -401,7 +411,8 @@
           "label": "Please call, they'll be worried",
           "weights": {
             "contact": 2,
-            "reward": 1
+            "reward": 1,
+            "appeal": 1
           }
         },
         {
@@ -417,7 +428,8 @@
           "label": "Last seen heading home",
           "weights": {
             "lastseen": 2,
-            "photo": 1
+            "photo": 1,
+            "search": 1
           }
         }
       ]
@@ -431,12 +443,15 @@
       "blurb": "Your poster would be a small masterpiece of timing: the shop, the hour, the direction of travel. Whoever wrote it would have been paying attention, and that is the most flattering thing on the page.",
       "accent": "yellow",
       "mix": {
-        "lastseen": 44,
-        "description": 15,
-        "quirk": 11,
-        "photo": 9,
-        "reward": 10,
-        "contact": 11
+        "lastseen": 34,
+        "description": 12,
+        "quirk": 8,
+        "photo": 7,
+        "reward": 7,
+        "contact": 8,
+        "search": 7,
+        "clothes": 8,
+        "appeal": 9
       },
       "strengths": [
         "Easy to place in a story",
@@ -452,12 +467,15 @@
       "blurb": "The poster would spend four lines on what you look like and still not capture it. You are the kind of person who is hard to pick out of a crowd and impossible to forget once you've spoken. The height would be wrong.",
       "accent": "sky",
       "mix": {
-        "lastseen": 13,
-        "description": 43,
-        "quirk": 12,
-        "photo": 10,
-        "reward": 10,
-        "contact": 12
+        "lastseen": 10,
+        "description": 33,
+        "quirk": 9,
+        "photo": 8,
+        "reward": 7,
+        "contact": 9,
+        "search": 7,
+        "clothes": 8,
+        "appeal": 9
       },
       "strengths": [
         "Unassuming in a useful way",
@@ -473,12 +491,15 @@
       "blurb": "Your poster would not mention your face at all; it would mention the thing you always do. The dog, the headphones, the way you apologise to furniture. That is the detail somebody would actually recognise.",
       "accent": "green",
       "mix": {
-        "lastseen": 12,
-        "description": 11,
-        "quirk": 45,
-        "photo": 9,
-        "reward": 11,
-        "contact": 12
+        "lastseen": 9,
+        "description": 8,
+        "quirk": 35,
+        "photo": 7,
+        "reward": 8,
+        "contact": 9,
+        "search": 7,
+        "clothes": 8,
+        "appeal": 9
       },
       "strengths": [
         "Memorable in the smallest ways",
@@ -494,12 +515,15 @@
       "blurb": "Your poster would run with a photo from 2016 because it is the only one where you look normal. Nobody would agree on which one to use, and that disagreement would delay the poster by a day.",
       "accent": "purple",
       "mix": {
-        "lastseen": 9,
-        "description": 12,
-        "quirk": 10,
-        "photo": 46,
-        "reward": 9,
-        "contact": 14
+        "lastseen": 7,
+        "description": 9,
+        "quirk": 7,
+        "photo": 35,
+        "reward": 7,
+        "contact": 11,
+        "search": 7,
+        "clothes": 8,
+        "appeal": 9
       },
       "strengths": [
         "Photogenic when unprepared",
@@ -515,12 +539,15 @@
       "blurb": "You would be the poster with the funny reward. Not because you are worth £20, but because your friends would think it was a good idea at 11pm. It would work, which is the alarming part.",
       "accent": "orange",
       "mix": {
-        "lastseen": 10,
-        "description": 11,
-        "quirk": 12,
-        "photo": 8,
-        "reward": 45,
-        "contact": 14
+        "lastseen": 7,
+        "description": 8,
+        "quirk": 9,
+        "photo": 7,
+        "reward": 34,
+        "contact": 11,
+        "search": 7,
+        "clothes": 8,
+        "appeal": 9
       },
       "strengths": [
         "Motivates people with humour",
@@ -536,12 +563,15 @@
       "blurb": "Your poster would have somebody else's number on it, because that is how your life works. You are very good at being reachable and terrible at being the one who answers. The person taking the calls would do it well.",
       "accent": "red",
       "mix": {
-        "lastseen": 12,
-        "description": 13,
-        "quirk": 11,
-        "photo": 10,
-        "reward": 10,
-        "contact": 44
+        "lastseen": 9,
+        "description": 10,
+        "quirk": 8,
+        "photo": 8,
+        "reward": 7,
+        "contact": 34,
+        "search": 7,
+        "clothes": 8,
+        "appeal": 9
       },
       "strengths": [
         "Builds a network without noticing",
@@ -549,6 +579,78 @@
         "Not hard to find, actually"
       ],
       "watchOut": "Be the one who picks up occasionally. It matters."
+    },
+    {
+      "trait": "search",
+      "name": "The Search Grid",
+      "tagline": "Tells you where to actually look",
+      "blurb": "Your poster is a map, not a plea: three streets, two times, one route. You'd want people to know which way you went and which way you wouldn't. Being found is a logistics problem, and you are quietly confident the grid will work.",
+      "accent": "yellow",
+      "mix": {
+        "search": 7,
+        "lastseen": 14,
+        "description": 13,
+        "quirk": 13,
+        "photo": 13,
+        "reward": 12,
+        "contact": 11,
+        "clothes": 8,
+        "appeal": 9
+      },
+      "strengths": [
+        "Thinks in routes and timings",
+        "Gives people something to do",
+        "Calm about the practical part"
+      ],
+      "watchOut": "Not everything can be searched for on a grid. Ask for help out loud."
+    },
+    {
+      "trait": "clothes",
+      "name": "The Outfit",
+      "tagline": "Identified entirely by one coat",
+      "blurb": "You would be found because of the coat: the grey one, the terrible hat, the shoes that don't match the season. People remember what you wear long after they forget your face, and you have leaned into it. It is a terrible security practice and excellent branding.",
+      "accent": "sky",
+      "mix": {
+        "clothes": 8,
+        "lastseen": 13,
+        "description": 13,
+        "quirk": 13,
+        "photo": 12,
+        "reward": 11,
+        "contact": 11,
+        "search": 10,
+        "appeal": 9
+      },
+      "strengths": [
+        "Instantly recognisable",
+        "Consistent in a chaotic world",
+        "Gives strangers an easy detail to hold"
+      ],
+      "watchOut": "A signature look is not a personality. Let people past the coat."
+    },
+    {
+      "trait": "appeal",
+      "name": "The Direct Appeal",
+      "tagline": "The last line is written to you",
+      "blurb": "Your poster ends with a sentence aimed at one person: come home, nobody's angry, the kettle's on. You believe the way back is a message rather than a search. Even missing, you'd be trying to make it easy for someone to walk through the door.",
+      "accent": "green",
+      "mix": {
+        "appeal": 9,
+        "lastseen": 13,
+        "description": 13,
+        "quirk": 12,
+        "photo": 12,
+        "reward": 11,
+        "contact": 11,
+        "search": 10,
+        "clothes": 9
+      },
+      "strengths": [
+        "Leaves the door visibly open",
+        "Warm in a crisis",
+        "Knows what the person actually needs to hear"
+      ],
+      "watchOut": "Not everyone can come back at the first invitation. Keep asking anyway."
     }
   ]
 }

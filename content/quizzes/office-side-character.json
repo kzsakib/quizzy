@@ -19,7 +19,8 @@
           "label": "You brought food and meant it",
           "weights": {
             "kevin": 2,
-            "erin": 1
+            "erin": 1,
+            "phyllis": 1
           }
         },
         {
@@ -27,7 +28,8 @@
           "label": "You noticed the cat calendar",
           "weights": {
             "angela": 2,
-            "toby": 1
+            "toby": 1,
+            "holly": 1
           }
         },
         {
@@ -58,7 +60,8 @@
           "label": "Lunch that runs long",
           "weights": {
             "kevin": 2,
-            "darryl": 1
+            "darryl": 1,
+            "stanley": 1
           }
         },
         {
@@ -74,7 +77,8 @@
           "label": "Something with a theme and a costume",
           "weights": {
             "erin": 2,
-            "angela": 1
+            "angela": 1,
+            "phyllis": 1
           }
         },
         {
@@ -105,7 +109,8 @@
           "label": "Ordered and dry",
           "weights": {
             "oscar": 2,
-            "angela": 1
+            "angela": 1,
+            "stanley": 1
           }
         }
       ]
@@ -120,7 +125,8 @@
           "label": "The break room",
           "weights": {
             "kevin": 2,
-            "erin": 1
+            "erin": 1,
+            "stanley": 1
           },
           "image": "/images/questions/coldopen-breakroom.jpg",
           "alt": "A workplace vending machine and break area"
@@ -200,7 +206,8 @@
           "label": "Snacks, shared",
           "weights": {
             "kevin": 2,
-            "erin": 1
+            "erin": 1,
+            "phyllis": 1
           }
         },
         {
@@ -244,7 +251,8 @@
               "label": "in the break room",
               "weights": {
                 "kevin": 2,
-                "erin": 1
+                "erin": 1,
+                "phyllis": 1
               }
             },
             {
@@ -289,7 +297,8 @@
               "label": "nobody knows yet",
               "weights": {
                 "toby": 2,
-                "angela": 1
+                "angela": 1,
+                "holly": 1
               }
             },
             {
@@ -354,7 +363,8 @@
           "label": "Who ate the thing from the fridge",
           "weights": {
             "kevin": 2,
-            "darryl": 1
+            "darryl": 1,
+            "stanley": 1
           }
         },
         {
@@ -370,7 +380,8 @@
           "label": "Being left out of the plan",
           "weights": {
             "erin": 2,
-            "toby": 1
+            "toby": 1,
+            "holly": 1
           }
         },
         {
@@ -417,7 +428,8 @@
           "label": "A note left on the keyboard",
           "weights": {
             "toby": 2,
-            "oscar": 1
+            "oscar": 1,
+            "holly": 1
           }
         }
       ]
@@ -431,12 +443,15 @@
       "blurb": "You would end up with the kindest person in the building, whose love language is a chilli recipe and a desk drawer full of snacks. He would be loyal, funny, and absolutely refuse to share the good part of the cake.",
       "accent": "orange",
       "mix": {
-        "kevin": 45,
-        "angela": 9,
-        "oscar": 12,
-        "darryl": 12,
-        "erin": 12,
-        "toby": 10
+        "kevin": 35,
+        "angela": 7,
+        "oscar": 9,
+        "darryl": 9,
+        "erin": 9,
+        "toby": 7,
+        "phyllis": 7,
+        "stanley": 8,
+        "holly": 9
       },
       "strengths": [
         "Warm without conditions",
@@ -452,12 +467,15 @@
       "blurb": "You would end up with the office's strictest person, who has a soft spot exactly one person wide and a very clear opinion about your desk. The relationship would involve rules, a cat, and unexpected tenderness on Tuesdays.",
       "accent": "purple",
       "mix": {
-        "kevin": 10,
-        "angela": 46,
-        "oscar": 12,
-        "darryl": 9,
-        "erin": 11,
-        "toby": 12
+        "kevin": 8,
+        "angela": 35,
+        "oscar": 9,
+        "darryl": 7,
+        "erin": 8,
+        "toby": 9,
+        "phyllis": 7,
+        "stanley": 8,
+        "holly": 9
       },
       "strengths": [
         "Consistent, always",
@@ -473,12 +491,15 @@
       "blurb": "You would end up with the smartest, driest person in the office: someone who wins the argument, then says the kindest thing in the room three hours later. The relationship would be sensible, funny, and extremely well documented.",
       "accent": "sky",
       "mix": {
-        "kevin": 9,
-        "angela": 13,
-        "oscar": 45,
-        "darryl": 11,
-        "erin": 10,
-        "toby": 12
+        "kevin": 7,
+        "angela": 10,
+        "oscar": 35,
+        "darryl": 8,
+        "erin": 7,
+        "toby": 9,
+        "phyllis": 7,
+        "stanley": 8,
+        "holly": 9
       },
       "strengths": [
         "Actually knows things",
@@ -494,12 +515,15 @@
       "blurb": "You would end up with someone competent, unhurried and completely unimpressed by the upstairs nonsense. He would fix your shelf, laugh at the right moment, and drive you home without a fuss. It would work, properly.",
       "accent": "green",
       "mix": {
-        "kevin": 11,
-        "angela": 9,
-        "oscar": 12,
-        "darryl": 46,
-        "erin": 11,
-        "toby": 11
+        "kevin": 8,
+        "angela": 8,
+        "oscar": 9,
+        "darryl": 35,
+        "erin": 8,
+        "toby": 8,
+        "phyllis": 7,
+        "stanley": 8,
+        "holly": 9
       },
       "strengths": [
         "Gets things done quietly",
@@ -515,12 +539,15 @@
       "blurb": "You would end up with the most openly enthusiastic person in the office: someone who plans the party nobody asked for, remembers your birthday, and says the sweet thing without worrying whether it's cool.",
       "accent": "pink",
       "mix": {
-        "kevin": 12,
-        "angela": 10,
-        "oscar": 10,
-        "darryl": 11,
-        "erin": 45,
-        "toby": 12
+        "kevin": 9,
+        "angela": 8,
+        "oscar": 7,
+        "darryl": 8,
+        "erin": 35,
+        "toby": 9,
+        "phyllis": 7,
+        "stanley": 8,
+        "holly": 9
       },
       "strengths": [
         "Says the kind thing out loud",
@@ -536,12 +563,15 @@
       "blurb": "You would end up with the person everyone overlooked: gentle, decent, quietly funny, permanently in the wrong room. He would listen properly, remember the thing you mentioned once, and be the most restful person you know.",
       "accent": "blue",
       "mix": {
-        "kevin": 10,
-        "angela": 12,
-        "oscar": 13,
-        "darryl": 11,
-        "erin": 11,
-        "toby": 43
+        "kevin": 8,
+        "angela": 9,
+        "oscar": 10,
+        "darryl": 8,
+        "erin": 8,
+        "toby": 33,
+        "phyllis": 7,
+        "stanley": 8,
+        "holly": 9
       },
       "strengths": [
         "Listens, actually listens",
@@ -549,6 +579,78 @@
         "Calm and steady"
       ],
       "watchOut": "Being fine with being overlooked isn't the same as being ok."
+    },
+    {
+      "trait": "phyllis",
+      "name": "Phyllis Vance",
+      "tagline": "Knows everything and brings a casserole",
+      "blurb": "You are the office's warm intelligence network: who's related to whom, who's about to quit, whose marriage is on the rocks. You share it kindly and with portions. People underestimate you exactly once, and then they get a birthday card for the next eleven years.",
+      "accent": "orange",
+      "mix": {
+        "phyllis": 7,
+        "kevin": 14,
+        "angela": 13,
+        "oscar": 13,
+        "darryl": 13,
+        "erin": 12,
+        "toby": 11,
+        "stanley": 8,
+        "holly": 9
+      },
+      "strengths": [
+        "Remembers every birthday without a calendar",
+        "Feeds people without making it a thing",
+        "Knows the real org chart"
+      ],
+      "watchOut": "Not everything you know needs to be shared at lunch."
+    },
+    {
+      "trait": "stanley",
+      "name": "Stanley Hudson",
+      "tagline": "Off the clock, no exceptions",
+      "blurb": "You do the job well, on time, and you leave at five with the crossword under your arm. You are not rude, you are simply finished. People mistake the flat face for disinterest until they hear you say one devastating sentence in a meeting and go back to your paper.",
+      "accent": "purple",
+      "mix": {
+        "stanley": 8,
+        "kevin": 13,
+        "angela": 13,
+        "oscar": 13,
+        "darryl": 12,
+        "erin": 11,
+        "toby": 11,
+        "phyllis": 10,
+        "holly": 9
+      },
+      "strengths": [
+        "Reliable within the hours you agreed",
+        "Says the devastating thing once",
+        "Never pretends to enjoy a meeting"
+      ],
+      "watchOut": "Some things happen after five. Show up for one of them."
+    },
+    {
+      "trait": "holly",
+      "name": "Holly Flax",
+      "tagline": "Says the awkward thing and means it kindly",
+      "blurb": "You are relentlessly decent and slightly out of step with everyone else's tone. You read the HR manual for fun and then apply it to actual people, which turns out to be the most radical thing in the building. Your awkwardness is not a liability; it is the reason people trust you.",
+      "accent": "sky",
+      "mix": {
+        "holly": 9,
+        "kevin": 13,
+        "angela": 13,
+        "oscar": 12,
+        "darryl": 12,
+        "erin": 11,
+        "toby": 11,
+        "phyllis": 10,
+        "stanley": 9
+      },
+      "strengths": [
+        "Honest without being unkind",
+        "Actually reads the policy",
+        "Makes people feel less strange"
+      ],
+      "watchOut": "Not every silence needs filling with an apology."
     }
   ]
 }

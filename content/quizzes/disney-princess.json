@@ -66,7 +66,8 @@
           "label": "The part of the world nobody's shown me",
           "weights": {
             "ariel": 2,
-            "moana": 1
+            "moana": 1,
+            "merida": 1
           }
         },
         {
@@ -105,7 +106,8 @@
           "label": "An open horizon",
           "weights": {
             "moana": 2,
-            "ariel": 1
+            "ariel": 1,
+            "merida": 1
           }
         }
       ]
@@ -216,7 +218,8 @@
           "label": "A plan",
           "weights": {
             "mulan": 2,
-            "tiana": 1
+            "tiana": 1,
+            "merida": 1
           }
         },
         {
@@ -370,7 +373,8 @@
           "label": "Train until the answer changes",
           "weights": {
             "mulan": 2,
-            "moana": 1
+            "moana": 1,
+            "merida": 1
           }
         },
         {
@@ -417,7 +421,8 @@
           "label": "A mountain, crossed",
           "weights": {
             "mulan": 2,
-            "moana": 1
+            "moana": 1,
+            "merida": 1
           }
         }
       ]
@@ -431,12 +436,13 @@
       "blurb": "You would survive your life by understanding it first. Books, notes, the paragraph everyone skipped: you'd find the clause that changes everything and then, quietly, walk out of the room that was never good for you.",
       "accent": "yellow",
       "mix": {
-        "belle": 44,
-        "ariel": 12,
-        "mulan": 11,
-        "tiana": 11,
-        "rapunzel": 11,
-        "moana": 11
+        "belle": 39,
+        "ariel": 10,
+        "mulan": 10,
+        "tiana": 10,
+        "rapunzel": 10,
+        "moana": 10,
+        "merida": 11
       },
       "strengths": [
         "Reads people as closely as pages",
@@ -452,12 +458,13 @@
       "blurb": "You would follow the interesting thing out of the life you were given. There would be a collection of objects nobody else understands, a period of being misunderstood, and a moment where you have to talk your way through it without your usual voice.",
       "accent": "red",
       "mix": {
-        "belle": 12,
-        "ariel": 45,
-        "mulan": 10,
-        "tiana": 11,
-        "rapunzel": 11,
-        "moana": 11
+        "belle": 10,
+        "ariel": 40,
+        "mulan": 9,
+        "tiana": 10,
+        "rapunzel": 10,
+        "moana": 10,
+        "merida": 11
       },
       "strengths": [
         "Says yes to the unknown",
@@ -473,12 +480,13 @@
       "blurb": "You would take the thing nobody thought you could do, work at it in private, and then do it in front of everyone. Your life is a series of quiet preparations that look, from outside, like sudden competence.",
       "accent": "green",
       "mix": {
-        "belle": 11,
-        "ariel": 10,
-        "mulan": 45,
-        "tiana": 12,
-        "rapunzel": 10,
-        "moana": 12
+        "belle": 10,
+        "ariel": 9,
+        "mulan": 40,
+        "tiana": 11,
+        "rapunzel": 9,
+        "moana": 10,
+        "merida": 11
       },
       "strengths": [
         "Discipline nobody sees",
@@ -494,12 +502,13 @@
       "blurb": "You would work. Properly, for years, at something that other people treat as a hobby. Your life would have spreadsheets and an actual plan, and the good part would arrive later than it should, and you would still be there to enjoy it.",
       "accent": "green",
       "mix": {
-        "belle": 11,
-        "ariel": 11,
-        "mulan": 12,
-        "tiana": 45,
-        "rapunzel": 10,
-        "moana": 11
+        "belle": 10,
+        "ariel": 10,
+        "mulan": 10,
+        "tiana": 40,
+        "rapunzel": 9,
+        "moana": 10,
+        "merida": 11
       },
       "strengths": [
         "Consistency over years",
@@ -515,12 +524,13 @@
       "blurb": "You would be the one who made an enclosed life genuinely good: routines, projects, a wall you painted yourself. Then one day the door opens and you find out you are far braver outside than anyone expected, including you.",
       "accent": "purple",
       "mix": {
-        "belle": 12,
-        "ariel": 11,
-        "mulan": 10,
-        "tiana": 11,
-        "rapunzel": 45,
-        "moana": 11
+        "belle": 10,
+        "ariel": 10,
+        "mulan": 9,
+        "tiana": 10,
+        "rapunzel": 40,
+        "moana": 10,
+        "merida": 11
       },
       "strengths": [
         "Makes any room liveable",
@@ -536,12 +546,13 @@
       "blurb": "You would be the one who leaves. Not because you don't love home, but because something has to be fixed and everyone else is busy being reasonable. You'd learn the sailing on the way, and you'd come back with the thing you went for.",
       "accent": "sky",
       "mix": {
-        "belle": 10,
-        "ariel": 12,
-        "mulan": 11,
-        "tiana": 11,
-        "rapunzel": 10,
-        "moana": 46
+        "belle": 9,
+        "ariel": 10,
+        "mulan": 10,
+        "tiana": 10,
+        "rapunzel": 9,
+        "moana": 41,
+        "merida": 11
       },
       "strengths": [
         "Acts when others deliberate",
@@ -549,6 +560,28 @@
         "Returns with something to give"
       ],
       "watchOut": "Going alone is a choice, not a requirement. Take the crew."
+    },
+    {
+      "trait": "merida",
+      "name": "Merida",
+      "tagline": "Would rather change the rule than win the prize",
+      "blurb": "You do not want the life that was arranged for you, and you are not especially polite about saying so. You are better with your hands than with a speech, fiercely loyal to the people you chose, and allergic to being handed a destiny in a nice box with a bow on it.",
+      "accent": "red",
+      "mix": {
+        "merida": 11,
+        "belle": 16,
+        "ariel": 16,
+        "mulan": 15,
+        "tiana": 15,
+        "rapunzel": 14,
+        "moana": 13
+      },
+      "strengths": [
+        "Refuses a script written by someone else",
+        "Steady hands under pressure",
+        "Loyal past the point of sense"
+      ],
+      "watchOut": "Breaking the rule is the easy part. Repairing what it broke is the work."
     }
   ]
 }

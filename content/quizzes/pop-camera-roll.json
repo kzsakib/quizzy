@@ -67,7 +67,8 @@
           "label": "Find the host. Something's wrong",
           "weights": {
             "cottage": 2,
-            "food": 1
+            "food": 1,
+            "pets": 1
           }
         },
         {
@@ -128,7 +129,8 @@
           "label": "A picnic with too much food",
           "weights": {
             "food": 2,
-            "cottage": 1
+            "cottage": 1,
+            "pets": 1
           },
           "image": "/images/questions/pop-party-picnic.jpg",
           "alt": "A picnic blanket with baskets in a park"
@@ -188,7 +190,8 @@
           "label": "You'll crop them out and keep it",
           "weights": {
             "academia": 2,
-            "brat": 1
+            "brat": 1,
+            "film": 1
           }
         }
       ]
@@ -216,7 +219,8 @@
           "label": "Golden hour, blurry, joyful",
           "weights": {
             "cottage": 2,
-            "y2k": 1
+            "y2k": 1,
+            "film": 1
           }
         },
         {
@@ -255,7 +259,9 @@
           "label": "Save it. That was a good year",
           "weights": {
             "cottage": 2,
-            "food": 1
+            "food": 1,
+            "film": 1,
+            "pets": 1
           }
         },
         {
@@ -297,7 +303,8 @@
           "label": "Delete four hundred photos in one sitting",
           "weights": {
             "cottage": 2,
-            "academia": 1
+            "academia": 1,
+            "film": 1
           }
         },
         {
@@ -321,7 +328,8 @@
           "label": "Take more. Something will work",
           "weights": {
             "food": 2,
-            "gym": 1
+            "gym": 1,
+            "pets": 1
           }
         }
       ]
@@ -335,14 +343,16 @@
       "blurb": "Your camera roll is a night out: flash, motion blur, three good ones and forty you'd never post. You photograph the fun rather than the view. The aesthetic is accidental because you were busy actually being there, which is the most enviable thing about it.",
       "accent": "yellow",
       "mix": {
-        "y2k": 41,
+        "y2k": 35,
         "brat": 3,
-        "cottage": 6,
-        "mcbling": 26,
+        "cottage": 5,
+        "mcbling": 22,
         "academia": 3,
         "gym": 0,
-        "food": 9,
-        "screenshots": 12
+        "food": 7,
+        "screenshots": 10,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Finds the fun before the photo",
@@ -358,14 +368,16 @@
       "blurb": "You've stopped curating. The blurry photo, the undone hair, the terrible angle — posted anyway, because the bit is better than the beauty. You're allergic to trying too hard and you've made not-trying into a whole visual language.",
       "accent": "sky",
       "mix": {
-        "y2k": 15,
-        "brat": 36,
+        "y2k": 13,
+        "brat": 30,
         "cottage": 3,
         "mcbling": 3,
         "academia": 3,
-        "gym": 10,
-        "food": 8,
-        "screenshots": 22
+        "gym": 8,
+        "food": 7,
+        "screenshots": 18,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Immune to the cringe response",
@@ -381,14 +393,16 @@
       "blurb": "Your camera roll is a quieter world: light through a window, a mug, a walk, a cat you met. You document the calm because you're actively building it. People think it's an aesthetic. It's actually a coping strategy that happens to look lovely.",
       "accent": "red",
       "mix": {
-        "y2k": 7,
+        "y2k": 6,
         "brat": 0,
-        "cottage": 41,
+        "cottage": 35,
         "mcbling": 0,
-        "academia": 14,
+        "academia": 12,
         "gym": 0,
-        "food": 22,
-        "screenshots": 16
+        "food": 18,
+        "screenshots": 14,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Notices small beautiful things",
@@ -404,14 +418,16 @@
       "blurb": "Your photos are an event. Good lighting, better outfit, a caption you thought about for longer than you'd admit. You like things shiny and you've decided that's not a character flaw. The confidence is real, and it lifts the room.",
       "accent": "lime",
       "mix": {
-        "y2k": 26,
-        "brat": 7,
+        "y2k": 22,
+        "brat": 6,
         "cottage": 3,
-        "mcbling": 38,
+        "mcbling": 32,
         "academia": 6,
         "gym": 0,
-        "food": 9,
-        "screenshots": 11
+        "food": 7,
+        "screenshots": 9,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Brings glamour to ordinary plans",
@@ -427,14 +443,16 @@
       "blurb": "You photograph buildings, books, rain and the corner of a coffee cup with a pen in frame. Your camera roll is a mood board for a life you're still building. You're not pretentious — you're just genuinely more interested in the atmosphere than the event.",
       "accent": "green",
       "mix": {
-        "y2k": 6,
+        "y2k": 5,
         "brat": 3,
-        "cottage": 16,
+        "cottage": 14,
         "mcbling": 0,
-        "academia": 37,
-        "gym": 11,
-        "food": 9,
-        "screenshots": 18
+        "academia": 31,
+        "gym": 9,
+        "food": 7,
+        "screenshots": 16,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Sees composition everywhere",
@@ -450,14 +468,16 @@
       "blurb": "Your roll is full of angles, splits, plates and screenshots of programmes. You measure things because measuring works for you. The discipline is genuine, though the mirror selfies suggest you also enjoy being witnessed being disciplined.",
       "accent": "orange",
       "mix": {
-        "y2k": 16,
+        "y2k": 14,
         "brat": 6,
-        "cottage": 7,
-        "mcbling": 9,
-        "academia": 8,
-        "gym": 32,
-        "food": 12,
-        "screenshots": 10
+        "cottage": 6,
+        "mcbling": 7,
+        "academia": 6,
+        "gym": 28,
+        "food": 10,
+        "screenshots": 8,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Consistency when motivation dies",
@@ -473,14 +493,16 @@
       "blurb": "Your gallery is mostly plates. You photograph what you're about to eat, the table, the menu, the place you'll bring someone next time. Food is how you mark time and how you say you care. The photos are terrible in low light and you post them anyway.",
       "accent": "cyan",
       "mix": {
-        "y2k": 9,
+        "y2k": 7,
         "brat": 0,
-        "cottage": 30,
+        "cottage": 25,
         "mcbling": 0,
         "academia": 3,
         "gym": 5,
-        "food": 38,
-        "screenshots": 15
+        "food": 32,
+        "screenshots": 13,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Finds joy in small daily rituals",
@@ -496,14 +518,16 @@
       "blurb": "Your camera roll is an archive: tweets, articles, messages, a to-do list you photographed in a hurry. You save things because saving feels like doing. Somewhere in there is the exact thing you need, and you'll find it in eighteen months.",
       "accent": "blue",
       "mix": {
-        "y2k": 12,
-        "brat": 18,
-        "cottage": 13,
+        "y2k": 10,
+        "brat": 16,
+        "cottage": 11,
         "mcbling": 5,
-        "academia": 9,
+        "academia": 7,
         "gym": 0,
-        "food": 8,
-        "screenshots": 35
+        "food": 6,
+        "screenshots": 30,
+        "film": 7,
+        "pets": 8
       },
       "strengths": [
         "Catches what everyone else forgets",
@@ -511,6 +535,56 @@
         "Great at the follow-up receipt"
       ],
       "watchOut": "A screenshot is not an action. Pick three and actually do them."
+    },
+    {
+      "trait": "film",
+      "name": "The Film Roll",
+      "tagline": "Twenty-four shots, no second chances",
+      "blurb": "You take fewer photos and mean all of them: grain, bad light, one blurry frame of somebody laughing. You wait three weeks for the scans and it's worth it. Nothing gets posted for the algorithm; everything gets kept for the people in it.",
+      "accent": "yellow",
+      "mix": {
+        "film": 8,
+        "y2k": 12,
+        "brat": 12,
+        "cottage": 11,
+        "mcbling": 11,
+        "academia": 10,
+        "gym": 10,
+        "food": 9,
+        "screenshots": 9,
+        "pets": 8
+      },
+      "strengths": [
+        "Notices the moment instead of the feed",
+        "Comfortable with imperfection",
+        "Keeps a real archive"
+      ],
+      "watchOut": "Twenty-four shots means you're sometimes not in the photo at all."
+    },
+    {
+      "trait": "pets",
+      "name": "The Pet Folder",
+      "tagline": "Four hundred photos of an animal",
+      "blurb": "Your camera roll has a subfolder that is 90% one creature being extremely ordinary. You show people unsolicited and you do not stop when they look away. Every trip, every bad day, every good light — there is a small animal in the frame somewhere.",
+      "accent": "sky",
+      "mix": {
+        "pets": 8,
+        "y2k": 12,
+        "brat": 12,
+        "cottage": 11,
+        "mcbling": 11,
+        "academia": 10,
+        "gym": 10,
+        "food": 9,
+        "screenshots": 9,
+        "film": 8
+      },
+      "strengths": [
+        "Finds joy in the same small thing daily",
+        "Generous with the good stuff",
+        "Excellent at cheering people up"
+      ],
+      "watchOut": "Ask before the fifth photo. Even the dog has boundaries."
     }
   ]
 }

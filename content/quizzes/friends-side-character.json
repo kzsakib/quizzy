@@ -66,7 +66,8 @@
           "label": "Makes you laugh in a crisis",
           "weights": {
             "janice": 2,
-            "david": 1
+            "david": 1,
+            "tag": 1
           }
         },
         {
@@ -105,7 +106,8 @@
           "label": "Adventure",
           "weights": {
             "pete": 2,
-            "david": 1
+            "david": 1,
+            "tag": 1
           }
         }
       ]
@@ -224,7 +226,8 @@
           "label": "Someone who surprises you",
           "weights": {
             "pete": 2,
-            "janice": 1
+            "janice": 1,
+            "tag": 1
           }
         }
       ]
@@ -370,7 +373,8 @@
           "label": "I needed more drama",
           "weights": {
             "janice": 2,
-            "pete": 1
+            "pete": 1,
+            "tag": 1
           }
         },
         {
@@ -401,7 +405,8 @@
           "label": "You're a lot. I like it.",
           "weights": {
             "janice": 2,
-            "pete": 1
+            "pete": 1,
+            "tag": 1
           }
         },
         {
@@ -431,12 +436,13 @@
       "blurb": "You would end up with someone who has been quietly there the whole time, unnoticed by the main plot. He would remember your order and your bad days, and it would take you an embarrassingly long time to see it.",
       "accent": "blue",
       "mix": {
-        "gunther": 45,
-        "janice": 9,
-        "mike": 12,
-        "richard": 12,
-        "pete": 10,
-        "david": 12
+        "gunther": 40,
+        "janice": 8,
+        "mike": 11,
+        "richard": 11,
+        "pete": 9,
+        "david": 10,
+        "tag": 11
       },
       "strengths": [
         "Loyal past the point of sense",
@@ -452,12 +458,13 @@
       "blurb": "You would end up with the loudest, warmest person in the room: someone who says the embarrassing thing, means it kindly, and makes your whole life less quiet. Your friends would need a minute. Then they'd love her too.",
       "accent": "pink",
       "mix": {
-        "gunther": 9,
-        "janice": 46,
-        "mike": 11,
-        "richard": 10,
-        "pete": 12,
-        "david": 12
+        "gunther": 8,
+        "janice": 41,
+        "mike": 10,
+        "richard": 9,
+        "pete": 11,
+        "david": 10,
+        "tag": 11
       },
       "strengths": [
         "Unembarrassed affection",
@@ -473,12 +480,13 @@
       "blurb": "You would end up with someone remarkably normal who somehow fits into a chaotic group and makes it work. He would take the joke, take your side, and be the calmest person at the wedding.",
       "accent": "green",
       "mix": {
-        "gunther": 13,
-        "janice": 12,
-        "mike": 44,
-        "richard": 12,
-        "pete": 9,
-        "david": 10
+        "gunther": 11,
+        "janice": 11,
+        "mike": 39,
+        "richard": 11,
+        "pete": 8,
+        "david": 9,
+        "tag": 11
       },
       "strengths": [
         "Genuinely easy to be around",
@@ -494,12 +502,13 @@
       "blurb": "You would end up with someone settled: a proper dinner, a good bottle, no drama about the bill. Your friends would have opinions about the age gap. You would have a very nice evening regardless.",
       "accent": "yellow",
       "mix": {
-        "gunther": 12,
-        "janice": 9,
-        "mike": 13,
-        "richard": 45,
-        "pete": 9,
-        "david": 12
+        "gunther": 11,
+        "janice": 8,
+        "mike": 11,
+        "richard": 40,
+        "pete": 8,
+        "david": 11,
+        "tag": 11
       },
       "strengths": [
         "Reliable in a way people underestimate",
@@ -515,12 +524,13 @@
       "blurb": "You would end up with the one who goes all in: the enormous gesture, the slightly unhinged commitment, the plan that is 20% too much. It would be exciting, and occasionally you'd have to talk him down from a helicopter.",
       "accent": "orange",
       "mix": {
-        "gunther": 10,
-        "janice": 12,
-        "mike": 10,
-        "richard": 9,
-        "pete": 46,
-        "david": 13
+        "gunther": 9,
+        "janice": 11,
+        "mike": 9,
+        "richard": 8,
+        "pete": 41,
+        "david": 11,
+        "tag": 11
       },
       "strengths": [
         "Goes all in, always",
@@ -536,12 +546,13 @@
       "blurb": "You would end up with someone brilliant, kind and permanently slightly out of the country. The relationship would run on odd hours, long calls and a shared inability to do small talk. Somehow it would be the realest thing in your life.",
       "accent": "purple",
       "mix": {
-        "gunther": 12,
-        "janice": 10,
-        "mike": 12,
-        "richard": 11,
-        "pete": 11,
-        "david": 44
+        "gunther": 11,
+        "janice": 9,
+        "mike": 10,
+        "richard": 10,
+        "pete": 10,
+        "david": 39,
+        "tag": 11
       },
       "strengths": [
         "Deep loyalty over distance",
@@ -549,6 +560,28 @@
         "Doesn't do fake"
       ],
       "watchOut": "Distance needs maintenance. Book the flight, not just the call."
+    },
+    {
+      "trait": "tag",
+      "name": "Tag Jones",
+      "tagline": "Good hair, no hidden agenda",
+      "blurb": "You'd date the person who is simply lovely to be around: uncomplicated, enthusiastic, faintly chaotic about plans. There's no five-year strategy and no ex to negotiate, just a very good Saturday. It lasts exactly as long as it stays fun, and you are both nice about it when it doesn't.",
+      "accent": "blue",
+      "mix": {
+        "tag": 11,
+        "gunther": 16,
+        "janice": 16,
+        "mike": 15,
+        "richard": 15,
+        "pete": 14,
+        "david": 13
+      },
+      "strengths": [
+        "Makes an ordinary night feel like an event",
+        "Zero pressure, all enthusiasm",
+        "Honest about what this is"
+      ],
+      "watchOut": "Easy is not the same as close. Check whether anyone is building something."
     }
   ]
 }

@@ -19,7 +19,8 @@
           "label": "Outside, in weather",
           "weights": {
             "rain": 2,
-            "busstop": 1
+            "busstop": 1,
+            "firstsnow": 1
           }
         },
         {
@@ -43,7 +44,8 @@
           "label": "Somewhere you can see the whole city",
           "weights": {
             "rooftop": 2,
-            "rain": 1
+            "rain": 1,
+            "reunion": 1
           }
         }
       ]
@@ -97,7 +99,8 @@
           "label": "Say it out loud",
           "weights": {
             "rain": 2,
-            "rooftop": 1
+            "rooftop": 1,
+            "firstsnow": 1
           }
         },
         {
@@ -105,7 +108,8 @@
           "label": "Write it down",
           "weights": {
             "letter": 2,
-            "hospital": 1
+            "hospital": 1,
+            "voicemail": 1
           }
         }
       ]
@@ -120,7 +124,8 @@
           "label": "Umbrellas in the rain",
           "weights": {
             "rain": 2,
-            "busstop": 1
+            "busstop": 1,
+            "firstsnow": 1
           },
           "image": "/images/questions/finale-rain.jpg",
           "alt": "People holding umbrellas on a rainy street"
@@ -200,7 +205,8 @@
           "label": "The long wait",
           "weights": {
             "busstop": 2,
-            "rain": 1
+            "rain": 1,
+            "reunion": 1
           }
         },
         {
@@ -268,7 +274,8 @@
               "label": "I wrote it all down",
               "weights": {
                 "letter": 2,
-                "hospital": 1
+                "hospital": 1,
+                "voicemail": 1
               }
             }
           ]
@@ -289,7 +296,8 @@
               "label": "so please just look at me",
               "weights": {
                 "rain": 2,
-                "busstop": 1
+                "busstop": 1,
+                "firstsnow": 1
               }
             },
             {
@@ -370,7 +378,8 @@
           "label": "Say you'll be there when they're ready",
           "weights": {
             "hospital": 2,
-            "letter": 1
+            "letter": 1,
+            "reunion": 1
           }
         },
         {
@@ -378,7 +387,8 @@
           "label": "Leave a note and go",
           "weights": {
             "letter": 2,
-            "rain": 1
+            "rain": 1,
+            "voicemail": 1
           }
         }
       ]
@@ -401,7 +411,8 @@
           "label": "A taxi pulling away",
           "weights": {
             "airport": 2,
-            "letter": 1
+            "letter": 1,
+            "reunion": 1
           }
         },
         {
@@ -417,7 +428,8 @@
           "label": "An envelope on a table",
           "weights": {
             "letter": 2,
-            "busstop": 1
+            "busstop": 1,
+            "voicemail": 1
           }
         }
       ]
@@ -431,12 +443,15 @@
       "blurb": "You wait for the weather to do half the work. The rain is your lighting department, your excuse and your deadline; you say it all at once, badly, and mean every word. Nobody who was there ever forgets the umbrella.",
       "accent": "blue",
       "mix": {
-        "rain": 44,
-        "airport": 13,
-        "rooftop": 14,
-        "hospital": 10,
-        "busstop": 11,
-        "letter": 8
+        "rain": 34,
+        "airport": 10,
+        "rooftop": 11,
+        "hospital": 7,
+        "busstop": 8,
+        "letter": 6,
+        "firstsnow": 7,
+        "voicemail": 8,
+        "reunion": 9
       },
       "strengths": [
         "Says the unsayable when it counts",
@@ -452,12 +467,15 @@
       "blurb": "You are at your best with a countdown. Nothing clarifies a feeling like a departure board, and you will absolutely break several traffic laws to say one sentence. The drama is not the point; the timing is.",
       "accent": "red",
       "mix": {
-        "rain": 12,
-        "airport": 45,
-        "rooftop": 12,
-        "hospital": 9,
-        "busstop": 11,
-        "letter": 11
+        "rain": 9,
+        "airport": 35,
+        "rooftop": 9,
+        "hospital": 7,
+        "busstop": 8,
+        "letter": 8,
+        "firstsnow": 7,
+        "voicemail": 8,
+        "reunion": 9
       },
       "strengths": [
         "Acts when it matters",
@@ -473,12 +491,15 @@
       "blurb": "You need height and a view to say the true thing. Your confession is short, quiet and devastating, delivered while the city hums underneath. You would rather be understood than applauded.",
       "accent": "purple",
       "mix": {
-        "rain": 14,
-        "airport": 12,
-        "rooftop": 45,
-        "hospital": 10,
-        "busstop": 10,
-        "letter": 9
+        "rain": 11,
+        "airport": 9,
+        "rooftop": 35,
+        "hospital": 7,
+        "busstop": 7,
+        "letter": 7,
+        "firstsnow": 7,
+        "voicemail": 8,
+        "reunion": 9
       },
       "strengths": [
         "Says it plainly, once",
@@ -494,12 +515,15 @@
       "blurb": "You are not interested in drama, only in the truth arriving before it's too late. Bad lighting, plastic chairs, a vending machine: that is where you finally say it, and it lands harder for being so unglamorous.",
       "accent": "green",
       "mix": {
-        "rain": 14,
-        "airport": 10,
-        "rooftop": 11,
-        "hospital": 45,
-        "busstop": 10,
-        "letter": 10
+        "rain": 11,
+        "airport": 8,
+        "rooftop": 8,
+        "hospital": 35,
+        "busstop": 7,
+        "letter": 7,
+        "firstsnow": 7,
+        "voicemail": 8,
+        "reunion": 9
       },
       "strengths": [
         "Prioritises what actually matters",
@@ -515,12 +539,15 @@
       "blurb": "Your love language is a person standing exactly where they said they'd be. You wait in the cold, you don't text, and when they arrive you say something small and devastating like 'you're late'. The patience is the declaration.",
       "accent": "sky",
       "mix": {
-        "rain": 15,
-        "airport": 9,
-        "rooftop": 9,
-        "hospital": 10,
-        "busstop": 47,
-        "letter": 10
+        "rain": 12,
+        "airport": 7,
+        "rooftop": 7,
+        "hospital": 7,
+        "busstop": 36,
+        "letter": 7,
+        "firstsnow": 7,
+        "voicemail": 8,
+        "reunion": 9
       },
       "strengths": [
         "Enormously patient",
@@ -536,12 +563,15 @@
       "blurb": "You write it perfectly, seal it, and then carry it around for a week. When it finally arrives it is so precise, so specific and so obviously rewritten that the other person has to sit down. You said it. It just took a season.",
       "accent": "yellow",
       "mix": {
-        "rain": 9,
-        "airport": 11,
-        "rooftop": 10,
-        "hospital": 11,
-        "busstop": 10,
-        "letter": 49
+        "rain": 8,
+        "airport": 8,
+        "rooftop": 7,
+        "hospital": 8,
+        "busstop": 7,
+        "letter": 38,
+        "firstsnow": 7,
+        "voicemail": 8,
+        "reunion": 9
       },
       "strengths": [
         "Gets the words exactly right",
@@ -549,6 +579,78 @@
         "Leaves something worth keeping"
       ],
       "watchOut": "A letter can arrive after the plane. Send it sooner."
+    },
+    {
+      "trait": "firstsnow",
+      "name": "The First Snow Confession",
+      "tagline": "Has been waiting for the weather to be right",
+      "blurb": "You have rehearsed the line for weeks and you are holding it for the first snow, because that is when it is allowed to mean something. The timing is not an excuse; it is your entire method. When the flakes start, you finally speak.",
+      "accent": "blue",
+      "mix": {
+        "firstsnow": 7,
+        "rain": 14,
+        "airport": 13,
+        "rooftop": 13,
+        "hospital": 13,
+        "busstop": 12,
+        "letter": 11,
+        "voicemail": 8,
+        "reunion": 9
+      },
+      "strengths": [
+        "Patient with a feeling",
+        "Reads a moment better than a script",
+        "Commits completely once you start"
+      ],
+      "watchOut": "Snow does not arrive on schedule. December is not a plan."
+    },
+    {
+      "trait": "voicemail",
+      "name": "The Unsent Voicemail",
+      "tagline": "Recorded at 2am, delivered by accident",
+      "blurb": "You said the whole thing perfectly, alone, into your phone. It sits there for months — too honest to send, too true to delete — until one wrong tap hands it over. The confession was never the problem. Hitting the button was.",
+      "accent": "red",
+      "mix": {
+        "voicemail": 8,
+        "rain": 13,
+        "airport": 13,
+        "rooftop": 13,
+        "hospital": 12,
+        "busstop": 11,
+        "letter": 11,
+        "firstsnow": 10,
+        "reunion": 9
+      },
+      "strengths": [
+        "Says it beautifully when no one is listening",
+        "Remembers every detail of the week",
+        "Honest in writing"
+      ],
+      "watchOut": "An unsent message is a secret, not a confession. Press send."
+    },
+    {
+      "trait": "reunion",
+      "name": "The Time Skip Reunion",
+      "tagline": "Same street, four years later",
+      "blurb": "You don't confess on the night; you confess after the show has already ended. You come back different, at the same corner, and find them still ordering the same thing. The gap did the work and you take the credit for showing up.",
+      "accent": "purple",
+      "mix": {
+        "reunion": 9,
+        "rain": 13,
+        "airport": 13,
+        "rooftop": 12,
+        "hospital": 12,
+        "busstop": 11,
+        "letter": 11,
+        "firstsnow": 10,
+        "voicemail": 9
+      },
+      "strengths": [
+        "Patient enough to let a feeling mature",
+        "Knows what was actually worth returning for",
+        "Comfortable with a long silence"
+      ],
+      "watchOut": "They might have built a life in those four years. Ask first."
     }
   ]
 }

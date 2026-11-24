@@ -35,7 +35,8 @@
           "label": "Volunteer for the hardest tasks first",
           "weights": {
             "risk_taker": 2,
-            "last_minute_gambler": 1
+            "last_minute_gambler": 1,
+            "decoy": 1
           }
         },
         {
@@ -66,7 +67,8 @@
           "label": "Keep your head down, let others argue",
           "weights": {
             "silent_observer": 2,
-            "rule_keeper": 1
+            "rule_keeper": 1,
+            "saboteur": 1
           }
         },
         {
@@ -74,7 +76,8 @@
           "label": "Challenge the game master openly",
           "weights": {
             "risk_taker": 2,
-            "last_minute_gambler": 1
+            "last_minute_gambler": 1,
+            "decoy": 1
           }
         },
         {
@@ -105,7 +108,8 @@
           "label": "Keep it to yourself",
           "weights": {
             "silent_observer": 2,
-            "rule_keeper": 1
+            "rule_keeper": 1,
+            "scavenger": 1
           }
         }
       ]
@@ -120,7 +124,8 @@
           "label": "A cramped dormitory with bunk beds",
           "weights": {
             "alliance_builder": 2,
-            "rule_keeper": 1
+            "rule_keeper": 1,
+            "scavenger": 1
           },
           "alt": "Rows of metal bunk beds in a dimly lit dormitory",
           "image": "/images/questions/squid-game-strategy-twist-a.jpg"
@@ -130,7 +135,8 @@
           "label": "A lone figure watching a game board",
           "weights": {
             "silent_observer": 2,
-            "puzzle_solver": 1
+            "puzzle_solver": 1,
+            "saboteur": 1
           },
           "alt": "A solitary contestant staring at a glowing game board",
           "image": "/images/questions/squid-game-strategy-twist-b.jpg"
@@ -140,7 +146,8 @@
           "label": "Someone leaping over a barrier",
           "weights": {
             "risk_taker": 2,
-            "last_minute_gambler": 1
+            "last_minute_gambler": 1,
+            "decoy": 1
           },
           "image": "/images/questions/squid-game-strategy-twist-c.jpg",
           "alt": "Someone leaping over a barrier"
@@ -204,7 +211,8 @@
           "id": "b",
           "label": "Observe quietly",
           "weights": {
-            "silent_observer": 2
+            "silent_observer": 2,
+            "scavenger": 1
           }
         },
         {
@@ -331,7 +339,8 @@
           "label": "Offer a code word to strangers",
           "weights": {
             "alliance_builder": 2,
-            "risk_taker": 1
+            "risk_taker": 1,
+            "decoy": 1
           }
         },
         {
@@ -339,7 +348,8 @@
           "label": "Stay silent, watch for patterns",
           "weights": {
             "silent_observer": 2,
-            "puzzle_solver": 1
+            "puzzle_solver": 1,
+            "scavenger": 1
           }
         },
         {
@@ -347,7 +357,8 @@
           "label": "Force a rule change",
           "weights": {
             "risk_taker": 2,
-            "last_minute_gambler": 1
+            "last_minute_gambler": 1,
+            "saboteur": 1
           }
         },
         {
@@ -394,7 +405,8 @@
           "label": "Trust instinct over instructions",
           "weights": {
             "risk_taker": 2,
-            "last_minute_gambler": 1
+            "last_minute_gambler": 1,
+            "saboteur": 1
           }
         }
       ]
@@ -408,12 +420,15 @@
       "blurb": "You immediately start recruiting teammates, sharing food, and swapping intel. You set up a rotating watch schedule and assign roles based on strengths. When a challenge demands cooperation, you already have a trusted group ready to act. Your network becomes a safety net, turning isolation into an advantage.",
       "accent": "blue",
       "mix": {
-        "alliance_builder": 45,
-        "silent_observer": 11,
-        "risk_taker": 11,
-        "rule_keeper": 11,
-        "puzzle_solver": 11,
-        "last_minute_gambler": 11
+        "alliance_builder": 35,
+        "silent_observer": 8,
+        "risk_taker": 8,
+        "rule_keeper": 8,
+        "puzzle_solver": 8,
+        "last_minute_gambler": 8,
+        "saboteur": 8,
+        "scavenger": 8,
+        "decoy": 9
       },
       "strengths": [
         "Quick at forming bonds",
@@ -429,12 +444,15 @@
       "blurb": "You keep a low profile, noting every movement and mistake of others. You memorize patterns, locate hidden clues, and wait for the perfect moment to act. While others argue, you gather data, ready to exploit a slip or an opening without drawing attention.",
       "accent": "purple",
       "mix": {
-        "alliance_builder": 11,
-        "silent_observer": 45,
-        "risk_taker": 11,
-        "rule_keeper": 11,
-        "puzzle_solver": 11,
-        "last_minute_gambler": 11
+        "alliance_builder": 8,
+        "silent_observer": 35,
+        "risk_taker": 8,
+        "rule_keeper": 8,
+        "puzzle_solver": 8,
+        "last_minute_gambler": 8,
+        "saboteur": 8,
+        "scavenger": 8,
+        "decoy": 9
       },
       "strengths": [
         "Sharp at spotting details",
@@ -450,12 +468,15 @@
       "blurb": "You volunteer first, jump over obstacles, and gamble on bold moves. You trust instinct over instruction, often forcing the game to bend around you. When a chance appears, you seize it, even if it means a high‑stakes gamble that could end the round instantly.",
       "accent": "orange",
       "mix": {
-        "alliance_builder": 11,
-        "silent_observer": 11,
-        "risk_taker": 45,
-        "rule_keeper": 11,
-        "puzzle_solver": 11,
-        "last_minute_gambler": 11
+        "alliance_builder": 8,
+        "silent_observer": 8,
+        "risk_taker": 35,
+        "rule_keeper": 8,
+        "puzzle_solver": 8,
+        "last_minute_gambler": 8,
+        "saboteur": 8,
+        "scavenger": 8,
+        "decoy": 9
       },
       "strengths": [
         "Bold under pressure",
@@ -471,12 +492,15 @@
       "blurb": "You memorize every rule, double‑check instructions, and call out inconsistencies. You keep others honest, pointing out violations before they become penalties. Your strict adherence protects you from hidden traps and ensures you never lose points for a careless mistake.",
       "accent": "green",
       "mix": {
-        "alliance_builder": 11,
-        "silent_observer": 11,
-        "risk_taker": 11,
-        "rule_keeper": 45,
-        "puzzle_solver": 11,
-        "last_minute_gambler": 11
+        "alliance_builder": 8,
+        "silent_observer": 8,
+        "risk_taker": 8,
+        "rule_keeper": 35,
+        "puzzle_solver": 8,
+        "last_minute_gambler": 8,
+        "saboteur": 8,
+        "scavenger": 8,
+        "decoy": 9
       },
       "strengths": [
         "Never breaks protocol",
@@ -492,12 +516,15 @@
       "blurb": "You dissect each challenge, looking for patterns, hidden mechanisms, and logical shortcuts. You experiment with tools, test hypotheses, and often find the solution before anyone else notices. Your mind turns chaotic games into solvable problems, giving you an edge in any mental test.",
       "accent": "sky",
       "mix": {
-        "alliance_builder": 11,
-        "silent_observer": 11,
-        "risk_taker": 11,
-        "rule_keeper": 11,
-        "puzzle_solver": 45,
-        "last_minute_gambler": 11
+        "alliance_builder": 8,
+        "silent_observer": 8,
+        "risk_taker": 8,
+        "rule_keeper": 8,
+        "puzzle_solver": 35,
+        "last_minute_gambler": 8,
+        "saboteur": 8,
+        "scavenger": 8,
+        "decoy": 9
       },
       "strengths": [
         "Finds hidden mechanisms",
@@ -513,12 +540,15 @@
       "blurb": "You hold back resources and ideas until the final seconds, then unleash a desperate, high‑impact move. You calculate odds on the fly, betting that a last‑second twist will flip the outcome. When others panic, you stay calm, ready to gamble at the edge.",
       "accent": "pink",
       "mix": {
-        "alliance_builder": 11,
-        "silent_observer": 11,
-        "risk_taker": 11,
-        "rule_keeper": 11,
-        "puzzle_solver": 11,
-        "last_minute_gambler": 45
+        "alliance_builder": 8,
+        "silent_observer": 8,
+        "risk_taker": 8,
+        "rule_keeper": 8,
+        "puzzle_solver": 8,
+        "last_minute_gambler": 35,
+        "saboteur": 8,
+        "scavenger": 8,
+        "decoy": 9
       },
       "strengths": [
         "Calm under countdown",
@@ -526,6 +556,78 @@
         "Turns desperation into advantage"
       ],
       "watchOut": "Waiting too long can leave you with no option at all."
+    },
+    {
+      "trait": "saboteur",
+      "name": "The Saboteur",
+      "tagline": "Removes the problem, not the players",
+      "blurb": "You don't fight the game, you edit it: a loosened bolt, a misread instruction, one less rival when the lights come back. You keep your hands clean and your reasoning tidy. Everyone else is playing for survival; you are quietly managing the field.",
+      "accent": "blue",
+      "mix": {
+        "saboteur": 7,
+        "alliance_builder": 14,
+        "silent_observer": 13,
+        "risk_taker": 13,
+        "rule_keeper": 13,
+        "puzzle_solver": 12,
+        "last_minute_gambler": 11,
+        "scavenger": 8,
+        "decoy": 9
+      },
+      "strengths": [
+        "Sees where systems are weak",
+        "Calm while everyone else reacts",
+        "Patient across several rounds"
+      ],
+      "watchOut": "A field you rigged can still swallow you. Watch your own step."
+    },
+    {
+      "trait": "scavenger",
+      "name": "The Scavenger",
+      "tagline": "Finds what everyone else walked past",
+      "blurb": "You don't need an alliance or a rule; you need the thing under the bunk, the extra ration, the loose tile. You survive on what the game forgot to secure, and you never announce a find. Being underestimated is your best piece of equipment.",
+      "accent": "purple",
+      "mix": {
+        "scavenger": 8,
+        "alliance_builder": 13,
+        "silent_observer": 13,
+        "risk_taker": 13,
+        "rule_keeper": 12,
+        "puzzle_solver": 11,
+        "last_minute_gambler": 11,
+        "saboteur": 10,
+        "decoy": 9
+      },
+      "strengths": [
+        "Sees value in discarded things",
+        "Never spends everything at once",
+        "Quiet until it counts"
+      ],
+      "watchOut": "Hoarding alone leaves you with nobody to share the last of it."
+    },
+    {
+      "trait": "decoy",
+      "name": "The Decoy",
+      "tagline": "Draws the attention, moves the game",
+      "blurb": "You volunteer, argue with the guards, make a scene in exactly the right place. While everyone watches you be the problem, the actual plan gets three free minutes. It is a loud, risky, oddly generous way to survive, and it works more often than it should.",
+      "accent": "orange",
+      "mix": {
+        "decoy": 9,
+        "alliance_builder": 13,
+        "silent_observer": 13,
+        "risk_taker": 12,
+        "rule_keeper": 12,
+        "puzzle_solver": 11,
+        "last_minute_gambler": 11,
+        "saboteur": 10,
+        "scavenger": 9
+      },
+      "strengths": [
+        "Thinks fast with an audience",
+        "Buys time for other people",
+        "Unbothered by being disliked"
+      ],
+      "watchOut": "The decoy is the first thing removed. Have an exit before you perform."
     }
   ]
 }

@@ -20,7 +20,8 @@
           "label": "Order one more and start a new topic",
           "weights": {
             "rachel": 2,
-            "joey": 1
+            "joey": 1,
+            "gunther": 1
           }
         },
         {
@@ -156,7 +157,8 @@
           "label": "Ignore it. It's a bit",
           "weights": {
             "joey": 2,
-            "phoebe": 1
+            "phoebe": 1,
+            "gunther": 1
           }
         },
         {
@@ -263,7 +265,8 @@
           "label": "Change the subject to food",
           "weights": {
             "joey": 2,
-            "rachel": 1
+            "rachel": 1,
+            "gunther": 1
           }
         }
       ]
@@ -313,7 +316,8 @@
           "label": "Wait outside and narrate arrivals",
           "weights": {
             "phoebe": 2,
-            "rachel": 1
+            "rachel": 1,
+            "gunther": 1
           }
         },
         {
@@ -335,12 +339,13 @@
       "blurb": "You arrive late, look great, and somehow leave with the thing everyone wanted. Your instincts are better than your planning, which is why you keep getting away with it. You're also the friend who says the encouraging thing at exactly the moment it's needed — even if you're texting it from a taxi you can't afford.",
       "accent": "yellow",
       "mix": {
-        "rachel": 45,
-        "monica": 17,
-        "chandler": 13,
-        "phoebe": 9,
-        "joey": 16,
-        "ross": 0
+        "rachel": 40,
+        "monica": 15,
+        "chandler": 12,
+        "phoebe": 8,
+        "joey": 14,
+        "ross": 0,
+        "gunther": 11
       },
       "strengths": [
         "Turns chaos into an entrance",
@@ -356,12 +361,13 @@
       "blurb": "You are the load-bearing wall of your friend group. You host, you plan, you notice who hasn't eaten, and you have opinions about how the dishwasher should be loaded. Your standards are high because you care, not because you're difficult — although it can look like both.",
       "accent": "sky",
       "mix": {
-        "rachel": 18,
-        "monica": 47,
+        "rachel": 16,
+        "monica": 42,
         "chandler": 0,
         "phoebe": 0,
-        "joey": 14,
-        "ross": 21
+        "joey": 12,
+        "ross": 19,
+        "gunther": 11
       },
       "strengths": [
         "Makes a room feel looked after",
@@ -377,12 +383,13 @@
       "blurb": "You are the funniest person in the chat and the last to say what's actually wrong. Humour is how you hold a room together and how you keep it at arm's length. When you do get sincere, people stop scrolling — because it's rare and it's always accurate.",
       "accent": "red",
       "mix": {
-        "rachel": 23,
-        "monica": 5,
-        "chandler": 43,
+        "rachel": 21,
+        "monica": 4,
+        "chandler": 38,
         "phoebe": 3,
-        "joey": 18,
-        "ross": 8
+        "joey": 16,
+        "ross": 7,
+        "gunther": 11
       },
       "strengths": [
         "Defuses tension with one line",
@@ -398,12 +405,13 @@
       "blurb": "You live slightly to the left of everyone else and it works for you. You're kind without being sentimental, blunt without being cruel, and completely unbothered by what the group considers normal. People come to you for the answer they weren't expecting.",
       "accent": "lime",
       "mix": {
-        "rachel": 15,
-        "monica": 5,
-        "chandler": 7,
-        "phoebe": 49,
-        "joey": 20,
-        "ross": 4
+        "rachel": 13,
+        "monica": 4,
+        "chandler": 6,
+        "phoebe": 44,
+        "joey": 18,
+        "ross": 4,
+        "gunther": 11
       },
       "strengths": [
         "Immune to peer pressure",
@@ -419,12 +427,13 @@
       "blurb": "You are the friend who shows up. Not with a plan or a speech — with food, a terrible idea and total commitment to whatever the group is doing. You don't hold grudges and you don't do subtext, which makes you the easiest person in the room to be around.",
       "accent": "pink",
       "mix": {
-        "rachel": 26,
-        "monica": 8,
-        "chandler": 10,
-        "phoebe": 9,
-        "joey": 47,
-        "ross": 0
+        "rachel": 23,
+        "monica": 7,
+        "chandler": 9,
+        "phoebe": 8,
+        "joey": 42,
+        "ross": 0,
+        "gunther": 11
       },
       "strengths": [
         "Fiercely loyal without keeping score",
@@ -440,12 +449,13 @@
       "blurb": "You need the facts to line up. You'll correct the timeline, find the receipt and explain why it matters — and you'll be right, which is not always the same as being helpful. Under the pedantry is someone who cares enormously and is terrified of getting it wrong.",
       "accent": "green",
       "mix": {
-        "rachel": 10,
-        "monica": 17,
-        "chandler": 9,
-        "phoebe": 12,
-        "joey": 8,
-        "ross": 44
+        "rachel": 9,
+        "monica": 15,
+        "chandler": 8,
+        "phoebe": 11,
+        "joey": 7,
+        "ross": 39,
+        "gunther": 11
       },
       "strengths": [
         "Remembers the detail that settles it",
@@ -453,6 +463,28 @@
         "Will do the unglamorous, correct thing"
       ],
       "watchOut": "Being right is not a love language. Ask what they need before you explain."
+    },
+    {
+      "trait": "gunther",
+      "name": "Gunther",
+      "tagline": "Has been behind the counter this whole time",
+      "blurb": "You are the constant in the room: same shift, same stool, the same person you have quietly been rooting for since 1994. You don't need the spotlight or the big speech. You need the group to keep meeting, and you need somebody to finally notice you're standing right there.",
+      "accent": "yellow",
+      "mix": {
+        "gunther": 11,
+        "rachel": 16,
+        "monica": 16,
+        "chandler": 15,
+        "phoebe": 15,
+        "joey": 14,
+        "ross": 13
+      },
+      "strengths": [
+        "Reliable in a way nobody announces",
+        "Loves without needing an audience",
+        "Remembers everyone's order"
+      ],
+      "watchOut": "Devotion from a distance is still a distance. Say something this decade."
     }
   ]
 }

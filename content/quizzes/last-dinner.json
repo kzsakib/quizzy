@@ -19,7 +19,8 @@
           "label": "A roast big enough for everyone",
           "weights": {
             "roast": 2,
-            "bread": 1
+            "bread": 1,
+            "soup": 1
           }
         },
         {
@@ -43,7 +44,8 @@
           "label": "The last bottle, opened",
           "weights": {
             "wine": 2,
-            "roast": 1
+            "roast": 1,
+            "cheese": 1
           }
         }
       ]
@@ -58,7 +60,8 @@
           "label": "Start cooking at 6am",
           "weights": {
             "roast": 2,
-            "wine": 1
+            "wine": 1,
+            "soup": 1
           }
         },
         {
@@ -74,7 +77,8 @@
           "label": "Pick whatever's still in the garden",
           "weights": {
             "garden": 2,
-            "tinned": 1
+            "tinned": 1,
+            "fruit": 1
           }
         },
         {
@@ -105,7 +109,8 @@
           "label": "Opened with a knife",
           "weights": {
             "tinned": 2,
-            "wine": 1
+            "wine": 1,
+            "fruit": 1
           }
         }
       ]
@@ -120,7 +125,8 @@
           "label": "A table set properly",
           "weights": {
             "roast": 2,
-            "wine": 1
+            "wine": 1,
+            "cheese": 1
           },
           "image": "/images/questions/dinner-table.jpg",
           "alt": "A formal table setting"
@@ -200,7 +206,8 @@
           "label": "One proper roast",
           "weights": {
             "roast": 2,
-            "bread": 1
+            "bread": 1,
+            "soup": 1
           }
         },
         {
@@ -224,7 +231,8 @@
           "label": "A bottle worth opening",
           "weights": {
             "wine": 2,
-            "takeaway": 1
+            "takeaway": 1,
+            "cheese": 1
           }
         }
       ]
@@ -281,7 +289,8 @@
               "label": "a salad from the garden",
               "weights": {
                 "garden": 2,
-                "bread": 1
+                "bread": 1,
+                "fruit": 1
               }
             },
             {
@@ -354,7 +363,8 @@
           "label": "Done properly, by me",
           "weights": {
             "roast": 2,
-            "garden": 1
+            "garden": 1,
+            "soup": 1
           }
         },
         {
@@ -401,7 +411,8 @@
           "label": "A jar of something homemade",
           "weights": {
             "tinned": 2,
-            "garden": 1
+            "garden": 1,
+            "fruit": 1
           }
         },
         {
@@ -409,7 +420,8 @@
           "label": "The empty bottle",
           "weights": {
             "wine": 2,
-            "takeaway": 1
+            "takeaway": 1,
+            "cheese": 1
           }
         },
         {
@@ -431,12 +443,15 @@
       "blurb": "You would cook for eleven hours and then apologise for the gravy. The table would be too small. Somebody would have to sit on a cooler. It would be the best meal anyone there had ever had, and you would not sit down until it was over.",
       "accent": "orange",
       "mix": {
-        "roast": 45,
-        "bread": 12,
-        "tinned": 8,
-        "garden": 11,
-        "wine": 13,
-        "takeaway": 11
+        "roast": 34,
+        "bread": 9,
+        "tinned": 7,
+        "garden": 8,
+        "wine": 10,
+        "takeaway": 8,
+        "soup": 7,
+        "cheese": 8,
+        "fruit": 9
       },
       "strengths": [
         "Feeds people without being asked",
@@ -452,12 +467,15 @@
       "blurb": "You would turn up with something plain and perfect that took two days of quiet work. No speech. No drama. Just bread, still warm, and a bit of salt. It would be gone in four minutes and remembered longest.",
       "accent": "yellow",
       "mix": {
-        "roast": 11,
-        "bread": 44,
-        "tinned": 9,
-        "garden": 13,
-        "wine": 11,
-        "takeaway": 12
+        "roast": 8,
+        "bread": 34,
+        "tinned": 7,
+        "garden": 10,
+        "wine": 8,
+        "takeaway": 9,
+        "soup": 7,
+        "cheese": 8,
+        "fruit": 9
       },
       "strengths": [
         "Does quiet work beautifully",
@@ -473,12 +491,15 @@
       "blurb": "You would be the one who planned for this. Beans, tomatoes, peaches, one mysterious tin with no label. Everyone would laugh, and then everyone would eat, and you would be quietly correct for the rest of the evening.",
       "accent": "green",
       "mix": {
-        "roast": 8,
-        "bread": 10,
-        "tinned": 46,
-        "garden": 12,
-        "wine": 11,
-        "takeaway": 13
+        "roast": 7,
+        "bread": 7,
+        "tinned": 35,
+        "garden": 9,
+        "wine": 8,
+        "takeaway": 10,
+        "soup": 7,
+        "cheese": 8,
+        "fruit": 9
       },
       "strengths": [
         "Prepared when it matters",
@@ -494,12 +515,15 @@
       "blurb": "Your dish would come out of the ground that morning, dirt still on it, and it would taste like the place. You would not describe it as seasonal. You would just put it on the table and let everyone work it out.",
       "accent": "lime",
       "mix": {
-        "roast": 12,
-        "bread": 13,
-        "tinned": 11,
-        "garden": 44,
-        "wine": 10,
-        "takeaway": 10
+        "roast": 9,
+        "bread": 10,
+        "tinned": 8,
+        "garden": 34,
+        "wine": 8,
+        "takeaway": 7,
+        "soup": 7,
+        "cheese": 8,
+        "fruit": 9
       },
       "strengths": [
         "Grows things slowly and well",
@@ -515,12 +539,15 @@
       "blurb": "You would arrive with the bottle you had been saving for an occasion that never came. It would be slightly past its best and absolutely the right choice. You would open it before the food and nobody would object.",
       "accent": "red",
       "mix": {
-        "roast": 11,
-        "bread": 9,
-        "tinned": 10,
-        "garden": 10,
-        "wine": 47,
-        "takeaway": 13
+        "roast": 8,
+        "bread": 8,
+        "tinned": 7,
+        "garden": 7,
+        "wine": 36,
+        "takeaway": 10,
+        "soup": 7,
+        "cheese": 8,
+        "fruit": 9
       },
       "strengths": [
         "Knows how to mark an ending",
@@ -536,12 +563,15 @@
       "blurb": "You would call in the biggest order any of those kitchens had ever taken. No washing up, no seating plan, everybody eating out of cartons in the garden. Chaos, briefly perfect, and entirely your idea.",
       "accent": "sky",
       "mix": {
-        "roast": 9,
-        "bread": 10,
-        "tinned": 12,
-        "garden": 10,
-        "wine": 12,
-        "takeaway": 47
+        "roast": 8,
+        "bread": 7,
+        "tinned": 9,
+        "garden": 7,
+        "wine": 9,
+        "takeaway": 36,
+        "soup": 7,
+        "cheese": 8,
+        "fruit": 9
       },
       "strengths": [
         "Solves the impossible fast",
@@ -549,6 +579,78 @@
         "Knows when the plan doesn't matter"
       ],
       "watchOut": "Convenience can hide the point. Add one thing you made yourself."
+    },
+    {
+      "trait": "soup",
+      "name": "The Pot of Soup",
+      "tagline": "Feeds whoever turns up",
+      "blurb": "One pot, no menu, no measurements. You started it yesterday because someone might be hungry and you would rather have too much than exactly enough. The end of the world is survivable if there is still a ladle and a stack of bowls.",
+      "accent": "orange",
+      "mix": {
+        "soup": 7,
+        "roast": 14,
+        "bread": 13,
+        "tinned": 13,
+        "garden": 13,
+        "wine": 12,
+        "takeaway": 11,
+        "cheese": 8,
+        "fruit": 9
+      },
+      "strengths": [
+        "Scales generosity without effort",
+        "Feeds people without asking",
+        "Impossible to rush and better for it"
+      ],
+      "watchOut": "A pot for everyone can leave you with no serving of your own."
+    },
+    {
+      "trait": "cheese",
+      "name": "The Cheese Board",
+      "tagline": "Arrives late and saves the evening",
+      "blurb": "You are not the meal. You are the part everyone remembers: the good salt, the thing with the rind, the bottle already opened. You know that a table needs one generous, unnecessary pleasure and you have brought exactly that.",
+      "accent": "yellow",
+      "mix": {
+        "cheese": 8,
+        "roast": 13,
+        "bread": 13,
+        "tinned": 13,
+        "garden": 12,
+        "wine": 11,
+        "takeaway": 11,
+        "soup": 10,
+        "fruit": 9
+      },
+      "strengths": [
+        "Knows what makes a night feel abundant",
+        "Great taste, small effort",
+        "Improves any table you land on"
+      ],
+      "watchOut": "The lovely extra is not a main course. Bring something substantial too."
+    },
+    {
+      "trait": "fruit",
+      "name": "The Last Fruit",
+      "tagline": "Something fresh, at the end of everything",
+      "blurb": "With the world ending you bring the one thing nobody thought to save: something cold, ripe and unprocessed. People look at it like it's a miracle, and it is. You have always been the person who remembers the small, living details.",
+      "accent": "green",
+      "mix": {
+        "fruit": 9,
+        "roast": 13,
+        "bread": 13,
+        "tinned": 12,
+        "garden": 12,
+        "wine": 11,
+        "takeaway": 11,
+        "soup": 10,
+        "cheese": 9
+      },
+      "strengths": [
+        "Notices what's missing from a table",
+        "Small gestures, large effect",
+        "Keeps things growing"
+      ],
+      "watchOut": "Fresh things don't keep. Be there while it's still good."
     }
   ]
 }

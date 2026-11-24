@@ -19,7 +19,8 @@
           "label": "Four walls and one door",
           "weights": {
             "bunker": 2,
-            "farm": 1
+            "farm": 1,
+            "school": 1
           }
         },
         {
@@ -35,7 +36,8 @@
           "label": "The car, keys already in hand",
           "weights": {
             "roadtrip": 2,
-            "boat": 1
+            "boat": 1,
+            "train": 1
           }
         },
         {
@@ -43,7 +45,8 @@
           "label": "The nearest place with supplies",
           "weights": {
             "mall": 2,
-            "farm": 1
+            "farm": 1,
+            "hospital": 1
           }
         }
       ]
@@ -66,7 +69,8 @@
           "label": "Scout the next option alone",
           "weights": {
             "roadtrip": 2,
-            "boat": 1
+            "boat": 1,
+            "train": 1
           }
         },
         {
@@ -82,7 +86,8 @@
           "label": "Wait it out and watch the horizon",
           "weights": {
             "rooftop": 2,
-            "boat": 1
+            "boat": 1,
+            "radio": 1
           }
         }
       ]
@@ -97,7 +102,8 @@
           "label": "Walls",
           "weights": {
             "bunker": 2,
-            "farm": 1
+            "farm": 1,
+            "school": 1
           }
         },
         {
@@ -120,7 +126,8 @@
           "label": "A boarded-up farmhouse",
           "weights": {
             "farm": 2,
-            "bunker": 1
+            "bunker": 1,
+            "school": 1
           },
           "image": "/images/questions/zombie-farm.jpg",
           "alt": "An abandoned farmhouse with boarded windows"
@@ -140,7 +147,8 @@
           "label": "A rooftop water tank",
           "weights": {
             "rooftop": 2,
-            "bunker": 1
+            "bunker": 1,
+            "radio": 1
           },
           "image": "/images/questions/zombie-roof.jpg",
           "alt": "A water tank on a flat rooftop"
@@ -216,7 +224,8 @@
           "label": "The people you'd actually call",
           "weights": {
             "mall": 2,
-            "farm": 1
+            "farm": 1,
+            "hospital": 1
           }
         },
         {
@@ -224,7 +233,8 @@
           "label": "A high vantage point",
           "weights": {
             "rooftop": 2,
-            "bunker": 1
+            "bunker": 1,
+            "radio": 1
           }
         }
       ]
@@ -289,7 +299,8 @@
               "label": "one person I trust",
               "weights": {
                 "boat": 2,
-                "rooftop": 1
+                "rooftop": 1,
+                "radio": 1
               }
             },
             {
@@ -354,7 +365,8 @@
           "label": "Open it, carefully, with a plan",
           "weights": {
             "farm": 2,
-            "mall": 1
+            "mall": 1,
+            "hospital": 1
           }
         },
         {
@@ -370,7 +382,8 @@
           "label": "Load up and leave before dark",
           "weights": {
             "roadtrip": 2,
-            "boat": 1
+            "boat": 1,
+            "train": 1
           }
         },
         {
@@ -393,7 +406,8 @@
           "label": "Someone didn't follow it",
           "weights": {
             "bunker": 2,
-            "rooftop": 1
+            "rooftop": 1,
+            "school": 1
           }
         },
         {
@@ -401,7 +415,8 @@
           "label": "We ran out of fuel",
           "weights": {
             "roadtrip": 2,
-            "boat": 1
+            "boat": 1,
+            "train": 1
           }
         },
         {
@@ -409,7 +424,8 @@
           "label": "We stayed too long",
           "weights": {
             "mall": 2,
-            "farm": 1
+            "farm": 1,
+            "hospital": 1
           }
         },
         {
@@ -431,12 +447,16 @@
       "blurb": "You are not panicking, because you have been preparing for an entirely different disaster since 2016. There is water, there is a radio, and there is a laminated plan. You will survive longer than the group chat and enjoy it less.",
       "accent": "green",
       "mix": {
-        "bunker": 45,
-        "rooftop": 14,
-        "roadtrip": 10,
-        "mall": 9,
-        "farm": 12,
-        "boat": 10
+        "bunker": 33,
+        "rooftop": 10,
+        "roadtrip": 7,
+        "mall": 7,
+        "farm": 8,
+        "boat": 7,
+        "hospital": 7,
+        "school": 6,
+        "train": 7,
+        "radio": 8
       },
       "strengths": [
         "Genuinely ready for the practical part",
@@ -452,12 +472,16 @@
       "blurb": "You want visibility and a door you can defend. You will not be surprised by anything that comes down the street, and you will be the first to spot the rescue that never arrives. You are excellent at waiting with purpose.",
       "accent": "sky",
       "mix": {
-        "bunker": 13,
-        "rooftop": 44,
-        "roadtrip": 12,
-        "mall": 10,
-        "farm": 11,
-        "boat": 10
+        "bunker": 9,
+        "rooftop": 32,
+        "roadtrip": 8,
+        "mall": 8,
+        "farm": 7,
+        "boat": 7,
+        "hospital": 7,
+        "school": 7,
+        "train": 7,
+        "radio": 8
       },
       "strengths": [
         "Sees the problem coming",
@@ -473,12 +497,16 @@
       "blurb": "Your instinct is forward, always. You would rather be moving with a bad map than standing still with a good one, and you are weirdly good at finding fuel and a place to sleep. Your plan is a direction, not a destination.",
       "accent": "orange",
       "mix": {
-        "bunker": 9,
-        "rooftop": 11,
-        "roadtrip": 46,
-        "mall": 9,
-        "farm": 11,
-        "boat": 14
+        "bunker": 7,
+        "rooftop": 7,
+        "roadtrip": 34,
+        "mall": 7,
+        "farm": 7,
+        "boat": 10,
+        "hospital": 7,
+        "school": 6,
+        "train": 7,
+        "radio": 8
       },
       "strengths": [
         "Adapts on the move",
@@ -494,12 +522,16 @@
       "blurb": "You see the apocalypse as a logistics problem with a very good inventory. Food, clothes, a generator, a pharmacy: all in one building. You would hold that place for weeks and organise everybody into shifts.",
       "accent": "yellow",
       "mix": {
-        "bunker": 13,
-        "rooftop": 9,
-        "roadtrip": 10,
-        "mall": 46,
-        "farm": 12,
-        "boat": 10
+        "bunker": 9,
+        "rooftop": 7,
+        "roadtrip": 7,
+        "mall": 34,
+        "farm": 8,
+        "boat": 7,
+        "hospital": 7,
+        "school": 6,
+        "train": 7,
+        "radio": 8
       },
       "strengths": [
         "Turns chaos into a supply chain",
@@ -515,12 +547,16 @@
       "blurb": "You are thinking past the first month. Fences, water, seeds and a dog: your plan is boring, sustainable and much better than everyone else's. You would take in the neighbour and regret it only slightly.",
       "accent": "lime",
       "mix": {
-        "bunker": 14,
-        "rooftop": 9,
-        "roadtrip": 9,
-        "mall": 10,
-        "farm": 47,
-        "boat": 11
+        "bunker": 10,
+        "rooftop": 7,
+        "roadtrip": 7,
+        "mall": 7,
+        "farm": 34,
+        "boat": 7,
+        "hospital": 7,
+        "school": 6,
+        "train": 7,
+        "radio": 8
       },
       "strengths": [
         "Builds something that lasts",
@@ -536,12 +572,16 @@
       "blurb": "You remove the problem instead of fighting it. Water is a wall, the dock is the door, and the horizon is a perfectly good plan. You are calm, self-sufficient and mildly allergic to group decisions.",
       "accent": "blue",
       "mix": {
-        "bunker": 11,
-        "rooftop": 12,
-        "roadtrip": 13,
-        "mall": 9,
-        "farm": 10,
-        "boat": 45
+        "bunker": 7,
+        "rooftop": 8,
+        "roadtrip": 9,
+        "mall": 7,
+        "farm": 7,
+        "boat": 33,
+        "hospital": 7,
+        "school": 7,
+        "train": 7,
+        "radio": 8
       },
       "strengths": [
         "Removes yourself from the danger",
@@ -549,6 +589,106 @@
         "Resourceful in a small space"
       ],
       "watchOut": "Isolation has a shelf life. Plan for the bit after the panic."
+    },
+    {
+      "trait": "hospital",
+      "name": "The Hospital",
+      "tagline": "Supplies, generators, and too many doors",
+      "blurb": "You go where the medicine is, because the first thing a real outbreak breaks is the supply chain. The building has a generator, a pharmacy and a hundred rooms to clear. It also has a lot of glass, and you know exactly which corridor is the problem.",
+      "accent": "green",
+      "mix": {
+        "hospital": 6,
+        "bunker": 13,
+        "rooftop": 13,
+        "roadtrip": 13,
+        "mall": 12,
+        "farm": 11,
+        "boat": 11,
+        "school": 6,
+        "train": 7,
+        "radio": 8
+      },
+      "strengths": [
+        "Thinks about medical reality first",
+        "Good at clearing a building room by room",
+        "Useful to anyone injured"
+      ],
+      "watchOut": "A hospital draws people. Decide now how many you can take."
+    },
+    {
+      "trait": "school",
+      "name": "The School",
+      "tagline": "Fences, a gym, and one very good gate",
+      "blurb": "You pick a building with a perimeter: chain-link, a single entrance, a hall big enough for everyone to sleep in. It is not glamorous and it does not move, which is the point. The fence buys weeks, and weeks are the whole game.",
+      "accent": "sky",
+      "mix": {
+        "school": 7,
+        "bunker": 13,
+        "rooftop": 12,
+        "roadtrip": 12,
+        "mall": 11,
+        "farm": 11,
+        "boat": 10,
+        "hospital": 9,
+        "train": 7,
+        "radio": 8
+      },
+      "strengths": [
+        "Thinks in perimeters",
+        "Good at organising a group",
+        "Thrives on routine"
+      ],
+      "watchOut": "A fixed site needs a fallback. Have somewhere else ready."
+    },
+    {
+      "trait": "train",
+      "name": "The Train",
+      "tagline": "Always moving, never settling",
+      "blurb": "You want steel and motion: a line that still runs, a route with few stops and fewer people. Nothing can surround a train that doesn't stop, and you get to change the plan every hour. The cost is that you can never fully unpack, and you never do.",
+      "accent": "orange",
+      "mix": {
+        "train": 8,
+        "bunker": 12,
+        "rooftop": 12,
+        "roadtrip": 11,
+        "mall": 11,
+        "farm": 10,
+        "boat": 10,
+        "hospital": 9,
+        "school": 9,
+        "radio": 8
+      },
+      "strengths": [
+        "Never gets boxed in",
+        "Adapts route by route",
+        "Keeps a small group moving"
+      ],
+      "watchOut": "Fuel and track both end. Learn to fix what you're riding."
+    },
+    {
+      "trait": "radio",
+      "name": "The Radio Station",
+      "tagline": "High ground, thick walls, one working transmitter",
+      "blurb": "You think survival is information. A station on a hill has the tower, the backup power and the only thing anyone actually needs after a week: a voice telling them where to go. You would rather be the signal than the shelter.",
+      "accent": "yellow",
+      "mix": {
+        "radio": 8,
+        "bunker": 12,
+        "rooftop": 12,
+        "roadtrip": 11,
+        "mall": 11,
+        "farm": 10,
+        "boat": 10,
+        "hospital": 9,
+        "school": 9,
+        "train": 8
+      },
+      "strengths": [
+        "Thinks about other people's survival",
+        "Understands infrastructure",
+        "Calm with an audience"
+      ],
+      "watchOut": "Broadcasting your position is a two-way arrangement. Screen callers."
     }
   ]
 }

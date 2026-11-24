@@ -37,10 +37,13 @@ for (const file of files) {
     fail(`${quiz.slug}: ${quiz.questions.length} questions (want 10–20)`);
   }
 
-  // 6–12 results is the house rule; a fixed-cast fandom quiz (four houses)
-  // is the one allowed exception, so the floor here is four.
-  if (traits.length < 4 || traits.length > 12) {
-    fail(`${quiz.slug}: ${traits.length} results (want 4–12)`);
+  // 7–10 results is the house rule, spread evenly across quizzes. A quiz
+  // whose cast is fixed (four Hogwarts houses) cannot reach that range without
+  // inventing houses, so it may keep its four.
+  const fixedCast = new Set(["hogwarts-house"]);
+  const floor = fixedCast.has(quiz.slug) ? 4 : 7;
+  if (traits.length < floor || traits.length > 10) {
+    fail(`${quiz.slug}: ${traits.length} results (want ${floor}–10)`);
   }
 
   // The four-option pick is the spine of every quiz; everything else is optional.
