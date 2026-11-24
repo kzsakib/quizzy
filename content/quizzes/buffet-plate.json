@@ -1,0 +1,582 @@
+{
+  "slug": "buffet-plate",
+  "title": "Build a plate from the buffet and we'll name your personality type",
+  "dek": "One plate, unlimited passes, no rules except the ones you invent at the table. Twelve questions about how you eat when the food is free.",
+  "category": "Food",
+  "accent": "yellow",
+  "emoji": "🍽️",
+  "minutes": 3,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "First pass at the buffet:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A small bit of everything, no particular plan",
+          "weights": {
+            "grazer": 2,
+            "returner": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Layers. Structural layers.",
+          "weights": {
+            "stacker": 2,
+            "sauce": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Straight to the dessert end",
+          "weights": {
+            "dessertfirst": 2,
+            "oneperfect": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "One perfect thing, and nothing else",
+          "weights": {
+            "oneperfect": 2,
+            "grazer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your plate at the end looks like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A mosaic. Nothing is touching anything.",
+          "weights": {
+            "grazer": 2,
+            "oneperfect": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A tower with a gravy moat",
+          "weights": {
+            "stacker": 2,
+            "sauce": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Three desserts and a fork",
+          "weights": {
+            "dessertfirst": 2,
+            "enabler": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Somebody else's plate, because you filled theirs first",
+          "weights": {
+            "enabler": 2,
+            "returner": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You go back because:",
+      "options": [
+        {
+          "id": "a",
+          "label": "There was one thing you still haven't tried",
+          "weights": {
+            "grazer": 2,
+            "returner": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You want more of the exact same thing",
+          "weights": {
+            "stacker": 2,
+            "oneperfect": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The table you make a beeline for:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The long one with everything on it",
+          "weights": {
+            "grazer": 2,
+            "enabler": 1
+          },
+          "image": "/images/questions/dinner-table.jpg",
+          "alt": "A long table laid out with many dishes"
+        },
+        {
+          "id": "b",
+          "label": "The bread, still warm",
+          "weights": {
+            "oneperfect": 2,
+            "stacker": 1
+          },
+          "image": "/images/questions/dinner-bread.jpg",
+          "alt": "Fresh bread on a wooden board"
+        },
+        {
+          "id": "c",
+          "label": "The one with the little candles on it",
+          "weights": {
+            "dessertfirst": 2,
+            "sauce": 1
+          },
+          "image": "/images/questions/dinner-candles.jpg",
+          "alt": "Candles on a table set for dessert"
+        },
+        {
+          "id": "d",
+          "label": "The one being restocked every four minutes",
+          "weights": {
+            "returner": 2,
+            "enabler": 1
+          },
+          "image": "/images/questions/dinner-tins.jpg",
+          "alt": "Metal serving trays lined up on a buffet"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your plate.",
+      "helper": "Across: one plate or many. Up: savoury or sweet.",
+      "x": {
+        "low": {
+          "label": "One plate",
+          "trait": "oneperfect"
+        },
+        "high": {
+          "label": "Many plates",
+          "trait": "returner"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Savoury",
+          "trait": "sauce"
+        },
+        "high": {
+          "label": "Sweet",
+          "trait": "dessertfirst"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Single Perfect Plate",
+        "lowHigh": "The Pudding Purist",
+        "highLow": "The Gravy Circuit",
+        "highHigh": "The Dessert Marathon"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what makes a buffet good.",
+      "helper": "First place is the thing you check before you sit down.",
+      "items": [
+        {
+          "id": "gravy",
+          "label": "Whether the gravy is still hot",
+          "weights": {
+            "sauce": 2,
+            "stacker": 1
+          }
+        },
+        {
+          "id": "pudding",
+          "label": "The dessert table",
+          "weights": {
+            "dessertfirst": 2,
+            "grazer": 1
+          }
+        },
+        {
+          "id": "restock",
+          "label": "How often they restock",
+          "weights": {
+            "returner": 2,
+            "enabler": 1
+          }
+        },
+        {
+          "id": "one",
+          "label": "One dish done properly",
+          "weights": {
+            "oneperfect": 2,
+            "sauce": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "You leave the buffet with:",
+      "helper": "Two gaps. Both are on the plate.",
+      "template": "You leave with {a} and {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a plate that looks like a map",
+              "weights": {
+                "grazer": 2,
+                "returner": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "a tower with a structural problem",
+              "weights": {
+                "stacker": 2,
+                "sauce": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "three desserts and no regrets",
+              "weights": {
+                "dessertfirst": 2,
+                "oneperfect": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a plate for someone who said they weren't hungry",
+              "weights": {
+                "enabler": 2,
+                "returner": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "a sauce on the side, obviously",
+              "weights": {
+                "sauce": 2,
+                "stacker": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "a second plate you didn't admit to",
+              "weights": {
+                "returner": 2,
+                "grazer": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "a very small, very perfect portion",
+              "weights": {
+                "oneperfect": 2,
+                "dessertfirst": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "a napkin full of things for later",
+              "weights": {
+                "enabler": 2,
+                "sauce": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "One plate is a limitation, not a decision.",
+      "trait": "returner",
+      "low": "One plate is plenty",
+      "high": "I have a system and a schedule"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Everything is improved by a sauce.",
+      "disagree": {
+        "trait": "oneperfect"
+      },
+      "agree": {
+        "trait": "sauce"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A meal is about the people at the table, not the food on it.",
+      "agree": {
+        "trait": "enabler",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "dessertfirst",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Someone asks what you recommend:",
+      "options": [
+        {
+          "id": "a",
+          "label": "\"Honestly? A bit of everything.\"",
+          "weights": {
+            "grazer": 2,
+            "returner": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "\"The thing at the back. Get the gravy.\"",
+          "weights": {
+            "sauce": 2,
+            "stacker": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "\"Skip the mains. Go straight to the cake.\"",
+          "weights": {
+            "dessertfirst": 2,
+            "oneperfect": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "\"Whatever you want. I'll get it for you.\"",
+          "weights": {
+            "enabler": 2,
+            "sauce": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The buffet's real test is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Whether you can fit a bit of everything on one plate",
+          "weights": {
+            "grazer": 2,
+            "stacker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Whether the dessert is worth the walk",
+          "weights": {
+            "dessertfirst": 2,
+            "oneperfect": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Whether there's enough for everyone",
+          "weights": {
+            "enabler": 2,
+            "returner": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Whether one dish is genuinely perfect",
+          "weights": {
+            "oneperfect": 2,
+            "sauce": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "grazer",
+      "name": "THE GRAZER",
+      "tagline": "A bit of everything, nothing touching",
+      "blurb": "You do not want a meal. You want a survey. Nine small portions, arranged with real care, each one tasted and assessed before you commit to a second helping. People think you're indecisive. You are actually conducting research, and the results have been excellent.",
+      "accent": "lime",
+      "strengths": [
+        "Open to absolutely anything",
+        "Great at recommending things",
+        "Never bored by a menu"
+      ],
+      "watchOut": "You'll try everything and commit to nothing. Order the one you loved.",
+      "mix": {
+        "grazer": 42,
+        "stacker": 7,
+        "dessertfirst": 11,
+        "oneperfect": 10,
+        "enabler": 8,
+        "sauce": 12,
+        "returner": 10
+      }
+    },
+    {
+      "trait": "stacker",
+      "name": "THE PLATE ENGINEER",
+      "tagline": "It's not a portion, it's a structure",
+      "blurb": "You believe in load-bearing carbohydrates. Rice, then curry, then something with gravy, then a strategic piece of bread as a retaining wall. The plate is a small civil engineering project and it has never once collapsed, which you consider a personal achievement.",
+      "accent": "orange",
+      "strengths": [
+        "Gets maximum value from anything",
+        "Thinks in systems",
+        "Never leaves hungry"
+      ],
+      "watchOut": "More layers is not always more enjoyment. Try a smaller, better plate.",
+      "mix": {
+        "grazer": 10,
+        "stacker": 42,
+        "dessertfirst": 8,
+        "oneperfect": 12,
+        "enabler": 11,
+        "sauce": 9,
+        "returner": 8
+      }
+    },
+    {
+      "trait": "dessertfirst",
+      "name": "THE DESSERT FIRST PERSON",
+      "tagline": "Life is short and the cake is right there",
+      "blurb": "You did the maths years ago: the savoury course is a formality and the good part is at the end. So you skipped ahead. You have no interest in pacing yourself, no respect for the order of things, and an entirely justified confidence that you will still have room.",
+      "accent": "pink",
+      "strengths": [
+        "Unashamedly goes for joy",
+        "Brings the fun course",
+        "Zero regrets, ever"
+      ],
+      "watchOut": "Sometimes the main is the point. Stay for the whole meal once in a while.",
+      "mix": {
+        "grazer": 12,
+        "stacker": 10,
+        "dessertfirst": 42,
+        "oneperfect": 9,
+        "enabler": 7,
+        "sauce": 11,
+        "returner": 9
+      }
+    },
+    {
+      "trait": "oneperfect",
+      "name": "THE ONE PERFECT THING",
+      "tagline": "You came for the bread and you're not sorry",
+      "blurb": "You would rather have one extraordinary thing than eleven average ones, and you have never once been swayed by quantity. Your plate is small, your standards are unreasonable, and you are usually right. Other people queue for the tower. You wait for the bread.",
+      "accent": "yellow",
+      "strengths": [
+        "Impeccable taste",
+        "Never distracted by noise",
+        "Finds the best thing in the room"
+      ],
+      "watchOut": "You'll miss something great because it was next to something average. Look sideways.",
+      "mix": {
+        "grazer": 9,
+        "stacker": 8,
+        "dessertfirst": 11,
+        "oneperfect": 42,
+        "enabler": 10,
+        "sauce": 8,
+        "returner": 12
+      }
+    },
+    {
+      "trait": "enabler",
+      "name": "THE PLATE FILLER",
+      "tagline": "Yours is cold because you were getting theirs",
+      "blurb": "You have never once been first at a buffet. You are the person who finds out what everyone wants, carries four plates, remembers who doesn't eat mushrooms and notices when somebody's glass is empty. Your own dinner is lukewarm. You would do it again tomorrow.",
+      "accent": "green",
+      "strengths": [
+        "Endlessly thoughtful",
+        "Makes everyone feel looked after",
+        "The reason the table works"
+      ],
+      "watchOut": "Eat something hot, sitting down, at least once this month.",
+      "mix": {
+        "grazer": 11,
+        "stacker": 9,
+        "dessertfirst": 8,
+        "oneperfect": 11,
+        "enabler": 42,
+        "sauce": 10,
+        "returner": 9
+      }
+    },
+    {
+      "trait": "sauce",
+      "name": "THE SAUCE PERSON",
+      "tagline": "It's not a meal without something poured on it",
+      "blurb": "You believe food is a delivery mechanism for sauce and you have been vindicated repeatedly. You ask for extra on the side. You have opinions about viscosity. You have, on at least one occasion, been the person who brought their own hot sauce to a buffet, and you were right to.",
+      "accent": "red",
+      "strengths": [
+        "Improves everything you touch",
+        "Confident in your taste",
+        "Never accepts a dry plate"
+      ],
+      "watchOut": "Not everything needs improving. Taste it before you drown it.",
+      "mix": {
+        "grazer": 8,
+        "stacker": 12,
+        "dessertfirst": 10,
+        "oneperfect": 9,
+        "enabler": 8,
+        "sauce": 42,
+        "returner": 11
+      }
+    },
+    {
+      "trait": "returner",
+      "name": "THE RETURNER",
+      "tagline": "Four plates, one system",
+      "blurb": "You have a route. You have timings. The first plate is reconnaissance, the second is serious, the third is the one you don't tell people about, and the fourth is technically pudding. The buffet is not a meal to you. It is a sport, and you are winning it politely.",
+      "accent": "purple",
+      "strengths": [
+        "Maximises every opportunity",
+        "Great under a time limit",
+        "Never misses the good tray"
+      ],
+      "watchOut": "You'll keep going back for more when you already have enough. Sit down with plate two.",
+      "mix": {
+        "grazer": 11,
+        "stacker": 9,
+        "dessertfirst": 8,
+        "oneperfect": 12,
+        "enabler": 10,
+        "sauce": 8,
+        "returner": 42
+      }
+    }
+  ]
+}

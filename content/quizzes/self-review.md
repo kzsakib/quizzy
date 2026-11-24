@@ -138,6 +138,60 @@ with the joke in it.
 - **Flavor:** untagged. RELATABLE-heavy; no LORE at all, since there is no world to be loyal to.
 - **Unsure:** "I get loud before I get clear" is the only intensity question, so the volcano result can be nudged by one answer; the four other questions carrying it are what keep it honest.
 
+## GTA 6 hands you a criminal specialty and a very bad alibi
+- **Tone dial:** Crime-film cool with one joke in every option. The setting is the hook; no game lore required.
+- **What it reveals:** which job you take in a group that is doing something it shouldn't.
+- **Flavor:** untagged. FUNNY and LORE balanced; the alibi question is the most quotable.
+- **Unsure:** "The Paper Man" may read as the boring result to players who wanted the loud one.
+
+## Something downstairs has a ledger with your name in it
+- **Tone dial:** Old-folklore ominous, played straight until the last line of each blurb. No theology homework.
+- **What it reveals:** which appetite or fear has your file — pride, appetite, envy, patience, ruin, knowledge, lies.
+- **Flavor:** untagged. LORE is present but each demon is explained by behaviour, not by name-dropping.
+- **Unsure:** ten results means Belial and Leviathan can feel adjacent (both about hidden wanting); the questions split them on presentation versus possession.
+
+## A Ghibli side character is running your errands
+- **Tone dial:** Warm, domestic, slightly wry. Side characters only; being the hero is the wrong answer throughout.
+- **What it reveals:** the supporting role you play — fire, cat, silent presence, engine room, messenger, escort.
+- **Flavor:** untagged. RELATABLE leads; LORE is light enough for non-viewers.
+- **Unsure:** "Turnip Head" carries the quietest answers and may be hard to reach for decisive players.
+
+## Netflix has started production on your documentary
+- **Tone dial:** Deadpan true-crime trailer voice. Streaming-service grammar, not tabloid shock.
+- **What it reveals:** the shape of the story people tell about you — vanishing, confession, feud, fraud, receipts, cold case.
+- **Flavor:** untagged. CLEVER leads; the title cards are the joke.
+- **Unsure:** "The Receipts" and "The Neighbour Who Noticed" both reward observation; separated by whether you keep evidence or simply remember it.
+
+## Your Patronus is built from one memory
+- **Tone dial:** Sincere, sensory, no wizarding trivia. The memory is the setting, not a canon reference.
+- **What it reveals:** which ordinary memory you reach for when you need to feel safe.
+- **Flavor:** untagged. RELATABLE-heavy; the map question is the only abstract one.
+- **Unsure:** "The Song in the Supermarket" is deliberately silly next to the warmer results and may split reactions.
+
+## Build a plate from the buffet and we'll name your personality type
+- **Tone dial:** BuzzFeed-adjacent, food-first, no moralising about portions.
+- **What it reveals:** how you behave when abundance removes the rules — survey, stack, dessert, one perfect thing, feed others, sauce, return.
+- **Flavor:** untagged. FUNNY 3 / RELATABLE 5; the mad-libs plate is the highlight.
+- **Unsure:** "The Plate Filler" is the kindest result and may attract answer-gaming.
+
+## You're a Taylor Swift ex and the bridge knows it
+- **Tone dial:** Affectionate pop-culture gossip. Exes as archetypes; no trivia, no lyric recall, no cruelty.
+- **What it reveals:** your breakup style — the scarf, the rumour, the twenty-second call, the quiet years-long ending.
+- **Flavor:** untagged. LORE is deliberately low; every question works if you know none of the songs.
+- **Unsure:** the Matty result is the messiest and could be read as an insult; the blurb lands it as self-aware chaos.
+
+## There is an SCP file with your name on it
+- **Tone dial:** Clinical containment file, dry and funny. Written for people who have never opened the wiki.
+- **What it reveals:** how you behave when observed — statue, doctor, shy thing, old man, comfort anomaly, unkillable, endless space.
+- **Flavor:** untagged. LORE present but each object is described by its rule, not its number.
+- **Unsure:** SCP-055 depends on the joke landing; players who miss it may read the result as "nothing".
+
+## The Mentalist reads you in one glance
+- **Tone dial:** Procedural-cool with a warm centre. Character archetypes, not episode recall.
+- **What it reveals:** your role on a team that solves things — instinct, procedure, silence, warmth, strategy.
+- **Flavor:** untagged. RELATABLE leads; no question requires having watched the show.
+- **Unsure:** Red John is a villain result in a quiz about colleagues; the blurb keeps it behavioural rather than flattering.
+
 ---
 
 ## Cross-quiz notes

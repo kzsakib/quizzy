@@ -1,0 +1,680 @@
+{
+  "slug": "true-crime-documentary",
+  "title": "Netflix has started production on your documentary",
+  "dek": "Three episodes, one ominous drone shot, and a case that everyone in the comments has already solved. Twelve questions to find out which documentary you are.",
+  "category": "Crime",
+  "accent": "red",
+  "emoji": "🎬",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The documentary opens with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A door left open and a car still in the drive",
+          "weights": {
+            "vanishing": 2,
+            "coldcase": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A 911 call that does not add up",
+          "weights": {
+            "confession": 2,
+            "alibi": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A title card: three years earlier",
+          "weights": {
+            "coldcase": 2,
+            "feud": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Someone's home video, already ominous",
+          "weights": {
+            "influencer": 2,
+            "groupchat": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Episode two is about:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The money that moved the night before",
+          "weights": {
+            "fraud": 2,
+            "alibi": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The group chat nobody deleted",
+          "weights": {
+            "groupchat": 2,
+            "influencer": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Two families who have hated each other since 1987",
+          "weights": {
+            "feud": 2,
+            "neighbour": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The neighbour who says they saw a light",
+          "weights": {
+            "neighbour": 2,
+            "vanishing": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The central question is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Where did they go?",
+          "weights": {
+            "vanishing": 2,
+            "coldcase": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Why did they do it?",
+          "weights": {
+            "confession": 2,
+            "fraud": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The shot everyone remembers:",
+      "options": [
+        {
+          "id": "a",
+          "label": "An empty street at 6am",
+          "weights": {
+            "vanishing": 2,
+            "coldcase": 1
+          },
+          "image": "/images/questions/main-street-cobbles.jpg",
+          "alt": "A cobbled street with no one on it"
+        },
+        {
+          "id": "b",
+          "label": "A desk, a lamp, and a very large file",
+          "weights": {
+            "fraud": 2,
+            "influencer": 1
+          },
+          "image": "/images/questions/news-typewriter.jpg",
+          "alt": "A typewriter and papers on a desk"
+        },
+        {
+          "id": "c",
+          "label": "A noticeboard with one photo left on it",
+          "weights": {
+            "neighbour": 2,
+            "groupchat": 1
+          },
+          "image": "/images/questions/missing-noticeboard.jpg",
+          "alt": "A public noticeboard covered in pinned notices"
+        },
+        {
+          "id": "d",
+          "label": "A window with the blinds half closed",
+          "weights": {
+            "alibi": 2,
+            "confession": 1,
+            "unsolved": 1
+          },
+          "image": "/images/questions/villain-window.jpg",
+          "alt": "A window seen from inside a dim room"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the case.",
+      "helper": "Across: one person or a whole town. Up: before it happened or after.",
+      "x": {
+        "low": {
+          "label": "One person",
+          "trait": "vanishing"
+        },
+        "high": {
+          "label": "A whole town",
+          "trait": "feud"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Before",
+          "trait": "coldcase"
+        },
+        "high": {
+          "label": "After",
+          "trait": "groupchat"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The File in the Drawer",
+        "lowHigh": "The Timeline Episode",
+        "highLow": "The Old Grudge",
+        "highHigh": "The Group Chat Episode"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the details that break a case open.",
+      "helper": "First place is the one you'd put in the trailer.",
+      "items": [
+        {
+          "id": "timestamp",
+          "label": "A timestamp nobody checked",
+          "weights": {
+            "alibi": 2,
+            "fraud": 1
+          }
+        },
+        {
+          "id": "receipt",
+          "label": "A receipt in a coat pocket",
+          "weights": {
+            "fraud": 2,
+            "confession": 1
+          }
+        },
+        {
+          "id": "rumour",
+          "label": "A rumour that turns out to be right",
+          "weights": {
+            "neighbour": 2,
+            "feud": 1
+          }
+        },
+        {
+          "id": "shadow",
+          "label": "A photo with a shadow in it",
+          "weights": {
+            "coldcase": 2,
+            "vanishing": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "By episode four, the documentary has:",
+      "helper": "Two gaps. Both are in the trailer.",
+      "template": "By episode four, the documentary has {a} and still no {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a timeline nobody can agree on",
+              "weights": {
+                "alibi": 2,
+                "coldcase": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "a family giving interviews in a driveway",
+              "weights": {
+                "feud": 2,
+                "neighbour": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "four hours of phone records",
+              "weights": {
+                "fraud": 2,
+                "groupchat": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a search party and a drone",
+              "weights": {
+                "vanishing": 2,
+                "influencer": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "a body",
+              "weights": {
+                "confession": 2,
+                "coldcase": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "a motive anyone believes",
+              "weights": {
+                "fraud": 2,
+                "alibi": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "a single credible witness",
+              "weights": {
+                "neighbour": 2,
+                "feud": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "an ending that satisfies anyone",
+              "weights": {
+                "unsolved": 2,
+                "groupchat": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I need the ending explained to me.",
+      "trait": "unsolved",
+      "low": "Leave it open, I like the ambiguity",
+      "high": "Do not roll credits without a name"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Everyone would confess if you just asked them nicely enough.",
+      "disagree": {
+        "trait": "alibi"
+      },
+      "agree": {
+        "trait": "confession"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The evidence was there the whole time. Someone just had to read it.",
+      "agree": {
+        "trait": "groupchat",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "coldcase",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The twist in episode five:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The person everyone defended was lying",
+          "weights": {
+            "alibi": 2,
+            "confession": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "It was about money, and always had been",
+          "weights": {
+            "fraud": 2,
+            "feud": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The witness was the neighbour's kid",
+          "weights": {
+            "neighbour": 2,
+            "vanishing": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The file had been closed for the wrong reason",
+          "weights": {
+            "coldcase": 2,
+            "unsolved": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Final title card:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The case remains open",
+          "weights": {
+            "unsolved": 2,
+            "coldcase": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "No charges were ever filed",
+          "weights": {
+            "alibi": 2,
+            "fraud": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The family still lives on that street",
+          "weights": {
+            "neighbour": 2,
+            "feud": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "New evidence was submitted last year",
+          "weights": {
+            "groupchat": 2,
+            "influencer": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "vanishing",
+      "name": "THE VANISHING",
+      "tagline": "Everything left behind, including the keys",
+      "blurb": "Your documentary is about absence. A car in the drive, a phone still charging, a life with no obvious exit. Everyone has a theory and none of them fit, and the camera keeps returning to the same empty doorway as if it might answer this time.",
+      "accent": "sky",
+      "strengths": [
+        "Leaves people wanting more",
+        "Impossible to pin down",
+        "Turns ordinary details into clues"
+      ],
+      "watchOut": "Disappearing is not the same as being mysterious. Somebody is waiting for a text.",
+      "mix": {
+        "vanishing": 42,
+        "confession": 5,
+        "feud": 8,
+        "fraud": 6,
+        "groupchat": 6,
+        "coldcase": 8,
+        "influencer": 7,
+        "alibi": 6,
+        "neighbour": 5,
+        "unsolved": 7
+      }
+    },
+    {
+      "trait": "confession",
+      "name": "THE CONFESSION THAT DIDN'T FIT",
+      "tagline": "They said it. That was supposed to be the end",
+      "blurb": "Your case has a confession in episode one and four episodes of doubt afterwards. You tell the truth at the worst possible moment, in the wrong tone, with details that make everyone lean back. Nothing about it is clean, which is exactly why people keep watching.",
+      "accent": "red",
+      "strengths": [
+        "Brutally honest",
+        "Comfortable with the awkward pause",
+        "Says the unsayable first"
+      ],
+      "watchOut": "Truth without timing lands as damage. Read the room before you unburden yourself.",
+      "mix": {
+        "vanishing": 7,
+        "confession": 42,
+        "feud": 5,
+        "fraud": 8,
+        "groupchat": 7,
+        "coldcase": 6,
+        "influencer": 5,
+        "alibi": 8,
+        "neighbour": 7,
+        "unsolved": 5
+      }
+    },
+    {
+      "trait": "feud",
+      "name": "THE SMALL-TOWN FEUD",
+      "tagline": "Two families, one driveway, forty years",
+      "blurb": "Your documentary is not really about the crime. It is about a fence, a boundary dispute and a grudge that got handed down like a christening gown. Everyone is extremely polite on camera and absolutely none of them are over it.",
+      "accent": "orange",
+      "strengths": [
+        "Loyal to your people",
+        "Remembers the whole history",
+        "Unshakeable sense of fairness"
+      ],
+      "watchOut": "You are carrying a grudge that predates you. Put some of it down.",
+      "mix": {
+        "vanishing": 8,
+        "confession": 7,
+        "feud": 42,
+        "fraud": 6,
+        "groupchat": 5,
+        "coldcase": 7,
+        "influencer": 6,
+        "alibi": 5,
+        "neighbour": 7,
+        "unsolved": 7
+      }
+    },
+    {
+      "trait": "fraud",
+      "name": "THE PAPER TRAIL",
+      "tagline": "Follow the money. It goes somewhere embarrassing",
+      "blurb": "Your story is spreadsheets, second mortgages and a very reasonable-sounding man in a good coat. Nothing looks violent, everything looks normal, and the damage is a hundred small signatures. The documentary is three episodes of people saying they had no idea.",
+      "accent": "yellow",
+      "strengths": [
+        "Sees the pattern in the numbers",
+        "Impossible to fool twice",
+        "Calm while everything collapses"
+      ],
+      "watchOut": "You trust a good presentation far too easily. Read the second page.",
+      "mix": {
+        "vanishing": 6,
+        "confession": 5,
+        "feud": 8,
+        "fraud": 42,
+        "groupchat": 7,
+        "coldcase": 6,
+        "influencer": 8,
+        "alibi": 7,
+        "neighbour": 6,
+        "unsolved": 5
+      }
+    },
+    {
+      "trait": "groupchat",
+      "name": "THE RECEIPTS",
+      "tagline": "It was all in the group chat",
+      "blurb": "Your documentary is a scrolling wall of messages, and every single person in them looks worse by episode three. You are the one who keeps screenshots, remembers who said what, and can produce the exact message from 11:48pm. You are not nosy. You are thorough.",
+      "accent": "green",
+      "strengths": [
+        "Unbeatable recall",
+        "Finds the contradiction instantly",
+        "Never loses the thread"
+      ],
+      "watchOut": "Not everything needs to be forwarded. Some things need to be let go.",
+      "mix": {
+        "vanishing": 7,
+        "confession": 6,
+        "feud": 6,
+        "fraud": 8,
+        "groupchat": 42,
+        "coldcase": 7,
+        "influencer": 6,
+        "alibi": 5,
+        "neighbour": 7,
+        "unsolved": 6
+      }
+    },
+    {
+      "trait": "coldcase",
+      "name": "THE COLD CASE",
+      "tagline": "Closed in 1998. Never actually solved",
+      "blurb": "Your file is a box in a basement with a name on the side and a detective who retired still thinking about it. You are patient, understated and impossible to fully close. Every few years something surfaces and everyone remembers how much they cared.",
+      "accent": "blue",
+      "strengths": [
+        "Endless patience",
+        "Notices what time has changed",
+        "Refuses to let things die quietly"
+      ],
+      "watchOut": "Some things need closing, not another review. Let one file rest.",
+      "mix": {
+        "vanishing": 6,
+        "confession": 8,
+        "feud": 7,
+        "fraud": 6,
+        "groupchat": 5,
+        "coldcase": 42,
+        "influencer": 7,
+        "alibi": 6,
+        "neighbour": 5,
+        "unsolved": 8
+      }
+    },
+    {
+      "trait": "influencer",
+      "name": "THE DISAPPEARANCE OF A VERY ONLINE PERSON",
+      "tagline": "Last posted eleven days ago",
+      "blurb": "Your documentary has a ring light in the background of every interview and a comment section doing its own investigation. You are extremely visible, extremely curated and slightly unknowable in a way that makes people refresh the page. The story is partly about you and partly about the audience.",
+      "accent": "pink",
+      "strengths": [
+        "Instantly watchable",
+        "Builds a world around yourself",
+        "Knows exactly what people want to see"
+      ],
+      "watchOut": "The audience is not the same as a friend. Log off and call one.",
+      "mix": {
+        "vanishing": 7,
+        "confession": 6,
+        "feud": 5,
+        "fraud": 7,
+        "groupchat": 6,
+        "coldcase": 6,
+        "influencer": 42,
+        "alibi": 8,
+        "neighbour": 7,
+        "unsolved": 6
+      }
+    },
+    {
+      "trait": "alibi",
+      "name": "THE PERFECT ALIBI",
+      "tagline": "Technically, provably, nowhere near it",
+      "blurb": "Your documentary spends four episodes proving you could not have done it, and one uncomfortable minute suggesting you could have arranged it. You are careful, prepared and always exactly where you said you would be. Nobody can catch you out, which is somehow worse.",
+      "accent": "cyan",
+      "strengths": [
+        "Always three steps ahead",
+        "Impossible to catch off guard",
+        "Extremely good under questioning"
+      ],
+      "watchOut": "Being unimpeachable is lonely. Let someone see the messy version.",
+      "mix": {
+        "vanishing": 5,
+        "confession": 8,
+        "feud": 6,
+        "fraud": 6,
+        "groupchat": 8,
+        "coldcase": 7,
+        "influencer": 6,
+        "alibi": 42,
+        "neighbour": 5,
+        "unsolved": 7
+      }
+    },
+    {
+      "trait": "neighbour",
+      "name": "THE NEIGHBOUR WHO NOTICED",
+      "tagline": "Saw a light on at 2am. Told nobody for a year",
+      "blurb": "You are the small, careful witness at the centre of everything: the one who saw the car, heard the argument, remembers the date. You do not want to be in the documentary. You are in the documentary. And you are, as it turns out, completely correct.",
+      "accent": "lime",
+      "strengths": [
+        "Observant to an eerie degree",
+        "Reliable under pressure",
+        "Says the useful thing quietly"
+      ],
+      "watchOut": "Watching is not the same as helping. Speak up sooner next time.",
+      "mix": {
+        "vanishing": 7,
+        "confession": 5,
+        "feud": 8,
+        "fraud": 7,
+        "groupchat": 6,
+        "coldcase": 5,
+        "influencer": 8,
+        "alibi": 7,
+        "neighbour": 42,
+        "unsolved": 5
+      }
+    },
+    {
+      "trait": "unsolved",
+      "name": "THE UNSOLVED FINALE",
+      "tagline": "Episode six ends on a question mark",
+      "blurb": "Your documentary refuses to resolve. There is a theory, a suspect, a very compelling timeline, and then a title card that says the case remains open. Everyone finishes it furious and immediately starts a podcast about it. You would not have it any other way.",
+      "accent": "purple",
+      "strengths": [
+        "Comfortable with ambiguity",
+        "Leaves people thinking for weeks",
+        "Refuses a tidy ending"
+      ],
+      "watchOut": "Not every open question is profound. Some are just avoidance.",
+      "mix": {
+        "vanishing": 8,
+        "confession": 7,
+        "feud": 6,
+        "fraud": 5,
+        "groupchat": 7,
+        "coldcase": 6,
+        "influencer": 5,
+        "alibi": 7,
+        "neighbour": 7,
+        "unsolved": 42
+      }
+    }
+  ]
+}

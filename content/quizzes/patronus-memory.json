@@ -1,0 +1,612 @@
+{
+  "slug": "patronus-memory",
+  "title": "Your Patronus is built from one memory",
+  "dek": "Not the happiest day of your life. The one that comes back on its own, at the exact moment you need it. Twelve questions, one memory, one animal.",
+  "category": "Fandom",
+  "accent": "sky",
+  "emoji": "🦌",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The memory starts with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A fridge humming and one light left on",
+          "weights": {
+            "kitchen1am": 2,
+            "dogdoor": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The bell going and everyone screaming",
+          "weights": {
+            "lastschool": 2,
+            "wrongturn": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Rain on the windscreen in the wrong lane",
+          "weights": {
+            "carrain": 2,
+            "supermarket": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Snow on the step and no plans at all",
+          "weights": {
+            "firstsnow": 2,
+            "poolaugust": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Somebody in it is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Making toast at a ridiculous hour",
+          "weights": {
+            "kitchen1am": 2,
+            "supermarket": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Crying in a car park, then laughing",
+          "weights": {
+            "lastschool": 2,
+            "carrain": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Soaking wet from a garden hose",
+          "weights": {
+            "poolaugust": 2,
+            "dogdoor": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Singing badly, in public, on purpose",
+          "weights": {
+            "supermarket": 2,
+            "wrongturn": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "The feeling underneath it is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "I was exactly where I was supposed to be",
+          "weights": {
+            "kitchen1am": 2,
+            "firstsnow": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "I had no idea where we were going and it was perfect",
+          "weights": {
+            "wrongturn": 2,
+            "carrain": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The picture in your head:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A kitchen table with the plates still out",
+          "weights": {
+            "kitchen1am": 2,
+            "supermarket": 1
+          },
+          "image": "/images/questions/kitchen-table.jpg",
+          "alt": "A kitchen table with plates and mugs left on it"
+        },
+        {
+          "id": "b",
+          "label": "A path with no sign on it",
+          "weights": {
+            "wrongturn": 2,
+            "lastschool": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A narrow path running into the trees"
+        },
+        {
+          "id": "c",
+          "label": "A front door painted a colour you remember",
+          "weights": {
+            "dogdoor": 2,
+            "firstsnow": 1
+          },
+          "image": "/images/questions/friends-door-yellow.jpg",
+          "alt": "A brightly painted front door"
+        },
+        {
+          "id": "d",
+          "label": "Water, and a sky with nothing in it",
+          "weights": {
+            "poolaugust": 2,
+            "carrain": 1
+          },
+          "image": "/images/questions/princess-sea.jpg",
+          "alt": "Open water under a wide sky"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the memory.",
+      "helper": "Across: indoors or outdoors. Up: alone or with everyone.",
+      "x": {
+        "low": {
+          "label": "Indoors",
+          "trait": "kitchen1am"
+        },
+        "high": {
+          "label": "Outdoors",
+          "trait": "poolaugust"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Alone",
+          "trait": "firstsnow"
+        },
+        "high": {
+          "label": "With everyone",
+          "trait": "lastschool"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Kitchen",
+        "lowHigh": "The Full House",
+        "highLow": "The Empty Field",
+        "highHigh": "The Last Day"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what makes a memory usable.",
+      "helper": "First place is the thing you can still call up exactly.",
+      "items": [
+        {
+          "id": "smell",
+          "label": "A smell you could describe to a stranger",
+          "weights": {
+            "kitchen1am": 2,
+            "supermarket": 1
+          }
+        },
+        {
+          "id": "hand",
+          "label": "Someone's hand on your shoulder",
+          "weights": {
+            "lastschool": 2,
+            "dogdoor": 1
+          }
+        },
+        {
+          "id": "song",
+          "label": "The exact song that was playing",
+          "weights": {
+            "supermarket": 2,
+            "carrain": 1
+          }
+        },
+        {
+          "id": "light",
+          "label": "The particular light at that hour",
+          "weights": {
+            "firstsnow": 2,
+            "poolaugust": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The Patronus memory, in one sentence.",
+      "helper": "Two gaps. Say it out loud and see if the room goes warm.",
+      "template": "The memory is {a}, and it ends with {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a kitchen at one in the morning",
+              "weights": {
+                "kitchen1am": 2,
+                "firstsnow": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the last day of school",
+              "weights": {
+                "lastschool": 2,
+                "poolaugust": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "a dog waiting at the door",
+              "weights": {
+                "dogdoor": 2,
+                "kitchen1am": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a car ride in the rain",
+              "weights": {
+                "carrain": 2,
+                "supermarket": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "nobody wanting to go to bed",
+              "weights": {
+                "kitchen1am": 2,
+                "lastschool": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "somebody waving until you turn the corner",
+              "weights": {
+                "dogdoor": 2,
+                "carrain": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "a wrong turn that became the whole trip",
+              "weights": {
+                "wrongturn": 2,
+                "poolaugust": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "the chorus, badly, in a supermarket",
+              "weights": {
+                "supermarket": 2,
+                "firstsnow": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would rather get lost than arrive on time.",
+      "trait": "wrongturn",
+      "low": "I like to know the way",
+      "high": "The detour is the point"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Summer is a place, not a season.",
+      "disagree": {
+        "trait": "kitchen1am"
+      },
+      "agree": {
+        "trait": "poolaugust"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The best days are the ones with nothing planned in them.",
+      "agree": {
+        "trait": "firstsnow",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "lastschool",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Who else is in the memory:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The person who always leaves the light on",
+          "weights": {
+            "kitchen1am": 2,
+            "dogdoor": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Everyone from that year, all at once",
+          "weights": {
+            "lastschool": 2,
+            "poolaugust": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A stranger who became the whole story",
+          "weights": {
+            "wrongturn": 2,
+            "carrain": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nobody, and that was the good part",
+          "weights": {
+            "firstsnow": 2,
+            "kitchen1am": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Your Patronus takes the shape of:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Something small and warm that won't sit still",
+          "weights": {
+            "kitchen1am": 2,
+            "dogdoor": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A dog at a gate",
+          "weights": {
+            "dogdoor": 2,
+            "firstsnow": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Something that runs alongside the car",
+          "weights": {
+            "carrain": 2,
+            "wrongturn": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something that only comes out in summer",
+          "weights": {
+            "poolaugust": 2,
+            "supermarket": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "kitchen1am",
+      "name": "THE KITCHEN AT ONE IN THE MORNING",
+      "tagline": "Patronus: an otter",
+      "blurb": "One lamp, two chairs, somebody eating cereal standing up because sitting down would mean admitting it's late. Nobody is fixing anything. Nobody has to. This is the memory that comes back when the room is too quiet: not a triumph, just proof that you have been safe and known and awake with someone.",
+      "accent": "yellow",
+      "strengths": [
+        "Finds safety in small, ordinary things",
+        "Makes people feel at home immediately",
+        "Calm at hours when nobody else is"
+      ],
+      "watchOut": "You keep waiting for that hour to come back. Make a new one this week.",
+      "mix": {
+        "kitchen1am": 42,
+        "lastschool": 6,
+        "dogdoor": 10,
+        "carrain": 8,
+        "poolaugust": 7,
+        "firstsnow": 10,
+        "wrongturn": 9,
+        "supermarket": 8
+      }
+    },
+    {
+      "trait": "lastschool",
+      "name": "THE LAST DAY OF SCHOOL",
+      "tagline": "Patronus: a stag",
+      "blurb": "The bell, the noise, the corridor suddenly too small for everyone in it. Somebody signed your shirt. Somebody you never spoke to hugged you. You remember the heat and the terror of the next thing and how, for about forty minutes, none of it mattered. That is the feeling: the door opening all at once.",
+      "accent": "lime",
+      "strengths": [
+        "Energised by endings",
+        "Turns a crowd into a team",
+        "Remembers people's names years later"
+      ],
+      "watchOut": "You keep chasing the feeling of a last day. Ordinary Tuesdays count too.",
+      "mix": {
+        "kitchen1am": 8,
+        "lastschool": 42,
+        "dogdoor": 7,
+        "carrain": 10,
+        "poolaugust": 9,
+        "firstsnow": 8,
+        "wrongturn": 6,
+        "supermarket": 10
+      }
+    },
+    {
+      "trait": "dogdoor",
+      "name": "THE DOG AT THE DOOR",
+      "tagline": "Patronus: a greyhound",
+      "blurb": "You come round the corner and something is already there, absolutely certain you were coming back. No conditions, no questions about where you've been. Of all the things you have been given in your life, this is the one your brain reaches for first, because it is the simplest possible proof that you are loved.",
+      "accent": "orange",
+      "strengths": [
+        "Loves without keeping score",
+        "Shows up, every time",
+        "Makes coming home a real thing"
+      ],
+      "watchOut": "You'd wait at the door for people who don't come back. Set a limit.",
+      "mix": {
+        "kitchen1am": 10,
+        "lastschool": 9,
+        "dogdoor": 42,
+        "carrain": 8,
+        "poolaugust": 6,
+        "firstsnow": 10,
+        "wrongturn": 8,
+        "supermarket": 7
+      }
+    },
+    {
+      "trait": "carrain",
+      "name": "THE CAR RIDE IN THE RAIN",
+      "tagline": "Patronus: a hare",
+      "blurb": "Bad visibility, the wrong exit, a song you both knew every word to and sang anyway. Nothing was resolved in that car. Everything was survivable in that car. You remember the windscreen wipers more than you remember the conversation, and that is exactly why it works.",
+      "accent": "sky",
+      "strengths": [
+        "Makes hard moments tolerable",
+        "Good company in confined spaces",
+        "Finds the funny side of a disaster"
+      ],
+      "watchOut": "You'll stay in the car to avoid the conversation. Park it eventually.",
+      "mix": {
+        "kitchen1am": 8,
+        "lastschool": 6,
+        "dogdoor": 10,
+        "carrain": 42,
+        "poolaugust": 8,
+        "firstsnow": 7,
+        "wrongturn": 10,
+        "supermarket": 9
+      }
+    },
+    {
+      "trait": "poolaugust",
+      "name": "THE POOL IN AUGUST",
+      "tagline": "Patronus: a dolphin",
+      "blurb": "Chlorine, hot concrete, someone's radio, the specific ceiling of a summer afternoon when nothing has to happen until dinner. You were not happy because everything was good. You were happy because nothing was being asked of you, and that turned out to be the rarest thing of all.",
+      "accent": "cyan",
+      "strengths": [
+        "Fully present in good moments",
+        "Brings the holiday energy with you",
+        "Refuses to rush a nice afternoon"
+      ],
+      "watchOut": "You wait all year for August. Build small Augusts into the other months.",
+      "mix": {
+        "kitchen1am": 10,
+        "lastschool": 8,
+        "dogdoor": 7,
+        "carrain": 10,
+        "poolaugust": 42,
+        "firstsnow": 9,
+        "wrongturn": 8,
+        "supermarket": 6
+      }
+    },
+    {
+      "trait": "firstsnow",
+      "name": "THE FIRST SNOW, NO PLANS",
+      "tagline": "Patronus: an arctic fox",
+      "blurb": "You woke up, looked out, and the whole day quietly cancelled itself. Nobody had to be anywhere. The street went silent, the kettle went on, and you stood at the window not thinking about anything at all. Peace, it turns out, is a weather condition you have been trying to recreate ever since.",
+      "accent": "blue",
+      "strengths": [
+        "Deeply comfortable in your own company",
+        "Contentment without an audience",
+        "Reads the room's mood instantly"
+      ],
+      "watchOut": "Solitude is a gift until it becomes a habit. Open the door sometimes.",
+      "mix": {
+        "kitchen1am": 7,
+        "lastschool": 10,
+        "dogdoor": 9,
+        "carrain": 8,
+        "poolaugust": 6,
+        "firstsnow": 42,
+        "wrongturn": 10,
+        "supermarket": 8
+      }
+    },
+    {
+      "trait": "wrongturn",
+      "name": "THE WRONG TURN THAT BECAME THE TRIP",
+      "tagline": "Patronus: a fox",
+      "blurb": "You were lost, the map was useless, and somewhere on an unnamed road it stopped mattering. There was a shop, a view, a dog, a very good sandwich. You have been trying to get back to that accidental afternoon ever since, and the beautiful thing is you never will, and you keep going anyway.",
+      "accent": "green",
+      "strengths": [
+        "Turns mistakes into stories",
+        "Genuinely curious",
+        "Unbothered by plan changes"
+      ],
+      "watchOut": "Not every wrong turn is a gift. Some are just a wrong turn. Check the fuel.",
+      "mix": {
+        "kitchen1am": 9,
+        "lastschool": 8,
+        "dogdoor": 6,
+        "carrain": 10,
+        "poolaugust": 8,
+        "firstsnow": 7,
+        "wrongturn": 42,
+        "supermarket": 10
+      }
+    },
+    {
+      "trait": "supermarket",
+      "name": "THE SONG IN THE SUPERMARKET",
+      "tagline": "Patronus: a magpie",
+      "blurb": "Aisle nine, mid-week, nobody around, and a song came on that you loved at fourteen. You did the small, private, extremely undignified thing: you sang. For two minutes the fluorescent lights were a stage. You have never told anyone, and it is still the memory that works best.",
+      "accent": "pink",
+      "strengths": [
+        "Finds joy in ridiculous places",
+        "Completely unembarrassed by delight",
+        "Makes ordinary days memorable"
+      ],
+      "watchOut": "You perform happiness for strangers more easily than you share it with friends. Invite someone to aisle nine.",
+      "mix": {
+        "kitchen1am": 6,
+        "lastschool": 10,
+        "dogdoor": 8,
+        "carrain": 7,
+        "poolaugust": 10,
+        "firstsnow": 9,
+        "wrongturn": 8,
+        "supermarket": 42
+      }
+    }
+  ]
+}

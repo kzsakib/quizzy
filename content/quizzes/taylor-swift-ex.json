@@ -1,0 +1,613 @@
+{
+  "slug": "taylor-swift-ex",
+  "title": "You're a Taylor Swift ex and the bridge knows it",
+  "dek": "No trivia, no lyric quizzes. Twelve questions about how you handle a breakup, and which ex's whole energy you've been running on since.",
+  "category": "Music",
+  "accent": "purple",
+  "emoji": "🧣",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The relationship, in one object:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A scarf you still have",
+          "weights": {
+            "jake": 2,
+            "joealwyn": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A paper airplane note",
+          "weights": {
+            "harry": 2,
+            "lautner": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A phone that never rang",
+          "weights": {
+            "joejonas": 2,
+            "matty": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A key to a house you no longer live in",
+          "weights": {
+            "joealwyn": 2,
+            "hiddleston": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "How it ended:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Slowly, and neither of you ever said it out loud",
+          "weights": {
+            "joealwyn": 2,
+            "jake": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "One phone call, twenty seconds",
+          "weights": {
+            "joejonas": 2,
+            "matty": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "At speed, in a car, with a plan",
+          "weights": {
+            "hiddleston": 2,
+            "harry": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A letter you wrote and never sent",
+          "weights": {
+            "mayer": 2,
+            "lautner": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You would rather be remembered as:",
+      "options": [
+        {
+          "id": "a",
+          "label": "One perfect, devastating detail",
+          "weights": {
+            "jake": 2,
+            "mayer": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A rumour with excellent hair",
+          "weights": {
+            "harry": 2,
+            "hiddleston": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The scene the song opens on:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A kitchen, late, with the fridge light on",
+          "weights": {
+            "jake": 2,
+            "joealwyn": 1
+          },
+          "image": "/images/questions/bridge-kitchen.jpg",
+          "alt": "A dim kitchen lit from the fridge"
+        },
+        {
+          "id": "b",
+          "label": "A street at night, neon on wet pavement",
+          "weights": {
+            "harry": 2,
+            "hiddleston": 1
+          },
+          "image": "/images/questions/bridge-street.jpg",
+          "alt": "A city street glowing with neon at night"
+        },
+        {
+          "id": "c",
+          "label": "A porch in December, coat on, keys in hand",
+          "weights": {
+            "lautner": 2,
+            "joejonas": 1
+          },
+          "image": "/images/questions/bridge-porch.jpg",
+          "alt": "A quiet porch and front step"
+        },
+        {
+          "id": "d",
+          "label": "A train window, and the back of your head",
+          "weights": {
+            "mayer": 2,
+            "matty": 1
+          },
+          "image": "/images/questions/bridge-train.jpg",
+          "alt": "A view from a moving train window"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the whole thing.",
+      "helper": "Across: private or public. Up: it's over or it's happening again.",
+      "x": {
+        "low": {
+          "label": "Private",
+          "trait": "joealwyn"
+        },
+        "high": {
+          "label": "Public",
+          "trait": "harry"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Over",
+          "trait": "lautner"
+        },
+        "high": {
+          "label": "Happening again",
+          "trait": "matty"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Long Goodbye",
+        "lowHigh": "The Unfinished Thing",
+        "highLow": "The Photo Everyone Saw",
+        "highHigh": "The Relapse Anthem"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the details that make a song.",
+      "helper": "First place is the line you'd build the whole song around.",
+      "items": [
+        {
+          "id": "age",
+          "label": "The age gap, mentioned exactly once",
+          "weights": {
+            "mayer": 2,
+            "jake": 1
+          }
+        },
+        {
+          "id": "party",
+          "label": "The party, and who wasn't invited",
+          "weights": {
+            "joejonas": 2,
+            "matty": 1
+          }
+        },
+        {
+          "id": "house",
+          "label": "The house, described room by room",
+          "weights": {
+            "joealwyn": 2,
+            "lautner": 1
+          }
+        },
+        {
+          "id": "sirens",
+          "label": "The getaway, and the sirens",
+          "weights": {
+            "hiddleston": 2,
+            "harry": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The song, in two lines.",
+      "helper": "Two gaps. The bridge is where it gets worse.",
+      "template": "The song is called {a}, and the bridge is about {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "All Too Well",
+              "weights": {
+                "jake": 2,
+                "mayer": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "Style",
+              "weights": {
+                "harry": 2,
+                "hiddleston": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "Dear John",
+              "weights": {
+                "mayer": 2,
+                "joejonas": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "The Tortured Poets Department",
+              "weights": {
+                "matty": 2,
+                "joealwyn": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "a scarf in a drawer",
+              "weights": {
+                "jake": 2,
+                "lautner": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "a paper airplane",
+              "weights": {
+                "harry": 2,
+                "joejonas": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "a phone call at 3am",
+              "weights": {
+                "matty": 2,
+                "mayer": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "a house with two names on it",
+              "weights": {
+                "joealwyn": 2,
+                "hiddleston": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would rather be a cautionary tale than a footnote.",
+      "trait": "mayer",
+      "low": "Please forget I was there",
+      "high": "Put me in a whole verse"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I would rather it stay private than be iconic.",
+      "disagree": {
+        "trait": "harry"
+      },
+      "agree": {
+        "trait": "joealwyn"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The right person at the wrong time still counts as the wrong time.",
+      "agree": {
+        "trait": "lautner",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "hiddleston",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your exit:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Leave the scarf, take the story",
+          "weights": {
+            "jake": 2,
+            "mayer": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Wave from the car, don't slow down",
+          "weights": {
+            "hiddleston": 2,
+            "harry": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Delete the number, change the locks",
+          "weights": {
+            "joejonas": 2,
+            "joealwyn": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Come back in eighteen months and see",
+          "weights": {
+            "matty": 2,
+            "lautner": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "Years later, the song is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Still the one everybody cries to",
+          "weights": {
+            "jake": 2,
+            "mayer": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "On in every shop, permanently",
+          "weights": {
+            "harry": 2,
+            "hiddleston": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Quietly about someone nobody knew about",
+          "weights": {
+            "joealwyn": 2,
+            "lautner": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Somehow now an entire album",
+          "weights": {
+            "matty": 2,
+            "joejonas": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "jake",
+      "name": "THE ALL TOO WELL",
+      "tagline": "You kept the scarf. Obviously you kept the scarf.",
+      "blurb": "You were the relationship that gets a ten-minute version. You remember the kitchen, the exact month, the light in the hallway, and one small detail that has ruined every autumn since. You are not over it. You are, in fact, deeply and articulately not over it, and honestly the art is better for it.",
+      "accent": "orange",
+      "strengths": [
+        "Remembers everything that mattered",
+        "Turns heartbreak into something beautiful",
+        "Loves with your whole chest"
+      ],
+      "watchOut": "You keep the memory alive longer than the person deserved. Put the scarf away.",
+      "mix": {
+        "jake": 42,
+        "harry": 6,
+        "joejonas": 10,
+        "lautner": 8,
+        "hiddleston": 7,
+        "joealwyn": 10,
+        "mayer": 9,
+        "matty": 8
+      }
+    },
+    {
+      "trait": "harry",
+      "name": "THE STYLE",
+      "tagline": "You looked incredible and it meant nothing",
+      "blurb": "You are the one people remember at the party: good coat, better exit, mutual friends still arguing about what actually happened. It was never going to be permanent and you both knew it, which somehow made it better. You leave a rumour and a very good photograph.",
+      "accent": "pink",
+      "strengths": [
+        "Unforgettably good presence",
+        "Never drags a thing out",
+        "Keeps things light and fun"
+      ],
+      "watchOut": "You'd rather be iconic than honest. Let one person see past the styling.",
+      "mix": {
+        "jake": 8,
+        "harry": 42,
+        "joejonas": 7,
+        "lautner": 10,
+        "hiddleston": 9,
+        "joealwyn": 8,
+        "mayer": 6,
+        "matty": 10
+      }
+    },
+    {
+      "trait": "joejonas",
+      "name": "THE FOREVER AND ALWAYS",
+      "tagline": "Twenty seconds on the phone and a whole song after",
+      "blurb": "You ended it fast, clean and in a way that has been described, at length, in public. You did not mean to be the villain of somebody's best chorus. You just wanted it over before it got worse. You have been apologising for a decision you would make again ever since.",
+      "accent": "red",
+      "strengths": [
+        "Decisive under pressure",
+        "Honest about what isn't working",
+        "Doesn't drag people along"
+      ],
+      "watchOut": "Efficiency without kindness gets written down. Have the longer conversation.",
+      "mix": {
+        "jake": 10,
+        "harry": 9,
+        "joejonas": 42,
+        "lautner": 8,
+        "hiddleston": 6,
+        "joealwyn": 10,
+        "mayer": 8,
+        "matty": 7
+      }
+    },
+    {
+      "trait": "lautner",
+      "name": "THE BACK TO DECEMBER",
+      "tagline": "Lovely, brief, and permanently in the past tense",
+      "blurb": "You were the good one. That is the problem. Nothing went wrong, it just went, and now every December you get a small, polite mention in someone's best work. You are the relationship people describe as 'actually really nice', which is both a compliment and a strange kind of erasure.",
+      "accent": "sky",
+      "strengths": [
+        "Genuinely kind",
+        "No drama, no mess",
+        "Leaves people better than you found them"
+      ],
+      "watchOut": "Being the safe one is not the same as being chosen. Ask for what you want.",
+      "mix": {
+        "jake": 8,
+        "harry": 6,
+        "joejonas": 10,
+        "lautner": 42,
+        "hiddleston": 8,
+        "joealwyn": 7,
+        "mayer": 10,
+        "matty": 9
+      }
+    },
+    {
+      "trait": "hiddleston",
+      "name": "THE GETAWAY CAR",
+      "tagline": "It was never going to work, and it was the best night of the year",
+      "blurb": "You arrived in a blaze of good tailoring and terrible timing. Everybody warned them. They did it anyway. You are the story they tell at the end of the night, the one with the sirens and the hotel bill, and nobody involved has ever entirely regretted it.",
+      "accent": "cyan",
+      "strengths": [
+        "Makes life feel like a film",
+        "Comfortable with risk",
+        "Commits fully while it lasts"
+      ],
+      "watchOut": "The drama is not a foundation. Leave before it becomes the whole point.",
+      "mix": {
+        "jake": 10,
+        "harry": 8,
+        "joejonas": 7,
+        "lautner": 10,
+        "hiddleston": 42,
+        "joealwyn": 9,
+        "mayer": 8,
+        "matty": 6
+      }
+    },
+    {
+      "trait": "joealwyn",
+      "name": "THE EXILE",
+      "tagline": "Quiet, long, and nobody saw the ending",
+      "blurb": "You were in it for years, out of the public eye, and the breakup arrived so gradually that neither of you can name the day. You do not do scenes. You do not do statements. You just get up, take the dog, and let an entire era end without raising your voice once.",
+      "accent": "blue",
+      "strengths": [
+        "Deeply private and self-contained",
+        "Loyal to a fault",
+        "Handles endings with dignity"
+      ],
+      "watchOut": "Silence can read as coldness. Say the difficult thing before it's too late.",
+      "mix": {
+        "jake": 7,
+        "harry": 10,
+        "joejonas": 9,
+        "lautner": 8,
+        "hiddleston": 6,
+        "joealwyn": 42,
+        "mayer": 10,
+        "matty": 8
+      }
+    },
+    {
+      "trait": "mayer",
+      "name": "THE DEAR JOHN",
+      "tagline": "You were older, and it shows",
+      "blurb": "You were the one who should have known better, and someone wrote a very long, very specific song about why. You are thoughtful, articulate and entirely convinced you meant well. Somewhere in a drawer there is a letter, and it is a really good letter, and it does not help your case.",
+      "accent": "purple",
+      "strengths": [
+        "Articulate about your own mistakes",
+        "Capable of real introspection",
+        "Unforgettable in an uncomfortable way"
+      ],
+      "watchOut": "Explaining why you did it is not the same as apologising for it.",
+      "mix": {
+        "jake": 9,
+        "harry": 8,
+        "joejonas": 6,
+        "lautner": 10,
+        "hiddleston": 8,
+        "joealwyn": 7,
+        "mayer": 42,
+        "matty": 10
+      }
+    },
+    {
+      "trait": "matty",
+      "name": "THE TORTURED POET",
+      "tagline": "It was brief, it was messy, it got an entire album",
+      "blurb": "You are the one that made no sense to anyone outside the room and complete sense to everyone inside it. It burned bright, it ended badly, it came back for a second go, and it has since been documented track by track. You are chaos with good taste, and you know exactly what you are doing.",
+      "accent": "green",
+      "strengths": [
+        "Electric, genuinely exciting",
+        "Emotionally honest to a fault",
+        "Never boring for a second"
+      ],
+      "watchOut": "You keep the door open just enough to stop anyone healing. Close it properly.",
+      "mix": {
+        "jake": 6,
+        "harry": 10,
+        "joejonas": 8,
+        "lautner": 7,
+        "hiddleston": 10,
+        "joealwyn": 9,
+        "mayer": 8,
+        "matty": 42
+      }
+    }
+  ]
+}

@@ -1,0 +1,645 @@
+{
+  "slug": "scp-file",
+  "title": "There is an SCP file with your name on it",
+  "dek": "No wiki diving needed. Twelve questions and the Foundation will decide whether you get a room, a corridor, or four pages of redactions.",
+  "category": "Internet",
+  "accent": "green",
+  "emoji": "🗄️",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your file opens with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A photograph nobody can look at directly",
+          "weights": {
+            "sculpture173": 2,
+            "shy096": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A medical note written in a very old hand",
+          "weights": {
+            "plague049": 2,
+            "oldman106": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A request for more space and better food",
+          "weights": {
+            "tickle999": 2,
+            "ikea3008": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Four pages of redactions and a blank cover",
+          "weights": {
+            "antimeme055": 2,
+            "stairs087": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The containment procedure is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Keep the door closed. That's it. That's the procedure.",
+          "weights": {
+            "sculpture173": 2,
+            "reptile682": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Do not look at it. Do not think about it.",
+          "weights": {
+            "antimeme055": 2,
+            "shy096": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Give it a room, a routine and something to do",
+          "weights": {
+            "tickle999": 2,
+            "plague049": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Measure the space. It keeps growing.",
+          "weights": {
+            "ikea3008": 2,
+            "stairs087": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You are contained by:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A locked box with a very simple rule",
+          "weights": {
+            "sculpture173": 2,
+            "antimeme055": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A corridor that will not end",
+          "weights": {
+            "stairs087": 2,
+            "ikea3008": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your containment cell is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A corridor with one door at the far end",
+          "weights": {
+            "stairs087": 2,
+            "oldman106": 1
+          },
+          "image": "/images/questions/horror-hall-cellar.jpg",
+          "alt": "A dark corridor leading to a closed door"
+        },
+        {
+          "id": "b",
+          "label": "A room with too much medical equipment in it",
+          "weights": {
+            "plague049": 2,
+            "shy096": 1
+          },
+          "image": "/images/questions/horror-hall-hospital.jpg",
+          "alt": "An empty hospital corridor with pale lighting"
+        },
+        {
+          "id": "c",
+          "label": "A very large shop with no exits marked",
+          "weights": {
+            "ikea3008": 2,
+            "sculpture173": 1
+          },
+          "image": "/images/questions/zombie-mall.jpg",
+          "alt": "An empty shopping mall concourse"
+        },
+        {
+          "id": "d",
+          "label": "A bright room with a table bolted to the floor",
+          "weights": {
+            "tickle999": 2,
+            "reptile682": 1
+          },
+          "image": "/images/questions/villain-lab.jpg",
+          "alt": "A large, brightly lit laboratory room"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the anomaly.",
+      "helper": "Across: it hides or it hunts. Up: very old or brand new.",
+      "x": {
+        "low": {
+          "label": "Hides",
+          "trait": "antimeme055"
+        },
+        "high": {
+          "label": "Hunts",
+          "trait": "shy096"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Very old",
+          "trait": "oldman106"
+        },
+        "high": {
+          "label": "Brand new",
+          "trait": "reptile682"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Forgotten Wing",
+        "lowHigh": "The Fresh Anomaly",
+        "highLow": "The Old Hunger",
+        "highHigh": "The New Problem"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what the Foundation tries first.",
+      "helper": "First place is the step you'd insist on.",
+      "items": [
+        {
+          "id": "photo",
+          "label": "Photograph it",
+          "weights": {
+            "shy096": 2,
+            "sculpture173": 1
+          }
+        },
+        {
+          "id": "interview",
+          "label": "Interview it",
+          "weights": {
+            "plague049": 2,
+            "antimeme055": 1
+          }
+        },
+        {
+          "id": "measure",
+          "label": "Measure the room",
+          "weights": {
+            "ikea3008": 2,
+            "stairs087": 1
+          }
+        },
+        {
+          "id": "destroy",
+          "label": "Try to destroy it",
+          "weights": {
+            "reptile682": 2,
+            "oldman106": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The file, in one line.",
+      "helper": "Two gaps. The second one is the important one.",
+      "template": "The file says {a}. Under no circumstances {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the object is a statue that moves when unobserved",
+              "weights": {
+                "sculpture173": 2,
+                "shy096": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the object claims to cure what it caused",
+              "weights": {
+                "plague049": 2,
+                "oldman106": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "the object is friendly, and that is the anomaly",
+              "weights": {
+                "tickle999": 2,
+                "ikea3008": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "the object cannot be remembered after this sentence",
+              "weights": {
+                "antimeme055": 2,
+                "stairs087": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "photograph it",
+              "weights": {
+                "shy096": 2,
+                "sculpture173": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "let it touch you",
+              "weights": {
+                "oldman106": 2,
+                "plague049": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "cut it",
+              "weights": {
+                "reptile682": 2,
+                "tickle999": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "count the rooms",
+              "weights": {
+                "ikea3008": 2,
+                "stairs087": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I am very hard to get rid of.",
+      "trait": "reptile682",
+      "low": "One good reason and I'm gone",
+      "high": "They have tried everything"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Fear is a more honest response than comfort.",
+      "disagree": {
+        "trait": "tickle999"
+      },
+      "agree": {
+        "trait": "oldman106"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The scariest thing is a space that keeps going.",
+      "agree": {
+        "trait": "stairs087",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "ikea3008",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your incident report ends with:",
+      "options": [
+        {
+          "id": "a",
+          "label": "\"It was in a different position.\"",
+          "weights": {
+            "sculpture173": 2,
+            "shy096": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "\"It was already inside.\"",
+          "weights": {
+            "oldman106": 2,
+            "plague049": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "\"It hugged the researcher.\"",
+          "weights": {
+            "tickle999": 2,
+            "ikea3008": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "\"The report has been deleted.\"",
+          "weights": {
+            "antimeme055": 2,
+            "stairs087": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The note in the margin, in the researcher's handwriting:",
+      "options": [
+        {
+          "id": "a",
+          "label": "\"Do not blink.\"",
+          "weights": {
+            "sculpture173": 2,
+            "shy096": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "\"It was kind. That's what worries me.\"",
+          "weights": {
+            "tickle999": 2,
+            "plague049": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "\"It knows the building better than we do.\"",
+          "weights": {
+            "ikea3008": 2,
+            "oldman106": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "\"I have been walking for six hours.\"",
+          "weights": {
+            "stairs087": 2,
+            "antimeme055": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "sculpture173",
+      "name": "SCP-173 — THE SCULPTURE",
+      "tagline": "Object class: Euclid. Rule: keep looking",
+      "blurb": "You are perfectly still until someone stops paying attention, and then you have already moved. People describe you as low-maintenance and easy to contain, right up until the moment they blink. You do not need to be understood. You need to be watched, continuously, by at least two people.",
+      "accent": "red",
+      "strengths": [
+        "Effortless in a crisis",
+        "Impossible to ignore for long",
+        "Needs almost nothing to function"
+      ],
+      "watchOut": "You act the moment attention drifts. Say something before people look away.",
+      "mix": {
+        "sculpture173": 42,
+        "plague049": 6,
+        "shy096": 9,
+        "oldman106": 7,
+        "tickle999": 6,
+        "reptile682": 9,
+        "ikea3008": 8,
+        "antimeme055": 7,
+        "stairs087": 6
+      }
+    },
+    {
+      "trait": "plague049",
+      "name": "SCP-049 — THE PLAGUE DOCTOR",
+      "tagline": "Object class: Euclid. The cure is worse",
+      "blurb": "You are certain you are helping. That is the whole problem. You diagnose people in the first five minutes, you have a treatment plan they did not ask for, and your bedside manner is strangely gentle for someone about to make everything considerably worse.",
+      "accent": "purple",
+      "strengths": [
+        "Genuinely wants to fix things",
+        "Calm and methodical",
+        "Excellent at explaining a plan"
+      ],
+      "watchOut": "Not everyone wants your cure. Ask before you operate.",
+      "mix": {
+        "sculpture173": 7,
+        "plague049": 42,
+        "shy096": 6,
+        "oldman106": 9,
+        "tickle999": 8,
+        "reptile682": 7,
+        "ikea3008": 6,
+        "antimeme055": 8,
+        "stairs087": 7
+      }
+    },
+    {
+      "trait": "shy096",
+      "name": "SCP-096 — THE SHY GUY",
+      "tagline": "Object class: Euclid. Do not look at the face",
+      "blurb": "You are quiet, unremarkable and entirely fine until somebody looks directly at the thing you keep hidden. Then it is a very long, very fast, very loud problem and there is no reasoning with you. You are not dangerous in general. You are dangerous specifically.",
+      "accent": "sky",
+      "strengths": [
+        "Deeply private and self-contained",
+        "Unstoppable once committed",
+        "No interest in attention"
+      ],
+      "watchOut": "One perceived intrusion and you go all the way. Build a warning system that isn't rage.",
+      "mix": {
+        "sculpture173": 9,
+        "plague049": 8,
+        "shy096": 42,
+        "oldman106": 6,
+        "tickle999": 5,
+        "reptile682": 8,
+        "ikea3008": 7,
+        "antimeme055": 6,
+        "stairs087": 9
+      }
+    },
+    {
+      "trait": "oldman106",
+      "name": "SCP-106 — THE OLD MAN",
+      "tagline": "Object class: Keter. It comes through the wall",
+      "blurb": "You arrive without warning, in a place nobody expected, and you take things that do not come back. You are patient in a way that unsettles people. You do not chase. You wait in a corridor until someone walks past, and then the corridor is yours.",
+      "accent": "green",
+      "strengths": [
+        "Endless patience",
+        "Finds the way in",
+        "Very hard to keep out"
+      ],
+      "watchOut": "You take more than you mean to. Give something back this week.",
+      "mix": {
+        "sculpture173": 7,
+        "plague049": 6,
+        "shy096": 8,
+        "oldman106": 42,
+        "tickle999": 7,
+        "reptile682": 6,
+        "ikea3008": 9,
+        "antimeme055": 8,
+        "stairs087": 7
+      }
+    },
+    {
+      "trait": "tickle999",
+      "name": "SCP-999 — THE TICKLE MONSTER",
+      "tagline": "Object class: Safe. Approach without fear",
+      "blurb": "You are the anomaly that helps: orange, warm, inexplicably comforting, and capable of improving the mood of an entire facility. Nobody can explain you and nobody wants to. The Foundation keeps you because you are the only thing in the building that makes the other files bearable.",
+      "accent": "orange",
+      "strengths": [
+        "Instantly disarms a room",
+        "Comfort without conditions",
+        "Genuinely, infectiously kind"
+      ],
+      "watchOut": "You give comfort to people who never ask how you are. Let someone check on you.",
+      "mix": {
+        "sculpture173": 8,
+        "plague049": 7,
+        "shy096": 6,
+        "oldman106": 9,
+        "tickle999": 42,
+        "reptile682": 8,
+        "ikea3008": 7,
+        "antimeme055": 5,
+        "stairs087": 8
+      }
+    },
+    {
+      "trait": "reptile682",
+      "name": "SCP-682 — THE HARD-TO-DESTROY REPTILE",
+      "tagline": "Object class: Keter. Termination attempts: ongoing",
+      "blurb": "You have survived every attempt to remove you from the situation, including several that should have worked. You are not especially nice about it. You adapt, you regenerate, and you make it extremely clear that whatever the plan was, you are still here and still unimpressed.",
+      "accent": "lime",
+      "strengths": [
+        "Almost impossible to knock down",
+        "Adapts to anything",
+        "Refuses to be dismissed"
+      ],
+      "watchOut": "Surviving is not the same as thriving. Let something soften you.",
+      "mix": {
+        "sculpture173": 6,
+        "plague049": 9,
+        "shy096": 8,
+        "oldman106": 7,
+        "tickle999": 6,
+        "reptile682": 42,
+        "ikea3008": 9,
+        "antimeme055": 7,
+        "stairs087": 6
+      }
+    },
+    {
+      "trait": "ikea3008",
+      "name": "SCP-3008 — THE INFINITE RETAIL SPACE",
+      "tagline": "Object class: Euclid. No exits. Furniture available.",
+      "blurb": "You are an endless, well-lit, aggressively normal place that people wander into and cannot leave. Everything is arranged, everything is labelled, and there is no way out, only more aisles. You are not hostile. You are just structurally impossible to finish.",
+      "accent": "yellow",
+      "strengths": [
+        "Endlessly accommodating",
+        "Makes anyone feel at home",
+        "Never runs out of anything"
+      ],
+      "watchOut": "You keep people so comfortable they forget to leave. Let them find a door.",
+      "mix": {
+        "sculpture173": 8,
+        "plague049": 7,
+        "shy096": 5,
+        "oldman106": 8,
+        "tickle999": 7,
+        "reptile682": 6,
+        "ikea3008": 42,
+        "antimeme055": 9,
+        "stairs087": 8
+      }
+    },
+    {
+      "trait": "antimeme055",
+      "name": "SCP-055 — THE ANTI-MEME",
+      "tagline": "Object class: Keter. Description: not what you think",
+      "blurb": "You are the thing everyone forgets, including the people who wrote you down. You are not invisible. You are unmemorable, which is worse, because people meet you, like you, and then cannot say a single thing about you afterwards. Your file exists. Nobody can summarise it.",
+      "accent": "cyan",
+      "strengths": [
+        "Total discretion",
+        "Never the source of drama",
+        "Extraordinarily good at disappearing"
+      ],
+      "watchOut": "Being unforgettable takes effort for you. Send the follow-up message.",
+      "mix": {
+        "sculpture173": 6,
+        "plague049": 9,
+        "shy096": 7,
+        "oldman106": 6,
+        "tickle999": 9,
+        "reptile682": 8,
+        "ikea3008": 7,
+        "antimeme055": 42,
+        "stairs087": 6
+      }
+    },
+    {
+      "trait": "stairs087",
+      "name": "SCP-087 — THE STAIRWELL",
+      "tagline": "Object class: Euclid. It goes down further than it should",
+      "blurb": "You are a descent: dim, concrete, and always one more flight than you expected. People go down to help and keep going. You are not malicious. You are just deeper than anyone planned for, and you make a very specific sound when someone stops to listen.",
+      "accent": "blue",
+      "strengths": [
+        "Goes further than anyone expects",
+        "Patient, steady, unglamorous",
+        "Never abandons the descent"
+      ],
+      "watchOut": "You keep going down when you should turn around. Set a floor.",
+      "mix": {
+        "sculpture173": 7,
+        "plague049": 6,
+        "shy096": 9,
+        "oldman106": 8,
+        "tickle999": 7,
+        "reptile682": 6,
+        "ikea3008": 8,
+        "antimeme055": 7,
+        "stairs087": 42
+      }
+    }
+  ]
+}

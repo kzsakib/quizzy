@@ -1,0 +1,644 @@
+{
+  "slug": "gta6-criminal-specialty",
+  "title": "GTA 6 hands you a criminal specialty and a very bad alibi",
+  "dek": "Vice City has a job for you. Twelve questions about how you'd actually pull it off, and what you'd tell the police afterwards.",
+  "category": "Gaming",
+  "accent": "orange",
+  "emoji": "🚗",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your first job in the city is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Driving something that isn't technically yours",
+          "weights": {
+            "wheelman": 2,
+            "smuggler": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Sitting in a van with a laptop and no windows",
+          "weights": {
+            "hacker": 2,
+            "forger": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Standing outside a door, being large",
+          "weights": {
+            "muscle": 2,
+            "demo": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Talking your way past a receptionist who has questions",
+          "weights": {
+            "grifter": 2,
+            "fixer": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The plan falls apart because:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The road was blocked and nobody checked",
+          "weights": {
+            "wheelman": 2,
+            "sniper": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Somebody's badge didn't scan",
+          "weights": {
+            "forger": 2,
+            "hacker": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Someone talked, and it wasn't you",
+          "weights": {
+            "grifter": 2,
+            "fixer": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The building is somehow still standing",
+          "weights": {
+            "demo": 2,
+            "muscle": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "In the crew, you'd rather be:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The person nobody sees until it's already done",
+          "weights": {
+            "sniper": 2,
+            "hacker": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The person everybody sees and cannot stop",
+          "weights": {
+            "muscle": 2,
+            "grifter": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your safehouse looks like:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A quiet street where nobody asks questions",
+          "weights": {
+            "fixer": 2,
+            "forger": 1
+          },
+          "image": "/images/questions/cartoon-suburb.jpg",
+          "alt": "A quiet residential street of houses"
+        },
+        {
+          "id": "b",
+          "label": "An empty unit with one very good chair",
+          "weights": {
+            "hacker": 2,
+            "demo": 1
+          },
+          "image": "/images/questions/villain-lab.jpg",
+          "alt": "A bare, brightly lit laboratory space"
+        },
+        {
+          "id": "c",
+          "label": "A neon block with a doorman who knows you",
+          "weights": {
+            "grifter": 2,
+            "wheelman": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A city street lit by neon signs at night"
+        },
+        {
+          "id": "d",
+          "label": "A dock where the water does the paperwork",
+          "weights": {
+            "smuggler": 2,
+            "sniper": 1
+          },
+          "image": "/images/questions/pkmn-river.jpg",
+          "alt": "A wide river running past a quiet bank"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your approach.",
+      "helper": "Across: quiet or loud. Up: on the ground or buried in paperwork.",
+      "x": {
+        "low": {
+          "label": "Quiet",
+          "trait": "sniper"
+        },
+        "high": {
+          "label": "Loud",
+          "trait": "demo"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "On the ground",
+          "trait": "wheelman"
+        },
+        "high": {
+          "label": "In the paperwork",
+          "trait": "forger"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Clean Exit",
+        "lowHigh": "The Paper Trail",
+        "highLow": "The Chase Scene",
+        "highHigh": "The Inside Job"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what the job actually needs.",
+      "helper": "First place is the thing you refuse to go without.",
+      "items": [
+        {
+          "id": "route",
+          "label": "A route with three exits",
+          "weights": {
+            "wheelman": 2,
+            "fixer": 1
+          }
+        },
+        {
+          "id": "contact",
+          "label": "A contact who owes you a favour",
+          "weights": {
+            "fixer": 2,
+            "grifter": 1
+          }
+        },
+        {
+          "id": "plates",
+          "label": "A truck with the right plates",
+          "weights": {
+            "smuggler": 2,
+            "forger": 1
+          }
+        },
+        {
+          "id": "reason",
+          "label": "A reason nobody looks twice",
+          "weights": {
+            "grifter": 2,
+            "hacker": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The brief, as you'd write it.",
+      "helper": "Two gaps. The crew will fill in the rest badly.",
+      "template": "The job needs {a}, and afterwards we {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a driver who doesn't brake",
+              "weights": {
+                "wheelman": 2,
+                "smuggler": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "someone inside the cameras",
+              "weights": {
+                "hacker": 2,
+                "forger": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "a very large friend at the door",
+              "weights": {
+                "muscle": 2,
+                "demo": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a name that checks out",
+              "weights": {
+                "forger": 2,
+                "grifter": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "are gone before the sirens finish",
+              "weights": {
+                "wheelman": 2,
+                "sniper": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "delete the last four hours",
+              "weights": {
+                "hacker": 2,
+                "fixer": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "let the building explain itself",
+              "weights": {
+                "demo": 2,
+                "muscle": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "split it four ways and never call again",
+              "weights": {
+                "grifter": 2,
+                "smuggler": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather end it from a rooftop than walk in the front door.",
+      "trait": "sniper",
+      "low": "I want to be in the room",
+      "high": "I want the room in my scope"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "A good story gets you further than a good right hook.",
+      "disagree": {
+        "trait": "muscle"
+      },
+      "agree": {
+        "trait": "grifter"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The best crimes are quiet and nobody gets hurt.",
+      "agree": {
+        "trait": "smuggler",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "demo",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your cut, in the end, is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A car with no history and a full tank",
+          "weights": {
+            "wheelman": 2,
+            "forger": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A folder of things that never happened",
+          "weights": {
+            "hacker": 2,
+            "fixer": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A crate that is not on the manifest",
+          "weights": {
+            "smuggler": 2,
+            "grifter": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nothing, because you spent it on the job",
+          "weights": {
+            "demo": 2,
+            "muscle": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "When they finally ask, your alibi is:",
+      "options": [
+        {
+          "id": "a",
+          "label": "\"I was driving. Check the cameras, they'll agree.\"",
+          "weights": {
+            "wheelman": 2,
+            "sniper": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "\"I was at work. Ask anyone with a badge I made.\"",
+          "weights": {
+            "fixer": 2,
+            "forger": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "\"I was nowhere near it, and I can prove the nowhere.\"",
+          "weights": {
+            "sniper": 2,
+            "hacker": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "\"I was with you. Remember? You bought the drinks.\"",
+          "weights": {
+            "grifter": 2,
+            "muscle": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "wheelman",
+      "name": "THE WHEELMAN",
+      "tagline": "Three exits, one hand on the wheel",
+      "blurb": "You are calmest at eighty miles an hour with somebody shouting directions that are already wrong. Your plan is a route, your backup plan is a different route, and your emergency plan is a third route nobody has seen yet. Everybody else gets to be brave because you keep the engine running.",
+      "accent": "orange",
+      "strengths": [
+        "Thinks three turns ahead",
+        "Unshakeable under pressure",
+        "Gets everyone home"
+      ],
+      "watchOut": "You'll drive anywhere for anyone who asks nicely. Ask where first.",
+      "mix": {
+        "wheelman": 42,
+        "hacker": 6,
+        "fixer": 9,
+        "muscle": 7,
+        "grifter": 6,
+        "smuggler": 9,
+        "sniper": 8,
+        "forger": 7,
+        "demo": 6
+      }
+    },
+    {
+      "trait": "hacker",
+      "name": "THE GHOST IN THE WIRES",
+      "tagline": "You were already inside before they locked up",
+      "blurb": "You solve problems with patience and a second monitor. Nobody sees you do the work, and then the door opens, the cameras loop and the alarm forgets why it was ringing. You find it mildly insulting when a job needs a person with a gun.",
+      "accent": "cyan",
+      "strengths": [
+        "Finds the one unprotected door",
+        "Tireless on a boring problem",
+        "Leaves no trace behind"
+      ],
+      "watchOut": "Not everything is a system. Some things are just people, and they need a phone call.",
+      "mix": {
+        "wheelman": 7,
+        "hacker": 42,
+        "fixer": 6,
+        "muscle": 9,
+        "grifter": 8,
+        "smuggler": 7,
+        "sniper": 6,
+        "forger": 8,
+        "demo": 7
+      }
+    },
+    {
+      "trait": "fixer",
+      "name": "THE FIXER",
+      "tagline": "You know a person for that",
+      "blurb": "You have never carried anything heavier than a folder, and you have never once needed to. Your phone contains a rolodex of people who owe you small, specific favours, and you know exactly which one to spend on a Tuesday. The job is not the crime. The job is the scheduling.",
+      "accent": "yellow",
+      "strengths": [
+        "Solves problems before they happen",
+        "Keeps the whole crew on the same page",
+        "Never panics before 8am"
+      ],
+      "watchOut": "All that planning can look a lot like never actually doing anything.",
+      "mix": {
+        "wheelman": 9,
+        "hacker": 8,
+        "fixer": 42,
+        "muscle": 6,
+        "grifter": 5,
+        "smuggler": 8,
+        "sniper": 7,
+        "forger": 6,
+        "demo": 9
+      }
+    },
+    {
+      "trait": "muscle",
+      "name": "THE ENFORCER",
+      "tagline": "The plan has a door and you are it",
+      "blurb": "You are the reason the crew sleeps well. Somebody has to stand in a hallway looking like a bad outcome, and you do it with a patience that surprises people. You are gentler than you look, which is saying something, because you look like a locked gate.",
+      "accent": "red",
+      "strengths": [
+        "Absolutely reliable in a crisis",
+        "Calm when everything escalates",
+        "Protective to a fault"
+      ],
+      "watchOut": "Not every problem is standing in front of you. Some of them are in the room, talking.",
+      "mix": {
+        "wheelman": 7,
+        "hacker": 6,
+        "fixer": 8,
+        "muscle": 42,
+        "grifter": 7,
+        "smuggler": 6,
+        "sniper": 9,
+        "forger": 8,
+        "demo": 7
+      }
+    },
+    {
+      "trait": "grifter",
+      "name": "THE CON ARTIST",
+      "tagline": "You were invited, technically",
+      "blurb": "You have never broken into a building in your life. You have, however, arrived at one with a clipboard, a confident walk and a story about a delivery that is running late. People remember you fondly. That is the problem, and also the entire method.",
+      "accent": "pink",
+      "strengths": [
+        "Talks anyone into anything",
+        "Reads a room in seconds",
+        "Never needs a weapon"
+      ],
+      "watchOut": "The story only works until somebody checks. Somebody always checks.",
+      "mix": {
+        "wheelman": 8,
+        "hacker": 7,
+        "fixer": 6,
+        "muscle": 9,
+        "grifter": 42,
+        "smuggler": 8,
+        "sniper": 7,
+        "forger": 5,
+        "demo": 8
+      }
+    },
+    {
+      "trait": "smuggler",
+      "name": "THE COURIER",
+      "tagline": "It was already in the car when you got in",
+      "blurb": "You move things quietly between places that should not be connected. Your genius is logistics: the right crate, the right dock, the right hour when the port is half asleep. You have never fired a shot and you have never lost a package, and you intend to keep both streaks.",
+      "accent": "blue",
+      "strengths": [
+        "Movement without noise",
+        "Immaculate logistics",
+        "Keeps their mouth shut"
+      ],
+      "watchOut": "You'll carry something for a friend without opening it. Open it.",
+      "mix": {
+        "wheelman": 6,
+        "hacker": 9,
+        "fixer": 8,
+        "muscle": 7,
+        "grifter": 6,
+        "smuggler": 42,
+        "sniper": 9,
+        "forger": 7,
+        "demo": 6
+      }
+    },
+    {
+      "trait": "sniper",
+      "name": "THE SHARPSHOOTER",
+      "tagline": "One breath, then a very quiet street",
+      "blurb": "You are patient in a way that makes other people nervous. You pick the rooftop, you watch for forty minutes, and you solve the entire problem with a single decision made at the right moment. Everyone else calls it cold. You call it not missing.",
+      "accent": "green",
+      "strengths": [
+        "Unmatched focus",
+        "Never rushes a decision",
+        "Ends things cleanly"
+      ],
+      "watchOut": "Distance is safe, but it is also distance. Come down sometimes.",
+      "mix": {
+        "wheelman": 8,
+        "hacker": 7,
+        "fixer": 5,
+        "muscle": 8,
+        "grifter": 7,
+        "smuggler": 6,
+        "sniper": 42,
+        "forger": 9,
+        "demo": 8
+      }
+    },
+    {
+      "trait": "forger",
+      "name": "THE PAPER MAN",
+      "tagline": "You've been three different people since breakfast",
+      "blurb": "Your crime scene is a laminator. Badges, deeds, signatures, a whole second life with a clean credit history — you build the version of the world the job needs, and it holds up under a torch. You are the reason the plan survives contact with a security desk.",
+      "accent": "purple",
+      "strengths": [
+        "Detail-obsessed in the best way",
+        "Makes the impossible look official",
+        "Keeps a straight face"
+      ],
+      "watchOut": "The paperwork is not the point. Do not fall in love with the props.",
+      "mix": {
+        "wheelman": 6,
+        "hacker": 9,
+        "fixer": 7,
+        "muscle": 6,
+        "grifter": 9,
+        "smuggler": 8,
+        "sniper": 7,
+        "forger": 42,
+        "demo": 6
+      }
+    },
+    {
+      "trait": "demo",
+      "name": "THE DEMOLITIONS EXPERT",
+      "tagline": "The plan had a wall in it",
+      "blurb": "You look at a locked door and see a suggestion. Your solution is loud, permanent and deeply satisfying, and it usually works, and the insurance claim is somebody else's problem. You are the reason the crew has a story to tell and a reason to leave town.",
+      "accent": "yellow",
+      "strengths": [
+        "Fearless when the plan breaks",
+        "Committed once you decide",
+        "Spectacular under pressure"
+      ],
+      "watchOut": "There is usually a quieter way in. Try the handle first.",
+      "mix": {
+        "wheelman": 7,
+        "hacker": 6,
+        "fixer": 9,
+        "muscle": 8,
+        "grifter": 7,
+        "smuggler": 6,
+        "sniper": 8,
+        "forger": 7,
+        "demo": 42
+      }
+    }
+  ]
+}

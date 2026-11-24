@@ -1,0 +1,644 @@
+{
+  "slug": "mentalist-read",
+  "title": "The Mentalist reads you in one glance",
+  "dek": "No case to solve, no trivia to remember. Twelve questions and the CBI will decide which member of the team you actually are.",
+  "category": "Crime",
+  "accent": "blue",
+  "emoji": "🫖",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "You walk into a crime scene and immediately notice:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The thing that is missing",
+          "weights": {
+            "jane": 2,
+            "cho": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Who is lying, and how badly",
+          "weights": {
+            "stiles": 2,
+            "redjohn": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The person nobody has spoken to yet",
+          "weights": {
+            "lisbon": 2,
+            "vanpelt": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The paperwork that has not been filed",
+          "weights": {
+            "laroche": 2,
+            "cho": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your role on the team:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The one who does the impossible bit",
+          "weights": {
+            "jane": 2,
+            "rigsby": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The one who keeps it legal",
+          "weights": {
+            "lisbon": 2,
+            "cho": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The one who talks to the family",
+          "weights": {
+            "vanpelt": 2,
+            "rigsby": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "The one who reads the file twice",
+          "weights": {
+            "laroche": 2,
+            "frye": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You solve it by:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Understanding the person",
+          "weights": {
+            "jane": 2,
+            "frye": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Following the evidence",
+          "weights": {
+            "cho": 2,
+            "laroche": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Where you do your best thinking:",
+      "options": [
+        {
+          "id": "a",
+          "label": "At a desk that is far too tidy",
+          "weights": {
+            "laroche": 2,
+            "cho": 1
+          },
+          "image": "/images/questions/office-desk.jpg",
+          "alt": "A neat office desk with a chair"
+        },
+        {
+          "id": "b",
+          "label": "In a café, watching strangers",
+          "weights": {
+            "jane": 2,
+            "stiles": 1
+          },
+          "image": "/images/questions/role-cafe.jpg",
+          "alt": "A café interior with tables and warm light"
+        },
+        {
+          "id": "c",
+          "label": "In a hospital corridor, waiting",
+          "weights": {
+            "vanpelt": 2,
+            "redjohn": 1
+          },
+          "image": "/images/questions/role-hospital.jpg",
+          "alt": "A quiet hospital corridor"
+        },
+        {
+          "id": "d",
+          "label": "At a bus stop, going nowhere yet",
+          "weights": {
+            "rigsby": 2,
+            "lisbon": 1
+          },
+          "image": "/images/questions/role-busstop.jpg",
+          "alt": "A bus stop on an empty street"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your method.",
+      "helper": "Across: by the book or by instinct. Up: alone or with the team.",
+      "x": {
+        "low": {
+          "label": "By the book",
+          "trait": "cho"
+        },
+        "high": {
+          "label": "By instinct",
+          "trait": "jane"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Alone",
+          "trait": "redjohn"
+        },
+        "high": {
+          "label": "With the team",
+          "trait": "lisbon"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Closed File",
+        "lowHigh": "The Clean Case",
+        "highLow": "The Long Game",
+        "highHigh": "The Improvised Arrest"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what actually closes a case.",
+      "helper": "First place is the one you'd stake it on.",
+      "items": [
+        {
+          "id": "confession",
+          "label": "A confession in the right tone",
+          "weights": {
+            "jane": 2,
+            "stiles": 1
+          }
+        },
+        {
+          "id": "custody",
+          "label": "An unbroken chain of custody",
+          "weights": {
+            "cho": 2,
+            "laroche": 1
+          }
+        },
+        {
+          "id": "family",
+          "label": "The family finally talking",
+          "weights": {
+            "vanpelt": 2,
+            "rigsby": 1
+          }
+        },
+        {
+          "id": "pattern",
+          "label": "The pattern nobody else saw",
+          "weights": {
+            "redjohn": 2,
+            "frye": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The case, in two sentences.",
+      "helper": "Two gaps. The second one is where it gets quiet.",
+      "template": "The case turns when {a}, and it ends with {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "someone remembers a detail wrong",
+              "weights": {
+                "jane": 2,
+                "cho": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "a receipt contradicts a statement",
+              "weights": {
+                "laroche": 2,
+                "lisbon": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "the neighbour changes their story",
+              "weights": {
+                "vanpelt": 2,
+                "rigsby": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "the killer does something theatrical",
+              "weights": {
+                "redjohn": 2,
+                "stiles": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "a quiet conversation in a kitchen",
+              "weights": {
+                "jane": 2,
+                "lisbon": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "an arrest nobody enjoys",
+              "weights": {
+                "cho": 2,
+                "laroche": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "a smile that doesn't reach the eyes",
+              "weights": {
+                "redjohn": 2,
+                "stiles": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "someone finally saying the true thing",
+              "weights": {
+                "frye": 2,
+                "vanpelt": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would rather understand a person than arrest them.",
+      "trait": "frye",
+      "low": "Arrest them, honestly",
+      "high": "Tell me about their childhood"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Rules are what separate us from them.",
+      "disagree": {
+        "trait": "redjohn"
+      },
+      "agree": {
+        "trait": "lisbon"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The truth is in the details, not in the personality.",
+      "agree": {
+        "trait": "laroche",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "stiles",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your interrogation style:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Say nothing and let them fill the silence",
+          "weights": {
+            "cho": 2,
+            "lisbon": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Be so pleasant they forget to lie",
+          "weights": {
+            "jane": 2,
+            "stiles": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Bring the file and read it aloud, slowly",
+          "weights": {
+            "laroche": 2,
+            "vanpelt": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Find the one thing they're protecting",
+          "weights": {
+            "redjohn": 2,
+            "frye": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last shot of the episode:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You, alone, smiling at nothing in particular",
+          "weights": {
+            "jane": 2,
+            "redjohn": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The team packing up the kit",
+          "weights": {
+            "lisbon": 2,
+            "cho": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A file being closed, properly",
+          "weights": {
+            "laroche": 2,
+            "vanpelt": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A door left open behind you",
+          "weights": {
+            "rigsby": 2,
+            "frye": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "jane",
+      "name": "PATRICK JANE",
+      "tagline": "Solves it in four minutes, explains it in forty",
+      "blurb": "You read people the way other people read weather: instantly, and slightly too accurately. You are charming, infuriating, and right far more often than anyone would like. You work best when nobody is watching and the rules are vague, and you have never once solved a case the way the manual suggested.",
+      "accent": "yellow",
+      "strengths": [
+        "Reads a room in one glance",
+        "Improvises brilliantly",
+        "Genuinely understands people"
+      ],
+      "watchOut": "You use charm to avoid being honest. Say the real thing without a performance.",
+      "mix": {
+        "jane": 42,
+        "lisbon": 6,
+        "cho": 9,
+        "rigsby": 7,
+        "vanpelt": 6,
+        "redjohn": 9,
+        "stiles": 8,
+        "laroche": 7,
+        "frye": 6
+      }
+    },
+    {
+      "trait": "lisbon",
+      "name": "TERESA LISBON",
+      "tagline": "The one who makes it stand up in court",
+      "blurb": "You are the reason the brilliant plan becomes an actual arrest. You carry the team, the paperwork, the boss and the person who keeps wandering off without telling anyone. You are not the flashy one and you are absolutely the one holding everything together.",
+      "accent": "green",
+      "strengths": [
+        "Relentlessly dependable",
+        "Leads without needing credit",
+        "Keeps everyone alive and legal"
+      ],
+      "watchOut": "You absorb everyone else's chaos. Take a day that is only yours.",
+      "mix": {
+        "jane": 7,
+        "lisbon": 42,
+        "cho": 6,
+        "rigsby": 9,
+        "vanpelt": 8,
+        "redjohn": 7,
+        "stiles": 6,
+        "laroche": 8,
+        "frye": 7
+      }
+    },
+    {
+      "trait": "cho",
+      "name": "KIMBALL CHO",
+      "tagline": "Says nine words. All of them useful",
+      "blurb": "You are the most competent person in the room and you have no interest in discussing it. Deadpan, unshakeable, quietly funny in a way that takes people three days to notice. When everything goes wrong, you are the one still standing exactly where you were.",
+      "accent": "blue",
+      "strengths": [
+        "Unflappable",
+        "Says exactly enough",
+        "Absolutely reliable"
+      ],
+      "watchOut": "People read your calm as distance. Occasionally explain the joke.",
+      "mix": {
+        "jane": 9,
+        "lisbon": 8,
+        "cho": 42,
+        "rigsby": 6,
+        "vanpelt": 5,
+        "redjohn": 8,
+        "stiles": 7,
+        "laroche": 6,
+        "frye": 9
+      }
+    },
+    {
+      "trait": "rigsby",
+      "name": "WAYNE RIGSBY",
+      "tagline": "Good instincts, bad snacks, great colleague",
+      "blurb": "You are the human one. You notice when somebody's having a bad week before the case is even solved, you bring food, and you take the boring legwork without complaint. You are underestimated constantly, which suits you fine, right up until you turn out to have been right the whole time.",
+      "accent": "orange",
+      "strengths": [
+        "Warm and easy to trust",
+        "Genuinely good instincts",
+        "Never makes it about himself"
+      ],
+      "watchOut": "You'd rather be liked than promoted. Ask for the thing you want.",
+      "mix": {
+        "jane": 7,
+        "lisbon": 6,
+        "cho": 8,
+        "rigsby": 42,
+        "vanpelt": 7,
+        "redjohn": 6,
+        "stiles": 9,
+        "laroche": 8,
+        "frye": 7
+      }
+    },
+    {
+      "trait": "vanpelt",
+      "name": "GRACE VAN PELT",
+      "tagline": "The one the families actually talk to",
+      "blurb": "You have a rare and underrated skill: people tell you the truth. You are steady, principled and quietly stubborn, and you will not let a case close just because everyone else is tired. You believe in the work in a way that makes the rest of the team remember why they started.",
+      "accent": "pink",
+      "strengths": [
+        "Deeply trustworthy",
+        "Listens properly",
+        "Holds the moral centre"
+      ],
+      "watchOut": "You take on other people's grief as a personal debt. Put some of it down.",
+      "mix": {
+        "jane": 8,
+        "lisbon": 7,
+        "cho": 6,
+        "rigsby": 9,
+        "vanpelt": 42,
+        "redjohn": 8,
+        "stiles": 7,
+        "laroche": 5,
+        "frye": 8
+      }
+    },
+    {
+      "trait": "redjohn",
+      "name": "RED JOHN",
+      "tagline": "Patient, precise, and always one step ahead",
+      "blurb": "You play a longer game than anyone around you realises. Nothing is impulsive, nothing is wasted, and the plan has been running for years. You are calm in a way that makes people uneasy, and you are almost never the one who blinks first.",
+      "accent": "red",
+      "strengths": [
+        "Extraordinary strategic patience",
+        "Never loses composure",
+        "Sees the whole board"
+      ],
+      "watchOut": "You treat people as pieces. The ones who trust you are not instruments.",
+      "mix": {
+        "jane": 6,
+        "lisbon": 9,
+        "cho": 8,
+        "rigsby": 7,
+        "vanpelt": 6,
+        "redjohn": 42,
+        "stiles": 9,
+        "laroche": 7,
+        "frye": 6
+      }
+    },
+    {
+      "trait": "stiles",
+      "name": "BRET STILES",
+      "tagline": "Right about everything, pleasant about none of it",
+      "blurb": "You are the one who has already read the book, and you would love to tell everyone what it says. Charismatic, theatrical and occasionally correct in a way that is very hard to argue with. You believe in the power of personality, mostly because yours has worked so far.",
+      "accent": "purple",
+      "strengths": [
+        "Magnetic and convincing",
+        "Reads motives instantly",
+        "Never short of a theory"
+      ],
+      "watchOut": "Being right is not the same as being trusted. Let someone else talk.",
+      "mix": {
+        "jane": 8,
+        "lisbon": 7,
+        "cho": 5,
+        "rigsby": 8,
+        "vanpelt": 7,
+        "redjohn": 6,
+        "stiles": 42,
+        "laroche": 9,
+        "frye": 8
+      }
+    },
+    {
+      "trait": "laroche",
+      "name": "J.J. LAROCHE",
+      "tagline": "The file is the case",
+      "blurb": "You believe in process the way other people believe in intuition. Everything is documented, everything is cross-referenced, and the answer is almost always on page forty of something nobody else opened. You are peculiar, precise, and the reason the conviction sticks.",
+      "accent": "cyan",
+      "strengths": [
+        "Immaculate attention to detail",
+        "Never skips a step",
+        "Impossible to catch out"
+      ],
+      "watchOut": "The details can become the whole job. Look up from the file occasionally.",
+      "mix": {
+        "jane": 6,
+        "lisbon": 9,
+        "cho": 7,
+        "rigsby": 6,
+        "vanpelt": 9,
+        "redjohn": 8,
+        "stiles": 7,
+        "laroche": 42,
+        "frye": 6
+      }
+    },
+    {
+      "trait": "frye",
+      "name": "KRISTINA FRYE",
+      "tagline": "You see the person, not just the case",
+      "blurb": "You are the one who asks what happened to somebody rather than what they did. It makes you unusually perceptive and occasionally accused of being too soft, which is a misunderstanding: you are simply playing a longer, kinder game, and you are usually the first to see the shape of the truth.",
+      "accent": "lime",
+      "strengths": [
+        "Deeply empathetic",
+        "Sees what other people skip",
+        "Calm, clear and hard to rattle"
+      ],
+      "watchOut": "Understanding someone is not the same as excusing them. Hold the line.",
+      "mix": {
+        "jane": 7,
+        "lisbon": 6,
+        "cho": 9,
+        "rigsby": 8,
+        "vanpelt": 7,
+        "redjohn": 6,
+        "stiles": 8,
+        "laroche": 7,
+        "frye": 42
+      }
+    }
+  ]
+}

@@ -1,0 +1,612 @@
+{
+  "slug": "ghibli-side-character",
+  "title": "A Ghibli side character is running your errands",
+  "dek": "Not the hero, not the love interest. The small, strange, quietly essential one who was holding the whole film together.",
+  "category": "Anime",
+  "accent": "lime",
+  "emoji": "🔥",
+  "minutes": 4,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "You turn up in the story as:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A fire that will not behave",
+          "weights": {
+            "calcifer": 2,
+            "jiji": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A cat with opinions and a schedule",
+          "weights": {
+            "jiji": 2,
+            "lin": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A large, quiet presence in a doorway",
+          "weights": {
+            "noface": 2,
+            "kamaji": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Someone with six jobs and no time for yours",
+          "weights": {
+            "kamaji": 2,
+            "heen": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your role in the household:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Keeping the whole place running on almost nothing",
+          "weights": {
+            "calcifer": 2,
+            "kamaji": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Carrying messages nobody wants to hear",
+          "weights": {
+            "heen": 2,
+            "jiji": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Standing very still until somebody notices",
+          "weights": {
+            "turnip": 2,
+            "noface": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Doing the terrifying chore so the kid doesn't have to",
+          "weights": {
+            "lin": 2,
+            "yakul": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You would rather be:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Wildly useful and slightly on fire",
+          "weights": {
+            "calcifer": 2,
+            "lin": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Quiet, loyal, and following at a distance",
+          "weights": {
+            "yakul": 2,
+            "heen": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your corner of the world:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A kitchen table with too much on it",
+          "weights": {
+            "calcifer": 2,
+            "noface": 1
+          },
+          "image": "/images/questions/kitchen-table.jpg",
+          "alt": "A wooden kitchen table laid with plates and cups"
+        },
+        {
+          "id": "b",
+          "label": "A ladder and a wall of books",
+          "weights": {
+            "kamaji": 2,
+            "jiji": 1
+          },
+          "image": "/images/questions/book-ladder.jpg",
+          "alt": "A tall bookshelf with a wooden ladder"
+        },
+        {
+          "id": "c",
+          "label": "A path into the trees",
+          "weights": {
+            "yakul": 2,
+            "turnip": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A narrow path running into a forest"
+        },
+        {
+          "id": "d",
+          "label": "A wet street after everyone's gone in",
+          "weights": {
+            "lin": 2,
+            "heen": 1
+          },
+          "image": "/images/questions/finale-rain.jpg",
+          "alt": "Rain falling on an empty street at night"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your loyalty.",
+      "helper": "Across: stay put or go and get them. Up: silent or narrating.",
+      "x": {
+        "low": {
+          "label": "Stay put",
+          "trait": "turnip"
+        },
+        "high": {
+          "label": "Go and get them",
+          "trait": "yakul"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Silent",
+          "trait": "noface"
+        },
+        "high": {
+          "label": "Narrating",
+          "trait": "jiji"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Standing Figure",
+        "lowHigh": "The Running Commentary",
+        "highLow": "The Quiet Escort",
+        "highHigh": "The Errand With Attitude"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what a good side character needs.",
+      "helper": "First place is what you'd never leave the house without.",
+      "items": [
+        {
+          "id": "kitchen",
+          "label": "A warm kitchen",
+          "weights": {
+            "calcifer": 2,
+            "lin": 1
+          }
+        },
+        {
+          "id": "rules",
+          "label": "A job with clear rules",
+          "weights": {
+            "kamaji": 2,
+            "heen": 1
+          }
+        },
+        {
+          "id": "someone",
+          "label": "Someone worth following",
+          "weights": {
+            "yakul": 2,
+            "turnip": 1
+          }
+        },
+        {
+          "id": "rumour",
+          "label": "A good rumour",
+          "weights": {
+            "jiji": 2,
+            "noface": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "You show up, you help, you leave.",
+      "helper": "Two gaps. Nobody thanks you, which is fine.",
+      "template": "You arrive with {a}, and leave behind {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a fire that has opinions",
+              "weights": {
+                "calcifer": 2,
+                "jiji": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "a tray nobody asked for",
+              "weights": {
+                "kamaji": 2,
+                "lin": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "a silence that takes up a chair",
+              "weights": {
+                "noface": 2,
+                "turnip": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "mud on your boots and no explanation",
+              "weights": {
+                "yakul": 2,
+                "heen": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "a warmer room",
+              "weights": {
+                "calcifer": 2,
+                "lin": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "a note you'll pretend you didn't write",
+              "weights": {
+                "jiji": 2,
+                "heen": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "one gold coin and a lot of questions",
+              "weights": {
+                "noface": 2,
+                "kamaji": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "a footprint and nothing else",
+              "weights": {
+                "turnip": 2,
+                "yakul": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I would rather be useful than understood.",
+      "trait": "kamaji",
+      "low": "I want to be known",
+      "high": "Hand me the list"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I say the thing out loud, immediately, to whoever is nearest.",
+      "disagree": {
+        "trait": "noface"
+      },
+      "agree": {
+        "trait": "jiji"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "The best help is the kind nobody notices.",
+      "agree": {
+        "trait": "turnip",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "lin",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "What you're actually doing in the background:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Keeping one small fire alive",
+          "weights": {
+            "calcifer": 2,
+            "kamaji": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Watching who takes what",
+          "weights": {
+            "noface": 2,
+            "turnip": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Running the errand nobody assigned",
+          "weights": {
+            "lin": 2,
+            "jiji": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Standing between them and the door",
+          "weights": {
+            "heen": 2,
+            "yakul": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "How you leave:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A little bigger than you arrived",
+          "weights": {
+            "calcifer": 2,
+            "noface": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Without a word, tail up",
+          "weights": {
+            "jiji": 2,
+            "heen": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Carrying something for someone else",
+          "weights": {
+            "yakul": 2,
+            "lin": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Still there, technically",
+          "weights": {
+            "turnip": 2,
+            "kamaji": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "calcifer",
+      "name": "CALCIFER",
+      "tagline": "A small fire doing the work of a power station",
+      "blurb": "You are the reason the house is warm and the reason everyone is slightly nervous. You complain constantly, you threaten to leave, and you have never once actually left. Your loyalty is immense and it comes with a running commentary about how underappreciated you are, which is fair, because you are.",
+      "accent": "orange",
+      "strengths": [
+        "Keeps everything running",
+        "Fierce without being cruel",
+        "Funny exactly when it's needed"
+      ],
+      "watchOut": "You burn yourself down for people who never say thank you. Ask them to say it.",
+      "mix": {
+        "calcifer": 42,
+        "jiji": 6,
+        "noface": 10,
+        "kamaji": 8,
+        "turnip": 7,
+        "lin": 10,
+        "heen": 9,
+        "yakul": 8
+      }
+    },
+    {
+      "trait": "jiji",
+      "name": "JIJI",
+      "tagline": "The cat who is also your entire support system",
+      "blurb": "You are the friend who has an opinion about everything and expresses it at volume. You are also, underneath the attitude, the one who stays up until the person gets home. You make the story funnier and the fear smaller, which is a genuinely rare skill.",
+      "accent": "purple",
+      "strengths": [
+        "Instant comic relief",
+        "Reads people faster than they'd like",
+        "Stays when it gets serious"
+      ],
+      "watchOut": "Not every moment needs a joke. Some moments need you to just sit there.",
+      "mix": {
+        "calcifer": 8,
+        "jiji": 42,
+        "noface": 7,
+        "kamaji": 10,
+        "turnip": 9,
+        "lin": 8,
+        "heen": 6,
+        "yakul": 10
+      }
+    },
+    {
+      "trait": "noface",
+      "name": "NO-FACE",
+      "tagline": "Standing very still, holding everything out to you",
+      "blurb": "You want to be included so badly that it comes out as generosity, then as too much, then as a room full of people who took what you offered and never looked at you. You are not frightening. You are just enormous and lonely and still learning how to be a person at a table.",
+      "accent": "sky",
+      "strengths": [
+        "Bottomless generosity",
+        "Quietly devastating loyalty",
+        "Transforms a room"
+      ],
+      "watchOut": "You can offer the whole world and still get left behind. Ask for what you need instead.",
+      "mix": {
+        "calcifer": 10,
+        "jiji": 9,
+        "noface": 42,
+        "kamaji": 8,
+        "turnip": 6,
+        "lin": 10,
+        "heen": 8,
+        "yakul": 7
+      }
+    },
+    {
+      "trait": "kamaji",
+      "name": "KAMAJI",
+      "tagline": "Six arms, one boiler, zero patience",
+      "blurb": "You are the engine room. Nobody visits except when something breaks, and then they need a miracle in the next ten minutes. You are extremely good at what you do, you have no interest in being celebrated for it, and your occasional soft spot is worth more than most people's grand gestures.",
+      "accent": "yellow",
+      "strengths": [
+        "Relentlessly competent",
+        "Calm in an emergency",
+        "Takes the weird new arrival under your wing"
+      ],
+      "watchOut": "You give other people your best years. Let somebody make you tea for once.",
+      "mix": {
+        "calcifer": 8,
+        "jiji": 6,
+        "noface": 10,
+        "kamaji": 42,
+        "turnip": 8,
+        "lin": 7,
+        "heen": 10,
+        "yakul": 9
+      }
+    },
+    {
+      "trait": "turnip",
+      "name": "TURNIP HEAD",
+      "tagline": "Silent, inexplicable, quietly keeping watch",
+      "blurb": "You are the one standing slightly out of frame with a strange job and a stranger reason. People are not sure what to make of you, so they mostly leave you to it, and you use that to protect the person who needs protecting without ever explaining why.",
+      "accent": "green",
+      "strengths": [
+        "Extremely patient",
+        "Unexplained but unwavering",
+        "Protects without announcements"
+      ],
+      "watchOut": "You stay invisible for so long that people forget you're there. Say something.",
+      "mix": {
+        "calcifer": 10,
+        "jiji": 8,
+        "noface": 7,
+        "kamaji": 10,
+        "turnip": 42,
+        "lin": 9,
+        "heen": 8,
+        "yakul": 6
+      }
+    },
+    {
+      "trait": "lin",
+      "name": "LIN",
+      "tagline": "Doing the scary job with efficiency and gum",
+      "blurb": "You are the older one who has already done the awful thing and come out the other side with a plan. You are blunt, practical and genuinely kind, and you will feed someone and yell at them in the same sentence. You are the difference between survival and a story.",
+      "accent": "pink",
+      "strengths": [
+        "Deeply practical",
+        "Comfortable saying the hard thing",
+        "Will not let you go back to bed"
+      ],
+      "watchOut": "Doing it for them is not the same as letting them do it. Step back occasionally.",
+      "mix": {
+        "calcifer": 7,
+        "jiji": 10,
+        "noface": 9,
+        "kamaji": 8,
+        "turnip": 6,
+        "lin": 42,
+        "heen": 10,
+        "yakul": 8
+      }
+    },
+    {
+      "trait": "heen",
+      "name": "HEEN",
+      "tagline": "The messenger nobody wanted, still running",
+      "blurb": "You deliver the news that ruins the plan and then wait around for further instructions with a sigh. You are unglamorous, indispensably loyal and deeply unimpressed by everyone. The story would fall apart in nine minutes without you and the story does not care.",
+      "accent": "blue",
+      "strengths": [
+        "Reliable when everything's collapsing",
+        "Unfazed by grand personalities",
+        "Honest to the point of rudeness"
+      ],
+      "watchOut": "You take the blame that belongs to other people. Put the message down and leave.",
+      "mix": {
+        "calcifer": 9,
+        "jiji": 8,
+        "noface": 6,
+        "kamaji": 10,
+        "turnip": 8,
+        "lin": 7,
+        "heen": 42,
+        "yakul": 10
+      }
+    },
+    {
+      "trait": "yakul",
+      "name": "YAKUL",
+      "tagline": "Carrying someone else's whole story",
+      "blurb": "You are the quiet companion: no dialogue, total commitment, entirely centred on getting someone else where they need to be. You are strong, steady and probably the only reason the plot arrives anywhere. You do not ask for a share of the screen.",
+      "accent": "lime",
+      "strengths": [
+        "Unmatched stamina",
+        "Steady when others are spiralling",
+        "Carries far more than asked"
+      ],
+      "watchOut": "Being the vehicle for someone else's journey is a beautiful thing. Have one of your own too.",
+      "mix": {
+        "calcifer": 6,
+        "jiji": 10,
+        "noface": 8,
+        "kamaji": 7,
+        "turnip": 10,
+        "lin": 9,
+        "heen": 8,
+        "yakul": 42
+      }
+    }
+  ]
+}
