@@ -469,17 +469,6 @@
 
 /* Full-bleed horizontal strips still need to line their first card up with
    the page container's left edge on wide screens, not the raw viewport. */
-.scroll-x--page {
-  padding-inline: max(
-    var(--gutter),
-    calc((100% - var(--page-max)) / 2 + var(--gutter))
-  );
-  scroll-padding-inline-start: max(
-    var(--gutter),
-    calc((100% - var(--page-max)) / 2 + var(--gutter))
-  );
-}
-
 .scroll-x {
   scrollbar-width: thin;
   scrollbar-color: var(--line) transparent;
