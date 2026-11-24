@@ -144,11 +144,11 @@ with the joke in it.
 - **Flavor:** untagged. FUNNY and LORE balanced; the alibi question is the most quotable.
 - **Unsure:** "The Paper Man" may read as the boring result to players who wanted the loud one.
 
-## Something downstairs has a ledger with your name in it
-- **Tone dial:** Old-folklore ominous, played straight until the last line of each blurb. No theology homework.
-- **What it reveals:** which appetite or fear has your file — pride, appetite, envy, patience, ruin, knowledge, lies.
-- **Flavor:** untagged. LORE is present but each demon is explained by behaviour, not by name-dropping.
-- **Unsure:** ten results means Belial and Leviathan can feel adjacent (both about hidden wanting); the questions split them on presentation versus possession.
+## The Corps has decided your Breathing style
+- **Tone dial:** Demon Slayer without the trivia. The styles are results; no question needs episode recall or a demon's name.
+- **What it reveals:** how you fight — steady, loud, precise, untouchable, immovable, feral — and what you would take a hit for.
+- **Flavor:** untagged. LORE is present in the form counts and invented-style joke, but every option describes behaviour first.
+- **Unsure:** Stone and Water both carry "steady", split by stillness versus adaptation; Mist and Insect both carry "precise", split by evasion versus planning.
 
 ## A Ghibli side character is running your errands
 - **Tone dial:** Warm, domestic, slightly wry. Side characters only; being the hero is the wrong answer throughout.

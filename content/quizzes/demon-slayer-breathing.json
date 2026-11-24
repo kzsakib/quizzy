@@ -1,0 +1,679 @@
+{
+  "slug": "demon-slayer-breathing",
+  "title": "The Corps has decided your Breathing style",
+  "dek": "Demon Slayer, with no trivia. Twelve questions about how you fight and what you would die for, then the Corps hands you a Breathing style and a blade.",
+  "category": "Anime",
+  "accent": "green",
+  "emoji": "⚔️",
+  "minutes": 4,
+  "trending": true,
+  "published": "2026-11-24",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The blade you pick up at Final Selection:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Balanced, standard, obviously cared for",
+          "weights": {
+            "water": 2,
+            "stone": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Heavier than it needs to be",
+          "weights": {
+            "flame": 2,
+            "wind": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Light, thin, and extremely precise",
+          "weights": {
+            "insect": 2,
+            "thunder": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something with a chain on it",
+          "weights": {
+            "sound": 2,
+            "beast": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your first real demon:",
+      "options": [
+        {
+          "id": "a",
+          "label": "You wait, watch, and take the one opening it gives you",
+          "weights": {
+            "water": 2,
+            "mist": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "You go straight through it",
+          "weights": {
+            "beast": 2,
+            "wind": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "You end it before it knows you're there",
+          "weights": {
+            "thunder": 2,
+            "insect": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "You make sure the whole forest hears about it",
+          "weights": {
+            "sound": 2,
+            "flame": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "In a fight, you would rather:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Be exactly where the strike isn't",
+          "weights": {
+            "mist": 2,
+            "water": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Land one strike and be done",
+          "weights": {
+            "thunder": 2,
+            "insect": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Where you actually learned to fight:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A river, and the sound of it",
+          "weights": {
+            "water": 2,
+            "stone": 1
+          },
+          "image": "/images/questions/pkmn-river.jpg",
+          "alt": "A wide river running past a quiet bank"
+        },
+        {
+          "id": "b",
+          "label": "A forest with no path through it",
+          "weights": {
+            "mist": 2,
+            "beast": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A dense forest with a narrow track"
+        },
+        {
+          "id": "c",
+          "label": "A sky that was about to break",
+          "weights": {
+            "thunder": 2,
+            "wind": 1
+          },
+          "image": "/images/questions/anime-sky-storm.jpg",
+          "alt": "A dark storm sky over open ground"
+        },
+        {
+          "id": "d",
+          "label": "Blossom, and somebody patient",
+          "weights": {
+            "love": 2,
+            "insect": 1
+          },
+          "image": "/images/questions/anime-sky-blossom.jpg",
+          "alt": "Blossom against a pale sky"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your form.",
+      "helper": "Across: read it first or go first. Up: alone or with the others.",
+      "x": {
+        "low": {
+          "label": "Read it first",
+          "trait": "mist"
+        },
+        "high": {
+          "label": "Go first",
+          "trait": "beast"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Alone",
+          "trait": "insect"
+        },
+        "high": {
+          "label": "With the others",
+          "trait": "love"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Empty Clearing",
+        "lowHigh": "The Formation",
+        "highLow": "The Single Cut",
+        "highHigh": "The Charge"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what a Hashira actually needs.",
+      "helper": "First place is the thing you would train for years.",
+      "items": [
+        {
+          "id": "form",
+          "label": "An unshakeable form",
+          "weights": {
+            "water": 2,
+            "stone": 1
+          }
+        },
+        {
+          "id": "reason",
+          "label": "A reason to keep going",
+          "weights": {
+            "flame": 2,
+            "love": 1
+          }
+        },
+        {
+          "id": "first",
+          "label": "The first strike",
+          "weights": {
+            "thunder": 2,
+            "insect": 1
+          }
+        },
+        {
+          "id": "finish",
+          "label": "The will to finish it",
+          "weights": {
+            "wind": 2,
+            "beast": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your Breathing, in one line.",
+      "helper": "Two gaps. Most of the forms came later.",
+      "template": "Your Breathing is {a}, and it exists because {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "eleven forms, and one of them is yours",
+              "weights": {
+                "water": 2,
+                "mist": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "one form, and you have never needed another",
+              "weights": {
+                "thunder": 2,
+                "stone": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "four forms built around a poison",
+              "weights": {
+                "insect": 2,
+                "beast": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "eleven forms you invented in the woods",
+              "weights": {
+                "beast": 2,
+                "wind": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "someone had to stay steady",
+              "weights": {
+                "water": 2,
+                "stone": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "someone had to be loud enough to lead",
+              "weights": {
+                "flame": 2,
+                "sound": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "someone had to be faster than the fear",
+              "weights": {
+                "thunder": 2,
+                "mist": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "someone had to be gentle about it",
+              "weights": {
+                "love": 2,
+                "insect": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "Rules are for people who need them.",
+      "trait": "beast",
+      "low": "Form is everything",
+      "high": "I'll make it up as I go"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "You fight best when you care about the person behind you.",
+      "disagree": {
+        "trait": "mist"
+      },
+      "agree": {
+        "trait": "love"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "A fight is over the moment you decide it is.",
+      "agree": {
+        "trait": "wind",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "water",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The thing you cannot forgive:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A life wasted for nothing",
+          "weights": {
+            "flame": 2,
+            "love": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Cowardice dressed up as strategy",
+          "weights": {
+            "wind": 2,
+            "beast": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Losing control of yourself",
+          "weights": {
+            "water": 2,
+            "stone": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Being underestimated on purpose",
+          "weights": {
+            "sound": 2,
+            "thunder": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The demon's report, afterwards:",
+      "options": [
+        {
+          "id": "a",
+          "label": "\"It never panicked once.\"",
+          "weights": {
+            "water": 2,
+            "stone": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "\"It was laughing the entire time.\"",
+          "weights": {
+            "flame": 2,
+            "sound": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "\"It was already behind me.\"",
+          "weights": {
+            "mist": 2,
+            "thunder": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "\"It would not stop.\"",
+          "weights": {
+            "beast": 2,
+            "wind": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "water",
+      "name": "WATER BREATHING",
+      "tagline": "Eleven forms, and you only need the right one",
+      "blurb": "You are the steady one: adaptable, calm, and quietly relentless. You read a situation before you move, you change form to suit the fight instead of making the fight suit you, and you are usually the person others copy their technique from. Nothing about you is flashy. Everything about you works.",
+      "accent": "sky",
+      "strengths": [
+        "Adapts to anything without panicking",
+        "Calm enough to think mid-fight",
+        "The person everyone else learns from"
+      ],
+      "watchOut": "You keep absorbing other people's fights. Pick one that is only yours.",
+      "mix": {
+        "water": 42,
+        "flame": 5,
+        "thunder": 8,
+        "insect": 6,
+        "mist": 6,
+        "sound": 8,
+        "stone": 7,
+        "wind": 6,
+        "love": 5,
+        "beast": 7
+      }
+    },
+    {
+      "trait": "flame",
+      "name": "FLAME BREATHING",
+      "tagline": "Set your heart ablaze, and mean it",
+      "blurb": "You lead from the front and you do it loudly enough that nobody has to guess what you believe. Your energy is genuinely infectious, your standards are absurd, and you would absolutely take a hit that was meant for someone else. People remember the exact thing you said to them years later.",
+      "accent": "orange",
+      "strengths": [
+        "Leads without hesitating",
+        "Makes people braver by standing near them",
+        "Utterly sincere"
+      ],
+      "watchOut": "You burn hot enough to forget your own limits. Rest before someone makes you.",
+      "mix": {
+        "water": 7,
+        "flame": 42,
+        "thunder": 5,
+        "insect": 8,
+        "mist": 7,
+        "sound": 6,
+        "stone": 5,
+        "wind": 8,
+        "love": 7,
+        "beast": 5
+      }
+    },
+    {
+      "trait": "thunder",
+      "name": "THUNDER BREATHING",
+      "tagline": "One form. It has never failed you",
+      "blurb": "You are not the loudest person in the room, right up until the moment you are the only one moving. Most of the time you are anxious, overthinking, apologising for existing. Then something clicks and you do the one thing you can do better than anyone alive, and everyone stops talking.",
+      "accent": "yellow",
+      "strengths": [
+        "Devastating when it counts",
+        "Fiercely loyal underneath the nerves",
+        "One impossibly refined skill"
+      ],
+      "watchOut": "You wait to be scared before you commit. Move before the fear arrives.",
+      "mix": {
+        "water": 8,
+        "flame": 7,
+        "thunder": 42,
+        "insect": 6,
+        "mist": 5,
+        "sound": 7,
+        "stone": 6,
+        "wind": 5,
+        "love": 7,
+        "beast": 7
+      }
+    },
+    {
+      "trait": "insect",
+      "name": "INSECT BREATHING",
+      "tagline": "Precision, a smile, and something in the blade",
+      "blurb": "You are the one who solved it in the planning, not the fighting. Small, exact, patient, and considerably more dangerous than anyone gives you credit for, because you never announce the part that matters. You are extremely polite right up until the exact second it becomes unnecessary.",
+      "accent": "purple",
+      "strengths": [
+        "Extraordinary precision",
+        "Wins before the fight starts",
+        "Impossible to intimidate"
+      ],
+      "watchOut": "You carry things alone that you could share. Let someone in on the plan.",
+      "mix": {
+        "water": 6,
+        "flame": 5,
+        "thunder": 8,
+        "insect": 42,
+        "mist": 7,
+        "sound": 6,
+        "stone": 8,
+        "wind": 7,
+        "love": 6,
+        "beast": 5
+      }
+    },
+    {
+      "trait": "mist",
+      "name": "MIST BREATHING",
+      "tagline": "You were never quite where they thought",
+      "blurb": "You move through the world slightly out of phase with it: hard to pin down, harder to predict, and entirely unbothered by what people expect. You can be devastatingly effective and then forget the conversation entirely. Some people find you cold. The ones who matter find you restful.",
+      "accent": "cyan",
+      "strengths": [
+        "Unpredictable in the best way",
+        "Impossible to corner",
+        "Reads a situation instantly"
+      ],
+      "watchOut": "You drift out of rooms, plans and friendships without noticing. Say where you're going.",
+      "mix": {
+        "water": 7,
+        "flame": 6,
+        "thunder": 6,
+        "insect": 8,
+        "mist": 42,
+        "sound": 7,
+        "stone": 6,
+        "wind": 5,
+        "love": 7,
+        "beast": 6
+      }
+    },
+    {
+      "trait": "sound",
+      "name": "SOUND BREATHING",
+      "tagline": "If it's worth doing, it's worth being loud about",
+      "blurb": "You are flashy on purpose and excellent on purpose, and you have never understood why anyone would pretend otherwise. You bring the music, the plan, the three backup plans and the good jewellery. Under all of it you are the most reliable person in the group and the first to notice someone is not okay.",
+      "accent": "pink",
+      "strengths": [
+        "Enormous, generous presence",
+        "Reads people fast",
+        "Shows up with a plan and a good time"
+      ],
+      "watchOut": "You hide the serious part behind the performance. Say the plain thing.",
+      "mix": {
+        "water": 6,
+        "flame": 8,
+        "thunder": 7,
+        "insect": 6,
+        "mist": 5,
+        "sound": 42,
+        "stone": 7,
+        "wind": 6,
+        "love": 5,
+        "beast": 8
+      }
+    },
+    {
+      "trait": "stone",
+      "name": "STONE BREATHING",
+      "tagline": "Immovable, and patient about it",
+      "blurb": "You are the one nothing gets through. Not stubbornness exactly: more a deep, quiet certainty that you will still be standing when the noise stops. You train longer than everyone, you say less, and when you finally move, the ground has already lost the argument.",
+      "accent": "green",
+      "strengths": [
+        "Unbreakable composure",
+        "Strength built over years",
+        "Absolutely dependable"
+      ],
+      "watchOut": "Being immovable can look like being unavailable. Let people lean on you out loud.",
+      "mix": {
+        "water": 7,
+        "flame": 6,
+        "thunder": 5,
+        "insect": 7,
+        "mist": 6,
+        "sound": 6,
+        "stone": 42,
+        "wind": 8,
+        "love": 7,
+        "beast": 6
+      }
+    },
+    {
+      "trait": "wind",
+      "name": "WIND BREATHING",
+      "tagline": "Sharp, scarred, and not interested in excuses",
+      "blurb": "You are blunt, fast and furiously protective, and your kindness comes out sideways as criticism. You have been through something that took pieces of you and you decided, instead of softening, to get sharper. Nobody doubts where they stand with you. That is a rarer gift than being nice.",
+      "accent": "blue",
+      "strengths": [
+        "Brutally honest",
+        "Ferociously protective",
+        "Never freezes in a crisis"
+      ],
+      "watchOut": "You cut people who were not attacking you. Aim once, then put it down.",
+      "mix": {
+        "water": 5,
+        "flame": 8,
+        "thunder": 6,
+        "insect": 6,
+        "mist": 8,
+        "sound": 7,
+        "stone": 6,
+        "wind": 42,
+        "love": 5,
+        "beast": 7
+      }
+    },
+    {
+      "trait": "love",
+      "name": "LOVE BREATHING",
+      "tagline": "Six forms, all whip-crack, all heart",
+      "blurb": "You are warm, strong and completely unembarrassed about loving the people around you. Your style is flexible and surprising, built out of care rather than aggression, and it is much more dangerous than it looks. Everyone underestimates you at first. Everyone stops doing that.",
+      "accent": "red",
+      "strengths": [
+        "Open-hearted and unashamed",
+        "Reads what people need",
+        "Strength without cruelty"
+      ],
+      "watchOut": "You'll take on everyone's feelings before your own. Put yourself on the list.",
+      "mix": {
+        "water": 7,
+        "flame": 5,
+        "thunder": 8,
+        "insect": 7,
+        "mist": 6,
+        "sound": 5,
+        "stone": 8,
+        "wind": 7,
+        "love": 42,
+        "beast": 5
+      }
+    },
+    {
+      "trait": "beast",
+      "name": "BEAST BREATHING",
+      "tagline": "Eleven forms, invented in the woods, no notes",
+      "blurb": "You were never taught any of this. You worked it out by doing it badly, repeatedly, at volume, until it worked. You are instinctive, competitive, weirdly good in a crisis, and you refuse to be told that something is impossible. Your technique is ugly and effective and entirely your own.",
+      "accent": "lime",
+      "strengths": [
+        "Improvisation under real pressure",
+        "Fearless, almost annoyingly so",
+        "Builds things nobody else would try"
+      ],
+      "watchOut": "You charge before the plan exists. Let someone else say one sentence first.",
+      "mix": {
+        "water": 8,
+        "flame": 7,
+        "thunder": 6,
+        "insect": 5,
+        "mist": 7,
+        "sound": 6,
+        "stone": 5,
+        "wind": 7,
+        "love": 7,
+        "beast": 42
+      }
+    }
+  ]
+}
