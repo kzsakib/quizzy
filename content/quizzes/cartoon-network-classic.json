@@ -1,7 +1,7 @@
 {
   "slug": "cartoon-network-classic",
-  "title": "Which classic Cartoon Network show would you live in",
-  "dek": "No theme songs to name. Twelve questions about the kind of cartoon logic your life actually runs on.",
+  "title": "Which Cartoon Network show would you live in",
+  "dek": "No theme songs to name. Twelve questions about the kind of cartoon logic your 2000s childhood actually ran on.",
   "category": "Cartoons",
   "accent": "lime",
   "emoji": "📺",
@@ -16,34 +16,34 @@
       "options": [
         {
           "id": "a",
-          "label": "Sun-bleached suburban street",
+          "label": "Bright pink city, everything glossier than it should be",
           "weights": {
-            "suburb": 2,
-            "slapstick": 1
+            "powerpuff": 2,
+            "fosters": 1
           }
         },
         {
           "id": "b",
-          "label": "White walls and too many wires",
+          "label": "A treehouse with too many antennas",
           "weights": {
-            "lab": 2,
-            "space": 1
+            "knd": 2,
+            "regularshow": 1
           }
         },
         {
           "id": "c",
-          "label": "Dark trees and one torch",
+          "label": "A candy-coloured wasteland with a rainbow over it",
           "weights": {
-            "mystery": 2,
-            "musical": 1
+            "adventuretime": 2,
+            "ben10": 1
           }
         },
         {
           "id": "d",
-          "label": "Stars, and something with too many eyes",
+          "label": "A city at dusk, moody and lit like an anime",
           "weights": {
-            "space": 2,
-            "mystery": 1
+            "titans": 2,
+            "regularshow": 1
           }
         }
       ]
@@ -55,34 +55,34 @@
       "options": [
         {
           "id": "a",
-          "label": "The neighbour's dog got out",
+          "label": "A villain has taken over the school",
           "weights": {
-            "suburb": 2,
-            "mystery": 1
+            "powerpuff": 2,
+            "knd": 1
           }
         },
         {
           "id": "b",
-          "label": "The machine started itself",
+          "label": "One of the imaginary friends has gone missing",
           "weights": {
-            "lab": 2,
-            "space": 1
+            "fosters": 2,
+            "adventuretime": 1
           }
         },
         {
           "id": "c",
-          "label": "Something is in the woods",
+          "label": "Something came out of the dumpster and it talks",
           "weights": {
-            "mystery": 2,
-            "musical": 1
+            "regularshow": 2,
+            "adventuretime": 1
           }
         },
         {
           "id": "d",
-          "label": "A song won't stop playing",
+          "label": "A new alien won't stop following you home",
           "weights": {
-            "musical": 2,
-            "slapstick": 1
+            "ben10": 2,
+            "titans": 1
           }
         }
       ]
@@ -94,19 +94,18 @@
       "options": [
         {
           "id": "a",
-          "label": "A chase scene",
+          "label": "A mission with a ridiculous gadget",
           "weights": {
-            "slapstick": 2,
-            "suburb": 1,
-            "samurai": 1
+            "knd": 2,
+            "ben10": 1
           }
         },
         {
           "id": "b",
-          "label": "A musical number",
+          "label": "A fight that turns into a feelings conversation",
           "weights": {
-            "musical": 2,
-            "space": 1
+            "titans": 2,
+            "powerpuff": 1
           }
         }
       ]
@@ -120,8 +119,8 @@
           "id": "a",
           "label": "A quiet suburban street",
           "weights": {
-            "suburb": 2,
-            "mystery": 1
+            "regularshow": 2,
+            "fosters": 1
           },
           "image": "/images/questions/cartoon-suburb.jpg",
           "alt": "A quiet street of houses"
@@ -130,8 +129,8 @@
           "id": "b",
           "label": "A lab bench and a lamp",
           "weights": {
-            "lab": 2,
-            "space": 1
+            "knd": 2,
+            "ben10": 1
           },
           "image": "/images/questions/villain-lab.jpg",
           "alt": "A bright, empty laboratory"
@@ -140,9 +139,8 @@
           "id": "c",
           "label": "A forest path",
           "weights": {
-            "mystery": 2,
-            "musical": 1,
-            "samurai": 1
+            "adventuretime": 2,
+            "titans": 1
           },
           "image": "/images/questions/class-forest.jpg",
           "alt": "A track running through a forest"
@@ -151,8 +149,8 @@
           "id": "d",
           "label": "A starry sky",
           "weights": {
-            "space": 2,
-            "slapstick": 1
+            "ben10": 2,
+            "adventuretime": 1
           },
           "image": "/images/questions/anime-sky-stars.jpg",
           "alt": "A sky full of stars"
@@ -163,32 +161,32 @@
       "id": "q5",
       "type": "map",
       "prompt": "Plot the episode.",
-      "helper": "Across: logic or nonsense. Up: indoors or out there.",
+      "helper": "Across: ordinary life or secret organisation. Up: our world or another dimension.",
       "x": {
         "low": {
-          "label": "Logic",
-          "trait": "lab"
+          "label": "Ordinary life",
+          "trait": "regularshow"
         },
         "high": {
-          "label": "Nonsense",
-          "trait": "slapstick"
+          "label": "Secret organisation",
+          "trait": "knd"
         }
       },
       "y": {
         "low": {
-          "label": "Indoors",
-          "trait": "suburb"
+          "label": "Our world",
+          "trait": "titans"
         },
         "high": {
-          "label": "Out there",
-          "trait": "space"
+          "label": "Another dimension",
+          "trait": "adventuretime"
         }
       },
       "quadrants": {
-        "lowLow": "The Kitchen Episode",
-        "lowHigh": "The Warehouse Episode",
-        "highLow": "The Invention Episode",
-        "highHigh": "The Space Episode"
+        "lowLow": "The After-School Special",
+        "lowHigh": "The Treehouse Episode",
+        "highLow": "The Team-Up Episode",
+        "highHigh": "The Ooo Episode"
       }
     },
     {
@@ -198,36 +196,35 @@
       "helper": "First place is what every good episode opens with.",
       "items": [
         {
-          "id": "chase",
-          "label": "A stupid chase",
+          "id": "mission",
+          "label": "A mission briefing",
           "weights": {
-            "slapstick": 2,
-            "suburb": 1,
-            "samurai": 1
+            "knd": 2,
+            "powerpuff": 1
           }
         },
         {
-          "id": "gadget",
-          "label": "A gadget that backfires",
+          "id": "fight",
+          "label": "A fight that gets personal",
           "weights": {
-            "lab": 2,
-            "musical": 1
+            "titans": 2,
+            "powerpuff": 1
           }
         },
         {
-          "id": "noise",
-          "label": "A creepy noise",
+          "id": "neighbour",
+          "label": "A weird new friend moving in",
           "weights": {
-            "mystery": 2,
-            "space": 1
+            "fosters": 2,
+            "adventuretime": 1
           }
         },
         {
-          "id": "song",
-          "label": "A song nobody asked for",
+          "id": "job",
+          "label": "A boring job that gets out of hand",
           "weights": {
-            "musical": 2,
-            "lab": 1
+            "regularshow": 2,
+            "knd": 1
           }
         }
       ]
@@ -244,34 +241,34 @@
           "options": [
             {
               "id": "a1",
-              "label": "the kids find a door",
+              "label": "the girls get a call from the mayor",
               "weights": {
-                "suburb": 2,
-                "mystery": 1
+                "powerpuff": 2,
+                "knd": 1
               }
             },
             {
               "id": "a2",
-              "label": "the machine gains a voice",
+              "label": "a new imaginary friend moves in",
               "weights": {
-                "lab": 2,
-                "musical": 1
+                "fosters": 2,
+                "adventuretime": 1
               }
             },
             {
               "id": "a3",
-              "label": "we go to space again",
+              "label": "the watch starts beeping",
               "weights": {
-                "space": 2,
-                "slapstick": 1
+                "ben10": 2,
+                "titans": 1
               }
             },
             {
               "id": "a4",
-              "label": "someone plays a trumpet",
+              "label": "the boss gives us one more job",
               "weights": {
-                "musical": 2,
-                "mystery": 1
+                "regularshow": 2,
+                "fosters": 1
               }
             }
           ]
@@ -281,34 +278,34 @@
           "options": [
             {
               "id": "b1",
-              "label": "and everything explodes",
+              "label": "and nobody tells the adults",
               "weights": {
-                "slapstick": 2,
-                "lab": 1
+                "knd": 2,
+                "powerpuff": 1
               }
             },
             {
               "id": "b2",
-              "label": "and it's fine by dinner",
+              "label": "and it ends with a song nobody planned",
               "weights": {
-                "suburb": 2,
-                "space": 1
+                "adventuretime": 2,
+                "fosters": 1
               }
             },
             {
               "id": "b3",
-              "label": "and nobody explains it",
+              "label": "and it's fine by dinner",
               "weights": {
-                "mystery": 2,
-                "lab": 1
+                "regularshow": 2,
+                "ben10": 1
               }
             },
             {
               "id": "b4",
-              "label": "and the credits roll early",
+              "label": "and someone gets very dramatic about it",
               "weights": {
-                "musical": 2,
-                "suburb": 1
+                "titans": 2,
+                "powerpuff": 1
               }
             }
           ]
@@ -318,32 +315,32 @@
     {
       "id": "q8",
       "type": "intensity",
-      "prompt": "I solve problems with a gadget.",
-      "trait": "lab",
-      "low": "I use my hands",
-      "high": "I built the gadget"
+      "prompt": "I take things personally, dramatically, in front of everyone.",
+      "trait": "titans",
+      "low": "I keep it together",
+      "high": "There is usually weather involved"
     },
     {
       "id": "q9",
       "type": "spectrum",
-      "prompt": "I'd rather be funny than clever.",
+      "prompt": "Kindness fixes more than firepower does.",
       "disagree": {
-        "trait": "lab"
+        "trait": "powerpuff"
       },
       "agree": {
-        "trait": "slapstick"
+        "trait": "fosters"
       }
     },
     {
       "id": "q10",
       "type": "agreement",
-      "prompt": "Every story is better with a chase.",
+      "prompt": "A boring job can turn into an epic if you commit to it.",
       "agree": {
-        "trait": "slapstick",
+        "trait": "regularshow",
         "weight": 2
       },
       "disagree": {
-        "trait": "musical",
+        "trait": "adventuretime",
         "weight": 2
       }
     },
@@ -354,34 +351,34 @@
       "options": [
         {
           "id": "a",
-          "label": "A plate of food and everyone home",
+          "label": "The mayor calling to say thank you",
           "weights": {
-            "suburb": 2,
-            "lab": 1
+            "powerpuff": 2,
+            "knd": 1
           }
         },
         {
           "id": "b",
-          "label": "An explosion and a shrug",
+          "label": "Everyone back at the house, slightly changed",
           "weights": {
-            "slapstick": 2,
-            "space": 1
+            "fosters": 2,
+            "regularshow": 1
           }
         },
         {
           "id": "c",
-          "label": "An unresolved noise",
+          "label": "A weird creature wandering off into the woods",
           "weights": {
-            "mystery": 2,
-            "musical": 1
+            "adventuretime": 2,
+            "titans": 1
           }
         },
         {
           "id": "d",
-          "label": "A song over the credits",
+          "label": "The watch timing out and everything normal again",
           "weights": {
-            "musical": 2,
-            "suburb": 1
+            "ben10": 2,
+            "regularshow": 1
           }
         }
       ]
@@ -393,35 +390,34 @@
       "options": [
         {
           "id": "a",
-          "label": "The kid on the bike",
+          "label": "The tiny one with the highest voice and the most violence",
           "weights": {
-            "suburb": 2,
-            "slapstick": 1
+            "powerpuff": 2,
+            "knd": 1
           }
         },
         {
           "id": "b",
-          "label": "The invention nobody asked for",
+          "label": "The imaginary friend nobody else can see",
           "weights": {
-            "lab": 2,
-            "space": 1
+            "fosters": 2,
+            "adventuretime": 1
           }
         },
         {
           "id": "c",
-          "label": "The one who saw it first",
+          "label": "The sidekick with the good hair and the bad plan",
           "weights": {
-            "mystery": 2,
-            "musical": 1,
-            "samurai": 1
+            "titans": 2,
+            "ben10": 1
           }
         },
         {
           "id": "d",
-          "label": "The alien with a day job",
+          "label": "The one who works the register and knows everything",
           "weights": {
-            "space": 2,
-            "mystery": 1
+            "regularshow": 2,
+            "adventuretime": 1
           }
         }
       ]
@@ -429,158 +425,158 @@
   ],
   "results": [
     {
-      "trait": "suburb",
-      "name": "ED, EDD N EDDY",
-      "tagline": "Nothing happens here. Everything happens here.",
-      "blurb": "Your show is three kids, one dead-end cul-de-sac and a summer with no adults in it. Every plan is a scam, every scam ends in a jawbreaker, and the whole street is one long bit. You would be the one who actually reads the plan out loud.",
-      "accent": "lime",
-      "mix": {
-        "suburb": 40,
-        "lab": 8,
-        "mystery": 11,
-        "space": 8,
-        "slapstick": 11,
-        "musical": 11,
-        "samurai": 11
-      },
-      "strengths": [
-        "Finds the story where you are",
-        "Good at small stakes",
-        "Turns ordinary days into episodes"
-      ],
-      "watchOut": "Not everything has to happen somewhere bigger. Stay for a while."
-    },
-    {
-      "trait": "lab",
-      "name": "DEXTER'S LABORATORY",
-      "tagline": "It was working five minutes ago.",
-      "blurb": "Your show is one secret room under the house, a bench full of glassware and a sister who keeps pressing the big red button. There is always a countdown and always one experiment nobody asked for. You would be the one who is right and ignored, then saves everyone in act three.",
-      "accent": "sky",
-      "mix": {
-        "suburb": 8,
-        "lab": 41,
-        "mystery": 9,
-        "space": 11,
-        "slapstick": 10,
-        "musical": 10,
-        "samurai": 11
-      },
-      "strengths": [
-        "Solves things nobody else can",
-        "Good under a countdown",
-        "Curious past the point of safety"
-      ],
-      "watchOut": "Not every problem needs a machine. Ask first."
-    },
-    {
-      "trait": "mystery",
-      "name": "COURAGE THE COWARDLY DOG",
-      "tagline": "It was probably nothing. It was not nothing.",
-      "blurb": "Your show is a farm outside Nowhere, a computer with opinions and something in the barn that should not be there. Nobody ever gets a clear look at it. You would be the one who goes back anyway, complaining the entire way.",
-      "accent": "green",
-      "mix": {
-        "suburb": 11,
-        "lab": 9,
-        "mystery": 41,
-        "space": 10,
-        "slapstick": 8,
-        "musical": 10,
-        "samurai": 11
-      },
-      "strengths": [
-        "Notices what everyone else misses",
-        "Comfortable with not knowing",
-        "Willing to go and look"
-      ],
-      "watchOut": "Some doors are shut for a reason. Bring someone with you."
-    },
-    {
-      "trait": "space",
-      "name": "BEN 10",
-      "tagline": "The watch is not a toy.",
-      "blurb": "Your show is a summer road trip that keeps getting interrupted by aliens. There is a device on your wrist with a timeout and a grandfather who has clearly done this before. You would be the one who presses it when nobody asked.",
-      "accent": "purple",
-      "mix": {
-        "suburb": 7,
-        "lab": 11,
-        "mystery": 8,
-        "space": 42,
-        "slapstick": 11,
-        "musical": 10,
-        "samurai": 11
-      },
-      "strengths": [
-        "Keeps going when the plan breaks",
-        "Handles strange situations calmly",
-        "Gets the job done anyway"
-      ],
-      "watchOut": "Land somewhere occasionally. The ship can wait."
-    },
-    {
-      "trait": "slapstick",
-      "name": "JOHNNY BRAVO",
-      "tagline": "Someone was supposed to catch that.",
-      "blurb": "Your show is one guy, one pair of sunglasses and a plan that fails in public. Someone gets knocked through a wall, someone says a line that becomes a catchphrase, and it resets in thirty seconds. You would be the one who gets up first.",
-      "accent": "orange",
-      "mix": {
-        "suburb": 11,
-        "lab": 10,
-        "mystery": 8,
-        "space": 11,
-        "slapstick": 41,
-        "musical": 8,
-        "samurai": 11
-      },
-      "strengths": [
-        "Recovers instantly",
-        "Reads a room without words",
-        "Funny when the plan collapses"
-      ],
-      "watchOut": "Not everything is a bit. Let the serious moments land."
-    },
-    {
-      "trait": "musical",
-      "name": "CLASS OF 3000",
-      "tagline": "Nothing rhymes, everything works",
-      "blurb": "Your show is a music school where the plot stops for four bars of saxophone and everyone carries on as if that were normal. Somebody is always late for rehearsal. You would be the one who starts the song.",
+      "trait": "powerpuff",
+      "name": "THE POWERPUFF GIRLS",
+      "tagline": "Saves the city before school",
+      "blurb": "Your life runs on sugar, a strict bedtime and an unreasonable amount of property damage. Somebody calls, you go, the monster is dealt with in eleven minutes and there is homework afterwards. You are small, extremely capable and a little bit terrifying about it.",
       "accent": "pink",
       "mix": {
-        "suburb": 10,
-        "lab": 8,
-        "mystery": 10,
-        "space": 9,
-        "slapstick": 9,
-        "musical": 43,
-        "samurai": 11
+        "powerpuff": 42,
+        "fosters": 9,
+        "knd": 11,
+        "titans": 10,
+        "ben10": 8,
+        "adventuretime": 10,
+        "regularshow": 10
       },
       "strengths": [
-        "Changes the mood of any room",
-        "Finds rhythm in chaos",
-        "Unembarrassed by joy"
+        "Handles a crisis before breakfast",
+        "Fiercely protective of the small stuff",
+        "Never needs a committee to act"
       ],
-      "watchOut": "Sometimes the scene doesn't need a song. Read the room first."
+      "watchOut": "Not every problem is a monster. Ask before you punch through it."
     },
     {
-      "trait": "samurai",
-      "name": "SAMURAI JACK",
-      "tagline": "Has been walking toward the same fight for years",
-      "blurb": "Your episodes are quiet, wide and slow, and the joke lands about forty seconds after everyone else's. You are patient in a way that makes people nervous, and you finish what you start, eventually, in silence. The world is loud. You are not, and that turns out to be the whole power.",
-      "accent": "lime",
+      "trait": "fosters",
+      "name": "FOSTER'S HOME FOR IMAGINARY FRIENDS",
+      "tagline": "The house is full and there's room for one more",
+      "blurb": "Your world is a big, strange house where everyone is welcome and nobody is quite the shape you'd expect. You make room, you explain the rules kindly, and you get attached to people nobody else can see. The chaos is the point, and it is warm.",
+      "accent": "sky",
       "mix": {
-        "samurai": 11,
-        "suburb": 16,
-        "lab": 16,
-        "mystery": 15,
-        "space": 15,
-        "slapstick": 14,
-        "musical": 13
+        "powerpuff": 8,
+        "fosters": 42,
+        "knd": 9,
+        "titans": 8,
+        "ben10": 8,
+        "adventuretime": 13,
+        "regularshow": 12
       },
       "strengths": [
-        "Endless patience for a long goal",
-        "Calm in an actual crisis",
-        "Says more by saying nothing"
+        "Makes space for the odd ones out",
+        "Kind without being a pushover",
+        "Finds the friend nobody else noticed"
       ],
-      "watchOut": "Not every wait is noble. Ask someone to walk the next stretch with you."
+      "watchOut": "You can't adopt every stray. Keep something for yourself."
+    },
+    {
+      "trait": "knd",
+      "name": "CODENAME: KIDS NEXT DOOR",
+      "tagline": "Sector V, reporting for homework",
+      "blurb": "Your life has a treehouse, a codename and a filing system for missions that definitely should not involve a ten-year-old. You are extremely organised, faintly paranoid about adults, and the best gadget in the room was built out of a toaster and a dream.",
+      "accent": "green",
+      "mix": {
+        "powerpuff": 11,
+        "fosters": 9,
+        "knd": 42,
+        "titans": 10,
+        "ben10": 10,
+        "adventuretime": 9,
+        "regularshow": 9
+      },
+      "strengths": [
+        "Plans three exits before entering",
+        "Comfortable giving orders",
+        "Builds the gadget out of nothing"
+      ],
+      "watchOut": "Not every situation needs a codename and a briefing. Loosen up."
+    },
+    {
+      "trait": "titans",
+      "name": "TEEN TITANS",
+      "tagline": "Fights crime, then talks about feelings",
+      "blurb": "Your week alternates between rooftop battles and one very long, very honest conversation about loyalty. You feel everything at full volume and the sky goes dark when you do. Everybody is a little dramatic, and everybody is a little bit right.",
+      "accent": "purple",
+      "mix": {
+        "powerpuff": 10,
+        "fosters": 8,
+        "knd": 10,
+        "titans": 42,
+        "ben10": 10,
+        "adventuretime": 10,
+        "regularshow": 10
+      },
+      "strengths": [
+        "Fiercely loyal to the team",
+        "Takes the emotional stakes seriously",
+        "Committed, publicly"
+      ],
+      "watchOut": "Not every argument is a season finale. Let some things be small."
+    },
+    {
+      "trait": "ben10",
+      "name": "BEN 10",
+      "tagline": "The watch is not a toy",
+      "blurb": "Your life is a road trip that keeps getting interrupted by aliens, and the only thing standing between the world and a very bad afternoon is something on your wrist with a cooldown timer. You press it when nobody asked, and it mostly works out.",
+      "accent": "orange",
+      "mix": {
+        "powerpuff": 8,
+        "fosters": 7,
+        "knd": 11,
+        "titans": 11,
+        "ben10": 42,
+        "adventuretime": 11,
+        "regularshow": 10
+      },
+      "strengths": [
+        "Adapts to a brand-new situation fast",
+        "Keeps going when the plan breaks",
+        "Handles weird calmly"
+      ],
+      "watchOut": "The good option isn't always the newest one. Consider first."
+    },
+    {
+      "trait": "adventuretime",
+      "name": "ADVENTURE TIME",
+      "tagline": "Come on, grab your friends",
+      "blurb": "Your month is a series of small quests across a landscape where nothing makes sense and everything is lovely anyway. There is a song, there is a dungeon, there is a creature with one very specific problem. You would rather find out what is over there than be safe here.",
+      "accent": "lime",
+      "mix": {
+        "powerpuff": 8,
+        "fosters": 12,
+        "knd": 8,
+        "titans": 10,
+        "ben10": 10,
+        "adventuretime": 42,
+        "regularshow": 10
+      },
+      "strengths": [
+        "Curious past the edge of the map",
+        "Finds the wonder in a weird week",
+        "Comfortable with nonsense"
+      ],
+      "watchOut": "Adventure is a fine answer to everything except a direct question."
+    },
+    {
+      "trait": "regularshow",
+      "name": "REGULAR SHOW",
+      "tagline": "It was supposed to be a normal shift",
+      "blurb": "You had one job. Then the job turned out to involve a haunted keyboard, an interdimensional wrestling match and your boss giving you a lift home. You handle it with the energy of someone who is mostly tired but would never leave a mate behind.",
+      "accent": "yellow",
+      "mix": {
+        "powerpuff": 9,
+        "fosters": 10,
+        "knd": 10,
+        "titans": 9,
+        "ben10": 9,
+        "adventuretime": 11,
+        "regularshow": 42
+      },
+      "strengths": [
+        "Turns a boring day into a story",
+        "Rock solid when it gets serious",
+        "Funny without trying"
+      ],
+      "watchOut": "Avoiding the work only makes the episode longer. Do the job."
     }
   ]
 }
