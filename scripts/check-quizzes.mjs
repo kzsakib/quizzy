@@ -27,6 +27,12 @@ for (const file of files) {
   const quiz = JSON.parse(readFileSync(path.join(dir, file), "utf8"));
   const traits = quiz.results.map((result) => result.trait);
 
+  // Titles are a single clean question. Cast restrictions ("side characters
+  // only") and other caveats belong in the dek, not in brackets after the title.
+  if (/[()]/.test(quiz.title)) {
+    fail(`${quiz.slug}: title has a parenthetical — move it to the dek`);
+  }
+
   if (quiz.questions.length < 10 || quiz.questions.length > 20) {
     fail(`${quiz.slug}: ${quiz.questions.length} questions (want 10–20)`);
   }
