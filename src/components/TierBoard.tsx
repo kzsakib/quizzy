@@ -1,4 +1,11 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { onAccentInk } from "../lib/accents";
 import type { TierList } from "../lib/tierlists-types";
 import { siteHref } from "../lib/url";
@@ -31,14 +38,61 @@ export default function TierBoard({ list }: Props) {
   const [selected, setSelected] = useState<string | null>(null);
   const [dragging, setDragging] = useState<string | null>(null);
   const [over, setOver] = useState<string | null>(null);
-  const [justPlaced, setJustPlaced] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const [announcement, setAnnouncement] = useState("");
 
   const ghostRef = useRef<HTMLDivElement>(null);
   const justDragged = useRef(false);
-  const popTimer = useRef<number | undefined>(undefined);
+
+  /* FLIP: remember where every chip sat before a placement, then slide each
+     one from its old box to its new box once React has re-rendered. */
+  type Box = { left: number; top: number; width: number; height: number };
+  const flipFrom = useRef<Map<string, Box> | null>(null);
+
+  const captureChips = useCallback(
+    (override?: { id: string } & Box) => {
+      const boxes = new Map<string, Box>();
+      document.querySelectorAll<HTMLElement>("[data-item-id]").forEach((el) => {
+        const id = el.dataset.itemId;
+        if (!id) return;
+        const rect = el.getBoundingClientRect();
+        boxes.set(id, {
+          left: rect.left,
+          top: rect.top,
+          width: rect.width,
+          height: rect.height,
+        });
+      });
+      if (override) boxes.set(override.id, override);
+      flipFrom.current = boxes;
+    },
+    [],
+  );
+
+  useLayoutEffect(() => {
+    const before = flipFrom.current;
+    flipFrom.current = null;
+    if (!before) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    document.querySelectorAll<HTMLElement>("[data-item-id]").forEach((el) => {
+      const id = el.dataset.itemId;
+      const previous = id ? before.get(id) : undefined;
+      if (!previous) return;
+      const now = el.getBoundingClientRect();
+      const dx = previous.left - now.left;
+      const dy = previous.top - now.top;
+      if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
+      el.animate(
+        [
+          { transform: `translate(${dx}px, ${dy}px)`, opacity: 0.82 },
+          { transform: "translate(0px, 0px)", opacity: 1 },
+        ],
+        { duration: 420, easing: "cubic-bezier(0.22, 1, 0.36, 1)" },
+      );
+    });
+  }, [placements, poolOrder]);
 
   const labels = useMemo(
     () => Object.fromEntries(list.items.map((item) => [item.id, item.label])),
@@ -99,8 +153,6 @@ export default function TierBoard({ list }: Props) {
     }
   }, [placements, poolOrder, storageKey, hydrated]);
 
-  useEffect(() => () => window.clearTimeout(popTimer.current), []);
-
   const placedCount = Object.keys(placements).length;
   const progress = Math.round((placedCount / total) * 100);
   const complete = placedCount === total;
@@ -110,7 +162,8 @@ export default function TierBoard({ list }: Props) {
     .map((id) => ({ id, label: labels[id] }));
 
   const place = useCallback(
-    (id: string, tierId: string) => {
+    (id: string, tierId: string, from?: Box) => {
+      captureChips(from ? { id, ...from } : undefined);
       setPlacements((previous) => {
         const next = { ...previous };
         if (tierId === POOL) delete next[id];
@@ -122,19 +175,13 @@ export default function TierBoard({ list }: Props) {
         return tierId === POOL ? [...without, id] : without;
       });
       setSelected(null);
-      setJustPlaced(id);
-      window.clearTimeout(popTimer.current);
-      popTimer.current = window.setTimeout(
-        () => setJustPlaced((current) => (current === id ? null : current)),
-        460,
-      );
       setAnnouncement(
         tierId === POOL
           ? `${labels[id]} sent back to the pile.`
           : `${labels[id]} placed in ${tierNames[tierId]}.`,
       );
     },
-    [labels, tierNames],
+    [captureChips, labels, tierNames],
   );
 
   const beginDrag = (id: string, event: React.PointerEvent<HTMLElement>) => {
@@ -187,7 +234,13 @@ export default function TierBoard({ list }: Props) {
         .elementFromPoint(upEvent.clientX, upEvent.clientY)
         ?.closest<HTMLElement>("[data-drop-tier]");
       const tierId = under?.dataset.dropTier;
-      if (tierId) place(id, tierId);
+      if (tierId)
+        place(id, tierId, {
+          left: upEvent.clientX - offsetX,
+          top: upEvent.clientY - offsetY,
+          width: rect.width,
+          height: rect.height,
+        });
 
       justDragged.current = true;
       window.setTimeout(() => {
@@ -219,6 +272,7 @@ export default function TierBoard({ list }: Props) {
   };
 
   const reset = () => {
+    captureChips();
     setPlacements({});
     setPoolOrder(list.items.map((item) => item.id));
     setSelected(null);
@@ -226,6 +280,7 @@ export default function TierBoard({ list }: Props) {
   };
 
   const shuffle = () => {
+    captureChips();
     const shuffled = [...poolItems.map((item) => item.id)];
     for (let i = shuffled.length - 1; i > 0; i -= 1) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -367,11 +422,11 @@ export default function TierBoard({ list }: Props) {
             poolItems.map((item) => (
               <Chip
                 key={item.id}
+                itemId={item.id}
                 label={item.label}
                 image={images[item.id]}
                 selected={selected === item.id}
                 dragging={dragging === item.id}
-                fresh={justPlaced === item.id}
                 onPointerDown={(event) => beginDrag(item.id, event)}
                 onClick={() => pick(item.id)}
               />
@@ -460,11 +515,11 @@ export default function TierBoard({ list }: Props) {
                     items.map((item) => (
                       <Chip
                         key={item.id}
+                        itemId={item.id}
                         label={item.label}
                         image={images[item.id]}
                         selected={selected === item.id}
                         dragging={dragging === item.id}
-                        fresh={justPlaced === item.id}
                         onPointerDown={(event) => beginDrag(item.id, event)}
                         onClick={() => pick(item.id)}
                       />
@@ -600,21 +655,21 @@ export default function TierBoard({ list }: Props) {
 }
 
 interface ChipProps {
+  itemId: string;
   label: string;
   image?: string;
   selected: boolean;
   dragging: boolean;
-  fresh: boolean;
   onPointerDown: (event: React.PointerEvent<HTMLButtonElement>) => void;
   onClick: () => void;
 }
 
 function Chip({
+  itemId,
   label,
   image,
   selected,
   dragging,
-  fresh,
   onPointerDown,
   onClick,
 }: ChipProps) {
@@ -622,13 +677,13 @@ function Chip({
     <button
       type="button"
       data-item
+      data-item-id={itemId}
       onPointerDown={onPointerDown}
       onClick={onClick}
       aria-pressed={selected}
       className={[
         "qz-tier-chip inline-flex max-w-full touch-none select-none items-center gap-2 rounded-[var(--r-pill)] border py-1.5 text-[13px] font-medium transition-[transform,background-color,border-color,box-shadow,opacity] duration-200 active:cursor-grabbing",
         image ? "pl-1.5 pr-3.5" : "px-3.5 py-2",
-        fresh ? "qz-tier-chip--in" : "",
         dragging
           ? "scale-95 border-dashed border-ink/25 bg-transparent text-[var(--ink-muted)] opacity-40"
           : selected

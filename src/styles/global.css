@@ -496,10 +496,6 @@
   cursor: grab;
 }
 
-.qz-tier-chip--in {
-  animation: qz-tier-pop 420ms var(--ease-spring) both;
-}
-
 .qz-tier-count {
   animation: qz-tier-bump 380ms var(--ease-spring);
 }
@@ -543,7 +539,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .qz-tier-chip--in,
   .qz-tier-count,
   .qz-tier-hint {
     animation: none;
