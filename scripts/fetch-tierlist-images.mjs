@@ -269,6 +269,276 @@ const BOARDS = {
       whistling: "music",
     },
   },
+  "dumb-ways-to-die": {
+    kind: "lucide",
+    dir: "dumb-ways-to-die",
+    accent: "#ff8a8a",
+    credit: "Icons from Lucide (MIT licence).",
+    refs: {
+      "selfie-cliff": "camera",
+      "vending-machine": "container",
+      "roof-watch-this": "building-2",
+      "texting-crossing": "smartphone",
+      "wasp-nest": "bug",
+      "zoo-fence": "fence",
+      "frozen-pole": "thermometer-snowflake",
+      "firework-hand": "sparkles",
+      "swivel-chair": "armchair",
+      "fork-microwave": "microwave",
+      "mri-necklace": "magnet",
+      "bagel-hand": "utensils",
+      "running-scissors": "scissors",
+      "phone-in-bath": "droplets",
+      "falling-knife": "chef-hat",
+      "cactus-photo": "trees",
+      "car-nap-engine": "car",
+      "shallow-dive": "waves",
+      "hill-skateboard": "mountain",
+      "ironing-worn": "shirt",
+      "train-crossing": "train-front",
+      "bear-photo": "paw-print",
+      "gas-can-fire": "fuel",
+      "pickup-bed": "truck",
+      "unknown-bottle": "flask-conical",
+      "ladder-powerline": "zap",
+      "frozen-lake": "snowflake",
+      "hairdryer-tub": "wind",
+      "crane-climb": "construction",
+      "toaster-knife": "plug-zap",
+    },
+  },
+  "lies-to-avoid-plans": {
+    kind: "lucide",
+    dir: "lies-to-avoid-plans",
+    accent: "#c9a6ff",
+    credit: "Icons from Lucide (MIT licence).",
+    refs: {
+      "stomach-thing": "thermometer",
+      "cat-vet": "cat",
+      "family-thing": "users",
+      "still-at-work": "briefcase",
+      "already-in-bed": "bed",
+      "phone-died": "battery-low",
+      "out-of-town": "plane",
+      "double-booked": "calendar-x",
+      "mum-car": "car",
+      migraine: "pill",
+      antibiotics: "syringe",
+      "early-flight": "plane-takeoff",
+      "mid-move": "package-open",
+      "sitter-cancelled": "baby",
+      "boiler-leak": "wrench",
+      "dog-sitting": "dog",
+      "not-people-today": "battery-warning",
+      traffic: "traffic-cone",
+      dentist: "smile",
+      "dry-january": "glass-water",
+      "back-gone": "person-standing",
+      deadline: "laptop",
+      "train-cancelled": "train-front",
+      "friend-crisis": "life-buoy",
+      "at-parents": "house",
+      "at-the-gym": "dumbbell",
+      "lost-keys": "key-round",
+      "at-the-door": "door-open",
+      "lost-track": "clock",
+      "still-coughing": "biohazard",
+    },
+  },
+  "kdrama-actors": {
+    kind: "wikipedia",
+    wiki: "en",
+    dir: "kdrama-actors",
+    accent: "#8ec9ff",
+    credit:
+      "Portraits from Wikimedia Commons via Wikipedia. Unofficial fan project.",
+    refs: {
+      "hyun-bin": "Hyun Bin",
+      "gong-yoo": "Gong Yoo",
+      "lee-min-ho": "Lee Min-ho",
+      "song-joong-ki": "Song Joong-ki",
+      "park-seo-joon": "Park Seo-joon",
+      "kim-soo-hyun": "Kim Soo-hyun",
+      "lee-dong-wook": "Lee Dong-wook",
+      "jung-hae-in": "Jung Hae-in",
+      "cha-eun-woo": "Cha Eun-woo",
+      "nam-joo-hyuk": "Nam Joo-hyuk",
+      "park-bo-gum": "Park Bo-gum",
+      "seo-in-guk": "Seo In-guk",
+      "ji-chang-wook": "Ji Chang-wook",
+      "lee-jong-suk": "Lee Jong-suk",
+      "kim-woo-bin": "Kim Woo-bin",
+      "lee-joon-gi": "Lee Joon-gi",
+      "joo-ji-hoon": "Joo Ji-hoon",
+      "jang-ki-yong": "Jang Ki-yong",
+      "song-kang": "Song Kang",
+      "ahn-bo-hyun": "Ahn Bo-hyun",
+      rowoon: "Rowoon",
+      "kim-young-dae": "Kim Young-dae",
+      "hwang-in-youp": "Hwang In-youp",
+      "lee-do-hyun": "Lee Do-hyun",
+      "byeon-woo-seok": "Byeon Woo-seok",
+      "wi-ha-joon": "Wi Ha-joon",
+      "kim-seon-ho": "Kim Seon-ho",
+      "choi-woo-shik": "Choi Woo-shik",
+      "yoo-yeon-seok": "Yoo Yeon-seok",
+      "ok-taec-yeon": "Ok Taec-yeon",
+    },
+  },
+  "kdrama-actresses": {
+    kind: "wikipedia",
+    wiki: "en",
+    dir: "kdrama-actresses",
+    accent: "#ffa9c6",
+    credit:
+      "Portraits from Wikimedia Commons via Wikipedia. Unofficial fan project.",
+    refs: {
+      "song-hye-kyo": "Song Hye-kyo",
+      "jun-ji-hyun": "Jun Ji-hyun",
+      "kim-tae-ri": "Kim Tae-ri",
+      "son-ye-jin": "Son Ye-jin",
+      iu: "IU (singer)",
+      "park-shin-hye": "Park Shin-hye",
+      "kim-go-eun": "Kim Go-eun",
+      "han-hyo-joo": "Han Hyo-joo",
+      "shin-min-a": "Shin Min-a",
+      "seo-ye-ji": "Seo Ye-ji",
+      "kim-ji-won": "Kim Ji-won",
+      "bae-suzy": "Bae Suzy",
+      "park-min-young": "Park Min-young",
+      "jung-so-min": "Jung So-min",
+      "kim-yoo-jung": "Kim Yoo-jung",
+      "lee-sung-kyung": "Lee Sung-kyung",
+      "shin-se-kyung": "Shin Se-kyung",
+      "moon-ga-young": "Moon Ga-young",
+      "seo-hyun-jin": "Seo Hyun-jin",
+      "jang-nara": "Jang Nara",
+      "kim-hee-sun": "Kim Hee-sun",
+      "han-ji-min": "Han Ji-min",
+      "lee-bo-young": "Lee Bo-young",
+      "kim-hye-soo": "Kim Hye-soo",
+      "kim-so-yeon": "Kim So-yeon",
+      nana: "Nana (singer)",
+      "chun-woo-hee": "Chun Woo-hee",
+      "go-min-si": "Go Min-si",
+      "kim-da-mi": "Kim Da-mi",
+      "jo-bo-ah": "Jo Bo-ah",
+    },
+  },
+  "pokemon-baby-names": {
+    kind: "fandom",
+    dir: "pokemon-baby-names",
+    wiki: "pokemon",
+    credit: "Pokémon artwork from the Pokémon Wiki (Fandom). Unofficial fan project.",
+    refs: {
+      eevee: "Eevee",
+      roselia: "Roselia",
+      amaura: "Amaura",
+      gardevoir: "Gardevoir",
+      lucario: "Lucario",
+      riolu: "Riolu",
+      sylveon: "Sylveon",
+      leafeon: "Leafeon",
+      glaceon: "Glaceon",
+      umbreon: "Umbreon",
+      espeon: "Espeon",
+      vaporeon: "Vaporeon",
+      jolteon: "Jolteon",
+      flareon: "Flareon",
+      lilligant: "Lilligant",
+      bellossom: "Bellossom",
+      froslass: "Froslass",
+      togepi: "Togepi",
+      cleffa: "Cleffa",
+      igglybuff: "Igglybuff",
+      vulpix: "Vulpix",
+      sprigatito: "Sprigatito",
+      tinkaton: "Tinkaton",
+      mimikyu: "Mimikyu",
+      phantump: "Phantump",
+      absol: "Absol",
+      zorua: "Zorua",
+      chikorita: "Chikorita",
+      piplup: "Piplup",
+      rowlet: "Rowlet",
+    },
+  },
+  "fruits-ranked": {
+    kind: "commons",
+    dir: "fruits",
+    credit:
+      "Photographs from Wikimedia Commons, credited in images/tierlists/fruits/credits.json.",
+    refs: {
+      mango: "mango fruit",
+      strawberry: "strawberry fruit",
+      watermelon: "watermelon slice",
+      grapes: "File:Close up grapes.jpg",
+      banana: "bananas",
+      apple: "apple fruit",
+      orange: "orange fruit",
+      pineapple: "File:Pineapple Fruit.jpg",
+      peach: "peach fruit",
+      cherry: "cherries",
+      blueberry: "blueberries",
+      raspberry: "raspberries",
+      lychee: "lychee fruit",
+      pomegranate: "pomegranate fruit",
+      kiwi: "kiwi fruit sliced",
+      "dragon-fruit": "dragon fruit pitaya",
+      papaya: "papaya sliced fruit",
+      guava: "guava fruit",
+      "passion-fruit": "passion fruit",
+      fig: "fig fruit",
+      pear: "File:Four pears.jpg",
+      plum: "File:Red-Plums.jpg",
+      apricot: "apricot fruit",
+      cantaloupe: "cantaloupe melon sliced",
+      coconut: "coconut half",
+      durian: "durian fruit",
+      persimmon: "persimmon fruit",
+      starfruit: "carambola star fruit",
+      jackfruit: "jackfruit pods",
+      grapefruit: "grapefruit fruit",
+    },
+  },
+  "ice-cream-flavours": {
+    kind: "commons",
+    dir: "ice-cream",
+    credit:
+      "Photographs from Wikimedia Commons, credited in images/tierlists/ice-cream/credits.json.",
+    refs: {
+      vanilla: "vanilla ice cream",
+      chocolate: "chocolate ice cream scoop",
+      strawberry: "strawberry ice cream",
+      "mint-choc-chip": "mint chocolate chip ice cream",
+      "cookies-and-cream":
+        "File:Udders Cookies and Cream Ice Cream (cropped).jpg",
+      pistachio: "pistachio ice cream",
+      "salted-caramel": "File:Salted caramel ice cream (26314112816).jpg",
+      coffee: "coffee ice cream",
+      mango: "mango ice cream scoop",
+      matcha: "matcha ice cream",
+      coconut: "coconut ice cream",
+      "rum-raisin": "rum raisin ice cream",
+      "butter-pecan": "butter pecan ice cream",
+      neapolitan: "neapolitan ice cream",
+      "rocky-road": "rocky road ice cream",
+      "cookie-dough":
+        "File:Chocolate chip cookie dough ice cream with orange spoon.jpg",
+      banana: "banana ice cream scoop",
+      lychee: "lychee ice cream",
+      "black-sesame": "black sesame ice cream",
+      ube: "ube ice cream",
+      taro: "taro ice cream",
+      durian: "durian ice cream scoop",
+      "olive-oil": "olive oil ice cream",
+      "lavender-honey": "lavender honey ice cream",
+      bubblegum: "bubblegum ice cream",
+      "cotton-candy": "File:Cotton Candy Ice Cream 1 2017-05-12.jpg",
+      stracciatella: "stracciatella ice cream",
+      honeycomb: "honeycomb ice cream",
+    },
+  },
   "desserts-fight": {
     kind: "commons",
     dir: "desserts",
@@ -311,7 +581,11 @@ const BOARDS = {
 const clean = (value) => value.replace(/\s+/g, " ").trim();
 
 async function wikiThumbs(wiki, titles) {
-  const url = new URL(`https://${wiki}.fandom.com/api.php`);
+  return hostThumbs(`https://${wiki}.fandom.com/api.php`, wiki, titles);
+}
+
+async function hostThumbs(endpoint, label, titles) {
+  const url = new URL(endpoint);
   url.search = new URLSearchParams({
     action: "query",
     titles: titles.join("|"),
@@ -321,8 +595,13 @@ async function wikiThumbs(wiki, titles) {
     redirects: "1",
   }).toString();
 
-  const response = await fetch(url);
-  if (!response.ok) throw new Error(`${wiki}: API ${response.status}`);
+  const response = await fetch(url, {
+    headers: {
+      "User-Agent":
+        "QuizzyTierLists/1.0 (https://kzsakib.github.io/quizzy/; fan project)",
+    },
+  });
+  if (!response.ok) throw new Error(`${label}: API ${response.status}`);
   const data = await response.json();
   const thumbs = new Map();
   for (const page of Object.values(data.query.pages)) {
@@ -395,6 +674,32 @@ async function commonsPhoto(query) {
   return {
     url: pick.info.thumburl,
     page: pick.info.descriptionurl,
+    creator: meta.Artist?.value?.replace(/<[^>]+>/g, "").trim() || null,
+    licence: meta.LicenseShortName?.value || "Wikimedia Commons",
+  };
+}
+
+async function commonsFile(title) {
+  const url = new URL("https://commons.wikimedia.org/w/api.php");
+  url.search = new URLSearchParams({
+    action: "query",
+    titles: title,
+    prop: "imageinfo",
+    iiprop: "url|extmetadata",
+    iiurlwidth: "600",
+    format: "json",
+  }).toString();
+
+  const response = await commonsFetch(url);
+  if (!response) return null;
+  const data = await response.json();
+  const page = Object.values(data.query?.pages ?? {})[0];
+  const info = page?.imageinfo?.[0];
+  if (!info?.thumburl) return null;
+  const meta = info.extmetadata ?? {};
+  return {
+    url: info.thumburl,
+    page: info.descriptionurl,
     creator: meta.Artist?.value?.replace(/<[^>]+>/g, "").trim() || null,
     licence: meta.LicenseShortName?.value || "Wikimedia Commons",
   };
@@ -474,7 +779,13 @@ for (const [slug, board] of Object.entries(BOARDS).filter(
   const thumbs =
     board.kind === "fandom"
       ? await wikiThumbs(board.wiki, ids.map((id) => board.refs[id]).filter(Boolean))
-      : null;
+      : board.kind === "wikipedia"
+        ? await hostThumbs(
+            "https://en.wikipedia.org/w/api.php",
+            "wikipedia",
+            ids.map((id) => board.refs[id]).filter(Boolean),
+          )
+        : null;
 
   for (const id of ids) {
     const file = `${id}.webp`;
@@ -504,10 +815,53 @@ for (const [slug, board] of Object.entries(BOARDS).filter(
           page: `https://${board.wiki}.fandom.com/wiki/${encodeURIComponent(ref.replaceAll(" ", "_"))}`,
           licence: `Character artwork from the ${board.wiki} Fandom wiki.`,
         };
+      } else if (board.kind === "wikipedia") {
+        const source = thumbs.get(ref);
+        if (!source) {
+          const svg = await lucideSvg("user-round", board.accent);
+          const icon = await sharp(Buffer.from(svg))
+            .resize(Math.round(PX * 0.68), Math.round(PX * 0.68), {
+              fit: "contain",
+              background: { r: 0, g: 0, b: 0, alpha: 0 },
+            })
+            .png()
+            .toBuffer();
+          await sharp({
+            create: {
+              width: PX,
+              height: PX,
+              channels: 4,
+              background: { r: 0, g: 0, b: 0, alpha: 0 },
+            },
+          })
+            .composite([{ input: icon, gravity: "centre" }])
+            .webp({ quality: 80, effort: 6 })
+            .toFile(dest);
+          credits[file] = {
+            icon: "user-round",
+            page: `https://en.wikipedia.org/wiki/${encodeURIComponent(ref.replaceAll(" ", "_"))}`,
+            licence: "MIT (Lucide), no free portrait available",
+          };
+          process.stdout.write("o");
+          continue;
+        }
+        const buffer = await fetchBinary(source);
+        const trimmed = await sharp(buffer).trim({ threshold: 2 }).toBuffer();
+        await sharp(trimmed)
+          .resize(PX, PX, { fit: "cover", position: "north" })
+          .webp({ quality: 74, effort: 6 })
+          .toFile(dest);
+        credits[file] = {
+          person: ref,
+          source,
+          page: `https://en.wikipedia.org/wiki/${encodeURIComponent(ref.replaceAll(" ", "_"))}`,
+          licence: "Wikimedia Commons via Wikipedia.",
+        };
       } else if (board.kind === "commons") {
         await sleep(1200);
-        const photo =
-          (await commonsPhoto(ref)) ?? (await openversePhoto(ref));
+        const photo = ref.startsWith("File:")
+          ? await commonsFile(ref)
+          : ((await commonsPhoto(ref)) ?? (await openversePhoto(ref)));
         if (!photo) {
           missing.push(`${id} (${ref})`);
           continue;

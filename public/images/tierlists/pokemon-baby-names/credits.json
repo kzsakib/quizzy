@@ -1,0 +1,182 @@
+{
+  "eevee.webp": {
+    "character": "Eevee",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/d/d8/0133AEevee.png/revision/latest/scale-to-width-down/500?cb=20260203153649",
+    "page": "https://pokemon.fandom.com/wiki/Eevee",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "roselia.webp": {
+    "character": "Roselia",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/c/cf/0315Roselia.png/revision/latest?cb=20260212115025",
+    "page": "https://pokemon.fandom.com/wiki/Roselia",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "amaura.webp": {
+    "character": "Amaura",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/0/09/0698Amaura.png/revision/latest?cb=20260227162333",
+    "page": "https://pokemon.fandom.com/wiki/Amaura",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "gardevoir.webp": {
+    "character": "Gardevoir",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/f/f8/0282Gardevoir.png/revision/latest/scale-to-width-down/500?cb=20260207063627",
+    "page": "https://pokemon.fandom.com/wiki/Gardevoir",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "lucario.webp": {
+    "character": "Lucario",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/4/42/0448Lucario.png/revision/latest/scale-to-width-down/500?cb=20260223055233",
+    "page": "https://pokemon.fandom.com/wiki/Lucario",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "riolu.webp": {
+    "character": "Riolu",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/b/b2/0447Riolu.png/revision/latest/scale-to-width-down/500?cb=20260223055926",
+    "page": "https://pokemon.fandom.com/wiki/Riolu",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "sylveon.webp": {
+    "character": "Sylveon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/d/d0/0700Sylveon.png/revision/latest/scale-to-width-down/500?cb=20260227162344",
+    "page": "https://pokemon.fandom.com/wiki/Sylveon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "leafeon.webp": {
+    "character": "Leafeon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/8/80/0470Leafeon.png/revision/latest?cb=20260223061351",
+    "page": "https://pokemon.fandom.com/wiki/Leafeon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "glaceon.webp": {
+    "character": "Glaceon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/9/91/0471Glaceon.png/revision/latest?cb=20260223061353",
+    "page": "https://pokemon.fandom.com/wiki/Glaceon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "umbreon.webp": {
+    "character": "Umbreon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/e/e1/0197Umbreon.png/revision/latest?cb=20260207051613",
+    "page": "https://pokemon.fandom.com/wiki/Umbreon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "espeon.webp": {
+    "character": "Espeon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/6/67/0196Espeon.png/revision/latest?cb=20260207051436",
+    "page": "https://pokemon.fandom.com/wiki/Espeon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "vaporeon.webp": {
+    "character": "Vaporeon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/6/6d/0134Vaporeon.png/revision/latest?cb=20260203154515",
+    "page": "https://pokemon.fandom.com/wiki/Vaporeon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "jolteon.webp": {
+    "character": "Jolteon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/e/e3/0135Jolteon.png/revision/latest?cb=20260203154516",
+    "page": "https://pokemon.fandom.com/wiki/Jolteon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "flareon.webp": {
+    "character": "Flareon",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/f/f1/0136Flareon.png/revision/latest?cb=20260203154518",
+    "page": "https://pokemon.fandom.com/wiki/Flareon",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "lilligant.webp": {
+    "character": "Lilligant",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/c/c1/0549Lilligant.png/revision/latest?cb=20260223165505",
+    "page": "https://pokemon.fandom.com/wiki/Lilligant",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "bellossom.webp": {
+    "character": "Bellossom",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/5/51/0182Bellossom.png/revision/latest?cb=20260207045614",
+    "page": "https://pokemon.fandom.com/wiki/Bellossom",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "froslass.webp": {
+    "character": "Froslass",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/5/59/0478Froslass.png/revision/latest?cb=20260223062245",
+    "page": "https://pokemon.fandom.com/wiki/Froslass",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "togepi.webp": {
+    "character": "Togepi",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/0/01/0175Togepi.png/revision/latest?cb=20260207045016",
+    "page": "https://pokemon.fandom.com/wiki/Togepi",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "cleffa.webp": {
+    "character": "Cleffa",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/c/c8/0173Cleffa_Gold_and_Silver.png/revision/latest?cb=20210417232042",
+    "page": "https://pokemon.fandom.com/wiki/Cleffa",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "igglybuff.webp": {
+    "character": "Igglybuff",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/0/06/0174Igglybuff.png/revision/latest?cb=20241017070758",
+    "page": "https://pokemon.fandom.com/wiki/Igglybuff",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "vulpix.webp": {
+    "character": "Vulpix",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/0/06/0037Vulpix.png/revision/latest?cb=20260203100329",
+    "page": "https://pokemon.fandom.com/wiki/Vulpix",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "sprigatito.webp": {
+    "character": "Sprigatito",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/e/e2/0906Sprigatito.png/revision/latest/scale-to-width-down/500?cb=20260323111452",
+    "page": "https://pokemon.fandom.com/wiki/Sprigatito",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "tinkaton.webp": {
+    "character": "Tinkaton",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/b/b1/0959Tinkaton.png/revision/latest/scale-to-width-down/500?cb=20260323125758",
+    "page": "https://pokemon.fandom.com/wiki/Tinkaton",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "mimikyu.webp": {
+    "character": "Mimikyu",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/4/41/0778Mimikyu.png/revision/latest/scale-to-width-down/500?cb=20260322174510",
+    "page": "https://pokemon.fandom.com/wiki/Mimikyu",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "phantump.webp": {
+    "character": "Phantump",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/d/d8/0708Phantump.png/revision/latest?cb=20260227162640",
+    "page": "https://pokemon.fandom.com/wiki/Phantump",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "absol.webp": {
+    "character": "Absol",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/9/9b/0359Absol.png/revision/latest?cb=20260218074652",
+    "page": "https://pokemon.fandom.com/wiki/Absol",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "zorua.webp": {
+    "character": "Zorua",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/0/0d/0570Zorua.png/revision/latest?cb=20260223171052",
+    "page": "https://pokemon.fandom.com/wiki/Zorua",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "chikorita.webp": {
+    "character": "Chikorita",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/b/bc/0152Chikorita.png/revision/latest?cb=20260207042803",
+    "page": "https://pokemon.fandom.com/wiki/Chikorita",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "piplup.webp": {
+    "character": "Piplup",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/b/ba/0393Piplup.png/revision/latest/scale-to-width-down/500?cb=20260218100001",
+    "page": "https://pokemon.fandom.com/wiki/Piplup",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  },
+  "rowlet.webp": {
+    "character": "Rowlet",
+    "source": "https://static.wikia.nocookie.net/pokemon/images/0/0c/0722Rowlet.png/revision/latest?cb=20260322093523",
+    "page": "https://pokemon.fandom.com/wiki/Rowlet",
+    "licence": "Character artwork from the pokemon Fandom wiki."
+  }
+}

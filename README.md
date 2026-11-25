@@ -41,7 +41,7 @@ Phase 2 of 6 — home page plus a playable quiz engine, polished.
 - [x] Result name, tagline and blurb typed out on arrival
 - [x] Inverting blob cursor that follows with lag, morphs and drips on click
 - [x] Muted text tokens checked for WCAG AA contrast in both themes
-- [x] Tier lists: eight drag-and-drop boards with personality-named tiers,
+- [x] Tier lists: fifteen drag-and-drop boards with personality-named tiers,
       pointer/keyboard placement, copy-to-clipboard and local progress
 - [ ] Results polish, share images, remaining accessibility audit, deployment
 

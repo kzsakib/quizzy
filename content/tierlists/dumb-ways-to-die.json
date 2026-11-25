@@ -1,0 +1,195 @@
+{
+  "slug": "dumb-ways-to-die",
+  "title": "The dumb ways you'd actually die",
+  "dek": "Thirty ways to go out, every one of them avoidable, most of them witnessed. Sort them by how loudly the paramedic sighs.",
+  "kicker": "Cause of death",
+  "category": "Personality",
+  "accent": "red",
+  "emoji": "💀",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "darwin",
+      "name": "Gold Darwin Award",
+      "note": "A sign, a fence and three separate warnings, and you still went for it.",
+      "accent": "red"
+    },
+    {
+      "id": "watch-this",
+      "name": "Last words: watch this",
+      "note": "Witnessed by eleven people and filmed in portrait.",
+      "accent": "orange"
+    },
+    {
+      "id": "sign",
+      "name": "There was literally a sign",
+      "note": "The sign had a picture of this exact thing happening to someone else.",
+      "accent": "yellow"
+    },
+    {
+      "id": "luck",
+      "name": "Mostly bad luck",
+      "note": "You followed every rule and the tree still fell on you.",
+      "accent": "cyan"
+    },
+    {
+      "id": "tuesday",
+      "name": "Just a Tuesday",
+      "note": "Barely counts. Happens to everyone. You're fine.",
+      "accent": "lime"
+    }
+  ],
+  "items": [
+    {
+      "id": "selfie-cliff",
+      "label": "Selfie at the cliff edge",
+      "image": "/images/tierlists/dumb-ways-to-die/selfie-cliff.webp"
+    },
+    {
+      "id": "vending-machine",
+      "label": "Shaking the vending machine",
+      "image": "/images/tierlists/dumb-ways-to-die/vending-machine.webp"
+    },
+    {
+      "id": "roof-watch-this",
+      "label": "\"Watch this\" on a roof",
+      "image": "/images/tierlists/dumb-ways-to-die/roof-watch-this.webp"
+    },
+    {
+      "id": "texting-crossing",
+      "label": "Texting at the crossing",
+      "image": "/images/tierlists/dumb-ways-to-die/texting-crossing.webp"
+    },
+    {
+      "id": "wasp-nest",
+      "label": "Poking the wasp nest",
+      "image": "/images/tierlists/dumb-ways-to-die/wasp-nest.webp"
+    },
+    {
+      "id": "zoo-fence",
+      "label": "Jumping the zoo fence",
+      "image": "/images/tierlists/dumb-ways-to-die/zoo-fence.webp"
+    },
+    {
+      "id": "frozen-pole",
+      "label": "Licking a frozen pole",
+      "image": "/images/tierlists/dumb-ways-to-die/frozen-pole.webp"
+    },
+    {
+      "id": "firework-hand",
+      "label": "Holding the firework too long",
+      "image": "/images/tierlists/dumb-ways-to-die/firework-hand.webp"
+    },
+    {
+      "id": "swivel-chair",
+      "label": "Standing on a swivel chair",
+      "image": "/images/tierlists/dumb-ways-to-die/swivel-chair.webp"
+    },
+    {
+      "id": "fork-microwave",
+      "label": "Fork in the microwave",
+      "image": "/images/tierlists/dumb-ways-to-die/fork-microwave.webp"
+    },
+    {
+      "id": "mri-necklace",
+      "label": "Wearing the chain into the MRI",
+      "image": "/images/tierlists/dumb-ways-to-die/mri-necklace.webp"
+    },
+    {
+      "id": "bagel-hand",
+      "label": "Cutting a bagel in your palm",
+      "image": "/images/tierlists/dumb-ways-to-die/bagel-hand.webp"
+    },
+    {
+      "id": "running-scissors",
+      "label": "Running with scissors",
+      "image": "/images/tierlists/dumb-ways-to-die/running-scissors.webp"
+    },
+    {
+      "id": "phone-in-bath",
+      "label": "Charging the phone in the bath",
+      "image": "/images/tierlists/dumb-ways-to-die/phone-in-bath.webp"
+    },
+    {
+      "id": "falling-knife",
+      "label": "Catching a falling knife",
+      "image": "/images/tierlists/dumb-ways-to-die/falling-knife.webp"
+    },
+    {
+      "id": "cactus-photo",
+      "label": "Climbing the cactus for a photo",
+      "image": "/images/tierlists/dumb-ways-to-die/cactus-photo.webp"
+    },
+    {
+      "id": "car-nap-engine",
+      "label": "Napping in a running car",
+      "image": "/images/tierlists/dumb-ways-to-die/car-nap-engine.webp"
+    },
+    {
+      "id": "shallow-dive",
+      "label": "Diving into shallow water",
+      "image": "/images/tierlists/dumb-ways-to-die/shallow-dive.webp"
+    },
+    {
+      "id": "hill-skateboard",
+      "label": "Skateboarding down the hill",
+      "image": "/images/tierlists/dumb-ways-to-die/hill-skateboard.webp"
+    },
+    {
+      "id": "ironing-worn",
+      "label": "Ironing the shirt you're wearing",
+      "image": "/images/tierlists/dumb-ways-to-die/ironing-worn.webp"
+    },
+    {
+      "id": "train-crossing",
+      "label": "Racing the train at the crossing",
+      "image": "/images/tierlists/dumb-ways-to-die/train-crossing.webp"
+    },
+    {
+      "id": "bear-photo",
+      "label": "Getting closer to the bear",
+      "image": "/images/tierlists/dumb-ways-to-die/bear-photo.webp"
+    },
+    {
+      "id": "gas-can-fire",
+      "label": "Warming the gas can by the fire",
+      "image": "/images/tierlists/dumb-ways-to-die/gas-can-fire.webp"
+    },
+    {
+      "id": "pickup-bed",
+      "label": "Riding in the pickup bed",
+      "image": "/images/tierlists/dumb-ways-to-die/pickup-bed.webp"
+    },
+    {
+      "id": "unknown-bottle",
+      "label": "Drinking the garage bottle",
+      "image": "/images/tierlists/dumb-ways-to-die/unknown-bottle.webp"
+    },
+    {
+      "id": "ladder-powerline",
+      "label": "Ladder against the power line",
+      "image": "/images/tierlists/dumb-ways-to-die/ladder-powerline.webp"
+    },
+    {
+      "id": "frozen-lake",
+      "label": "Testing the ice in April",
+      "image": "/images/tierlists/dumb-ways-to-die/frozen-lake.webp"
+    },
+    {
+      "id": "hairdryer-tub",
+      "label": "Hairdryer next to the tub",
+      "image": "/images/tierlists/dumb-ways-to-die/hairdryer-tub.webp"
+    },
+    {
+      "id": "crane-climb",
+      "label": "Climbing the crane for the view",
+      "image": "/images/tierlists/dumb-ways-to-die/crane-climb.webp"
+    },
+    {
+      "id": "toaster-knife",
+      "label": "Fixing the toaster with a knife",
+      "image": "/images/tierlists/dumb-ways-to-die/toaster-knife.webp"
+    }
+  ],
+  "credit": "Icons from Lucide (MIT licence)."
+}

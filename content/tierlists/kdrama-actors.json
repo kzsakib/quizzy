@@ -1,0 +1,195 @@
+{
+  "slug": "kdrama-actors",
+  "title": "The K-drama actors worth a bad script",
+  "dek": "Thirty leading men and one extremely forgiving remote. Sort them by how much of a drama you'd sit through for them alone.",
+  "kicker": "Casting call",
+  "category": "Screen",
+  "accent": "sky",
+  "emoji": "📺",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "alone",
+      "name": "I'd watch it for them alone",
+      "note": "Wrong genre, bad writing, twenty episodes. I'm seated.",
+      "accent": "lime"
+    },
+    {
+      "id": "rescue",
+      "name": "They make a weak script watchable",
+      "note": "The plot is falling apart and you still aren't fast-forwarding.",
+      "accent": "cyan"
+    },
+    {
+      "id": "script",
+      "name": "Great, but the script has to be good",
+      "note": "Same actor. Very different amounts of patience.",
+      "accent": "yellow"
+    },
+    {
+      "id": "reviews",
+      "name": "I'll wait for the reviews",
+      "note": "Two episodes in and my goodwill is gone.",
+      "accent": "orange"
+    },
+    {
+      "id": "not-my-casting",
+      "name": "Not my casting, sorry",
+      "note": "Nothing personal. I'm just not starting it.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    {
+      "id": "hyun-bin",
+      "label": "Hyun Bin",
+      "image": "/images/tierlists/kdrama-actors/hyun-bin.webp"
+    },
+    {
+      "id": "gong-yoo",
+      "label": "Gong Yoo",
+      "image": "/images/tierlists/kdrama-actors/gong-yoo.webp"
+    },
+    {
+      "id": "lee-min-ho",
+      "label": "Lee Min-ho",
+      "image": "/images/tierlists/kdrama-actors/lee-min-ho.webp"
+    },
+    {
+      "id": "song-joong-ki",
+      "label": "Song Joong-ki",
+      "image": "/images/tierlists/kdrama-actors/song-joong-ki.webp"
+    },
+    {
+      "id": "park-seo-joon",
+      "label": "Park Seo-joon",
+      "image": "/images/tierlists/kdrama-actors/park-seo-joon.webp"
+    },
+    {
+      "id": "kim-soo-hyun",
+      "label": "Kim Soo-hyun",
+      "image": "/images/tierlists/kdrama-actors/kim-soo-hyun.webp"
+    },
+    {
+      "id": "lee-dong-wook",
+      "label": "Lee Dong-wook",
+      "image": "/images/tierlists/kdrama-actors/lee-dong-wook.webp"
+    },
+    {
+      "id": "jung-hae-in",
+      "label": "Jung Hae-in",
+      "image": "/images/tierlists/kdrama-actors/jung-hae-in.webp"
+    },
+    {
+      "id": "cha-eun-woo",
+      "label": "Cha Eun-woo",
+      "image": "/images/tierlists/kdrama-actors/cha-eun-woo.webp"
+    },
+    {
+      "id": "nam-joo-hyuk",
+      "label": "Nam Joo-hyuk",
+      "image": "/images/tierlists/kdrama-actors/nam-joo-hyuk.webp"
+    },
+    {
+      "id": "park-bo-gum",
+      "label": "Park Bo-gum",
+      "image": "/images/tierlists/kdrama-actors/park-bo-gum.webp"
+    },
+    {
+      "id": "seo-in-guk",
+      "label": "Seo In-guk",
+      "image": "/images/tierlists/kdrama-actors/seo-in-guk.webp"
+    },
+    {
+      "id": "ji-chang-wook",
+      "label": "Ji Chang-wook",
+      "image": "/images/tierlists/kdrama-actors/ji-chang-wook.webp"
+    },
+    {
+      "id": "lee-jong-suk",
+      "label": "Lee Jong-suk",
+      "image": "/images/tierlists/kdrama-actors/lee-jong-suk.webp"
+    },
+    {
+      "id": "kim-woo-bin",
+      "label": "Kim Woo-bin",
+      "image": "/images/tierlists/kdrama-actors/kim-woo-bin.webp"
+    },
+    {
+      "id": "lee-joon-gi",
+      "label": "Lee Joon-gi",
+      "image": "/images/tierlists/kdrama-actors/lee-joon-gi.webp"
+    },
+    {
+      "id": "joo-ji-hoon",
+      "label": "Joo Ji-hoon",
+      "image": "/images/tierlists/kdrama-actors/joo-ji-hoon.webp"
+    },
+    {
+      "id": "jang-ki-yong",
+      "label": "Jang Ki-yong",
+      "image": "/images/tierlists/kdrama-actors/jang-ki-yong.webp"
+    },
+    {
+      "id": "song-kang",
+      "label": "Song Kang",
+      "image": "/images/tierlists/kdrama-actors/song-kang.webp"
+    },
+    {
+      "id": "ahn-bo-hyun",
+      "label": "Ahn Bo-hyun",
+      "image": "/images/tierlists/kdrama-actors/ahn-bo-hyun.webp"
+    },
+    {
+      "id": "rowoon",
+      "label": "Rowoon",
+      "image": "/images/tierlists/kdrama-actors/rowoon.webp"
+    },
+    {
+      "id": "kim-young-dae",
+      "label": "Kim Young-dae",
+      "image": "/images/tierlists/kdrama-actors/kim-young-dae.webp"
+    },
+    {
+      "id": "hwang-in-youp",
+      "label": "Hwang In-youp",
+      "image": "/images/tierlists/kdrama-actors/hwang-in-youp.webp"
+    },
+    {
+      "id": "lee-do-hyun",
+      "label": "Lee Do-hyun",
+      "image": "/images/tierlists/kdrama-actors/lee-do-hyun.webp"
+    },
+    {
+      "id": "byeon-woo-seok",
+      "label": "Byeon Woo-seok",
+      "image": "/images/tierlists/kdrama-actors/byeon-woo-seok.webp"
+    },
+    {
+      "id": "wi-ha-joon",
+      "label": "Wi Ha-joon",
+      "image": "/images/tierlists/kdrama-actors/wi-ha-joon.webp"
+    },
+    {
+      "id": "kim-seon-ho",
+      "label": "Kim Seon-ho",
+      "image": "/images/tierlists/kdrama-actors/kim-seon-ho.webp"
+    },
+    {
+      "id": "choi-woo-shik",
+      "label": "Choi Woo-shik",
+      "image": "/images/tierlists/kdrama-actors/choi-woo-shik.webp"
+    },
+    {
+      "id": "yoo-yeon-seok",
+      "label": "Yoo Yeon-seok",
+      "image": "/images/tierlists/kdrama-actors/yoo-yeon-seok.webp"
+    },
+    {
+      "id": "ok-taec-yeon",
+      "label": "Ok Taec-yeon",
+      "image": "/images/tierlists/kdrama-actors/ok-taec-yeon.webp"
+    }
+  ],
+  "credit": "Portraits from Wikimedia Commons via Wikipedia. Unofficial fan project."
+}

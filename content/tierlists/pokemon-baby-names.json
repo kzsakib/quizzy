@@ -1,0 +1,195 @@
+{
+  "slug": "pokemon-baby-names",
+  "title": "The Pokémon names you'd put on a birth certificate",
+  "dek": "Thirty names that are technically available. Sort them by how fast the nurse stops writing and looks up at you.",
+  "kicker": "Name registry",
+  "category": "Gaming",
+  "accent": "green",
+  "emoji": "🍼",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "certificate",
+      "name": "Sign the certificate",
+      "note": "Not a joke. You've already picked a middle name to go with it.",
+      "accent": "lime"
+    },
+    {
+      "id": "middle-name",
+      "name": "Middle name only",
+      "note": "A nice little secret between you and the passport office.",
+      "accent": "cyan"
+    },
+    {
+      "id": "nickname",
+      "name": "Nickname at best",
+      "note": "Fine on a coffee cup. Never on a form.",
+      "accent": "yellow"
+    },
+    {
+      "id": "teacher",
+      "name": "The teacher will give up",
+      "note": "Spelled out loud, letter by letter, every September.",
+      "accent": "orange"
+    },
+    {
+      "id": "dog",
+      "name": "Name the dog instead",
+      "note": "Great dog. Absolutely not a person.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    {
+      "id": "eevee",
+      "label": "Eevee",
+      "image": "/images/tierlists/pokemon-baby-names/eevee.webp"
+    },
+    {
+      "id": "roselia",
+      "label": "Roselia",
+      "image": "/images/tierlists/pokemon-baby-names/roselia.webp"
+    },
+    {
+      "id": "amaura",
+      "label": "Amaura",
+      "image": "/images/tierlists/pokemon-baby-names/amaura.webp"
+    },
+    {
+      "id": "gardevoir",
+      "label": "Gardevoir",
+      "image": "/images/tierlists/pokemon-baby-names/gardevoir.webp"
+    },
+    {
+      "id": "lucario",
+      "label": "Lucario",
+      "image": "/images/tierlists/pokemon-baby-names/lucario.webp"
+    },
+    {
+      "id": "riolu",
+      "label": "Riolu",
+      "image": "/images/tierlists/pokemon-baby-names/riolu.webp"
+    },
+    {
+      "id": "sylveon",
+      "label": "Sylveon",
+      "image": "/images/tierlists/pokemon-baby-names/sylveon.webp"
+    },
+    {
+      "id": "leafeon",
+      "label": "Leafeon",
+      "image": "/images/tierlists/pokemon-baby-names/leafeon.webp"
+    },
+    {
+      "id": "glaceon",
+      "label": "Glaceon",
+      "image": "/images/tierlists/pokemon-baby-names/glaceon.webp"
+    },
+    {
+      "id": "umbreon",
+      "label": "Umbreon",
+      "image": "/images/tierlists/pokemon-baby-names/umbreon.webp"
+    },
+    {
+      "id": "espeon",
+      "label": "Espeon",
+      "image": "/images/tierlists/pokemon-baby-names/espeon.webp"
+    },
+    {
+      "id": "vaporeon",
+      "label": "Vaporeon",
+      "image": "/images/tierlists/pokemon-baby-names/vaporeon.webp"
+    },
+    {
+      "id": "jolteon",
+      "label": "Jolteon",
+      "image": "/images/tierlists/pokemon-baby-names/jolteon.webp"
+    },
+    {
+      "id": "flareon",
+      "label": "Flareon",
+      "image": "/images/tierlists/pokemon-baby-names/flareon.webp"
+    },
+    {
+      "id": "lilligant",
+      "label": "Lilligant",
+      "image": "/images/tierlists/pokemon-baby-names/lilligant.webp"
+    },
+    {
+      "id": "bellossom",
+      "label": "Bellossom",
+      "image": "/images/tierlists/pokemon-baby-names/bellossom.webp"
+    },
+    {
+      "id": "froslass",
+      "label": "Froslass",
+      "image": "/images/tierlists/pokemon-baby-names/froslass.webp"
+    },
+    {
+      "id": "togepi",
+      "label": "Togepi",
+      "image": "/images/tierlists/pokemon-baby-names/togepi.webp"
+    },
+    {
+      "id": "cleffa",
+      "label": "Cleffa",
+      "image": "/images/tierlists/pokemon-baby-names/cleffa.webp"
+    },
+    {
+      "id": "igglybuff",
+      "label": "Igglybuff",
+      "image": "/images/tierlists/pokemon-baby-names/igglybuff.webp"
+    },
+    {
+      "id": "vulpix",
+      "label": "Vulpix",
+      "image": "/images/tierlists/pokemon-baby-names/vulpix.webp"
+    },
+    {
+      "id": "sprigatito",
+      "label": "Sprigatito",
+      "image": "/images/tierlists/pokemon-baby-names/sprigatito.webp"
+    },
+    {
+      "id": "tinkaton",
+      "label": "Tinkaton",
+      "image": "/images/tierlists/pokemon-baby-names/tinkaton.webp"
+    },
+    {
+      "id": "mimikyu",
+      "label": "Mimikyu",
+      "image": "/images/tierlists/pokemon-baby-names/mimikyu.webp"
+    },
+    {
+      "id": "phantump",
+      "label": "Phantump",
+      "image": "/images/tierlists/pokemon-baby-names/phantump.webp"
+    },
+    {
+      "id": "absol",
+      "label": "Absol",
+      "image": "/images/tierlists/pokemon-baby-names/absol.webp"
+    },
+    {
+      "id": "zorua",
+      "label": "Zorua",
+      "image": "/images/tierlists/pokemon-baby-names/zorua.webp"
+    },
+    {
+      "id": "chikorita",
+      "label": "Chikorita",
+      "image": "/images/tierlists/pokemon-baby-names/chikorita.webp"
+    },
+    {
+      "id": "piplup",
+      "label": "Piplup",
+      "image": "/images/tierlists/pokemon-baby-names/piplup.webp"
+    },
+    {
+      "id": "rowlet",
+      "label": "Rowlet",
+      "image": "/images/tierlists/pokemon-baby-names/rowlet.webp"
+    }
+  ],
+  "credit": "Pokémon artwork from the Pokémon Wiki (Fandom). Unofficial fan project."
+}

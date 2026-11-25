@@ -1,0 +1,185 @@
+{
+  "slug": "ice-cream-flavours",
+  "title": "The ice cream flavours you'd queue for",
+  "dek": "Twenty-eight tubs, one small wooden spoon, and a freezer with no room left. Sort them by what you'd actually order.",
+  "kicker": "Freezer audit",
+  "category": "Food",
+  "accent": "pink",
+  "emoji": "🍦",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "two-scoops",
+      "name": "Two scoops, no question",
+      "note": "You don't look at the rest of the board. You never have.",
+      "accent": "lime"
+    },
+    {
+      "id": "safe",
+      "name": "The safe order",
+      "note": "Not exciting. Never wrong. Nobody has ever regretted it.",
+      "accent": "cyan"
+    },
+    {
+      "id": "mood",
+      "name": "Only in the right mood",
+      "note": "Once a summer, in a specific town, on a specific day.",
+      "accent": "yellow"
+    },
+    {
+      "id": "one-bite",
+      "name": "One bite is plenty",
+      "note": "You'll take mine, say it's nice, and hand it back.",
+      "accent": "orange"
+    },
+    {
+      "id": "freezer-why",
+      "name": "Why is this in the freezer",
+      "note": "This is a candle. This is a mistake. This is not dessert.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    {
+      "id": "vanilla",
+      "label": "Vanilla",
+      "image": "/images/tierlists/ice-cream/vanilla.webp"
+    },
+    {
+      "id": "chocolate",
+      "label": "Chocolate",
+      "image": "/images/tierlists/ice-cream/chocolate.webp"
+    },
+    {
+      "id": "strawberry",
+      "label": "Strawberry",
+      "image": "/images/tierlists/ice-cream/strawberry.webp"
+    },
+    {
+      "id": "mint-choc-chip",
+      "label": "Mint choc chip",
+      "image": "/images/tierlists/ice-cream/mint-choc-chip.webp"
+    },
+    {
+      "id": "cookies-and-cream",
+      "label": "Cookies and cream",
+      "image": "/images/tierlists/ice-cream/cookies-and-cream.webp"
+    },
+    {
+      "id": "pistachio",
+      "label": "Pistachio",
+      "image": "/images/tierlists/ice-cream/pistachio.webp"
+    },
+    {
+      "id": "salted-caramel",
+      "label": "Salted caramel",
+      "image": "/images/tierlists/ice-cream/salted-caramel.webp"
+    },
+    {
+      "id": "coffee",
+      "label": "Coffee",
+      "image": "/images/tierlists/ice-cream/coffee.webp"
+    },
+    {
+      "id": "mango",
+      "label": "Mango",
+      "image": "/images/tierlists/ice-cream/mango.webp"
+    },
+    {
+      "id": "matcha",
+      "label": "Matcha",
+      "image": "/images/tierlists/ice-cream/matcha.webp"
+    },
+    {
+      "id": "coconut",
+      "label": "Coconut",
+      "image": "/images/tierlists/ice-cream/coconut.webp"
+    },
+    {
+      "id": "rum-raisin",
+      "label": "Rum and raisin",
+      "image": "/images/tierlists/ice-cream/rum-raisin.webp"
+    },
+    {
+      "id": "butter-pecan",
+      "label": "Butter pecan",
+      "image": "/images/tierlists/ice-cream/butter-pecan.webp"
+    },
+    {
+      "id": "neapolitan",
+      "label": "Neapolitan",
+      "image": "/images/tierlists/ice-cream/neapolitan.webp"
+    },
+    {
+      "id": "rocky-road",
+      "label": "Rocky road",
+      "image": "/images/tierlists/ice-cream/rocky-road.webp"
+    },
+    {
+      "id": "cookie-dough",
+      "label": "Cookie dough",
+      "image": "/images/tierlists/ice-cream/cookie-dough.webp"
+    },
+    {
+      "id": "banana",
+      "label": "Banana",
+      "image": "/images/tierlists/ice-cream/banana.webp"
+    },
+    {
+      "id": "lychee",
+      "label": "Lychee",
+      "image": "/images/tierlists/ice-cream/lychee.webp"
+    },
+    {
+      "id": "black-sesame",
+      "label": "Black sesame",
+      "image": "/images/tierlists/ice-cream/black-sesame.webp"
+    },
+    {
+      "id": "ube",
+      "label": "Ube",
+      "image": "/images/tierlists/ice-cream/ube.webp"
+    },
+    {
+      "id": "taro",
+      "label": "Taro",
+      "image": "/images/tierlists/ice-cream/taro.webp"
+    },
+    {
+      "id": "durian",
+      "label": "Durian",
+      "image": "/images/tierlists/ice-cream/durian.webp"
+    },
+    {
+      "id": "olive-oil",
+      "label": "Olive oil",
+      "image": "/images/tierlists/ice-cream/olive-oil.webp"
+    },
+    {
+      "id": "lavender-honey",
+      "label": "Lavender honey",
+      "image": "/images/tierlists/ice-cream/lavender-honey.webp"
+    },
+    {
+      "id": "bubblegum",
+      "label": "Bubblegum",
+      "image": "/images/tierlists/ice-cream/bubblegum.webp"
+    },
+    {
+      "id": "cotton-candy",
+      "label": "Cotton candy",
+      "image": "/images/tierlists/ice-cream/cotton-candy.webp"
+    },
+    {
+      "id": "stracciatella",
+      "label": "Stracciatella",
+      "image": "/images/tierlists/ice-cream/stracciatella.webp"
+    },
+    {
+      "id": "honeycomb",
+      "label": "Honeycomb",
+      "image": "/images/tierlists/ice-cream/honeycomb.webp"
+    }
+  ],
+  "credit": "Photographs from Wikimedia Commons, credited in images/tierlists/ice-cream/credits.json."
+}

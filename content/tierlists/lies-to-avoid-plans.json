@@ -1,0 +1,195 @@
+{
+  "slug": "lies-to-avoid-plans",
+  "title": "The lies you'd tell to get out of tonight",
+  "dek": "Thirty excuses, one group chat, and absolutely no intention of putting shoes on. Sort them by how well they hold up.",
+  "kicker": "Excuse book",
+  "category": "Personality",
+  "accent": "purple",
+  "emoji": "🤥",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "works",
+      "name": "Works every time",
+      "note": "They send a heart emoji. They never ask a follow-up question.",
+      "accent": "lime"
+    },
+    {
+      "id": "once-a-year",
+      "name": "You get one a year",
+      "note": "Perfectly believable. They remember the last time you used it.",
+      "accent": "cyan"
+    },
+    {
+      "id": "no-check",
+      "name": "Only if they don't check",
+      "note": "One glance at your story and the whole thing collapses.",
+      "accent": "yellow"
+    },
+    {
+      "id": "bold",
+      "name": "Bold, insulting, almost admirable",
+      "note": "Nobody believes a word of it. They respect the nerve.",
+      "accent": "orange"
+    },
+    {
+      "id": "known",
+      "name": "They know you're lying",
+      "note": "You're not getting out of it. You're getting roasted for trying.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    {
+      "id": "stomach-thing",
+      "label": "\"I've got a stomach thing\"",
+      "image": "/images/tierlists/lies-to-avoid-plans/stomach-thing.webp"
+    },
+    {
+      "id": "cat-vet",
+      "label": "The cat's at the vet",
+      "image": "/images/tierlists/lies-to-avoid-plans/cat-vet.webp"
+    },
+    {
+      "id": "family-thing",
+      "label": "A family thing, can't explain",
+      "image": "/images/tierlists/lies-to-avoid-plans/family-thing.webp"
+    },
+    {
+      "id": "still-at-work",
+      "label": "Still at work, sorry",
+      "image": "/images/tierlists/lies-to-avoid-plans/still-at-work.webp"
+    },
+    {
+      "id": "already-in-bed",
+      "label": "Already in bed",
+      "image": "/images/tierlists/lies-to-avoid-plans/already-in-bed.webp"
+    },
+    {
+      "id": "phone-died",
+      "label": "Phone died, never saw it",
+      "image": "/images/tierlists/lies-to-avoid-plans/phone-died.webp"
+    },
+    {
+      "id": "out-of-town",
+      "label": "Out of town this weekend",
+      "image": "/images/tierlists/lies-to-avoid-plans/out-of-town.webp"
+    },
+    {
+      "id": "double-booked",
+      "label": "Double-booked, my fault",
+      "image": "/images/tierlists/lies-to-avoid-plans/double-booked.webp"
+    },
+    {
+      "id": "mum-car",
+      "label": "My mum's got the car",
+      "image": "/images/tierlists/lies-to-avoid-plans/mum-car.webp"
+    },
+    {
+      "id": "migraine",
+      "label": "Migraine, lights hurt",
+      "image": "/images/tierlists/lies-to-avoid-plans/migraine.webp"
+    },
+    {
+      "id": "antibiotics",
+      "label": "On antibiotics, can't drink",
+      "image": "/images/tierlists/lies-to-avoid-plans/antibiotics.webp"
+    },
+    {
+      "id": "early-flight",
+      "label": "Early flight tomorrow",
+      "image": "/images/tierlists/lies-to-avoid-plans/early-flight.webp"
+    },
+    {
+      "id": "mid-move",
+      "label": "Mid-move, nothing's unpacked",
+      "image": "/images/tierlists/lies-to-avoid-plans/mid-move.webp"
+    },
+    {
+      "id": "sitter-cancelled",
+      "label": "The sitter cancelled",
+      "image": "/images/tierlists/lies-to-avoid-plans/sitter-cancelled.webp"
+    },
+    {
+      "id": "boiler-leak",
+      "label": "The boiler's leaking",
+      "image": "/images/tierlists/lies-to-avoid-plans/boiler-leak.webp"
+    },
+    {
+      "id": "dog-sitting",
+      "label": "Dog-sitting for my sister",
+      "image": "/images/tierlists/lies-to-avoid-plans/dog-sitting.webp"
+    },
+    {
+      "id": "not-people-today",
+      "label": "\"I'm not feeling very people today\"",
+      "image": "/images/tierlists/lies-to-avoid-plans/not-people-today.webp"
+    },
+    {
+      "id": "traffic",
+      "label": "Traffic is insane",
+      "image": "/images/tierlists/lies-to-avoid-plans/traffic.webp"
+    },
+    {
+      "id": "dentist",
+      "label": "Dentist at eight tomorrow",
+      "image": "/images/tierlists/lies-to-avoid-plans/dentist.webp"
+    },
+    {
+      "id": "dry-january",
+      "label": "Doing dry January",
+      "image": "/images/tierlists/lies-to-avoid-plans/dry-january.webp"
+    },
+    {
+      "id": "back-gone",
+      "label": "My back's gone",
+      "image": "/images/tierlists/lies-to-avoid-plans/back-gone.webp"
+    },
+    {
+      "id": "deadline",
+      "label": "On a deadline, working late",
+      "image": "/images/tierlists/lies-to-avoid-plans/deadline.webp"
+    },
+    {
+      "id": "train-cancelled",
+      "label": "Train's cancelled",
+      "image": "/images/tierlists/lies-to-avoid-plans/train-cancelled.webp"
+    },
+    {
+      "id": "friend-crisis",
+      "label": "My friend's having a crisis",
+      "image": "/images/tierlists/lies-to-avoid-plans/friend-crisis.webp"
+    },
+    {
+      "id": "at-parents",
+      "label": "At my parents' all weekend",
+      "image": "/images/tierlists/lies-to-avoid-plans/at-parents.webp"
+    },
+    {
+      "id": "at-the-gym",
+      "label": "At the gym",
+      "image": "/images/tierlists/lies-to-avoid-plans/at-the-gym.webp"
+    },
+    {
+      "id": "lost-keys",
+      "label": "Can't find my keys",
+      "image": "/images/tierlists/lies-to-avoid-plans/lost-keys.webp"
+    },
+    {
+      "id": "at-the-door",
+      "label": "Someone's at the door, gotta go",
+      "image": "/images/tierlists/lies-to-avoid-plans/at-the-door.webp"
+    },
+    {
+      "id": "lost-track",
+      "label": "Lost track of time",
+      "image": "/images/tierlists/lies-to-avoid-plans/lost-track.webp"
+    },
+    {
+      "id": "still-coughing",
+      "label": "Still not over that cough",
+      "image": "/images/tierlists/lies-to-avoid-plans/still-coughing.webp"
+    }
+  ],
+  "credit": "Icons from Lucide (MIT licence)."
+}

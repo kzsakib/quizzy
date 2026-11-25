@@ -1,0 +1,152 @@
+{
+  "selfie-cliff.webp": {
+    "icon": "camera",
+    "page": "https://lucide.dev/icons/camera",
+    "licence": "MIT (Lucide)"
+  },
+  "vending-machine.webp": {
+    "icon": "container",
+    "page": "https://lucide.dev/icons/container",
+    "licence": "MIT (Lucide)"
+  },
+  "roof-watch-this.webp": {
+    "icon": "building-2",
+    "page": "https://lucide.dev/icons/building-2",
+    "licence": "MIT (Lucide)"
+  },
+  "texting-crossing.webp": {
+    "icon": "smartphone",
+    "page": "https://lucide.dev/icons/smartphone",
+    "licence": "MIT (Lucide)"
+  },
+  "wasp-nest.webp": {
+    "icon": "bug",
+    "page": "https://lucide.dev/icons/bug",
+    "licence": "MIT (Lucide)"
+  },
+  "zoo-fence.webp": {
+    "icon": "fence",
+    "page": "https://lucide.dev/icons/fence",
+    "licence": "MIT (Lucide)"
+  },
+  "frozen-pole.webp": {
+    "icon": "thermometer-snowflake",
+    "page": "https://lucide.dev/icons/thermometer-snowflake",
+    "licence": "MIT (Lucide)"
+  },
+  "firework-hand.webp": {
+    "icon": "sparkles",
+    "page": "https://lucide.dev/icons/sparkles",
+    "licence": "MIT (Lucide)"
+  },
+  "swivel-chair.webp": {
+    "icon": "armchair",
+    "page": "https://lucide.dev/icons/armchair",
+    "licence": "MIT (Lucide)"
+  },
+  "fork-microwave.webp": {
+    "icon": "microwave",
+    "page": "https://lucide.dev/icons/microwave",
+    "licence": "MIT (Lucide)"
+  },
+  "mri-necklace.webp": {
+    "icon": "magnet",
+    "page": "https://lucide.dev/icons/magnet",
+    "licence": "MIT (Lucide)"
+  },
+  "bagel-hand.webp": {
+    "icon": "utensils",
+    "page": "https://lucide.dev/icons/utensils",
+    "licence": "MIT (Lucide)"
+  },
+  "running-scissors.webp": {
+    "icon": "scissors",
+    "page": "https://lucide.dev/icons/scissors",
+    "licence": "MIT (Lucide)"
+  },
+  "phone-in-bath.webp": {
+    "icon": "droplets",
+    "page": "https://lucide.dev/icons/droplets",
+    "licence": "MIT (Lucide)"
+  },
+  "falling-knife.webp": {
+    "icon": "chef-hat",
+    "page": "https://lucide.dev/icons/chef-hat",
+    "licence": "MIT (Lucide)"
+  },
+  "cactus-photo.webp": {
+    "icon": "trees",
+    "page": "https://lucide.dev/icons/trees",
+    "licence": "MIT (Lucide)"
+  },
+  "car-nap-engine.webp": {
+    "icon": "car",
+    "page": "https://lucide.dev/icons/car",
+    "licence": "MIT (Lucide)"
+  },
+  "shallow-dive.webp": {
+    "icon": "waves",
+    "page": "https://lucide.dev/icons/waves",
+    "licence": "MIT (Lucide)"
+  },
+  "hill-skateboard.webp": {
+    "icon": "mountain",
+    "page": "https://lucide.dev/icons/mountain",
+    "licence": "MIT (Lucide)"
+  },
+  "ironing-worn.webp": {
+    "icon": "shirt",
+    "page": "https://lucide.dev/icons/shirt",
+    "licence": "MIT (Lucide)"
+  },
+  "train-crossing.webp": {
+    "icon": "train-front",
+    "page": "https://lucide.dev/icons/train-front",
+    "licence": "MIT (Lucide)"
+  },
+  "bear-photo.webp": {
+    "icon": "paw-print",
+    "page": "https://lucide.dev/icons/paw-print",
+    "licence": "MIT (Lucide)"
+  },
+  "gas-can-fire.webp": {
+    "icon": "fuel",
+    "page": "https://lucide.dev/icons/fuel",
+    "licence": "MIT (Lucide)"
+  },
+  "pickup-bed.webp": {
+    "icon": "truck",
+    "page": "https://lucide.dev/icons/truck",
+    "licence": "MIT (Lucide)"
+  },
+  "unknown-bottle.webp": {
+    "icon": "flask-conical",
+    "page": "https://lucide.dev/icons/flask-conical",
+    "licence": "MIT (Lucide)"
+  },
+  "ladder-powerline.webp": {
+    "icon": "zap",
+    "page": "https://lucide.dev/icons/zap",
+    "licence": "MIT (Lucide)"
+  },
+  "frozen-lake.webp": {
+    "icon": "snowflake",
+    "page": "https://lucide.dev/icons/snowflake",
+    "licence": "MIT (Lucide)"
+  },
+  "hairdryer-tub.webp": {
+    "icon": "wind",
+    "page": "https://lucide.dev/icons/wind",
+    "licence": "MIT (Lucide)"
+  },
+  "crane-climb.webp": {
+    "icon": "construction",
+    "page": "https://lucide.dev/icons/construction",
+    "licence": "MIT (Lucide)"
+  },
+  "toaster-knife.webp": {
+    "icon": "plug-zap",
+    "page": "https://lucide.dev/icons/plug-zap",
+    "licence": "MIT (Lucide)"
+  }
+}

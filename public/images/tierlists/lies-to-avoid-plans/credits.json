@@ -1,0 +1,152 @@
+{
+  "stomach-thing.webp": {
+    "icon": "thermometer",
+    "page": "https://lucide.dev/icons/thermometer",
+    "licence": "MIT (Lucide)"
+  },
+  "cat-vet.webp": {
+    "icon": "cat",
+    "page": "https://lucide.dev/icons/cat",
+    "licence": "MIT (Lucide)"
+  },
+  "family-thing.webp": {
+    "icon": "users",
+    "page": "https://lucide.dev/icons/users",
+    "licence": "MIT (Lucide)"
+  },
+  "still-at-work.webp": {
+    "icon": "briefcase",
+    "page": "https://lucide.dev/icons/briefcase",
+    "licence": "MIT (Lucide)"
+  },
+  "already-in-bed.webp": {
+    "icon": "bed",
+    "page": "https://lucide.dev/icons/bed",
+    "licence": "MIT (Lucide)"
+  },
+  "phone-died.webp": {
+    "icon": "battery-low",
+    "page": "https://lucide.dev/icons/battery-low",
+    "licence": "MIT (Lucide)"
+  },
+  "out-of-town.webp": {
+    "icon": "plane",
+    "page": "https://lucide.dev/icons/plane",
+    "licence": "MIT (Lucide)"
+  },
+  "double-booked.webp": {
+    "icon": "calendar-x",
+    "page": "https://lucide.dev/icons/calendar-x",
+    "licence": "MIT (Lucide)"
+  },
+  "mum-car.webp": {
+    "icon": "car",
+    "page": "https://lucide.dev/icons/car",
+    "licence": "MIT (Lucide)"
+  },
+  "migraine.webp": {
+    "icon": "pill",
+    "page": "https://lucide.dev/icons/pill",
+    "licence": "MIT (Lucide)"
+  },
+  "antibiotics.webp": {
+    "icon": "syringe",
+    "page": "https://lucide.dev/icons/syringe",
+    "licence": "MIT (Lucide)"
+  },
+  "early-flight.webp": {
+    "icon": "plane-takeoff",
+    "page": "https://lucide.dev/icons/plane-takeoff",
+    "licence": "MIT (Lucide)"
+  },
+  "mid-move.webp": {
+    "icon": "package-open",
+    "page": "https://lucide.dev/icons/package-open",
+    "licence": "MIT (Lucide)"
+  },
+  "sitter-cancelled.webp": {
+    "icon": "baby",
+    "page": "https://lucide.dev/icons/baby",
+    "licence": "MIT (Lucide)"
+  },
+  "boiler-leak.webp": {
+    "icon": "wrench",
+    "page": "https://lucide.dev/icons/wrench",
+    "licence": "MIT (Lucide)"
+  },
+  "dog-sitting.webp": {
+    "icon": "dog",
+    "page": "https://lucide.dev/icons/dog",
+    "licence": "MIT (Lucide)"
+  },
+  "not-people-today.webp": {
+    "icon": "battery-warning",
+    "page": "https://lucide.dev/icons/battery-warning",
+    "licence": "MIT (Lucide)"
+  },
+  "traffic.webp": {
+    "icon": "traffic-cone",
+    "page": "https://lucide.dev/icons/traffic-cone",
+    "licence": "MIT (Lucide)"
+  },
+  "dentist.webp": {
+    "icon": "smile",
+    "page": "https://lucide.dev/icons/smile",
+    "licence": "MIT (Lucide)"
+  },
+  "dry-january.webp": {
+    "icon": "glass-water",
+    "page": "https://lucide.dev/icons/glass-water",
+    "licence": "MIT (Lucide)"
+  },
+  "back-gone.webp": {
+    "icon": "person-standing",
+    "page": "https://lucide.dev/icons/person-standing",
+    "licence": "MIT (Lucide)"
+  },
+  "deadline.webp": {
+    "icon": "laptop",
+    "page": "https://lucide.dev/icons/laptop",
+    "licence": "MIT (Lucide)"
+  },
+  "train-cancelled.webp": {
+    "icon": "train-front",
+    "page": "https://lucide.dev/icons/train-front",
+    "licence": "MIT (Lucide)"
+  },
+  "friend-crisis.webp": {
+    "icon": "life-buoy",
+    "page": "https://lucide.dev/icons/life-buoy",
+    "licence": "MIT (Lucide)"
+  },
+  "at-parents.webp": {
+    "icon": "house",
+    "page": "https://lucide.dev/icons/house",
+    "licence": "MIT (Lucide)"
+  },
+  "at-the-gym.webp": {
+    "icon": "dumbbell",
+    "page": "https://lucide.dev/icons/dumbbell",
+    "licence": "MIT (Lucide)"
+  },
+  "lost-keys.webp": {
+    "icon": "key-round",
+    "page": "https://lucide.dev/icons/key-round",
+    "licence": "MIT (Lucide)"
+  },
+  "at-the-door.webp": {
+    "icon": "door-open",
+    "page": "https://lucide.dev/icons/door-open",
+    "licence": "MIT (Lucide)"
+  },
+  "lost-track.webp": {
+    "icon": "clock",
+    "page": "https://lucide.dev/icons/clock",
+    "licence": "MIT (Lucide)"
+  },
+  "still-coughing.webp": {
+    "icon": "biohazard",
+    "page": "https://lucide.dev/icons/biohazard",
+    "licence": "MIT (Lucide)"
+  }
+}

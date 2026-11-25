@@ -1,0 +1,195 @@
+{
+  "slug": "fruits-ranked",
+  "title": "The fruits worth the effort of peeling",
+  "dek": "Thirty fruits, one very sharp knife, and a fridge drawer that tells the truth. Sort them by how often they actually make it home with you.",
+  "kicker": "Produce aisle",
+  "category": "Food",
+  "accent": "lime",
+  "emoji": "🍉",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "weekly",
+      "name": "In the basket every week",
+      "note": "Non-negotiable. There is always one on the counter.",
+      "accent": "lime"
+    },
+    {
+      "id": "perfect",
+      "name": "Only when it's perfect",
+      "note": "One soft spot and the whole thing is a disappointment.",
+      "accent": "cyan"
+    },
+    {
+      "id": "salad",
+      "name": "Fine in a fruit salad",
+      "note": "You'd never buy it alone. You'll eat it off a platter.",
+      "accent": "yellow"
+    },
+    {
+      "id": "effort",
+      "name": "Too much effort",
+      "note": "The knife, the board, the juice on the counter. No.",
+      "accent": "orange"
+    },
+    {
+      "id": "why",
+      "name": "Why does this exist",
+      "note": "Somebody looked at this and decided it was food.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    {
+      "id": "mango",
+      "label": "Mango",
+      "image": "/images/tierlists/fruits/mango.webp"
+    },
+    {
+      "id": "strawberry",
+      "label": "Strawberry",
+      "image": "/images/tierlists/fruits/strawberry.webp"
+    },
+    {
+      "id": "watermelon",
+      "label": "Watermelon",
+      "image": "/images/tierlists/fruits/watermelon.webp"
+    },
+    {
+      "id": "grapes",
+      "label": "Grapes",
+      "image": "/images/tierlists/fruits/grapes.webp"
+    },
+    {
+      "id": "banana",
+      "label": "Banana",
+      "image": "/images/tierlists/fruits/banana.webp"
+    },
+    {
+      "id": "apple",
+      "label": "Apple",
+      "image": "/images/tierlists/fruits/apple.webp"
+    },
+    {
+      "id": "orange",
+      "label": "Orange",
+      "image": "/images/tierlists/fruits/orange.webp"
+    },
+    {
+      "id": "pineapple",
+      "label": "Pineapple",
+      "image": "/images/tierlists/fruits/pineapple.webp"
+    },
+    {
+      "id": "peach",
+      "label": "Peach",
+      "image": "/images/tierlists/fruits/peach.webp"
+    },
+    {
+      "id": "cherry",
+      "label": "Cherries",
+      "image": "/images/tierlists/fruits/cherry.webp"
+    },
+    {
+      "id": "blueberry",
+      "label": "Blueberries",
+      "image": "/images/tierlists/fruits/blueberry.webp"
+    },
+    {
+      "id": "raspberry",
+      "label": "Raspberries",
+      "image": "/images/tierlists/fruits/raspberry.webp"
+    },
+    {
+      "id": "lychee",
+      "label": "Lychee",
+      "image": "/images/tierlists/fruits/lychee.webp"
+    },
+    {
+      "id": "pomegranate",
+      "label": "Pomegranate",
+      "image": "/images/tierlists/fruits/pomegranate.webp"
+    },
+    {
+      "id": "kiwi",
+      "label": "Kiwi",
+      "image": "/images/tierlists/fruits/kiwi.webp"
+    },
+    {
+      "id": "dragon-fruit",
+      "label": "Dragon fruit",
+      "image": "/images/tierlists/fruits/dragon-fruit.webp"
+    },
+    {
+      "id": "papaya",
+      "label": "Papaya",
+      "image": "/images/tierlists/fruits/papaya.webp"
+    },
+    {
+      "id": "guava",
+      "label": "Guava",
+      "image": "/images/tierlists/fruits/guava.webp"
+    },
+    {
+      "id": "passion-fruit",
+      "label": "Passion fruit",
+      "image": "/images/tierlists/fruits/passion-fruit.webp"
+    },
+    {
+      "id": "fig",
+      "label": "Fig",
+      "image": "/images/tierlists/fruits/fig.webp"
+    },
+    {
+      "id": "pear",
+      "label": "Pear",
+      "image": "/images/tierlists/fruits/pear.webp"
+    },
+    {
+      "id": "plum",
+      "label": "Plum",
+      "image": "/images/tierlists/fruits/plum.webp"
+    },
+    {
+      "id": "apricot",
+      "label": "Apricot",
+      "image": "/images/tierlists/fruits/apricot.webp"
+    },
+    {
+      "id": "cantaloupe",
+      "label": "Cantaloupe",
+      "image": "/images/tierlists/fruits/cantaloupe.webp"
+    },
+    {
+      "id": "coconut",
+      "label": "Coconut",
+      "image": "/images/tierlists/fruits/coconut.webp"
+    },
+    {
+      "id": "durian",
+      "label": "Durian",
+      "image": "/images/tierlists/fruits/durian.webp"
+    },
+    {
+      "id": "persimmon",
+      "label": "Persimmon",
+      "image": "/images/tierlists/fruits/persimmon.webp"
+    },
+    {
+      "id": "starfruit",
+      "label": "Star fruit",
+      "image": "/images/tierlists/fruits/starfruit.webp"
+    },
+    {
+      "id": "jackfruit",
+      "label": "Jackfruit",
+      "image": "/images/tierlists/fruits/jackfruit.webp"
+    },
+    {
+      "id": "grapefruit",
+      "label": "Grapefruit",
+      "image": "/images/tierlists/fruits/grapefruit.webp"
+    }
+  ],
+  "credit": "Photographs from Wikimedia Commons, credited in images/tierlists/fruits/credits.json."
+}

@@ -1,0 +1,195 @@
+{
+  "slug": "kdrama-actresses",
+  "title": "The K-drama actresses who carry the whole show",
+  "dek": "Thirty leading women and a strict policy on second leads. Sort them by how far into a drama their name alone gets you.",
+  "kicker": "Casting call",
+  "category": "Screen",
+  "accent": "pink",
+  "emoji": "🌸",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "carry",
+      "name": "The reason it got made",
+      "note": "You'd read the synopsis once and commit to sixteen episodes.",
+      "accent": "lime"
+    },
+    {
+      "id": "rescue",
+      "name": "Saves a bad script",
+      "note": "Everything around her is collapsing and she's still the best thing on screen.",
+      "accent": "cyan"
+    },
+    {
+      "id": "script",
+      "name": "Needs a good script",
+      "note": "Brilliant when it's written well. Unwatchable when it isn't.",
+      "accent": "yellow"
+    },
+    {
+      "id": "reviews",
+      "name": "Reviews first",
+      "note": "I'll be in the comments asking if it's worth it.",
+      "accent": "orange"
+    },
+    {
+      "id": "not-for-me",
+      "name": "Not for me",
+      "note": "Respect the career. Won't be pressing play.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    {
+      "id": "song-hye-kyo",
+      "label": "Song Hye-kyo",
+      "image": "/images/tierlists/kdrama-actresses/song-hye-kyo.webp"
+    },
+    {
+      "id": "jun-ji-hyun",
+      "label": "Jun Ji-hyun",
+      "image": "/images/tierlists/kdrama-actresses/jun-ji-hyun.webp"
+    },
+    {
+      "id": "kim-tae-ri",
+      "label": "Kim Tae-ri",
+      "image": "/images/tierlists/kdrama-actresses/kim-tae-ri.webp"
+    },
+    {
+      "id": "son-ye-jin",
+      "label": "Son Ye-jin",
+      "image": "/images/tierlists/kdrama-actresses/son-ye-jin.webp"
+    },
+    {
+      "id": "iu",
+      "label": "IU",
+      "image": "/images/tierlists/kdrama-actresses/iu.webp"
+    },
+    {
+      "id": "park-shin-hye",
+      "label": "Park Shin-hye",
+      "image": "/images/tierlists/kdrama-actresses/park-shin-hye.webp"
+    },
+    {
+      "id": "kim-go-eun",
+      "label": "Kim Go-eun",
+      "image": "/images/tierlists/kdrama-actresses/kim-go-eun.webp"
+    },
+    {
+      "id": "han-hyo-joo",
+      "label": "Han Hyo-joo",
+      "image": "/images/tierlists/kdrama-actresses/han-hyo-joo.webp"
+    },
+    {
+      "id": "shin-min-a",
+      "label": "Shin Min-a",
+      "image": "/images/tierlists/kdrama-actresses/shin-min-a.webp"
+    },
+    {
+      "id": "seo-ye-ji",
+      "label": "Seo Ye-ji",
+      "image": "/images/tierlists/kdrama-actresses/seo-ye-ji.webp"
+    },
+    {
+      "id": "kim-ji-won",
+      "label": "Kim Ji-won",
+      "image": "/images/tierlists/kdrama-actresses/kim-ji-won.webp"
+    },
+    {
+      "id": "bae-suzy",
+      "label": "Bae Suzy",
+      "image": "/images/tierlists/kdrama-actresses/bae-suzy.webp"
+    },
+    {
+      "id": "park-min-young",
+      "label": "Park Min-young",
+      "image": "/images/tierlists/kdrama-actresses/park-min-young.webp"
+    },
+    {
+      "id": "jung-so-min",
+      "label": "Jung So-min",
+      "image": "/images/tierlists/kdrama-actresses/jung-so-min.webp"
+    },
+    {
+      "id": "kim-yoo-jung",
+      "label": "Kim Yoo-jung",
+      "image": "/images/tierlists/kdrama-actresses/kim-yoo-jung.webp"
+    },
+    {
+      "id": "lee-sung-kyung",
+      "label": "Lee Sung-kyung",
+      "image": "/images/tierlists/kdrama-actresses/lee-sung-kyung.webp"
+    },
+    {
+      "id": "shin-se-kyung",
+      "label": "Shin Se-kyung",
+      "image": "/images/tierlists/kdrama-actresses/shin-se-kyung.webp"
+    },
+    {
+      "id": "moon-ga-young",
+      "label": "Moon Ga-young",
+      "image": "/images/tierlists/kdrama-actresses/moon-ga-young.webp"
+    },
+    {
+      "id": "seo-hyun-jin",
+      "label": "Seo Hyun-jin",
+      "image": "/images/tierlists/kdrama-actresses/seo-hyun-jin.webp"
+    },
+    {
+      "id": "jang-nara",
+      "label": "Jang Nara",
+      "image": "/images/tierlists/kdrama-actresses/jang-nara.webp"
+    },
+    {
+      "id": "kim-hee-sun",
+      "label": "Kim Hee-sun",
+      "image": "/images/tierlists/kdrama-actresses/kim-hee-sun.webp"
+    },
+    {
+      "id": "han-ji-min",
+      "label": "Han Ji-min",
+      "image": "/images/tierlists/kdrama-actresses/han-ji-min.webp"
+    },
+    {
+      "id": "lee-bo-young",
+      "label": "Lee Bo-young",
+      "image": "/images/tierlists/kdrama-actresses/lee-bo-young.webp"
+    },
+    {
+      "id": "kim-hye-soo",
+      "label": "Kim Hye-soo",
+      "image": "/images/tierlists/kdrama-actresses/kim-hye-soo.webp"
+    },
+    {
+      "id": "kim-so-yeon",
+      "label": "Kim So-yeon",
+      "image": "/images/tierlists/kdrama-actresses/kim-so-yeon.webp"
+    },
+    {
+      "id": "nana",
+      "label": "Nana",
+      "image": "/images/tierlists/kdrama-actresses/nana.webp"
+    },
+    {
+      "id": "chun-woo-hee",
+      "label": "Chun Woo-hee",
+      "image": "/images/tierlists/kdrama-actresses/chun-woo-hee.webp"
+    },
+    {
+      "id": "go-min-si",
+      "label": "Go Min-si",
+      "image": "/images/tierlists/kdrama-actresses/go-min-si.webp"
+    },
+    {
+      "id": "kim-da-mi",
+      "label": "Kim Da-mi",
+      "image": "/images/tierlists/kdrama-actresses/kim-da-mi.webp"
+    },
+    {
+      "id": "jo-bo-ah",
+      "label": "Jo Bo-ah",
+      "image": "/images/tierlists/kdrama-actresses/jo-bo-ah.webp"
+    }
+  ],
+  "credit": "Portraits from Wikimedia Commons via Wikipedia. Unofficial fan project."
+}
