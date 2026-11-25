@@ -8,7 +8,7 @@ import sharp from "sharp";
 
 const LIST = "content/tierlists/jjk-curses-to-befriend.json";
 const OUT = "public/images/tierlists/jjk";
-const PX = 112; // displayed at 28–40px, so this covers 2x screens
+const PX = 176; // displayed at 44px, so this covers 2x and 3x screens
 
 /* Item id → wiki page title. */
 const PAGES = {
@@ -74,9 +74,18 @@ for (const [id, page] of Object.entries(PAGES)) {
   const buffer = new Uint8Array(await image.arrayBuffer());
 
   const file = `${id}.webp`;
-  await sharp(buffer)
-    .resize(PX, PX, { fit: "cover", position: sharp.strategy.attention })
-    .webp({ quality: 70, effort: 6 })
+  /* Character renders are mostly portrait and transparent. Trim the empty
+     border, then crop the square from the top so the head is never the part
+     that gets cut off. */
+  let trimmed = buffer;
+  try {
+    trimmed = await sharp(buffer).trim({ threshold: 2 }).toBuffer();
+  } catch {
+    /* fully opaque artwork: use it as-is */
+  }
+  await sharp(trimmed)
+    .resize(PX, PX, { fit: "cover", position: "north" })
+    .webp({ quality: 74, effort: 6 })
     .toFile(path.join(OUT, file));
 
   credits[file] = {
