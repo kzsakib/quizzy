@@ -228,9 +228,11 @@ tiers and 20–40 items; tiers are named for a personality, never `S`/`A`/`B`.
 `TierBoard.tsx` is a single React island. Dragging uses pointer events with a
 fixed-position ghost moved directly through the DOM (no re-render per frame),
 while a tap selects an item and the next tap on a tier places it — the same
-path works with a keyboard and on touch. Placements and pile order are stored
-in `localStorage` under `qz:tier:<slug>`, and the finished board can be copied
-as plain text.
+path works with a keyboard and on touch. Dropping a chip back into its own
+tier (or into a spot between two chips) reorders it, with a caret showing the
+insertion point. Placements, pile order and each tier's order are stored in
+`localStorage` under `qz:tier:<slug>`, and the finished board can be copied as
+plain text.
 
 ## Deployment
 
