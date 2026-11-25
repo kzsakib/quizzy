@@ -265,9 +265,9 @@ export default function TierBoard({ list }: Props) {
   return (
     <div className="mx-auto w-full max-w-[1040px]">
       {/* Toolbar ---------------------------------------------------- */}
-      <div className="sticky top-[80px] z-30 flex flex-wrap items-center gap-2.5 rounded-[var(--r-pill)] border border-line bg-surface/85 px-3 py-2.5 backdrop-blur-md sm:top-[92px] sm:flex-nowrap sm:gap-3 sm:px-4">
+      <div className="sticky top-[80px] z-30 flex flex-wrap items-center gap-2 rounded-[var(--r-card)] border border-line bg-surface/85 px-3 py-2.5 backdrop-blur-md sm:top-[92px] sm:flex-nowrap sm:gap-3 sm:rounded-[var(--r-pill)] sm:px-4">
         <div
-          className="flex h-1.5 min-w-[90px] flex-1 items-center overflow-hidden rounded-full bg-surface-2"
+          className="flex h-1.5 w-full items-center overflow-hidden rounded-full bg-surface-2 sm:w-auto sm:flex-1"
           role="progressbar"
           aria-label="Items sorted"
           aria-valuemin={0}
@@ -299,7 +299,7 @@ export default function TierBoard({ list }: Props) {
         <button
           type="button"
           onClick={copy}
-          className="label rounded-[var(--r-pill)] bg-ink px-3.5 py-2 text-[var(--on-ink)] transition-transform duration-200 hover:-translate-y-0.5 sm:px-4"
+          className="label ml-auto rounded-[var(--r-pill)] bg-ink px-3.5 py-2 text-[var(--on-ink)] transition-transform duration-200 hover:-translate-y-0.5 sm:ml-0 sm:px-4"
         >
           {copied ? "Copied ✓" : "Copy mine"}
         </button>
