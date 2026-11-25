@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { onAccentInk } from "../lib/accents";
 import type { TierList } from "../lib/tierlists-types";
+import { siteHref } from "../lib/url";
 
 type Placements = Record<string, string>;
 
@@ -41,6 +42,15 @@ export default function TierBoard({ list }: Props) {
 
   const labels = useMemo(
     () => Object.fromEntries(list.items.map((item) => [item.id, item.label])),
+    [list.items],
+  );
+  const images = useMemo(
+    () =>
+      Object.fromEntries(
+        list.items
+          .filter((item) => item.image)
+          .map((item) => [item.id, item.image as string]),
+      ),
     [list.items],
   );
   const tierNames = useMemo(
@@ -358,6 +368,7 @@ export default function TierBoard({ list }: Props) {
               <Chip
                 key={item.id}
                 label={item.label}
+                image={images[item.id]}
                 selected={selected === item.id}
                 dragging={dragging === item.id}
                 fresh={justPlaced === item.id}
@@ -450,6 +461,7 @@ export default function TierBoard({ list }: Props) {
                       <Chip
                         key={item.id}
                         label={item.label}
+                        image={images[item.id]}
                         selected={selected === item.id}
                         dragging={dragging === item.id}
                         fresh={justPlaced === item.id}
@@ -527,11 +539,31 @@ export default function TierBoard({ list }: Props) {
                   />
                   {tier.name}
                 </span>
-                <span className="text-sm leading-relaxed text-[var(--ink-soft)]">
-                  {list.items
-                    .filter((item) => placements[item.id] === tier.id)
-                    .map((item) => item.label)
-                    .join(" · ") || "—"}
+                <span className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm leading-relaxed text-[var(--ink-soft)]">
+                  {list.items.filter((item) => placements[item.id] === tier.id)
+                    .length === 0 ? (
+                    <span>—</span>
+                  ) : (
+                    list.items
+                      .filter((item) => placements[item.id] === tier.id)
+                      .map((item) => (
+                        <span
+                          key={item.id}
+                          className="inline-flex items-center gap-1.5"
+                        >
+                          {item.image ? (
+                            <img
+                              src={siteHref(item.image)}
+                              alt=""
+                              loading="lazy"
+                              decoding="async"
+                              className="size-5 shrink-0 rounded-[5px] bg-surface-2 object-cover"
+                            />
+                          ) : null}
+                          {item.label}
+                        </span>
+                      ))
+                  )}
                 </span>
               </li>
             ))}
@@ -549,11 +581,18 @@ export default function TierBoard({ list }: Props) {
         ref={ghostRef}
         aria-hidden="true"
         className={[
-          "pointer-events-none fixed left-0 top-0 z-[999] rounded-[var(--r-pill)] bg-ink px-3.5 py-2 text-[13px] font-semibold text-[var(--on-ink)] shadow-[0_18px_40px_-12px_rgba(0,0,0,0.7)] transition-[opacity,scale] duration-150",
+          "pointer-events-none fixed left-0 top-0 z-[999] inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink py-1.5 pl-1.5 pr-4 text-[13px] font-semibold text-[var(--on-ink)] shadow-[0_18px_40px_-12px_rgba(0,0,0,0.7)] transition-[opacity,scale] duration-150",
           dragging ? "scale-[1.06] opacity-100" : "scale-95 opacity-0",
         ].join(" ")}
         style={{ transform: "translate3d(-999px, -999px, 0)" }}
       >
+        {dragging && images[dragging] ? (
+          <img
+            src={siteHref(images[dragging])}
+            alt=""
+            className="size-7 shrink-0 rounded-[8px] object-cover"
+          />
+        ) : null}
         {dragging ? labels[dragging] : ""}
       </div>
     </div>
@@ -562,6 +601,7 @@ export default function TierBoard({ list }: Props) {
 
 interface ChipProps {
   label: string;
+  image?: string;
   selected: boolean;
   dragging: boolean;
   fresh: boolean;
@@ -571,6 +611,7 @@ interface ChipProps {
 
 function Chip({
   label,
+  image,
   selected,
   dragging,
   fresh,
@@ -585,7 +626,8 @@ function Chip({
       onClick={onClick}
       aria-pressed={selected}
       className={[
-        "qz-tier-chip inline-flex max-w-full touch-none select-none items-center gap-2 rounded-[var(--r-pill)] border px-3.5 py-2 text-[13px] font-medium transition-[transform,background-color,border-color,box-shadow,opacity] duration-200 active:cursor-grabbing",
+        "qz-tier-chip inline-flex max-w-full touch-none select-none items-center gap-2 rounded-[var(--r-pill)] border py-1.5 text-[13px] font-medium transition-[transform,background-color,border-color,box-shadow,opacity] duration-200 active:cursor-grabbing",
+        image ? "pl-1.5 pr-3.5" : "px-3.5 py-2",
         fresh ? "qz-tier-chip--in" : "",
         dragging
           ? "scale-95 border-dashed border-ink/25 bg-transparent text-[var(--ink-muted)] opacity-40"
@@ -594,13 +636,24 @@ function Chip({
             : "border-line bg-surface-2 text-[var(--ink-strong)] hover:-translate-y-0.5 hover:border-ink/35 hover:text-ink hover:shadow-[0_8px_20px_-14px_rgba(0,0,0,0.8)]",
       ].join(" ")}
     >
-      <span
-        aria-hidden="true"
-        className={[
-          "inline-block size-1.5 rounded-full transition-colors",
-          selected ? "bg-current" : "bg-ink/25",
-        ].join(" ")}
-      />
+      {image ? (
+        <img
+          src={siteHref(image)}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          draggable={false}
+          className="size-7 shrink-0 rounded-[8px] bg-surface object-cover"
+        />
+      ) : (
+        <span
+          aria-hidden="true"
+          className={[
+            "inline-block size-1.5 rounded-full transition-colors",
+            selected ? "bg-current" : "bg-ink/25",
+          ].join(" ")}
+        />
+      )}
       <span className="truncate">{label}</span>
     </button>
   );

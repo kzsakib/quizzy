@@ -10,6 +10,8 @@ export interface Tier {
 export interface TierItem {
   id: string;
   label: string;
+  /** Optional square thumbnail, 112px, relative to the site root. */
+  image?: string;
 }
 
 export interface TierList {

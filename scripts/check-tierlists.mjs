@@ -2,7 +2,7 @@
 /* Validates every tier list in content/tierlists.
    Rules: 4–6 tiers, 20–40 items, unique ids, no S/A/B letter tiers, tier
    accents must exist, and every list needs a unique slug. */
-import { readdir, readFile } from "node:fs/promises";
+import { access, readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
 const dir = path.join(process.cwd(), "content/tierlists");
@@ -69,6 +69,19 @@ for (const file of files.sort()) {
     if (!item.id || !item.label) at("item missing id/label");
     if (itemIds.has(item.id)) at(`duplicate item id "${item.id}"`);
     itemIds.add(item.id);
+
+    if (item.image !== undefined) {
+      if (!item.image.startsWith("/images/"))
+        at(`item "${item.label}" has an unexpected image path`);
+      else {
+        const file = path.join(process.cwd(), "public", item.image);
+        try {
+          await access(file);
+        } catch {
+          at(`item "${item.label}" points at a missing image (${item.image})`);
+        }
+      }
+    }
   }
 }
 

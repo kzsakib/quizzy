@@ -40,25 +40,110 @@
     }
   ],
   "items": [
-    { "id": "sukuna", "label": "Sukuna" },
-    { "id": "mahito", "label": "Mahito" },
-    { "id": "jogo", "label": "Jogo" },
-    { "id": "hanami", "label": "Hanami" },
-    { "id": "dagon", "label": "Dagon" },
-    { "id": "choso", "label": "Choso" },
-    { "id": "eso", "label": "Eso" },
-    { "id": "kechizu", "label": "Kechizu" },
-    { "id": "kenjaku", "label": "Kenjaku" },
-    { "id": "uraume", "label": "Uraume" },
-    { "id": "rika", "label": "Rika Orimoto" },
-    { "id": "tamamo", "label": "Tamamo-no-Mae" },
-    { "id": "kurourushi", "label": "Kurourushi" },
-    { "id": "smallpox", "label": "Smallpox Deity" },
-    { "id": "ganesha", "label": "Ganesha" },
-    { "id": "finger-bearer", "label": "The Finger Bearer" },
-    { "id": "grasshopper", "label": "Grasshopper Curse" },
-    { "id": "cursed-womb", "label": "Cursed Womb" },
-    { "id": "cursed-corpse", "label": "Cursed Corpse" },
-    { "id": "death-swamp", "label": "Death Swamp" }
+    {
+      "id": "sukuna",
+      "label": "Sukuna",
+      "image": "/images/tierlists/jjk/sukuna.webp"
+    },
+    {
+      "id": "mahito",
+      "label": "Mahito",
+      "image": "/images/tierlists/jjk/mahito.webp"
+    },
+    {
+      "id": "jogo",
+      "label": "Jogo",
+      "image": "/images/tierlists/jjk/jogo.webp"
+    },
+    {
+      "id": "hanami",
+      "label": "Hanami",
+      "image": "/images/tierlists/jjk/hanami.webp"
+    },
+    {
+      "id": "dagon",
+      "label": "Dagon",
+      "image": "/images/tierlists/jjk/dagon.webp"
+    },
+    {
+      "id": "choso",
+      "label": "Choso",
+      "image": "/images/tierlists/jjk/choso.webp"
+    },
+    {
+      "id": "eso",
+      "label": "Eso",
+      "image": "/images/tierlists/jjk/eso.webp"
+    },
+    {
+      "id": "kechizu",
+      "label": "Kechizu",
+      "image": "/images/tierlists/jjk/kechizu.webp"
+    },
+    {
+      "id": "kenjaku",
+      "label": "Kenjaku",
+      "image": "/images/tierlists/jjk/kenjaku.webp"
+    },
+    {
+      "id": "uraume",
+      "label": "Uraume",
+      "image": "/images/tierlists/jjk/uraume.webp"
+    },
+    {
+      "id": "rika",
+      "label": "Rika Orimoto",
+      "image": "/images/tierlists/jjk/rika.webp"
+    },
+    {
+      "id": "naoya",
+      "label": "Naoya Zenin",
+      "image": "/images/tierlists/jjk/naoya.webp"
+    },
+    {
+      "id": "ogami",
+      "label": "Ogami",
+      "image": "/images/tierlists/jjk/ogami.webp"
+    },
+    {
+      "id": "kurourushi",
+      "label": "Kurourushi",
+      "image": "/images/tierlists/jjk/kurourushi.webp"
+    },
+    {
+      "id": "smallpox",
+      "label": "Smallpox Deity",
+      "image": "/images/tierlists/jjk/smallpox.webp"
+    },
+    {
+      "id": "ganesha",
+      "label": "Ganesha",
+      "image": "/images/tierlists/jjk/ganesha.webp"
+    },
+    {
+      "id": "finger-bearer",
+      "label": "The Finger Bearer",
+      "image": "/images/tierlists/jjk/finger-bearer.webp"
+    },
+    {
+      "id": "grasshopper",
+      "label": "Grasshopper Curse",
+      "image": "/images/tierlists/jjk/grasshopper.webp"
+    },
+    {
+      "id": "cursed-womb",
+      "label": "Cursed Womb",
+      "image": "/images/tierlists/jjk/cursed-womb.webp"
+    },
+    {
+      "id": "haruta",
+      "label": "Haruta Shigemo",
+      "image": "/images/tierlists/jjk/haruta.webp"
+    },
+    {
+      "id": "cursed-corpse",
+      "label": "Cursed Corpse",
+      "image": "/images/tierlists/jjk/cursed-corpse.webp"
+    }
   ]
 }
