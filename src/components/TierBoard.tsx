@@ -50,6 +50,14 @@ export default function TierBoard({ list }: Props) {
   const storageKey = `qz:tier:${list.slug}`;
 
   const [placements, setPlacements] = useState<Placements>({});
+  /* Chip order inside each tier, so a tier can be rearranged by hand. */
+  const [tierOrders, setTierOrders] = useState<Record<string, string[]>>({});
+  const [dropHint, setDropHint] = useState<{
+    tierId: string;
+    chipId: string | null;
+    side: "before" | "after";
+    index: number;
+  } | null>(null);
   const [poolOrder, setPoolOrder] = useState<string[]>(() =>
     list.items.map((item) => item.id),
   );
@@ -69,6 +77,7 @@ export default function TierBoard({ list }: Props) {
   const flightRef = useRef<Animation | null>(null);
   const landedTimer = useRef<number | undefined>(undefined);
   const justDragged = useRef(false);
+  const hintRef = useRef<typeof dropHint>(null);
 
   /* FLIP: remember where every chip sat before a placement, then slide each
      one from its old box to its new box once React has re-rendered. The chip
@@ -175,6 +184,10 @@ export default function TierBoard({ list }: Props) {
     () => Object.fromEntries(list.items.map((item) => [item.id, item.label])),
     [list.items],
   );
+  const itemsById = useMemo(
+    () => Object.fromEntries(list.items.map((item) => [item.id, item])),
+    [list.items],
+  );
   const images = useMemo(
     () =>
       Object.fromEntries(
@@ -198,6 +211,7 @@ export default function TierBoard({ list }: Props) {
         const parsed = JSON.parse(raw) as {
           placements?: Placements;
           poolOrder?: string[];
+          tierOrders?: Record<string, string[]>;
         };
         const validTier = new Set(list.tiers.map((tier) => tier.id));
         const validItem = new Set(list.items.map((item) => item.id));
@@ -206,6 +220,15 @@ export default function TierBoard({ list }: Props) {
           if (validItem.has(id) && validTier.has(tier)) restored[id] = tier;
         }
         setPlacements(restored);
+        const restoredTiers: Record<string, string[]> = {};
+        for (const [tierId, ids] of Object.entries(parsed.tierOrders ?? {})) {
+          if (!validTier.has(tierId) || !Array.isArray(ids)) continue;
+          const clean = ids.filter(
+            (id) => validItem.has(id) && restored[id] === tierId,
+          );
+          if (clean.length) restoredTiers[tierId] = clean;
+        }
+        setTierOrders(restoredTiers);
         const order = (parsed.poolOrder ?? []).filter((id) => validItem.has(id));
         const missing = list.items
           .map((item) => item.id)
@@ -223,12 +246,24 @@ export default function TierBoard({ list }: Props) {
     try {
       localStorage.setItem(
         storageKey,
-        JSON.stringify({ placements, poolOrder }),
+        JSON.stringify({ placements, poolOrder, tierOrders }),
       );
     } catch {
       /* private mode: the sort simply will not survive a refresh */
     }
-  }, [placements, poolOrder, storageKey, hydrated]);
+  }, [placements, poolOrder, tierOrders, storageKey, hydrated]);
+
+  const orderedIds = useCallback(
+    (tierId: string) => {
+      const order = tierOrders[tierId] ?? [];
+      const placed = list.items
+        .filter((item) => placements[item.id] === tierId)
+        .map((item) => item.id);
+      const kept = order.filter((id) => placements[id] === tierId);
+      return [...kept, ...placed.filter((id) => !kept.includes(id))];
+    },
+    [list.items, placements, tierOrders],
+  );
 
   const placedCount = Object.keys(placements).length;
   const progress = Math.round((placedCount / total) * 100);
@@ -239,7 +274,8 @@ export default function TierBoard({ list }: Props) {
     .map((id) => ({ id, label: labels[id] }));
 
   const place = useCallback(
-    (id: string, tierId: string, from?: Box) => {
+    (id: string, tierId: string, from?: Box, index?: number) => {
+      const wasSameTier = placements[id] === tierId;
       const origin =
         from ??
         boxOf(document.querySelector(`[data-item-id="${id}"]`)) ??
@@ -256,14 +292,29 @@ export default function TierBoard({ list }: Props) {
         const without = previous.filter((entry) => entry !== id);
         return tierId === POOL ? [...without, id] : without;
       });
+      setTierOrders((previous) => {
+        const next: Record<string, string[]> = {};
+        for (const [tier, ids] of Object.entries(previous))
+          next[tier] = ids.filter((entry) => entry !== id);
+        if (tierId !== POOL) {
+          /* Start from what is on screen (not just the stored order) so the
+             insertion point means what the drop preview promised. */
+          const base = orderedIds(tierId).filter((entry) => entry !== id);
+          const at = Math.max(0, Math.min(index ?? base.length, base.length));
+          next[tierId] = [...base.slice(0, at), id, ...base.slice(at)];
+        }
+        return next;
+      });
       setSelected(null);
       setAnnouncement(
         tierId === POOL
           ? `${labels[id]} sent back to the pile.`
-          : `${labels[id]} placed in ${tierNames[tierId]}.`,
+          : wasSameTier
+            ? `${labels[id]} moved within ${tierNames[tierId]}.`
+            : `${labels[id]} placed in ${tierNames[tierId]}.`,
       );
     },
-    [captureChips, labels, tierNames],
+    [captureChips, labels, orderedIds, placements, tierNames],
   );
 
   const beginDrag = (id: string, event: React.PointerEvent<HTMLElement>) => {
@@ -276,12 +327,70 @@ export default function TierBoard({ list }: Props) {
     const startY = event.clientY;
     let active = false;
 
+    /* Where would this chip land inside a tier? Nearest chip wins, and the
+       side of its centre decides whether we insert before or after it. */
+    const hintAt = (tierId: string, x: number, y: number) => {
+      const listEl = document.querySelector<HTMLElement>(
+        `[data-tier-list="${tierId}"]`,
+      );
+      if (!listEl) return null;
+      const chips = [...listEl.querySelectorAll<HTMLElement>("[data-item-id]")]
+        .filter((el) => el.dataset.itemId !== id)
+        .map((el) => ({
+          id: el.dataset.itemId as string,
+          rect: el.getBoundingClientRect(),
+        }));
+      if (!chips.length)
+        return { tierId, chipId: null, side: "before" as const, index: 0 };
+
+      let best = chips[0];
+      let bestScore = Infinity;
+      for (const chip of chips) {
+        const gapX =
+          x < chip.rect.left
+            ? chip.rect.left - x
+            : x > chip.rect.right
+              ? x - chip.rect.right
+              : 0;
+        const gapY =
+          y < chip.rect.top
+            ? chip.rect.top - y
+            : y > chip.rect.bottom
+              ? y - chip.rect.bottom
+              : 0;
+        const score = gapY * 1000 + gapX;
+        if (score < bestScore) {
+          bestScore = score;
+          best = chip;
+        }
+      }
+
+      const side: "before" | "after" =
+        x < best.rect.left + best.rect.width / 2 ? "before" : "after";
+      return {
+        tierId,
+        chipId: best.id,
+        side,
+        index: chips.findIndex((chip) => chip.id === best.id) + (side === "after" ? 1 : 0),
+      };
+    };
+
     const hover = (x: number, y: number) => {
       const under = document
         .elementFromPoint(x, y)
         ?.closest<HTMLElement>("[data-drop-tier]");
       const tierId = under?.dataset.dropTier ?? null;
       setOver((current) => (current === tierId ? current : tierId));
+
+      const hint = tierId && tierId !== POOL ? hintAt(tierId, x, y) : null;
+      hintRef.current = hint;
+      setDropHint((current) =>
+        current?.tierId === hint?.tierId &&
+        current?.chipId === hint?.chipId &&
+        current?.side === hint?.side
+          ? current
+          : hint,
+      );
     };
 
     const move = (dragEvent: PointerEvent) => {
@@ -309,6 +418,10 @@ export default function TierBoard({ list }: Props) {
       window.removeEventListener("pointercancel", cancel);
       setDragging(null);
       setOver(null);
+      setDropHint(null);
+
+      const hint = hintRef.current;
+      hintRef.current = null;
 
       if (!active) return;
 
@@ -317,12 +430,17 @@ export default function TierBoard({ list }: Props) {
         ?.closest<HTMLElement>("[data-drop-tier]");
       const tierId = under?.dataset.dropTier;
       if (tierId)
-        place(id, tierId, {
-          left: upEvent.clientX - offsetX,
-          top: upEvent.clientY - offsetY,
-          width: rect.width,
-          height: rect.height,
-        });
+        place(
+          id,
+          tierId,
+          {
+            left: upEvent.clientX - offsetX,
+            top: upEvent.clientY - offsetY,
+            width: rect.width,
+            height: rect.height,
+          },
+          hint?.tierId === tierId ? hint.index : undefined,
+        );
 
       justDragged.current = true;
       window.setTimeout(() => {
@@ -336,6 +454,8 @@ export default function TierBoard({ list }: Props) {
       window.removeEventListener("pointercancel", cancel);
       setDragging(null);
       setOver(null);
+      setDropHint(null);
+      hintRef.current = null;
     };
 
     window.addEventListener("pointermove", move, { passive: true });
@@ -356,6 +476,7 @@ export default function TierBoard({ list }: Props) {
   const reset = () => {
     captureChips();
     setPlacements({});
+    setTierOrders({});
     setPoolOrder(list.items.map((item) => item.id));
     setSelected(null);
     setAnnouncement("Board cleared. Every item is back in the pile.");
@@ -380,9 +501,8 @@ export default function TierBoard({ list }: Props) {
       ...list.tiers.map(
         (tier) =>
           `${tier.name.toUpperCase()}: ${
-            list.items
-              .filter((item) => placements[item.id] === tier.id)
-              .map((item) => item.label)
+            orderedIds(tier.id)
+              .map((id) => itemsById[id]?.label)
               .join(", ") || "—"
           }`,
       ),
@@ -464,8 +584,8 @@ export default function TierBoard({ list }: Props) {
           </p>
         ) : (
           <p className="label text-[var(--ink-muted)]">
-            Drag a card into a tier · or tap it, then tap a tier · tap the pile
-            to send it back
+            Drag a card into a tier · tap it, then tap a tier · drag inside a
+            tier to reorder · tap the pile to send it back
           </p>
         )}
       </div>
@@ -522,9 +642,9 @@ export default function TierBoard({ list }: Props) {
       {/* Tiers ------------------------------------------------------ */}
       <div className="mt-8 space-y-3">
         {list.tiers.map((tier) => {
-          const items = list.items.filter(
-            (item) => placements[item.id] === tier.id,
-          );
+          const items = orderedIds(tier.id)
+            .map((id) => itemsById[id])
+            .filter(Boolean);
           const isOver = over === tier.id;
           return (
             <section
@@ -583,7 +703,10 @@ export default function TierBoard({ list }: Props) {
               </div>
 
               <div className="relative min-h-[112px] p-3 sm:p-4">
-                <div className="flex flex-wrap gap-2">
+                <div
+                  data-tier-list={tier.id}
+                  className="flex flex-wrap gap-2"
+                >
                   {items.length === 0 ? (
                     <p
                       className={[
@@ -606,6 +729,11 @@ export default function TierBoard({ list }: Props) {
                         dragging={dragging === item.id}
                         hidden={flyer?.id === item.id}
                         landing={landed === item.id}
+                        insert={
+                          dropHint?.chipId === item.id
+                            ? dropHint.side
+                            : undefined
+                        }
                         onPointerDown={(event) => beginDrag(item.id, event)}
                         onClick={() => pick(item.id)}
                       />
@@ -681,12 +809,11 @@ export default function TierBoard({ list }: Props) {
                   {tier.name}
                 </span>
                 <span className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm leading-relaxed text-[var(--ink-soft)]">
-                  {list.items.filter((item) => placements[item.id] === tier.id)
-                    .length === 0 ? (
+                  {orderedIds(tier.id).length === 0 ? (
                     <span>—</span>
                   ) : (
-                    list.items
-                      .filter((item) => placements[item.id] === tier.id)
+                    orderedIds(tier.id)
+                      .map((id) => itemsById[id])
                       .map((item) => (
                         <span
                           key={item.id}
@@ -784,6 +911,8 @@ interface ChipProps {
   /** Invisible while its flying copy is in the air. */
   hidden?: boolean;
   landing?: boolean;
+  /** Shows a caret where a dragged chip would be inserted. */
+  insert?: "before" | "after";
   onPointerDown: (event: React.PointerEvent<HTMLButtonElement>) => void;
   onClick: () => void;
 }
@@ -796,6 +925,7 @@ function Chip({
   dragging,
   hidden = false,
   landing = false,
+  insert,
   onPointerDown,
   onClick,
 }: ChipProps) {
@@ -804,11 +934,12 @@ function Chip({
       type="button"
       data-item
       data-item-id={itemId}
+      data-insert={insert}
       onPointerDown={onPointerDown}
       onClick={onClick}
       aria-pressed={selected}
       className={[
-        "qz-tier-chip inline-flex max-w-full touch-none select-none items-center gap-2 rounded-[var(--r-pill)] border py-1.5 text-[13px] font-medium transition-[transform,background-color,border-color,box-shadow,opacity] duration-200 active:cursor-grabbing",
+        "qz-tier-chip relative inline-flex max-w-full touch-none select-none items-center gap-2 rounded-[var(--r-pill)] border py-1.5 text-[13px] font-medium transition-[transform,background-color,border-color,box-shadow,opacity] duration-200 active:cursor-grabbing",
         image ? "pl-1.5 pr-3.5" : "px-3.5 py-2",
         hidden ? "invisible" : "",
         landing ? "qz-tier-chip--land" : "",
