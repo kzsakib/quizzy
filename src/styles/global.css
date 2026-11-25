@@ -500,6 +500,22 @@
   animation: qz-tier-bump 380ms var(--ease-spring);
 }
 
+.qz-tier-chip--land {
+  animation: qz-tier-land 340ms var(--ease-spring) both;
+}
+
+@keyframes qz-tier-land {
+  0% {
+    transform: scale(0.9);
+  }
+  55% {
+    transform: scale(1.09);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .qz-tier-drop {
   background-image: repeating-linear-gradient(
     -45deg,
@@ -538,9 +554,3 @@
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .qz-tier-count,
-  .qz-tier-hint {
-    animation: none;
-  }
-}

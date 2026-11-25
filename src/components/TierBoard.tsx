@@ -14,6 +14,24 @@ type Placements = Record<string, string>;
 
 const POOL = "pool";
 
+interface Box {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
+
+const boxOf = (el: Element | null): Box | null => {
+  if (!el) return null;
+  const rect = el.getBoundingClientRect();
+  return {
+    left: rect.left,
+    top: rect.top,
+    width: rect.width,
+    height: rect.height,
+  };
+};
+
 interface Props {
   list: TierList;
 }
@@ -41,40 +59,37 @@ export default function TierBoard({ list }: Props) {
   const [copied, setCopied] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const [announcement, setAnnouncement] = useState("");
+  /* The chip that is currently flying into its new home. It is rendered as a
+     fixed overlay so the tier's `overflow-hidden` cannot clip the journey. */
+  const [flyer, setFlyer] = useState<{ id: string; from: Box } | null>(null);
+  const [landed, setLanded] = useState<string | null>(null);
 
   const ghostRef = useRef<HTMLDivElement>(null);
+  const flyerRef = useRef<HTMLDivElement>(null);
+  const flightRef = useRef<Animation | null>(null);
+  const landedTimer = useRef<number | undefined>(undefined);
   const justDragged = useRef(false);
 
   /* FLIP: remember where every chip sat before a placement, then slide each
-     one from its old box to its new box once React has re-rendered. */
-  type Box = { left: number; top: number; width: number; height: number };
+     one from its old box to its new box once React has re-rendered. The chip
+     that was placed is skipped — it travels as the flying overlay instead. */
   const flipFrom = useRef<Map<string, Box> | null>(null);
 
-  const captureChips = useCallback(
-    (override?: { id: string } & Box) => {
-      const boxes = new Map<string, Box>();
-      document.querySelectorAll<HTMLElement>("[data-item-id]").forEach((el) => {
-        const id = el.dataset.itemId;
-        if (!id) return;
-        const rect = el.getBoundingClientRect();
-        boxes.set(id, {
-          left: rect.left,
-          top: rect.top,
-          width: rect.width,
-          height: rect.height,
-        });
-      });
-      if (override) boxes.set(override.id, override);
-      flipFrom.current = boxes;
-    },
-    [],
-  );
+  const captureChips = useCallback((skip?: string) => {
+    const boxes = new Map<string, Box>();
+    document.querySelectorAll<HTMLElement>("[data-item-id]").forEach((el) => {
+      const id = el.dataset.itemId;
+      if (!id || id === skip) return;
+      const box = boxOf(el);
+      if (box) boxes.set(id, box);
+    });
+    flipFrom.current = boxes;
+  }, []);
 
   useLayoutEffect(() => {
     const before = flipFrom.current;
     flipFrom.current = null;
     if (!before) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
     document.querySelectorAll<HTMLElement>("[data-item-id]").forEach((el) => {
       const id = el.dataset.itemId;
@@ -86,13 +101,75 @@ export default function TierBoard({ list }: Props) {
       if (Math.abs(dx) < 1 && Math.abs(dy) < 1) return;
       el.animate(
         [
-          { transform: `translate(${dx}px, ${dy}px)`, opacity: 0.82 },
-          { transform: "translate(0px, 0px)", opacity: 1 },
+          { transform: `translate(${dx}px, ${dy}px)` },
+          { transform: "translate(0px, 0px)" },
         ],
-        { duration: 420, easing: "cubic-bezier(0.22, 1, 0.36, 1)" },
+        { duration: 460, easing: "cubic-bezier(0.22, 1, 0.36, 1)" },
       );
     });
   }, [placements, poolOrder]);
+
+  /* Fly the placed chip from where it was to where it now lives. Runs after
+     the board has re-rendered, so the destination box is measurable. */
+  useLayoutEffect(() => {
+    if (!flyer) return;
+    const node = flyerRef.current;
+    const target = document.querySelector<HTMLElement>(
+      `[data-item-id="${flyer.id}"]`,
+    );
+    if (!node || !target) {
+      setFlyer(null);
+      return;
+    }
+
+    const flight = boxOf(target);
+    if (!flight) {
+      setFlyer(null);
+      return;
+    }
+
+    const dx = flight.left - flyer.from.left;
+    const dy = flight.top - flyer.from.top;
+    const grow = flyer.from.width
+      ? Math.max(0.9, Math.min(1.15, flight.width / flyer.from.width))
+      : 1;
+
+    flightRef.current?.cancel();
+    const animation = node.animate(
+      [
+        { transform: "translate(0px, 0px) scale(1.08)", opacity: 0.92 },
+        {
+          transform: `translate(${dx * 0.6}px, ${dy * 0.6}px) scale(${1.04 * grow})`,
+          opacity: 1,
+          offset: 0.6,
+        },
+        { transform: `translate(${dx}px, ${dy}px) scale(1)`, opacity: 1 },
+      ],
+      {
+        duration: 520,
+        easing: "cubic-bezier(0.32, 0.72, 0.24, 1)",
+        fill: "forwards",
+      },
+    );
+    flightRef.current = animation;
+
+    const finish = () => {
+      setFlyer(null);
+      setLanded(flyer.id);
+      window.clearTimeout(landedTimer.current);
+      landedTimer.current = window.setTimeout(() => setLanded(null), 380);
+    };
+    animation.onfinish = finish;
+    const safety = window.setTimeout(finish, 1400);
+
+    return () => {
+      window.clearTimeout(safety);
+      animation.onfinish = null;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [flyer]);
+
+  useEffect(() => () => window.clearTimeout(landedTimer.current), []);
 
   const labels = useMemo(
     () => Object.fromEntries(list.items.map((item) => [item.id, item.label])),
@@ -163,7 +240,12 @@ export default function TierBoard({ list }: Props) {
 
   const place = useCallback(
     (id: string, tierId: string, from?: Box) => {
-      captureChips(from ? { id, ...from } : undefined);
+      const origin =
+        from ??
+        boxOf(document.querySelector(`[data-item-id="${id}"]`)) ??
+        null;
+      captureChips(id);
+      if (origin) setFlyer({ id, from: origin });
       setPlacements((previous) => {
         const next = { ...previous };
         if (tierId === POOL) delete next[id];
@@ -427,6 +509,8 @@ export default function TierBoard({ list }: Props) {
                 image={images[item.id]}
                 selected={selected === item.id}
                 dragging={dragging === item.id}
+                hidden={flyer?.id === item.id}
+                landing={landed === item.id}
                 onPointerDown={(event) => beginDrag(item.id, event)}
                 onClick={() => pick(item.id)}
               />
@@ -520,6 +604,8 @@ export default function TierBoard({ list }: Props) {
                         image={images[item.id]}
                         selected={selected === item.id}
                         dragging={dragging === item.id}
+                        hidden={flyer?.id === item.id}
+                        landing={landed === item.id}
                         onPointerDown={(event) => beginDrag(item.id, event)}
                         onClick={() => pick(item.id)}
                       />
@@ -631,6 +717,37 @@ export default function TierBoard({ list }: Props) {
         {announcement}
       </p>
 
+      {/* The chip in flight ---------------------------------------- */}
+      {flyer ? (
+        <div
+          key={flyer.id}
+          ref={flyerRef}
+          aria-hidden="true"
+          className="pointer-events-none fixed z-[1000] inline-flex items-center overflow-hidden rounded-[var(--r-pill)] border border-line bg-surface-2 text-[13px] font-medium text-[var(--ink-strong)] shadow-[0_22px_45px_-16px_rgba(0,0,0,0.55)]"
+          style={{
+            left: flyer.from.left,
+            top: flyer.from.top,
+            width: flyer.from.width,
+            height: flyer.from.height,
+            transformOrigin: "top left",
+          }}
+        >
+          {images[flyer.id] ? (
+            <img
+              src={siteHref(images[flyer.id])}
+              alt=""
+              className="ml-1.5 size-11 shrink-0 rounded-full bg-surface object-cover"
+            />
+          ) : (
+            <span
+              aria-hidden="true"
+              className="ml-3.5 inline-block size-1.5 shrink-0 rounded-full bg-ink/25"
+            />
+          )}
+          <span className="truncate px-2">{labels[flyer.id]}</span>
+        </div>
+      ) : null}
+
       {/* Drag ghost ------------------------------------------------- */}
       <div
         ref={ghostRef}
@@ -660,6 +777,9 @@ interface ChipProps {
   image?: string;
   selected: boolean;
   dragging: boolean;
+  /** Invisible while its flying copy is in the air. */
+  hidden?: boolean;
+  landing?: boolean;
   onPointerDown: (event: React.PointerEvent<HTMLButtonElement>) => void;
   onClick: () => void;
 }
@@ -670,6 +790,8 @@ function Chip({
   image,
   selected,
   dragging,
+  hidden = false,
+  landing = false,
   onPointerDown,
   onClick,
 }: ChipProps) {
@@ -684,6 +806,8 @@ function Chip({
       className={[
         "qz-tier-chip inline-flex max-w-full touch-none select-none items-center gap-2 rounded-[var(--r-pill)] border py-1.5 text-[13px] font-medium transition-[transform,background-color,border-color,box-shadow,opacity] duration-200 active:cursor-grabbing",
         image ? "pl-1.5 pr-3.5" : "px-3.5 py-2",
+        hidden ? "invisible" : "",
+        landing ? "qz-tier-chip--land" : "",
         dragging
           ? "scale-95 border-dashed border-ink/25 bg-transparent text-[var(--ink-muted)] opacity-40"
           : selected
