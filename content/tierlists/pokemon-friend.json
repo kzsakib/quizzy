@@ -40,35 +40,156 @@
     }
   ],
   "items": [
-    { "id": "bulbasaur", "label": "Bulbasaur" },
-    { "id": "charmander", "label": "Charmander" },
-    { "id": "squirtle", "label": "Squirtle" },
-    { "id": "pikachu", "label": "Pikachu" },
-    { "id": "eevee", "label": "Eevee" },
-    { "id": "snorlax", "label": "Snorlax" },
-    { "id": "psyduck", "label": "Psyduck" },
-    { "id": "jigglypuff", "label": "Jigglypuff" },
-    { "id": "gengar", "label": "Gengar" },
-    { "id": "mewtwo", "label": "Mewtwo" },
-    { "id": "magikarp", "label": "Magikarp" },
-    { "id": "gyarados", "label": "Gyarados" },
-    { "id": "growlithe", "label": "Growlithe" },
-    { "id": "meowth", "label": "Meowth" },
-    { "id": "machamp", "label": "Machamp" },
-    { "id": "onix", "label": "Onix" },
-    { "id": "diglett", "label": "Diglett" },
-    { "id": "slowpoke", "label": "Slowpoke" },
-    { "id": "lapras", "label": "Lapras" },
-    { "id": "ditto", "label": "Ditto" },
-    { "id": "mr-mime", "label": "Mr. Mime" },
-    { "id": "sudowoodo", "label": "Sudowoodo" },
-    { "id": "wobbuffet", "label": "Wobbuffet" },
-    { "id": "togepi", "label": "Togepi" },
-    { "id": "lucario", "label": "Lucario" },
-    { "id": "gardevoir", "label": "Gardevoir" },
-    { "id": "mimikyu", "label": "Mimikyu" },
-    { "id": "rowlet", "label": "Rowlet" },
-    { "id": "mudkip", "label": "Mudkip" },
-    { "id": "trubbish", "label": "Trubbish" }
-  ]
+    {
+      "id": "bulbasaur",
+      "label": "Bulbasaur",
+      "image": "/images/tierlists/pokemon/bulbasaur.webp"
+    },
+    {
+      "id": "charmander",
+      "label": "Charmander",
+      "image": "/images/tierlists/pokemon/charmander.webp"
+    },
+    {
+      "id": "squirtle",
+      "label": "Squirtle",
+      "image": "/images/tierlists/pokemon/squirtle.webp"
+    },
+    {
+      "id": "pikachu",
+      "label": "Pikachu",
+      "image": "/images/tierlists/pokemon/pikachu.webp"
+    },
+    {
+      "id": "eevee",
+      "label": "Eevee",
+      "image": "/images/tierlists/pokemon/eevee.webp"
+    },
+    {
+      "id": "snorlax",
+      "label": "Snorlax",
+      "image": "/images/tierlists/pokemon/snorlax.webp"
+    },
+    {
+      "id": "psyduck",
+      "label": "Psyduck",
+      "image": "/images/tierlists/pokemon/psyduck.webp"
+    },
+    {
+      "id": "jigglypuff",
+      "label": "Jigglypuff",
+      "image": "/images/tierlists/pokemon/jigglypuff.webp"
+    },
+    {
+      "id": "gengar",
+      "label": "Gengar",
+      "image": "/images/tierlists/pokemon/gengar.webp"
+    },
+    {
+      "id": "mewtwo",
+      "label": "Mewtwo",
+      "image": "/images/tierlists/pokemon/mewtwo.webp"
+    },
+    {
+      "id": "magikarp",
+      "label": "Magikarp",
+      "image": "/images/tierlists/pokemon/magikarp.webp"
+    },
+    {
+      "id": "gyarados",
+      "label": "Gyarados",
+      "image": "/images/tierlists/pokemon/gyarados.webp"
+    },
+    {
+      "id": "growlithe",
+      "label": "Growlithe",
+      "image": "/images/tierlists/pokemon/growlithe.webp"
+    },
+    {
+      "id": "meowth",
+      "label": "Meowth",
+      "image": "/images/tierlists/pokemon/meowth.webp"
+    },
+    {
+      "id": "machamp",
+      "label": "Machamp",
+      "image": "/images/tierlists/pokemon/machamp.webp"
+    },
+    {
+      "id": "onix",
+      "label": "Onix",
+      "image": "/images/tierlists/pokemon/onix.webp"
+    },
+    {
+      "id": "diglett",
+      "label": "Diglett",
+      "image": "/images/tierlists/pokemon/diglett.webp"
+    },
+    {
+      "id": "slowpoke",
+      "label": "Slowpoke",
+      "image": "/images/tierlists/pokemon/slowpoke.webp"
+    },
+    {
+      "id": "lapras",
+      "label": "Lapras",
+      "image": "/images/tierlists/pokemon/lapras.webp"
+    },
+    {
+      "id": "ditto",
+      "label": "Ditto",
+      "image": "/images/tierlists/pokemon/ditto.webp"
+    },
+    {
+      "id": "mr-mime",
+      "label": "Mr. Mime",
+      "image": "/images/tierlists/pokemon/mr-mime.webp"
+    },
+    {
+      "id": "sudowoodo",
+      "label": "Sudowoodo",
+      "image": "/images/tierlists/pokemon/sudowoodo.webp"
+    },
+    {
+      "id": "wobbuffet",
+      "label": "Wobbuffet",
+      "image": "/images/tierlists/pokemon/wobbuffet.webp"
+    },
+    {
+      "id": "togepi",
+      "label": "Togepi",
+      "image": "/images/tierlists/pokemon/togepi.webp"
+    },
+    {
+      "id": "lucario",
+      "label": "Lucario",
+      "image": "/images/tierlists/pokemon/lucario.webp"
+    },
+    {
+      "id": "gardevoir",
+      "label": "Gardevoir",
+      "image": "/images/tierlists/pokemon/gardevoir.webp"
+    },
+    {
+      "id": "mimikyu",
+      "label": "Mimikyu",
+      "image": "/images/tierlists/pokemon/mimikyu.webp"
+    },
+    {
+      "id": "rowlet",
+      "label": "Rowlet",
+      "image": "/images/tierlists/pokemon/rowlet.webp"
+    },
+    {
+      "id": "mudkip",
+      "label": "Mudkip",
+      "image": "/images/tierlists/pokemon/mudkip.webp"
+    },
+    {
+      "id": "trubbish",
+      "label": "Trubbish",
+      "image": "/images/tierlists/pokemon/trubbish.webp"
+    }
+  ],
+  "credit": "Pokémon artwork from the Pokémon Wiki (Fandom). Unofficial fan project."
 }

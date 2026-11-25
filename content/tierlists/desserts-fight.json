@@ -40,35 +40,156 @@
     }
   ],
   "items": [
-    { "id": "tiramisu", "label": "Tiramisu" },
-    { "id": "creme-brulee", "label": "Crème brûlée" },
-    { "id": "lava-cake", "label": "Chocolate lava cake" },
-    { "id": "cheesecake", "label": "New York cheesecake" },
-    { "id": "baklava", "label": "Baklava" },
-    { "id": "gulab-jamun", "label": "Gulab jamun" },
-    { "id": "ras-malai", "label": "Ras malai" },
-    { "id": "mango-sticky-rice", "label": "Mango sticky rice" },
-    { "id": "pavlova", "label": "Pavlova" },
-    { "id": "sticky-toffee", "label": "Sticky toffee pudding" },
-    { "id": "apple-crumble", "label": "Apple crumble" },
-    { "id": "brownie", "label": "Fudgy brownie" },
-    { "id": "pistachio-gelato", "label": "Pistachio gelato" },
-    { "id": "kulfi", "label": "Kulfi" },
-    { "id": "jalebi", "label": "Jalebi" },
-    { "id": "falooda", "label": "Falooda" },
-    { "id": "profiteroles", "label": "Profiteroles" },
-    { "id": "lemon-tart", "label": "Lemon tart" },
-    { "id": "carrot-cake", "label": "Carrot cake" },
-    { "id": "red-velvet", "label": "Red velvet cake" },
-    { "id": "key-lime", "label": "Key lime pie" },
-    { "id": "banoffee", "label": "Banoffee pie" },
-    { "id": "tres-leches", "label": "Tres leches" },
-    { "id": "churros", "label": "Churros" },
-    { "id": "panna-cotta", "label": "Panna cotta" },
-    { "id": "rice-pudding", "label": "Rice pudding" },
-    { "id": "bread-butter", "label": "Bread and butter pudding" },
-    { "id": "chimney-cake", "label": "Chimney cake" },
-    { "id": "mochi", "label": "Mochi ice cream" },
-    { "id": "fruit-salad", "label": "Fruit salad" }
-  ]
+    {
+      "id": "tiramisu",
+      "label": "Tiramisu",
+      "image": "/images/tierlists/desserts/tiramisu.webp"
+    },
+    {
+      "id": "creme-brulee",
+      "label": "Crème brûlée",
+      "image": "/images/tierlists/desserts/creme-brulee.webp"
+    },
+    {
+      "id": "lava-cake",
+      "label": "Chocolate lava cake",
+      "image": "/images/tierlists/desserts/lava-cake.webp"
+    },
+    {
+      "id": "cheesecake",
+      "label": "New York cheesecake",
+      "image": "/images/tierlists/desserts/cheesecake.webp"
+    },
+    {
+      "id": "baklava",
+      "label": "Baklava",
+      "image": "/images/tierlists/desserts/baklava.webp"
+    },
+    {
+      "id": "gulab-jamun",
+      "label": "Gulab jamun",
+      "image": "/images/tierlists/desserts/gulab-jamun.webp"
+    },
+    {
+      "id": "ras-malai",
+      "label": "Ras malai",
+      "image": "/images/tierlists/desserts/ras-malai.webp"
+    },
+    {
+      "id": "mango-sticky-rice",
+      "label": "Mango sticky rice",
+      "image": "/images/tierlists/desserts/mango-sticky-rice.webp"
+    },
+    {
+      "id": "pavlova",
+      "label": "Pavlova",
+      "image": "/images/tierlists/desserts/pavlova.webp"
+    },
+    {
+      "id": "sticky-toffee",
+      "label": "Sticky toffee pudding",
+      "image": "/images/tierlists/desserts/sticky-toffee.webp"
+    },
+    {
+      "id": "apple-crumble",
+      "label": "Apple crumble",
+      "image": "/images/tierlists/desserts/apple-crumble.webp"
+    },
+    {
+      "id": "brownie",
+      "label": "Fudgy brownie",
+      "image": "/images/tierlists/desserts/brownie.webp"
+    },
+    {
+      "id": "pistachio-gelato",
+      "label": "Pistachio gelato",
+      "image": "/images/tierlists/desserts/pistachio-gelato.webp"
+    },
+    {
+      "id": "kulfi",
+      "label": "Kulfi",
+      "image": "/images/tierlists/desserts/kulfi.webp"
+    },
+    {
+      "id": "jalebi",
+      "label": "Jalebi",
+      "image": "/images/tierlists/desserts/jalebi.webp"
+    },
+    {
+      "id": "falooda",
+      "label": "Falooda",
+      "image": "/images/tierlists/desserts/falooda.webp"
+    },
+    {
+      "id": "profiteroles",
+      "label": "Profiteroles",
+      "image": "/images/tierlists/desserts/profiteroles.webp"
+    },
+    {
+      "id": "lemon-tart",
+      "label": "Lemon tart",
+      "image": "/images/tierlists/desserts/lemon-tart.webp"
+    },
+    {
+      "id": "carrot-cake",
+      "label": "Carrot cake",
+      "image": "/images/tierlists/desserts/carrot-cake.webp"
+    },
+    {
+      "id": "red-velvet",
+      "label": "Red velvet cake",
+      "image": "/images/tierlists/desserts/red-velvet.webp"
+    },
+    {
+      "id": "key-lime",
+      "label": "Key lime pie",
+      "image": "/images/tierlists/desserts/key-lime.webp"
+    },
+    {
+      "id": "banoffee",
+      "label": "Banoffee pie",
+      "image": "/images/tierlists/desserts/banoffee.webp"
+    },
+    {
+      "id": "tres-leches",
+      "label": "Tres leches",
+      "image": "/images/tierlists/desserts/tres-leches.webp"
+    },
+    {
+      "id": "churros",
+      "label": "Churros",
+      "image": "/images/tierlists/desserts/churros.webp"
+    },
+    {
+      "id": "panna-cotta",
+      "label": "Panna cotta",
+      "image": "/images/tierlists/desserts/panna-cotta.webp"
+    },
+    {
+      "id": "rice-pudding",
+      "label": "Rice pudding",
+      "image": "/images/tierlists/desserts/rice-pudding.webp"
+    },
+    {
+      "id": "bread-butter",
+      "label": "Bread and butter pudding",
+      "image": "/images/tierlists/desserts/bread-butter.webp"
+    },
+    {
+      "id": "chimney-cake",
+      "label": "Chimney cake",
+      "image": "/images/tierlists/desserts/chimney-cake.webp"
+    },
+    {
+      "id": "mochi",
+      "label": "Mochi ice cream",
+      "image": "/images/tierlists/desserts/mochi.webp"
+    },
+    {
+      "id": "fruit-salad",
+      "label": "Fruit salad",
+      "image": "/images/tierlists/desserts/fruit-salad.webp"
+    }
+  ],
+  "credit": "Photographs from Wikimedia Commons, credited in images/tierlists/desserts/credits.json."
 }

@@ -19,7 +19,7 @@ interface Props {
 
 const { list } = Astro.props as Props;
 const others = otherTierLists(list.slug, 3);
-const creditedImages = list.items.some((item) => item.image);
+const creditedImages = list.credit && list.items.some((item) => item.image);
 ---
 
 <BaseLayout
@@ -80,9 +80,8 @@ const creditedImages = list.items.some((item) => item.image);
 
     {
       creditedImages ? (
-        <p class="label mt-4 text-[var(--ink-muted)]">
-          Character portraits from the Jujutsu Kaisen Wiki (Fandom). Unofficial
-          fan project, not affiliated with Shueisha or MAPPA.
+        <p class="label mt-4 max-w-[70ch] leading-relaxed text-[var(--ink-muted)]">
+          {list.credit}
         </p>
       ) : null
     }

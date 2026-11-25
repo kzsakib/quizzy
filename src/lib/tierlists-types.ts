@@ -23,6 +23,8 @@ export interface TierList {
   accent: string;
   emoji: string;
   published: string;
+  /** Attribution line shown under the board when items carry images. */
+  credit?: string;
   tiers: Tier[];
   items: TierItem[];
 }

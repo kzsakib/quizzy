@@ -1,0 +1,182 @@
+{
+  "harry.webp": {
+    "character": "Harry Potter",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/c/ce/Harry_Potter_DHF1.jpg/revision/latest?cb=20140603201724",
+    "page": "https://harrypotter.fandom.com/wiki/Harry_Potter",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "hermione.webp": {
+    "character": "Hermione Granger",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/3/34/Hermione_Granger.jpg/revision/latest/scale-to-width-down/375?cb=20251206062840",
+    "page": "https://harrypotter.fandom.com/wiki/Hermione_Granger",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "ron.webp": {
+    "character": "Ron Weasley",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/4/44/Ronald_Weasley_DHF1.jpg/revision/latest?cb=20101104210200",
+    "page": "https://harrypotter.fandom.com/wiki/Ron_Weasley",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "dumbledore.webp": {
+    "character": "Albus Dumbledore",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/7/75/Albus_Dumbledore_%28HBPF_promo%29.jpg/revision/latest/scale-to-width-down/375?cb=20150822232849",
+    "page": "https://harrypotter.fandom.com/wiki/Albus_Dumbledore",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "snape.webp": {
+    "character": "Severus Snape",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/a/a3/Severus_Snape.jpg/revision/latest/scale-to-width-down/335?cb=20150307193047",
+    "page": "https://harrypotter.fandom.com/wiki/Severus_Snape",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "mcgonagall.webp": {
+    "character": "Minerva McGonagall",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/6/65/ProfessorMcGonagall-HBP.jpg/revision/latest/scale-to-width-down/412?cb=20100612114856",
+    "page": "https://harrypotter.fandom.com/wiki/Minerva_McGonagall",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "hagrid.webp": {
+    "character": "Rubeus Hagrid",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/f/fe/Rubeus_Hagrid.png/revision/latest/scale-to-width-down/375?cb=20221014184333",
+    "page": "https://harrypotter.fandom.com/wiki/Rubeus_Hagrid",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "draco.webp": {
+    "character": "Draco Malfoy",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/7/7e/Draco_Malfoy_TDH.png/revision/latest/scale-to-width-down/375?cb=20180116013508",
+    "page": "https://harrypotter.fandom.com/wiki/Draco_Malfoy",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "neville.webp": {
+    "character": "Neville Longbottom",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/b/ba/Neville_Longbottom_DHF2_promo_2.jpg/revision/latest/scale-to-width-down/375?cb=20230923173442",
+    "page": "https://harrypotter.fandom.com/wiki/Neville_Longbottom",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "luna.webp": {
+    "character": "Luna Lovegood",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/e/ed/Luna_Lovegood.jpg/revision/latest/scale-to-width-down/336?cb=20160902165706",
+    "page": "https://harrypotter.fandom.com/wiki/Luna_Lovegood",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "ginny.webp": {
+    "character": "Ginny Weasley",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/8/8b/Ginny_Weasley_hbp_promo.jpg/revision/latest/scale-to-width-down/375?cb=20090317022440",
+    "page": "https://harrypotter.fandom.com/wiki/Ginny_Weasley",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "fred.webp": {
+    "character": "Fred Weasley",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/9/9e/Fred_Weasley_promo_DHF1.jpg/revision/latest/scale-to-width-down/375?cb=20230526122025",
+    "page": "https://harrypotter.fandom.com/wiki/Fred_Weasley",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "george.webp": {
+    "character": "George Weasley",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/b/b5/George_Weasley_promo_DHF1.jpg/revision/latest/scale-to-width-down/375?cb=20161119235305",
+    "page": "https://harrypotter.fandom.com/wiki/George_Weasley",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "sirius.webp": {
+    "character": "Sirius Black",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/b/bc/OOTP_promo_front_closeup_Sirius_Black.jpg/revision/latest/scale-to-width-down/335?cb=20150918055024",
+    "page": "https://harrypotter.fandom.com/wiki/Sirius_Black",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "remus.webp": {
+    "character": "Remus Lupin",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/e/e2/Remus_Lupin_Deathly_Hallows_promo_image.jpg/revision/latest/scale-to-width-down/375?cb=20161119235913",
+    "page": "https://harrypotter.fandom.com/wiki/Remus_Lupin",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "tonks.webp": {
+    "character": "Nymphadora Tonks",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/c/c8/Nymphadora_Tonks_DH_promo_headshot_.jpg/revision/latest/scale-to-width-down/375?cb=20161119222048",
+    "page": "https://harrypotter.fandom.com/wiki/Nymphadora_Tonks",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "moody.webp": {
+    "character": "Alastor Moody",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/4/4d/MoodyProfile.png/revision/latest/scale-to-width-down/314?cb=20210819174911",
+    "page": "https://harrypotter.fandom.com/wiki/Alastor_Moody",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "kingsley.webp": {
+    "character": "Kingsley Shacklebolt",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/5/5e/Kingsley_Shacklebolt_DHF1_promo.jpg/revision/latest/scale-to-width-down/375?cb=20101113194841",
+    "page": "https://harrypotter.fandom.com/wiki/Kingsley_Shacklebolt",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "bellatrix.webp": {
+    "character": "Bellatrix Lestrange",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/1/14/BellatrixLestrange.png/revision/latest/scale-to-width-down/295?cb=20171101034243",
+    "page": "https://harrypotter.fandom.com/wiki/Bellatrix_Lestrange",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "voldemort.webp": {
+    "character": "Lord Voldemort",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/9/97/Voldemort_Headshot_DHF1.png/revision/latest/scale-to-width-down/375?cb=20161203031453",
+    "page": "https://harrypotter.fandom.com/wiki/Lord_Voldemort",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "lucius.webp": {
+    "character": "Lucius Malfoy",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/b/b4/Lucius_Malfoy_BoH.png/revision/latest/scale-to-width-down/338?cb=20190604135420",
+    "page": "https://harrypotter.fandom.com/wiki/Lucius_Malfoy",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "dobby.webp": {
+    "character": "Dobby",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/8/82/Dobby.jpg/revision/latest/scale-to-width-down/447?cb=20230712061949",
+    "page": "https://harrypotter.fandom.com/wiki/Dobby",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "kreacher.webp": {
+    "character": "Kreacher",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/d/d4/Kreacher_HPE.jpg/revision/latest/scale-to-width-down/421?cb=20100621114028",
+    "page": "https://harrypotter.fandom.com/wiki/Kreacher",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "buckbeak.webp": {
+    "character": "Buckbeak",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/c/c7/B3C14M1_cropped_Buckbeak_PM.png/revision/latest/scale-to-width-down/500?cb=20220516100927",
+    "page": "https://harrypotter.fandom.com/wiki/Buckbeak",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "fang.webp": {
+    "character": "Fang",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/2/22/Fang.jpg/revision/latest/scale-to-width-down/301?cb=20100220154955",
+    "page": "https://harrypotter.fandom.com/wiki/Fang",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "cedric.webp": {
+    "character": "Cedric Diggory",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/9/90/Cedric_Diggory_Profile.png/revision/latest/scale-to-width-down/375?cb=20161123045136",
+    "page": "https://harrypotter.fandom.com/wiki/Cedric_Diggory",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "cho.webp": {
+    "character": "Cho Chang",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/1/1e/Cho_Chang.jpg/revision/latest/scale-to-width-down/342?cb=20180322164130",
+    "page": "https://harrypotter.fandom.com/wiki/Cho_Chang",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "seamus.webp": {
+    "character": "Seamus Finnigan",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/a/a7/Seamus_Finnigan_GOFF_promo.png/revision/latest/scale-to-width-down/352?cb=20081129113406",
+    "page": "https://harrypotter.fandom.com/wiki/Seamus_Finnigan",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "dean.webp": {
+    "character": "Dean Thomas",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/9/93/Dean_Thomas_DHF2.jpg/revision/latest/scale-to-width-down/377?cb=20220628110512",
+    "page": "https://harrypotter.fandom.com/wiki/Dean_Thomas",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  },
+  "lavender.webp": {
+    "character": "Lavender Brown",
+    "source": "https://static.wikia.nocookie.net/harrypotter/images/b/b6/Lavender_Brown_HBP.jpg/revision/latest/scale-to-width-down/333?cb=20180203062638",
+    "page": "https://harrypotter.fandom.com/wiki/Lavender_Brown",
+    "licence": "Character artwork from the harrypotter Fandom wiki."
+  }
+}

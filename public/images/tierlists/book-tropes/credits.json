@@ -1,0 +1,152 @@
+{
+  "enemies-to-lovers.webp": {
+    "icon": "swords",
+    "page": "https://lucide.dev/icons/swords",
+    "licence": "MIT (Lucide)"
+  },
+  "forced-proximity.webp": {
+    "icon": "door-closed",
+    "page": "https://lucide.dev/icons/door-closed",
+    "licence": "MIT (Lucide)"
+  },
+  "one-bed.webp": {
+    "icon": "bed-double",
+    "page": "https://lucide.dev/icons/bed-double",
+    "licence": "MIT (Lucide)"
+  },
+  "fake-dating.webp": {
+    "icon": "venetian-mask",
+    "page": "https://lucide.dev/icons/venetian-mask",
+    "licence": "MIT (Lucide)"
+  },
+  "grumpy-sunshine.webp": {
+    "icon": "cloud-sun",
+    "page": "https://lucide.dev/icons/cloud-sun",
+    "licence": "MIT (Lucide)"
+  },
+  "found-family.webp": {
+    "icon": "users",
+    "page": "https://lucide.dev/icons/users",
+    "licence": "MIT (Lucide)"
+  },
+  "chosen-one.webp": {
+    "icon": "sparkles",
+    "page": "https://lucide.dev/icons/sparkles",
+    "licence": "MIT (Lucide)"
+  },
+  "love-triangle.webp": {
+    "icon": "triangle",
+    "page": "https://lucide.dev/icons/triangle",
+    "licence": "MIT (Lucide)"
+  },
+  "second-chance.webp": {
+    "icon": "rotate-ccw",
+    "page": "https://lucide.dev/icons/rotate-ccw",
+    "licence": "MIT (Lucide)"
+  },
+  "slow-burn.webp": {
+    "icon": "flame",
+    "page": "https://lucide.dev/icons/flame",
+    "licence": "MIT (Lucide)"
+  },
+  "academic-rivals.webp": {
+    "icon": "graduation-cap",
+    "page": "https://lucide.dev/icons/graduation-cap",
+    "licence": "MIT (Lucide)"
+  },
+  "marriage-of-convenience.webp": {
+    "icon": "gem",
+    "page": "https://lucide.dev/icons/gem",
+    "licence": "MIT (Lucide)"
+  },
+  "secret-royalty.webp": {
+    "icon": "crown",
+    "page": "https://lucide.dev/icons/crown",
+    "licence": "MIT (Lucide)"
+  },
+  "amnesia.webp": {
+    "icon": "brain",
+    "page": "https://lucide.dev/icons/brain",
+    "licence": "MIT (Lucide)"
+  },
+  "time-loop.webp": {
+    "icon": "repeat",
+    "page": "https://lucide.dev/icons/repeat",
+    "licence": "MIT (Lucide)"
+  },
+  "heist-crew.webp": {
+    "icon": "vault",
+    "page": "https://lucide.dev/icons/vault",
+    "licence": "MIT (Lucide)"
+  },
+  "sentient-house.webp": {
+    "icon": "house",
+    "page": "https://lucide.dev/icons/house",
+    "licence": "MIT (Lucide)"
+  },
+  "morally-grey.webp": {
+    "icon": "user-round",
+    "page": "https://lucide.dev/icons/user-round",
+    "licence": "MIT (Lucide)"
+  },
+  "villain-redemption.webp": {
+    "icon": "shield",
+    "page": "https://lucide.dev/icons/shield",
+    "licence": "MIT (Lucide)"
+  },
+  "epistolary.webp": {
+    "icon": "mail",
+    "page": "https://lucide.dev/icons/mail",
+    "licence": "MIT (Lucide)"
+  },
+  "small-town.webp": {
+    "icon": "store",
+    "page": "https://lucide.dev/icons/store",
+    "licence": "MIT (Lucide)"
+  },
+  "road-trip.webp": {
+    "icon": "car",
+    "page": "https://lucide.dev/icons/car",
+    "licence": "MIT (Lucide)"
+  },
+  "bodyguard.webp": {
+    "icon": "shield-check",
+    "page": "https://lucide.dev/icons/shield-check",
+    "licence": "MIT (Lucide)"
+  },
+  "overheard.webp": {
+    "icon": "ear",
+    "page": "https://lucide.dev/icons/ear",
+    "licence": "MIT (Lucide)"
+  },
+  "miscommunication.webp": {
+    "icon": "message-circle",
+    "page": "https://lucide.dev/icons/message-circle",
+    "licence": "MIT (Lucide)"
+  },
+  "age-gap.webp": {
+    "icon": "hourglass",
+    "page": "https://lucide.dev/icons/hourglass",
+    "licence": "MIT (Lucide)"
+  },
+  "love-at-first-sight.webp": {
+    "icon": "eye",
+    "page": "https://lucide.dev/icons/eye",
+    "licence": "MIT (Lucide)"
+  },
+  "tournament-arc.webp": {
+    "icon": "trophy",
+    "page": "https://lucide.dev/icons/trophy",
+    "licence": "MIT (Lucide)"
+  },
+  "mentor-dies.webp": {
+    "icon": "skull",
+    "page": "https://lucide.dev/icons/skull",
+    "licence": "MIT (Lucide)"
+  },
+  "dog-lives.webp": {
+    "icon": "dog",
+    "page": "https://lucide.dev/icons/dog",
+    "licence": "MIT (Lucide)"
+  }
+}

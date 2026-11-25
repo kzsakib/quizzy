@@ -1,0 +1,152 @@
+{
+  "talking-films.webp": {
+    "icon": "message-square",
+    "page": "https://lucide.dev/icons/message-square",
+    "licence": "MIT (Lucide)"
+  },
+  "speakerphone.webp": {
+    "icon": "volume-2",
+    "page": "https://lucide.dev/icons/volume-2",
+    "licence": "MIT (Lucide)"
+  },
+  "reply-all.webp": {
+    "icon": "reply-all",
+    "page": "https://lucide.dev/icons/reply-all",
+    "licence": "MIT (Lucide)"
+  },
+  "late-no-text.webp": {
+    "icon": "clock",
+    "page": "https://lucide.dev/icons/clock",
+    "licence": "MIT (Lucide)"
+  },
+  "chewing.webp": {
+    "icon": "utensils",
+    "page": "https://lucide.dev/icons/utensils",
+    "licence": "MIT (Lucide)"
+  },
+  "carton-sip.webp": {
+    "icon": "milk",
+    "page": "https://lucide.dev/icons/milk",
+    "licence": "MIT (Lucide)"
+  },
+  "spoilers.webp": {
+    "icon": "eye",
+    "page": "https://lucide.dev/icons/eye",
+    "licence": "MIT (Lucide)"
+  },
+  "indicator.webp": {
+    "icon": "car",
+    "page": "https://lucide.dev/icons/car",
+    "licence": "MIT (Lucide)"
+  },
+  "nails-train.webp": {
+    "icon": "scissors",
+    "page": "https://lucide.dev/icons/scissors",
+    "licence": "MIT (Lucide)"
+  },
+  "calls-restaurant.webp": {
+    "icon": "phone",
+    "page": "https://lucide.dev/icons/phone",
+    "licence": "MIT (Lucide)"
+  },
+  "vaguebooking.webp": {
+    "icon": "message-circle",
+    "page": "https://lucide.dev/icons/message-circle",
+    "licence": "MIT (Lucide)"
+  },
+  "we-need-talk.webp": {
+    "icon": "circle-alert",
+    "page": "https://lucide.dev/icons/circle-alert",
+    "licence": "MIT (Lucide)"
+  },
+  "trolley-aisle.webp": {
+    "icon": "shopping-cart",
+    "page": "https://lucide.dev/icons/shopping-cart",
+    "licence": "MIT (Lucide)"
+  },
+  "trolley-return.webp": {
+    "icon": "shopping-basket",
+    "page": "https://lucide.dev/icons/shopping-basket",
+    "licence": "MIT (Lucide)"
+  },
+  "escalator.webp": {
+    "icon": "arrow-left",
+    "page": "https://lucide.dev/icons/arrow-left",
+    "licence": "MIT (Lucide)"
+  },
+  "cinema-torch.webp": {
+    "icon": "flashlight",
+    "page": "https://lucide.dev/icons/flashlight",
+    "licence": "MIT (Lucide)"
+  },
+  "one-upping.webp": {
+    "icon": "trending-up",
+    "page": "https://lucide.dev/icons/trending-up",
+    "licence": "MIT (Lucide)"
+  },
+  "borrowing.webp": {
+    "icon": "package",
+    "page": "https://lucide.dev/icons/package",
+    "licence": "MIT (Lucide)"
+  },
+  "over-shoulder.webp": {
+    "icon": "book-open",
+    "page": "https://lucide.dev/icons/book-open",
+    "licence": "MIT (Lucide)"
+  },
+  "calm-down.webp": {
+    "icon": "hand",
+    "page": "https://lucide.dev/icons/hand",
+    "licence": "MIT (Lucide)"
+  },
+  "diet-advice.webp": {
+    "icon": "apple",
+    "page": "https://lucide.dev/icons/apple",
+    "licence": "MIT (Lucide)"
+  },
+  "keyboard-clicks.webp": {
+    "icon": "keyboard",
+    "page": "https://lucide.dev/icons/keyboard",
+    "licence": "MIT (Lucide)"
+  },
+  "toilet-roll.webp": {
+    "icon": "scroll",
+    "page": "https://lucide.dev/icons/scroll",
+    "licence": "MIT (Lucide)"
+  },
+  "butter-crumbs.webp": {
+    "icon": "cookie",
+    "page": "https://lucide.dev/icons/cookie",
+    "licence": "MIT (Lucide)"
+  },
+  "group-chat.webp": {
+    "icon": "messages-square",
+    "page": "https://lucide.dev/icons/messages-square",
+    "licence": "MIT (Lucide)"
+  },
+  "k-reply.webp": {
+    "icon": "message-square-more",
+    "page": "https://lucide.dev/icons/message-square-more",
+    "licence": "MIT (Lucide)"
+  },
+  "early-judge.webp": {
+    "icon": "alarm-clock",
+    "page": "https://lucide.dev/icons/alarm-clock",
+    "licence": "MIT (Lucide)"
+  },
+  "voice-notes.webp": {
+    "icon": "mic",
+    "page": "https://lucide.dev/icons/mic",
+    "licence": "MIT (Lucide)"
+  },
+  "quiet-carriage.webp": {
+    "icon": "volume-x",
+    "page": "https://lucide.dev/icons/volume-x",
+    "licence": "MIT (Lucide)"
+  },
+  "whistling.webp": {
+    "icon": "music",
+    "page": "https://lucide.dev/icons/music",
+    "licence": "MIT (Lucide)"
+  }
+}

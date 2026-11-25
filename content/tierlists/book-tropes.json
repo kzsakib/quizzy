@@ -40,35 +40,156 @@
     }
   ],
   "items": [
-    { "id": "enemies-to-lovers", "label": "Enemies to lovers" },
-    { "id": "forced-proximity", "label": "Forced proximity" },
-    { "id": "one-bed", "label": "Only one bed" },
-    { "id": "fake-dating", "label": "Fake dating" },
-    { "id": "grumpy-sunshine", "label": "Grumpy and sunshine" },
-    { "id": "found-family", "label": "Found family" },
-    { "id": "chosen-one", "label": "The chosen one" },
-    { "id": "love-triangle", "label": "Love triangle" },
-    { "id": "second-chance", "label": "Second chance romance" },
-    { "id": "slow-burn", "label": "Slow burn" },
-    { "id": "academic-rivals", "label": "Academic rivals" },
-    { "id": "marriage-of-convenience", "label": "Marriage of convenience" },
-    { "id": "secret-royalty", "label": "Secret royalty" },
-    { "id": "amnesia", "label": "Amnesia" },
-    { "id": "time-loop", "label": "Time loop" },
-    { "id": "heist-crew", "label": "Heist crew" },
-    { "id": "sentient-house", "label": "Sentient house" },
-    { "id": "morally-grey", "label": "Morally grey love interest" },
-    { "id": "villain-redemption", "label": "Villain redemption" },
-    { "id": "epistolary", "label": "Told in letters" },
-    { "id": "small-town", "label": "Small town return" },
-    { "id": "road-trip", "label": "Road trip" },
-    { "id": "bodyguard", "label": "Bodyguard romance" },
-    { "id": "overheard", "label": "Overheard confession" },
-    { "id": "miscommunication", "label": "The miscommunication" },
-    { "id": "age-gap", "label": "Age gap" },
-    { "id": "love-at-first-sight", "label": "Love at first sight" },
-    { "id": "tournament-arc", "label": "Tournament arc" },
-    { "id": "mentor-dies", "label": "The mentor dies" },
-    { "id": "dog-lives", "label": "The dog lives" }
-  ]
+    {
+      "id": "enemies-to-lovers",
+      "label": "Enemies to lovers",
+      "image": "/images/tierlists/book-tropes/enemies-to-lovers.webp"
+    },
+    {
+      "id": "forced-proximity",
+      "label": "Forced proximity",
+      "image": "/images/tierlists/book-tropes/forced-proximity.webp"
+    },
+    {
+      "id": "one-bed",
+      "label": "Only one bed",
+      "image": "/images/tierlists/book-tropes/one-bed.webp"
+    },
+    {
+      "id": "fake-dating",
+      "label": "Fake dating",
+      "image": "/images/tierlists/book-tropes/fake-dating.webp"
+    },
+    {
+      "id": "grumpy-sunshine",
+      "label": "Grumpy and sunshine",
+      "image": "/images/tierlists/book-tropes/grumpy-sunshine.webp"
+    },
+    {
+      "id": "found-family",
+      "label": "Found family",
+      "image": "/images/tierlists/book-tropes/found-family.webp"
+    },
+    {
+      "id": "chosen-one",
+      "label": "The chosen one",
+      "image": "/images/tierlists/book-tropes/chosen-one.webp"
+    },
+    {
+      "id": "love-triangle",
+      "label": "Love triangle",
+      "image": "/images/tierlists/book-tropes/love-triangle.webp"
+    },
+    {
+      "id": "second-chance",
+      "label": "Second chance romance",
+      "image": "/images/tierlists/book-tropes/second-chance.webp"
+    },
+    {
+      "id": "slow-burn",
+      "label": "Slow burn",
+      "image": "/images/tierlists/book-tropes/slow-burn.webp"
+    },
+    {
+      "id": "academic-rivals",
+      "label": "Academic rivals",
+      "image": "/images/tierlists/book-tropes/academic-rivals.webp"
+    },
+    {
+      "id": "marriage-of-convenience",
+      "label": "Marriage of convenience",
+      "image": "/images/tierlists/book-tropes/marriage-of-convenience.webp"
+    },
+    {
+      "id": "secret-royalty",
+      "label": "Secret royalty",
+      "image": "/images/tierlists/book-tropes/secret-royalty.webp"
+    },
+    {
+      "id": "amnesia",
+      "label": "Amnesia",
+      "image": "/images/tierlists/book-tropes/amnesia.webp"
+    },
+    {
+      "id": "time-loop",
+      "label": "Time loop",
+      "image": "/images/tierlists/book-tropes/time-loop.webp"
+    },
+    {
+      "id": "heist-crew",
+      "label": "Heist crew",
+      "image": "/images/tierlists/book-tropes/heist-crew.webp"
+    },
+    {
+      "id": "sentient-house",
+      "label": "Sentient house",
+      "image": "/images/tierlists/book-tropes/sentient-house.webp"
+    },
+    {
+      "id": "morally-grey",
+      "label": "Morally grey love interest",
+      "image": "/images/tierlists/book-tropes/morally-grey.webp"
+    },
+    {
+      "id": "villain-redemption",
+      "label": "Villain redemption",
+      "image": "/images/tierlists/book-tropes/villain-redemption.webp"
+    },
+    {
+      "id": "epistolary",
+      "label": "Told in letters",
+      "image": "/images/tierlists/book-tropes/epistolary.webp"
+    },
+    {
+      "id": "small-town",
+      "label": "Small town return",
+      "image": "/images/tierlists/book-tropes/small-town.webp"
+    },
+    {
+      "id": "road-trip",
+      "label": "Road trip",
+      "image": "/images/tierlists/book-tropes/road-trip.webp"
+    },
+    {
+      "id": "bodyguard",
+      "label": "Bodyguard romance",
+      "image": "/images/tierlists/book-tropes/bodyguard.webp"
+    },
+    {
+      "id": "overheard",
+      "label": "Overheard confession",
+      "image": "/images/tierlists/book-tropes/overheard.webp"
+    },
+    {
+      "id": "miscommunication",
+      "label": "The miscommunication",
+      "image": "/images/tierlists/book-tropes/miscommunication.webp"
+    },
+    {
+      "id": "age-gap",
+      "label": "Age gap",
+      "image": "/images/tierlists/book-tropes/age-gap.webp"
+    },
+    {
+      "id": "love-at-first-sight",
+      "label": "Love at first sight",
+      "image": "/images/tierlists/book-tropes/love-at-first-sight.webp"
+    },
+    {
+      "id": "tournament-arc",
+      "label": "Tournament arc",
+      "image": "/images/tierlists/book-tropes/tournament-arc.webp"
+    },
+    {
+      "id": "mentor-dies",
+      "label": "The mentor dies",
+      "image": "/images/tierlists/book-tropes/mentor-dies.webp"
+    },
+    {
+      "id": "dog-lives",
+      "label": "The dog lives",
+      "image": "/images/tierlists/book-tropes/dog-lives.webp"
+    }
+  ],
+  "credit": "Icons from Lucide (MIT licence)."
 }

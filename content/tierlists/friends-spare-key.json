@@ -40,29 +40,126 @@
     }
   ],
   "items": [
-    { "id": "rachel", "label": "Rachel" },
-    { "id": "monica", "label": "Monica" },
-    { "id": "chandler", "label": "Chandler" },
-    { "id": "joey", "label": "Joey" },
-    { "id": "phoebe", "label": "Phoebe" },
-    { "id": "ross", "label": "Ross" },
-    { "id": "gunther", "label": "Gunther" },
-    { "id": "janice", "label": "Janice" },
-    { "id": "mike", "label": "Mike Hannigan" },
-    { "id": "richard", "label": "Richard" },
-    { "id": "emily", "label": "Emily" },
-    { "id": "carol", "label": "Carol" },
-    { "id": "susan", "label": "Susan" },
-    { "id": "ben", "label": "Ben" },
-    { "id": "frank-jr", "label": "Frank Jr." },
-    { "id": "estelle", "label": "Estelle" },
-    { "id": "mr-heckles", "label": "Mr. Heckles" },
-    { "id": "ursula", "label": "Ursula" },
-    { "id": "david", "label": "David the scientist" },
-    { "id": "tag", "label": "Tag" },
-    { "id": "charlie", "label": "Charlie" },
-    { "id": "gavin", "label": "Gavin" },
-    { "id": "pete", "label": "Pete Becker" },
-    { "id": "paul", "label": "Paul the wine guy" }
-  ]
+    {
+      "id": "rachel",
+      "label": "Rachel",
+      "image": "/images/tierlists/friends/rachel.webp"
+    },
+    {
+      "id": "monica",
+      "label": "Monica",
+      "image": "/images/tierlists/friends/monica.webp"
+    },
+    {
+      "id": "chandler",
+      "label": "Chandler",
+      "image": "/images/tierlists/friends/chandler.webp"
+    },
+    {
+      "id": "joey",
+      "label": "Joey",
+      "image": "/images/tierlists/friends/joey.webp"
+    },
+    {
+      "id": "phoebe",
+      "label": "Phoebe",
+      "image": "/images/tierlists/friends/phoebe.webp"
+    },
+    {
+      "id": "ross",
+      "label": "Ross",
+      "image": "/images/tierlists/friends/ross.webp"
+    },
+    {
+      "id": "gunther",
+      "label": "Gunther",
+      "image": "/images/tierlists/friends/gunther.webp"
+    },
+    {
+      "id": "janice",
+      "label": "Janice",
+      "image": "/images/tierlists/friends/janice.webp"
+    },
+    {
+      "id": "mike",
+      "label": "Mike Hannigan",
+      "image": "/images/tierlists/friends/mike.webp"
+    },
+    {
+      "id": "richard",
+      "label": "Richard",
+      "image": "/images/tierlists/friends/richard.webp"
+    },
+    {
+      "id": "emily",
+      "label": "Emily",
+      "image": "/images/tierlists/friends/emily.webp"
+    },
+    {
+      "id": "carol",
+      "label": "Carol",
+      "image": "/images/tierlists/friends/carol.webp"
+    },
+    {
+      "id": "susan",
+      "label": "Susan",
+      "image": "/images/tierlists/friends/susan.webp"
+    },
+    {
+      "id": "ben",
+      "label": "Ben",
+      "image": "/images/tierlists/friends/ben.webp"
+    },
+    {
+      "id": "frank-jr",
+      "label": "Frank Jr.",
+      "image": "/images/tierlists/friends/frank-jr.webp"
+    },
+    {
+      "id": "estelle",
+      "label": "Estelle",
+      "image": "/images/tierlists/friends/estelle.webp"
+    },
+    {
+      "id": "mr-heckles",
+      "label": "Mr. Heckles",
+      "image": "/images/tierlists/friends/mr-heckles.webp"
+    },
+    {
+      "id": "ursula",
+      "label": "Ursula",
+      "image": "/images/tierlists/friends/ursula.webp"
+    },
+    {
+      "id": "jack",
+      "label": "Jack Geller",
+      "image": "/images/tierlists/friends/jack.webp"
+    },
+    {
+      "id": "tag",
+      "label": "Tag",
+      "image": "/images/tierlists/friends/tag.webp"
+    },
+    {
+      "id": "charlie",
+      "label": "Charlie",
+      "image": "/images/tierlists/friends/charlie.webp"
+    },
+    {
+      "id": "gavin",
+      "label": "Gavin",
+      "image": "/images/tierlists/friends/gavin.webp"
+    },
+    {
+      "id": "pete",
+      "label": "Pete Becker",
+      "image": "/images/tierlists/friends/pete.webp"
+    },
+    {
+      "id": "judy",
+      "label": "Judy Geller",
+      "image": "/images/tierlists/friends/judy.webp"
+    }
+  ],
+  "credit": "Cast photos from the Friends Wiki (Fandom). Unofficial fan project."
 }

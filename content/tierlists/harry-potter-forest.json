@@ -40,35 +40,156 @@
     }
   ],
   "items": [
-    { "id": "harry", "label": "Harry" },
-    { "id": "hermione", "label": "Hermione" },
-    { "id": "ron", "label": "Ron" },
-    { "id": "dumbledore", "label": "Dumbledore" },
-    { "id": "snape", "label": "Snape" },
-    { "id": "mcgonagall", "label": "McGonagall" },
-    { "id": "hagrid", "label": "Hagrid" },
-    { "id": "draco", "label": "Draco" },
-    { "id": "neville", "label": "Neville" },
-    { "id": "luna", "label": "Luna" },
-    { "id": "ginny", "label": "Ginny" },
-    { "id": "fred", "label": "Fred" },
-    { "id": "george", "label": "George" },
-    { "id": "sirius", "label": "Sirius" },
-    { "id": "remus", "label": "Remus" },
-    { "id": "tonks", "label": "Tonks" },
-    { "id": "moody", "label": "Mad-Eye Moody" },
-    { "id": "kingsley", "label": "Kingsley" },
-    { "id": "bellatrix", "label": "Bellatrix" },
-    { "id": "voldemort", "label": "Voldemort" },
-    { "id": "lucius", "label": "Lucius" },
-    { "id": "dobby", "label": "Dobby" },
-    { "id": "kreacher", "label": "Kreacher" },
-    { "id": "buckbeak", "label": "Buckbeak" },
-    { "id": "fang", "label": "Fang" },
-    { "id": "cedric", "label": "Cedric" },
-    { "id": "cho", "label": "Cho" },
-    { "id": "seamus", "label": "Seamus" },
-    { "id": "dean", "label": "Dean" },
-    { "id": "lavender", "label": "Lavender" }
-  ]
+    {
+      "id": "harry",
+      "label": "Harry",
+      "image": "/images/tierlists/harry-potter/harry.webp"
+    },
+    {
+      "id": "hermione",
+      "label": "Hermione",
+      "image": "/images/tierlists/harry-potter/hermione.webp"
+    },
+    {
+      "id": "ron",
+      "label": "Ron",
+      "image": "/images/tierlists/harry-potter/ron.webp"
+    },
+    {
+      "id": "dumbledore",
+      "label": "Dumbledore",
+      "image": "/images/tierlists/harry-potter/dumbledore.webp"
+    },
+    {
+      "id": "snape",
+      "label": "Snape",
+      "image": "/images/tierlists/harry-potter/snape.webp"
+    },
+    {
+      "id": "mcgonagall",
+      "label": "McGonagall",
+      "image": "/images/tierlists/harry-potter/mcgonagall.webp"
+    },
+    {
+      "id": "hagrid",
+      "label": "Hagrid",
+      "image": "/images/tierlists/harry-potter/hagrid.webp"
+    },
+    {
+      "id": "draco",
+      "label": "Draco",
+      "image": "/images/tierlists/harry-potter/draco.webp"
+    },
+    {
+      "id": "neville",
+      "label": "Neville",
+      "image": "/images/tierlists/harry-potter/neville.webp"
+    },
+    {
+      "id": "luna",
+      "label": "Luna",
+      "image": "/images/tierlists/harry-potter/luna.webp"
+    },
+    {
+      "id": "ginny",
+      "label": "Ginny",
+      "image": "/images/tierlists/harry-potter/ginny.webp"
+    },
+    {
+      "id": "fred",
+      "label": "Fred",
+      "image": "/images/tierlists/harry-potter/fred.webp"
+    },
+    {
+      "id": "george",
+      "label": "George",
+      "image": "/images/tierlists/harry-potter/george.webp"
+    },
+    {
+      "id": "sirius",
+      "label": "Sirius",
+      "image": "/images/tierlists/harry-potter/sirius.webp"
+    },
+    {
+      "id": "remus",
+      "label": "Remus",
+      "image": "/images/tierlists/harry-potter/remus.webp"
+    },
+    {
+      "id": "tonks",
+      "label": "Tonks",
+      "image": "/images/tierlists/harry-potter/tonks.webp"
+    },
+    {
+      "id": "moody",
+      "label": "Mad-Eye Moody",
+      "image": "/images/tierlists/harry-potter/moody.webp"
+    },
+    {
+      "id": "kingsley",
+      "label": "Kingsley",
+      "image": "/images/tierlists/harry-potter/kingsley.webp"
+    },
+    {
+      "id": "bellatrix",
+      "label": "Bellatrix",
+      "image": "/images/tierlists/harry-potter/bellatrix.webp"
+    },
+    {
+      "id": "voldemort",
+      "label": "Voldemort",
+      "image": "/images/tierlists/harry-potter/voldemort.webp"
+    },
+    {
+      "id": "lucius",
+      "label": "Lucius",
+      "image": "/images/tierlists/harry-potter/lucius.webp"
+    },
+    {
+      "id": "dobby",
+      "label": "Dobby",
+      "image": "/images/tierlists/harry-potter/dobby.webp"
+    },
+    {
+      "id": "kreacher",
+      "label": "Kreacher",
+      "image": "/images/tierlists/harry-potter/kreacher.webp"
+    },
+    {
+      "id": "buckbeak",
+      "label": "Buckbeak",
+      "image": "/images/tierlists/harry-potter/buckbeak.webp"
+    },
+    {
+      "id": "fang",
+      "label": "Fang",
+      "image": "/images/tierlists/harry-potter/fang.webp"
+    },
+    {
+      "id": "cedric",
+      "label": "Cedric",
+      "image": "/images/tierlists/harry-potter/cedric.webp"
+    },
+    {
+      "id": "cho",
+      "label": "Cho",
+      "image": "/images/tierlists/harry-potter/cho.webp"
+    },
+    {
+      "id": "seamus",
+      "label": "Seamus",
+      "image": "/images/tierlists/harry-potter/seamus.webp"
+    },
+    {
+      "id": "dean",
+      "label": "Dean",
+      "image": "/images/tierlists/harry-potter/dean.webp"
+    },
+    {
+      "id": "lavender",
+      "label": "Lavender",
+      "image": "/images/tierlists/harry-potter/lavender.webp"
+    }
+  ],
+  "credit": "Character portraits from the Harry Potter Wiki (Fandom). Unofficial fan project."
 }

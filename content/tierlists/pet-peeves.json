@@ -40,35 +40,156 @@
     }
   ],
   "items": [
-    { "id": "talking-films", "label": "Talking during films" },
-    { "id": "speakerphone", "label": "Speakerphone on the bus" },
-    { "id": "reply-all", "label": "Reply all" },
-    { "id": "late-no-text", "label": "Late with no text" },
-    { "id": "chewing", "label": "Chewing with the mouth open" },
-    { "id": "carton-sip", "label": "One sip left in the carton" },
-    { "id": "spoilers", "label": "Spoiling the finale" },
-    { "id": "indicator", "label": "Not using the indicator" },
-    { "id": "nails-train", "label": "Clipping nails on a train" },
-    { "id": "calls-restaurant", "label": "Calls in a restaurant" },
-    { "id": "vaguebooking", "label": "Vaguebooking" },
-    { "id": "we-need-talk", "label": "\"We need to talk\" with no context" },
-    { "id": "trolley-aisle", "label": "Trolley left in the aisle" },
-    { "id": "trolley-return", "label": "Not returning the trolley" },
-    { "id": "escalator", "label": "Standing on the left" },
-    { "id": "cinema-torch", "label": "Phone torch in the cinema" },
-    { "id": "one-upping", "label": "One-upping every story" },
-    { "id": "borrowing", "label": "Borrowing and not returning" },
-    { "id": "over-shoulder", "label": "Reading over your shoulder" },
-    { "id": "calm-down", "label": "\"Calm down\"" },
-    { "id": "diet-advice", "label": "Unsolicited diet advice" },
-    { "id": "keyboard-clicks", "label": "Loud phone keyboard" },
-    { "id": "toilet-roll", "label": "Not replacing the roll" },
-    { "id": "butter-crumbs", "label": "Crumbs in the butter" },
-    { "id": "group-chat", "label": "Two hundred unread messages" },
-    { "id": "k-reply", "label": "Replying \"k\"" },
-    { "id": "early-judge", "label": "Arriving early and judging you" },
-    { "id": "voice-notes", "label": "Four-minute voice notes" },
-    { "id": "quiet-carriage", "label": "Talking in the quiet carriage" },
-    { "id": "whistling", "label": "Whistling indoors" }
-  ]
+    {
+      "id": "talking-films",
+      "label": "Talking during films",
+      "image": "/images/tierlists/pet-peeves/talking-films.webp"
+    },
+    {
+      "id": "speakerphone",
+      "label": "Speakerphone on the bus",
+      "image": "/images/tierlists/pet-peeves/speakerphone.webp"
+    },
+    {
+      "id": "reply-all",
+      "label": "Reply all",
+      "image": "/images/tierlists/pet-peeves/reply-all.webp"
+    },
+    {
+      "id": "late-no-text",
+      "label": "Late with no text",
+      "image": "/images/tierlists/pet-peeves/late-no-text.webp"
+    },
+    {
+      "id": "chewing",
+      "label": "Chewing with the mouth open",
+      "image": "/images/tierlists/pet-peeves/chewing.webp"
+    },
+    {
+      "id": "carton-sip",
+      "label": "One sip left in the carton",
+      "image": "/images/tierlists/pet-peeves/carton-sip.webp"
+    },
+    {
+      "id": "spoilers",
+      "label": "Spoiling the finale",
+      "image": "/images/tierlists/pet-peeves/spoilers.webp"
+    },
+    {
+      "id": "indicator",
+      "label": "Not using the indicator",
+      "image": "/images/tierlists/pet-peeves/indicator.webp"
+    },
+    {
+      "id": "nails-train",
+      "label": "Clipping nails on a train",
+      "image": "/images/tierlists/pet-peeves/nails-train.webp"
+    },
+    {
+      "id": "calls-restaurant",
+      "label": "Calls in a restaurant",
+      "image": "/images/tierlists/pet-peeves/calls-restaurant.webp"
+    },
+    {
+      "id": "vaguebooking",
+      "label": "Vaguebooking",
+      "image": "/images/tierlists/pet-peeves/vaguebooking.webp"
+    },
+    {
+      "id": "we-need-talk",
+      "label": "\"We need to talk\" with no context",
+      "image": "/images/tierlists/pet-peeves/we-need-talk.webp"
+    },
+    {
+      "id": "trolley-aisle",
+      "label": "Trolley left in the aisle",
+      "image": "/images/tierlists/pet-peeves/trolley-aisle.webp"
+    },
+    {
+      "id": "trolley-return",
+      "label": "Not returning the trolley",
+      "image": "/images/tierlists/pet-peeves/trolley-return.webp"
+    },
+    {
+      "id": "escalator",
+      "label": "Standing on the left",
+      "image": "/images/tierlists/pet-peeves/escalator.webp"
+    },
+    {
+      "id": "cinema-torch",
+      "label": "Phone torch in the cinema",
+      "image": "/images/tierlists/pet-peeves/cinema-torch.webp"
+    },
+    {
+      "id": "one-upping",
+      "label": "One-upping every story",
+      "image": "/images/tierlists/pet-peeves/one-upping.webp"
+    },
+    {
+      "id": "borrowing",
+      "label": "Borrowing and not returning",
+      "image": "/images/tierlists/pet-peeves/borrowing.webp"
+    },
+    {
+      "id": "over-shoulder",
+      "label": "Reading over your shoulder",
+      "image": "/images/tierlists/pet-peeves/over-shoulder.webp"
+    },
+    {
+      "id": "calm-down",
+      "label": "\"Calm down\"",
+      "image": "/images/tierlists/pet-peeves/calm-down.webp"
+    },
+    {
+      "id": "diet-advice",
+      "label": "Unsolicited diet advice",
+      "image": "/images/tierlists/pet-peeves/diet-advice.webp"
+    },
+    {
+      "id": "keyboard-clicks",
+      "label": "Loud phone keyboard",
+      "image": "/images/tierlists/pet-peeves/keyboard-clicks.webp"
+    },
+    {
+      "id": "toilet-roll",
+      "label": "Not replacing the roll",
+      "image": "/images/tierlists/pet-peeves/toilet-roll.webp"
+    },
+    {
+      "id": "butter-crumbs",
+      "label": "Crumbs in the butter",
+      "image": "/images/tierlists/pet-peeves/butter-crumbs.webp"
+    },
+    {
+      "id": "group-chat",
+      "label": "Two hundred unread messages",
+      "image": "/images/tierlists/pet-peeves/group-chat.webp"
+    },
+    {
+      "id": "k-reply",
+      "label": "Replying \"k\"",
+      "image": "/images/tierlists/pet-peeves/k-reply.webp"
+    },
+    {
+      "id": "early-judge",
+      "label": "Arriving early and judging you",
+      "image": "/images/tierlists/pet-peeves/early-judge.webp"
+    },
+    {
+      "id": "voice-notes",
+      "label": "Four-minute voice notes",
+      "image": "/images/tierlists/pet-peeves/voice-notes.webp"
+    },
+    {
+      "id": "quiet-carriage",
+      "label": "Talking in the quiet carriage",
+      "image": "/images/tierlists/pet-peeves/quiet-carriage.webp"
+    },
+    {
+      "id": "whistling",
+      "label": "Whistling indoors",
+      "image": "/images/tierlists/pet-peeves/whistling.webp"
+    }
+  ],
+  "credit": "Icons from Lucide (MIT licence)."
 }
