@@ -1,0 +1,612 @@
+{
+  "slug": "attack-on-titan-titan",
+  "title": "The walls have assigned you a Titan",
+  "dek": "You wake up enormous. Twelve questions about what you'd do with it, and the scouts will tell you which of the nine you are.",
+  "category": "Anime",
+  "accent": "orange",
+  "emoji": "⚔️",
+  "minutes": 4,
+  "published": "2026-11-25",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "You wake up nine metres tall. First thought:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Who do I need to protect?",
+          "weights": {
+            "founding": 2,
+            "attack": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Who's in charge now?",
+          "weights": {
+            "attack": 2,
+            "warhammer": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Where's the nearest wall?",
+          "weights": {
+            "armored": 2,
+            "colossal": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "What can this body actually do?",
+          "weights": {
+            "female": 2,
+            "cart": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your Titan's best quality:",
+      "options": [
+        {
+          "id": "a",
+          "label": "It does not stop",
+          "weights": {
+            "attack": 2,
+            "cart": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Nothing gets through it",
+          "weights": {
+            "armored": 2,
+            "warhammer": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "It's always where it's needed",
+          "weights": {
+            "cart": 2,
+            "female": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "It ends arguments",
+          "weights": {
+            "colossal": 2,
+            "beast": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather be:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The shield",
+          "weights": {
+            "armored": 2,
+            "founding": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The warning",
+          "weights": {
+            "beast": 2,
+            "colossal": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Where your Titan is strongest:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Between a crowd and the thing coming",
+          "weights": {
+            "armored": 2,
+            "founding": 1
+          },
+          "image": "/images/questions/main-street-cobbles.jpg",
+          "alt": "A narrow cobbled street between old buildings"
+        },
+        {
+          "id": "b",
+          "label": "High ground, watching all of it",
+          "weights": {
+            "beast": 2,
+            "cart": 1
+          },
+          "image": "/images/questions/radio-mast.jpg",
+          "alt": "A tall radio mast against the sky"
+        },
+        {
+          "id": "c",
+          "label": "Somewhere with a very low ceiling",
+          "weights": {
+            "cart": 2,
+            "female": 1
+          },
+          "image": "/images/questions/horror-hall-cellar.jpg",
+          "alt": "A dim cellar with low beams"
+        },
+        {
+          "id": "d",
+          "label": "Out in the open, no cover at all",
+          "weights": {
+            "colossal": 2,
+            "attack": 1
+          },
+          "image": "/images/questions/main-street-crossing.jpg",
+          "alt": "An empty street crossing in daylight"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your position in the formation.",
+      "helper": "Across: hold the line, or break it. Up: follow orders, or decide alone.",
+      "x": {
+        "low": {
+          "label": "Hold the line",
+          "trait": "armored"
+        },
+        "high": {
+          "label": "Break the line",
+          "trait": "attack"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Follow orders",
+          "trait": "cart"
+        },
+        "high": {
+          "label": "Decide alone",
+          "trait": "warhammer"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Garrison",
+        "lowHigh": "The Vanguard",
+        "highLow": "The Supply Line",
+        "highHigh": "The Usurper"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank your orders, first to last.",
+      "helper": "First place is the one you'd disobey a commander for.",
+      "items": [
+        {
+          "id": "protect",
+          "label": "Protect the people behind you",
+          "weights": {
+            "founding": 2,
+            "armored": 1
+          }
+        },
+        {
+          "id": "objective",
+          "label": "Take the objective",
+          "weights": {
+            "attack": 2,
+            "warhammer": 1
+          }
+        },
+        {
+          "id": "truth",
+          "label": "Find out what's really going on",
+          "weights": {
+            "beast": 2,
+            "female": 1
+          }
+        },
+        {
+          "id": "supply",
+          "label": "Keep everyone supplied and moving",
+          "weights": {
+            "cart": 2,
+            "colossal": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The scout's report on you.",
+      "helper": "Two gaps. One of them is a compliment.",
+      "template": "They call me {a} because {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the one who keeps coming back",
+              "weights": {
+                "attack": 2,
+                "founding": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the one nobody can move",
+              "weights": {
+                "armored": 2,
+                "colossal": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "the one who was never where they looked",
+              "weights": {
+                "female": 2,
+                "cart": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "the one who asks the wrong questions",
+              "weights": {
+                "beast": 2,
+                "warhammer": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "I was already here",
+              "weights": {
+                "founding": 2,
+                "attack": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "I don't need to be understood",
+              "weights": {
+                "colossal": 2,
+                "armored": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "I'm useful, that's all",
+              "weights": {
+                "cart": 2,
+                "female": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "somebody has to say it",
+              "weights": {
+                "beast": 2,
+                "warhammer": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather protect a few people than save everyone.",
+      "trait": "founding",
+      "low": "Save everyone, obviously",
+      "high": "I can only carry a few"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Being feared is a kind of protection.",
+      "disagree": {
+        "trait": "founding"
+      },
+      "agree": {
+        "trait": "warhammer"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Somebody has to make the decision nobody wants.",
+      "agree": {
+        "trait": "attack",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "cart",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The thing you refuse to do:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Leave someone behind",
+          "weights": {
+            "founding": 2,
+            "armored": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Follow an order I know is wrong",
+          "weights": {
+            "attack": 2,
+            "warhammer": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Fight a war I didn't choose",
+          "weights": {
+            "female": 2,
+            "cart": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Stop asking questions",
+          "weights": {
+            "beast": 2,
+            "colossal": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "After it's over, you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Rebuild something worth living in",
+          "weights": {
+            "founding": 2,
+            "cart": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Walk away and let the story be wrong",
+          "weights": {
+            "attack": 2,
+            "female": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Stand guard anyway",
+          "weights": {
+            "armored": 2,
+            "colossal": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Write down everything we learned",
+          "weights": {
+            "beast": 2,
+            "warhammer": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "founding",
+      "name": "The Founding Titan",
+      "tagline": "The whole thing runs through you",
+      "blurb": "You are the person everyone's plans quietly depend on. You don't ask for the role; you just notice that if you don't hold it, nobody else will. That kind of responsibility makes you calm in public and unbearable in private, and it makes you very hard to replace.",
+      "accent": "purple",
+      "mix": {
+        "founding": 42,
+        "attack": 9,
+        "colossal": 9,
+        "armored": 8,
+        "female": 8,
+        "beast": 8,
+        "cart": 8,
+        "warhammer": 8
+      },
+      "strengths": [
+        "Holds everything together",
+        "Thinks about who comes after",
+        "Impossible to sideline"
+      ],
+      "watchOut": "You carry what nobody asked you to. Put some of it down."
+    },
+    {
+      "trait": "attack",
+      "name": "The Attack Titan",
+      "tagline": "Forward, always, whatever's behind you",
+      "blurb": "You cannot stand still. Every problem looks like something to move through rather than around, and you would rather take a bad decision at speed than a good one eventually. People follow you because you are already going.",
+      "accent": "red",
+      "mix": {
+        "attack": 42,
+        "colossal": 9,
+        "armored": 9,
+        "female": 8,
+        "beast": 8,
+        "cart": 8,
+        "warhammer": 8,
+        "founding": 8
+      },
+      "strengths": [
+        "Momentum when everyone freezes",
+        "Refuses to accept a locked door",
+        "Brave in the useful way"
+      ],
+      "watchOut": "You keep moving so you never have to feel the thing you left. Stop once."
+    },
+    {
+      "trait": "colossal",
+      "name": "The Colossal Titan",
+      "tagline": "You only have to arrive once",
+      "blurb": "You are not built for the small skirmish. You are built for the moment that changes the shape of everything, and you know it. Most of the time you hold that back, which is why people find you quiet and slightly alarming until the day you aren't.",
+      "accent": "orange",
+      "mix": {
+        "colossal": 42,
+        "armored": 9,
+        "female": 9,
+        "beast": 8,
+        "cart": 8,
+        "warhammer": 8,
+        "founding": 8,
+        "attack": 8
+      },
+      "strengths": [
+        "Enormous impact when it counts",
+        "Calm with heavy responsibility",
+        "Knows when to hold back"
+      ],
+      "watchOut": "You wait for the big moment and miss a hundred small ones. Use a little of it."
+    },
+    {
+      "trait": "armored",
+      "name": "The Armored Titan",
+      "tagline": "The line holds because you're on it",
+      "blurb": "You are the reason the plan survives contact. Plates on, feet planted, no drama: you take the hit so the people behind you don't have to. You'd rather be reliable than impressive, and you are extremely impressive at being reliable.",
+      "accent": "sky",
+      "mix": {
+        "armored": 42,
+        "female": 9,
+        "beast": 9,
+        "cart": 8,
+        "warhammer": 8,
+        "founding": 8,
+        "attack": 8,
+        "colossal": 8
+      },
+      "strengths": [
+        "Unshakeable under pressure",
+        "Protective without being asked",
+        "Keeps promises in bad weather"
+      ],
+      "watchOut": "Armour that never comes off stops being protection. Let someone see the seam."
+    },
+    {
+      "trait": "female",
+      "name": "The Female Titan",
+      "tagline": "Adaptable, fast, and not here to explain",
+      "blurb": "You are the one who does three things at once and makes it look like one. Your strength is versatility: the right tool, the right angle, the right moment. You keep your reasoning to yourself, which makes people nervous and makes you effective.",
+      "accent": "cyan",
+      "mix": {
+        "female": 42,
+        "beast": 9,
+        "cart": 9,
+        "warhammer": 8,
+        "founding": 8,
+        "attack": 8,
+        "colossal": 8,
+        "armored": 8
+      },
+      "strengths": [
+        "Adapts faster than anyone",
+        "Reads an opening instantly",
+        "Keeps their own counsel"
+      ],
+      "watchOut": "You explain nothing and then wonder why nobody trusts the plan. Say one sentence."
+    },
+    {
+      "trait": "beast",
+      "name": "The Beast Titan",
+      "tagline": "Questions first, then the throw",
+      "blurb": "You are the curious one, the one who wants to know how the world actually works and isn't polite about asking. You are much more dangerous than you look, mostly because you've thought about it. You'd rather understand the enemy than simply beat them.",
+      "accent": "yellow",
+      "mix": {
+        "beast": 42,
+        "cart": 9,
+        "warhammer": 9,
+        "founding": 8,
+        "attack": 8,
+        "colossal": 8,
+        "armored": 8,
+        "female": 8
+      },
+      "strengths": [
+        "Relentlessly curious",
+        "Sees patterns nobody else does",
+        "Dangerous in an unexpected way"
+      ],
+      "watchOut": "You treat people as questions to solve. Some of them just want to be liked."
+    },
+    {
+      "trait": "cart",
+      "name": "The Cart Titan",
+      "tagline": "Unglamorous, indispensable, still moving",
+      "blurb": "You do the work nobody photographs: the carrying, the scheduling, the showing up again. You are not the one on the poster and you are the one everything falls apart without. Your endurance is the least dramatic and most decisive thing in the story.",
+      "accent": "lime",
+      "mix": {
+        "cart": 42,
+        "warhammer": 9,
+        "founding": 9,
+        "attack": 8,
+        "colossal": 8,
+        "armored": 8,
+        "female": 8,
+        "beast": 8
+      },
+      "strengths": [
+        "Endless practical stamina",
+        "Keeps a group actually functioning",
+        "Never too proud for the job"
+      ],
+      "watchOut": "You volunteer for the load and then resent carrying it. Ask for a hand."
+    },
+    {
+      "trait": "warhammer",
+      "name": "The War Hammer Titan",
+      "tagline": "Built on the spot, aimed precisely",
+      "blurb": "You don't fight with what's in front of you; you make the right thing appear. You are deliberate, exact and a little cold about it, and you'd rather win with one well-placed move than a long brawl. Your weakness is that you need a moment to build.",
+      "accent": "pink",
+      "mix": {
+        "warhammer": 42,
+        "founding": 9,
+        "attack": 9,
+        "colossal": 8,
+        "armored": 8,
+        "female": 8,
+        "beast": 8,
+        "cart": 8
+      },
+      "strengths": [
+        "Precision over force",
+        "Creates the tool the moment needs",
+        "Unfazed by a stronger opponent"
+      ],
+      "watchOut": "You need setup time and never ask for it. Say you need a minute."
+    }
+  ]
+}

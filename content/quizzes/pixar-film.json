@@ -1,0 +1,678 @@
+{
+  "slug": "pixar-film",
+  "title": "Pixar has already made the film about you",
+  "dek": "No trivia, no release dates. Twelve questions about work, family and what you're holding on to, and the studio will tell you which film it made.",
+  "category": "Film",
+  "accent": "sky",
+  "emoji": "🎬",
+  "minutes": 4,
+  "published": "2026-11-25",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The first scene of your life:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A bedroom where the toys have opinions",
+          "weights": {
+            "toys": 2,
+            "monsters": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "An ocean, and one small fish going the wrong way",
+          "weights": {
+            "nemo": 2,
+            "walle": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A house with too many memories in it",
+          "weights": {
+            "up": 2,
+            "coco": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A kitchen that smells like it's about to work",
+          "weights": {
+            "ratatouille": 2,
+            "soul": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your job, if you had one:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Keeping a system running that nobody notices",
+          "weights": {
+            "walle": 2,
+            "monsters": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Making sure the family is fine",
+          "weights": {
+            "incredibles": 2,
+            "coco": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Talking someone through a very bad day",
+          "weights": {
+            "insideout": 2,
+            "soul": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Doing the thing everyone said was impossible",
+          "weights": {
+            "up": 2,
+            "nemo": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Go on the adventure",
+          "weights": {
+            "up": 2,
+            "nemo": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Stay and fix what's broken",
+          "weights": {
+            "walle": 2,
+            "toys": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your opening shot:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A shelf crowded with things you can't throw away",
+          "weights": {
+            "toys": 2,
+            "monsters": 1
+          },
+          "image": "/images/questions/save-shelf.jpg",
+          "alt": "A shelf crowded with old games and objects"
+        },
+        {
+          "id": "b",
+          "label": "Underwater, light coming down from above",
+          "weights": {
+            "nemo": 2,
+            "walle": 1
+          },
+          "image": "/images/questions/pkmn-river.jpg",
+          "alt": "A slow river running past a quiet bank"
+        },
+        {
+          "id": "c",
+          "label": "A city at night, seen from a rooftop",
+          "weights": {
+            "incredibles": 2,
+            "soul": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A neon-lit street at night"
+        },
+        {
+          "id": "d",
+          "label": "A candlelit table with food already on it",
+          "weights": {
+            "ratatouille": 2,
+            "coco": 1
+          },
+          "image": "/images/questions/dinner-candles.jpg",
+          "alt": "A dinner table lit by candles"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot the size of your story.",
+      "helper": "Across: stay home, or go far. Up: keep it small, or aim enormous.",
+      "x": {
+        "low": {
+          "label": "Stay home",
+          "trait": "toys"
+        },
+        "high": {
+          "label": "Go far",
+          "trait": "nemo"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Keep it small",
+          "trait": "ratatouille"
+        },
+        "high": {
+          "label": "Aim enormous",
+          "trait": "incredibles"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Kitchen Table",
+        "lowHigh": "The Family Suit",
+        "highLow": "The Reef",
+        "highHigh": "The Launch"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what the story is really about.",
+      "helper": "First place is the one that makes you cry.",
+      "items": [
+        {
+          "id": "letgo",
+          "label": "Letting go of something you kept too long",
+          "weights": {
+            "up": 2,
+            "toys": 1
+          }
+        },
+        {
+          "id": "work",
+          "label": "Doing the work nobody claps for",
+          "weights": {
+            "walle": 2,
+            "soul": 1
+          }
+        },
+        {
+          "id": "feelings",
+          "label": "Feeling everything at once",
+          "weights": {
+            "insideout": 2,
+            "coco": 1
+          }
+        },
+        {
+          "id": "underestimated",
+          "label": "Being underestimated by everyone",
+          "weights": {
+            "ratatouille": 2,
+            "monsters": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The logline of your life.",
+      "helper": "Two gaps. The second one is the lesson, allegedly.",
+      "template": "My life is the bit where {a}, and everyone learns {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the toys get left behind",
+              "weights": {
+                "toys": 2,
+                "up": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the robot keeps sweeping",
+              "weights": {
+                "walle": 2,
+                "soul": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "the monster is scared of the child",
+              "weights": {
+                "monsters": 2,
+                "insideout": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "the dead are still at the table",
+              "weights": {
+                "coco": 2,
+                "up": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "to grow up",
+              "weights": {
+                "nemo": 2,
+                "toys": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "to say the thing out loud",
+              "weights": {
+                "insideout": 2,
+                "soul": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "that the family was the point",
+              "weights": {
+                "incredibles": 2,
+                "coco": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "that anyone can cook",
+              "weights": {
+                "ratatouille": 2,
+                "monsters": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather be remembered than happy.",
+      "trait": "coco",
+      "low": "Happy, thanks",
+      "high": "Leave a photo on the shelf"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "Growing up is mostly about leaving people behind.",
+      "disagree": {
+        "trait": "toys"
+      },
+      "agree": {
+        "trait": "nemo"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Talent is mostly permission.",
+      "agree": {
+        "trait": "ratatouille",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "incredibles",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your villain:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A company that owns everything",
+          "weights": {
+            "walle": 2,
+            "incredibles": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A critic who has already decided",
+          "weights": {
+            "ratatouille": 2,
+            "toys": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The part of me that keeps score",
+          "weights": {
+            "insideout": 2,
+            "soul": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something old that refuses to stay buried",
+          "weights": {
+            "coco": 2,
+            "monsters": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last shot:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The door closes and the room goes quiet",
+          "weights": {
+            "toys": 2,
+            "up": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Everyone at the table, arguing happily",
+          "weights": {
+            "coco": 2,
+            "incredibles": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "One hand reaching for another",
+          "weights": {
+            "nemo": 2,
+            "insideout": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Someone starts again, from nothing",
+          "weights": {
+            "walle": 2,
+            "soul": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "toys",
+      "name": "Toy Story",
+      "tagline": "You are somebody's favourite and it's complicated",
+      "blurb": "You are the one who has been around long enough to know how things work, and you are not entirely at peace with being replaced. Your real talent is showing up for someone else's big moment and staying in the room afterwards. You keep the old things for a reason.",
+      "accent": "orange",
+      "mix": {
+        "toys": 42,
+        "nemo": 7,
+        "up": 7,
+        "walle": 7,
+        "ratatouille": 7,
+        "incredibles": 6,
+        "insideout": 6,
+        "coco": 6,
+        "monsters": 6,
+        "soul": 6
+      },
+      "strengths": [
+        "Fiercely loyal to your people",
+        "Good in a crisis involving a window",
+        "Knows the value of being there"
+      ],
+      "watchOut": "You hold on so tightly that the next chapter can't start. Loosen your grip."
+    },
+    {
+      "trait": "nemo",
+      "name": "Finding Nemo",
+      "tagline": "One small brave thing, then another",
+      "blurb": "You are the one who gets lost and keeps swimming anyway. You're smaller than the problem and you go first regardless, which is genuinely brave and slightly reckless. Your story is about growing up in public, badly, and eventually getting somewhere.",
+      "accent": "cyan",
+      "mix": {
+        "nemo": 42,
+        "up": 7,
+        "walle": 7,
+        "ratatouille": 7,
+        "incredibles": 7,
+        "insideout": 6,
+        "coco": 6,
+        "monsters": 6,
+        "soul": 6,
+        "toys": 6
+      },
+      "strengths": [
+        "Brave before confident",
+        "Curious about the wide world",
+        "Keeps going when it's dark"
+      ],
+      "watchOut": "You swim off alone to prove something. Tell someone where you're going."
+    },
+    {
+      "trait": "up",
+      "name": "Up",
+      "tagline": "The adventure was the person beside you",
+      "blurb": "You have a plan from years ago and a life that got in the way of it. You are warmer than you look, absurdly determined, and carrying more grief than you mention. The thing you're chasing is probably not the thing you actually want.",
+      "accent": "yellow",
+      "mix": {
+        "up": 42,
+        "walle": 7,
+        "ratatouille": 7,
+        "incredibles": 7,
+        "insideout": 7,
+        "coco": 6,
+        "monsters": 6,
+        "soul": 6,
+        "toys": 6,
+        "nemo": 6
+      },
+      "strengths": [
+        "Deeply loyal over decades",
+        "Adventurous for your age",
+        "Kind to people who need it"
+      ],
+      "watchOut": "You can spend years on a plan that was really about someone. Look up."
+    },
+    {
+      "trait": "walle",
+      "name": "WALL·E",
+      "tagline": "Still doing the job nobody's watching",
+      "blurb": "You have been quietly keeping something going long after anyone stopped noticing. Your curiosity is enormous, your toolkit is small, and you would follow one interesting thing across the galaxy. You find value in objects everybody else threw away.",
+      "accent": "lime",
+      "mix": {
+        "walle": 42,
+        "ratatouille": 7,
+        "incredibles": 7,
+        "insideout": 7,
+        "coco": 7,
+        "monsters": 6,
+        "soul": 6,
+        "toys": 6,
+        "nemo": 6,
+        "up": 6
+      },
+      "strengths": [
+        "Persistent when it's pointless",
+        "Curious about everything",
+        "Finds treasure in the leftovers"
+      ],
+      "watchOut": "You'll do the work alone forever without asking for company. Say hello first."
+    },
+    {
+      "trait": "ratatouille",
+      "name": "Ratatouille",
+      "tagline": "Anyone can, and you're proving it",
+      "blurb": "You have a thing you're unreasonably good at and a room full of people who've already decided you shouldn't be here. You don't argue; you cook. Your gift is making something simple taste like it took a lifetime, and your problem is trusting anyone else to taste it.",
+      "accent": "green",
+      "mix": {
+        "ratatouille": 42,
+        "incredibles": 7,
+        "insideout": 7,
+        "coco": 7,
+        "monsters": 7,
+        "soul": 6,
+        "toys": 6,
+        "nemo": 6,
+        "up": 6,
+        "walle": 6
+      },
+      "strengths": [
+        "Extraordinary craft",
+        "Proves it instead of saying it",
+        "Generous with what you know"
+      ],
+      "watchOut": "You hide behind the work. Take the credit occasionally."
+    },
+    {
+      "trait": "incredibles",
+      "name": "The Incredibles",
+      "tagline": "The job is family, and the family is a job",
+      "blurb": "You are the one holding a household and a calling at the same time, and you are bad at admitting which one is winning. You are more capable than your day job suggests and more tired than you let on. Your loyalty is enormous and your patience is not infinite.",
+      "accent": "red",
+      "mix": {
+        "incredibles": 42,
+        "insideout": 7,
+        "coco": 7,
+        "monsters": 7,
+        "soul": 7,
+        "toys": 6,
+        "nemo": 6,
+        "up": 6,
+        "walle": 6,
+        "ratatouille": 6
+      },
+      "strengths": [
+        "Carries more than one life at once",
+        "Protective to the point of strategy",
+        "Competent under absurd pressure"
+      ],
+      "watchOut": "You keep the secret and call it protection. Share the problem."
+    },
+    {
+      "trait": "insideout",
+      "name": "Inside Out",
+      "tagline": "You've been managing feelings since you were small",
+      "blurb": "Your inner world is a whole city with a control room and a maintenance problem. You notice what you're feeling and then keep it tidy for everyone else, which is both a gift and a habit you should break. The sad one isn't the enemy.",
+      "accent": "pink",
+      "mix": {
+        "insideout": 42,
+        "coco": 7,
+        "monsters": 7,
+        "soul": 7,
+        "toys": 7,
+        "nemo": 6,
+        "up": 6,
+        "walle": 6,
+        "ratatouille": 6,
+        "incredibles": 6
+      },
+      "strengths": [
+        "Emotionally literate",
+        "Defuses other people's chaos",
+        "Good at remembering the good years"
+      ],
+      "watchOut": "You let one feeling run the console alone. Let the sad one speak."
+    },
+    {
+      "trait": "coco",
+      "name": "Coco",
+      "tagline": "You keep the family record",
+      "blurb": "You are the one who remembers who was here before, and why the table has that particular chair. Music, food and the names of relatives all matter to you more than you usually admit. Your loyalty runs backwards as well as forwards.",
+      "accent": "purple",
+      "mix": {
+        "coco": 42,
+        "monsters": 7,
+        "soul": 7,
+        "toys": 7,
+        "nemo": 7,
+        "up": 6,
+        "walle": 6,
+        "ratatouille": 6,
+        "incredibles": 6,
+        "insideout": 6
+      },
+      "strengths": [
+        "Keeps the family memory alive",
+        "Takes food and ritual seriously",
+        "Loyal across generations"
+      ],
+      "watchOut": "You keep the dead close and the living at arm's length. Invite someone over."
+    },
+    {
+      "trait": "monsters",
+      "name": "Monsters, Inc.",
+      "tagline": "What you were told to be afraid of is just doing a job",
+      "blurb": "You are good at something you were told was scary, and you've come to like the people you were supposed to frighten. You're a lot softer than your job description, and you're very funny about it. You'd rather make someone laugh than prove a point.",
+      "accent": "blue",
+      "mix": {
+        "monsters": 42,
+        "soul": 7,
+        "toys": 7,
+        "nemo": 7,
+        "up": 7,
+        "walle": 6,
+        "ratatouille": 6,
+        "incredibles": 6,
+        "insideout": 6,
+        "coco": 6
+      },
+      "strengths": [
+        "Finds the person behind the role",
+        "Funny under pressure",
+        "Willing to change their mind"
+      ],
+      "watchOut": "You argue to the end and then change your mind too late. Say it earlier."
+    },
+    {
+      "trait": "soul",
+      "name": "Soul",
+      "tagline": "The point was the ordinary afternoon",
+      "blurb": "You've been chasing the big thing so long you've forgotten to notice the small ones. You are thoughtful, funny, slightly melancholy, and genuinely good at what you do. The answer you're looking for is usually already in your pocket.",
+      "accent": "sky",
+      "mix": {
+        "soul": 42,
+        "toys": 7,
+        "nemo": 7,
+        "up": 7,
+        "walle": 7,
+        "ratatouille": 6,
+        "incredibles": 6,
+        "insideout": 6,
+        "coco": 6,
+        "monsters": 6
+      },
+      "strengths": [
+        "Sees the big picture",
+        "Genuinely reflective",
+        "Deep appreciation of small things"
+      ],
+      "watchOut": "You wait for your life to start. It's already 4pm on a Tuesday."
+    }
+  ]
+}

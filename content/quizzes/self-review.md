@@ -234,6 +234,36 @@ with the joke in it.
 - **Flavor:** untagged. LORE is light; every option works if you have never played.
 - **Unsure:** Magikarp is the affectionate joke result and may attract answer-gaming from fans.
 
+## The end of the world has your name on a form
+- **Tone dial:** Dry bureaucratic comedy about the apocalypse. No prepper gear talk, no doomsday preaching.
+- **What it reveals:** how you meet a crisis — seal up, move fast, organise the neighbours, or watch the sky.
+- **Flavor:** untagged. Nine endings, all played for personality rather than gore; `zombie-outbreak` covers the zombie plan, this one covers the disaster itself.
+- **Unsure:** The AI ending ages fastest of the nine; the blurb keeps it about systems, not headlines.
+
+## The Ministry has filed you under Harry Potter villain
+- **Tone dial:** Wry Ministry paperwork. Book canon only, no Fantastic Beasts deep cuts beyond Grindelwald.
+- **What it reveals:** loyalty, ambition and how you handle a secret — the villain quiz is about method, not evil.
+- **Flavor:** untagged. `hogwarts-house` is the hero-side sorting quiz; this is the file the Ministry keeps on you.
+- **Unsure:** Umbridge is the funniest result and will attract answer-gaming; Draco is written sympathetically, which is the point.
+
+## The walls have assigned you a Titan
+- **Tone dial:** Anime trailer voice, no manga spoilers past the named titans. No character names as results.
+- **What it reveals:** what you'd do with enormous power — shield, spear, warning, or logistics.
+- **Flavor:** untagged. Eight of the nine titans; the Founding is included, the Jaw left out to keep the cast at eight.
+- **Unsure:** "The Cart Titan" risks sounding like an insult until the blurb reframes it as the unglamorous indispensable one.
+
+## A talking cat recommends a Haruki Murakami novel
+- **Tone dial:** Deadpan literary, one talking cat, zero plot summaries. Books only, no biography.
+- **What it reveals:** whether you read for mood, puzzle, structure or the unresolved night.
+- **Flavor:** untagged. Seven novels, all recognisable by premise alone, so non-readers can still answer.
+- **Unsure:** `hardboiled` and `iq84` both reward puzzle-lovers; split by tone (surreal noir versus parallel-world epic).
+
+## Pixar has already made the film about you
+- **Tone dial:** Warm, a little sentimental, never cynical. Films only, no studio history.
+- **What it reveals:** what you're holding on to — objects, family, craft, feelings, or the ordinary afternoon.
+- **Flavor:** untagged. Ten films from across the catalogue; every option works if you've only seen two.
+- **Unsure:** `up` and `coco` overlap on grief; split by adventure versus memory.
+
 ---
 
 ## Cross-quiz notes

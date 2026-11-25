@@ -1,0 +1,612 @@
+{
+  "slug": "harry-potter-villain",
+  "title": "The Ministry has filed you under Harry Potter villain",
+  "dek": "Twelve questions about loyalty, ambition and how you'd handle a secret. The file is already open; you're just confirming the details.",
+  "category": "Fandom",
+  "accent": "green",
+  "emoji": "🐍",
+  "minutes": 4,
+  "published": "2026-11-25",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "The Ministry offers you a deal. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Take it, then rewrite the terms",
+          "weights": {
+            "lucius": 2,
+            "umbridge": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Refuse, loudly, in front of everyone",
+          "weights": {
+            "bellatrix": 2,
+            "voldemort": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Sign it, then start a file on whoever offered",
+          "weights": {
+            "umbridge": 2,
+            "crouch": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Say nothing and use the time to plan",
+          "weights": {
+            "voldemort": 2,
+            "grindelwald": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "Your greatest asset:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Everyone underestimates how much I enjoy this",
+          "weights": {
+            "bellatrix": 2,
+            "pettigrew": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "A name that opens doors",
+          "weights": {
+            "lucius": 2,
+            "draco": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Patience measured in decades",
+          "weights": {
+            "voldemort": 2,
+            "grindelwald": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Being the person nobody watches",
+          "weights": {
+            "pettigrew": 2,
+            "crouch": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather be:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Feared, and correctly so",
+          "weights": {
+            "voldemort": 2,
+            "bellatrix": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Indispensable, and quietly so",
+          "weights": {
+            "umbridge": 2,
+            "lucius": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "Your headquarters:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A long table with too many empty chairs",
+          "weights": {
+            "voldemort": 2,
+            "lucius": 1
+          },
+          "image": "/images/questions/villain-boardroom.jpg",
+          "alt": "A formal boardroom with a long table and empty chairs"
+        },
+        {
+          "id": "b",
+          "label": "A tall window over a city you intend to own",
+          "weights": {
+            "lucius": 2,
+            "grindelwald": 1
+          },
+          "image": "/images/questions/villain-window.jpg",
+          "alt": "A tall window looking out over a city"
+        },
+        {
+          "id": "c",
+          "label": "A laboratory nobody has signed for",
+          "weights": {
+            "crouch": 2,
+            "pettigrew": 1
+          },
+          "image": "/images/questions/villain-lab.jpg",
+          "alt": "A cluttered laboratory bench with equipment"
+        },
+        {
+          "id": "d",
+          "label": "Somewhere grand, and visibly falling apart",
+          "weights": {
+            "draco": 2,
+            "bellatrix": 1
+          },
+          "image": "/images/questions/villain-storm.jpg",
+          "alt": "A dark building under a heavy storm sky"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot your loyalty.",
+      "helper": "Across: one person, or the idea. Up: in the open, or from the shadows.",
+      "x": {
+        "low": {
+          "label": "One person",
+          "trait": "bellatrix"
+        },
+        "high": {
+          "label": "The idea",
+          "trait": "grindelwald"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "In the open",
+          "trait": "umbridge"
+        },
+        "high": {
+          "label": "From the shadows",
+          "trait": "pettigrew"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Ministry Desk",
+        "lowHigh": "The Informant",
+        "highLow": "The Public Crusade",
+        "highHigh": "The Long Game"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what you'd actually risk everything for.",
+      "helper": "First place is the one you'd never trade.",
+      "items": [
+        {
+          "id": "person",
+          "label": "The person who chose me",
+          "weights": {
+            "bellatrix": 2,
+            "pettigrew": 1
+          }
+        },
+        {
+          "id": "plan",
+          "label": "The plan",
+          "weights": {
+            "voldemort": 2,
+            "grindelwald": 1
+          }
+        },
+        {
+          "id": "standing",
+          "label": "My family's standing",
+          "weights": {
+            "lucius": 2,
+            "draco": 1
+          }
+        },
+        {
+          "id": "record",
+          "label": "My own record",
+          "weights": {
+            "umbridge": 2,
+            "crouch": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "Your statement, for the record.",
+      "helper": "Two gaps. Everything you say will be quoted.",
+      "template": "They say I'm {a}, which is exactly {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "the reasonable one",
+              "weights": {
+                "umbridge": 2,
+                "lucius": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "the loyal one",
+              "weights": {
+                "bellatrix": 2,
+                "pettigrew": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "the clever one",
+              "weights": {
+                "voldemort": 2,
+                "crouch": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "the one who was never really here",
+              "weights": {
+                "pettigrew": 2,
+                "draco": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "what I want them to think",
+              "weights": {
+                "lucius": 2,
+                "umbridge": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "why it works",
+              "weights": {
+                "crouch": 2,
+                "voldemort": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "why nobody suspects me",
+              "weights": {
+                "pettigrew": 2,
+                "draco": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "why I'm still standing",
+              "weights": {
+                "grindelwald": 2,
+                "bellatrix": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I'd rather be useful to the winning side than right.",
+      "trait": "lucius",
+      "low": "I'd rather be right",
+      "high": "I'd rather be invited"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "The cause matters more than the person leading it.",
+      "disagree": {
+        "trait": "bellatrix"
+      },
+      "agree": {
+        "trait": "grindelwald"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Rules are only real if somebody enforces them.",
+      "agree": {
+        "trait": "umbridge",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "voldemort",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Your ending:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Undone by the one person I trusted",
+          "weights": {
+            "voldemort": 2,
+            "lucius": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Still here, still explaining myself",
+          "weights": {
+            "umbridge": 2,
+            "draco": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Caught in the lie I built",
+          "weights": {
+            "pettigrew": 2,
+            "crouch": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Remembered as the one who almost won",
+          "weights": {
+            "grindelwald": 2,
+            "bellatrix": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "What people get wrong about you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "That I'm cruel. I'm efficient.",
+          "weights": {
+            "umbridge": 2,
+            "voldemort": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "That I'm weak. I'm patient.",
+          "weights": {
+            "pettigrew": 2,
+            "draco": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "That I'm a follower. I chose this.",
+          "weights": {
+            "bellatrix": 2,
+            "crouch": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "That I lost. I'm not finished.",
+          "weights": {
+            "lucius": 2,
+            "grindelwald": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "voldemort",
+      "name": "Lord Voldemort",
+      "tagline": "The plan is the personality",
+      "blurb": "You do not improvise and you do not explain. Everything is a step, everyone is a piece, and the fact that people find this unsettling is their problem. You are genuinely brilliant at the long game, which is why it takes a whole coalition to stop you.",
+      "accent": "green",
+      "mix": {
+        "voldemort": 42,
+        "bellatrix": 9,
+        "umbridge": 9,
+        "lucius": 8,
+        "draco": 8,
+        "pettigrew": 8,
+        "crouch": 8,
+        "grindelwald": 8
+      },
+      "strengths": [
+        "Sees the board, not the move",
+        "Unafraid of being disliked",
+        "Patient to a fault"
+      ],
+      "watchOut": "You keep your pieces so far apart that nobody will warn you when one breaks."
+    },
+    {
+      "trait": "bellatrix",
+      "name": "Bellatrix Lestrange",
+      "tagline": "Loyalty with the volume up",
+      "blurb": "You are not here for the ideology. You are here for one person, and you would burn a great deal for them. Your certainty is the most frightening thing about you, and the most moving, depending on which side of it someone stands.",
+      "accent": "purple",
+      "mix": {
+        "bellatrix": 42,
+        "umbridge": 9,
+        "lucius": 9,
+        "draco": 8,
+        "pettigrew": 8,
+        "crouch": 8,
+        "grindelwald": 8,
+        "voldemort": 8
+      },
+      "strengths": [
+        "Utterly committed",
+        "Fearless in a fight",
+        "Never fakes enthusiasm"
+      ],
+      "watchOut": "A loyalty that never asks questions eventually gets used. Ask one."
+    },
+    {
+      "trait": "umbridge",
+      "name": "Dolores Umbridge",
+      "tagline": "Perfect manners, terrible rules",
+      "blurb": "You know that power is mostly paperwork, and that a smile makes a threat land harder. You are excellent at institutions: their procedures, their loopholes, their quiet punishments. People underestimate you until they are in a meeting with you.",
+      "accent": "pink",
+      "mix": {
+        "umbridge": 42,
+        "lucius": 9,
+        "draco": 9,
+        "pettigrew": 8,
+        "crouch": 8,
+        "grindelwald": 8,
+        "voldemort": 8,
+        "bellatrix": 8
+      },
+      "strengths": [
+        "Unbeatable at procedure",
+        "Keeps a calm surface",
+        "Remembers every rule and every exception"
+      ],
+      "watchOut": "Being technically correct is not the same as being right. Check which one you need."
+    },
+    {
+      "trait": "lucius",
+      "name": "Lucius Malfoy",
+      "tagline": "Everything is a transaction, including loyalty",
+      "blurb": "You are smooth, connected and always aware of which way the room is leaning. You never make a threat you can't fund, and you never spend a favour without a return. It works, right up until the moment someone less careful gets you caught.",
+      "accent": "sky",
+      "mix": {
+        "lucius": 42,
+        "draco": 9,
+        "pettigrew": 9,
+        "crouch": 8,
+        "grindelwald": 8,
+        "voldemort": 8,
+        "bellatrix": 8,
+        "umbridge": 8
+      },
+      "strengths": [
+        "Reads which way power is moving",
+        "Turns contacts into leverage",
+        "Never loses composure in public"
+      ],
+      "watchOut": "You hedge so well that nobody is certain you're on their side. Pick one, occasionally."
+    },
+    {
+      "trait": "draco",
+      "name": "Draco Malfoy",
+      "tagline": "Given the role before the choice",
+      "blurb": "You were handed a part to play before you could read the script, and you've been performing it ever since. Underneath the sneer there is someone doing arithmetic about what happens if they fail, and finding the answer unpleasant. You are braver than you let on and much less sure.",
+      "accent": "cyan",
+      "mix": {
+        "draco": 42,
+        "pettigrew": 9,
+        "crouch": 9,
+        "grindelwald": 8,
+        "voldemort": 8,
+        "bellatrix": 8,
+        "umbridge": 8,
+        "lucius": 8
+      },
+      "strengths": [
+        "Reads the cost of everything",
+        "Better under pressure than he admits",
+        "Loyal despite himself"
+      ],
+      "watchOut": "You keep performing the part and never say what you actually want. Say it."
+    },
+    {
+      "trait": "pettigrew",
+      "name": "Peter Pettigrew",
+      "tagline": "Survives by being overlooked",
+      "blurb": "You are the person in the room nobody counts, which is precisely the advantage you've built everything on. You read danger early, you make yourself small, and you always know where the exit is. It is not glamorous, but you are still here.",
+      "accent": "orange",
+      "mix": {
+        "pettigrew": 42,
+        "crouch": 9,
+        "grindelwald": 9,
+        "voldemort": 8,
+        "bellatrix": 8,
+        "umbridge": 8,
+        "lucius": 8,
+        "draco": 8
+      },
+      "strengths": [
+        "Extraordinary survival instincts",
+        "Invisible when it matters",
+        "Knows everyone's weak point"
+      ],
+      "watchOut": "You've survived so long by siding with whoever's winning that you've forgotten your own position."
+    },
+    {
+      "trait": "crouch",
+      "name": "Barty Crouch Jr.",
+      "tagline": "The plan inside the plan",
+      "blurb": "You are the most committed person in the room and the only one who read the whole brief. You will play a role for a year without breaking, and you'll enjoy the details nobody else notices. Your weakness is that you cannot resist explaining it afterwards.",
+      "accent": "yellow",
+      "mix": {
+        "crouch": 42,
+        "grindelwald": 9,
+        "voldemort": 9,
+        "bellatrix": 8,
+        "umbridge": 8,
+        "lucius": 8,
+        "draco": 8,
+        "pettigrew": 8
+      },
+      "strengths": [
+        "Total commitment to a long cover",
+        "Notices every detail",
+        "Thinks several moves past the obvious"
+      ],
+      "watchOut": "You save the reveal for the perfect moment. The perfect moment was earlier."
+    },
+    {
+      "trait": "grindelwald",
+      "name": "Gellert Grindelwald",
+      "tagline": "A better world, honestly, for some",
+      "blurb": "You are not interested in petty cruelty. You have a vision, and you are unnervingly good at making it sound reasonable. People follow you because you describe the world they already wanted, and you are careful never to say the cost out loud.",
+      "accent": "red",
+      "mix": {
+        "grindelwald": 42,
+        "voldemort": 9,
+        "bellatrix": 9,
+        "umbridge": 8,
+        "lucius": 8,
+        "draco": 8,
+        "pettigrew": 8,
+        "crouch": 8
+      },
+      "strengths": [
+        "Persuasive without raising his voice",
+        "Thinks in decades and continents",
+        "Genuinely believes in something"
+      ],
+      "watchOut": "You've built a cause where the exceptions are always someone else. Name one."
+    }
+  ]
+}

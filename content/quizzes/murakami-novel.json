@@ -1,0 +1,582 @@
+{
+  "slug": "murakami-novel",
+  "title": "A talking cat recommends a Haruki Murakami novel",
+  "dek": "No plot summaries, no reading order. Twelve questions about wells, cats, jazz and 2am kitchens, and the cat will pick the book.",
+  "category": "Books",
+  "accent": "blue",
+  "emoji": "📚",
+  "minutes": 4,
+  "published": "2026-11-25",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "It's 2am and the fridge is the only light. You:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Cook spaghetti and think about someone who left",
+          "weights": {
+            "norwegian": 2,
+            "tsukuru": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Follow the cat. It clearly knows something",
+          "weights": {
+            "kafka": 2,
+            "windup": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Take the lift to a floor that shouldn't exist",
+          "weights": {
+            "iq84": 2,
+            "hardboiled": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Sit in a diner until the city goes quiet",
+          "weights": {
+            "afterdark": 2,
+            "norwegian": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The stranger at the bar asks:",
+      "options": [
+        {
+          "id": "a",
+          "label": "What's the well for?",
+          "weights": {
+            "windup": 2,
+            "kafka": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Do you remember the exact month it ended?",
+          "weights": {
+            "norwegian": 2,
+            "tsukuru": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Have you noticed there are two moons?",
+          "weights": {
+            "iq84": 2,
+            "hardboiled": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "What are you reading at this hour?",
+          "weights": {
+            "afterdark": 2,
+            "iq84": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather read about:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Someone quietly falling apart",
+          "weights": {
+            "norwegian": 2,
+            "tsukuru": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something that shouldn't be possible",
+          "weights": {
+            "hardboiled": 2,
+            "kafka": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The book's weather:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Rain on a city street after midnight",
+          "weights": {
+            "afterdark": 2,
+            "norwegian": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A neon-lit street at night"
+        },
+        {
+          "id": "b",
+          "label": "A forest with no obvious exit",
+          "weights": {
+            "kafka": 2,
+            "windup": 1
+          },
+          "image": "/images/questions/class-forest.jpg",
+          "alt": "A dense forest with a narrow track"
+        },
+        {
+          "id": "c",
+          "label": "A long road, one car, no reason to stop",
+          "weights": {
+            "hardboiled": 2,
+            "tsukuru": 1
+          },
+          "image": "/images/questions/main-street-trees.jpg",
+          "alt": "A quiet road lined with trees"
+        },
+        {
+          "id": "d",
+          "label": "A sky with more than one moon in it",
+          "weights": {
+            "iq84": 2,
+            "windup": 1
+          },
+          "image": "/images/questions/anime-sky-stars.jpg",
+          "alt": "A night sky full of stars"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot where the novel takes you.",
+      "helper": "Across: stay in the real city, or go through the door. Up: keep it ordinary, or let it get strange.",
+      "x": {
+        "low": {
+          "label": "Stay in the city",
+          "trait": "tsukuru"
+        },
+        "high": {
+          "label": "Go through the door",
+          "trait": "kafka"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Keep it ordinary",
+          "trait": "norwegian"
+        },
+        "high": {
+          "label": "Let it get strange",
+          "trait": "iq84"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Quiet Room",
+        "lowHigh": "The Other Side",
+        "highLow": "The Diner at Three",
+        "highHigh": "The Two Moons"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank what a novel needs to have.",
+      "helper": "First place is the thing you'd forgive everything else for.",
+      "items": [
+        {
+          "id": "someone",
+          "label": "Someone I could have met",
+          "weights": {
+            "norwegian": 2,
+            "tsukuru": 1
+          }
+        },
+        {
+          "id": "rule",
+          "label": "A rule I don't understand yet",
+          "weights": {
+            "kafka": 2,
+            "windup": 1
+          }
+        },
+        {
+          "id": "world",
+          "label": "A second world with its own logic",
+          "weights": {
+            "iq84": 2,
+            "hardboiled": 1
+          }
+        },
+        {
+          "id": "night",
+          "label": "One night, and nothing resolved",
+          "weights": {
+            "afterdark": 2,
+            "norwegian": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The book you keep pressing on people.",
+      "helper": "Two gaps. The second one is the part you can't defend.",
+      "template": "The novel I keep rereading is about {a}, and the part I can't explain is {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "a friendship that quietly ends",
+              "weights": {
+                "tsukuru": 2,
+                "norwegian": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "a boy who runs away with a cat",
+              "weights": {
+                "kafka": 2,
+                "windup": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "two people who almost meet",
+              "weights": {
+                "iq84": 2,
+                "afterdark": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "a man with a job he doesn't understand",
+              "weights": {
+                "hardboiled": 2,
+                "windup": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "why I cried at the ending",
+              "weights": {
+                "norwegian": 2,
+                "tsukuru": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "the cat. The cat knew.",
+              "weights": {
+                "kafka": 2,
+                "afterdark": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "how the map adds up",
+              "weights": {
+                "iq84": 2,
+                "hardboiled": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "why the well is there",
+              "weights": {
+                "windup": 2,
+                "kafka": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "I like books where nothing is explained.",
+      "trait": "hardboiled",
+      "low": "Explain it to me",
+      "high": "Leave it unexplained"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I need the story to close properly.",
+      "disagree": {
+        "trait": "afterdark"
+      },
+      "agree": {
+        "trait": "tsukuru"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "I read for the mood more than the mystery.",
+      "agree": {
+        "trait": "norwegian",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "hardboiled",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "The soundtrack of your novel:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Jazz on a record player, side B",
+          "weights": {
+            "norwegian": 2,
+            "afterdark": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Silence, and one long conversation",
+          "weights": {
+            "kafka": 2,
+            "tsukuru": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Something choral in a language you don't speak",
+          "weights": {
+            "iq84": 2,
+            "windup": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A tape that plays the same thing twice",
+          "weights": {
+            "hardboiled": 2,
+            "iq84": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The last page:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Two people on a platform, not quite saying it",
+          "weights": {
+            "norwegian": 2,
+            "tsukuru": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Something walks out of the story and doesn't come back",
+          "weights": {
+            "kafka": 2,
+            "windup": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "A room where the rules have quietly changed",
+          "weights": {
+            "iq84": 2,
+            "hardboiled": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Dawn, and the city starts again",
+          "weights": {
+            "afterdark": 2,
+            "norwegian": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "norwegian",
+      "name": "Norwegian Wood",
+      "tagline": "The one about the person you didn't save",
+      "blurb": "Your book is the quiet one, the one people dismiss as his simple novel and then can't stop thinking about. It's about memory, rain, a record on repeat and the specific ache of loving someone who is already leaving. You read for the mood and you know exactly which page undoes you.",
+      "accent": "green",
+      "mix": {
+        "norwegian": 42,
+        "kafka": 10,
+        "windup": 10,
+        "iq84": 10,
+        "hardboiled": 10,
+        "tsukuru": 9,
+        "afterdark": 9
+      },
+      "strengths": [
+        "Sits with grief instead of solving it",
+        "Remembers the small, exact detail",
+        "Honest about not being fine"
+      ],
+      "watchOut": "You keep replaying the same year. The record has another side."
+    },
+    {
+      "trait": "kafka",
+      "name": "Kafka on the Shore",
+      "tagline": "Two stories, one cat, no explanation",
+      "blurb": "Your novel has a boy, an old man, a cat who talks and a rule that makes no sense until it does. You like stories that behave like dreams and trust you to keep up. You are less interested in what happened than in what it felt like at 3am.",
+      "accent": "purple",
+      "mix": {
+        "kafka": 42,
+        "windup": 10,
+        "iq84": 10,
+        "hardboiled": 10,
+        "tsukuru": 10,
+        "afterdark": 9,
+        "norwegian": 9
+      },
+      "strengths": [
+        "Comfortable with ambiguity",
+        "Follows an instinct past the map",
+        "Open to the genuinely strange"
+      ],
+      "watchOut": "You let mystery excuse the hard conversation. Some things do have answers."
+    },
+    {
+      "trait": "windup",
+      "name": "The Wind-Up Bird Chronicle",
+      "tagline": "A well, a cat, and a very long war",
+      "blurb": "You want the big, patient book: the one with a well you climb down into, a marriage coming apart, and history bleeding into a suburban kitchen. You are willing to sit in something slow and unsettling until it tells you what it means.",
+      "accent": "orange",
+      "mix": {
+        "windup": 42,
+        "iq84": 10,
+        "hardboiled": 10,
+        "tsukuru": 10,
+        "afterdark": 10,
+        "norwegian": 9,
+        "kafka": 9
+      },
+      "strengths": [
+        "Extraordinary patience",
+        "Connects the personal to the historical",
+        "Not frightened by a long silence"
+      ],
+      "watchOut": "You go down the well alone and stay too long. Bring a rope."
+    },
+    {
+      "trait": "iq84",
+      "name": "1Q84",
+      "tagline": "Two moons, two lives, one enormous book",
+      "blurb": "You like your fiction with architecture: parallel lives, a made-up year, a cult, a killer, and a plot that clicks together like a mechanism. You are happy to carry a very heavy book because you want to live inside the system, not just visit it.",
+      "accent": "blue",
+      "mix": {
+        "iq84": 42,
+        "hardboiled": 10,
+        "tsukuru": 10,
+        "afterdark": 10,
+        "norwegian": 10,
+        "kafka": 9,
+        "windup": 9
+      },
+      "strengths": [
+        "Loves a structure that pays off",
+        "Holds two threads at once",
+        "Committed to the long version"
+      ],
+      "watchOut": "You'll follow the plot and miss the person beside you. Look up at the real moon."
+    },
+    {
+      "trait": "hardboiled",
+      "name": "Hard-Boiled Wonderland and the End of the World",
+      "tagline": "Two worlds, one head, no way out",
+      "blurb": "Your favourite is the strange early one: a split narrative, a job with no explanation, and a town where people lose their shadows. You like a book that builds a machine and dares you to work out what it's for.",
+      "accent": "cyan",
+      "mix": {
+        "hardboiled": 42,
+        "tsukuru": 10,
+        "afterdark": 10,
+        "norwegian": 10,
+        "kafka": 10,
+        "windup": 9,
+        "iq84": 9
+      },
+      "strengths": [
+        "Thrives on a puzzle",
+        "Comfortable being unsettled",
+        "Notices how a system works"
+      ],
+      "watchOut": "You can admire the mechanism and forget to feel anything. Read the last chapter twice."
+    },
+    {
+      "trait": "tsukuru",
+      "name": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+      "tagline": "The friend group that closed without explanation",
+      "blurb": "Your novel is about being cut off by people you loved and then, years later, going back to ask why. You are the one who needs the reason, the closure, the conversation everyone else has moved past. You are also the one who will actually make the trip.",
+      "accent": "sky",
+      "mix": {
+        "tsukuru": 42,
+        "afterdark": 10,
+        "norwegian": 10,
+        "kafka": 10,
+        "windup": 10,
+        "iq84": 9,
+        "hardboiled": 9
+      },
+      "strengths": [
+        "Pursues the unanswered question",
+        "Brave about old wounds",
+        "Capable of real reconciliation"
+      ],
+      "watchOut": "Not every ending has a reason you can collect. Sometimes the answer is just time."
+    },
+    {
+      "trait": "afterdark",
+      "name": "After Dark",
+      "tagline": "One night, one city, everyone awake",
+      "blurb": "Your book is a single night in a city, told from a slight distance, with a diner, a bass player, a hotel room and a girl who doesn't want to go home. You like atmosphere over plot and you have never entirely trusted daylight.",
+      "accent": "yellow",
+      "mix": {
+        "afterdark": 42,
+        "norwegian": 10,
+        "kafka": 10,
+        "windup": 10,
+        "iq84": 10,
+        "hardboiled": 9,
+        "tsukuru": 9
+      },
+      "strengths": [
+        "At home in the in-between hours",
+        "Notices what a room feels like",
+        "Lets a moment be enough"
+      ],
+      "watchOut": "You watch the night from a slight distance. Sit at the table sometime."
+    }
+  ]
+}

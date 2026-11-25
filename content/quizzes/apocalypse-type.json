@@ -1,0 +1,644 @@
+{
+  "slug": "apocalypse-type",
+  "title": "The end of the world has your name on a form",
+  "dek": "Twelve questions about what you'd actually do when the warning hits. No survival knowledge needed; the form fills itself in.",
+  "category": "Sci-Fi",
+  "accent": "red",
+  "emoji": "🌍",
+  "minutes": 4,
+  "published": "2026-11-25",
+  "tiebreaker": "q12",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mc",
+      "prompt": "Your phone goes off at 4am. What does the alert say?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Six minutes, then a shockwave",
+          "weights": {
+            "nuclear": 2,
+            "asteroid": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The grid is down and it isn't coming back",
+          "weights": {
+            "blackout": 2,
+            "ai": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The water is already at the end of the street",
+          "weights": {
+            "flood": 2,
+            "ice": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Nothing dramatic. Deliveries just stopped",
+          "weights": {
+            "silence": 2,
+            "plague": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "mc",
+      "prompt": "The evacuation order. You follow it how?",
+      "options": [
+        {
+          "id": "a",
+          "label": "North, to somewhere cold and empty",
+          "weights": {
+            "ice": 2,
+            "nuclear": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Inland and uphill, immediately",
+          "weights": {
+            "flood": 2,
+            "volcano": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "Nowhere. Seal the doors and wait",
+          "weights": {
+            "plague": 2,
+            "asteroid": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Whoever is still sending coordinates",
+          "weights": {
+            "ai": 2,
+            "silence": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "this_or_that",
+      "prompt": "You'd rather the end arrive:",
+      "options": [
+        {
+          "id": "a",
+          "label": "Loud, fast, over before lunch",
+          "weights": {
+            "asteroid": 2,
+            "nuclear": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "Slow, quiet, deniable for years",
+          "weights": {
+            "silence": 2,
+            "plague": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "image",
+      "prompt": "The view from your window on day one:",
+      "options": [
+        {
+          "id": "a",
+          "label": "A dark sky over water that has come too far",
+          "weights": {
+            "flood": 2,
+            "ice": 1
+          },
+          "image": "/images/questions/anime-sky-storm.jpg",
+          "alt": "A dark storm cloud over a stony shore"
+        },
+        {
+          "id": "b",
+          "label": "A street with the lights off, all the way down",
+          "weights": {
+            "blackout": 2,
+            "ai": 1
+          },
+          "image": "/images/questions/main-street-neon.jpg",
+          "alt": "A neon-lit street at night"
+        },
+        {
+          "id": "c",
+          "label": "Dry ground where there used to be fields",
+          "weights": {
+            "asteroid": 2,
+            "volcano": 1
+          },
+          "image": "/images/questions/space-desert.jpg",
+          "alt": "A dry, empty landscape"
+        },
+        {
+          "id": "d",
+          "label": "Smoke on the horizon and no wind to move it",
+          "weights": {
+            "volcano": 2,
+            "nuclear": 1
+          },
+          "image": "/images/questions/villain-storm.jpg",
+          "alt": "A dark building under a heavy storm sky"
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "map",
+      "prompt": "Plot where you'd be when it settles.",
+      "helper": "Across: stay and organise, or move and don't look back. Up: underground, or into the cold.",
+      "x": {
+        "low": {
+          "label": "Stay and organise",
+          "trait": "plague"
+        },
+        "high": {
+          "label": "Move and don't look back",
+          "trait": "asteroid"
+        }
+      },
+      "y": {
+        "low": {
+          "label": "Into the ground",
+          "trait": "nuclear"
+        },
+        "high": {
+          "label": "Into the cold",
+          "trait": "ice"
+        }
+      },
+      "quadrants": {
+        "lowLow": "The Sealed Ward",
+        "lowHigh": "The Long Winter",
+        "highLow": "The Impact Site",
+        "highHigh": "The Ice Road"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "rank",
+      "prompt": "Rank the infrastructure you'd save first.",
+      "helper": "First place is the one you'd defend with your body.",
+      "items": [
+        {
+          "id": "grid",
+          "label": "The power grid",
+          "weights": {
+            "blackout": 2,
+            "ai": 1
+          }
+        },
+        {
+          "id": "water",
+          "label": "Clean water",
+          "weights": {
+            "flood": 2,
+            "plague": 1
+          }
+        },
+        {
+          "id": "network",
+          "label": "The network backbone",
+          "weights": {
+            "ai": 2,
+            "blackout": 1
+          }
+        },
+        {
+          "id": "fuel",
+          "label": "Fuel and roads",
+          "weights": {
+            "volcano": 2,
+            "asteroid": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "type": "madlibs",
+      "prompt": "The message you leave on the group chat.",
+      "helper": "Two gaps. It's 4am; grammar is optional.",
+      "template": "When it happens I'll be {a}, because {b}.",
+      "blanks": [
+        {
+          "id": "a",
+          "options": [
+            {
+              "id": "a1",
+              "label": "already packed and heading north",
+              "weights": {
+                "ice": 2,
+                "nuclear": 1
+              }
+            },
+            {
+              "id": "a2",
+              "label": "checking on everyone I know",
+              "weights": {
+                "plague": 2,
+                "flood": 1
+              }
+            },
+            {
+              "id": "a3",
+              "label": "offline and unreachable",
+              "weights": {
+                "silence": 2,
+                "ai": 1
+              }
+            },
+            {
+              "id": "a4",
+              "label": "outside watching the sky",
+              "weights": {
+                "asteroid": 2,
+                "volcano": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "options": [
+            {
+              "id": "b1",
+              "label": "someone has to keep the lights on",
+              "weights": {
+                "blackout": 2,
+                "plague": 1
+              }
+            },
+            {
+              "id": "b2",
+              "label": "I've read the projections",
+              "weights": {
+                "ice": 2,
+                "volcano": 1
+              }
+            },
+            {
+              "id": "b3",
+              "label": "there's nothing else to do",
+              "weights": {
+                "asteroid": 2,
+                "silence": 1
+              }
+            },
+            {
+              "id": "b4",
+              "label": "the machines are already ahead of us",
+              "weights": {
+                "ai": 2,
+                "blackout": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "type": "intensity",
+      "prompt": "If it comes to it, I'd rather vanish than be rescued.",
+      "trait": "silence",
+      "low": "Come and get me",
+      "high": "Delete my location"
+    },
+    {
+      "id": "q9",
+      "type": "spectrum",
+      "prompt": "I'd take a disaster I can see coming over one I can't.",
+      "disagree": {
+        "trait": "plague"
+      },
+      "agree": {
+        "trait": "asteroid"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "agreement",
+      "prompt": "Civilisation is held together by supply chains, not by people.",
+      "agree": {
+        "trait": "silence",
+        "weight": 2
+      },
+      "disagree": {
+        "trait": "plague",
+        "weight": 2
+      }
+    },
+    {
+      "id": "q11",
+      "type": "mc",
+      "prompt": "Day thirty. The thing that actually gets you:",
+      "options": [
+        {
+          "id": "a",
+          "label": "The cold, at night, in your hands",
+          "weights": {
+            "ice": 2,
+            "nuclear": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The water, eventually",
+          "weights": {
+            "flood": 2,
+            "plague": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The quiet",
+          "weights": {
+            "silence": 2,
+            "blackout": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "Something that thinks faster than you",
+          "weights": {
+            "ai": 2,
+            "volcano": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "type": "mc",
+      "prompt": "The version of the end you'd genuinely pick:",
+      "options": [
+        {
+          "id": "a",
+          "label": "One bright flash, then nothing to worry about",
+          "weights": {
+            "asteroid": 2,
+            "nuclear": 1
+          }
+        },
+        {
+          "id": "b",
+          "label": "The machines take over and are frankly better at it",
+          "weights": {
+            "ai": 2,
+            "blackout": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "The sea takes the coast back, slowly",
+          "weights": {
+            "flood": 2,
+            "ice": 1
+          }
+        },
+        {
+          "id": "d",
+          "label": "A fever, then empty streets, then quiet",
+          "weights": {
+            "plague": 2,
+            "silence": 1
+          }
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "trait": "nuclear",
+      "name": "The Fallout Shelter",
+      "tagline": "Sealed, stocked, not opening for a year",
+      "blurb": "You are the person who reads the whole warning before moving, and by then everyone else has taken the good road. You have water, a radio and a plan with dates on it. Your disaster is the one where patience is the entire skill, and you have patience to spare.",
+      "accent": "yellow",
+      "mix": {
+        "nuclear": 42,
+        "blackout": 8,
+        "plague": 8,
+        "flood": 7,
+        "ai": 7,
+        "asteroid": 7,
+        "volcano": 7,
+        "ice": 7,
+        "silence": 7
+      },
+      "strengths": [
+        "Calm before the news finishes",
+        "Thinks in months, not hours",
+        "Genuinely prepared for the boring part"
+      ],
+      "watchOut": "A sealed door also keeps out the people who'd make it bearable. Open it eventually."
+    },
+    {
+      "trait": "blackout",
+      "name": "The Grid Failure",
+      "tagline": "Everything still exists, just not together",
+      "blurb": "You are not afraid of the disaster. You are afraid of the systems going quiet: the payment terminal, the fridge, the group chat. You'd be the one knocking on doors with a torch and a plan for who has the generator. You are at your best when the normal way stops working.",
+      "accent": "cyan",
+      "mix": {
+        "blackout": 42,
+        "plague": 8,
+        "flood": 8,
+        "ai": 7,
+        "asteroid": 7,
+        "volcano": 7,
+        "ice": 7,
+        "silence": 7,
+        "nuclear": 7
+      },
+      "strengths": [
+        "Improviser with practical hands",
+        "Good at organising neighbours",
+        "Unafraid of the dark"
+      ],
+      "watchOut": "You fix the systems and forget to ask whether anyone is okay. Check the people too."
+    },
+    {
+      "trait": "plague",
+      "name": "The Quarantine",
+      "tagline": "You were socially distant before it was policy",
+      "blurb": "Your instinct is not to flee but to close ranks: a small group, a strict door, a routine. You are unusually good at the long, dull middle of a crisis, the part everyone else finds unbearable. You would keep people alive and slightly annoyed about it.",
+      "accent": "green",
+      "mix": {
+        "plague": 42,
+        "flood": 8,
+        "ai": 8,
+        "asteroid": 7,
+        "volcano": 7,
+        "ice": 7,
+        "silence": 7,
+        "nuclear": 7,
+        "blackout": 7
+      },
+      "strengths": [
+        "Builds a functioning small community",
+        "Takes hygiene and boundaries seriously",
+        "Steady through the boring middle"
+      ],
+      "watchOut": "You can keep the circle so small that nobody new ever gets in. Leave a gap."
+    },
+    {
+      "trait": "flood",
+      "name": "The Rising Water",
+      "tagline": "You always park uphill",
+      "blurb": "You think in gradients: how high, how fast, which road stays dry. Water is the disaster that rewards foresight and punishes sentiment, so you are quietly ruthless about what can be left behind. You will be dry, and you will feel odd about it.",
+      "accent": "blue",
+      "mix": {
+        "flood": 42,
+        "ai": 8,
+        "asteroid": 8,
+        "volcano": 7,
+        "ice": 7,
+        "silence": 7,
+        "nuclear": 7,
+        "blackout": 7,
+        "plague": 7
+      },
+      "strengths": [
+        "Reads a situation's direction early",
+        "Decisive about what to abandon",
+        "Keeps a route out in mind"
+      ],
+      "watchOut": "Not everything you leave behind was clutter. Decide that on purpose."
+    },
+    {
+      "trait": "ai",
+      "name": "The Machine",
+      "tagline": "It learned from us, which was the mistake",
+      "blurb": "Your apocalypse is the one where the thing we built keeps going without us. You are less scared of the bang than of the process nobody supervised. You'd spend the last week trying to understand it, and you would probably get further than anyone expected.",
+      "accent": "purple",
+      "mix": {
+        "ai": 42,
+        "asteroid": 8,
+        "volcano": 8,
+        "ice": 7,
+        "silence": 7,
+        "nuclear": 7,
+        "blackout": 7,
+        "plague": 7,
+        "flood": 7
+      },
+      "strengths": [
+        "Sees the system behind the event",
+        "Curious when others panic",
+        "Finds the off switch nobody documented"
+      ],
+      "watchOut": "Understanding the machine is not the same as being needed by it. Stay human."
+    },
+    {
+      "trait": "asteroid",
+      "name": "The Impact",
+      "tagline": "No plan survives the sky",
+      "blurb": "You would rather face the clean, enormous, undeniable disaster than the slow argument. You are good in the first hour: fast decisions, no sentiment, everyone moving. The aftermath is where you get bored, because it is all logistics and no drama.",
+      "accent": "orange",
+      "mix": {
+        "asteroid": 42,
+        "volcano": 8,
+        "ice": 8,
+        "silence": 7,
+        "nuclear": 7,
+        "blackout": 7,
+        "plague": 7,
+        "flood": 7,
+        "ai": 7
+      },
+      "strengths": [
+        "Fast and clear in the first hour",
+        "No denial, no delay",
+        "Gets people moving"
+      ],
+      "watchOut": "After the flash comes the year of small decisions. Stay for those too."
+    },
+    {
+      "trait": "volcano",
+      "name": "The Ash Year",
+      "tagline": "You'd survive the bang, not the harvest",
+      "blurb": "You are drawn to the disaster that keeps giving: the ash, the failed crops, the sky that stays wrong for a season. You think in consequences rather than events, which makes you dull at parties and extremely useful in a crisis that refuses to end.",
+      "accent": "red",
+      "mix": {
+        "volcano": 42,
+        "ice": 8,
+        "silence": 8,
+        "nuclear": 7,
+        "blackout": 7,
+        "plague": 7,
+        "flood": 7,
+        "ai": 7,
+        "asteroid": 7
+      },
+      "strengths": [
+        "Thinks three consequences ahead",
+        "Patient with long, ugly problems",
+        "Practical about food and shelter"
+      ],
+      "watchOut": "You can prepare for the second-order disaster and miss the friend who needs you now."
+    },
+    {
+      "trait": "ice",
+      "name": "The Long Winter",
+      "tagline": "Cold hands, long memory",
+      "blurb": "Your disaster is the one where the temperature drops and everything slows down. You are built for it: layers, patience, a stubborn refusal to waste energy on complaining. You'd be the person still functioning in month four, when everyone else has gone quiet.",
+      "accent": "sky",
+      "mix": {
+        "ice": 42,
+        "silence": 8,
+        "nuclear": 8,
+        "blackout": 7,
+        "plague": 7,
+        "flood": 7,
+        "ai": 7,
+        "asteroid": 7,
+        "volcano": 7
+      },
+      "strengths": [
+        "Endures without drama",
+        "Thrifty with heat, food and words",
+        "Keeps going long after the novelty"
+      ],
+      "watchOut": "Endurance is not a personality. Let someone bring you something warm."
+    },
+    {
+      "trait": "silence",
+      "name": "The Quiet Fade",
+      "tagline": "No bang, just fewer deliveries",
+      "blurb": "You have noticed that the end does not need to announce itself. Things stop arriving, the shelves thin out, the news moves on, and everyone keeps going to work. You would be the first to say it out loud and the last to be believed, which suits you fine.",
+      "accent": "green",
+      "mix": {
+        "silence": 42,
+        "nuclear": 8,
+        "blackout": 8,
+        "plague": 7,
+        "flood": 7,
+        "ai": 7,
+        "asteroid": 7,
+        "volcano": 7,
+        "ice": 7
+      },
+      "strengths": [
+        "Notices what nobody is saying",
+        "Comfortable without a crowd",
+        "Says the unpopular, accurate thing"
+      ],
+      "watchOut": "Being right early is lonely. Find the one person who'll listen."
+    }
+  ]
+}
