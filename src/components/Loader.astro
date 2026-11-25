@@ -1,10 +1,12 @@
 ---
 /**
- * First-visit loader: a progress ring, a counting percentage and a double
- * wipe exit, in the page's own accent colour so it belongs to whichever quiz
- * you land on. Shown once per browser session — a static site does a full page
- * load on every click, and nobody wants a curtain on every navigation.
+ * First-visit loader: an orbiting inset-glow orb with a breathing wordmark,
+ * a counting percentage and a double wipe exit, in the page's own accent colour
+ * so it belongs to whichever quiz you land on. Shown once per browser session —
+ * a static site does a full page load on every click, and nobody wants a
+ * curtain on every navigation.
  */
+const letters = [..."QUIZZY"];
 ---
 
 <div id="qz-loader-trail" class="qz-trail" aria-hidden="true"></div>
@@ -17,19 +19,20 @@
   aria-label="Loading Quizzy"
 >
   <div class="qz-loader__inner">
-    <div class="qz-loader__ring">
-      <svg viewBox="0 0 120 120" aria-hidden="true">
-        <circle class="qz-loader__track" cx="60" cy="60" r="54"></circle>
-        <circle id="qz-loader-bar" class="qz-loader__bar" cx="60" cy="60" r="54"
-        ></circle>
-      </svg>
-      <span class="qz-loader__count">
-        <span id="qz-loader-num">0</span><span class="qz-loader__pct">%</span>
-      </span>
+    <div class="qz-loader__orb" aria-hidden="true">
+      <div class="qz-loader__spin"></div>
+      {
+        letters.map((letter, index) => (
+          <span class="qz-loader__letter" style={`--i: ${index}`}>
+            {letter}
+          </span>
+        ))
+      }
     </div>
 
-    <p class="qz-loader__word display">Quizzy</p>
-    <p class="qz-loader__label label">Warming up the questions</p>
+    <p class="qz-loader__label label">
+      <span id="qz-loader-num">0</span>% · Warming up the questions
+    </p>
   </div>
 </div>
 
@@ -91,66 +94,91 @@
     position: relative;
     display: grid;
     justify-items: center;
-    gap: 22px;
+    gap: 26px;
     text-align: center;
   }
 
-  .qz-loader__ring {
+  .qz-loader__orb {
     position: relative;
-    width: clamp(116px, 20vw, 156px);
-    aspect-ratio: 1;
-  }
-
-  .qz-loader__ring svg {
-    width: 100%;
-    height: 100%;
-    transform: rotate(-90deg);
-  }
-
-  .qz-loader__track,
-  .qz-loader__bar {
-    fill: none;
-    stroke-width: 2.5;
-  }
-
-  .qz-loader__track {
-    stroke: var(--line);
-  }
-
-  .qz-loader__bar {
-    stroke: var(--accent);
-    stroke-linecap: round;
-  }
-
-  .qz-loader__count {
-    position: absolute;
-    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2px;
+    width: clamp(170px, 24vw, 210px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  /* The glowing ring: three inset shadows on a transparent disc, rotated
+     continuously so the light sweeps around the wordmark. */
+  .qz-loader__spin {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    animation: qz-orb-rotate 2s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes qz-orb-rotate {
+    0% {
+      transform: rotate(90deg);
+      box-shadow:
+        0 10px 20px 0 rgba(255, 255, 255, 0.85) inset,
+        0 20px 30px 0 color-mix(in oklab, var(--accent) 85%, #fff) inset,
+        0 60px 60px 0 color-mix(in oklab, var(--accent) 55%, #000) inset;
+    }
+    50% {
+      transform: rotate(270deg);
+      box-shadow:
+        0 10px 20px 0 rgba(255, 255, 255, 0.85) inset,
+        0 20px 10px 0 color-mix(in oklab, var(--accent) 70%, #fff) inset,
+        0 40px 60px 0 color-mix(in oklab, var(--accent) 35%, #000) inset;
+    }
+    100% {
+      transform: rotate(450deg);
+      box-shadow:
+        0 10px 20px 0 rgba(255, 255, 255, 0.85) inset,
+        0 20px 30px 0 color-mix(in oklab, var(--accent) 85%, #fff) inset,
+        0 60px 60px 0 color-mix(in oklab, var(--accent) 55%, #000) inset;
+    }
+  }
+
+  .qz-loader__letter {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
     font-family: var(--font-display, inherit);
-    font-size: clamp(34px, 6vw, 46px);
+    font-size: clamp(20px, 3.2vw, 26px);
     line-height: 1;
-    letter-spacing: -0.02em;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .qz-loader__pct {
-    font-family: var(--font-sans, inherit);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    color: var(--ink-muted);
-  }
-
-  .qz-loader__word {
-    font-size: clamp(30px, 5vw, 46px);
-    line-height: 0.9;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
+    opacity: 0.4;
+    transform: translateY(0);
+    animation: qz-letter-breathe 2s infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+    will-change: transform, opacity;
+  }
+
+  @keyframes qz-letter-breathe {
+    0%,
+    100% {
+      opacity: 0.4;
+      transform: translateY(0) scale(1);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(1.15);
+    }
+    40% {
+      opacity: 0.7;
+      transform: translateY(0) scale(1);
+    }
   }
 
   .qz-loader__label {
     color: var(--ink-muted);
+    font-variant-numeric: tabular-nums;
   }
 </style>
 
@@ -176,16 +204,9 @@
     root.classList.add("qz-loading");
 
     const num = document.getElementById("qz-loader-num");
-    const bar = document.getElementById("qz-loader-bar");
-    const ring = loader.querySelector(".qz-loader__ring");
-    const fade = loader.querySelectorAll(".qz-loader__word, .qz-loader__label");
-    const length = 2 * Math.PI * 54;
+    const orb = loader.querySelector(".qz-loader__orb");
+    const label = loader.querySelector(".qz-loader__label");
     const progress = { value: 0 };
-
-    if (bar) {
-      bar.style.strokeDasharray = `${length}`;
-      bar.style.strokeDashoffset = `${length}`;
-    }
 
     gsap
       .timeline({
@@ -194,17 +215,14 @@
       })
       .to(progress, {
         value: 100,
-        duration: 1.05,
+        duration: 1.15,
         ease: "power2.inOut",
         onUpdate() {
           if (num) num.textContent = String(Math.round(progress.value));
-          if (bar) {
-            bar.style.strokeDashoffset = `${length * (1 - progress.value / 100)}`;
-          }
         },
       })
       .to(
-        [ring, ...fade],
+        [orb, label],
         { y: -14, opacity: 0, duration: 0.36, stagger: 0.05, ease: "power2.in" },
         "-=0.12",
       )
