@@ -371,7 +371,7 @@ export default function TierBoard({ list }: Props) {
 
       {/* Tiers ------------------------------------------------------ */}
       <div className="mt-8 space-y-3">
-        {list.tiers.map((tier, index) => {
+        {list.tiers.map((tier) => {
           const items = list.items.filter(
             (item) => placements[item.id] === tier.id,
           );
@@ -400,22 +400,17 @@ export default function TierBoard({ list }: Props) {
               ].join(" ")}
             >
               <div
-                className="relative flex items-center justify-between gap-3 p-4 text-[var(--tier-ink)] sm:flex-col sm:items-start sm:justify-between sm:p-5"
+                className="relative flex items-center justify-between gap-3 p-4 text-[var(--tier-ink)] sm:min-h-[112px] sm:flex-col sm:items-start sm:p-5"
                 style={{ background: "var(--tier-accent)" }}
               >
-                <div className="flex items-center gap-2 sm:flex-col sm:items-start sm:gap-1.5">
-                  <span className="label opacity-65">
-                    Tier {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <h3
-                    id={`tier-${tier.id}`}
-                    className="display text-[clamp(19px,2.4vw,26px)] leading-[0.92]"
-                  >
-                    {tier.name}
-                  </h3>
-                </div>
+                <h3
+                  id={`tier-${tier.id}`}
+                  className="display text-[clamp(20px,2.4vw,27px)] leading-[0.9]"
+                >
+                  {tier.name}
+                </h3>
 
-                <div className="flex items-center gap-2">
+                <div className="flex shrink-0 items-center gap-2 sm:mt-auto">
                   {selected ? (
                     <button
                       type="button"
@@ -435,16 +430,9 @@ export default function TierBoard({ list }: Props) {
                     {items.length}
                   </span>
                 </div>
-
-                <p className="label absolute bottom-3 right-4 hidden max-w-[15ch] text-right leading-[1.5] opacity-60 sm:block">
-                  {tier.note}
-                </p>
               </div>
 
               <div className="relative min-h-[112px] p-3 sm:p-4">
-                <p className="label mb-2 text-[var(--ink-muted)] sm:hidden">
-                  {tier.note}
-                </p>
                 <div className="flex flex-wrap gap-2">
                   {items.length === 0 ? (
                     <p
