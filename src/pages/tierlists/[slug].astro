@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TierListCard from "../../components/TierListCard.astro";
+import TierBoard from "../../components/TierBoard";
+import { otherTierLists, tierLists } from "../../lib/tierlists";
+import type { TierList } from "../../lib/tierlists-types";
+import { siteHref } from "../../lib/url";
+
+export function getStaticPaths() {
+  return tierLists.map((list) => ({
+    params: { slug: list.slug },
+    props: { list },
+  }));
+}
+
+interface Props {
+  list: TierList;
+}
+
+const { list } = Astro.props as Props;
+const others = otherTierLists(list.slug, 3);
+---
+
+<BaseLayout
+  title={`${list.title} — Quizzy`}
+  description={`${list.dek} ${list.items.length} items, ${list.tiers.length} tiers, drag and drop, no sign-up.`}
+  accent={list.accent}
+>
+  <section class="container-page pb-16 pt-2">
+    <a
+      href={siteHref("/tierlists")}
+      class="label inline-flex items-center gap-2 text-[var(--ink-muted)] transition-colors hover:text-ink"
+    >
+      ← All tier lists
+    </a>
+
+    <header class="mt-8 grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
+      <div>
+        <div class="flex flex-wrap items-center gap-3">
+          <span
+            class="grid size-12 place-items-center rounded-full bg-[var(--accent)] text-xl"
+            aria-hidden="true">{list.emoji}</span
+          >
+          <span class="label rounded-[var(--r-pill)] border border-line px-3 py-2 text-[var(--ink-soft)]"
+            >{list.category}</span
+          >
+          <span class="label text-[var(--ink-muted)]">
+            {list.items.length} items · {list.tiers.length} tiers
+          </span>
+        </div>
+
+        <p class="label mt-6 text-[var(--accent-text)]">{list.kicker}</p>
+        <h1 class="display mt-2 max-w-[17ch] text-[clamp(38px,7vw,82px)] leading-[0.88]">
+          {list.title}
+        </h1>
+
+        <p class="mt-4 max-w-lg text-[15px] leading-relaxed text-[var(--ink-soft)]">
+          {list.dek}
+        </p>
+      </div>
+
+      <div class="flex items-center gap-3 lg:pb-2">
+        <span class="label text-right text-[var(--ink-muted)]">
+          {list.tiers[0].name}<br />
+          <span class="opacity-50">down to</span><br />
+          {list.tiers[list.tiers.length - 1].name}
+        </span>
+        <span
+          aria-hidden="true"
+          class="display text-[54px] leading-none text-[var(--accent-text)]"
+          >↓</span
+        >
+      </div>
+    </header>
+
+    <div class="mt-10 border-t border-line/70 pt-6">
+      <TierBoard list={list} client:load />
+    </div>
+
+    {
+      others.length ? (
+        <section class="mt-20" aria-labelledby="more-tierlists">
+          <div class="flex items-baseline justify-between gap-4 border-b border-line pb-4">
+            <h2 id="more-tierlists" class="label text-[var(--ink-muted)]">
+              Another argument
+            </h2>
+            <a
+              href={siteHref("/tierlists")}
+              class="label text-[var(--ink-muted)] hover:text-ink"
+              >All tier lists</a
+            >
+          </div>
+          <div class="mt-6 grid gap-[var(--bento-gap)] sm:grid-cols-2 lg:grid-cols-3">
+            {others.map((other) => (
+              <div data-reveal class="h-full">
+                <TierListCard list={other} compact class="h-full" />
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null
+    }
+  </section>
+</BaseLayout>

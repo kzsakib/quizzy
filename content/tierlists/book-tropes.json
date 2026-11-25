@@ -1,0 +1,74 @@
+{
+  "slug": "book-tropes",
+  "title": "The book tropes you'd actually let happen to you",
+  "dek": "Thirty tropes, one life, and a bookshelf that has seen things. Sort them by which ones you'd reread and which ones you'd throw across the room.",
+  "kicker": "Reader's verdict",
+  "category": "Books",
+  "accent": "sky",
+  "emoji": "📖",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "twice",
+      "name": "I'd reread it twice",
+      "note": "Annotated. Dog-eared. Defended in a group chat at 1am.",
+      "accent": "lime"
+    },
+    {
+      "id": "once",
+      "name": "Fine, but only once",
+      "note": "Good book. No notes. No reread.",
+      "accent": "cyan"
+    },
+    {
+      "id": "writing",
+      "name": "Depends on the writing",
+      "note": "One good line away from greatness. One bad line from the bin.",
+      "accent": "yellow"
+    },
+    {
+      "id": "skip",
+      "name": "Skip the chapter",
+      "note": "I know exactly how this ends and I am bored already.",
+      "accent": "orange"
+    },
+    {
+      "id": "dnf",
+      "name": "DNF at page twelve",
+      "note": "Closed. Returned. Forgotten. The receipt is still in it.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    { "id": "enemies-to-lovers", "label": "Enemies to lovers" },
+    { "id": "forced-proximity", "label": "Forced proximity" },
+    { "id": "one-bed", "label": "Only one bed" },
+    { "id": "fake-dating", "label": "Fake dating" },
+    { "id": "grumpy-sunshine", "label": "Grumpy and sunshine" },
+    { "id": "found-family", "label": "Found family" },
+    { "id": "chosen-one", "label": "The chosen one" },
+    { "id": "love-triangle", "label": "Love triangle" },
+    { "id": "second-chance", "label": "Second chance romance" },
+    { "id": "slow-burn", "label": "Slow burn" },
+    { "id": "academic-rivals", "label": "Academic rivals" },
+    { "id": "marriage-of-convenience", "label": "Marriage of convenience" },
+    { "id": "secret-royalty", "label": "Secret royalty" },
+    { "id": "amnesia", "label": "Amnesia" },
+    { "id": "time-loop", "label": "Time loop" },
+    { "id": "heist-crew", "label": "Heist crew" },
+    { "id": "sentient-house", "label": "Sentient house" },
+    { "id": "morally-grey", "label": "Morally grey love interest" },
+    { "id": "villain-redemption", "label": "Villain redemption" },
+    { "id": "epistolary", "label": "Told in letters" },
+    { "id": "small-town", "label": "Small town return" },
+    { "id": "road-trip", "label": "Road trip" },
+    { "id": "bodyguard", "label": "Bodyguard romance" },
+    { "id": "overheard", "label": "Overheard confession" },
+    { "id": "miscommunication", "label": "The miscommunication" },
+    { "id": "age-gap", "label": "Age gap" },
+    { "id": "love-at-first-sight", "label": "Love at first sight" },
+    { "id": "tournament-arc", "label": "Tournament arc" },
+    { "id": "mentor-dies", "label": "The mentor dies" },
+    { "id": "dog-lives", "label": "The dog lives" }
+  ]
+}

@@ -487,3 +487,65 @@
   background: var(--line);
   border-radius: 999px;
 }
+
+/* ------------------------------------------------------------------
+   Tier lists — chips, drop zones and the little pops that make a drag
+   feel like it landed somewhere.
+------------------------------------------------------------------ */
+.qz-tier-chip {
+  cursor: grab;
+}
+
+.qz-tier-chip--in {
+  animation: qz-tier-pop 420ms var(--ease-spring) both;
+}
+
+.qz-tier-count {
+  animation: qz-tier-bump 380ms var(--ease-spring);
+}
+
+.qz-tier-drop {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent 0 9px,
+    color-mix(in srgb, var(--ink) 5%, transparent) 9px 10px
+  );
+}
+
+.qz-tier-hint {
+  animation: qz-tier-pop 260ms var(--ease-out-soft) both;
+}
+
+@keyframes qz-tier-pop {
+  0% {
+    transform: scale(0.88) rotate(-2deg);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.06) rotate(0.6deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes qz-tier-bump {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.28);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qz-tier-chip--in,
+  .qz-tier-count,
+  .qz-tier-hint {
+    animation: none;
+  }
+}

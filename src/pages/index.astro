@@ -1,12 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import QuizCard from "../components/QuizCard.astro";
+import TierListCard from "../components/TierListCard.astro";
 import {
   categories,
   featuredQuiz,
   quizzes,
   trendingQuizzes,
 } from "../lib/quizzes";
+import { tierLists } from "../lib/tierlists";
 import { siteHref } from "../lib/url";
 
 const heroQuiz = featuredQuiz ?? quizzes[0];
@@ -243,6 +245,39 @@ const rowTwo = [
             data-reveal
           >
             <QuizCard quiz={quiz} wide={index === 0} class="h-full" />
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <!-- Tier lists ---------------------------------------------------- -->
+  <section
+    id="tierlists"
+    class="container-page mt-20 scroll-mt-24 sm:mt-28"
+    aria-labelledby="tierlists-heading"
+  >
+    <div class="flex items-baseline justify-between gap-4 border-b border-line pb-4">
+      <h2 id="tierlists-heading" class="label text-[var(--ink-muted)]">Tier lists</h2>
+      <a href={siteHref("/tierlists")} class="label text-[var(--ink-muted)] hover:text-ink"
+        >All {tierLists.length} →</a
+      >
+    </div>
+
+    <div class="mt-3 flex flex-wrap items-end justify-between gap-4">
+      <p class="display max-w-[20ch] text-[clamp(26px,4vw,44px)] leading-[0.94]">
+        Now you do the sorting.
+      </p>
+      <p class="label max-w-[30ch] text-[var(--ink-muted)]">
+        Drag every card into a tier. Tap works too. Nothing leaves this device.
+      </p>
+    </div>
+
+    <div class="mt-6 grid gap-[var(--bento-gap)] sm:grid-cols-2 lg:grid-cols-4">
+      {
+        tierLists.slice(0, 4).map((list) => (
+          <div data-reveal class="h-full">
+            <TierListCard list={list} compact class="h-full" />
           </div>
         ))
       }

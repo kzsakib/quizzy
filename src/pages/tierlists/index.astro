@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TierListCard from "../../components/TierListCard.astro";
+import { tierLists } from "../../lib/tierlists";
+import { siteHref } from "../../lib/url";
+
+const totalItems = tierLists.reduce((sum, list) => sum + list.items.length, 0);
+---
+
+<BaseLayout
+  title="Tier lists — Quizzy"
+  description={`${tierLists.length} tier lists and ${totalItems} things to sort. Drag them into the right pile, then defend your choices.`}
+  accent="cyan"
+>
+  <section class="container-page pt-2">
+    <div class="flex items-baseline justify-between gap-4 border-b border-line pb-4">
+      <p class="label text-[var(--ink-muted)]">Tier lists</p>
+      <p class="label text-[var(--ink-muted)]">Drag, drop, argue</p>
+    </div>
+
+    <h1 class="display mt-8 max-w-[13ch] text-[clamp(46px,9vw,112px)] leading-[0.86]">
+      Sort it out yourself.
+    </h1>
+
+    <div class="mt-6 grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-end">
+      <p class="max-w-md text-[15px] leading-relaxed text-[var(--ink-soft)]">
+        {tierLists.length} arguments, {totalItems} things to place. Every tier has a
+        personality instead of a letter, and every board saves as you go — no
+        accounts, no sign-up, no shared leaderboard to lose.
+      </p>
+
+      <ul class="grid gap-2 md:justify-self-end" role="list">
+        {
+          [
+            ["01", "Drag a card", "Pointer, pen or thumb. It follows you."],
+            ["02", "Or tap, then tap a tier", "Works with a keyboard too."],
+            ["03", "Defend it", "Copy the finished list into the group chat."],
+          ].map(([number, title, copy]) => (
+            <li class="flex gap-3 text-[13px] text-[var(--ink-muted)]">
+              <span class="label mt-0.5 shrink-0 text-[var(--accent-text)]">{number}</span>
+              <span>
+                <span class="font-semibold text-[var(--ink-soft)]">{title}</span> · {copy}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="mt-10 grid gap-[var(--bento-gap)] sm:grid-cols-2 lg:grid-cols-3">
+      {
+        tierLists.map((list) => (
+          <div data-reveal class="h-full">
+            <TierListCard list={list} class="h-full" />
+          </div>
+        ))
+      }
+    </div>
+
+    <p class="label mt-12 text-[var(--ink-muted)]">
+      Prefer to be told who you are?
+      <a href={siteHref("/list")} class="underline">Take a quiz instead</a>
+    </p>
+  </section>
+</BaseLayout>

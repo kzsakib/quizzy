@@ -1,0 +1,68 @@
+{
+  "slug": "friends-spare-key",
+  "title": "Who gets the spare key to your flat",
+  "dek": "One key, six friends, and a building manager who has stopped asking questions. Decide who can walk in unannounced.",
+  "kicker": "Keyholder review",
+  "category": "Screen",
+  "accent": "orange",
+  "emoji": "🔑",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "already",
+      "name": "Already has a key",
+      "note": "No notice needed. No questions asked. This was a mistake you're keeping.",
+      "accent": "lime"
+    },
+    {
+      "id": "deserves",
+      "name": "Deserves a key",
+      "note": "Reliable, respectful, and brings something from the bakery.",
+      "accent": "cyan"
+    },
+    {
+      "id": "supervised",
+      "name": "Only with supervision",
+      "note": "Fine, as long as somebody else is home the whole time.",
+      "accent": "yellow"
+    },
+    {
+      "id": "loses",
+      "name": "Would lose the key",
+      "note": "Will text you from your own hallway at midnight.",
+      "accent": "orange"
+    },
+    {
+      "id": "locks",
+      "name": "Change the locks",
+      "note": "Absolutely not. Not once. Not ever.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    { "id": "rachel", "label": "Rachel" },
+    { "id": "monica", "label": "Monica" },
+    { "id": "chandler", "label": "Chandler" },
+    { "id": "joey", "label": "Joey" },
+    { "id": "phoebe", "label": "Phoebe" },
+    { "id": "ross", "label": "Ross" },
+    { "id": "gunther", "label": "Gunther" },
+    { "id": "janice", "label": "Janice" },
+    { "id": "mike", "label": "Mike Hannigan" },
+    { "id": "richard", "label": "Richard" },
+    { "id": "emily", "label": "Emily" },
+    { "id": "carol", "label": "Carol" },
+    { "id": "susan", "label": "Susan" },
+    { "id": "ben", "label": "Ben" },
+    { "id": "frank-jr", "label": "Frank Jr." },
+    { "id": "estelle", "label": "Estelle" },
+    { "id": "mr-heckles", "label": "Mr. Heckles" },
+    { "id": "ursula", "label": "Ursula" },
+    { "id": "david", "label": "David the scientist" },
+    { "id": "tag", "label": "Tag" },
+    { "id": "charlie", "label": "Charlie" },
+    { "id": "gavin", "label": "Gavin" },
+    { "id": "pete", "label": "Pete Becker" },
+    { "id": "paul", "label": "Paul the wine guy" }
+  ]
+}

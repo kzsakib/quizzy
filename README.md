@@ -13,6 +13,7 @@ Tailwind CSS v4 with CSS-variable design tokens, GSAP and Lenis.
 | `npm run preview` | Preview the production build                |
 | `npm run check`   | Astro + TypeScript diagnostics              |
 | `node scripts/check-quizzes.mjs` | Validate question counts, images, reachable results |
+| `node scripts/check-tierlists.mjs` | Validate tier counts, item counts and tier names |
 | `node scripts/fetch-question-images.mjs` | Re-download picture-question photos |
 | `node scripts/optimize-question-images.mjs` | Resize quiz photos to 800px wide and recompress |
 
@@ -40,6 +41,8 @@ Phase 2 of 6 — home page plus a playable quiz engine, polished.
 - [x] Result name, tagline and blurb typed out on arrival
 - [x] Inverting blob cursor that follows with lag, morphs and drips on click
 - [x] Muted text tokens checked for WCAG AA contrast in both themes
+- [x] Tier lists: eight drag-and-drop boards with personality-named tiers,
+      pointer/keyboard placement, copy-to-clipboard and local progress
 - [ ] Results polish, share images, remaining accessibility audit, deployment
 
 ## Structure
@@ -50,9 +53,11 @@ src/
                      QuizPlayer, QzSlider, ResultChart)
   layouts/           BaseLayout.astro
   lib/               motion.ts (Lenis + GSAP), quizzes.ts, scoring.ts
-  pages/             index.astro, list, category/[slug], quiz/[slug]/{index,take,result/[trait]}
+  pages/             index.astro, list, category/[slug], quiz/[slug]/{index,take,result/[trait]},
+                     tierlists/{index,[slug]}
   styles/            tokens.css, global.css
 content/quizzes/     one JSON file per quiz
+content/tierlists/   one JSON file per tier list
 public/images/       quiz covers and result art
 scripts/             picture-question photo refresh + content migrations
 ```
@@ -211,6 +216,21 @@ page behind it is genuinely inverted; the shape wobbles with pointer speed and
 click splashes fall under gravity. `Typewriter.astro` server-renders the full
 text and re-types it with an inline script, so results still read correctly
 without JavaScript.
+
+## Tier lists
+
+`content/tierlists/*.json` holds one file per board: `slug`, `title`, `dek`,
+`kicker`, `category`, `accent`, `emoji`, `published`, `tiers[]`
+(`id`, `name`, `note`, `accent`) and `items[]` (`id`, `label`). Boards take 4–6
+tiers and 20–40 items; tiers are named for a personality, never `S`/`A`/`B`.
+`node scripts/check-tierlists.mjs` enforces all of that.
+
+`TierBoard.tsx` is a single React island. Dragging uses pointer events with a
+fixed-position ghost moved directly through the DOM (no re-render per frame),
+while a tap selects an item and the next tap on a tier places it — the same
+path works with a keyboard and on touch. Placements and pile order are stored
+in `localStorage` under `qz:tier:<slug>`, and the finished board can be copied
+as plain text.
 
 ## Deployment
 

@@ -1,0 +1,74 @@
+{
+  "slug": "pet-peeves",
+  "title": "The pet peeves you'd end a friendship over",
+  "dek": "Thirty small crimes and one finite supply of patience. Sort them by how much of yours they take.",
+  "kicker": "Grievance register",
+  "category": "Personality",
+  "accent": "pink",
+  "emoji": "😤",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "over",
+      "name": "Friendship over",
+      "note": "You had one job. You failed it, publicly, twice.",
+      "accent": "red"
+    },
+    {
+      "id": "fight",
+      "name": "We're fighting",
+      "note": "Out loud, in public, immediately, with witnesses.",
+      "accent": "orange"
+    },
+    {
+      "id": "sigh",
+      "name": "A long, loud sigh",
+      "note": "You'll hear about it later. At length.",
+      "accent": "yellow"
+    },
+    {
+      "id": "noted",
+      "name": "Silent judgement",
+      "note": "Noted. Filed. Remembered at your birthday.",
+      "accent": "cyan"
+    },
+    {
+      "id": "guilty",
+      "name": "I do this",
+      "note": "No comment. Move along. Nothing to see.",
+      "accent": "lime"
+    }
+  ],
+  "items": [
+    { "id": "talking-films", "label": "Talking during films" },
+    { "id": "speakerphone", "label": "Speakerphone on the bus" },
+    { "id": "reply-all", "label": "Reply all" },
+    { "id": "late-no-text", "label": "Late with no text" },
+    { "id": "chewing", "label": "Chewing with the mouth open" },
+    { "id": "carton-sip", "label": "One sip left in the carton" },
+    { "id": "spoilers", "label": "Spoiling the finale" },
+    { "id": "indicator", "label": "Not using the indicator" },
+    { "id": "nails-train", "label": "Clipping nails on a train" },
+    { "id": "calls-restaurant", "label": "Calls in a restaurant" },
+    { "id": "vaguebooking", "label": "Vaguebooking" },
+    { "id": "we-need-talk", "label": "\"We need to talk\" with no context" },
+    { "id": "trolley-aisle", "label": "Trolley left in the aisle" },
+    { "id": "trolley-return", "label": "Not returning the trolley" },
+    { "id": "escalator", "label": "Standing on the left" },
+    { "id": "cinema-torch", "label": "Phone torch in the cinema" },
+    { "id": "one-upping", "label": "One-upping every story" },
+    { "id": "borrowing", "label": "Borrowing and not returning" },
+    { "id": "over-shoulder", "label": "Reading over your shoulder" },
+    { "id": "calm-down", "label": "\"Calm down\"" },
+    { "id": "diet-advice", "label": "Unsolicited diet advice" },
+    { "id": "keyboard-clicks", "label": "Loud phone keyboard" },
+    { "id": "toilet-roll", "label": "Not replacing the roll" },
+    { "id": "butter-crumbs", "label": "Crumbs in the butter" },
+    { "id": "group-chat", "label": "Two hundred unread messages" },
+    { "id": "k-reply", "label": "Replying \"k\"" },
+    { "id": "early-judge", "label": "Arriving early and judging you" },
+    { "id": "voice-notes", "label": "Four-minute voice notes" },
+    { "id": "quiet-carriage", "label": "Talking in the quiet carriage" },
+    { "id": "whistling", "label": "Whistling indoors" }
+  ]
+}

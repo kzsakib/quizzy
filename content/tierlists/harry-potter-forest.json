@@ -1,0 +1,74 @@
+{
+  "slug": "harry-potter-forest",
+  "title": "Who you'd take into the Forbidden Forest at night",
+  "dek": "One wand between you, no Floo network, and something moving between the trees. Sort the cast by who you'd actually want there.",
+  "kicker": "Midnight expedition",
+  "category": "Books",
+  "accent": "green",
+  "emoji": "🌲",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "front",
+      "name": "Walks in front",
+      "note": "Calm, competent, and already casting before you ask.",
+      "accent": "lime"
+    },
+    {
+      "id": "duel",
+      "name": "Useful in a duel",
+      "note": "Good in a fight. Hopeless with directions.",
+      "accent": "cyan"
+    },
+    {
+      "id": "panic",
+      "name": "Would panic",
+      "note": "Loudly. At length. Within earshot of the thing.",
+      "accent": "yellow"
+    },
+    {
+      "id": "run",
+      "name": "Would run",
+      "note": "You'd hear them leave. You'd respect it, slightly.",
+      "accent": "orange"
+    },
+    {
+      "id": "reason",
+      "name": "The reason you're there",
+      "note": "This was their idea. It is always their idea.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    { "id": "harry", "label": "Harry" },
+    { "id": "hermione", "label": "Hermione" },
+    { "id": "ron", "label": "Ron" },
+    { "id": "dumbledore", "label": "Dumbledore" },
+    { "id": "snape", "label": "Snape" },
+    { "id": "mcgonagall", "label": "McGonagall" },
+    { "id": "hagrid", "label": "Hagrid" },
+    { "id": "draco", "label": "Draco" },
+    { "id": "neville", "label": "Neville" },
+    { "id": "luna", "label": "Luna" },
+    { "id": "ginny", "label": "Ginny" },
+    { "id": "fred", "label": "Fred" },
+    { "id": "george", "label": "George" },
+    { "id": "sirius", "label": "Sirius" },
+    { "id": "remus", "label": "Remus" },
+    { "id": "tonks", "label": "Tonks" },
+    { "id": "moody", "label": "Mad-Eye Moody" },
+    { "id": "kingsley", "label": "Kingsley" },
+    { "id": "bellatrix", "label": "Bellatrix" },
+    { "id": "voldemort", "label": "Voldemort" },
+    { "id": "lucius", "label": "Lucius" },
+    { "id": "dobby", "label": "Dobby" },
+    { "id": "kreacher", "label": "Kreacher" },
+    { "id": "buckbeak", "label": "Buckbeak" },
+    { "id": "fang", "label": "Fang" },
+    { "id": "cedric", "label": "Cedric" },
+    { "id": "cho", "label": "Cho" },
+    { "id": "seamus", "label": "Seamus" },
+    { "id": "dean", "label": "Dean" },
+    { "id": "lavender", "label": "Lavender" }
+  ]
+}

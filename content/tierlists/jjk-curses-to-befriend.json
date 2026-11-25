@@ -1,0 +1,64 @@
+{
+  "slug": "jjk-curses-to-befriend",
+  "title": "The curses you'd actually befriend",
+  "dek": "Special grades, petty grades, and one very polite death painting. Sort them by who you'd genuinely text back.",
+  "kicker": "Befriending assessment",
+  "category": "Anime",
+  "accent": "red",
+  "emoji": "👁️",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "besties",
+      "name": "Besties, no notes",
+      "note": "Split a meal. Share a secret. Ignore the body count.",
+      "accent": "lime"
+    },
+    {
+      "id": "texts",
+      "name": "Texts back",
+      "note": "Reliable at 2am. Slightly unhinged. Good taste in music.",
+      "accent": "cyan"
+    },
+    {
+      "id": "civil",
+      "name": "Civil at parties",
+      "note": "Nods at you. Leaves early. No incident.",
+      "accent": "yellow"
+    },
+    {
+      "id": "night",
+      "name": "One bad night away",
+      "note": "Perfectly fine until literally anything goes wrong.",
+      "accent": "orange"
+    },
+    {
+      "id": "street",
+      "name": "Cross the street",
+      "note": "I'd cross the road. Then the district. Then the prefecture.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    { "id": "sukuna", "label": "Sukuna" },
+    { "id": "mahito", "label": "Mahito" },
+    { "id": "jogo", "label": "Jogo" },
+    { "id": "hanami", "label": "Hanami" },
+    { "id": "dagon", "label": "Dagon" },
+    { "id": "choso", "label": "Choso" },
+    { "id": "eso", "label": "Eso" },
+    { "id": "kechizu", "label": "Kechizu" },
+    { "id": "kenjaku", "label": "Kenjaku" },
+    { "id": "uraume", "label": "Uraume" },
+    { "id": "rika", "label": "Rika Orimoto" },
+    { "id": "tamamo", "label": "Tamamo-no-Mae" },
+    { "id": "kurourushi", "label": "Kurourushi" },
+    { "id": "smallpox", "label": "Smallpox Deity" },
+    { "id": "ganesha", "label": "Ganesha" },
+    { "id": "finger-bearer", "label": "The Finger Bearer" },
+    { "id": "grasshopper", "label": "Grasshopper Curse" },
+    { "id": "cursed-womb", "label": "Cursed Womb" },
+    { "id": "cursed-corpse", "label": "Cursed Corpse" },
+    { "id": "death-swamp", "label": "Death Swamp" }
+  ]
+}

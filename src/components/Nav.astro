@@ -59,6 +59,13 @@ import { siteHref } from "../lib/url";
       </li>
       <li>
         <a
+          href={siteHref("/tierlists")}
+          class="label rounded-[var(--r-pill)] px-3.5 py-2 transition-colors hover:bg-surface-2 hover:text-ink"
+          >Tier lists</a
+        >
+      </li>
+      <li>
+        <a
           href={siteHref("/list")}
           class="label rounded-[var(--r-pill)] px-3.5 py-2 transition-colors hover:bg-surface-2 hover:text-ink"
           >List</a
@@ -68,8 +75,13 @@ import { siteHref } from "../lib/url";
 
     <div class="ml-auto flex items-center gap-2">
       <a
+        href={siteHref("/tierlists")}
+        class="label rounded-[var(--r-pill)] px-3 py-2 text-[var(--ink-strong)] transition-colors hover:bg-surface-2 hover:text-ink md:hidden"
+        >Tiers</a
+      >
+      <a
         href={siteHref("/list")}
-        class="label rounded-[var(--r-pill)] px-3.5 py-2 text-[var(--ink-strong)] transition-colors hover:bg-surface-2 hover:text-ink md:hidden"
+        class="label rounded-[var(--r-pill)] px-3 py-2 text-[var(--ink-strong)] transition-colors hover:bg-surface-2 hover:text-ink md:hidden"
         >List</a
       >
       <ThemeToggle client:load />

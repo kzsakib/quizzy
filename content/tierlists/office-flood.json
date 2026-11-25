@@ -1,0 +1,72 @@
+{
+  "slug": "office-flood",
+  "title": "Who you'd want beside you when the office floods",
+  "dek": "The sprinklers have gone off, the carpet is a lake, and someone is still filming. Sort Dunder Mifflin by who actually helps.",
+  "kicker": "Emergency contacts",
+  "category": "Screen",
+  "accent": "purple",
+  "emoji": "🪣",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "charge",
+      "name": "Takes charge",
+      "note": "Already has a plan, a mop, and a firm opinion about the fuse box.",
+      "accent": "lime"
+    },
+    {
+      "id": "helps",
+      "name": "Genuinely helpful",
+      "note": "Turns up with towels and no commentary. A rarity.",
+      "accent": "cyan"
+    },
+    {
+      "id": "morale",
+      "name": "Comic relief with a mop",
+      "note": "Useless with water. Excellent for morale.",
+      "accent": "yellow"
+    },
+    {
+      "id": "way",
+      "name": "Standing in the way",
+      "note": "In the doorway. Asking questions. Holding nothing.",
+      "accent": "orange"
+    },
+    {
+      "id": "cause",
+      "name": "Started the flood",
+      "note": "Somehow, in a way nobody can prove, this is their fault.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    { "id": "michael", "label": "Michael" },
+    { "id": "dwight", "label": "Dwight" },
+    { "id": "jim", "label": "Jim" },
+    { "id": "pam", "label": "Pam" },
+    { "id": "ryan", "label": "Ryan" },
+    { "id": "andy", "label": "Andy" },
+    { "id": "kevin", "label": "Kevin" },
+    { "id": "angela", "label": "Angela" },
+    { "id": "oscar", "label": "Oscar" },
+    { "id": "phyllis", "label": "Phyllis" },
+    { "id": "stanley", "label": "Stanley" },
+    { "id": "meredith", "label": "Meredith" },
+    { "id": "creed", "label": "Creed" },
+    { "id": "toby", "label": "Toby" },
+    { "id": "kelly", "label": "Kelly" },
+    { "id": "darryl", "label": "Darryl" },
+    { "id": "jan", "label": "Jan" },
+    { "id": "david-wallace", "label": "David Wallace" },
+    { "id": "holly", "label": "Holly" },
+    { "id": "erin", "label": "Erin" },
+    { "id": "gabe", "label": "Gabe" },
+    { "id": "robert-california", "label": "Robert California" },
+    { "id": "karen", "label": "Karen" },
+    { "id": "roy", "label": "Roy" },
+    { "id": "mose", "label": "Mose" },
+    { "id": "nate", "label": "Nate" },
+    { "id": "todd-packer", "label": "Todd Packer" },
+    { "id": "hank", "label": "Hank from security" }
+  ]
+}

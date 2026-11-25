@@ -1,0 +1,74 @@
+{
+  "slug": "pokemon-friend",
+  "title": "The Pokémon you'd actually let move in",
+  "dek": "Thirty Pokémon, one spare room, and a landlord who was not consulted. Sort them by who gets keys to your flat.",
+  "kicker": "Flatmate references",
+  "category": "Gaming",
+  "accent": "yellow",
+  "emoji": "🛋️",
+  "published": "2026-11-25",
+  "tiers": [
+    {
+      "id": "lease",
+      "name": "Signs the lease",
+      "note": "Pays rent. Makes tea. Waters the plant without being asked.",
+      "accent": "lime"
+    },
+    {
+      "id": "weekend",
+      "name": "Weekend guest only",
+      "note": "Lovely for two days. Then the smell arrives.",
+      "accent": "cyan"
+    },
+    {
+      "id": "distance",
+      "name": "Nice from a distance",
+      "note": "Wave at it in the park. Do not open the door.",
+      "accent": "yellow"
+    },
+    {
+      "id": "furniture",
+      "name": "Would eat the furniture",
+      "note": "Well-meaning. Destructive. Extremely loud at 3am.",
+      "accent": "orange"
+    },
+    {
+      "id": "door",
+      "name": "Never answer the door",
+      "note": "If it knocks, pretend you're out. Forever.",
+      "accent": "red"
+    }
+  ],
+  "items": [
+    { "id": "bulbasaur", "label": "Bulbasaur" },
+    { "id": "charmander", "label": "Charmander" },
+    { "id": "squirtle", "label": "Squirtle" },
+    { "id": "pikachu", "label": "Pikachu" },
+    { "id": "eevee", "label": "Eevee" },
+    { "id": "snorlax", "label": "Snorlax" },
+    { "id": "psyduck", "label": "Psyduck" },
+    { "id": "jigglypuff", "label": "Jigglypuff" },
+    { "id": "gengar", "label": "Gengar" },
+    { "id": "mewtwo", "label": "Mewtwo" },
+    { "id": "magikarp", "label": "Magikarp" },
+    { "id": "gyarados", "label": "Gyarados" },
+    { "id": "growlithe", "label": "Growlithe" },
+    { "id": "meowth", "label": "Meowth" },
+    { "id": "machamp", "label": "Machamp" },
+    { "id": "onix", "label": "Onix" },
+    { "id": "diglett", "label": "Diglett" },
+    { "id": "slowpoke", "label": "Slowpoke" },
+    { "id": "lapras", "label": "Lapras" },
+    { "id": "ditto", "label": "Ditto" },
+    { "id": "mr-mime", "label": "Mr. Mime" },
+    { "id": "sudowoodo", "label": "Sudowoodo" },
+    { "id": "wobbuffet", "label": "Wobbuffet" },
+    { "id": "togepi", "label": "Togepi" },
+    { "id": "lucario", "label": "Lucario" },
+    { "id": "gardevoir", "label": "Gardevoir" },
+    { "id": "mimikyu", "label": "Mimikyu" },
+    { "id": "rowlet", "label": "Rowlet" },
+    { "id": "mudkip", "label": "Mudkip" },
+    { "id": "trubbish", "label": "Trubbish" }
+  ]
+}
