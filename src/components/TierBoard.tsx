@@ -753,8 +753,12 @@ export default function TierBoard({ list }: Props) {
         ref={ghostRef}
         aria-hidden="true"
         className={[
-          "pointer-events-none fixed left-0 top-0 z-[999] inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink py-1.5 pl-1.5 pr-4 text-[13px] font-semibold text-[var(--on-ink)] shadow-[0_18px_40px_-12px_rgba(0,0,0,0.7)] transition-[opacity,scale] duration-150",
-          dragging ? "scale-[1.06] opacity-100" : "scale-95 opacity-0",
+          "pointer-events-none fixed left-0 top-0 z-[999] inline-flex items-center gap-2 rounded-[var(--r-pill)] bg-ink py-1.5 pl-1.5 pr-4 text-[13px] font-semibold text-[var(--on-ink)] shadow-[0_18px_40px_-12px_rgba(0,0,0,0.7)] transition-[opacity,scale]",
+          // The flying chip takes over the instant the pointer is released, so
+          // the ghost leaves without a fade that would double up on it.
+          dragging
+            ? "scale-[1.06] opacity-100 duration-150"
+            : "scale-95 opacity-0 duration-0",
         ].join(" ")}
         style={{ transform: "translate3d(-999px, -999px, 0)" }}
       >
