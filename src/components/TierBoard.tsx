@@ -557,7 +557,7 @@ export default function TierBoard({ list }: Props) {
                               alt=""
                               loading="lazy"
                               decoding="async"
-                              className="size-7 shrink-0 rounded-[7px] bg-surface-2 object-cover"
+                              className="size-7 shrink-0 rounded-full bg-surface-2 object-cover"
                             />
                           ) : null}
                           {item.label}
@@ -590,7 +590,7 @@ export default function TierBoard({ list }: Props) {
           <img
             src={siteHref(images[dragging])}
             alt=""
-            className="size-11 shrink-0 rounded-[10px] object-cover"
+            className="size-11 shrink-0 rounded-full object-cover"
           />
         ) : null}
         {dragging ? labels[dragging] : ""}
@@ -643,7 +643,7 @@ function Chip({
           loading="lazy"
           decoding="async"
           draggable={false}
-          className="size-11 shrink-0 rounded-[10px] bg-surface object-cover"
+          className="size-11 shrink-0 rounded-full bg-surface object-cover"
         />
       ) : (
         <span
