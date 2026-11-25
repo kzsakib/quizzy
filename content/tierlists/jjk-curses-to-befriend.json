@@ -10,32 +10,32 @@
   "tiers": [
     {
       "id": "besties",
-      "name": "Besties, no notes",
-      "note": "Split a meal. Share a secret. Ignore the body count.",
+      "name": "Best friend",
+      "note": "In your phone with a heart emoji. You'd help them hide something.",
       "accent": "lime"
     },
     {
       "id": "texts",
-      "name": "Texts back",
-      "note": "Reliable at 2am. Slightly unhinged. Good taste in music.",
+      "name": "Good friend",
+      "note": "Texts back at 2am. Slightly unhinged, genuinely fun.",
       "accent": "cyan"
     },
     {
       "id": "civil",
-      "name": "Civil at parties",
-      "note": "Nods at you. Leaves early. No incident.",
+      "name": "Friendly acquaintance",
+      "note": "Nods at parties. Leaves before the argument starts.",
       "accent": "yellow"
     },
     {
       "id": "night",
-      "name": "One bad night away",
-      "note": "Perfectly fine until literally anything goes wrong.",
+      "name": "Only in small doses",
+      "note": "Fine for an hour. Then you need air and an exit.",
       "accent": "orange"
     },
     {
       "id": "street",
-      "name": "Cross the street",
-      "note": "I'd cross the road. Then the district. Then the prefecture.",
+      "name": "Blocked",
+      "note": "Muted, unfollowed, and the number is saved under a warning.",
       "accent": "red"
     }
   ],
